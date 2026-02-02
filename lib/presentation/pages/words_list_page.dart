@@ -64,7 +64,7 @@ class WordsListPage extends StatelessWidget {
                         onTap: () => Navigator.pushNamed(
                           context,
                           '/detail',
-                          arguments: card,
+                          arguments: card.id,
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(14),

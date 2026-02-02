@@ -34,6 +34,15 @@ class WordsNotifier extends ChangeNotifier {
   SortMode get sortMode => _sortMode;
   bool get isLoading => _isLoading;
 
+  WordCard? findById(String id) {
+    for (final card in _words) {
+      if (card.id == id) {
+        return card;
+      }
+    }
+    return null;
+  }
+
   List<WordCard> dueToday() {
     final now = DateTime.now();
     final due = _words
@@ -103,6 +112,60 @@ class WordsNotifier extends ChangeNotifier {
 
     await _repository.add(card);
     _words.add(card);
+    notifyListeners();
+  }
+
+  Future<void> updateWord({
+    required WordCard card,
+    required String word,
+    required String meaning,
+    required PartOfSpeech partOfSpeech,
+    required List<String> sentences,
+    File? imageFile,
+    bool removeImage = false,
+  }) async {
+    final cleanedSentences = sentences
+        .map((sentence) => sentence.trim())
+        .where((sentence) => sentence.isNotEmpty)
+        .toList();
+
+    if (cleanedSentences.isEmpty) {
+      throw ArgumentError('sentences cannot be empty');
+    }
+
+    final trimmedMeaning = meaning.trim();
+    if (trimmedMeaning.isEmpty) {
+      throw ArgumentError('meaning cannot be empty');
+    }
+
+    var imagePath = card.imagePath;
+    if (removeImage && imagePath != null) {
+      await _imageStorage.deleteImage(imagePath);
+      imagePath = null;
+    }
+
+    if (imageFile != null) {
+      if (imagePath != null) {
+        await _imageStorage.deleteImage(imagePath);
+      }
+      imagePath = await _imageStorage.saveImage(imageFile);
+    }
+
+    final updated = card.copyWith(
+      word: word.trim(),
+      meaning: trimmedMeaning,
+      partOfSpeech: partOfSpeech,
+      sentences: cleanedSentences,
+      imagePath: imagePath,
+    );
+
+    await _repository.update(updated);
+
+    final index = _words.indexWhere((item) => item.id == card.id);
+    if (index != -1) {
+      _words[index] = updated;
+    }
+
     notifyListeners();
   }
 

@@ -18,4 +18,11 @@ class ImageStorage {
     final saved = await source.copy(targetPath);
     return saved.path;
   }
+
+  Future<void> deleteImage(String pathValue) async {
+    final file = File(pathValue);
+    if (await file.exists()) {
+      await file.delete();
+    }
+  }
 }

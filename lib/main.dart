@@ -9,6 +9,7 @@ import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
+import 'presentation/pages/edit_word_page.dart';
 import 'presentation/pages/home_page.dart';
 import 'presentation/pages/word_detail_page.dart';
 import 'presentation/state/words_notifier.dart';
@@ -51,6 +52,7 @@ class EnglishLearningApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/add': (context) => const AddWordPage(),
+        '/edit': (context) => const EditWordPage(),
         '/detail': (context) => const WordDetailPage(),
       },
     );

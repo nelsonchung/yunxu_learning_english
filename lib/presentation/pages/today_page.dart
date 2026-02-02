@@ -38,7 +38,7 @@ class TodayPage extends StatelessWidget {
                     onTap: () => Navigator.pushNamed(
                       context,
                       '/detail',
-                      arguments: card,
+                      arguments: card.id,
                     ),
                   ),
                 ),
