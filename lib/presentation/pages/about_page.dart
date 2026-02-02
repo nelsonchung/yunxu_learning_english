@@ -25,7 +25,7 @@ class AboutPage extends StatelessWidget {
           title: '艾賓浩斯遺忘曲線',
           subtitle: '記憶若不複習會快速下降',
           child: Text(
-            '本 App 將複習安排在：第 1、2、3、5、7、12、19、31 天。'
+            '本 App 將複習安排在：第 1、2、3、5、8、13、21、39 天。'
             '透過固定節奏複習，逐步加深長期記憶。',
           ),
         ),

@@ -1,7 +1,7 @@
 import '../models/word_card.dart';
 
 class ReviewScheduleService {
-  static const List<int> defaultSchedule = [1, 2, 3, 5, 7, 12, 19, 31];
+  static const List<int> defaultSchedule = [1, 2, 3, 5, 8, 13, 21, 39];
 
   DateTime initialNextDate(DateTime createdAt) {
     return createdAt.add(Duration(days: defaultSchedule.first));
