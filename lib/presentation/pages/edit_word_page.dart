@@ -64,7 +64,9 @@ class _EditWordPageState extends State<EditWordPage> {
       final sentences = card.sentences.isEmpty ? [''] : card.sentences;
       _sentenceControllers
         ..clear()
-        ..addAll(sentences.map(TextEditingController.new));
+        ..addAll(
+          sentences.map((sentence) => TextEditingController(text: sentence)),
+        );
     }
 
     _initialized = true;
