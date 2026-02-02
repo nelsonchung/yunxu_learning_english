@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../widgets/app_background.dart';
+import '../widgets/image_preview.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sentence_field_list.dart';
 
@@ -176,6 +177,8 @@ class _AddWordPageState extends State<AddWordPage> {
                   decoration: const InputDecoration(
                     hintText: '例如：靈感',
                   ),
+                  minLines: 2,
+                  maxLines: 4,
                 ),
               ),
               const SizedBox(height: 16),
@@ -219,30 +222,7 @@ class _AddWordPageState extends State<AddWordPage> {
                 subtitle: '可選擇相關圖片幫助記憶',
                 child: Column(
                   children: [
-                    if (_imageFile != null)
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(16),
-                        child: Image.file(
-                          _imageFile!,
-                          width: double.infinity,
-                          height: 180,
-                          fit: BoxFit.cover,
-                        ),
-                      )
-                    else
-                      Container(
-                        height: 140,
-                        width: double.infinity,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF0B6E99).withOpacity(0.08),
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(
-                            color: const Color(0xFF0B6E99).withOpacity(0.2),
-                          ),
-                        ),
-                        child: const Text('尚未選擇圖片'),
-                      ),
+                    ImagePreview(imageFile: _imageFile),
                     const SizedBox(height: 12),
                     Align(
                       alignment: Alignment.centerLeft,
