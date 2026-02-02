@@ -276,6 +276,14 @@ class _ReviewCard extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                           const SizedBox(height: 8),
+                          Text(
+                            '${card.meaning} · ${card.partOfSpeech.label}',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall
+                                ?.copyWith(color: Colors.black54),
+                          ),
+                          const SizedBox(height: 6),
                           Row(
                             children: [
                               const Icon(Icons.schedule, size: 16),

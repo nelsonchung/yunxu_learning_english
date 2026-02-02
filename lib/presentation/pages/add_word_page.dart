@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
+import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../widgets/app_background.dart';
 import '../widgets/section_card.dart';
@@ -18,6 +19,7 @@ class AddWordPage extends StatefulWidget {
 
 class _AddWordPageState extends State<AddWordPage> {
   final _wordController = TextEditingController();
+  final _meaningController = TextEditingController();
   final List<TextEditingController> _sentenceControllers = [
     TextEditingController(),
   ];
@@ -25,10 +27,12 @@ class _AddWordPageState extends State<AddWordPage> {
 
   File? _imageFile;
   bool _isSaving = false;
+  PartOfSpeech _partOfSpeech = PartOfSpeech.noun;
 
   @override
   void dispose() {
     _wordController.dispose();
+    _meaningController.dispose();
     for (final controller in _sentenceControllers) {
       controller.dispose();
     }
@@ -94,6 +98,7 @@ class _AddWordPageState extends State<AddWordPage> {
 
   Future<void> _save() async {
     final word = _wordController.text.trim();
+    final meaning = _meaningController.text.trim();
     final sentences = _sentenceControllers
         .map((controller) => controller.text.trim())
         .where((text) => text.isNotEmpty)
@@ -102,6 +107,12 @@ class _AddWordPageState extends State<AddWordPage> {
     if (word.isEmpty) {
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text('請輸入單字')));
+      return;
+    }
+
+    if (meaning.isEmpty) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('請輸入中文意義')));
       return;
     }
 
@@ -118,6 +129,8 @@ class _AddWordPageState extends State<AddWordPage> {
     final notifier = context.read<WordsNotifier>();
     await notifier.addWord(
       word: word,
+      meaning: meaning,
+      partOfSpeech: _partOfSpeech,
       sentences: sentences,
       imageFile: _imageFile,
     );
@@ -152,6 +165,42 @@ class _AddWordPageState extends State<AddWordPage> {
                   decoration: const InputDecoration(
                     hintText: '例如：inspiration',
                   ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '中文意義',
+                subtitle: '輸入單字的中文解釋',
+                child: TextField(
+                  controller: _meaningController,
+                  decoration: const InputDecoration(
+                    hintText: '例如：靈感',
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '詞性',
+                subtitle: '選擇此單字的詞性',
+                child: DropdownButtonFormField<PartOfSpeech>(
+                  value: _partOfSpeech,
+                  items: PartOfSpeech.values
+                      .map(
+                        (item) => DropdownMenuItem(
+                          value: item,
+                          child: Text(item.label),
+                        ),
+                      )
+                      .toList(),
+                  onChanged: (value) {
+                    if (value == null) {
+                      return;
+                    }
+                    setState(() {
+                      _partOfSpeech = value;
+                    });
+                  },
+                  decoration: const InputDecoration(),
                 ),
               ),
               const SizedBox(height: 16),

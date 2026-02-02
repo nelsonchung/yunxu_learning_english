@@ -63,6 +63,8 @@ class WordsNotifier extends ChangeNotifier {
 
   Future<void> addWord({
     required String word,
+    required String meaning,
+    required PartOfSpeech partOfSpeech,
     required List<String> sentences,
     File? imageFile,
   }) async {
@@ -75,6 +77,11 @@ class WordsNotifier extends ChangeNotifier {
       throw ArgumentError('sentences cannot be empty');
     }
 
+    final trimmedMeaning = meaning.trim();
+    if (trimmedMeaning.isEmpty) {
+      throw ArgumentError('meaning cannot be empty');
+    }
+
     final now = DateTime.now();
     final schedule = ReviewScheduleService.defaultSchedule;
     final imagePath =
@@ -83,6 +90,8 @@ class WordsNotifier extends ChangeNotifier {
     final card = WordCard(
       id: _uuid.v4(),
       word: word.trim(),
+      meaning: trimmedMeaning,
+      partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
       imagePath: imagePath,
       createdAt: now,

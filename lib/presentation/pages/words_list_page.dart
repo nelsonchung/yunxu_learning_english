@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
@@ -111,6 +112,14 @@ class WordsListPage extends StatelessWidget {
                                           : '無例句',
                                       maxLines: 2,
                                       overflow: TextOverflow.ellipsis,
+                                    ),
+                                    const SizedBox(height: 6),
+                                    Text(
+                                      '${card.meaning} · ${card.partOfSpeech.label}',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall
+                                          ?.copyWith(color: Colors.black54),
                                     ),
                                     const SizedBox(height: 8),
                                     Text(

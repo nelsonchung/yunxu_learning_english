@@ -88,6 +88,10 @@ class WordDetailPage extends StatelessWidget {
                             icon: Icons.schedule,
                             label: '下次複習 ${formatDate(card.nextReviewDate)}',
                           ),
+                          _InfoChip(
+                            icon: Icons.translate,
+                            label: '${card.partOfSpeech.label} · ${card.meaning}',
+                          ),
                         ],
                       ),
                     ],
