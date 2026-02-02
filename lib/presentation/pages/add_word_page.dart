@@ -5,6 +5,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
 import '../state/words_notifier.dart';
+import '../widgets/app_background.dart';
+import '../widgets/section_card.dart';
 import '../widgets/sentence_field_list.dart';
 
 class AddWordPage extends StatefulWidget {
@@ -137,71 +139,89 @@ class _AddWordPageState extends State<AddWordPage> {
       appBar: AppBar(
         title: const Text('新增單字'),
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text('單字'),
-            const SizedBox(height: 8),
-            TextField(
-              controller: _wordController,
-              decoration: const InputDecoration(
-                hintText: '請輸入英文單字',
-                border: OutlineInputBorder(),
-              ),
-            ),
-            const SizedBox(height: 16),
-            SentenceFieldList(
-              controllers: _sentenceControllers,
-              onAdd: _addSentence,
-              onRemove: _removeSentence,
-            ),
-            const SizedBox(height: 16),
-            const Text('圖片'),
-            const SizedBox(height: 8),
-            if (_imageFile != null)
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: Image.file(
-                  _imageFile!,
-                  width: double.infinity,
-                  height: 180,
-                  fit: BoxFit.cover,
+      body: AppBackground(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
+            children: [
+              SectionCard(
+                title: '英文單字',
+                subtitle: '輸入你要記住的單字',
+                child: TextField(
+                  controller: _wordController,
+                  decoration: const InputDecoration(
+                    hintText: '例如：inspiration',
+                  ),
                 ),
-              )
-            else
-              Container(
-                height: 120,
-                width: double.infinity,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Text('尚未選擇圖片'),
               ),
-            const SizedBox(height: 8),
-            TextButton.icon(
-              onPressed: _showImagePicker,
-              icon: const Icon(Icons.image),
-              label: const Text('選擇圖片'),
-            ),
-            const SizedBox(height: 24),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: _isSaving ? null : _save,
-                child: _isSaving
-                    ? const SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: CircularProgressIndicator(strokeWidth: 2),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '例句',
+                subtitle: '至少輸入一個例句',
+                child: SentenceFieldList(
+                  controllers: _sentenceControllers,
+                  onAdd: _addSentence,
+                  onRemove: _removeSentence,
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '圖片',
+                subtitle: '可選擇相關圖片幫助記憶',
+                child: Column(
+                  children: [
+                    if (_imageFile != null)
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: Image.file(
+                          _imageFile!,
+                          width: double.infinity,
+                          height: 180,
+                          fit: BoxFit.cover,
+                        ),
                       )
-                    : const Text('儲存'),
+                    else
+                      Container(
+                        height: 140,
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF0B6E99).withOpacity(0.08),
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: const Color(0xFF0B6E99).withOpacity(0.2),
+                          ),
+                        ),
+                        child: const Text('尚未選擇圖片'),
+                      ),
+                    const SizedBox(height: 12),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: TextButton.icon(
+                        onPressed: _showImagePicker,
+                        icon: const Icon(Icons.image_outlined),
+                        label: const Text('選擇圖片'),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _isSaving ? null : _save,
+                  child: _isSaving
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : const Text('儲存'),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -17,8 +17,6 @@ class SentenceFieldList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('例句'),
-        const SizedBox(height: 8),
         for (var i = 0; i < controllers.length; i++)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
@@ -44,7 +42,7 @@ class SentenceFieldList extends StatelessWidget {
               ],
             ),
           ),
-        TextButton.icon(
+        OutlinedButton.icon(
           onPressed: onAdd,
           icon: const Icon(Icons.add),
           label: const Text('新增句子'),

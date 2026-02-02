@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../state/words_notifier.dart';
+import '../widgets/app_background.dart';
 import 'about_page.dart';
 import 'today_page.dart';
 import 'words_list_page.dart';
@@ -36,32 +37,34 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('英文學習'),
       ),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _pages,
+      body: AppBackground(
+        child: IndexedStack(
+          index: _currentIndex,
+          children: _pages,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/add'),
         tooltip: '新增單字',
         child: const Icon(Icons.add),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _currentIndex,
+        onDestinationSelected: (index) {
           setState(() {
             _currentIndex = index;
           });
         },
-        items: const [
-          BottomNavigationBarItem(
+        destinations: const [
+          NavigationDestination(
             icon: Icon(Icons.today),
             label: '今日複習',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.list),
             label: '單字列表',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.info_outline),
             label: '說明',
           ),

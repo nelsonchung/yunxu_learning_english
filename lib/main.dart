@@ -7,6 +7,7 @@ import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
 import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
+import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/home_page.dart';
 import 'presentation/pages/word_detail_page.dart';
@@ -46,10 +47,7 @@ class EnglishLearningApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '英文學習',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.light(),
       routes: {
         '/': (context) => const HomePage(),
         '/add': (context) => const AddWordPage(),

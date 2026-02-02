@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../state/words_notifier.dart';
 import '../widgets/date_utils.dart';
+import '../widgets/section_card.dart';
 import '../widgets/sort_selector.dart';
 
 class WordsListPage extends StatelessWidget {
@@ -19,58 +20,158 @@ class WordsListPage extends StatelessWidget {
         }
 
         final words = notifier.words;
-        return Column(
+        final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
+
+        return ListView(
+          padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: Row(
-                children: [
-                  const Text('排序：'),
-                  SortSelector(
-                    mode: notifier.sortMode,
-                    onChanged: notifier.setSortMode,
-                  ),
-                ],
+            SectionCard(
+              title: '單字列表',
+              subtitle: '已建立 ${words.length} 個單字',
+              trailing: const Icon(Icons.sort, color: Color(0xFF0B6E99)),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SortSelector(
+                  mode: notifier.sortMode,
+                  onChanged: notifier.setSortMode,
+                ),
               ),
             ),
-            Expanded(
-              child: words.isEmpty
-                  ? const Center(child: Text('尚未新增單字'))
-                  : ListView.separated(
-                      padding: const EdgeInsets.all(16),
-                      itemCount: words.length,
-                      separatorBuilder: (_, __) => const SizedBox(height: 12),
-                      itemBuilder: (context, index) {
-                        final card = words[index];
-                        return ListTile(
-                          leading: card.imagePath != null
-                              ? ClipRRect(
-                                  borderRadius: BorderRadius.circular(6),
+            const SizedBox(height: 16),
+            if (words.isEmpty)
+              const _EmptyList()
+            else
+              ...words.map(
+                (card) => Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(18),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.05),
+                          blurRadius: 16,
+                          offset: const Offset(0, 8),
+                        ),
+                      ],
+                    ),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(18),
+                        onTap: () => Navigator.pushNamed(
+                          context,
+                          '/detail',
+                          arguments: card,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(14),
+                          child: Row(
+                            children: [
+                              if (card.imagePath != null)
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(12),
                                   child: Image.file(
                                     File(card.imagePath!),
-                                    width: 48,
-                                    height: 48,
+                                    width: 56,
+                                    height: 56,
                                     fit: BoxFit.cover,
                                   ),
                                 )
-                              : const CircleAvatar(child: Icon(Icons.book)),
-                          title: Text(card.word),
-                          subtitle: Text(
-                            '建立日：${formatDate(card.createdAt)}\n下次複習：${formatDate(card.nextReviewDate)}',
+                              else
+                                Container(
+                                  width: 56,
+                                  height: 56,
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF0B6E99)
+                                        .withOpacity(0.1),
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: const Icon(
+                                    Icons.book,
+                                    color: Color(0xFF0B6E99),
+                                  ),
+                                ),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      card.word,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium,
+                                    ),
+                                    const SizedBox(height: 6),
+                                    Text(
+                                      card.sentences.isNotEmpty
+                                          ? card.sentences.first
+                                          : '無例句',
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      '建立：${formatDate(card.createdAt)}  ·  下次：${formatDate(card.nextReviewDate)}',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall
+                                          ?.copyWith(color: Colors.black54),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Icon(Icons.chevron_right),
+                            ],
                           ),
-                          isThreeLine: true,
-                          onTap: () => Navigator.pushNamed(
-                            context,
-                            '/detail',
-                            arguments: card,
-                          ),
-                        );
-                      },
+                        ),
+                      ),
                     ),
-            ),
+                  ),
+                ),
+              ),
           ],
         );
       },
+    );
+  }
+}
+
+class _EmptyList extends StatelessWidget {
+  const _EmptyList();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 16,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              color: const Color(0xFFF2A65A).withOpacity(0.2),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: const Icon(Icons.edit_note, color: Color(0xFFF2A65A)),
+          ),
+          const SizedBox(width: 12),
+          const Expanded(child: Text('還沒有單字，先新增第一個吧。')),
+        ],
+      ),
     );
   }
 }

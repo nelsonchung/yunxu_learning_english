@@ -27,21 +27,20 @@ class SortSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButton<SortMode>(
-      value: mode,
-      onChanged: (value) {
-        if (value != null) {
-          onChanged(value);
-        }
-      },
-      items: SortMode.values
+    return SegmentedButton<SortMode>(
+      showSelectedIcon: false,
+      segments: SortMode.values
           .map(
-            (item) => DropdownMenuItem(
+            (item) => ButtonSegment<SortMode>(
               value: item,
-              child: Text(_labelFor(item)),
+              label: Text(_labelFor(item)),
             ),
           )
           .toList(),
+      selected: {mode},
+      onSelectionChanged: (selection) {
+        onChanged(selection.first);
+      },
     );
   }
 }
