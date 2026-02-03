@@ -57,12 +57,49 @@ class WordsNotifier extends ChangeNotifier {
     notifyListeners();
 
     final all = await _repository.fetchAll();
+    final migrated = await _migrateLegacyImages(all);
     _words
       ..clear()
-      ..addAll(all);
+      ..addAll(migrated);
 
     _isLoading = false;
     notifyListeners();
+  }
+
+  Future<List<WordCard>> _migrateLegacyImages(List<WordCard> cards) async {
+    var updated = false;
+    final migrated = <WordCard>[];
+
+    for (final card in cards) {
+      if (card.imageBytes == null && card.imagePath != null) {
+        final file = File(card.imagePath!);
+        if (await file.exists()) {
+          final bytes = await file.readAsBytes();
+          final newCard = card.copyWith(
+            imageBytes: bytes,
+            imagePath: null,
+          );
+          await _repository.update(newCard);
+          migrated.add(newCard);
+          updated = true;
+          continue;
+        }
+
+        final cleanedCard = card.copyWith(imagePath: null);
+        await _repository.update(cleanedCard);
+        migrated.add(cleanedCard);
+        updated = true;
+        continue;
+      }
+
+      migrated.add(card);
+    }
+
+    if (updated) {
+      notifyListeners();
+    }
+
+    return migrated;
   }
 
   void setSortMode(SortMode mode) {
@@ -93,8 +130,7 @@ class WordsNotifier extends ChangeNotifier {
 
     final now = DateTime.now();
     final schedule = ReviewScheduleService.defaultSchedule;
-    final imagePath =
-        imageFile != null ? await _imageStorage.saveImage(imageFile) : null;
+    final imageBytes = imageFile != null ? await imageFile.readAsBytes() : null;
 
     final card = WordCard(
       id: _uuid.v4(),
@@ -102,7 +138,8 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
-      imagePath: imagePath,
+      imagePath: null,
+      imageBytes: imageBytes,
       createdAt: now,
       reviewSchedule: schedule,
       nextReviewIndex: 0,
@@ -138,17 +175,23 @@ class WordsNotifier extends ChangeNotifier {
       throw ArgumentError('meaning cannot be empty');
     }
 
-    var imagePath = card.imagePath;
-    if (removeImage && imagePath != null) {
-      await _imageStorage.deleteImage(imagePath);
-      imagePath = null;
+    var imageBytes = card.imageBytes;
+    var legacyPath = card.imagePath;
+
+    if (removeImage) {
+      imageBytes = null;
+      if (legacyPath != null) {
+        await _imageStorage.deleteImage(legacyPath);
+        legacyPath = null;
+      }
     }
 
     if (imageFile != null) {
-      if (imagePath != null) {
-        await _imageStorage.deleteImage(imagePath);
+      imageBytes = await imageFile.readAsBytes();
+      if (legacyPath != null) {
+        await _imageStorage.deleteImage(legacyPath);
+        legacyPath = null;
       }
-      imagePath = await _imageStorage.saveImage(imageFile);
     }
 
     final updated = card.copyWith(
@@ -156,7 +199,8 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
-      imagePath: imagePath,
+      imagePath: legacyPath,
+      imageBytes: imageBytes,
     );
 
     await _repository.update(updated);

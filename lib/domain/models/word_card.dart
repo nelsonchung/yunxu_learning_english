@@ -51,6 +51,7 @@ class WordCard {
     required this.nextReviewDate,
     required this.history,
     this.imagePath,
+    this.imageBytes,
   });
 
   final String id;
@@ -59,6 +60,7 @@ class WordCard {
   final PartOfSpeech partOfSpeech;
   final List<String> sentences;
   final String? imagePath;
+  final List<int>? imageBytes;
   final DateTime createdAt;
   final List<int> reviewSchedule;
   final int nextReviewIndex;
@@ -72,6 +74,7 @@ class WordCard {
     PartOfSpeech? partOfSpeech,
     List<String>? sentences,
     String? imagePath,
+    List<int>? imageBytes,
     DateTime? createdAt,
     List<int>? reviewSchedule,
     int? nextReviewIndex,
@@ -85,6 +88,7 @@ class WordCard {
       partOfSpeech: partOfSpeech ?? this.partOfSpeech,
       sentences: sentences ?? this.sentences,
       imagePath: imagePath ?? this.imagePath,
+      imageBytes: imageBytes ?? this.imageBytes,
       createdAt: createdAt ?? this.createdAt,
       reviewSchedule: reviewSchedule ?? this.reviewSchedule,
       nextReviewIndex: nextReviewIndex ?? this.nextReviewIndex,
@@ -101,6 +105,7 @@ class WordCard {
       'partOfSpeech': partOfSpeech.name,
       'sentences': sentences,
       'imagePath': imagePath,
+      'imageBytes': imageBytes,
       'createdAt': createdAt.millisecondsSinceEpoch,
       'reviewSchedule': reviewSchedule,
       'nextReviewIndex': nextReviewIndex,
@@ -119,6 +124,12 @@ class WordCard {
       );
     }
 
+    List<int>? parsedBytes;
+    final bytesRaw = data['imageBytes'];
+    if (bytesRaw is List) {
+      parsedBytes = List<int>.from(bytesRaw);
+    }
+
     return WordCard(
       id: data['id'] as String,
       word: data['word'] as String,
@@ -126,6 +137,7 @@ class WordCard {
       partOfSpeech: parsedPart,
       sentences: List<String>.from(data['sentences'] as List),
       imagePath: data['imagePath'] as String?,
+      imageBytes: parsedBytes,
       createdAt: DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int),
       reviewSchedule: List<int>.from(data['reviewSchedule'] as List),
       nextReviewIndex: data['nextReviewIndex'] as int,

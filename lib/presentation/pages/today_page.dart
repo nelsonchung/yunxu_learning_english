@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -235,30 +236,11 @@ class _ReviewCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    if (card.imagePath != null)
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.file(
-                          File(card.imagePath!),
-                          width: 70,
-                          height: 70,
-                          fit: BoxFit.cover,
-                        ),
-                      )
-                    else
-                      Container(
-                        width: 70,
-                        height: 70,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF0B6E99).withOpacity(0.1),
-                          borderRadius: BorderRadius.circular(14),
-                        ),
-                        child: const Icon(Icons.book, color: Color(0xFF0B6E99)),
-                      ),
-                    const SizedBox(width: 12),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _Thumb(card: card),
+                  const SizedBox(width: 12),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -315,6 +297,49 @@ class _ReviewCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _Thumb extends StatelessWidget {
+  const _Thumb({required this.card});
+
+  final WordCard card;
+
+  @override
+  Widget build(BuildContext context) {
+    if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.memory(
+          Uint8List.fromList(card.imageBytes!),
+          width: 70,
+          height: 70,
+          fit: BoxFit.cover,
+        ),
+      );
+    }
+
+    if (card.imagePath != null) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.file(
+          File(card.imagePath!),
+          width: 70,
+          height: 70,
+          fit: BoxFit.cover,
+        ),
+      );
+    }
+
+    return Container(
+      width: 70,
+      height: 70,
+      decoration: BoxDecoration(
+        color: const Color(0xFF0B6E99).withOpacity(0.1),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: const Icon(Icons.book, color: Color(0xFF0B6E99)),
     );
   }
 }

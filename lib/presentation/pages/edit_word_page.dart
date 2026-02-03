@@ -26,6 +26,7 @@ class _EditWordPageState extends State<EditWordPage> {
 
   File? _imageFile;
   String? _existingImagePath;
+  List<int>? _existingImageBytes;
   bool _removeImage = false;
   bool _isSaving = false;
   PartOfSpeech _partOfSpeech = PartOfSpeech.noun;
@@ -62,6 +63,7 @@ class _EditWordPageState extends State<EditWordPage> {
       _meaningController.text = card.meaning;
       _partOfSpeech = card.partOfSpeech;
       _existingImagePath = card.imagePath;
+      _existingImageBytes = card.imageBytes;
       final sentences = card.sentences.isEmpty ? [''] : card.sentences;
       _sentenceControllers
         ..clear()
@@ -96,6 +98,8 @@ class _EditWordPageState extends State<EditWordPage> {
     }
     setState(() {
       _imageFile = File(picked.path);
+      _existingImageBytes = null;
+      _existingImagePath = null;
       _removeImage = false;
     });
   }
@@ -133,6 +137,7 @@ class _EditWordPageState extends State<EditWordPage> {
                     setState(() {
                       _imageFile = null;
                       _existingImagePath = null;
+                      _existingImageBytes = null;
                       _removeImage = true;
                     });
                   },
@@ -210,6 +215,7 @@ class _EditWordPageState extends State<EditWordPage> {
     }
 
     final imagePath = _imageFile?.path ?? _existingImagePath;
+    final imageBytes = _imageFile == null ? _existingImageBytes : null;
 
     return Scaffold(
       appBar: AppBar(
@@ -287,6 +293,7 @@ class _EditWordPageState extends State<EditWordPage> {
                     ImagePreview(
                       imageFile: _imageFile,
                       imagePath: imagePath,
+                      imageBytes: imageBytes,
                     ),
                     const SizedBox(height: 12),
                     Align(

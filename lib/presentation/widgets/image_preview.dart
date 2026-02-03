@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 
@@ -7,15 +8,36 @@ class ImagePreview extends StatelessWidget {
     super.key,
     required this.imageFile,
     this.imagePath,
+    this.imageBytes,
     this.height = 180,
   });
 
   final File? imageFile;
   final String? imagePath;
+  final List<int>? imageBytes;
   final double height;
 
   @override
   Widget build(BuildContext context) {
+    if (imageBytes != null && imageBytes!.isNotEmpty) {
+      return Container(
+        height: height,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.04),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(16),
+          child: Image.memory(
+            Uint8List.fromList(imageBytes!),
+            fit: BoxFit.contain,
+            alignment: Alignment.center,
+          ),
+        ),
+      );
+    }
+
     final file = imageFile ?? (imagePath != null ? File(imagePath!) : null);
 
     if (file == null) {

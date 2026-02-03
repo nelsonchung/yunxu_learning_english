@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -70,30 +71,7 @@ class WordsListPage extends StatelessWidget {
                           padding: const EdgeInsets.all(14),
                           child: Row(
                             children: [
-                              if (card.imagePath != null)
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(12),
-                                  child: Image.file(
-                                    File(card.imagePath!),
-                                    width: 56,
-                                    height: 56,
-                                    fit: BoxFit.cover,
-                                  ),
-                                )
-                              else
-                                Container(
-                                  width: 56,
-                                  height: 56,
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0B6E99)
-                                        .withOpacity(0.1),
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: const Icon(
-                                    Icons.book,
-                                    color: Color(0xFF0B6E99),
-                                  ),
-                                ),
+                              _Thumb(card: card),
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Column(
@@ -180,6 +158,52 @@ class _EmptyList extends StatelessWidget {
           const SizedBox(width: 12),
           const Expanded(child: Text('還沒有單字，先新增第一個吧。')),
         ],
+      ),
+    );
+  }
+}
+
+class _Thumb extends StatelessWidget {
+  const _Thumb({required this.card});
+
+  final WordCard card;
+
+  @override
+  Widget build(BuildContext context) {
+    if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.memory(
+          Uint8List.fromList(card.imageBytes!),
+          width: 56,
+          height: 56,
+          fit: BoxFit.cover,
+        ),
+      );
+    }
+
+    if (card.imagePath != null) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.file(
+          File(card.imagePath!),
+          width: 56,
+          height: 56,
+          fit: BoxFit.cover,
+        ),
+      );
+    }
+
+    return Container(
+      width: 56,
+      height: 56,
+      decoration: BoxDecoration(
+        color: const Color(0xFF0B6E99).withOpacity(0.1),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: const Icon(
+        Icons.book,
+        color: Color(0xFF0B6E99),
       ),
     );
   }

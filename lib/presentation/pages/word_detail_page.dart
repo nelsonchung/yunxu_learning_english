@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -76,7 +77,18 @@ class WordDetailPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          if (card.imagePath != null)
+                          if (card.imageBytes != null &&
+                              card.imageBytes!.isNotEmpty)
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(16),
+                              child: Image.memory(
+                                Uint8List.fromList(card.imageBytes!),
+                                height: 200,
+                                width: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
+                            )
+                          else if (card.imagePath != null)
                             ClipRRect(
                               borderRadius: BorderRadius.circular(16),
                               child: Image.file(
@@ -86,7 +98,9 @@ class WordDetailPage extends StatelessWidget {
                                 fit: BoxFit.cover,
                               ),
                             ),
-                          if (card.imagePath != null)
+                          if ((card.imageBytes != null &&
+                                  card.imageBytes!.isNotEmpty) ||
+                              card.imagePath != null)
                             const SizedBox(height: 16),
                           Text(
                             card.word,
