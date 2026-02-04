@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
@@ -12,7 +13,6 @@ class NotificationService {
   final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
   bool _initialized = false;
-  bool _permissionGranted = false;
 
   Future<void> initialize() async {
     if (_initialized) {
@@ -30,16 +30,35 @@ class NotificationService {
     );
 
     await _configureLocalTimeZone();
-    _permissionGranted = await _requestPermissions();
     _initialized = true;
   }
 
-  Future<void> scheduleDailyReminder(TimeOfDay time) async {
+  Future<bool> ensurePermission() async {
     if (!_initialized) {
       await initialize();
     }
 
-    if (!_permissionGranted) {
+    if (Platform.isIOS) {
+      final ios = _plugin.resolvePlatformSpecificImplementation<
+          IOSFlutterLocalNotificationsPlugin>();
+      final status = await ios?.checkPermissions();
+      if (status?.isEnabled == true) {
+        return true;
+      }
+      final requested = await ios?.requestPermissions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+      return requested ?? false;
+    }
+
+    return true;
+  }
+
+  Future<void> scheduleDailyReminder(TimeOfDay time) async {
+    final granted = await ensurePermission();
+    if (!granted) {
       return;
     }
 
@@ -55,7 +74,11 @@ class NotificationService {
         importance: Importance.high,
         priority: Priority.high,
       ),
-      iOS: DarwinNotificationDetails(),
+      iOS: DarwinNotificationDetails(
+        presentAlert: true,
+        presentBadge: true,
+        presentSound: true,
+      ),
     );
 
     await _plugin.zonedSchedule(
@@ -69,6 +92,13 @@ class NotificationService {
           UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
     );
+  }
+
+  Future<void> cancelDailyReminder() async {
+    if (!_initialized) {
+      await initialize();
+    }
+    await _plugin.cancel(dailyReminderId);
   }
 
   tz.TZDateTime _nextInstanceOfTime(TimeOfDay time) {
@@ -87,22 +117,13 @@ class NotificationService {
     tz.setLocalLocation(tz.getLocation(name));
   }
 
-  Future<bool> _requestPermissions() async {
-    if (Platform.isIOS || Platform.isMacOS) {
-      final ios = _plugin.resolvePlatformSpecificImplementation<
-          IOSFlutterLocalNotificationsPlugin>();
-      final result = await ios?.requestPermissions(
-        alert: true,
-        badge: true,
-        sound: true,
-      );
-      return result ?? false;
+  Future<void> openAppNotificationSettings() async {
+    if (!Platform.isIOS) {
+      return;
     }
-
-    if (Platform.isAndroid) {
-      return true;
-    }
-
-    return true;
+    final uri = Uri.parse('app-settings:');
+    try {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } catch (_) {}
   }
 }

@@ -33,6 +33,21 @@ class SettingsPage extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
             SectionCard(
+              title: '提醒功能',
+              subtitle: '開啟後會在設定時間提醒複習',
+              trailing: const Icon(Icons.alarm, color: Color(0xFF0B6E99)),
+              child: Row(
+                children: [
+                  const Expanded(child: Text('啟用提醒')),
+                  Switch(
+                    value: notifier.reminderEnabled,
+                    onChanged: notifier.setReminderEnabled,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SectionCard(
               title: '提醒時間',
               subtitle: '設定每天提醒複習的時間',
               trailing: const Icon(Icons.notifications_active_outlined,
@@ -42,7 +57,8 @@ class SettingsPage extends StatelessWidget {
                   Text('目前：${notifier.reminderTime.format(context)}'),
                   const Spacer(),
                   OutlinedButton(
-                    onPressed: () => _pickTime(context),
+                    onPressed:
+                        notifier.reminderEnabled ? () => _pickTime(context) : null,
                     child: const Text('設定時間'),
                   ),
                 ],

@@ -16,9 +16,11 @@ class SettingsNotifier extends ChangeNotifier {
 
   AppSettings _settings = AppSettings.defaults();
   bool _isLoading = false;
+  bool _didPromptSettings = false;
 
   bool get isLoading => _isLoading;
   bool get showImages => _settings.showImages;
+  bool get reminderEnabled => _settings.reminderEnabled;
 
   TimeOfDay get reminderTime {
     final hours = _settings.reminderMinutes ~/ 60;
@@ -31,7 +33,11 @@ class SettingsNotifier extends ChangeNotifier {
     notifyListeners();
 
     _settings = await _repository.fetch();
-    await _notificationService.scheduleDailyReminder(reminderTime);
+    if (_settings.reminderEnabled) {
+      await _ensurePermissionAndSchedule();
+    } else {
+      await _notificationService.cancelDailyReminder();
+    }
 
     _isLoading = false;
     notifyListeners();
@@ -41,7 +47,9 @@ class SettingsNotifier extends ChangeNotifier {
     final minutes = time.hour * 60 + time.minute;
     _settings = _settings.copyWith(reminderMinutes: minutes);
     await _repository.save(_settings);
-    await _notificationService.scheduleDailyReminder(time);
+    if (_settings.reminderEnabled) {
+      await _ensurePermissionAndSchedule();
+    }
     notifyListeners();
   }
 
@@ -49,5 +57,28 @@ class SettingsNotifier extends ChangeNotifier {
     _settings = _settings.copyWith(showImages: value);
     await _repository.save(_settings);
     notifyListeners();
+  }
+
+  Future<void> setReminderEnabled(bool value) async {
+    _settings = _settings.copyWith(reminderEnabled: value);
+    await _repository.save(_settings);
+    if (value) {
+      await _ensurePermissionAndSchedule();
+    } else {
+      await _notificationService.cancelDailyReminder();
+    }
+    notifyListeners();
+  }
+
+  Future<void> _ensurePermissionAndSchedule() async {
+    final granted = await _notificationService.ensurePermission();
+    if (!granted && !_didPromptSettings) {
+      _didPromptSettings = true;
+      await _notificationService.openAppNotificationSettings();
+      return;
+    }
+    if (granted) {
+      await _notificationService.scheduleDailyReminder(reminderTime);
+    }
   }
 }
