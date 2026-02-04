@@ -78,14 +78,15 @@ final class CloudSyncHandler {
 
     let operation = CKModifyRecordsOperation(recordsToSave: ckRecords, recordIDsToDelete: nil)
     operation.savePolicy = .changedKeys
-    operation.modifyRecordsCompletionBlock = { _, _, error in
+    operation.modifyRecordsResultBlock = { result in
       for url in tempFiles {
         try? FileManager.default.removeItem(at: url)
       }
-      if let error = error {
-        completion(.failure(error))
-      } else {
+      switch result {
+      case .success:
         completion(.success(()))
+      case .failure(let error):
+        completion(.failure(error))
       }
     }
 
@@ -98,19 +99,32 @@ final class CloudSyncHandler {
     query.sortDescriptors = [NSSortDescriptor(key: "updatedAt", ascending: true)]
 
     var allRecords: [[String: Any]] = []
+    var recordError: Error?
     let operation = CKQueryOperation(query: query)
-    operation.recordFetchedBlock = { record in
-      allRecords.append(Self.mapRecord(record))
+    operation.recordMatchedBlock = { _, result in
+      switch result {
+      case .success(let record):
+        allRecords.append(Self.mapRecord(record))
+      case .failure(let error):
+        if recordError == nil {
+          recordError = error
+        }
+      }
     }
-    operation.queryCompletionBlock = { cursor, error in
-      if let error = error {
+    operation.queryResultBlock = { result in
+      if let error = recordError {
         completion(.failure(error))
         return
       }
-      if let cursor = cursor {
-        self.fetchWithCursor(cursor, accumulator: allRecords, completion: completion)
-      } else {
-        completion(.success(allRecords))
+      switch result {
+      case .success(let cursor):
+        if let cursor = cursor {
+          self.fetchWithCursor(cursor, accumulator: allRecords, completion: completion)
+        } else {
+          completion(.success(allRecords))
+        }
+      case .failure(let error):
+        completion(.failure(error))
       }
     }
     database.add(operation)
@@ -120,19 +134,32 @@ final class CloudSyncHandler {
                                accumulator: [[String: Any]],
                                completion: @escaping (Result<[[String: Any]], Error>) -> Void) {
     var allRecords = accumulator
+    var recordError: Error?
     let operation = CKQueryOperation(cursor: cursor)
-    operation.recordFetchedBlock = { record in
-      allRecords.append(Self.mapRecord(record))
+    operation.recordMatchedBlock = { _, result in
+      switch result {
+      case .success(let record):
+        allRecords.append(Self.mapRecord(record))
+      case .failure(let error):
+        if recordError == nil {
+          recordError = error
+        }
+      }
     }
-    operation.queryCompletionBlock = { nextCursor, error in
-      if let error = error {
+    operation.queryResultBlock = { result in
+      if let error = recordError {
         completion(.failure(error))
         return
       }
-      if let nextCursor = nextCursor {
-        self.fetchWithCursor(nextCursor, accumulator: allRecords, completion: completion)
-      } else {
-        completion(.success(allRecords))
+      switch result {
+      case .success(let nextCursor):
+        if let nextCursor = nextCursor {
+          self.fetchWithCursor(nextCursor, accumulator: allRecords, completion: completion)
+        } else {
+          completion(.success(allRecords))
+        }
+      case .failure(let error):
+        completion(.failure(error))
       }
     }
     database.add(operation)
