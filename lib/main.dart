@@ -9,6 +9,7 @@ import 'data/repositories/local_settings_repository.dart';
 import 'data/sources/settings_local_db.dart';
 import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
+import 'domain/services/notification_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -29,6 +30,8 @@ Future<void> main() async {
   final settingsRepository = LocalSettingsRepository(
     localDb: SettingsLocalDb(),
   );
+  final notificationService = NotificationService();
+  await notificationService.initialize();
 
   runApp(
     MultiProvider(
@@ -44,6 +47,7 @@ Future<void> main() async {
         ChangeNotifierProvider(
           create: (_) => SettingsNotifier(
             repository: settingsRepository,
+            notificationService: notificationService,
           ),
         ),
       ],

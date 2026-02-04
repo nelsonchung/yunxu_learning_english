@@ -41,6 +41,9 @@ dependencies:
   provider: ^6.1.2
   uuid: ^4.5.1
   google_fonts: ^6.2.1
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  flutter_native_timezone: ^2.0.0
 
 dev_dependencies:
   flutter_test:
