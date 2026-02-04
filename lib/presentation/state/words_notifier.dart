@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -6,6 +7,7 @@ import 'package:uuid/uuid.dart';
 import '../../data/repositories/word_repository.dart';
 import '../../data/storage/image_storage.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/services/cloud_sync_service.dart';
 import '../../domain/services/review_schedule_service.dart';
 import '../../domain/services/sort_service.dart';
 
@@ -15,15 +17,18 @@ class WordsNotifier extends ChangeNotifier {
     required ReviewScheduleService scheduleService,
     required SortService sortService,
     required ImageStorage imageStorage,
+    CloudSyncService? syncService,
   })  : _repository = repository,
         _scheduleService = scheduleService,
         _sortService = sortService,
-        _imageStorage = imageStorage;
+        _imageStorage = imageStorage,
+        _syncService = syncService;
 
   final WordRepository _repository;
   final ReviewScheduleService _scheduleService;
   final SortService _sortService;
   final ImageStorage _imageStorage;
+  final CloudSyncService? _syncService;
   final _uuid = const Uuid();
 
   final List<WordCard> _words = [];
@@ -64,6 +69,19 @@ class WordsNotifier extends ChangeNotifier {
 
     _isLoading = false;
     notifyListeners();
+
+    if (_syncService != null) {
+      unawaited(_syncAndReload());
+    }
+  }
+
+  Future<void> _syncAndReload() async {
+    await _syncService?.sync();
+    final refreshed = await _repository.fetchAll();
+    _words
+      ..clear()
+      ..addAll(refreshed);
+    notifyListeners();
   }
 
   Future<List<WordCard>> _migrateLegacyImages(List<WordCard> cards) async {
@@ -78,6 +96,7 @@ class WordsNotifier extends ChangeNotifier {
           final newCard = card.copyWith(
             imageBytes: bytes,
             imagePath: null,
+            updatedAt: DateTime.now(),
           );
           await _repository.update(newCard);
           migrated.add(newCard);
@@ -85,7 +104,10 @@ class WordsNotifier extends ChangeNotifier {
           continue;
         }
 
-        final cleanedCard = card.copyWith(imagePath: null);
+        final cleanedCard = card.copyWith(
+          imagePath: null,
+          updatedAt: DateTime.now(),
+        );
         await _repository.update(cleanedCard);
         migrated.add(cleanedCard);
         updated = true;
@@ -141,15 +163,21 @@ class WordsNotifier extends ChangeNotifier {
       imagePath: null,
       imageBytes: imageBytes,
       createdAt: now,
+      updatedAt: now,
       reviewSchedule: schedule,
       nextReviewIndex: 0,
       nextReviewDate: _scheduleService.initialNextDate(now),
       history: [],
+      isDeleted: false,
     );
 
     await _repository.add(card);
     _words.add(card);
     notifyListeners();
+    final syncService = _syncService;
+    if (syncService != null) {
+      unawaited(syncService.sync());
+    }
   }
 
   Future<void> updateWord({
@@ -201,6 +229,7 @@ class WordsNotifier extends ChangeNotifier {
       sentences: cleanedSentences,
       imagePath: legacyPath,
       imageBytes: imageBytes,
+      updatedAt: DateTime.now(),
     );
 
     await _repository.update(updated);
@@ -211,10 +240,16 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
+    final syncService = _syncService;
+    if (syncService != null) {
+      unawaited(syncService.sync());
+    }
   }
 
   Future<void> markReviewed(WordCard card) async {
-    final updated = _scheduleService.advanceReview(card, DateTime.now());
+    final updated = _scheduleService
+        .advanceReview(card, DateTime.now())
+        .copyWith(updatedAt: DateTime.now());
     await _repository.update(updated);
 
     final index = _words.indexWhere((item) => item.id == card.id);
@@ -223,11 +258,23 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
+    final syncService = _syncService;
+    if (syncService != null) {
+      unawaited(syncService.sync());
+    }
   }
 
   Future<void> deleteWord(WordCard card) async {
-    await _repository.delete(card.id);
+    final updated = card.copyWith(
+      isDeleted: true,
+      updatedAt: DateTime.now(),
+    );
+    await _repository.update(updated);
     _words.removeWhere((item) => item.id == card.id);
     notifyListeners();
+    final syncService = _syncService;
+    if (syncService != null) {
+      unawaited(syncService.sync());
+    }
   }
 }

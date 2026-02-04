@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
@@ -7,9 +9,12 @@ import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
 import 'data/repositories/local_settings_repository.dart';
 import 'data/sources/settings_local_db.dart';
+import 'data/repositories/local_sync_state_repository.dart';
+import 'data/sources/sync_state_local_db.dart';
 import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
+import 'domain/services/cloud_sync_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -30,8 +35,19 @@ Future<void> main() async {
   final settingsRepository = LocalSettingsRepository(
     localDb: SettingsLocalDb(),
   );
+  final syncStateRepository = LocalSyncStateRepository(
+    localDb: SyncStateLocalDb(),
+  );
   final notificationService = NotificationService();
   await notificationService.initialize();
+  CloudSyncService? cloudSyncService;
+  if (Platform.isIOS || Platform.isMacOS) {
+    cloudSyncService = CloudSyncService(
+      wordRepository: repository,
+      syncStateRepository: syncStateRepository,
+      containerId: 'iCloud.com.yunxu.yunxulearn',
+    );
+  }
 
   runApp(
     MultiProvider(
@@ -42,6 +58,7 @@ Future<void> main() async {
             scheduleService: scheduleService,
             sortService: SortService(),
             imageStorage: ImageStorage(),
+            syncService: cloudSyncService,
           ),
         ),
         ChangeNotifierProvider(

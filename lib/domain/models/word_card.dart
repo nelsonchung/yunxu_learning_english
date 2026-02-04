@@ -46,10 +46,12 @@ class WordCard {
     required this.partOfSpeech,
     required this.sentences,
     required this.createdAt,
+    required this.updatedAt,
     required this.reviewSchedule,
     required this.nextReviewIndex,
     required this.nextReviewDate,
     required this.history,
+    required this.isDeleted,
     this.imagePath,
     this.imageBytes,
   });
@@ -62,10 +64,12 @@ class WordCard {
   final String? imagePath;
   final List<int>? imageBytes;
   final DateTime createdAt;
+  final DateTime updatedAt;
   final List<int> reviewSchedule;
   final int nextReviewIndex;
   final DateTime nextReviewDate;
   final List<DateTime> history;
+  final bool isDeleted;
 
   WordCard copyWith({
     String? id,
@@ -76,10 +80,12 @@ class WordCard {
     String? imagePath,
     List<int>? imageBytes,
     DateTime? createdAt,
+    DateTime? updatedAt,
     List<int>? reviewSchedule,
     int? nextReviewIndex,
     DateTime? nextReviewDate,
     List<DateTime>? history,
+    bool? isDeleted,
   }) {
     return WordCard(
       id: id ?? this.id,
@@ -90,10 +96,12 @@ class WordCard {
       imagePath: imagePath ?? this.imagePath,
       imageBytes: imageBytes ?? this.imageBytes,
       createdAt: createdAt ?? this.createdAt,
+      updatedAt: updatedAt ?? this.updatedAt,
       reviewSchedule: reviewSchedule ?? this.reviewSchedule,
       nextReviewIndex: nextReviewIndex ?? this.nextReviewIndex,
       nextReviewDate: nextReviewDate ?? this.nextReviewDate,
       history: history ?? this.history,
+      isDeleted: isDeleted ?? this.isDeleted,
     );
   }
 
@@ -107,10 +115,12 @@ class WordCard {
       'imagePath': imagePath,
       'imageBytes': imageBytes,
       'createdAt': createdAt.millisecondsSinceEpoch,
+      'updatedAt': updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': reviewSchedule,
       'nextReviewIndex': nextReviewIndex,
       'nextReviewDate': nextReviewDate.millisecondsSinceEpoch,
       'history': history.map((item) => item.millisecondsSinceEpoch).toList(),
+      'isDeleted': isDeleted,
     };
   }
 
@@ -130,6 +140,14 @@ class WordCard {
       parsedBytes = List<int>.from(bytesRaw);
     }
 
+    final updatedRaw = data['updatedAt'];
+    final updatedAt = updatedRaw is int
+        ? DateTime.fromMillisecondsSinceEpoch(updatedRaw)
+        : DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int);
+
+    final isDeletedRaw = data['isDeleted'];
+    final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
+
     return WordCard(
       id: data['id'] as String,
       word: data['word'] as String,
@@ -139,6 +157,7 @@ class WordCard {
       imagePath: data['imagePath'] as String?,
       imageBytes: parsedBytes,
       createdAt: DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int),
+      updatedAt: updatedAt,
       reviewSchedule: List<int>.from(data['reviewSchedule'] as List),
       nextReviewIndex: data['nextReviewIndex'] as int,
       nextReviewDate:
@@ -146,6 +165,7 @@ class WordCard {
       history: (data['history'] as List)
           .map((item) => DateTime.fromMillisecondsSinceEpoch(item as int))
           .toList(),
+      isDeleted: isDeleted,
     );
   }
 }

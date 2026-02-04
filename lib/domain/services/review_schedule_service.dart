@@ -29,6 +29,9 @@ class ReviewScheduleService {
   }
 
   bool isDueOnOrBefore(WordCard card, DateTime day) {
+    if (card.isDeleted) {
+      return false;
+    }
     if (card.nextReviewIndex >= card.reviewSchedule.length) {
       return false;
     }
