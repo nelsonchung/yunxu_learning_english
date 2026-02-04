@@ -1,0 +1,72 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../state/settings_notifier.dart';
+import '../widgets/section_card.dart';
+
+class SettingsPage extends StatelessWidget {
+  const SettingsPage({super.key});
+
+  Future<void> _pickTime(BuildContext context) async {
+    final notifier = context.read<SettingsNotifier>();
+    final initial = notifier.reminderTime;
+    final picked = await showTimePicker(
+      context: context,
+      initialTime: initial,
+    );
+    if (picked != null) {
+      await notifier.setReminderTime(picked);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<SettingsNotifier>(
+      builder: (context, notifier, _) {
+        if (notifier.isLoading) {
+          return const Center(child: CircularProgressIndicator());
+        }
+
+        final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
+
+        return ListView(
+          padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
+          children: [
+            SectionCard(
+              title: '提醒時間',
+              subtitle: '設定每天提醒複習的時間',
+              trailing: const Icon(Icons.notifications_active_outlined,
+                  color: Color(0xFF0B6E99)),
+              child: Row(
+                children: [
+                  Text('目前：${notifier.reminderTime.format(context)}'),
+                  const Spacer(),
+                  OutlinedButton(
+                    onPressed: () => _pickTime(context),
+                    child: const Text('設定時間'),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '圖片欄位顯示',
+              subtitle: '控制新增/編輯頁是否顯示圖片欄位',
+              trailing: const Icon(Icons.image_outlined,
+                  color: Color(0xFF0B6E99)),
+              child: Row(
+                children: [
+                  const Expanded(child: Text('顯示圖片欄位')),
+                  Switch(
+                    value: notifier.showImages,
+                    onChanged: notifier.setShowImages,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}

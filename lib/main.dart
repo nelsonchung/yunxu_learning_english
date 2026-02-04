@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 import 'data/repositories/local_word_repository.dart';
 import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
+import 'data/repositories/local_settings_repository.dart';
+import 'data/sources/settings_local_db.dart';
 import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
 import 'presentation/theme/app_theme.dart';
@@ -12,6 +14,7 @@ import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
 import 'presentation/pages/home_page.dart';
 import 'presentation/pages/word_detail_page.dart';
+import 'presentation/state/settings_notifier.dart';
 import 'presentation/state/words_notifier.dart';
 
 Future<void> main() async {
@@ -23,6 +26,9 @@ Future<void> main() async {
     localDb: WordLocalDb(),
     scheduleService: scheduleService,
   );
+  final settingsRepository = LocalSettingsRepository(
+    localDb: SettingsLocalDb(),
+  );
 
   runApp(
     MultiProvider(
@@ -33,6 +39,11 @@ Future<void> main() async {
             scheduleService: scheduleService,
             sortService: SortService(),
             imageStorage: ImageStorage(),
+          ),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => SettingsNotifier(
+            repository: settingsRepository,
           ),
         ),
       ],

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
+import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
@@ -56,6 +57,8 @@ class WordDetailPage extends StatelessWidget {
               if (card == null) {
                 return const Center(child: Text('找不到單字資料'));
               }
+              final showImages =
+                  context.watch<SettingsNotifier>().showImages;
 
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
@@ -77,31 +80,33 @@ class WordDetailPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          if (card.imageBytes != null &&
-                              card.imageBytes!.isNotEmpty)
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: Image.memory(
-                                Uint8List.fromList(card.imageBytes!),
-                                height: 200,
-                                width: double.infinity,
-                                fit: BoxFit.cover,
+                          if (showImages) ...[
+                            if (card.imageBytes != null &&
+                                card.imageBytes!.isNotEmpty)
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(16),
+                                child: Image.memory(
+                                  Uint8List.fromList(card.imageBytes!),
+                                  height: 200,
+                                  width: double.infinity,
+                                  fit: BoxFit.cover,
+                                ),
+                              )
+                            else if (card.imagePath != null)
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(16),
+                                child: Image.file(
+                                  File(card.imagePath!),
+                                  height: 200,
+                                  width: double.infinity,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
-                            )
-                          else if (card.imagePath != null)
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: Image.file(
-                                File(card.imagePath!),
-                                height: 200,
-                                width: double.infinity,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          if ((card.imageBytes != null &&
-                                  card.imageBytes!.isNotEmpty) ||
-                              card.imagePath != null)
-                            const SizedBox(height: 16),
+                            if ((card.imageBytes != null &&
+                                    card.imageBytes!.isNotEmpty) ||
+                                card.imagePath != null)
+                              const SizedBox(height: 16),
+                          ],
                           Text(
                             card.word,
                             style: Theme.of(context).textTheme.headlineSmall,
@@ -186,13 +191,18 @@ class _InfoChip extends StatelessWidget {
         color: const Color(0xFF0B6E99).withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 16, color: const Color(0xFF0B6E99)),
-          const SizedBox(width: 6),
-          Text(label),
-        ],
+      child: Text.rich(
+        TextSpan(
+          children: [
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Icon(icon, size: 16, color: const Color(0xFF0B6E99)),
+            ),
+            const TextSpan(text: ' '),
+            TextSpan(text: label),
+          ],
+        ),
+        softWrap: true,
       ),
     );
   }

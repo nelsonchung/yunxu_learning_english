@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
+import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
 import '../widgets/image_preview.dart';
 import '../widgets/section_card.dart';
@@ -217,24 +218,26 @@ class _AddWordPageState extends State<AddWordPage> {
                 ),
               ),
               const SizedBox(height: 16),
-              SectionCard(
-                title: '圖片',
-                subtitle: '可選擇相關圖片幫助記憶',
-                child: Column(
-                  children: [
-                    ImagePreview(imageFile: _imageFile),
-                    const SizedBox(height: 12),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: TextButton.icon(
-                        onPressed: _showImagePicker,
-                        icon: const Icon(Icons.image_outlined),
-                        label: const Text('選擇圖片'),
+              if (context.watch<SettingsNotifier>().showImages) ...[
+                SectionCard(
+                  title: '圖片',
+                  subtitle: '可選擇相關圖片幫助記憶',
+                  child: Column(
+                    children: [
+                      ImagePreview(imageFile: _imageFile),
+                      const SizedBox(height: 12),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: TextButton.icon(
+                          onPressed: _showImagePicker,
+                          icon: const Icon(Icons.image_outlined),
+                          label: const Text('選擇圖片'),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
+              ],
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,

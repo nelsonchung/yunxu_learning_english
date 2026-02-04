@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
+import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
 
 class TodayPage extends StatelessWidget {
@@ -20,6 +21,7 @@ class TodayPage extends StatelessWidget {
         }
 
         final dueList = notifier.dueToday();
+        final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
 
         return ListView(
@@ -41,6 +43,7 @@ class TodayPage extends StatelessWidget {
                       '/detail',
                       arguments: card.id,
                     ),
+                    showImage: showImages,
                   ),
                 ),
               ),
@@ -206,11 +209,13 @@ class _ReviewCard extends StatelessWidget {
     required this.card,
     required this.onReview,
     required this.onTap,
+    required this.showImage,
   });
 
   final WordCard card;
   final VoidCallback onReview;
   final VoidCallback onTap;
+  final bool showImage;
 
   @override
   Widget build(BuildContext context) {
@@ -239,11 +244,13 @@ class _ReviewCard extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _Thumb(card: card),
-                  const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                  if (showImage) ...[
+                    _Thumb(card: card),
+                    const SizedBox(width: 12),
+                  ],
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             card.word,

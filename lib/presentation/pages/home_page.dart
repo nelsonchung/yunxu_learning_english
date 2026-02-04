@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../state/words_notifier.dart';
+import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
 import 'about_page.dart';
+import 'settings_page.dart';
 import 'today_page.dart';
 import 'words_list_page.dart';
 
@@ -21,6 +23,7 @@ class _HomePageState extends State<HomePage> {
     TodayPage(),
     WordsListPage(),
     AboutPage(),
+    SettingsPage(),
   ];
 
   @override
@@ -28,6 +31,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<WordsNotifier>().load();
+      context.read<SettingsNotifier>().load();
     });
   }
 
@@ -67,6 +71,10 @@ class _HomePageState extends State<HomePage> {
           NavigationDestination(
             icon: Icon(Icons.info_outline),
             label: '說明',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.settings_outlined),
+            label: '設定',
           ),
         ],
       ),

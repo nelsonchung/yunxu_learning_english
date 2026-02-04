@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
+import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sort_selector.dart';
@@ -22,6 +23,7 @@ class WordsListPage extends StatelessWidget {
         }
 
         final words = notifier.words;
+        final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
 
         return ListView(
@@ -69,10 +71,12 @@ class WordsListPage extends StatelessWidget {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(14),
-                          child: Row(
-                            children: [
-                              _Thumb(card: card),
-                              const SizedBox(width: 12),
+                        child: Row(
+                          children: [
+                              if (showImages) ...[
+                                _Thumb(card: card),
+                                const SizedBox(width: 12),
+                              ],
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
