@@ -20,12 +20,13 @@ class NotificationService {
     }
 
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosSettings = DarwinInitializationSettings();
+    const darwinSettings = DarwinInitializationSettings();
 
     await _plugin.initialize(
       const InitializationSettings(
         android: androidSettings,
-        iOS: iosSettings,
+        iOS: darwinSettings,
+        macOS: darwinSettings,
       ),
     );
 
@@ -75,6 +76,11 @@ class NotificationService {
         priority: Priority.high,
       ),
       iOS: DarwinNotificationDetails(
+        presentAlert: true,
+        presentBadge: true,
+        presentSound: true,
+      ),
+      macOS: DarwinNotificationDetails(
         presentAlert: true,
         presentBadge: true,
         presentSound: true,
