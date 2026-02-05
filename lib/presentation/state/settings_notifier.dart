@@ -21,6 +21,7 @@ class SettingsNotifier extends ChangeNotifier {
   bool get isLoading => _isLoading;
   bool get showImages => _settings.showImages;
   bool get reminderEnabled => _settings.reminderEnabled;
+  int get syncIntervalSeconds => _settings.syncIntervalSeconds;
 
   TimeOfDay get reminderTime {
     final hours = _settings.reminderMinutes ~/ 60;
@@ -67,6 +68,12 @@ class SettingsNotifier extends ChangeNotifier {
     } else {
       await _notificationService.cancelDailyReminder();
     }
+    notifyListeners();
+  }
+
+  Future<void> setSyncIntervalSeconds(int seconds) async {
+    _settings = _settings.copyWith(syncIntervalSeconds: seconds);
+    await _repository.save(_settings);
     notifyListeners();
   }
 

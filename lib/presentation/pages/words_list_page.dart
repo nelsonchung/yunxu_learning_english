@@ -23,6 +23,8 @@ class WordsListPage extends StatelessWidget {
         }
 
         final words = notifier.words;
+        final canSync = notifier.canSync;
+        final isSyncing = notifier.isSyncing;
         final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
 
@@ -32,7 +34,34 @@ class WordsListPage extends StatelessWidget {
             SectionCard(
               title: '單字列表',
               subtitle: '已建立 ${words.length} 個單字',
-              trailing: const Icon(Icons.sort, color: Color(0xFF0B6E99)),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (canSync)
+                    IconButton(
+                      tooltip: isSyncing ? '同步中...' : '手動同步',
+                      visualDensity: VisualDensity.compact,
+                      onPressed: isSyncing
+                          ? null
+                          : () async {
+                              await notifier.syncNow();
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(content: Text('同步完成')),
+                                );
+                              }
+                            },
+                      icon: isSyncing
+                          ? const SizedBox(
+                              width: 18,
+                              height: 18,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            )
+                          : const Icon(Icons.sync, color: Color(0xFF0B6E99)),
+                    ),
+                  const Icon(Icons.sort, color: Color(0xFF0B6E99)),
+                ],
+              ),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: SortSelector(

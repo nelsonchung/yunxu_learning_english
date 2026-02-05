@@ -34,10 +34,15 @@ class WordsNotifier extends ChangeNotifier {
   final List<WordCard> _words = [];
   SortMode _sortMode = SortMode.alphabetAsc;
   bool _isLoading = false;
+  bool _isSyncing = false;
+  Timer? _pollingTimer;
+  int _syncIntervalSeconds = 60;
 
   List<WordCard> get words => _sortService.sort(_words, _sortMode);
   SortMode get sortMode => _sortMode;
   bool get isLoading => _isLoading;
+  bool get isSyncing => _isSyncing;
+  bool get canSync => _syncService != null;
 
   WordCard? findById(String id) {
     for (final card in _words) {
@@ -71,17 +76,60 @@ class WordsNotifier extends ChangeNotifier {
     notifyListeners();
 
     if (_syncService != null) {
-      unawaited(_syncAndReload());
+      unawaited(syncNow());
+      _startPolling();
     }
   }
 
-  Future<void> _syncAndReload() async {
-    await _syncService?.sync();
-    final refreshed = await _repository.fetchAll();
-    _words
-      ..clear()
-      ..addAll(refreshed);
+  Future<void> syncNow() async {
+    final syncService = _syncService;
+    if (syncService == null || _isSyncing) {
+      return;
+    }
+    _isSyncing = true;
     notifyListeners();
+    try {
+      await syncService.sync();
+      final refreshed = await _repository.fetchAll();
+      _words
+        ..clear()
+        ..addAll(refreshed);
+    } finally {
+      _isSyncing = false;
+      notifyListeners();
+    }
+  }
+
+  void setSyncIntervalSeconds(int seconds) {
+    if (seconds <= 0 || _syncIntervalSeconds == seconds) {
+      return;
+    }
+    _syncIntervalSeconds = seconds;
+    if (_syncService != null) {
+      _stopPolling();
+      _startPolling();
+    }
+  }
+
+  void _startPolling() {
+    if (_pollingTimer?.isActive == true) {
+      return;
+    }
+    _pollingTimer = Timer.periodic(
+      Duration(seconds: _syncIntervalSeconds),
+      (_) => unawaited(syncNow()),
+    );
+  }
+
+  void _stopPolling() {
+    _pollingTimer?.cancel();
+    _pollingTimer = null;
+  }
+
+  @override
+  void dispose() {
+    _stopPolling();
+    super.dispose();
   }
 
   Future<List<WordCard>> _migrateLegacyImages(List<WordCard> cards) async {

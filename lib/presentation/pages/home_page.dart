@@ -30,8 +30,14 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      context.read<WordsNotifier>().load();
-      context.read<SettingsNotifier>().load();
+      final wordsNotifier = context.read<WordsNotifier>();
+      final settingsNotifier = context.read<SettingsNotifier>();
+      wordsNotifier.load();
+      settingsNotifier.load().then((_) {
+        wordsNotifier.setSyncIntervalSeconds(
+          settingsNotifier.syncIntervalSeconds,
+        );
+      });
     });
   }
 
