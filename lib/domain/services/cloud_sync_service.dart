@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../../data/repositories/sync_state_repository.dart';
@@ -108,8 +109,15 @@ class CloudSyncService {
       }
 
       await _syncStateRepository.save(SyncState(lastSyncAt: nextSyncAt));
-    } catch (_) {
-      // Ignore sync errors; keep local-first behavior.
+    } catch (error, stack) {
+      if (error is PlatformException) {
+        debugPrint(
+          'CloudSyncService PlatformException: code=${error.code} message=${error.message} details=${error.details}',
+        );
+      } else {
+        debugPrint('CloudSyncService sync failed: $error');
+      }
+      debugPrint('CloudSyncService stack: $stack');
     } finally {
       _isSyncing = false;
     }

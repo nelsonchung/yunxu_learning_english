@@ -27,9 +27,10 @@ show_menu() {
     echo "6) Linux Desktop (僅限 Linux)"
     echo "7) Web"
     echo "---------------------------------------"
-    echo -e "${YELLOW}8) 在裝置上執行 Release 模式 (flutter run --release)${NC}"
-    echo "9) macOS Debug 執行 (flutter run -d macos)"
-    echo "10) 清理專案 (flutter clean + flutter pub get)"
+    echo -e "${YELLOW}8) iOS 裝置 Release 執行 (flutter run --release)${NC}"
+    echo -e "${YELLOW}9) macOS Release 執行 (flutter run -d macos --release)${NC}"
+    echo "10) macOS Debug 執行 (flutter run -d macos)"
+    echo "11) 清理專案 (flutter clean + flutter pub get)"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -46,11 +47,12 @@ while true; do
         5) flutter build windows --release ;;
         6) flutter build linux --release ;;
         7) flutter build web --release ;;
-        8) 
-            echo -e "${YELLOW}提示: 請確保手機已連線並開啟開發者模式${NC}"
+        8)
+            echo -e "${YELLOW}提示: 請確保 iPhone 已連線並開啟開發者模式${NC}"
             flutter run --release ;;
-        9) flutter run -d macos ;;
-        10)
+        9) flutter run -d macos --release ;;
+        10) flutter run -d macos ;;
+        11)
             flutter clean
             flutter pub get ;;
         q) echo "離開程式..."; exit 0 ;;

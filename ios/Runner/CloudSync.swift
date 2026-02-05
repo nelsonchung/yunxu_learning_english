@@ -83,6 +83,7 @@ final class CloudSyncHandler {
         try? FileManager.default.removeItem(at: url)
       }
       if let error = error {
+        NSLog("CloudSync pushChanges failed: %@", String(describing: error))
         completion(.failure(error))
       } else {
         completion(.success(()))
@@ -104,6 +105,7 @@ final class CloudSyncHandler {
     }
     operation.queryCompletionBlock = { cursor, error in
       if let error = error {
+        NSLog("CloudSync fetchChanges failed: %@", String(describing: error))
         completion(.failure(error))
         return
       }
@@ -126,6 +128,7 @@ final class CloudSyncHandler {
     }
     operation.queryCompletionBlock = { nextCursor, error in
       if let error = error {
+        NSLog("CloudSync fetchWithCursor failed: %@", String(describing: error))
         completion(.failure(error))
         return
       }

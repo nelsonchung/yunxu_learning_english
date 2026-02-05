@@ -86,6 +86,7 @@ final class CloudSyncHandler {
       case .success:
         completion(.success(()))
       case .failure(let error):
+        NSLog("CloudSync pushChanges failed: %@", String(describing: error))
         completion(.failure(error))
       }
     }
@@ -113,6 +114,7 @@ final class CloudSyncHandler {
     }
     operation.queryResultBlock = { result in
       if let error = recordError {
+        NSLog("CloudSync fetchChanges record error: %@", String(describing: error))
         completion(.failure(error))
         return
       }
@@ -124,6 +126,7 @@ final class CloudSyncHandler {
           completion(.success(allRecords))
         }
       case .failure(let error):
+        NSLog("CloudSync fetchChanges failed: %@", String(describing: error))
         completion(.failure(error))
       }
     }
@@ -148,6 +151,7 @@ final class CloudSyncHandler {
     }
     operation.queryResultBlock = { result in
       if let error = recordError {
+        NSLog("CloudSync fetchWithCursor record error: %@", String(describing: error))
         completion(.failure(error))
         return
       }
@@ -159,6 +163,7 @@ final class CloudSyncHandler {
           completion(.success(allRecords))
         }
       case .failure(let error):
+        NSLog("CloudSync fetchWithCursor failed: %@", String(describing: error))
         completion(.failure(error))
       }
     }
