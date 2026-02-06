@@ -35,12 +35,17 @@ class CloudSyncService {
       final state = await _syncStateRepository.fetch();
       final lastSyncAt =
           state.lastSyncAt ?? DateTime.fromMillisecondsSinceEpoch(0);
+      final since = lastSyncAt
+          .subtract(const Duration(minutes: 5))
+          .isBefore(DateTime.fromMillisecondsSinceEpoch(0))
+          ? DateTime.fromMillisecondsSinceEpoch(0)
+          : lastSyncAt.subtract(const Duration(minutes: 5));
 
       final remoteRaw = await _channel.invokeMethod(
         'fetchChanges',
         {
           'containerId': _containerId,
-          'since': lastSyncAt.millisecondsSinceEpoch,
+          'since': since.millisecondsSinceEpoch,
         },
       );
 
