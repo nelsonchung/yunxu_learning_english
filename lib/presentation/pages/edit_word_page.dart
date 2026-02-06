@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
@@ -93,19 +94,45 @@ class _EditWordPageState extends State<EditWordPage> {
   }
 
   Future<void> _pickImage(ImageSource source) async {
-    final picked = await _picker.pickImage(source: source, imageQuality: 85);
-    if (picked == null) {
+    if (!_picker.supportsImageSource(source)) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('此裝置不支援該圖片來源')),
+      );
       return;
     }
-    setState(() {
-      _imageFile = File(picked.path);
-      _existingImageBytes = null;
-      _existingImagePath = null;
-      _removeImage = false;
-    });
+    try {
+      final picked = await _picker.pickImage(source: source, imageQuality: 85);
+      if (picked == null) {
+        return;
+      }
+      setState(() {
+        _imageFile = File(picked.path);
+        _existingImageBytes = null;
+        _existingImagePath = null;
+        _removeImage = false;
+      });
+    } on PlatformException catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('無法選擇圖片：${error.message ?? error.code}')),
+      );
+    } on StateError catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('無法使用此來源：${error.message}')),
+      );
+    }
   }
 
   void _showImagePicker() {
+    final supportsCamera = _picker.supportsImageSource(ImageSource.camera);
     showModalBottomSheet<void>(
       context: context,
       builder: (context) {
@@ -121,14 +148,15 @@ class _EditWordPageState extends State<EditWordPage> {
                   _pickImage(ImageSource.gallery);
                 },
               ),
-              ListTile(
-                leading: const Icon(Icons.photo_camera),
-                title: const Text('使用相機拍照'),
-                onTap: () {
-                  Navigator.pop(context);
-                  _pickImage(ImageSource.camera);
-                },
-              ),
+              if (supportsCamera)
+                ListTile(
+                  leading: const Icon(Icons.photo_camera),
+                  title: const Text('使用相機拍照'),
+                  onTap: () {
+                    Navigator.pop(context);
+                    _pickImage(ImageSource.camera);
+                  },
+                ),
               if (_existingImagePath != null || _imageFile != null)
                 ListTile(
                   leading: const Icon(Icons.delete_outline),
