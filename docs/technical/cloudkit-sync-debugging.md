@@ -64,6 +64,23 @@
 
 > 注意 Dashboard 預設會用 `recordName` 查詢，若未標記 queryable 會出錯。
 
+## Private Database 原理（不同 Apple ID）
+- 本專案目前使用 `CKContainer(...).privateCloudDatabase`。
+- `WordCard` 是 schema（可理解為資料結構/資料表），不是共享開關。
+- 同一個 Apple ID 的 iPhone 與 macOS 會連到同一份私有資料，因此可自動同步。
+- 不同 Apple ID 各自有獨立私有資料空間，彼此看不到資料。
+- 結論：不同使用者「都可以用」且「都能各自跨裝置同步」，但不會共享同一份單字資料。
+
+> 名詞提醒：本專案使用的 Record Type 名稱是 `WordCard`（不是 `WordType`）。
+
+### 驗證不同 Apple ID 是否可用（但不互通）
+1) Apple ID A：在 iPhone 新增單字，確認 A 的 macOS 可同步到該單字。
+2) Apple ID B：安裝同版本 App，確認看不到 A 的單字。
+3) Apple ID B：自行新增單字，確認 B 的 iPhone/macOS 可互相同步。
+4) CloudKit Dashboard（Production / Private Database）分別 `Act as` A 與 B，確認兩邊資料各自存在且互不重疊。
+
+> 若需求是跨 Apple ID 共用同一份資料，需改用 CloudKit sharing（`CKShare` / Shared Database）或 Public Database 設計。
+
 ## 同步觸發與補強
 - **手動同步**：在「單字列表」標題列已加入同步按鈕
 - **定時輪詢**：未實作，可在 App 開啟期間定時呼叫 sync
@@ -74,10 +91,21 @@
 - Flutter 端同步錯誤 logging
 - UI 新增「手動同步」按鈕
 
+## TestFlight 上線前 CloudKit 檢查清單
+- [ ] Apple Developer → CloudKit Dashboard 已切到 `Production`
+- [ ] `WordCard` 與必要欄位都存在於 `Production`
+- [ ] `updatedAt` 的 Queryable/Sortable index 已存在於 `Production`
+- [ ] iOS/macOS 版本都使用同一個 container：`iCloud.com.yunxu.yunxulearn`
+- [ ] iOS `Runner.entitlements` 含 iCloud/CloudKit capability
+- [ ] macOS `Release.entitlements` 含 iCloud/CloudKit capability 與 `com.apple.security.network.client`
+- [ ] 使用 TestFlight 版本（非本機 Debug）進行驗證
+- [ ] 測試 Apple ID A：iPhone 新增單字，macOS 可同步收到
+- [ ] 測試 Apple ID B：看不到 A 的資料，但 B 自己 iPhone/macOS 可互相同步
+- [ ] Dashboard（Production / Private Database）以 `Act as` 檢查 A/B 資料各自獨立
+
 ## 快速檢查清單
 - [ ] iOS/macOS 使用同一 Apple ID
 - [ ] CloudKit Production 有 `WordCard`
 - [ ] `updatedAt` 有 Queryable/Sortable index
 - [ ] macOS Release entitlements 有 network client
 - [ ] 手動同步可正常拉取資料
-
