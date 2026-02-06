@@ -380,10 +380,11 @@
 				Flutter/ephemeral/FlutterOutputs.xcfilelist,
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/flutter_assemble.stamp",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh && touch Flutter/ephemeral/tripwire";
+			shellScript = "\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh && touch Flutter/ephemeral/tripwire \"${SCRIPT_OUTPUT_FILE_0}\"";
 		};
 		38378DAA92AD573AA12BD258 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
