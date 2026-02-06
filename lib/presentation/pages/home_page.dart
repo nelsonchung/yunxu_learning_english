@@ -22,8 +22,8 @@ class _HomePageState extends State<HomePage> {
   final _pages = const [
     TodayPage(),
     WordsListPage(),
-    AboutPage(),
     SettingsPage(),
+    AboutPage(),
   ];
 
   @override
@@ -44,14 +44,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('英文學習'),
-      ),
+      appBar: AppBar(title: const Text('英文學習')),
       body: AppBackground(
-        child: IndexedStack(
-          index: _currentIndex,
-          children: _pages,
-        ),
+        child: IndexedStack(index: _currentIndex, children: _pages),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/add'),
@@ -66,22 +61,13 @@ class _HomePageState extends State<HomePage> {
           });
         },
         destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.today),
-            label: '今日複習',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.list),
-            label: '單字列表',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.info_outline),
-            label: '說明',
-          ),
+          NavigationDestination(icon: Icon(Icons.today), label: '今日複習'),
+          NavigationDestination(icon: Icon(Icons.list), label: '單字列表'),
           NavigationDestination(
             icon: Icon(Icons.settings_outlined),
             label: '設定',
           ),
+          NavigationDestination(icon: Icon(Icons.info_outline), label: '說明'),
         ],
       ),
     );

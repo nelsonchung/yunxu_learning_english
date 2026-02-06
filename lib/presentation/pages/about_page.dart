@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import '../widgets/section_card.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
+
+  static final Future<String> _versionTextFuture = _loadVersionText();
+
+  static Future<String> _loadVersionText() async {
+    final info = await PackageInfo.fromPlatform();
+    final build = info.buildNumber.trim();
+    if (build.isEmpty) {
+      return info.version;
+    }
+    return '${info.version}+${info.buildNumber}';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,17 +23,23 @@ class AboutPage extends StatelessWidget {
 
     return ListView(
       padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
-      children: const [
-        SectionCard(
-          title: '關於本 App',
-          subtitle: '用遺忘曲線建立穩定的英文記憶',
-          child: Text(
-            '此 App 用於英文單字學習，依照艾賓浩斯遺忘曲線安排複習，'
-            '幫助你在關鍵時間點重複記憶。',
-          ),
+      children: [
+        FutureBuilder<String>(
+          future: _versionTextFuture,
+          builder: (context, snapshot) {
+            final version = snapshot.data ?? '讀取中...';
+            return SectionCard(
+              title: '關於本 App',
+              subtitle: '用遺忘曲線建立穩定的英文記憶',
+              child: Text(
+                '此 App 用於英文單字學習，依照艾賓浩斯遺忘曲線安排複習，'
+                '幫助你在關鍵時間點重複記憶。\n版本：$version',
+              ),
+            );
+          },
         ),
-        SizedBox(height: 16),
-        SectionCard(
+        const SizedBox(height: 16),
+        const SectionCard(
           title: '艾賓浩斯遺忘曲線',
           subtitle: '記憶若不複習會快速下降',
           child: Text(
@@ -29,8 +47,8 @@ class AboutPage extends StatelessWidget {
             '透過固定節奏複習，逐步加深長期記憶。',
           ),
         ),
-        SizedBox(height: 16),
-        SectionCard(
+        const SizedBox(height: 16),
+        const SectionCard(
           title: '使用方式',
           subtitle: '三個步驟開始複習',
           child: Column(
