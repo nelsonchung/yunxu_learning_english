@@ -17,6 +17,13 @@ if [ ! -f "pubspec.yaml" ]; then
     exit 1
 fi
 
+run_macos_pod_install() {
+    (
+        cd macos || exit 1
+        LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 pod install
+    )
+}
+
 show_menu() {
     echo -e "\n${GREEN}請選擇動作:${NC}"
     echo "1) Android (APK)"
@@ -30,7 +37,9 @@ show_menu() {
     echo -e "${YELLOW}8) iOS 裝置 Release 執行 (flutter run --release)${NC}"
     echo -e "${YELLOW}9) macOS Release 執行 (flutter run -d macos --release)${NC}"
     echo "10) macOS Debug 執行 (flutter run -d macos)"
-    echo "11) 清理專案 (flutter clean + flutter pub get)"
+    echo "11) 清理專案 (flutter clean + flutter pub get + macOS pod install)"
+    echo "12) Xcode Archive 前準備 (11 + flutter build macos --release)"
+    echo "13) 修正並檢查最新 macOS Archive (fix + check)"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -53,8 +62,17 @@ while true; do
         9) flutter run -d macos --release ;;
         10) flutter run -d macos ;;
         11)
-            flutter clean
-            flutter pub get ;;
+            flutter clean &&
+            flutter pub get &&
+            run_macos_pod_install ;;
+        12)
+            flutter clean &&
+            flutter pub get &&
+            run_macos_pod_install &&
+            flutter build macos --release ;;
+        13)
+            ./fix_macos_archive_frameworks.sh &&
+            ./check_macos_archive_frameworks.sh ;;
         q) echo "離開程式..."; exit 0 ;;
         *) echo -e "${RED}無效選項${NC}" ;;
     esac
