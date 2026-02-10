@@ -6,6 +6,7 @@ final class CloudSyncHandler {
   private static let wordRecordType = "WordCard"
   private static let settingsRecordType = "AppSettings"
   private static let settingsRecordName = "app_settings"
+  private static let modifyBatchLimit = 400
 
   let containerId: String
   private lazy var database: CKDatabase = {
@@ -18,10 +19,23 @@ final class CloudSyncHandler {
   }
 
   func pushChanges(records: [[String: Any]], completion: @escaping (Result<Void, Error>) -> Void) {
+    pushChangesBatch(records: records, startIndex: 0, completion: completion)
+  }
+
+  private func pushChangesBatch(records: [[String: Any]],
+                                startIndex: Int,
+                                completion: @escaping (Result<Void, Error>) -> Void) {
+    guard startIndex < records.count else {
+      completion(.success(()))
+      return
+    }
+
+    let endIndex = min(startIndex + Self.modifyBatchLimit, records.count)
+    let batch = Array(records[startIndex..<endIndex])
     var ckRecords: [CKRecord] = []
     var tempFiles: [URL] = []
 
-    for record in records {
+    for record in batch {
       guard let id = record["id"] as? String else { continue }
       let recordId = CKRecord.ID(recordName: id)
       let ckRecord = CKRecord(recordType: Self.wordRecordType, recordID: recordId)
@@ -89,7 +103,7 @@ final class CloudSyncHandler {
         NSLog("CloudSync pushChanges failed: %@", String(describing: error))
         completion(.failure(error))
       } else {
-        completion(.success(()))
+        self.pushChangesBatch(records: records, startIndex: endIndex, completion: completion)
       }
     }
 
@@ -132,7 +146,9 @@ final class CloudSyncHandler {
     record["syncIntervalSeconds"] = NSNumber(value: Self.intFromAny(settings["syncIntervalSeconds"]) ?? 60)
     record["updatedAt"] = (Self.dateFromMillis(settings["updatedAt"]) ?? Date()) as NSDate
 
-    database.save(record) { _, error in
+    let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
+    operation.savePolicy = .changedKeys
+    operation.modifyRecordsCompletionBlock = { _, _, error in
       if let error = error {
         NSLog("CloudSync pushSettings failed: %@", String(describing: error))
         completion(.failure(error))
@@ -140,6 +156,8 @@ final class CloudSyncHandler {
         completion(.success(()))
       }
     }
+
+    database.add(operation)
   }
 
   func fetchSettings(completion: @escaping (Result<[String: Any]?, Error>) -> Void) {

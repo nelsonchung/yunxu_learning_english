@@ -49,12 +49,13 @@ class CloudSyncService {
       final localAllBeforeSync = await _wordRepository.fetchAll(
         includeDeleted: true,
       );
-      shouldRunRestoreCheck = localAllBeforeSync.isEmpty;
+      final hasLocalSettings = await _settingsRepository.hasSavedSettings();
+      shouldRunRestoreCheck = localAllBeforeSync.isEmpty && !hasLocalSettings;
 
-      if (shouldRunRestoreCheck &&
-          lastKnownState.restoreStatus != RestoreStatus.restoring) {
+      if (shouldRunRestoreCheck) {
         lastKnownState = lastKnownState.copyWith(
           lastAttemptAt: syncStartedAt,
+          lastRestoreAttemptAt: syncStartedAt,
           clearLastErrorCode: true,
           clearLastErrorMessage: true,
           restoreStatus: RestoreStatus.restoring,
@@ -86,6 +87,7 @@ class CloudSyncService {
       }
 
       final remoteById = <String, WordCard>{};
+      final hasRemoteWordData = remoteRecordsRaw.isNotEmpty;
       DateTime? newestRemote;
       for (final raw in remoteRecordsRaw) {
         final remoteCard = _fromCloudMap(raw);
@@ -138,7 +140,7 @@ class CloudSyncService {
         await _channel.invokeMethod('pushChanges', payload);
       }
 
-      final newestSettingsSyncAt = await _syncSettings();
+      final settingsSyncResult = await _syncSettings();
 
       final newestLocal = localChanges.isEmpty
           ? null
@@ -153,17 +155,18 @@ class CloudSyncService {
       if (newestLocal != null && newestLocal.isAfter(nextSyncAt)) {
         nextSyncAt = newestLocal;
       }
-      if (newestSettingsSyncAt != null &&
-          newestSettingsSyncAt.isAfter(nextSyncAt)) {
-        nextSyncAt = newestSettingsSyncAt;
+      if (settingsSyncResult.newestSyncedAt != null &&
+          settingsSyncResult.newestSyncedAt!.isAfter(nextSyncAt)) {
+        nextSyncAt = settingsSyncResult.newestSyncedAt!;
       }
       if (nextSyncAt.isBefore(syncStartedAt)) {
         nextSyncAt = syncStartedAt;
       }
 
-      final localVisibleAfterSync = await _wordRepository.fetchAll();
+      final hasRemoteBackupData =
+          hasRemoteWordData || settingsSyncResult.remoteHasData;
       final restoreStatus = shouldRunRestoreCheck
-          ? (localVisibleAfterSync.isNotEmpty
+          ? (hasRemoteBackupData
                 ? RestoreStatus.restored
                 : RestoreStatus.newInstall)
           : lastKnownState.restoreStatus;
@@ -172,17 +175,18 @@ class CloudSyncService {
         lastKnownState.copyWith(
           lastSyncAt: nextSyncAt,
           lastAttemptAt: syncStartedAt,
+          lastRestoreAttemptAt: shouldRunRestoreCheck ? syncStartedAt : null,
           clearLastErrorCode: true,
           clearLastErrorMessage: true,
           restoreStatus: restoreStatus,
+          hasEverSynced: true,
         ),
       );
       return true;
     } catch (error, stack) {
-      String errorCode = 'sync_failed';
+      final errorCode = _normalizeSyncErrorCode(error);
       String? errorMessage;
       if (error is PlatformException) {
-        errorCode = error.code;
         errorMessage = error.message;
         debugPrint(
           'CloudSyncService PlatformException: code=${error.code} message=${error.message} details=${error.details}',
@@ -196,6 +200,7 @@ class CloudSyncService {
       await _syncStateRepository.save(
         lastKnownState.copyWith(
           lastAttemptAt: syncStartedAt,
+          lastRestoreAttemptAt: shouldRunRestoreCheck ? syncStartedAt : null,
           lastErrorCode: errorCode,
           lastErrorMessage: errorMessage,
           restoreStatus: shouldRunRestoreCheck
@@ -209,7 +214,7 @@ class CloudSyncService {
     }
   }
 
-  Future<DateTime?> _syncSettings() async {
+  Future<_SettingsSyncResult> _syncSettings() async {
     final localSettings = await _settingsRepository.fetch();
 
     final remoteRaw = await _channel.invokeMethod('fetchSettings', {
@@ -222,21 +227,34 @@ class CloudSyncService {
     }
 
     if (remoteSettings == null) {
+      await _settingsRepository.save(localSettings);
       await _pushSettings(localSettings);
-      return localSettings.updatedAt;
+      return _SettingsSyncResult(
+        newestSyncedAt: localSettings.updatedAt,
+        remoteHasData: false,
+      );
     }
 
     if (localSettings.updatedAt.isBefore(remoteSettings.updatedAt)) {
       await _settingsRepository.save(remoteSettings);
-      return remoteSettings.updatedAt;
+      return _SettingsSyncResult(
+        newestSyncedAt: remoteSettings.updatedAt,
+        remoteHasData: true,
+      );
     }
 
     if (localSettings.updatedAt.isAfter(remoteSettings.updatedAt)) {
       await _pushSettings(localSettings);
-      return localSettings.updatedAt;
+      return _SettingsSyncResult(
+        newestSyncedAt: localSettings.updatedAt,
+        remoteHasData: true,
+      );
     }
 
-    return localSettings.updatedAt;
+    return _SettingsSyncResult(
+      newestSyncedAt: localSettings.updatedAt,
+      remoteHasData: true,
+    );
   }
 
   Future<void> _pushSettings(AppSettings settings) {
@@ -366,4 +384,53 @@ class CloudSyncService {
           : DateTime.fromMillisecondsSinceEpoch(0),
     );
   }
+
+  String _normalizeSyncErrorCode(Object error) {
+    if (error is! PlatformException) {
+      return 'sync_failed';
+    }
+
+    switch (error.code) {
+      case 'icloud_not_signed_in':
+      case 'icloud_permission_denied':
+      case 'quota_exceeded':
+      case 'network_unavailable':
+      case 'server_error':
+      case 'schema_version_mismatch':
+      case 'sync_failed':
+        return error.code;
+    }
+
+    final message = (error.message ?? '').toLowerCase();
+    if (message.contains('not authenticated') ||
+        message.contains('not signed in') ||
+        message.contains('icloud account')) {
+      return 'icloud_not_signed_in';
+    }
+    if (message.contains('permission') || message.contains('entitlement')) {
+      return 'icloud_permission_denied';
+    }
+    if (message.contains('quota')) {
+      return 'quota_exceeded';
+    }
+    if (message.contains('network') || message.contains('internet')) {
+      return 'network_unavailable';
+    }
+    if (message.contains('service unavailable') ||
+        message.contains('rate') ||
+        message.contains('busy')) {
+      return 'server_error';
+    }
+    return 'sync_failed';
+  }
+}
+
+class _SettingsSyncResult {
+  const _SettingsSyncResult({
+    required this.newestSyncedAt,
+    required this.remoteHasData,
+  });
+
+  final DateTime? newestSyncedAt;
+  final bool remoteHasData;
 }
