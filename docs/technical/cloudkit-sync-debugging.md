@@ -109,3 +109,6 @@
 - [ ] `updatedAt` 有 Queryable/Sortable index
 - [ ] macOS Release entitlements 有 network client
 - [ ] 手動同步可正常拉取資料
+
+## 相關文件
+- `/Users/nelsonchung/development/yunxu_learning_english/docs/technical/cloudlkit-filter-by-updated.md`
