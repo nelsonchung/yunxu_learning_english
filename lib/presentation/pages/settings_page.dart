@@ -19,14 +19,19 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<SettingsNotifier>(
-      builder: (context, notifier, _) {
+    return Consumer2<SettingsNotifier, WordsNotifier>(
+      builder: (context, notifier, wordsNotifier, _) {
         if (notifier.isLoading) {
           return const Center(child: CircularProgressIndicator());
         }
 
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
         const syncIntervals = [5, 10, 20, 30, 60, 3600];
+        final cloudSupported = wordsNotifier.syncSupported;
+        final isCloudBusy =
+            wordsNotifier.isSyncing ||
+            wordsNotifier.isBackingUp ||
+            wordsNotifier.isRestoring;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -152,6 +157,120 @@ class SettingsPage extends StatelessWidget {
                 ).textTheme.bodySmall?.copyWith(color: Colors.black54),
               ),
             ],
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '雲端備份與還原',
+              subtitle: '手動備份本機資料，或立即從雲端還原',
+              trailing: const Icon(
+                Icons.cloud_upload_outlined,
+                color: Color(0xFF0B6E99),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          onPressed: (!cloudSupported || isCloudBusy)
+                              ? null
+                              : () async {
+                                  final ok = await wordsNotifier.backupNow();
+                                  if (!context.mounted) {
+                                    return;
+                                  }
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(ok ? '備份完成' : '備份失敗，請稍後重試'),
+                                    ),
+                                  );
+                                },
+                          icon: wordsNotifier.isBackingUp
+                              ? const SizedBox(
+                                  width: 14,
+                                  height: 14,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                  ),
+                                )
+                              : const Icon(Icons.backup_outlined),
+                          label: Text(
+                            wordsNotifier.isBackingUp ? '備份中...' : '立即備份',
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: FilledButton.icon(
+                          onPressed: (!cloudSupported || isCloudBusy)
+                              ? null
+                              : () async {
+                                  final shouldRestore = await showDialog<bool>(
+                                    context: context,
+                                    builder: (dialogContext) => AlertDialog(
+                                      title: const Text('從雲端還原'),
+                                      content: const Text(
+                                        '將從 iCloud 拉取資料並合併本機資料，是否繼續？',
+                                      ),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () => Navigator.pop(
+                                            dialogContext,
+                                            false,
+                                          ),
+                                          child: const Text('取消'),
+                                        ),
+                                        FilledButton(
+                                          onPressed: () => Navigator.pop(
+                                            dialogContext,
+                                            true,
+                                          ),
+                                          child: const Text('開始還原'),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                  if (shouldRestore != true) {
+                                    return;
+                                  }
+                                  final ok = await wordsNotifier.restoreNow();
+                                  if (!context.mounted) {
+                                    return;
+                                  }
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(ok ? '還原完成' : '還原失敗，請稍後重試'),
+                                    ),
+                                  );
+                                },
+                          icon: wordsNotifier.isRestoring
+                              ? const SizedBox(
+                                  width: 14,
+                                  height: 14,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : const Icon(Icons.cloud_download_outlined),
+                          label: Text(
+                            wordsNotifier.isRestoring ? '還原中...' : '立即還原',
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  if (!cloudSupported) ...[
+                    const SizedBox(height: 10),
+                    Text(
+                      '目前平台不支援 CloudKit，無法使用手動備份/還原。',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
+                ],
+              ),
+            ),
           ],
         );
       },

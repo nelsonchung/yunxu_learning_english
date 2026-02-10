@@ -32,6 +32,173 @@ class CloudSyncService {
     return _syncStateRepository.fetch();
   }
 
+  Future<bool> backupNow() async {
+    if (_isSyncing) {
+      return false;
+    }
+    _isSyncing = true;
+
+    final startedAt = DateTime.now();
+    final lastKnownState = await _syncStateRepository.fetch();
+
+    try {
+      final localAll = await _wordRepository.fetchAll(includeDeleted: true);
+      if (localAll.isNotEmpty) {
+        await _channel.invokeMethod('pushChanges', {
+          'containerId': _containerId,
+          'records': localAll.map(_toCloudMap).toList(),
+        });
+      }
+
+      final localSettings = await _settingsRepository.fetch();
+      await _settingsRepository.save(localSettings);
+      await _pushSettings(localSettings);
+
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastSyncAt: startedAt,
+          lastAttemptAt: startedAt,
+          clearLastErrorCode: true,
+          clearLastErrorMessage: true,
+          hasEverSynced: true,
+        ),
+      );
+      return true;
+    } catch (error, stack) {
+      final errorCode = _normalizeSyncErrorCode(error);
+      final errorMessage = error is PlatformException
+          ? error.message
+          : error.toString();
+      debugPrint('CloudSyncService backup failed: $error');
+      debugPrint('CloudSyncService backup stack: $stack');
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastAttemptAt: startedAt,
+          lastErrorCode: errorCode,
+          lastErrorMessage: errorMessage,
+        ),
+      );
+      return false;
+    } finally {
+      _isSyncing = false;
+    }
+  }
+
+  Future<bool> restoreNow() async {
+    if (_isSyncing) {
+      return false;
+    }
+    _isSyncing = true;
+
+    final startedAt = DateTime.now();
+    var lastKnownState = await _syncStateRepository.fetch();
+    try {
+      lastKnownState = lastKnownState.copyWith(
+        lastAttemptAt: startedAt,
+        lastRestoreAttemptAt: startedAt,
+        clearLastErrorCode: true,
+        clearLastErrorMessage: true,
+        restoreStatus: RestoreStatus.restoring,
+      );
+      await _syncStateRepository.save(lastKnownState);
+
+      final epoch = DateTime.fromMillisecondsSinceEpoch(0);
+      final remoteRaw = await _channel.invokeMethod('fetchChanges', {
+        'containerId': _containerId,
+        'since': epoch.millisecondsSinceEpoch,
+      });
+
+      final remoteRecordsRaw = <Map<String, Object?>>[];
+      if (remoteRaw is List) {
+        for (final item in remoteRaw) {
+          if (item is Map) {
+            remoteRecordsRaw.add(item.cast<String, Object?>());
+          }
+        }
+      }
+
+      final remoteById = <String, WordCard>{};
+      DateTime? newestRemote;
+      for (final raw in remoteRecordsRaw) {
+        final remoteCard = _fromCloudMap(raw);
+        if (remoteCard.id.isEmpty) {
+          continue;
+        }
+        final current = remoteById[remoteCard.id];
+        if (current == null ||
+            current.updatedAt.isBefore(remoteCard.updatedAt)) {
+          remoteById[remoteCard.id] = remoteCard;
+        }
+        newestRemote = newestRemote == null
+            ? remoteCard.updatedAt
+            : remoteCard.updatedAt.isAfter(newestRemote)
+            ? remoteCard.updatedAt
+            : newestRemote;
+      }
+
+      final localAll = await _wordRepository.fetchAll(includeDeleted: true);
+      final localById = {for (final card in localAll) card.id: card};
+      for (final remoteCard in remoteById.values) {
+        final local = localById[remoteCard.id];
+        if (local == null || local.updatedAt.isBefore(remoteCard.updatedAt)) {
+          await _wordRepository.update(remoteCard);
+        }
+      }
+
+      final remoteSettingsRaw = await _channel.invokeMethod('fetchSettings', {
+        'containerId': _containerId,
+      });
+      var remoteHasSettings = false;
+      if (remoteSettingsRaw is Map) {
+        final remoteSettings = _settingsFromCloudMap(
+          remoteSettingsRaw.cast<String, Object?>(),
+        );
+        await _settingsRepository.save(remoteSettings);
+        remoteHasSettings = true;
+      }
+
+      final hasRemoteBackupData = remoteById.isNotEmpty || remoteHasSettings;
+      var nextSyncAt = startedAt;
+      if (newestRemote != null && newestRemote.isAfter(nextSyncAt)) {
+        nextSyncAt = newestRemote;
+      }
+
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastSyncAt: nextSyncAt,
+          lastAttemptAt: startedAt,
+          lastRestoreAttemptAt: startedAt,
+          clearLastErrorCode: true,
+          clearLastErrorMessage: true,
+          restoreStatus: hasRemoteBackupData
+              ? RestoreStatus.restored
+              : RestoreStatus.newInstall,
+          hasEverSynced: true,
+        ),
+      );
+      return true;
+    } catch (error, stack) {
+      final errorCode = _normalizeSyncErrorCode(error);
+      final errorMessage = error is PlatformException
+          ? error.message
+          : error.toString();
+      debugPrint('CloudSyncService restore failed: $error');
+      debugPrint('CloudSyncService restore stack: $stack');
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastAttemptAt: startedAt,
+          lastRestoreAttemptAt: startedAt,
+          lastErrorCode: errorCode,
+          lastErrorMessage: errorMessage,
+          restoreStatus: RestoreStatus.failed,
+        ),
+      );
+      return false;
+    } finally {
+      _isSyncing = false;
+    }
+  }
+
   Future<bool> sync() async {
     if (_isSyncing) {
       return false;

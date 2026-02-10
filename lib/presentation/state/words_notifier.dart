@@ -46,6 +46,8 @@ class WordsNotifier extends ChangeNotifier {
   SortMode _sortMode = SortMode.alphabetAsc;
   bool _isLoading = false;
   bool _isSyncing = false;
+  bool _isBackingUp = false;
+  bool _isRestoring = false;
   Timer? _pollingTimer;
   int _syncIntervalSeconds;
   bool _syncEnabled;
@@ -59,6 +61,8 @@ class WordsNotifier extends ChangeNotifier {
   SortMode get sortMode => _sortMode;
   bool get isLoading => _isLoading;
   bool get isSyncing => _isSyncing;
+  bool get isBackingUp => _isBackingUp;
+  bool get isRestoring => _isRestoring;
   bool get syncSupported => _syncService != null;
   bool get syncEnabled => _syncEnabled;
   bool get canSync => syncSupported && syncEnabled;
@@ -130,6 +134,46 @@ class WordsNotifier extends ChangeNotifier {
       await _refreshSyncState(notify: false);
     } finally {
       _isSyncing = false;
+      notifyListeners();
+    }
+    return success;
+  }
+
+  Future<bool> backupNow() async {
+    final syncService = _syncService;
+    if (syncService == null || _isBackingUp || _isRestoring || _isSyncing) {
+      return false;
+    }
+    _isBackingUp = true;
+    notifyListeners();
+    var success = false;
+    try {
+      success = await syncService.backupNow();
+      await _refreshSyncState(notify: false);
+    } finally {
+      _isBackingUp = false;
+      notifyListeners();
+    }
+    return success;
+  }
+
+  Future<bool> restoreNow() async {
+    final syncService = _syncService;
+    if (syncService == null || _isRestoring || _isBackingUp || _isSyncing) {
+      return false;
+    }
+    _isRestoring = true;
+    notifyListeners();
+    var success = false;
+    try {
+      success = await syncService.restoreNow();
+      final refreshed = await _repository.fetchAll();
+      _words
+        ..clear()
+        ..addAll(refreshed);
+      await _refreshSyncState(notify: false);
+    } finally {
+      _isRestoring = false;
       notifyListeners();
     }
     return success;
