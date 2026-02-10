@@ -56,6 +56,29 @@ import CloudKit
               }
             }
           }
+        case "pushSettings":
+          let settings = args["settings"] as? [String: Any] ?? [:]
+          handler.pushSettings(settings: settings) { outcome in
+            DispatchQueue.main.async {
+              switch outcome {
+              case .success:
+                result(true)
+              case .failure(let error):
+                result(FlutterError(code: "push_settings_failed", message: error.localizedDescription, details: nil))
+              }
+            }
+          }
+        case "fetchSettings":
+          handler.fetchSettings { outcome in
+            DispatchQueue.main.async {
+              switch outcome {
+              case .success(let settings):
+                result(settings)
+              case .failure(let error):
+                result(FlutterError(code: "fetch_settings_failed", message: error.localizedDescription, details: nil))
+              }
+            }
+          }
         default:
           result(FlutterMethodNotImplemented)
         }

@@ -44,10 +44,12 @@ class WordsListPage extends StatelessWidget {
                       onPressed: isSyncing
                           ? null
                           : () async {
-                              await notifier.syncNow();
+                              final ok = await notifier.syncNow();
                               if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(content: Text('同步完成')),
+                                  SnackBar(
+                                    content: Text(ok ? '同步完成' : '同步失敗，請稍後重試'),
+                                  ),
                                 );
                               }
                             },
@@ -100,8 +102,8 @@ class WordsListPage extends StatelessWidget {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(14),
-                        child: Row(
-                          children: [
+                          child: Row(
+                            children: [
                               if (showImages) ...[
                                 _Thumb(card: card),
                                 const SizedBox(width: 12),
@@ -112,9 +114,9 @@ class WordsListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       card.word,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleMedium,
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.titleMedium,
                                     ),
                                     const SizedBox(height: 6),
                                     Text(
@@ -234,10 +236,7 @@ class _Thumb extends StatelessWidget {
         color: const Color(0xFF0B6E99).withOpacity(0.1),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: const Icon(
-        Icons.book,
-        color: Color(0xFF0B6E99),
-      ),
+      child: const Icon(Icons.book, color: Color(0xFF0B6E99)),
     );
   }
 }

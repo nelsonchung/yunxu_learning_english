@@ -8,8 +8,8 @@ class SettingsNotifier extends ChangeNotifier {
   SettingsNotifier({
     required SettingsRepository repository,
     required NotificationService notificationService,
-  })  : _repository = repository,
-        _notificationService = notificationService;
+  }) : _repository = repository,
+       _notificationService = notificationService;
 
   final SettingsRepository _repository;
   final NotificationService _notificationService;
@@ -21,6 +21,7 @@ class SettingsNotifier extends ChangeNotifier {
   bool get isLoading => _isLoading;
   bool get showImages => _settings.showImages;
   bool get reminderEnabled => _settings.reminderEnabled;
+  bool get syncEnabled => _settings.syncEnabled;
   int get syncIntervalSeconds => _settings.syncIntervalSeconds;
 
   TimeOfDay get reminderTime {
@@ -46,7 +47,10 @@ class SettingsNotifier extends ChangeNotifier {
 
   Future<void> setReminderTime(TimeOfDay time) async {
     final minutes = time.hour * 60 + time.minute;
-    _settings = _settings.copyWith(reminderMinutes: minutes);
+    _settings = _settings.copyWith(
+      reminderMinutes: minutes,
+      updatedAt: DateTime.now(),
+    );
     await _repository.save(_settings);
     if (_settings.reminderEnabled) {
       await _ensurePermissionAndSchedule();
@@ -55,13 +59,19 @@ class SettingsNotifier extends ChangeNotifier {
   }
 
   Future<void> setShowImages(bool value) async {
-    _settings = _settings.copyWith(showImages: value);
+    _settings = _settings.copyWith(
+      showImages: value,
+      updatedAt: DateTime.now(),
+    );
     await _repository.save(_settings);
     notifyListeners();
   }
 
   Future<void> setReminderEnabled(bool value) async {
-    _settings = _settings.copyWith(reminderEnabled: value);
+    _settings = _settings.copyWith(
+      reminderEnabled: value,
+      updatedAt: DateTime.now(),
+    );
     await _repository.save(_settings);
     if (value) {
       await _ensurePermissionAndSchedule();
@@ -72,7 +82,19 @@ class SettingsNotifier extends ChangeNotifier {
   }
 
   Future<void> setSyncIntervalSeconds(int seconds) async {
-    _settings = _settings.copyWith(syncIntervalSeconds: seconds);
+    _settings = _settings.copyWith(
+      syncIntervalSeconds: seconds,
+      updatedAt: DateTime.now(),
+    );
+    await _repository.save(_settings);
+    notifyListeners();
+  }
+
+  Future<void> setSyncEnabled(bool value) async {
+    _settings = _settings.copyWith(
+      syncEnabled: value,
+      updatedAt: DateTime.now(),
+    );
     await _repository.save(_settings);
     notifyListeners();
   }

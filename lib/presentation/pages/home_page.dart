@@ -5,6 +5,7 @@ import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
 import 'about_page.dart';
+import 'records_page.dart';
 import 'settings_page.dart';
 import 'today_page.dart';
 import 'words_list_page.dart';
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
     TodayPage(),
     WordsListPage(),
     SettingsPage(),
+    RecordsPage(),
     AboutPage(),
   ];
 
@@ -34,6 +36,7 @@ class _HomePageState extends State<HomePage> {
       final settingsNotifier = context.read<SettingsNotifier>();
       wordsNotifier.load();
       settingsNotifier.load().then((_) {
+        wordsNotifier.setSyncEnabled(settingsNotifier.syncEnabled);
         wordsNotifier.setSyncIntervalSeconds(
           settingsNotifier.syncIntervalSeconds,
         );
@@ -66,6 +69,10 @@ class _HomePageState extends State<HomePage> {
           NavigationDestination(
             icon: Icon(Icons.settings_outlined),
             label: '設定',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.receipt_long_outlined),
+            label: '紀錄',
           ),
           NavigationDestination(icon: Icon(Icons.info_outline), label: '說明'),
         ],

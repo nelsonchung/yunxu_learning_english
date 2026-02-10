@@ -4,8 +4,10 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../data/repositories/sync_state_repository.dart';
 import '../../data/repositories/word_repository.dart';
 import '../../data/storage/image_storage.dart';
+import '../../domain/models/sync_state.dart';
 import '../../domain/models/word_card.dart';
 import '../../domain/services/cloud_sync_service.dart';
 import '../../domain/services/review_schedule_service.dart';
@@ -17,17 +19,26 @@ class WordsNotifier extends ChangeNotifier {
     required ReviewScheduleService scheduleService,
     required SortService sortService,
     required ImageStorage imageStorage,
+    SyncStateRepository? syncStateRepository,
     CloudSyncService? syncService,
-  })  : _repository = repository,
-        _scheduleService = scheduleService,
-        _sortService = sortService,
-        _imageStorage = imageStorage,
-        _syncService = syncService;
+    bool initialSyncEnabled = true,
+    int initialSyncIntervalSeconds = 60,
+  }) : _repository = repository,
+       _scheduleService = scheduleService,
+       _sortService = sortService,
+       _imageStorage = imageStorage,
+       _syncStateRepository = syncStateRepository,
+       _syncService = syncService,
+       _syncEnabled = initialSyncEnabled,
+       _syncIntervalSeconds = initialSyncIntervalSeconds > 0
+           ? initialSyncIntervalSeconds
+           : 60;
 
   final WordRepository _repository;
   final ReviewScheduleService _scheduleService;
   final SortService _sortService;
   final ImageStorage _imageStorage;
+  final SyncStateRepository? _syncStateRepository;
   final CloudSyncService? _syncService;
   final _uuid = const Uuid();
 
@@ -36,13 +47,29 @@ class WordsNotifier extends ChangeNotifier {
   bool _isLoading = false;
   bool _isSyncing = false;
   Timer? _pollingTimer;
-  int _syncIntervalSeconds = 60;
+  int _syncIntervalSeconds;
+  bool _syncEnabled;
+  DateTime? _lastSyncAt;
+  DateTime? _lastSyncAttemptAt;
+  String? _lastSyncErrorCode;
+  String? _lastSyncErrorMessage;
+  RestoreStatus _restoreStatus = RestoreStatus.idle;
 
   List<WordCard> get words => _sortService.sort(_words, _sortMode);
   SortMode get sortMode => _sortMode;
   bool get isLoading => _isLoading;
   bool get isSyncing => _isSyncing;
-  bool get canSync => _syncService != null;
+  bool get syncSupported => _syncService != null;
+  bool get syncEnabled => _syncEnabled;
+  bool get canSync => syncSupported && syncEnabled;
+  int get totalWords => _words.length;
+  int get dueWordsCount => dueToday().length;
+  DateTime? get lastSyncAt => _lastSyncAt;
+  DateTime? get lastSyncAttemptAt => _lastSyncAttemptAt;
+  String? get lastSyncErrorCode => _lastSyncErrorCode;
+  String? get lastSyncErrorMessage => _lastSyncErrorMessage;
+  RestoreStatus get restoreStatus => _restoreStatus;
+  bool get hasSyncError => _lastSyncErrorCode != null;
 
   WordCard? findById(String id) {
     for (final card in _words) {
@@ -76,28 +103,36 @@ class WordsNotifier extends ChangeNotifier {
     notifyListeners();
 
     if (_syncService != null) {
-      unawaited(syncNow());
-      _startPolling();
+      await _refreshSyncState(notify: false);
+      if (_syncEnabled) {
+        unawaited(syncNow());
+        _startPolling();
+      } else {
+        _stopPolling();
+      }
     }
   }
 
-  Future<void> syncNow() async {
+  Future<bool> syncNow() async {
     final syncService = _syncService;
-    if (syncService == null || _isSyncing) {
-      return;
+    if (syncService == null || _isSyncing || !_syncEnabled) {
+      return false;
     }
     _isSyncing = true;
     notifyListeners();
+    var success = false;
     try {
-      await syncService.sync();
+      success = await syncService.sync();
       final refreshed = await _repository.fetchAll();
       _words
         ..clear()
         ..addAll(refreshed);
+      await _refreshSyncState(notify: false);
     } finally {
       _isSyncing = false;
       notifyListeners();
     }
+    return success;
   }
 
   void setSyncIntervalSeconds(int seconds) {
@@ -105,13 +140,34 @@ class WordsNotifier extends ChangeNotifier {
       return;
     }
     _syncIntervalSeconds = seconds;
-    if (_syncService != null) {
+    if (canSync) {
       _stopPolling();
       _startPolling();
     }
   }
 
+  void setSyncEnabled(bool value) {
+    if (_syncEnabled == value) {
+      return;
+    }
+    _syncEnabled = value;
+    if (!_syncEnabled) {
+      _stopPolling();
+      notifyListeners();
+      return;
+    }
+
+    if (_syncService != null) {
+      _startPolling();
+      unawaited(syncNow());
+    }
+    notifyListeners();
+  }
+
   void _startPolling() {
+    if (!canSync) {
+      return;
+    }
     if (_pollingTimer?.isActive == true) {
       return;
     }
@@ -124,6 +180,25 @@ class WordsNotifier extends ChangeNotifier {
   void _stopPolling() {
     _pollingTimer?.cancel();
     _pollingTimer = null;
+  }
+
+  Future<void> _refreshSyncState({bool notify = true}) async {
+    final repository = _syncStateRepository;
+    final syncService = _syncService;
+    if (repository == null || syncService == null) {
+      return;
+    }
+
+    final state = await repository.fetch();
+    _lastSyncAt = state.lastSyncAt;
+    _lastSyncAttemptAt = state.lastAttemptAt;
+    _lastSyncErrorCode = state.lastErrorCode;
+    _lastSyncErrorMessage = state.lastErrorMessage;
+    _restoreStatus = state.restoreStatus;
+
+    if (notify) {
+      notifyListeners();
+    }
   }
 
   @override
@@ -222,9 +297,8 @@ class WordsNotifier extends ChangeNotifier {
     await _repository.add(card);
     _words.add(card);
     notifyListeners();
-    final syncService = _syncService;
-    if (syncService != null) {
-      unawaited(syncService.sync());
+    if (canSync) {
+      unawaited(syncNow());
     }
   }
 
@@ -288,9 +362,8 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
-    final syncService = _syncService;
-    if (syncService != null) {
-      unawaited(syncService.sync());
+    if (canSync) {
+      unawaited(syncNow());
     }
   }
 
@@ -306,23 +379,18 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
-    final syncService = _syncService;
-    if (syncService != null) {
-      unawaited(syncService.sync());
+    if (canSync) {
+      unawaited(syncNow());
     }
   }
 
   Future<void> deleteWord(WordCard card) async {
-    final updated = card.copyWith(
-      isDeleted: true,
-      updatedAt: DateTime.now(),
-    );
+    final updated = card.copyWith(isDeleted: true, updatedAt: DateTime.now());
     await _repository.update(updated);
     _words.removeWhere((item) => item.id == card.id);
     notifyListeners();
-    final syncService = _syncService;
-    if (syncService != null) {
-      unawaited(syncService.sync());
+    if (canSync) {
+      unawaited(syncNow());
     }
   }
 }

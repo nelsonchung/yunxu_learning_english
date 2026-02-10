@@ -3,6 +3,10 @@ import Flutter
 import Foundation
 
 final class CloudSyncHandler {
+  private static let wordRecordType = "WordCard"
+  private static let settingsRecordType = "AppSettings"
+  private static let settingsRecordName = "app_settings"
+
   let containerId: String
   private lazy var database: CKDatabase = {
     let container = CKContainer(identifier: containerId)
@@ -14,14 +18,13 @@ final class CloudSyncHandler {
   }
 
   func pushChanges(records: [[String: Any]], completion: @escaping (Result<Void, Error>) -> Void) {
-    let recordType = "WordCard"
     var ckRecords: [CKRecord] = []
     var tempFiles: [URL] = []
 
     for record in records {
       guard let id = record["id"] as? String else { continue }
       let recordId = CKRecord.ID(recordName: id)
-      let ckRecord = CKRecord(recordType: recordType, recordID: recordId)
+      let ckRecord = CKRecord(recordType: Self.wordRecordType, recordID: recordId)
 
       ckRecord["word"] = record["word"] as? NSString ?? ""
       ckRecord["meaning"] = record["meaning"] as? NSString ?? ""
@@ -95,7 +98,7 @@ final class CloudSyncHandler {
 
   func fetchChanges(since: Date, completion: @escaping (Result<[[String: Any]], Error>) -> Void) {
     let predicate = NSPredicate(format: "updatedAt > %@", since as NSDate)
-    let query = CKQuery(recordType: "WordCard", predicate: predicate)
+    let query = CKQuery(recordType: Self.wordRecordType, predicate: predicate)
     query.sortDescriptors = [NSSortDescriptor(key: "updatedAt", ascending: true)]
 
     var allRecords: [[String: Any]] = []
@@ -116,6 +119,47 @@ final class CloudSyncHandler {
       }
     }
     database.add(operation)
+  }
+
+  func pushSettings(settings: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
+    let recordId = CKRecord.ID(recordName: Self.settingsRecordName)
+    let record = CKRecord(recordType: Self.settingsRecordType, recordID: recordId)
+
+    record["reminderMinutes"] = NSNumber(value: Self.intFromAny(settings["reminderMinutes"]) ?? 20 * 60)
+    record["showImages"] = NSNumber(value: Self.boolFromAny(settings["showImages"]) ?? true)
+    record["reminderEnabled"] = NSNumber(value: Self.boolFromAny(settings["reminderEnabled"]) ?? true)
+    record["syncEnabled"] = NSNumber(value: Self.boolFromAny(settings["syncEnabled"]) ?? true)
+    record["syncIntervalSeconds"] = NSNumber(value: Self.intFromAny(settings["syncIntervalSeconds"]) ?? 60)
+    record["updatedAt"] = (Self.dateFromMillis(settings["updatedAt"]) ?? Date()) as NSDate
+
+    database.save(record) { _, error in
+      if let error = error {
+        NSLog("CloudSync pushSettings failed: %@", String(describing: error))
+        completion(.failure(error))
+      } else {
+        completion(.success(()))
+      }
+    }
+  }
+
+  func fetchSettings(completion: @escaping (Result<[String: Any]?, Error>) -> Void) {
+    let recordId = CKRecord.ID(recordName: Self.settingsRecordName)
+    database.fetch(withRecordID: recordId) { record, error in
+      if let ckError = error as? CKError, ckError.code == .unknownItem {
+        completion(.success(nil))
+        return
+      }
+      if let error = error {
+        NSLog("CloudSync fetchSettings failed: %@", String(describing: error))
+        completion(.failure(error))
+        return
+      }
+      guard let record = record else {
+        completion(.success(nil))
+        return
+      }
+      completion(.success(Self.mapSettingsRecord(record)))
+    }
   }
 
   private func fetchWithCursor(_ cursor: CKQueryOperation.Cursor,
@@ -151,6 +195,26 @@ final class CloudSyncHandler {
     return nil
   }
 
+  private static func intFromAny(_ value: Any?) -> Int? {
+    if let intValue = value as? Int {
+      return intValue
+    }
+    if let number = value as? NSNumber {
+      return number.intValue
+    }
+    return nil
+  }
+
+  private static func boolFromAny(_ value: Any?) -> Bool? {
+    if let boolValue = value as? Bool {
+      return boolValue
+    }
+    if let number = value as? NSNumber {
+      return number.boolValue
+    }
+    return nil
+  }
+
   private static func mapRecord(_ record: CKRecord) -> [String: Any] {
     var map: [String: Any] = [
       "id": record.recordID.recordName,
@@ -180,6 +244,22 @@ final class CloudSyncHandler {
        let url = asset.fileURL,
        let data = try? Data(contentsOf: url) {
       map["imageBytes"] = FlutterStandardTypedData(bytes: data)
+    }
+
+    return map
+  }
+
+  private static func mapSettingsRecord(_ record: CKRecord) -> [String: Any] {
+    var map: [String: Any] = [
+      "reminderMinutes": (record["reminderMinutes"] as? NSNumber)?.intValue ?? 20 * 60,
+      "showImages": (record["showImages"] as? NSNumber)?.boolValue ?? true,
+      "reminderEnabled": (record["reminderEnabled"] as? NSNumber)?.boolValue ?? true,
+      "syncEnabled": (record["syncEnabled"] as? NSNumber)?.boolValue ?? true,
+      "syncIntervalSeconds": (record["syncIntervalSeconds"] as? NSNumber)?.intValue ?? 60
+    ]
+
+    if let updatedAt = record["updatedAt"] as? Date {
+      map["updatedAt"] = Int(updatedAt.timeIntervalSince1970 * 1000.0)
     }
 
     return map

@@ -35,11 +35,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
-  flutter_local_notifications: 4cde75091f6327eb8517fa068a0a5950212d2086
-  flutter_native_timezone: 5f05b2de06c9776b4cc70e1839f03de178394d22
-  image_picker_ios: 4f2f91b01abdb52842a8e277617df877e40f905b
-  package_info_plus: c0502532a26c7662a62a356cebe2692ec5fe4ec4
-  url_launcher_ios: bb13df5870e8c4234ca12609d04010a21be43dfa
+  flutter_local_notifications: ad39620c743ea4c15127860f4b5641649a988100
+  flutter_native_timezone: 5fe32678d72d1894880e94303ef41c2919f014e5
+  image_picker_ios: e0ece4aa2a75771a7de3fa735d26d90817041326
+  package_info_plus: af8e2ca6888548050f16fa2f1938db7b5a5df499
+  url_launcher_ios: 7a95fa5b60cc718a708b8f2966718e93db0cef1b
 
 PODFILE CHECKSUM: 43cf6fdb624cd32a405ce3e5c959b1899b89fcc7
 

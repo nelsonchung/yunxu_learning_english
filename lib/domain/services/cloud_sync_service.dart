@@ -1,79 +1,115 @@
-import 'dart:typed_data';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import '../../data/repositories/settings_repository.dart';
 import '../../data/repositories/sync_state_repository.dart';
 import '../../data/repositories/word_repository.dart';
+import '../models/app_settings.dart';
 import '../models/sync_state.dart';
 import '../models/word_card.dart';
 
 class CloudSyncService {
   CloudSyncService({
     required WordRepository wordRepository,
+    required SettingsRepository settingsRepository,
     required SyncStateRepository syncStateRepository,
     required String containerId,
-  })  : _wordRepository = wordRepository,
-        _syncStateRepository = syncStateRepository,
-        _containerId = containerId;
+  }) : _wordRepository = wordRepository,
+       _settingsRepository = settingsRepository,
+       _syncStateRepository = syncStateRepository,
+       _containerId = containerId;
 
   static const MethodChannel _channel = MethodChannel('cloud_sync');
 
   final WordRepository _wordRepository;
+  final SettingsRepository _settingsRepository;
   final SyncStateRepository _syncStateRepository;
   final String _containerId;
 
   bool _isSyncing = false;
 
-  Future<void> sync() async {
+  Future<SyncState> fetchState() {
+    return _syncStateRepository.fetch();
+  }
+
+  Future<bool> sync() async {
     if (_isSyncing) {
-      return;
+      return false;
     }
     _isSyncing = true;
 
+    final syncStartedAt = DateTime.now();
+    var lastKnownState = await _syncStateRepository.fetch();
+    var shouldRunRestoreCheck = false;
+
     try {
-      final state = await _syncStateRepository.fetch();
-      final lastSyncAt =
-          state.lastSyncAt ?? DateTime.fromMillisecondsSinceEpoch(0);
-      final since = lastSyncAt
-          .subtract(const Duration(minutes: 5))
-          .isBefore(DateTime.fromMillisecondsSinceEpoch(0))
-          ? DateTime.fromMillisecondsSinceEpoch(0)
-          : lastSyncAt.subtract(const Duration(minutes: 5));
+      final epoch = DateTime.fromMillisecondsSinceEpoch(0);
+      final lastSyncAt = lastKnownState.lastSyncAt ?? epoch;
 
-      final remoteRaw = await _channel.invokeMethod(
-        'fetchChanges',
-        {
-          'containerId': _containerId,
-          'since': since.millisecondsSinceEpoch,
-        },
+      final localAllBeforeSync = await _wordRepository.fetchAll(
+        includeDeleted: true,
       );
+      shouldRunRestoreCheck = localAllBeforeSync.isEmpty;
 
-      final remoteRecords = <Map<String, Object?>>[];
+      if (shouldRunRestoreCheck &&
+          lastKnownState.restoreStatus != RestoreStatus.restoring) {
+        lastKnownState = lastKnownState.copyWith(
+          lastAttemptAt: syncStartedAt,
+          clearLastErrorCode: true,
+          clearLastErrorMessage: true,
+          restoreStatus: RestoreStatus.restoring,
+        );
+        await _syncStateRepository.save(lastKnownState);
+      }
+
+      final since =
+          (shouldRunRestoreCheck ? epoch : lastSyncAt)
+              .subtract(const Duration(minutes: 5))
+              .isBefore(epoch)
+          ? epoch
+          : (shouldRunRestoreCheck ? epoch : lastSyncAt).subtract(
+              const Duration(minutes: 5),
+            );
+
+      final remoteRaw = await _channel.invokeMethod('fetchChanges', {
+        'containerId': _containerId,
+        'since': since.millisecondsSinceEpoch,
+      });
+
+      final remoteRecordsRaw = <Map<String, Object?>>[];
       if (remoteRaw is List) {
         for (final item in remoteRaw) {
           if (item is Map) {
-            remoteRecords.add(item.cast<String, Object?>());
+            remoteRecordsRaw.add(item.cast<String, Object?>());
           }
         }
       }
 
-      final localAll = await _wordRepository.fetchAll(includeDeleted: true);
-      final localById = {for (final card in localAll) card.id: card};
-
+      final remoteById = <String, WordCard>{};
       DateTime? newestRemote;
-      for (final raw in remoteRecords) {
+      for (final raw in remoteRecordsRaw) {
         final remoteCard = _fromCloudMap(raw);
         if (remoteCard.id.isEmpty) {
           continue;
         }
+        final current = remoteById[remoteCard.id];
+        if (current == null ||
+            current.updatedAt.isBefore(remoteCard.updatedAt)) {
+          remoteById[remoteCard.id] = remoteCard;
+        }
         newestRemote = newestRemote == null
             ? remoteCard.updatedAt
             : remoteCard.updatedAt.isAfter(newestRemote)
-                ? remoteCard.updatedAt
-                : newestRemote;
+            ? remoteCard.updatedAt
+            : newestRemote;
+      }
 
-        final local = localById[remoteCard.id];
+      final localByIdBeforeSync = {
+        for (final card in localAllBeforeSync) card.id: card,
+      };
+
+      for (final remoteCard in remoteById.values) {
+        final local = localByIdBeforeSync[remoteCard.id];
         if (local == null) {
           await _wordRepository.update(remoteCard);
           continue;
@@ -83,9 +119,15 @@ class CloudSyncService {
         }
       }
 
-      final refreshedLocal = await _wordRepository.fetchAll(includeDeleted: true);
-      final localChanges = refreshedLocal
+      final localChanges = localAllBeforeSync
           .where((card) => card.updatedAt.isAfter(lastSyncAt))
+          .where((card) {
+            final remote = remoteById[card.id];
+            if (remote == null) {
+              return true;
+            }
+            return card.updatedAt.isAfter(remote.updatedAt);
+          })
           .toList();
 
       if (localChanges.isNotEmpty) {
@@ -96,11 +138,13 @@ class CloudSyncService {
         await _channel.invokeMethod('pushChanges', payload);
       }
 
+      final newestSettingsSyncAt = await _syncSettings();
+
       final newestLocal = localChanges.isEmpty
           ? null
           : localChanges
-              .map((card) => card.updatedAt)
-              .reduce((a, b) => a.isAfter(b) ? a : b);
+                .map((card) => card.updatedAt)
+                .reduce((a, b) => a.isAfter(b) ? a : b);
 
       var nextSyncAt = lastSyncAt;
       if (newestRemote != null && newestRemote.isAfter(nextSyncAt)) {
@@ -109,23 +153,97 @@ class CloudSyncService {
       if (newestLocal != null && newestLocal.isAfter(nextSyncAt)) {
         nextSyncAt = newestLocal;
       }
-      if (nextSyncAt.isBefore(DateTime.now())) {
-        nextSyncAt = DateTime.now();
+      if (newestSettingsSyncAt != null &&
+          newestSettingsSyncAt.isAfter(nextSyncAt)) {
+        nextSyncAt = newestSettingsSyncAt;
+      }
+      if (nextSyncAt.isBefore(syncStartedAt)) {
+        nextSyncAt = syncStartedAt;
       }
 
-      await _syncStateRepository.save(SyncState(lastSyncAt: nextSyncAt));
+      final localVisibleAfterSync = await _wordRepository.fetchAll();
+      final restoreStatus = shouldRunRestoreCheck
+          ? (localVisibleAfterSync.isNotEmpty
+                ? RestoreStatus.restored
+                : RestoreStatus.newInstall)
+          : lastKnownState.restoreStatus;
+
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastSyncAt: nextSyncAt,
+          lastAttemptAt: syncStartedAt,
+          clearLastErrorCode: true,
+          clearLastErrorMessage: true,
+          restoreStatus: restoreStatus,
+        ),
+      );
+      return true;
     } catch (error, stack) {
+      String errorCode = 'sync_failed';
+      String? errorMessage;
       if (error is PlatformException) {
+        errorCode = error.code;
+        errorMessage = error.message;
         debugPrint(
           'CloudSyncService PlatformException: code=${error.code} message=${error.message} details=${error.details}',
         );
       } else {
+        errorMessage = error.toString();
         debugPrint('CloudSyncService sync failed: $error');
       }
       debugPrint('CloudSyncService stack: $stack');
+
+      await _syncStateRepository.save(
+        lastKnownState.copyWith(
+          lastAttemptAt: syncStartedAt,
+          lastErrorCode: errorCode,
+          lastErrorMessage: errorMessage,
+          restoreStatus: shouldRunRestoreCheck
+              ? RestoreStatus.failed
+              : lastKnownState.restoreStatus,
+        ),
+      );
+      return false;
     } finally {
       _isSyncing = false;
     }
+  }
+
+  Future<DateTime?> _syncSettings() async {
+    final localSettings = await _settingsRepository.fetch();
+
+    final remoteRaw = await _channel.invokeMethod('fetchSettings', {
+      'containerId': _containerId,
+    });
+
+    AppSettings? remoteSettings;
+    if (remoteRaw is Map) {
+      remoteSettings = _settingsFromCloudMap(remoteRaw.cast<String, Object?>());
+    }
+
+    if (remoteSettings == null) {
+      await _pushSettings(localSettings);
+      return localSettings.updatedAt;
+    }
+
+    if (localSettings.updatedAt.isBefore(remoteSettings.updatedAt)) {
+      await _settingsRepository.save(remoteSettings);
+      return remoteSettings.updatedAt;
+    }
+
+    if (localSettings.updatedAt.isAfter(remoteSettings.updatedAt)) {
+      await _pushSettings(localSettings);
+      return localSettings.updatedAt;
+    }
+
+    return localSettings.updatedAt;
+  }
+
+  Future<void> _pushSettings(AppSettings settings) {
+    return _channel.invokeMethod('pushSettings', {
+      'containerId': _containerId,
+      'settings': _settingsToCloudMap(settings),
+    });
   }
 
   Map<String, Object?> _toCloudMap(WordCard card) {
@@ -142,7 +260,9 @@ class CloudSyncService {
       'reviewSchedule': card.reviewSchedule,
       'nextReviewIndex': card.nextReviewIndex,
       'nextReviewDate': card.nextReviewDate.millisecondsSinceEpoch,
-      'history': card.history.map((item) => item.millisecondsSinceEpoch).toList(),
+      'history': card.history
+          .map((item) => item.millisecondsSinceEpoch)
+          .toList(),
       'isDeleted': card.isDeleted,
     };
   }
@@ -183,9 +303,9 @@ class CloudSyncService {
     final historyRaw = data['history'];
     final history = historyRaw is List
         ? historyRaw
-            .whereType<int>()
-            .map(DateTime.fromMillisecondsSinceEpoch)
-            .toList()
+              .whereType<int>()
+              .map(DateTime.fromMillisecondsSinceEpoch)
+              .toList()
         : <DateTime>[];
 
     final reviewRaw = data['reviewSchedule'];
@@ -211,6 +331,39 @@ class CloudSyncService {
       nextReviewDate: nextReviewDate,
       history: history,
       isDeleted: isDeleted,
+    );
+  }
+
+  Map<String, Object?> _settingsToCloudMap(AppSettings settings) {
+    return {
+      'reminderMinutes': settings.reminderMinutes,
+      'showImages': settings.showImages,
+      'reminderEnabled': settings.reminderEnabled,
+      'syncEnabled': settings.syncEnabled,
+      'syncIntervalSeconds': settings.syncIntervalSeconds,
+      'updatedAt': settings.updatedAt.millisecondsSinceEpoch,
+    };
+  }
+
+  AppSettings _settingsFromCloudMap(Map<String, Object?> data) {
+    final reminderMinutesRaw = data['reminderMinutes'];
+    final showImagesRaw = data['showImages'];
+    final reminderEnabledRaw = data['reminderEnabled'];
+    final syncEnabledRaw = data['syncEnabled'];
+    final syncIntervalSecondsRaw = data['syncIntervalSeconds'];
+    final updatedAtRaw = data['updatedAt'];
+
+    return AppSettings(
+      reminderMinutes: reminderMinutesRaw is int ? reminderMinutesRaw : 20 * 60,
+      showImages: showImagesRaw is bool ? showImagesRaw : true,
+      reminderEnabled: reminderEnabledRaw is bool ? reminderEnabledRaw : true,
+      syncEnabled: syncEnabledRaw is bool ? syncEnabledRaw : true,
+      syncIntervalSeconds: syncIntervalSecondsRaw is int
+          ? syncIntervalSecondsRaw
+          : 60,
+      updatedAt: updatedAtRaw is int
+          ? DateTime.fromMillisecondsSinceEpoch(updatedAtRaw)
+          : DateTime.fromMillisecondsSinceEpoch(0),
     );
   }
 }

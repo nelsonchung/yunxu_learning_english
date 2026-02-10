@@ -35,6 +35,7 @@ Future<void> main() async {
   final settingsRepository = LocalSettingsRepository(
     localDb: SettingsLocalDb(),
   );
+  final initialSettings = await settingsRepository.fetch();
   final syncStateRepository = LocalSyncStateRepository(
     localDb: SyncStateLocalDb(),
   );
@@ -44,6 +45,7 @@ Future<void> main() async {
   if (Platform.isIOS || Platform.isMacOS) {
     cloudSyncService = CloudSyncService(
       wordRepository: repository,
+      settingsRepository: settingsRepository,
       syncStateRepository: syncStateRepository,
       containerId: 'iCloud.com.yunxu.yunxulearn',
     );
@@ -58,7 +60,10 @@ Future<void> main() async {
             scheduleService: scheduleService,
             sortService: SortService(),
             imageStorage: ImageStorage(),
+            syncStateRepository: syncStateRepository,
             syncService: cloudSyncService,
+            initialSyncEnabled: initialSettings.syncEnabled,
+            initialSyncIntervalSeconds: initialSettings.syncIntervalSeconds,
           ),
         ),
         ChangeNotifierProvider(

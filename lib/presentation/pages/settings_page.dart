@@ -11,10 +11,7 @@ class SettingsPage extends StatelessWidget {
   Future<void> _pickTime(BuildContext context) async {
     final notifier = context.read<SettingsNotifier>();
     final initial = notifier.reminderTime;
-    final picked = await showTimePicker(
-      context: context,
-      initialTime: initial,
-    );
+    final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) {
       await notifier.setReminderTime(picked);
     }
@@ -29,7 +26,7 @@ class SettingsPage extends StatelessWidget {
         }
 
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
-        const syncIntervals = [5, 10, 20, 30, 60];
+        const syncIntervals = [5, 10, 20, 30, 60, 3600];
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -52,15 +49,18 @@ class SettingsPage extends StatelessWidget {
             SectionCard(
               title: '提醒時間',
               subtitle: '設定每天提醒複習的時間',
-              trailing: const Icon(Icons.notifications_active_outlined,
-                  color: Color(0xFF0B6E99)),
+              trailing: const Icon(
+                Icons.notifications_active_outlined,
+                color: Color(0xFF0B6E99),
+              ),
               child: Row(
                 children: [
                   Text('目前：${notifier.reminderTime.format(context)}'),
                   const Spacer(),
                   OutlinedButton(
-                    onPressed:
-                        notifier.reminderEnabled ? () => _pickTime(context) : null,
+                    onPressed: notifier.reminderEnabled
+                        ? () => _pickTime(context)
+                        : null,
                     child: const Text('設定時間'),
                   ),
                 ],
@@ -70,14 +70,36 @@ class SettingsPage extends StatelessWidget {
             SectionCard(
               title: '圖片欄位顯示',
               subtitle: '控制新增/編輯頁是否顯示圖片欄位',
-              trailing: const Icon(Icons.image_outlined,
-                  color: Color(0xFF0B6E99)),
+              trailing: const Icon(
+                Icons.image_outlined,
+                color: Color(0xFF0B6E99),
+              ),
               child: Row(
                 children: [
                   const Expanded(child: Text('顯示圖片欄位')),
                   Switch(
                     value: notifier.showImages,
                     onChanged: notifier.setShowImages,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '雲端同步',
+              subtitle: '開啟後自動同步與手動同步才會生效',
+              trailing: const Icon(Icons.cloud_sync, color: Color(0xFF0B6E99)),
+              child: Row(
+                children: [
+                  const Expanded(child: Text('啟用同步功能')),
+                  Switch(
+                    value: notifier.syncEnabled,
+                    onChanged: (value) async {
+                      await notifier.setSyncEnabled(value);
+                      if (context.mounted) {
+                        context.read<WordsNotifier>().setSyncEnabled(value);
+                      }
+                    },
                   ),
                 ],
               ),
@@ -96,25 +118,40 @@ class SettingsPage extends StatelessWidget {
                         .map(
                           (seconds) => DropdownMenuItem(
                             value: seconds,
-                            child: Text('$seconds 秒'),
+                            child: Text(
+                              seconds >= 3600
+                                  ? '${seconds ~/ 3600} 小時'
+                                  : '$seconds 秒',
+                            ),
                           ),
                         )
                         .toList(),
-                    onChanged: (value) async {
-                      if (value == null) {
-                        return;
-                      }
-                      await notifier.setSyncIntervalSeconds(value);
-                      if (context.mounted) {
-                        context
-                            .read<WordsNotifier>()
-                            .setSyncIntervalSeconds(value);
-                      }
-                    },
+                    onChanged: notifier.syncEnabled
+                        ? (value) async {
+                            if (value == null) {
+                              return;
+                            }
+                            await notifier.setSyncIntervalSeconds(value);
+                            if (context.mounted) {
+                              context
+                                  .read<WordsNotifier>()
+                                  .setSyncIntervalSeconds(value);
+                            }
+                          }
+                        : null,
                   ),
                 ],
               ),
             ),
+            if (!notifier.syncEnabled) ...[
+              const SizedBox(height: 10),
+              Text(
+                '同步已停用：不會自動同步，也無法手動同步。',
+                style: Theme.of(
+                  context,
+                ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+              ),
+            ],
           ],
         );
       },
