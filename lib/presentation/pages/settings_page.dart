@@ -94,69 +94,68 @@ class SettingsPage extends StatelessWidget {
               title: '雲端同步',
               subtitle: '開啟後自動同步與手動同步才會生效',
               trailing: const Icon(Icons.cloud_sync, color: Color(0xFF0B6E99)),
-              child: Row(
+              child: Column(
                 children: [
-                  const Expanded(child: Text('啟用同步功能')),
-                  Switch(
-                    value: notifier.syncEnabled,
-                    onChanged: (value) async {
-                      await notifier.setSyncEnabled(value);
-                      if (context.mounted) {
-                        context.read<WordsNotifier>().setSyncEnabled(value);
-                      }
-                    },
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 16),
-            SectionCard(
-              title: '同步頻率',
-              subtitle: 'App 開啟時每隔固定秒數同步',
-              trailing: const Icon(Icons.sync, color: Color(0xFF0B6E99)),
-              child: Row(
-                children: [
-                  const Expanded(child: Text('同步間隔')),
-                  DropdownButton<int>(
-                    value: notifier.syncIntervalSeconds,
-                    items: syncIntervals
-                        .map(
-                          (seconds) => DropdownMenuItem(
-                            value: seconds,
-                            child: Text(
-                              seconds >= 3600
-                                  ? '${seconds ~/ 3600} 小時'
-                                  : '$seconds 秒',
-                            ),
-                          ),
-                        )
-                        .toList(),
-                    onChanged: notifier.syncEnabled
-                        ? (value) async {
-                            if (value == null) {
-                              return;
-                            }
-                            await notifier.setSyncIntervalSeconds(value);
-                            if (context.mounted) {
-                              context
-                                  .read<WordsNotifier>()
-                                  .setSyncIntervalSeconds(value);
-                            }
+                  Row(
+                    children: [
+                      const Expanded(child: Text('啟用同步功能')),
+                      Switch(
+                        value: notifier.syncEnabled,
+                        onChanged: (value) async {
+                          await notifier.setSyncEnabled(value);
+                          if (context.mounted) {
+                            context.read<WordsNotifier>().setSyncEnabled(value);
                           }
-                        : null,
+                        },
+                      ),
+                    ],
                   ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      const Expanded(child: Text('同步間隔')),
+                      DropdownButton<int>(
+                        value: notifier.syncIntervalSeconds,
+                        items: syncIntervals
+                            .map(
+                              (seconds) => DropdownMenuItem(
+                                value: seconds,
+                                child: Text(
+                                  seconds >= 3600
+                                      ? '${seconds ~/ 3600} 小時'
+                                      : '$seconds 秒',
+                                ),
+                              ),
+                            )
+                            .toList(),
+                        onChanged: notifier.syncEnabled
+                            ? (value) async {
+                                if (value == null) {
+                                  return;
+                                }
+                                await notifier.setSyncIntervalSeconds(value);
+                                if (context.mounted) {
+                                  context
+                                      .read<WordsNotifier>()
+                                      .setSyncIntervalSeconds(value);
+                                }
+                              }
+                            : null,
+                      ),
+                    ],
+                  ),
+                  if (!notifier.syncEnabled) ...[
+                    const SizedBox(height: 10),
+                    Text(
+                      '同步已停用：不會自動同步，也無法手動同步。',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
                 ],
               ),
             ),
-            if (!notifier.syncEnabled) ...[
-              const SizedBox(height: 10),
-              Text(
-                '同步已停用：不會自動同步，也無法手動同步。',
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall?.copyWith(color: Colors.black54),
-              ),
-            ],
             const SizedBox(height: 16),
             SectionCard(
               title: '雲端備份與還原',
