@@ -40,33 +40,29 @@ class SettingsPage extends StatelessWidget {
               title: '提醒功能',
               subtitle: '開啟後會在設定時間提醒複習',
               trailing: const Icon(Icons.alarm, color: Color(0xFF0B6E99)),
-              child: Row(
+              child: Column(
                 children: [
-                  const Expanded(child: Text('啟用提醒')),
-                  Switch(
-                    value: notifier.reminderEnabled,
-                    onChanged: notifier.setReminderEnabled,
+                  Row(
+                    children: [
+                      const Expanded(child: Text('啟用提醒')),
+                      Switch(
+                        value: notifier.reminderEnabled,
+                        onChanged: notifier.setReminderEnabled,
+                      ),
+                    ],
                   ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 16),
-            SectionCard(
-              title: '提醒時間',
-              subtitle: '設定每天提醒複習的時間',
-              trailing: const Icon(
-                Icons.notifications_active_outlined,
-                color: Color(0xFF0B6E99),
-              ),
-              child: Row(
-                children: [
-                  Text('目前：${notifier.reminderTime.format(context)}'),
-                  const Spacer(),
-                  OutlinedButton(
-                    onPressed: notifier.reminderEnabled
-                        ? () => _pickTime(context)
-                        : null,
-                    child: const Text('設定時間'),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Text('目前：${notifier.reminderTime.format(context)}'),
+                      const Spacer(),
+                      OutlinedButton(
+                        onPressed: notifier.reminderEnabled
+                            ? () => _pickTime(context)
+                            : null,
+                        child: const Text('設定時間'),
+                      ),
+                    ],
                   ),
                 ],
               ),
