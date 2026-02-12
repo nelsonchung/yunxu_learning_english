@@ -84,6 +84,7 @@ class EnglishLearningApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: '英文學習',
       theme: AppTheme.light(),
       routes: {
