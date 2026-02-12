@@ -111,4 +111,5 @@
 - [ ] 手動同步可正常拉取資料
 
 ## 相關文件
+- `/Users/nelsonchung/development/yunxu_learning_english/docs/technical/cloudkit-schema-deploy-development-to-production.md`
 - `/Users/nelsonchung/development/yunxu_learning_english/docs/technical/cloudlkit-filter-by-updated.md`
