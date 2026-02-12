@@ -137,27 +137,37 @@ final class CloudSyncHandler {
 
   func pushSettings(settings: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
     let recordId = CKRecord.ID(recordName: Self.settingsRecordName)
-    let record = CKRecord(recordType: Self.settingsRecordType, recordID: recordId)
-
-    record["reminderMinutes"] = NSNumber(value: Self.intFromAny(settings["reminderMinutes"]) ?? 20 * 60)
-    record["showImages"] = NSNumber(value: Self.boolFromAny(settings["showImages"]) ?? true)
-    record["reminderEnabled"] = NSNumber(value: Self.boolFromAny(settings["reminderEnabled"]) ?? true)
-    record["syncEnabled"] = NSNumber(value: Self.boolFromAny(settings["syncEnabled"]) ?? true)
-    record["syncIntervalSeconds"] = NSNumber(value: Self.intFromAny(settings["syncIntervalSeconds"]) ?? 60)
-    record["updatedAt"] = (Self.dateFromMillis(settings["updatedAt"]) ?? Date()) as NSDate
-
-    let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
-    operation.savePolicy = .changedKeys
-    operation.modifyRecordsCompletionBlock = { _, _, error in
-      if let error = error {
-        NSLog("CloudSync pushSettings failed: %@", String(describing: error))
-        completion(.failure(error))
-      } else {
-        completion(.success(()))
+    database.fetch(withRecordID: recordId) { existingRecord, error in
+      if let ckError = error as? CKError, ckError.code != .unknownItem {
+        NSLog("CloudSync pushSettings fetch failed: %@", String(describing: ckError))
+        completion(.failure(ckError))
+        return
       }
-    }
+      if let error = error, !(error is CKError) {
+        NSLog("CloudSync pushSettings fetch failed: %@", String(describing: error))
+        completion(.failure(error))
+        return
+      }
 
-    database.add(operation)
+      let record = existingRecord ?? CKRecord(
+        recordType: Self.settingsRecordType,
+        recordID: recordId
+      )
+      Self.applySettings(settings, to: record)
+
+      let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
+      operation.savePolicy = .changedKeys
+      operation.modifyRecordsCompletionBlock = { _, _, error in
+        if let error = error {
+          NSLog("CloudSync pushSettings failed: %@", String(describing: error))
+          completion(.failure(error))
+        } else {
+          completion(.success(()))
+        }
+      }
+
+      self.database.add(operation)
+    }
   }
 
   func fetchSettings(completion: @escaping (Result<[String: Any]?, Error>) -> Void) {
@@ -231,6 +241,15 @@ final class CloudSyncHandler {
       return number.boolValue
     }
     return nil
+  }
+
+  private static func applySettings(_ settings: [String: Any], to record: CKRecord) {
+    record["reminderMinutes"] = NSNumber(value: Self.intFromAny(settings["reminderMinutes"]) ?? 20 * 60)
+    record["showImages"] = NSNumber(value: Self.boolFromAny(settings["showImages"]) ?? true)
+    record["reminderEnabled"] = NSNumber(value: Self.boolFromAny(settings["reminderEnabled"]) ?? true)
+    record["syncEnabled"] = NSNumber(value: Self.boolFromAny(settings["syncEnabled"]) ?? true)
+    record["syncIntervalSeconds"] = NSNumber(value: Self.intFromAny(settings["syncIntervalSeconds"]) ?? 60)
+    record["updatedAt"] = (Self.dateFromMillis(settings["updatedAt"]) ?? Date()) as NSDate
   }
 
   private static func mapRecord(_ record: CKRecord) -> [String: Any] {
