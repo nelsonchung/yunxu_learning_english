@@ -19,6 +19,10 @@ class ImagePreview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dpr = MediaQuery.devicePixelRatioOf(context);
+    final cacheWidth = (MediaQuery.sizeOf(context).width * dpr).round();
+    final cacheHeight = (height * dpr).round();
+
     if (imageBytes != null && imageBytes!.isNotEmpty) {
       final bytes = imageBytes!;
       final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
@@ -35,6 +39,8 @@ class ImagePreview extends StatelessWidget {
             typedBytes,
             fit: BoxFit.contain,
             alignment: Alignment.center,
+            cacheWidth: cacheWidth,
+            cacheHeight: cacheHeight,
           ),
         ),
       );
@@ -69,6 +75,8 @@ class ImagePreview extends StatelessWidget {
           file,
           fit: BoxFit.contain,
           alignment: Alignment.center,
+          cacheWidth: cacheWidth,
+          cacheHeight: cacheHeight,
         ),
       ),
     );

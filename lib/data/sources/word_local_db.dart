@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:hive_flutter/hive_flutter.dart';
 
 class WordLocalDb {
@@ -20,8 +22,17 @@ class WordLocalDb {
     await box.delete(id);
   }
 
-  Future<List<Map>> getAll() async {
+  Future<void> forEach(
+    FutureOr<void> Function(String id, Map data) action,
+  ) async {
     final box = await _openBox();
-    return box.values.cast<Map>().toList();
+    final keys = box.keys.whereType<String>().toList(growable: false);
+    for (final id in keys) {
+      final data = box.get(id);
+      if (data == null) {
+        continue;
+      }
+      await action(id, data);
+    }
   }
 }

@@ -84,6 +84,13 @@ class WordDetailPage extends StatelessWidget {
                                 card.imageBytes!.isNotEmpty)
                               Builder(
                                 builder: (context) {
+                                  final dpr = MediaQuery.devicePixelRatioOf(
+                                    context,
+                                  );
+                                  final cacheWidth =
+                                      (MediaQuery.sizeOf(context).width * dpr)
+                                          .round();
+                                  final cacheHeight = (200 * dpr).round();
                                   final bytes = card.imageBytes!;
                                   final typedBytes = bytes is Uint8List
                                       ? bytes
@@ -95,6 +102,8 @@ class WordDetailPage extends StatelessWidget {
                                       height: 200,
                                       width: double.infinity,
                                       fit: BoxFit.cover,
+                                      cacheWidth: cacheWidth,
+                                      cacheHeight: cacheHeight,
                                     ),
                                   );
                                 },
@@ -107,6 +116,18 @@ class WordDetailPage extends StatelessWidget {
                                   height: 200,
                                   width: double.infinity,
                                   fit: BoxFit.cover,
+                                  cacheWidth:
+                                      (MediaQuery.sizeOf(context).width *
+                                              MediaQuery.devicePixelRatioOf(
+                                                context,
+                                              ))
+                                          .round(),
+                                  cacheHeight:
+                                      (200 *
+                                              MediaQuery.devicePixelRatioOf(
+                                                context,
+                                              ))
+                                          .round(),
                                 ),
                               ),
                             if ((card.imageBytes != null &&

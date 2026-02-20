@@ -15,6 +15,7 @@ import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
+import 'domain/services/install_state_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -25,6 +26,8 @@ import 'presentation/state/words_notifier.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  PaintingBinding.instance.imageCache.maximumSize = 80;
+  PaintingBinding.instance.imageCache.maximumSizeBytes = 40 << 20;
   await Hive.initFlutter();
 
   final scheduleService = ReviewScheduleService();
@@ -41,6 +44,12 @@ Future<void> main() async {
   );
   final notificationService = NotificationService();
   await notificationService.initialize();
+  final installStateService = InstallStateService();
+  var allowAutoRestoreWhenLocalEmpty = true;
+  if (Platform.isIOS) {
+    allowAutoRestoreWhenLocalEmpty = await installStateService
+        .shouldAutoRestoreOnEmptyData();
+  }
   CloudSyncService? cloudSyncService;
   if (Platform.isIOS || Platform.isMacOS) {
     cloudSyncService = CloudSyncService(
@@ -48,6 +57,7 @@ Future<void> main() async {
       settingsRepository: settingsRepository,
       syncStateRepository: syncStateRepository,
       containerId: 'iCloud.com.yunxu.yunxulearn',
+      allowAutoRestoreWhenLocalEmpty: allowAutoRestoreWhenLocalEmpty,
     );
   }
 

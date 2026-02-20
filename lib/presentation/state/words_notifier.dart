@@ -43,6 +43,7 @@ class WordsNotifier extends ChangeNotifier {
   final _uuid = const Uuid();
 
   final List<WordCard> _words = [];
+  static const int _autoSyncImageByteLimit = 20 * 1024 * 1024;
   SortMode _sortMode = SortMode.alphabetAsc;
   bool _isLoading = false;
   bool _isSyncing = false;
@@ -51,6 +52,7 @@ class WordsNotifier extends ChangeNotifier {
   Timer? _pollingTimer;
   int _syncIntervalSeconds;
   bool _syncEnabled;
+  int _loadedImageBytes = 0;
   DateTime? _lastSyncAt;
   DateTime? _lastSyncAttemptAt;
   String? _lastSyncErrorCode;
@@ -102,16 +104,23 @@ class WordsNotifier extends ChangeNotifier {
     notifyListeners();
 
     try {
+      final migratedCount = await _repository.migrateImageBytesToPaths(
+        saveBytes: _imageStorage.saveBytes,
+      );
+      if (kDebugMode && migratedCount > 0) {
+        debugPrint(
+          'WordsNotifier migrated $migratedCount image records to path',
+        );
+      }
       final all = await _repository.fetchAll();
-      final migrated = await _migrateLegacyImages(all);
       _words
         ..clear()
-        ..addAll(migrated);
+        ..addAll(all);
+      _logImageStats(_words);
 
       if (_syncService != null) {
         await _refreshSyncState(notify: false);
-        if (_syncEnabled) {
-          unawaited(syncNow());
+        if (_shouldAutoSyncInBackground) {
           _startPolling();
         } else {
           _stopPolling();
@@ -211,14 +220,17 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     if (_syncService != null) {
-      _startPolling();
-      unawaited(syncNow());
+      if (_shouldAutoSyncInBackground) {
+        _startPolling();
+      } else {
+        _stopPolling();
+      }
     }
     notifyListeners();
   }
 
   void _startPolling() {
-    if (!canSync) {
+    if (!canSync || !_shouldAutoSyncInBackground) {
       return;
     }
     if (_pollingTimer?.isActive == true) {
@@ -254,50 +266,60 @@ class WordsNotifier extends ChangeNotifier {
     }
   }
 
+  void _logImageStats(List<WordCard> cards) {
+    if (!kDebugMode) {
+      return;
+    }
+    var images = 0;
+    var totalBytes = 0;
+    var maxBytes = 0;
+    for (final card in cards) {
+      var size = 0;
+      final bytes = card.imageBytes;
+      if (bytes != null && bytes.isNotEmpty) {
+        size = bytes is Uint8List ? bytes.lengthInBytes : bytes.length;
+      } else if (card.imagePath != null) {
+        final file = File(card.imagePath!);
+        if (file.existsSync()) {
+          try {
+            size = file.lengthSync();
+          } catch (_) {
+            size = 0;
+          }
+        }
+      }
+
+      if (size <= 0) {
+        continue;
+      }
+      images++;
+      totalBytes += size;
+      if (size > maxBytes) {
+        maxBytes = size;
+      }
+    }
+    _loadedImageBytes = totalBytes;
+    debugPrint(
+      'WordsNotifier image stats: cards=${cards.length}, images=$images, '
+      'total=${(totalBytes / (1024 * 1024)).toStringAsFixed(2)}MB, '
+      'max=${(maxBytes / (1024 * 1024)).toStringAsFixed(2)}MB',
+    );
+    if (!_shouldAutoSyncInBackground) {
+      debugPrint(
+        'WordsNotifier: auto sync disabled because image data is '
+        '${(totalBytes / (1024 * 1024)).toStringAsFixed(2)}MB '
+        '(limit ${(_autoSyncImageByteLimit / (1024 * 1024)).toStringAsFixed(0)}MB).',
+      );
+    }
+  }
+
+  bool get _shouldAutoSyncInBackground =>
+      _syncEnabled && _loadedImageBytes <= _autoSyncImageByteLimit;
+
   @override
   void dispose() {
     _stopPolling();
     super.dispose();
-  }
-
-  Future<List<WordCard>> _migrateLegacyImages(List<WordCard> cards) async {
-    var updated = false;
-    final migrated = <WordCard>[];
-
-    for (final card in cards) {
-      if (card.imageBytes == null && card.imagePath != null) {
-        final file = File(card.imagePath!);
-        if (await file.exists()) {
-          final bytes = await file.readAsBytes();
-          final newCard = card.copyWith(
-            imageBytes: bytes,
-            imagePath: null,
-            updatedAt: DateTime.now(),
-          );
-          await _repository.update(newCard);
-          migrated.add(newCard);
-          updated = true;
-          continue;
-        }
-
-        final cleanedCard = card.copyWith(
-          imagePath: null,
-          updatedAt: DateTime.now(),
-        );
-        await _repository.update(cleanedCard);
-        migrated.add(cleanedCard);
-        updated = true;
-        continue;
-      }
-
-      migrated.add(card);
-    }
-
-    if (updated) {
-      notifyListeners();
-    }
-
-    return migrated;
   }
 
   void setSortMode(SortMode mode) {
@@ -328,7 +350,9 @@ class WordsNotifier extends ChangeNotifier {
 
     final now = DateTime.now();
     final schedule = ReviewScheduleService.defaultSchedule;
-    final imageBytes = imageFile != null ? await imageFile.readAsBytes() : null;
+    final imagePath = imageFile == null
+        ? null
+        : await _imageStorage.saveImage(imageFile);
 
     final card = WordCard(
       id: _uuid.v4(),
@@ -336,8 +360,8 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
-      imagePath: null,
-      imageBytes: imageBytes,
+      imagePath: imagePath,
+      imageBytes: null,
       createdAt: now,
       updatedAt: now,
       reviewSchedule: schedule,
@@ -350,9 +374,6 @@ class WordsNotifier extends ChangeNotifier {
     await _repository.add(card);
     _words.add(card);
     notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
   }
 
   Future<void> updateWord({
@@ -378,11 +399,9 @@ class WordsNotifier extends ChangeNotifier {
       throw ArgumentError('meaning cannot be empty');
     }
 
-    var imageBytes = card.imageBytes;
     var legacyPath = card.imagePath;
 
     if (removeImage) {
-      imageBytes = null;
       if (legacyPath != null) {
         await _imageStorage.deleteImage(legacyPath);
         legacyPath = null;
@@ -390,11 +409,16 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     if (imageFile != null) {
-      imageBytes = await imageFile.readAsBytes();
+      final newPath = await _imageStorage.saveImage(imageFile);
       if (legacyPath != null) {
         await _imageStorage.deleteImage(legacyPath);
-        legacyPath = null;
       }
+      legacyPath = newPath;
+    } else if (!removeImage &&
+        legacyPath == null &&
+        card.imageBytes != null &&
+        card.imageBytes!.isNotEmpty) {
+      legacyPath = await _imageStorage.saveBytes(card.imageBytes!);
     }
 
     final updated = card.copyWith(
@@ -403,7 +427,7 @@ class WordsNotifier extends ChangeNotifier {
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
       imagePath: legacyPath,
-      imageBytes: imageBytes,
+      imageBytes: null,
       updatedAt: DateTime.now(),
     );
 
@@ -432,9 +456,6 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
   }
 
   Future<void> deleteWord(WordCard card) async {

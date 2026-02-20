@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -37,7 +38,22 @@ class TodayPage extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 14),
                   child: _ReviewCard(
                     card: card,
-                    onReview: () => notifier.markReviewed(card),
+                    onReview: () async {
+                      try {
+                        await notifier.markReviewed(card);
+                        imageCache.clear();
+                        imageCache.clearLiveImages();
+                      } catch (error, stackTrace) {
+                        debugPrint('markReviewed failed: $error');
+                        debugPrintStack(stackTrace: stackTrace);
+                        if (!context.mounted) {
+                          return;
+                        }
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('完成複習失敗，請稍後再試')),
+                        );
+                      }
+                    },
                     onTap: () => Navigator.pushNamed(
                       context,
                       '/detail',
@@ -204,7 +220,7 @@ class _ReviewCard extends StatelessWidget {
   });
 
   final WordCard card;
-  final VoidCallback onReview;
+  final Future<void> Function() onReview;
   final VoidCallback onTap;
   final bool showImage;
 
@@ -280,7 +296,7 @@ class _ReviewCard extends StatelessWidget {
                     TextButton(onPressed: onTap, child: const Text('查看詳情')),
                     const Spacer(),
                     ElevatedButton(
-                      onPressed: onReview,
+                      onPressed: () => unawaited(onReview()),
                       child: const Text('完成複習'),
                     ),
                   ],
@@ -301,6 +317,9 @@ class _Thumb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dpr = MediaQuery.devicePixelRatioOf(context);
+    final cacheExtent = (70 * dpr).round();
+
     if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
       final bytes = card.imageBytes!;
       final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
@@ -311,6 +330,8 @@ class _Thumb extends StatelessWidget {
           width: 70,
           height: 70,
           fit: BoxFit.cover,
+          cacheWidth: cacheExtent,
+          cacheHeight: cacheExtent,
         ),
       );
     }
@@ -323,6 +344,8 @@ class _Thumb extends StatelessWidget {
           width: 70,
           height: 70,
           fit: BoxFit.cover,
+          cacheWidth: cacheExtent,
+          cacheHeight: cacheExtent,
         ),
       );
     }

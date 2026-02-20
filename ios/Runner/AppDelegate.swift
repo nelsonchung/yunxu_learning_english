@@ -1,10 +1,13 @@
 import Flutter
 import UIKit
 import CloudKit
+import Security
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
   private var cloudSyncHandler: CloudSyncHandler?
+  private static let installMarkerService = "com.yunxu.yunxulearn.install"
+  private static let installMarkerAccount = "has_launched_before"
 
   override func application(
     _ application: UIApplication,
@@ -13,6 +16,16 @@ import CloudKit
     GeneratedPluginRegistrant.register(with: self)
 
     if let controller = window?.rootViewController as? FlutterViewController {
+      let installChannel = FlutterMethodChannel(name: "install_state", binaryMessenger: controller.binaryMessenger)
+      installChannel.setMethodCallHandler { call, result in
+        switch call.method {
+        case "shouldAutoRestoreOnEmptyData":
+          result(Self.shouldAutoRestoreOnEmptyData())
+        default:
+          result(FlutterMethodNotImplemented)
+        }
+      }
+
       let channel = FlutterMethodChannel(name: "cloud_sync", binaryMessenger: controller.binaryMessenger)
       channel.setMethodCallHandler { [weak self] call, result in
         guard let args = call.arguments as? [String: Any],
@@ -117,5 +130,49 @@ import CloudKit
       message: error.localizedDescription,
       details: ["fallbackCode": fallbackCode]
     )
+  }
+
+  private static func shouldAutoRestoreOnEmptyData() -> Bool {
+    if hasInstallMarker() {
+      return true
+    }
+    _ = saveInstallMarker()
+    return false
+  }
+
+  private static func installMarkerQuery() -> [String: Any] {
+    return [
+      kSecClass as String: kSecClassGenericPassword,
+      kSecAttrService as String: installMarkerService,
+      kSecAttrAccount as String: installMarkerAccount
+    ]
+  }
+
+  private static func hasInstallMarker() -> Bool {
+    var query = installMarkerQuery()
+    query[kSecMatchLimit as String] = kSecMatchLimitOne
+    query[kSecReturnData as String] = true
+
+    var result: CFTypeRef?
+    let status = SecItemCopyMatching(query as CFDictionary, &result)
+    return status == errSecSuccess
+  }
+
+  private static func saveInstallMarker() -> Bool {
+    let valueData = Data("1".utf8)
+    var addQuery = installMarkerQuery()
+    addQuery[kSecValueData as String] = valueData
+
+    let addStatus = SecItemAdd(addQuery as CFDictionary, nil)
+    if addStatus == errSecSuccess {
+      return true
+    }
+    if addStatus == errSecDuplicateItem {
+      let updateQuery = installMarkerQuery()
+      let updateAttrs = [kSecValueData as String: valueData] as CFDictionary
+      let updateStatus = SecItemUpdate(updateQuery as CFDictionary, updateAttrs)
+      return updateStatus == errSecSuccess
+    }
+    return false
   }
 }

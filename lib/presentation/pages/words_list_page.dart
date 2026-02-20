@@ -205,6 +205,9 @@ class _Thumb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dpr = MediaQuery.devicePixelRatioOf(context);
+    final cacheExtent = (56 * dpr).round();
+
     if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
       final bytes = card.imageBytes!;
       final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
@@ -215,6 +218,8 @@ class _Thumb extends StatelessWidget {
           width: 56,
           height: 56,
           fit: BoxFit.cover,
+          cacheWidth: cacheExtent,
+          cacheHeight: cacheExtent,
         ),
       );
     }
@@ -227,6 +232,8 @@ class _Thumb extends StatelessWidget {
           width: 56,
           height: 56,
           fit: BoxFit.cover,
+          cacheWidth: cacheExtent,
+          cacheHeight: cacheExtent,
         ),
       );
     }

@@ -1,6 +1,9 @@
 import '../../domain/models/word_card.dart';
 
 abstract class WordRepository {
+  Future<int> migrateImageBytesToPaths({
+    required Future<String> Function(List<int> bytes) saveBytes,
+  });
   Future<List<WordCard>> fetchAll({bool includeDeleted = false});
   Future<List<WordCard>> fetchDue(DateTime day);
   Future<void> add(WordCard card);

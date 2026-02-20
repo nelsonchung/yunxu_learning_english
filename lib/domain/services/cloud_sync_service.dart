@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -14,10 +16,12 @@ class CloudSyncService {
     required SettingsRepository settingsRepository,
     required SyncStateRepository syncStateRepository,
     required String containerId,
+    bool allowAutoRestoreWhenLocalEmpty = true,
   }) : _wordRepository = wordRepository,
        _settingsRepository = settingsRepository,
        _syncStateRepository = syncStateRepository,
-       _containerId = containerId;
+       _containerId = containerId,
+       _allowAutoRestoreWhenLocalEmpty = allowAutoRestoreWhenLocalEmpty;
 
   static const MethodChannel _channel = MethodChannel('cloud_sync');
 
@@ -25,6 +29,10 @@ class CloudSyncService {
   final SettingsRepository _settingsRepository;
   final SyncStateRepository _syncStateRepository;
   final String _containerId;
+  final bool _allowAutoRestoreWhenLocalEmpty;
+
+  static const int _maxRecordsPerPushBatch = 6;
+  static const int _maxBytesPerPushBatch = 4 * 1024 * 1024;
 
   bool _isSyncing = false;
 
@@ -44,10 +52,7 @@ class CloudSyncService {
     try {
       final localAll = await _wordRepository.fetchAll(includeDeleted: true);
       if (localAll.isNotEmpty) {
-        await _channel.invokeMethod('pushChanges', {
-          'containerId': _containerId,
-          'records': localAll.map(_toCloudMap).toList(),
-        });
+        await _pushChangesInBatches(localAll);
       }
 
       final localSettings = await _settingsRepository.fetch();
@@ -217,7 +222,10 @@ class CloudSyncService {
         includeDeleted: true,
       );
       final hasLocalSettings = await _settingsRepository.hasSavedSettings();
-      shouldRunRestoreCheck = localAllBeforeSync.isEmpty && !hasLocalSettings;
+      shouldRunRestoreCheck =
+          _allowAutoRestoreWhenLocalEmpty &&
+          localAllBeforeSync.isEmpty &&
+          !hasLocalSettings;
 
       if (shouldRunRestoreCheck) {
         lastKnownState = lastKnownState.copyWith(
@@ -300,11 +308,7 @@ class CloudSyncService {
           .toList();
 
       if (localChanges.isNotEmpty) {
-        final payload = {
-          'containerId': _containerId,
-          'records': localChanges.map(_toCloudMap).toList(),
-        };
-        await _channel.invokeMethod('pushChanges', payload);
+        await _pushChangesInBatches(localChanges);
       }
 
       final settingsSyncResult = await _syncSettings();
@@ -424,6 +428,64 @@ class CloudSyncService {
     );
   }
 
+  Future<void> _pushChangesInBatches(List<WordCard> cards) async {
+    if (cards.isEmpty) {
+      return;
+    }
+
+    final batch = <WordCard>[];
+    var batchBytes = 0;
+
+    Future<void> flush() async {
+      if (batch.isEmpty) {
+        return;
+      }
+      final records = <Map<String, Object?>>[];
+      for (final card in batch) {
+        records.add(await _toCloudMap(card));
+      }
+      await _channel.invokeMethod('pushChanges', {
+        'containerId': _containerId,
+        'records': records,
+      });
+      batch.clear();
+      batchBytes = 0;
+    }
+
+    for (final card in cards) {
+      final estimatedBytes = _estimatePushPayloadBytes(card);
+      final hitRecordLimit = batch.length >= _maxRecordsPerPushBatch;
+      final hitBytesLimit =
+          batch.isNotEmpty &&
+          (batchBytes + estimatedBytes) > _maxBytesPerPushBatch;
+
+      if (hitRecordLimit || hitBytesLimit) {
+        await flush();
+      }
+
+      batch.add(card);
+      batchBytes += estimatedBytes;
+    }
+
+    await flush();
+  }
+
+  int _estimatePushPayloadBytes(WordCard card) {
+    final imageBytes = card.imageBytes;
+    var imageSize = imageBytes == null ? 0 : imageBytes.length;
+    if (imageSize == 0 && card.imagePath != null) {
+      try {
+        final file = File(card.imagePath!);
+        if (file.existsSync()) {
+          imageSize = file.lengthSync();
+        }
+      } catch (_) {
+        imageSize = 0;
+      }
+    }
+    return 2048 + imageSize;
+  }
+
   Future<void> _pushSettings(AppSettings settings) {
     return _channel.invokeMethod('pushSettings', {
       'containerId': _containerId,
@@ -431,8 +493,14 @@ class CloudSyncService {
     });
   }
 
-  Map<String, Object?> _toCloudMap(WordCard card) {
-    final imageBytes = card.imageBytes;
+  Future<Map<String, Object?>> _toCloudMap(WordCard card) async {
+    var imageBytes = card.imageBytes;
+    if ((imageBytes == null || imageBytes.isEmpty) && card.imagePath != null) {
+      final file = File(card.imagePath!);
+      if (await file.exists()) {
+        imageBytes = await file.readAsBytes();
+      }
+    }
     final typedImageBytes = imageBytes == null
         ? null
         : imageBytes is Uint8List

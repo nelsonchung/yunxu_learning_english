@@ -20,13 +20,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
-  final _pages = const [
-    TodayPage(),
-    WordsListPage(),
-    SettingsPage(),
-    RecordsPage(),
-    AboutPage(),
-  ];
+  Widget _buildCurrentPage() {
+    switch (_currentIndex) {
+      case 0:
+        return const TodayPage();
+      case 1:
+        return const WordsListPage();
+      case 2:
+        return const SettingsPage();
+      case 3:
+        return const RecordsPage();
+      case 4:
+      default:
+        return const AboutPage();
+    }
+  }
 
   @override
   void initState() {
@@ -48,9 +56,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('英文學習')),
-      body: AppBackground(
-        child: IndexedStack(index: _currentIndex, children: _pages),
-      ),
+      body: AppBackground(child: _buildCurrentPage()),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/add'),
         tooltip: '新增單字',

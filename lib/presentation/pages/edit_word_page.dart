@@ -98,13 +98,18 @@ class _EditWordPageState extends State<EditWordPage> {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('此裝置不支援該圖片來源')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('此裝置不支援該圖片來源')));
       return;
     }
     try {
-      final picked = await _picker.pickImage(source: source, imageQuality: 85);
+      final picked = await _picker.pickImage(
+        source: source,
+        imageQuality: 80,
+        maxWidth: 1600,
+        maxHeight: 1600,
+      );
       if (picked == null) {
         return;
       }
@@ -125,9 +130,9 @@ class _EditWordPageState extends State<EditWordPage> {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('無法使用此來源：${error.message}')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('無法使用此來源：${error.message}')));
     }
   }
 
@@ -192,20 +197,23 @@ class _EditWordPageState extends State<EditWordPage> {
         .toList();
 
     if (word.isEmpty) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('請輸入單字')));
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('請輸入單字')));
       return;
     }
 
     if (meaning.isEmpty) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('請輸入中文意義')));
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('請輸入中文意義')));
       return;
     }
 
     if (sentences.isEmpty) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('請至少輸入一個句子')));
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('請至少輸入一個句子')));
       return;
     }
 
@@ -238,18 +246,14 @@ class _EditWordPageState extends State<EditWordPage> {
   @override
   Widget build(BuildContext context) {
     if (_card == null) {
-      return const Scaffold(
-        body: Center(child: Text('找不到單字資料')),
-      );
+      return const Scaffold(body: Center(child: Text('找不到單字資料')));
     }
 
     final imagePath = _imageFile?.path ?? _existingImagePath;
     final imageBytes = _imageFile == null ? _existingImageBytes : null;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('編輯單字'),
-      ),
+      appBar: AppBar(title: const Text('編輯單字')),
       body: AppBackground(
         child: SafeArea(
           child: ListView(
@@ -260,9 +264,7 @@ class _EditWordPageState extends State<EditWordPage> {
                 subtitle: '修改單字拼寫',
                 child: TextField(
                   controller: _wordController,
-                  decoration: const InputDecoration(
-                    hintText: '例如：inspiration',
-                  ),
+                  decoration: const InputDecoration(hintText: '例如：inspiration'),
                 ),
               ),
               const SizedBox(height: 16),
@@ -271,9 +273,7 @@ class _EditWordPageState extends State<EditWordPage> {
                 subtitle: '修改中文解釋',
                 child: TextField(
                   controller: _meaningController,
-                  decoration: const InputDecoration(
-                    hintText: '例如：靈感',
-                  ),
+                  decoration: const InputDecoration(hintText: '例如：靈感'),
                   minLines: 2,
                   maxLines: 4,
                 ),

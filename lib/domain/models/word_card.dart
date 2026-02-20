@@ -41,6 +41,8 @@ extension PartOfSpeechLabel on PartOfSpeech {
 }
 
 class WordCard {
+  static const Object _unset = Object();
+
   WordCard({
     required this.id,
     required this.word,
@@ -79,8 +81,8 @@ class WordCard {
     String? meaning,
     PartOfSpeech? partOfSpeech,
     List<String>? sentences,
-    String? imagePath,
-    List<int>? imageBytes,
+    Object? imagePath = _unset,
+    Object? imageBytes = _unset,
     DateTime? createdAt,
     DateTime? updatedAt,
     List<int>? reviewSchedule,
@@ -95,8 +97,12 @@ class WordCard {
       meaning: meaning ?? this.meaning,
       partOfSpeech: partOfSpeech ?? this.partOfSpeech,
       sentences: sentences ?? this.sentences,
-      imagePath: imagePath ?? this.imagePath,
-      imageBytes: imageBytes ?? this.imageBytes,
+      imagePath: identical(imagePath, _unset)
+          ? this.imagePath
+          : imagePath as String?,
+      imageBytes: identical(imageBytes, _unset)
+          ? this.imageBytes
+          : imageBytes as List<int>?,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       reviewSchedule: reviewSchedule ?? this.reviewSchedule,
@@ -108,6 +114,11 @@ class WordCard {
   }
 
   Map<String, Object?> toMap() {
+    final normalizedImageBytes = imageBytes == null
+        ? null
+        : imageBytes is Uint8List
+        ? imageBytes
+        : Uint8List.fromList(imageBytes!);
     return {
       'id': id,
       'word': word,
@@ -115,7 +126,7 @@ class WordCard {
       'partOfSpeech': partOfSpeech.name,
       'sentences': sentences,
       'imagePath': imagePath,
-      'imageBytes': imageBytes,
+      'imageBytes': normalizedImageBytes,
       'createdAt': createdAt.millisecondsSinceEpoch,
       'updatedAt': updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': reviewSchedule,
@@ -142,7 +153,7 @@ class WordCard {
       parsedBytes = bytesRaw;
     } else if (bytesRaw is List) {
       try {
-        parsedBytes = bytesRaw.cast<int>();
+        parsedBytes = Uint8List.fromList(bytesRaw.cast<int>());
       } catch (_) {
         parsedBytes = null;
       }
