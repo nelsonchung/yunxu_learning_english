@@ -206,10 +206,12 @@ class _Thumb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
+      final bytes = card.imageBytes!;
+      final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
       return ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: Image.memory(
-          Uint8List.fromList(card.imageBytes!),
+          typedBytes,
           width: 56,
           height: 56,
           fit: BoxFit.cover,

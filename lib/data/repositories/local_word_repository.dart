@@ -7,8 +7,8 @@ class LocalWordRepository implements WordRepository {
   LocalWordRepository({
     required WordLocalDb localDb,
     required ReviewScheduleService scheduleService,
-  })  : _localDb = localDb,
-        _scheduleService = scheduleService;
+  }) : _localDb = localDb,
+       _scheduleService = scheduleService;
 
   final WordLocalDb _localDb;
   final ReviewScheduleService _scheduleService;
@@ -16,11 +16,10 @@ class LocalWordRepository implements WordRepository {
   @override
   Future<List<WordCard>> fetchAll({bool includeDeleted = false}) async {
     final raw = await _localDb.getAll();
-    final cards = raw.map(WordCard.fromMap).toList();
-    if (includeDeleted) {
-      return cards;
-    }
-    return cards.where((card) => !card.isDeleted).toList();
+    final filtered = includeDeleted
+        ? raw
+        : raw.where((item) => item['isDeleted'] != true);
+    return filtered.map(WordCard.fromMap).toList();
   }
 
   @override

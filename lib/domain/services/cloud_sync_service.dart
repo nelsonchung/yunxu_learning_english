@@ -433,13 +433,18 @@ class CloudSyncService {
 
   Map<String, Object?> _toCloudMap(WordCard card) {
     final imageBytes = card.imageBytes;
+    final typedImageBytes = imageBytes == null
+        ? null
+        : imageBytes is Uint8List
+        ? imageBytes
+        : Uint8List.fromList(imageBytes);
     return {
       'id': card.id,
       'word': card.word,
       'meaning': card.meaning,
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': card.sentences,
-      'imageBytes': imageBytes == null ? null : Uint8List.fromList(imageBytes),
+      'imageBytes': typedImageBytes,
       'createdAt': card.createdAt.millisecondsSinceEpoch,
       'updatedAt': card.updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': card.reviewSchedule,
@@ -465,9 +470,13 @@ class CloudSyncService {
     List<int>? imageBytes;
     final bytesRaw = data['imageBytes'];
     if (bytesRaw is Uint8List) {
-      imageBytes = bytesRaw.toList();
+      imageBytes = bytesRaw;
     } else if (bytesRaw is List) {
-      imageBytes = List<int>.from(bytesRaw);
+      try {
+        imageBytes = bytesRaw.cast<int>();
+      } catch (_) {
+        imageBytes = null;
+      }
     }
 
     final createdRaw = data['createdAt'];

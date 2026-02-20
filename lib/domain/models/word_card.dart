@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 enum PartOfSpeech {
   noun,
   verb,
@@ -136,35 +138,68 @@ class WordCard {
 
     List<int>? parsedBytes;
     final bytesRaw = data['imageBytes'];
-    if (bytesRaw is List) {
-      parsedBytes = List<int>.from(bytesRaw);
+    if (bytesRaw is Uint8List) {
+      parsedBytes = bytesRaw;
+    } else if (bytesRaw is List) {
+      try {
+        parsedBytes = bytesRaw.cast<int>();
+      } catch (_) {
+        parsedBytes = null;
+      }
     }
 
+    final createdRaw = data['createdAt'];
+    final createdAt = createdRaw is int
+        ? DateTime.fromMillisecondsSinceEpoch(createdRaw)
+        : DateTime.now();
     final updatedRaw = data['updatedAt'];
     final updatedAt = updatedRaw is int
         ? DateTime.fromMillisecondsSinceEpoch(updatedRaw)
-        : DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int);
+        : createdAt;
+
+    final sentencesRaw = data['sentences'];
+    final sentences = sentencesRaw is List
+        ? sentencesRaw.whereType<String>().toList()
+        : <String>[];
+
+    final reviewRaw = data['reviewSchedule'];
+    final reviewSchedule = reviewRaw is List
+        ? reviewRaw.whereType<int>().toList()
+        : const <int>[1, 2, 3, 5, 8, 13, 21, 39];
+
+    final nextReviewIndexRaw = data['nextReviewIndex'];
+    final nextReviewIndex = nextReviewIndexRaw is int ? nextReviewIndexRaw : 0;
+
+    final nextReviewRaw = data['nextReviewDate'];
+    final nextReviewDate = nextReviewRaw is int
+        ? DateTime.fromMillisecondsSinceEpoch(nextReviewRaw)
+        : createdAt;
+
+    final historyRaw = data['history'];
+    final history = historyRaw is List
+        ? historyRaw
+              .whereType<int>()
+              .map((item) => DateTime.fromMillisecondsSinceEpoch(item))
+              .toList()
+        : <DateTime>[];
 
     final isDeletedRaw = data['isDeleted'];
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
 
     return WordCard(
-      id: data['id'] as String,
-      word: data['word'] as String,
+      id: (data['id'] as String?) ?? '',
+      word: (data['word'] as String?) ?? '',
       meaning: (data['meaning'] as String?) ?? '',
       partOfSpeech: parsedPart,
-      sentences: List<String>.from(data['sentences'] as List),
+      sentences: sentences,
       imagePath: data['imagePath'] as String?,
       imageBytes: parsedBytes,
-      createdAt: DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int),
+      createdAt: createdAt,
       updatedAt: updatedAt,
-      reviewSchedule: List<int>.from(data['reviewSchedule'] as List),
-      nextReviewIndex: data['nextReviewIndex'] as int,
-      nextReviewDate:
-          DateTime.fromMillisecondsSinceEpoch(data['nextReviewDate'] as int),
-      history: (data['history'] as List)
-          .map((item) => DateTime.fromMillisecondsSinceEpoch(item as int))
-          .toList(),
+      reviewSchedule: reviewSchedule,
+      nextReviewIndex: nextReviewIndex,
+      nextReviewDate: nextReviewDate,
+      history: history,
       isDeleted: isDeleted,
     );
   }

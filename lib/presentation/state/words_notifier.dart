@@ -94,26 +94,35 @@ class WordsNotifier extends ChangeNotifier {
   }
 
   Future<void> load() async {
+    if (_isLoading) {
+      return;
+    }
+
     _isLoading = true;
     notifyListeners();
 
-    final all = await _repository.fetchAll();
-    final migrated = await _migrateLegacyImages(all);
-    _words
-      ..clear()
-      ..addAll(migrated);
+    try {
+      final all = await _repository.fetchAll();
+      final migrated = await _migrateLegacyImages(all);
+      _words
+        ..clear()
+        ..addAll(migrated);
 
-    _isLoading = false;
-    notifyListeners();
-
-    if (_syncService != null) {
-      await _refreshSyncState(notify: false);
-      if (_syncEnabled) {
-        unawaited(syncNow());
-        _startPolling();
-      } else {
-        _stopPolling();
+      if (_syncService != null) {
+        await _refreshSyncState(notify: false);
+        if (_syncEnabled) {
+          unawaited(syncNow());
+          _startPolling();
+        } else {
+          _stopPolling();
+        }
       }
+    } catch (error, stackTrace) {
+      debugPrint('WordsNotifier load failed: $error');
+      debugPrintStack(stackTrace: stackTrace);
+    } finally {
+      _isLoading = false;
+      notifyListeners();
     }
   }
 

@@ -57,8 +57,7 @@ class WordDetailPage extends StatelessWidget {
               if (card == null) {
                 return const Center(child: Text('找不到單字資料'));
               }
-              final showImages =
-                  context.watch<SettingsNotifier>().showImages;
+              final showImages = context.watch<SettingsNotifier>().showImages;
 
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
@@ -83,14 +82,22 @@ class WordDetailPage extends StatelessWidget {
                           if (showImages) ...[
                             if (card.imageBytes != null &&
                                 card.imageBytes!.isNotEmpty)
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(16),
-                                child: Image.memory(
-                                  Uint8List.fromList(card.imageBytes!),
-                                  height: 200,
-                                  width: double.infinity,
-                                  fit: BoxFit.cover,
-                                ),
+                              Builder(
+                                builder: (context) {
+                                  final bytes = card.imageBytes!;
+                                  final typedBytes = bytes is Uint8List
+                                      ? bytes
+                                      : Uint8List.fromList(bytes);
+                                  return ClipRRect(
+                                    borderRadius: BorderRadius.circular(16),
+                                    child: Image.memory(
+                                      typedBytes,
+                                      height: 200,
+                                      width: double.infinity,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  );
+                                },
                               )
                             else if (card.imagePath != null)
                               ClipRRect(
@@ -161,9 +168,7 @@ class WordDetailPage extends StatelessWidget {
                         : Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: card.history
-                                .map(
-                                  (date) => Text('• ${formatDate(date)}'),
-                                )
+                                .map((date) => Text('• ${formatDate(date)}'))
                                 .toList(),
                           ),
                   ),

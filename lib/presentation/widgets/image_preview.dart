@@ -20,6 +20,8 @@ class ImagePreview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (imageBytes != null && imageBytes!.isNotEmpty) {
+      final bytes = imageBytes!;
+      final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
       return Container(
         height: height,
         width: double.infinity,
@@ -30,7 +32,7 @@ class ImagePreview extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: Image.memory(
-            Uint8List.fromList(imageBytes!),
+            typedBytes,
             fit: BoxFit.contain,
             alignment: Alignment.center,
           ),
@@ -48,9 +50,7 @@ class ImagePreview extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color(0xFF0B6E99).withOpacity(0.08),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: const Color(0xFF0B6E99).withOpacity(0.2),
-          ),
+          border: Border.all(color: const Color(0xFF0B6E99).withOpacity(0.2)),
         ),
         child: const Text('尚未選擇圖片'),
       );

@@ -106,10 +106,7 @@ class _HeroHeader extends StatelessWidget {
                 const SizedBox(height: 6),
                 const Text(
                   '依照遺忘曲線安排的複習卡片',
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 13,
-                  ),
+                  style: TextStyle(color: Colors.white70, fontSize: 13),
                 ),
                 const SizedBox(height: 12),
                 Wrap(
@@ -129,11 +126,7 @@ class _HeroHeader extends StatelessWidget {
               ],
             ),
           ),
-          const Icon(
-            Icons.auto_graph,
-            color: Colors.white70,
-            size: 42,
-          ),
+          const Icon(Icons.auto_graph, color: Colors.white70, size: 42),
         ],
       ),
     );
@@ -195,9 +188,7 @@ class _EmptyState extends StatelessWidget {
             child: const Icon(Icons.check_circle, color: Color(0xFF0B6E99)),
           ),
           const SizedBox(width: 12),
-          const Expanded(
-            child: Text('今天沒有需要複習的單字，做得很好！'),
-          ),
+          const Expanded(child: Text('今天沒有需要複習的單字，做得很好！')),
         ],
       ),
     );
@@ -241,16 +232,16 @@ class _ReviewCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  if (showImage) ...[
-                    _Thumb(card: card),
-                    const SizedBox(width: 12),
-                  ],
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (showImage) ...[
+                      _Thumb(card: card),
+                      const SizedBox(width: 12),
+                    ],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             card.word,
@@ -267,9 +258,7 @@ class _ReviewCard extends StatelessWidget {
                           const SizedBox(height: 8),
                           Text(
                             '${card.meaning} · ${card.partOfSpeech.label}',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodySmall
+                            style: Theme.of(context).textTheme.bodySmall
                                 ?.copyWith(color: Colors.black54),
                           ),
                           const SizedBox(height: 6),
@@ -288,10 +277,7 @@ class _ReviewCard extends StatelessWidget {
                 const SizedBox(height: 12),
                 Row(
                   children: [
-                    TextButton(
-                      onPressed: onTap,
-                      child: const Text('查看詳情'),
-                    ),
+                    TextButton(onPressed: onTap, child: const Text('查看詳情')),
                     const Spacer(),
                     ElevatedButton(
                       onPressed: onReview,
@@ -316,10 +302,12 @@ class _Thumb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (card.imageBytes != null && card.imageBytes!.isNotEmpty) {
+      final bytes = card.imageBytes!;
+      final typedBytes = bytes is Uint8List ? bytes : Uint8List.fromList(bytes);
       return ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: Image.memory(
-          Uint8List.fromList(card.imageBytes!),
+          typedBytes,
           width: 70,
           height: 70,
           fit: BoxFit.cover,
