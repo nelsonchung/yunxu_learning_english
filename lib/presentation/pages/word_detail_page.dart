@@ -1,6 +1,3 @@
-import 'dart:io';
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,6 +6,7 @@ import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
+import '../widgets/image_preview.dart';
 import '../widgets/section_card.dart';
 
 class WordDetailPage extends StatelessWidget {
@@ -80,55 +78,14 @@ class WordDetailPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           if (showImages) ...[
-                            if (card.imageBytes != null &&
-                                card.imageBytes!.isNotEmpty)
-                              Builder(
-                                builder: (context) {
-                                  final dpr = MediaQuery.devicePixelRatioOf(
-                                    context,
-                                  );
-                                  final cacheWidth =
-                                      (MediaQuery.sizeOf(context).width * dpr)
-                                          .round();
-                                  final cacheHeight = (200 * dpr).round();
-                                  final bytes = card.imageBytes!;
-                                  final typedBytes = bytes is Uint8List
-                                      ? bytes
-                                      : Uint8List.fromList(bytes);
-                                  return ClipRRect(
-                                    borderRadius: BorderRadius.circular(16),
-                                    child: Image.memory(
-                                      typedBytes,
-                                      height: 200,
-                                      width: double.infinity,
-                                      fit: BoxFit.cover,
-                                      cacheWidth: cacheWidth,
-                                      cacheHeight: cacheHeight,
-                                    ),
-                                  );
-                                },
-                              )
-                            else if (card.imagePath != null)
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(16),
-                                child: Image.file(
-                                  File(card.imagePath!),
-                                  height: 200,
-                                  width: double.infinity,
-                                  fit: BoxFit.cover,
-                                  cacheWidth:
-                                      (MediaQuery.sizeOf(context).width *
-                                              MediaQuery.devicePixelRatioOf(
-                                                context,
-                                              ))
-                                          .round(),
-                                  cacheHeight:
-                                      (200 *
-                                              MediaQuery.devicePixelRatioOf(
-                                                context,
-                                              ))
-                                          .round(),
-                                ),
+                            if ((card.imageBytes != null &&
+                                    card.imageBytes!.isNotEmpty) ||
+                                card.imagePath != null)
+                              ImagePreview(
+                                imageFile: null,
+                                imagePath: card.imagePath,
+                                imageBytes: card.imageBytes,
+                                height: 220,
                               ),
                             if ((card.imageBytes != null &&
                                     card.imageBytes!.isNotEmpty) ||

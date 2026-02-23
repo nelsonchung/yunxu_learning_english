@@ -21,7 +21,6 @@ class ImagePreview extends StatelessWidget {
   Widget build(BuildContext context) {
     final dpr = MediaQuery.devicePixelRatioOf(context);
     final cacheWidth = (MediaQuery.sizeOf(context).width * dpr).round();
-    final cacheHeight = (height * dpr).round();
 
     if (imageBytes != null && imageBytes!.isNotEmpty) {
       final bytes = imageBytes!;
@@ -40,7 +39,6 @@ class ImagePreview extends StatelessWidget {
             fit: BoxFit.contain,
             alignment: Alignment.center,
             cacheWidth: cacheWidth,
-            cacheHeight: cacheHeight,
           ),
         ),
       );
@@ -76,7 +74,6 @@ class ImagePreview extends StatelessWidget {
           fit: BoxFit.contain,
           alignment: Alignment.center,
           cacheWidth: cacheWidth,
-          cacheHeight: cacheHeight,
         ),
       ),
     );
