@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Yunxu Learning English｜英文單字學習方案 | 鋆旭科技</title>
+  <meta
+    name="description"
+    content="Yunxu Learning English 透過 ChatGPT 單字產生流程 + 艾賓浩斯複習排程，協助快速建立英文單字卡並穩定複習。"
+  >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-blue: #0b6e99;
+      --brand-teal: #1ca7a6;
+      --text-main: #1f2a37;
+      --text-muted: #5f6f81;
+      --card-shadow: 0 14px 34px rgba(15, 55, 92, 0.12);
+      --card-radius: 18px;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: linear-gradient(180deg, #f5fbff 0%, #f8f9fb 55%, #f7fbfa 100%);
+      color: var(--text-main);
+    }
+
+    .hero-banner {
+      position: relative;
+      border-radius: 26px;
+      overflow: hidden;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      background: linear-gradient(
+        135deg,
+        rgba(11, 110, 153, 0.14),
+        rgba(28, 167, 166, 0.12)
+      );
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(11, 110, 153, 0.28), transparent 45%),
+        radial-gradient(circle at 8% 85%, rgba(28, 167, 166, 0.25), transparent 46%);
+      pointer-events: none;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 1;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 980px;
+    }
+
+    .hero-subtitle {
+      position: relative;
+      z-index: 1;
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: #2f4558;
+    }
+
+    .badge-pill {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: 999px;
+      background: rgba(11, 110, 153, 0.14);
+      color: var(--brand-blue);
+      font-weight: 600;
+      font-size: 0.92rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title {
+      font-size: 1.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0.8rem auto 0;
+      line-height: 1.7;
+    }
+
+    .card-highlight,
+    .feature-card,
+    .image-card {
+      border: none;
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      background: #fff;
+    }
+
+    .icon-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--brand-blue);
+      background: rgba(11, 110, 153, 0.12);
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 1.9rem;
+      margin-bottom: 1rem;
+      color: #33485c;
+      line-height: 1.7;
+    }
+
+    .check-list li::before {
+      content: "\f26e";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: #16a085;
+      font-size: 1.15rem;
+    }
+
+    .step-line {
+      position: relative;
+      padding-left: 2.1rem;
+    }
+
+    .step-line::before {
+      content: "";
+      position: absolute;
+      left: 0.85rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(11, 110, 153, 0.35), rgba(28, 167, 166, 0.35));
+    }
+
+    .step-item {
+      position: relative;
+      margin-bottom: 1rem;
+      padding: 0.85rem 1rem 0.85rem 1.2rem;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(15, 64, 122, 0.08);
+    }
+
+    .step-item::before {
+      content: attr(data-step);
+      position: absolute;
+      left: -1.2rem;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      background: var(--brand-blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-card {
+      padding: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .image-card img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(11, 110, 153, 0.12);
+    }
+
+    .iphone-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 26px rgba(15, 64, 122, 0.1);
+      padding: 0.9rem;
+      height: 100%;
+      text-align: center;
+    }
+
+    .iphone-card img {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(11, 110, 153, 0.1);
+    }
+
+    .iphone-card h5 {
+      margin-top: 0.85rem;
+      font-weight: 700;
+      font-size: 1.02rem;
+    }
+
+    .iphone-card p {
+      margin: 0.35rem 0 0;
+      color: var(--text-muted);
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .feature-card {
+      padding: 1.4rem;
+      height: 100%;
+    }
+
+    .cta-card {
+      border-radius: 24px;
+      padding: 2.5rem 1.6rem;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(135deg, #0b6e99, #1ca7a6);
+      box-shadow: 0 20px 44px rgba(11, 110, 153, 0.28);
+    }
+
+    .cta-card .btn {
+      font-weight: 600;
+    }
+
+    @media (max-width: 767.98px) {
+      .hero-banner {
+        padding: 2.8rem 1.4rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container py-5">
+    <section class="hero-banner mb-5">
+      <div class="badge-pill mb-3"><i class="bi bi-mortarboard-fill"></i> GPT 單字流程 + 遺忘曲線複習</div>
+      <h1 class="hero-title">Yunxu Learning English 英文單字學習方案</h1>
+      <p class="hero-subtitle">
+        這個方案結合 ChatGPT 自動產生單字內容與 App 內複習排程，讓使用者能快速建立「英文單字、中文解釋、英文解釋、常用例句」，再透過
+        1、2、3、5、8、13、21、39 天複習節奏，穩定累積長期記憶。
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card card-highlight h-100">
+            <div class="card-body p-4">
+              <div class="icon-circle mb-3"><i class="bi bi-exclamation-triangle-fill"></i></div>
+              <h2 class="section-title h3 mb-3">英文學習常見痛點</h2>
+              <ul class="list-unstyled check-list mb-0">
+                <li>自己整理單字卡很花時間，內容格式不一致，建立效率低。</li>
+                <li>只背單字不背情境，短時間內記得，幾天後就忘。</li>
+                <li>缺少固定複習節奏，無法知道今天該先複習哪些單字。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-highlight h-100">
+            <div class="card-body p-4">
+              <div class="icon-circle mb-3"><i class="bi bi-lightbulb-fill"></i></div>
+              <h2 class="section-title h3 mb-3">本方案三步驟</h2>
+              <div class="step-line">
+                <div class="step-item" data-step="01">
+                  <h5 class="fw-bold mb-2">用 GPT 產生結構化單字內容</h5>
+                  <p class="mb-0">透過「鋆旭科技 英文單字小老師」輸出英文單字、中文解釋、英文解釋、常用例句。</p>
+                </div>
+                <div class="step-item" data-step="02">
+                  <h5 class="fw-bold mb-2">將資料填入 App 建立單字卡</h5>
+                  <p class="mb-0">把 GPT 產生結果填入單字、詞性、中文意義、例句與圖片，快速建立可複習資料。</p>
+                </div>
+                <div class="step-item mb-0" data-step="03">
+                  <h5 class="fw-bold mb-2">每日複習 + 同步管理</h5>
+                  <p class="mb-0">依遺忘曲線安排今日複習，並透過設定與紀錄頁掌握提醒、同步、備份與還原狀態。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <div class="badge-pill mx-auto mb-3"><i class="bi bi-robot"></i> AI 內容產生流程</div>
+        <h2 class="section-title mb-2">先用 GPT 生成，再匯入 App</h2>
+        <p class="section-subtitle">
+          使用者可先在 ChatGPT 完成資料準備，再把需要欄位填寫到 App，降低手動整理單字卡的成本。
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="image-card">
+            <img src="assets/gpt-yunxu-english-teacher.png" alt="鋆旭科技英文單字小老師 GPT 畫面" loading="lazy">
+            <h5 class="fw-bold mb-0">GPT 工具頁面</h5>
+            <p class="text-muted mb-0">直接使用指定 GPT：<code>{鋆旭科技} 英文單字小老師</code>。</p>
+            <a
+              class="btn btn-outline-primary align-self-start mt-2"
+              href="https://chatgpt.com/g/g-ncSUDs6k6-yun-xu-ke-ji-ying-wen-dan-zi-xiao-lao-shi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-box-arrow-up-right me-1"></i> 開啟 GPT
+            </a>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="image-card">
+            <img src="assets/example-gpt-space.png" alt="輸入space後 GPT 產生單字資料示範" loading="lazy">
+            <h5 class="fw-bold mb-0">輸入"space"後的輸出格式</h5>
+            <p class="text-muted mb-0">可快速取得英文單字、中文解釋、英文解釋、常用例句，再填寫到 App 對應欄位。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <div class="badge-pill mx-auto mb-3"><i class="bi bi-phone"></i> iPhone 畫面</div>
+        <h2 class="section-title mb-2">App 主要操作頁面</h2>
+        <p class="section-subtitle">目前為 iPhone 版畫面，對應日常學習、列表管理、設定與同步紀錄情境；另外也已申請 mac 平台版本，正同步準備上架 App Store / Mac App Store。</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <article class="iphone-card">
+            <img src="assets/todaylearn.png" alt="今日複習頁面" loading="lazy">
+            <h5>今日複習</h5>
+            <p>顯示今日應複習的單字卡，完成後可直接更新下次複習日期。</p>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="iphone-card">
+            <img src="assets/wordlist.png" alt="單字列表頁面" loading="lazy">
+            <h5>單字列表</h5>
+            <p>查看所有已建立單字，並可快速切換排序與進入詳細內容。</p>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="iphone-card">
+            <img src="assets/setting.png" alt="設定頁面" loading="lazy">
+            <h5>設定頁</h5>
+            <p>管理提醒時間、圖片欄位顯示、同步開關與同步間隔。</p>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="iphone-card">
+            <img src="assets/record.png" alt="同步紀錄頁面" loading="lazy">
+            <h5>紀錄頁</h5>
+            <p>查看同步狀態、最近同步時間、錯誤資訊與本地資料統計。</p>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="iphone-card">
+            <img src="assets/description.png" alt="說明頁面" loading="lazy">
+            <h5>說明頁</h5>
+            <p>內建使用方式與遺忘曲線節奏，協助使用者快速上手。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <article class="feature-card">
+            <div class="icon-circle mb-3"><i class="bi bi-calendar-check"></i></div>
+            <h5 class="fw-bold mb-2">遺忘曲線複習</h5>
+            <p class="text-muted mb-0">依 1、2、3、5、8、13、21、39 天自動排程，建立長期記憶節奏。</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="feature-card">
+            <div class="icon-circle mb-3"><i class="bi bi-bell-fill"></i></div>
+            <h5 class="fw-bold mb-2">提醒機制</h5>
+            <p class="text-muted mb-0">可設定每日提醒時間，固定觸發複習通知，降低遺漏風險。</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="feature-card">
+            <div class="icon-circle mb-3"><i class="bi bi-cloud-check-fill"></i></div>
+            <h5 class="fw-bold mb-2">雲端同步與還原</h5>
+            <p class="text-muted mb-0">支援 iOS/macOS 的 iCloud 同步、手動備份與立即還原流程。</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="feature-card">
+            <div class="icon-circle mb-3"><i class="bi bi-image-fill"></i></div>
+            <h5 class="fw-bold mb-2">多媒體單字卡</h5>
+            <p class="text-muted mb-0">可加入圖片與多筆例句，搭配詞性欄位提升理解與記憶連結。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta-card">
+        <h2 class="fw-bold mb-3">先讓 GPT 幫你準備內容，再用 App 穩定複習</h2>
+        <p class="mb-4">這個方案適合需要長期累積英文單字、並希望降低資料整理成本的學習流程。</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
+          <a
+            href="https://chatgpt.com/g/g-ncSUDs6k6-yun-xu-ke-ji-ying-wen-dan-zi-xiao-lao-shi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-light btn-lg px-4"
+          >
+            <i class="bi bi-robot me-2"></i>使用鋆旭科技英文單字小老師
+          </a>
+          <a
+            href="https://apps.apple.com/app/id0000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light btn-lg px-4"
+            aria-label="下載 iPhone App Store（預留連結）"
+          >
+            <i class="bi bi-apple me-2"></i>下載 iPhone App（即將上架）
+          </a>
+          <a
+            href="https://apps.apple.com/app/id0000000001"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light btn-lg px-4"
+            aria-label="下載 Mac App Store（預留連結）"
+          >
+            <i class="bi bi-laptop me-2"></i>下載 Mac App（即將上架）
+          </a>
+        </div>
+        <p class="mt-3 mb-0 small text-white-50">上架完成後，將 iPhone 與 Mac 的預留連結替換為正式 App Store / Mac App Store 網址。</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
