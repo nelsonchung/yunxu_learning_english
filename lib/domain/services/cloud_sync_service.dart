@@ -145,7 +145,9 @@ class CloudSyncService {
       final localById = {for (final card in localAll) card.id: card};
       for (final remoteCard in remoteById.values) {
         final local = localById[remoteCard.id];
-        if (local == null || local.updatedAt.isBefore(remoteCard.updatedAt)) {
+        if (local == null ||
+            local.updatedAt.isBefore(remoteCard.updatedAt) ||
+            _shouldRecoverImageFromRemote(local, remoteCard)) {
           await _wordRepository.update(remoteCard);
         }
       }
@@ -291,7 +293,8 @@ class CloudSyncService {
           await _wordRepository.update(remoteCard);
           continue;
         }
-        if (local.updatedAt.isBefore(remoteCard.updatedAt)) {
+        if (local.updatedAt.isBefore(remoteCard.updatedAt) ||
+            _shouldRecoverImageFromRemote(local, remoteCard)) {
           await _wordRepository.update(remoteCard);
         }
       }
@@ -471,6 +474,10 @@ class CloudSyncService {
   }
 
   int _estimatePushPayloadBytes(WordCard card) {
+    if (card.imageCleared) {
+      return 2048;
+    }
+
     final imageBytes = card.imageBytes;
     var imageSize = imageBytes == null ? 0 : imageBytes.length;
     if (imageSize == 0 && card.imagePath != null) {
@@ -494,25 +501,48 @@ class CloudSyncService {
   }
 
   Future<Map<String, Object?>> _toCloudMap(WordCard card) async {
+    if (card.imageCleared) {
+      return {
+        'id': card.id,
+        'word': card.word,
+        'meaning': card.meaning,
+        'partOfSpeech': card.partOfSpeech.name,
+        'sentences': card.sentences,
+        'imageBytes': null,
+        'createdAt': card.createdAt.millisecondsSinceEpoch,
+        'updatedAt': card.updatedAt.millisecondsSinceEpoch,
+        'reviewSchedule': card.reviewSchedule,
+        'nextReviewIndex': card.nextReviewIndex,
+        'nextReviewDate': card.nextReviewDate.millisecondsSinceEpoch,
+        'history': card.history
+            .map((item) => item.millisecondsSinceEpoch)
+            .toList(),
+        'isDeleted': card.isDeleted,
+      };
+    }
+
     var imageBytes = card.imageBytes;
+    var hasImageSource = imageBytes != null && imageBytes.isNotEmpty;
     if ((imageBytes == null || imageBytes.isEmpty) && card.imagePath != null) {
+      hasImageSource = true;
       final file = File(card.imagePath!);
       if (await file.exists()) {
         imageBytes = await file.readAsBytes();
       }
     }
+
     final typedImageBytes = imageBytes == null
         ? null
         : imageBytes is Uint8List
         ? imageBytes
         : Uint8List.fromList(imageBytes);
-    return {
+
+    final map = <String, Object?>{
       'id': card.id,
       'word': card.word,
       'meaning': card.meaning,
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': card.sentences,
-      'imageBytes': typedImageBytes,
       'createdAt': card.createdAt.millisecondsSinceEpoch,
       'updatedAt': card.updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': card.reviewSchedule,
@@ -523,6 +553,17 @@ class CloudSyncService {
           .toList(),
       'isDeleted': card.isDeleted,
     };
+
+    if (typedImageBytes != null) {
+      map['imageBytes'] = typedImageBytes;
+    } else if (!hasImageSource) {
+      // Keep CloudKit asset untouched when local card has no image updates.
+    } else {
+      // Local card references an image but file is currently unavailable.
+      // Do not send image=nil; preserve existing cloud asset.
+    }
+
+    return map;
   }
 
   WordCard _fromCloudMap(Map<String, Object?> data) {
@@ -584,6 +625,7 @@ class CloudSyncService {
       meaning: (data['meaning'] as String?) ?? '',
       partOfSpeech: part,
       sentences: (data['sentences'] as List?)?.cast<String>() ?? <String>[],
+      imageCleared: false,
       imagePath: null,
       imageBytes: imageBytes,
       createdAt: createdAt,
@@ -666,6 +708,21 @@ class CloudSyncService {
       return 'server_error';
     }
     return 'sync_failed';
+  }
+
+  bool _shouldRecoverImageFromRemote(WordCard local, WordCard remote) {
+    if (!local.updatedAt.isAtSameMomentAs(remote.updatedAt)) {
+      return false;
+    }
+    if (local.imageCleared) {
+      return false;
+    }
+    return !_hasImageData(local) && _hasImageData(remote);
+  }
+
+  bool _hasImageData(WordCard card) {
+    final bytes = card.imageBytes;
+    return (bytes != null && bytes.isNotEmpty) || card.imagePath != null;
   }
 }
 

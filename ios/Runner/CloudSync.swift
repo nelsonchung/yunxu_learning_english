@@ -74,20 +74,21 @@ final class CloudSyncHandler {
       let isDeleted = record["isDeleted"] as? Bool ?? false
       ckRecord["isDeleted"] = NSNumber(value: isDeleted)
 
-      let imageValue = record["imageBytes"]
-      if let bytes = imageValue as? FlutterStandardTypedData {
-        let data = bytes.data
-        let tempUrl = FileManager.default.temporaryDirectory
-          .appendingPathComponent("\(UUID().uuidString).jpg")
-        do {
-          try data.write(to: tempUrl)
-          ckRecord["image"] = CKAsset(fileURL: tempUrl)
-          tempFiles.append(tempUrl)
-        } catch {
-          // Ignore image if write fails
+      if let imageValue = record["imageBytes"] {
+        if let bytes = imageValue as? FlutterStandardTypedData, !bytes.data.isEmpty {
+          let data = bytes.data
+          let tempUrl = FileManager.default.temporaryDirectory
+            .appendingPathComponent("\(UUID().uuidString).jpg")
+          do {
+            try data.write(to: tempUrl)
+            ckRecord["image"] = CKAsset(fileURL: tempUrl)
+            tempFiles.append(tempUrl)
+          } catch {
+            // Ignore image if write fails
+          }
+        } else {
+          ckRecord["image"] = nil
         }
-      } else {
-        ckRecord["image"] = nil
       }
 
       ckRecords.append(ckRecord)

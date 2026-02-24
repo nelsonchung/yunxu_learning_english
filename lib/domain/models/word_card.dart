@@ -56,6 +56,7 @@ class WordCard {
     required this.nextReviewDate,
     required this.history,
     required this.isDeleted,
+    this.imageCleared = false,
     this.imagePath,
     this.imageBytes,
   });
@@ -74,6 +75,7 @@ class WordCard {
   final DateTime nextReviewDate;
   final List<DateTime> history;
   final bool isDeleted;
+  final bool imageCleared;
 
   WordCard copyWith({
     String? id,
@@ -90,6 +92,7 @@ class WordCard {
     DateTime? nextReviewDate,
     List<DateTime>? history,
     bool? isDeleted,
+    bool? imageCleared,
   }) {
     return WordCard(
       id: id ?? this.id,
@@ -110,6 +113,7 @@ class WordCard {
       nextReviewDate: nextReviewDate ?? this.nextReviewDate,
       history: history ?? this.history,
       isDeleted: isDeleted ?? this.isDeleted,
+      imageCleared: imageCleared ?? this.imageCleared,
     );
   }
 
@@ -134,6 +138,7 @@ class WordCard {
       'nextReviewDate': nextReviewDate.millisecondsSinceEpoch,
       'history': history.map((item) => item.millisecondsSinceEpoch).toList(),
       'isDeleted': isDeleted,
+      'imageCleared': imageCleared,
     };
   }
 
@@ -196,6 +201,8 @@ class WordCard {
 
     final isDeletedRaw = data['isDeleted'];
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
+    final imageClearedRaw = data['imageCleared'];
+    final imageCleared = imageClearedRaw is bool ? imageClearedRaw : false;
 
     return WordCard(
       id: (data['id'] as String?) ?? '',
@@ -212,6 +219,7 @@ class WordCard {
       nextReviewDate: nextReviewDate,
       history: history,
       isDeleted: isDeleted,
+      imageCleared: imageCleared,
     );
   }
 }

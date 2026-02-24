@@ -360,6 +360,7 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
+      imageCleared: false,
       imagePath: imagePath,
       imageBytes: null,
       createdAt: now,
@@ -374,6 +375,9 @@ class WordsNotifier extends ChangeNotifier {
     await _repository.add(card);
     _words.add(card);
     notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
   }
 
   Future<void> updateWord({
@@ -400,12 +404,14 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     var legacyPath = card.imagePath;
+    var imageCleared = card.imageCleared;
 
     if (removeImage) {
       if (legacyPath != null) {
         await _imageStorage.deleteImage(legacyPath);
-        legacyPath = null;
       }
+      legacyPath = null;
+      imageCleared = true;
     }
 
     if (imageFile != null) {
@@ -414,11 +420,13 @@ class WordsNotifier extends ChangeNotifier {
         await _imageStorage.deleteImage(legacyPath);
       }
       legacyPath = newPath;
+      imageCleared = false;
     } else if (!removeImage &&
         legacyPath == null &&
         card.imageBytes != null &&
         card.imageBytes!.isNotEmpty) {
       legacyPath = await _imageStorage.saveBytes(card.imageBytes!);
+      imageCleared = false;
     }
 
     final updated = card.copyWith(
@@ -426,6 +434,7 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
+      imageCleared: imageCleared,
       imagePath: legacyPath,
       imageBytes: null,
       updatedAt: DateTime.now(),
