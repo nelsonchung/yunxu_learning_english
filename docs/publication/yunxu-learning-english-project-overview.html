@@ -243,6 +243,26 @@
       font-weight: 600;
     }
 
+    .download-quick {
+      border: 1px solid rgba(11, 110, 153, 0.16);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(11, 110, 153, 0.08);
+    }
+
+    .download-quick-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: #17324a;
+    }
+
+    .download-quick-note {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
     @media (max-width: 767.98px) {
       .hero-banner {
         padding: 2.8rem 1.4rem;
@@ -263,6 +283,39 @@
         這個方案結合 ChatGPT 自動產生單字內容與 App 內複習排程，讓使用者能快速建立「英文單字、中文解釋、英文解釋、常用例句」，再透過
         1、2、3、5、8、13、21、39 天複習節奏，穩定累積長期記憶。
       </p>
+    </section>
+
+    <section class="mb-5">
+      <div class="download-quick p-4">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-6">
+            <p class="download-quick-title">下載連結（即將上架）</p>
+            <p class="download-quick-note">iPhone App 與 Mac App 已申請上架，完成審核後可直接下載。</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-2">
+              <a
+                href="https://apps.apple.com/app/id0000000000"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary"
+                aria-label="下載 iPhone App Store（預留連結）"
+              >
+                <i class="bi bi-apple me-1"></i>iPhone App（即將上架）
+              </a>
+              <a
+                href="https://apps.apple.com/app/id0000000001"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary"
+                aria-label="下載 Mac App Store（預留連結）"
+              >
+                <i class="bi bi-laptop me-1"></i>Mac App（即將上架）
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="mb-5">
@@ -316,7 +369,7 @@
       <div class="row g-4">
         <div class="col-lg-6">
           <article class="image-card">
-            <img src="assets/gpt-yunxu-english-teacher.png" alt="鋆旭科技英文單字小老師 GPT 畫面" loading="lazy">
+            <img src="assets/yunxulearningenglish/gpt-yunxu-english-teacher.png" alt="鋆旭科技英文單字小老師 GPT 畫面" loading="lazy">
             <h5 class="fw-bold mb-0">GPT 工具頁面</h5>
             <p class="text-muted mb-0">直接使用指定 GPT：<code>{鋆旭科技} 英文單字小老師</code>。</p>
             <a
@@ -331,7 +384,7 @@
         </div>
         <div class="col-lg-6">
           <article class="image-card">
-            <img src="assets/example-gpt-space.png" alt="輸入space後 GPT 產生單字資料示範" loading="lazy">
+            <img src="assets/yunxulearningenglish/example-gpt-space.png" alt="輸入space後 GPT 產生單字資料示範" loading="lazy">
             <h5 class="fw-bold mb-0">輸入"space"後的輸出格式</h5>
             <p class="text-muted mb-0">可快速取得英文單字、中文解釋、英文解釋、常用例句，再填寫到 App 對應欄位。</p>
           </article>
@@ -348,35 +401,35 @@
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <article class="iphone-card">
-            <img src="assets/todaylearn.png" alt="今日複習頁面" loading="lazy">
+            <img src="assets/yunxulearningenglish/todaylearn.png" alt="今日複習頁面" loading="lazy">
             <h5>今日複習</h5>
             <p>顯示今日應複習的單字卡，完成後可直接更新下次複習日期。</p>
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
           <article class="iphone-card">
-            <img src="assets/wordlist.png" alt="單字列表頁面" loading="lazy">
+            <img src="assets/yunxulearningenglish/wordlist.png" alt="單字列表頁面" loading="lazy">
             <h5>單字列表</h5>
             <p>查看所有已建立單字，並可快速切換排序與進入詳細內容。</p>
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
           <article class="iphone-card">
-            <img src="assets/setting.png" alt="設定頁面" loading="lazy">
+            <img src="assets/yunxulearningenglish/setting.png" alt="設定頁面" loading="lazy">
             <h5>設定頁</h5>
             <p>管理提醒時間、圖片欄位顯示、同步開關與同步間隔。</p>
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
           <article class="iphone-card">
-            <img src="assets/record.png" alt="同步紀錄頁面" loading="lazy">
+            <img src="assets/yunxulearningenglish/record.png" alt="同步紀錄頁面" loading="lazy">
             <h5>紀錄頁</h5>
             <p>查看同步狀態、最近同步時間、錯誤資訊與本地資料統計。</p>
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
           <article class="iphone-card">
-            <img src="assets/description.png" alt="說明頁面" loading="lazy">
+            <img src="assets/yunxulearningenglish/description.png" alt="說明頁面" loading="lazy">
             <h5>說明頁</h5>
             <p>內建使用方式與遺忘曲線節奏，協助使用者快速上手。</p>
           </article>
