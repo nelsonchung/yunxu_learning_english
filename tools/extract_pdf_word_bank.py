@@ -34,8 +34,55 @@ BRACKET_RE = re.compile(r"\[[^\]]{2,28}\]")
 CJK_RE = re.compile(r"[\u3400-\u4DBF\u4E00-\u9FFF]")
 VALID_WORD_RE = re.compile(r"^[A-Za-z][A-Za-z'\- ]*[A-Za-z]$")
 NOISE_TOKEN_RE = re.compile(r"^[A-Z]{2,5}$")
-COMMON_LEADING_WORDS = {"a", "an", "the", "as", "to"}
-COMMON_SHORT_WORDS = {"i", "in", "on", "at", "by", "up", "of", "or"}
+NOISE_PREFIX_TOKENS = {
+    "ee",
+    "eee",
+    "eed",
+    "emd",
+    "gee",
+    "gees",
+    "geieed",
+    "feized",
+    "cre",
+    "ces",
+    "moa",
+    "wee",
+    "siz",
+    "sir",
+    "od",
+    "oe",
+    "eh",
+    "za",
+    "sit",
+    "ae",
+    "aay",
+    "app",
+    "ely",
+    "ss",
+    "ig",
+    "wise",
+    "wisi",
+    "wis",
+    "wea",
+    "ged",
+    "sis",
+    "wie",
+    "wots",
+    "yea",
+    "feised",
+    "het",
+    "feed",
+}
+EXAMPLE_PREFIX_RE = re.compile(r"^\s*(?:e\.?g\.?|ps\.?)", re.IGNORECASE)
+PHRASE_SPLIT_RE = re.compile(r"[;；]+")
+BAD_WORD_RE = re.compile(r"^(?:cre|gre|ghe|eee|eed|emd|aay|sis)$", re.IGNORECASE)
+VOWELS = set("aeiouy")
+WORD_DICT_PATH = Path("/usr/share/dict/words")
+PHRASE_LINK_TOKENS = {"of", "in", "on", "to", "by", "or", "as", "an", "a", "the", "and", "for", "at"}
+DERIVATIONAL_SUFFIX_RE = re.compile(
+    r"(?:tion|sion|ment|ness|able|ible|ally|ingly|ing|ed|ship|hood|ward|ance|ence|ism|ist|ize|ise|ous|ive|ary|ory|less|ful)$"
+)
+_WORD_DICTIONARY: set[str] | None = None
 
 
 @dataclass
@@ -74,6 +121,29 @@ def normalize_spaces(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def get_word_dictionary() -> set[str]:
+    global _WORD_DICTIONARY
+    if _WORD_DICTIONARY is not None:
+        return _WORD_DICTIONARY
+    if not WORD_DICT_PATH.exists():
+        _WORD_DICTIONARY = set()
+        return _WORD_DICTIONARY
+    with WORD_DICT_PATH.open("r", encoding="utf-8", errors="ignore") as handle:
+        _WORD_DICTIONARY = {
+            line.strip().lower()
+            for line in handle
+            if line.strip() and line.strip().isalpha()
+        }
+    return _WORD_DICTIONARY
+
+
+def is_known_english_word(token: str) -> bool:
+    dictionary = get_word_dictionary()
+    if not dictionary:
+        return True
+    return token in dictionary
+
+
 def normalize_word(raw: str) -> str:
     text = raw.strip(" \t\n\r\f\v|_.,;:!?*()[]{}<>+=~`\"“”‘’")
     text = normalize_spaces(text)
@@ -81,10 +151,7 @@ def normalize_word(raw: str) -> str:
     while len(tokens) > 1:
         first = tokens[0]
         first_lower = first.lower()
-        if first_lower in COMMON_LEADING_WORDS:
-            tokens = tokens[1:]
-            continue
-        if len(first_lower) <= 2 and first_lower not in COMMON_SHORT_WORDS:
+        if first_lower in NOISE_PREFIX_TOKENS:
             tokens = tokens[1:]
             continue
         if NOISE_TOKEN_RE.match(first):
@@ -93,8 +160,40 @@ def normalize_word(raw: str) -> str:
         if len(first) <= 3 and any(ch.isupper() for ch in first):
             tokens = tokens[1:]
             continue
+        if first_lower in {"a", "an", "the", "i"} and len(tokens) <= 2:
+            tokens = tokens[1:]
+            continue
         break
-    return " ".join(tokens).strip()
+    filtered: list[str] = []
+    for token in tokens:
+        lowered = token.lower()
+        alpha = re.sub(r"[^a-z]", "", lowered)
+        if not alpha:
+            continue
+        if lowered in NOISE_PREFIX_TOKENS and len(tokens) > 1:
+            continue
+        if len(alpha) <= 2 and len(tokens) > 1 and lowered not in {"of", "in", "on"}:
+            continue
+        if len(alpha) >= 6 and not any(char in VOWELS for char in alpha):
+            continue
+        if len(alpha) >= 8:
+            vowel_ratio = sum(char in VOWELS for char in alpha) / len(alpha)
+            if vowel_ratio < 0.2:
+                continue
+        filtered.append(lowered)
+
+    if len(filtered) == 2 and filtered[0] in {"a", "an", "the", "i", "as"}:
+        filtered = filtered[1:]
+    if len(filtered) >= 3 and filtered[0] == "and":
+        filtered = filtered[1:]
+    if (
+        len(filtered) == 2
+        and filtered[0] in {"in", "on", "at", "by", "for"}
+        and len(filtered[1]) >= 10
+    ):
+        filtered = filtered[1:]
+
+    return " ".join(filtered).strip()
 
 
 def clean_meaning(raw: str) -> str:
@@ -113,6 +212,41 @@ def is_valid_word(word: str) -> bool:
         return False
     if word.lower().startswith(("e.g", "ps", "www")):
         return False
+    if BAD_WORD_RE.match(word):
+        return False
+    tokens = word.split()
+    if not tokens:
+        return False
+    if len(tokens) == 1:
+        cleaned = re.sub(r"[^a-z]", "", tokens[0].lower())
+        if len(cleaned) < 3:
+            return False
+        if len(cleaned) <= 4 and not is_known_english_word(cleaned):
+            return False
+        if (
+            len(cleaned) >= 8
+            and not is_known_english_word(cleaned)
+            and not DERIVATIONAL_SUFFIX_RE.search(cleaned)
+            and "-" not in tokens[0]
+        ):
+            return False
+    for token in tokens:
+        if len(token) <= 1:
+            return False
+        if any(ch.isupper() for ch in token):
+            return False
+        cleaned = re.sub(r"[^a-z]", "", token.lower())
+        if not cleaned:
+            return False
+        if len(cleaned) >= 4 and not any(char in VOWELS for char in cleaned):
+            return False
+        if (
+            len(tokens) > 1
+            and len(cleaned) <= 3
+            and cleaned not in PHRASE_LINK_TOKENS
+            and not is_known_english_word(cleaned)
+        ):
+            return False
     return True
 
 
@@ -184,6 +318,8 @@ def parse_line(line: str, page_number: int) -> Entry | None:
 
     before = line[: bracket.start()]
     after = line[bracket.end() :]
+    before = normalize_spaces(before.replace("|", " ").replace("_", " "))
+    before = re.sub(r"[^A-Za-z'\-\s]+$", "", before)
 
     word_match = ENTRY_WORD_RE.search(before)
     if not word_match:
@@ -216,15 +352,74 @@ def parse_line(line: str, page_number: int) -> Entry | None:
     )
 
 
+def parse_fallback_segment(segment: str, page_number: int) -> Entry | None:
+    if EXAMPLE_PREFIX_RE.search(segment):
+        return None
+    if not CJK_RE.search(segment):
+        return None
+
+    simplified = BRACKET_RE.sub(" ", segment)
+    simplified = normalize_spaces(
+        simplified.replace("|", " ").replace("_", " ").replace("`", " ")
+    )
+    if not simplified:
+        return None
+    if "。" in simplified:
+        return None
+
+    meaning_match = CJK_RE.search(simplified)
+    if not meaning_match:
+        return None
+
+    before = simplified[: meaning_match.start()]
+    after = simplified[meaning_match.start() :]
+    if "." in before or "," in before:
+        return None
+    english_tokens = re.findall(r"[A-Za-z][A-Za-z'\-]*", before)
+    if len(english_tokens) > 6:
+        return None
+
+    word_match = ENTRY_WORD_RE.search(before)
+    if not word_match:
+        return None
+
+    word = normalize_word(word_match.group(1))
+    if not is_valid_word(word):
+        return None
+
+    meaning = clean_meaning(after)
+    if not meaning or not CJK_RE.search(meaning):
+        return None
+
+    part_of_speech = infer_part_of_speech(word, "")
+    return Entry(
+        word=word,
+        meaning=meaning,
+        part_of_speech=part_of_speech,
+        sentences=generate_sentences(word, part_of_speech),
+        source_page=page_number,
+    )
+
+
 def parse_text(text: str, page_number: int) -> list[Entry]:
     entries: list[Entry] = []
     for raw_line in text.splitlines():
         line = normalize_spaces(raw_line)
         if not line:
             continue
+
         entry = parse_line(line, page_number)
         if entry is not None:
             entries.append(entry)
+            continue
+
+        for segment in PHRASE_SPLIT_RE.split(line):
+            segment = normalize_spaces(segment)
+            if not segment:
+                continue
+            fallback = parse_fallback_segment(segment, page_number)
+            if fallback is not None:
+                entries.append(fallback)
     return entries
 
 
@@ -276,6 +471,20 @@ def render_pdf_pages(pdf_path: Path, output_prefix: Path, start_page: int, end_p
 
 
 def deduplicate(entries: Iterable[Entry]) -> list[Entry]:
+    def score(item: Entry) -> int:
+        base = 0
+        if " " in item.word:
+            base += 1
+        else:
+            base += 2
+        if 2 <= len(item.meaning) <= 24:
+            base += 2
+        if BAD_WORD_RE.match(item.word):
+            base -= 4
+        if item.part_of_speech in {"verb", "adjective", "adverb", "phrase"}:
+            base += 1
+        return base
+
     by_word: dict[str, Entry] = {}
     for entry in entries:
         key = entry.word.lower()
@@ -283,7 +492,12 @@ def deduplicate(entries: Iterable[Entry]) -> list[Entry]:
         if existing is None:
             by_word[key] = entry
             continue
-        if len(entry.meaning) > len(existing.meaning):
+        if score(entry) > score(existing):
+            by_word[key] = entry
+            continue
+        if score(entry) == score(existing) and len(entry.meaning) > len(
+            existing.meaning
+        ):
             by_word[key] = entry
     return sorted(by_word.values(), key=lambda item: item.word.lower())
 
