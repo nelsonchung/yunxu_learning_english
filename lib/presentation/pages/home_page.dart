@@ -8,6 +8,7 @@ import 'about_page.dart';
 import 'records_page.dart';
 import 'settings_page.dart';
 import 'today_page.dart';
+import 'word_bank_page.dart';
 import 'words_list_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -27,10 +28,12 @@ class _HomePageState extends State<HomePage> {
       case 1:
         return const WordsListPage();
       case 2:
-        return const SettingsPage();
+        return const WordBankPage();
       case 3:
-        return const RecordsPage();
+        return const SettingsPage();
       case 4:
+        return const RecordsPage();
+      case 5:
       default:
         return const AboutPage();
     }
@@ -72,6 +75,10 @@ class _HomePageState extends State<HomePage> {
         destinations: const [
           NavigationDestination(icon: Icon(Icons.today), label: '今日複習'),
           NavigationDestination(icon: Icon(Icons.list), label: '單字列表'),
+          NavigationDestination(
+            icon: Icon(Icons.travel_explore),
+            label: '字庫搜尋',
+          ),
           NavigationDestination(
             icon: Icon(Icons.settings_outlined),
             label: '設定',

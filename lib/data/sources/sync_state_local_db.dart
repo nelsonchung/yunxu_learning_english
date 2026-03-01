@@ -13,7 +13,7 @@ class SyncStateLocalDb {
 
   Future<Map?> getState() async {
     final box = await _openBox();
-    return box.get(stateKey) as Map?;
+    return box.get(stateKey);
   }
 
   Future<void> putState(Map<String, Object?> data) async {

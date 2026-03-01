@@ -13,7 +13,7 @@ class SettingsLocalDb {
 
   Future<Map?> getSettings() async {
     final box = await _openBox();
-    return box.get(settingsKey) as Map?;
+    return box.get(settingsKey);
   }
 
   Future<void> putSettings(Map<String, Object?> data) async {
