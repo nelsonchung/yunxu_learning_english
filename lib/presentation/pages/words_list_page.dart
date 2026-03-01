@@ -11,8 +11,23 @@ import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sort_selector.dart';
 
-class WordsListPage extends StatelessWidget {
+class WordsListPage extends StatefulWidget {
   const WordsListPage({super.key});
+
+  @override
+  State<WordsListPage> createState() => _WordsListPageState();
+}
+
+class _WordsListPageState extends State<WordsListPage> {
+  bool _showOnlyPending = false;
+
+  String _meaningAndPartText(WordCard card) {
+    final meaning = card.meaning.trim();
+    if (meaning.isEmpty) {
+      return '未填中文意義 · ${card.partOfSpeech.label}';
+    }
+    return '$meaning · ${card.partOfSpeech.label}';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +38,12 @@ class WordsListPage extends StatelessWidget {
         }
 
         final words = notifier.words;
+        final pendingWordsCount = notifier.pendingWordsCount;
+        final visibleWords = _showOnlyPending
+            ? words
+                  .where((card) => card.needsCompletion)
+                  .toList(growable: false)
+            : words;
         final canSync = notifier.canSync;
         final isSyncing = notifier.isSyncing;
         final showImages = context.watch<SettingsNotifier>().showImages;
@@ -33,7 +54,7 @@ class WordsListPage extends StatelessWidget {
           children: [
             SectionCard(
               title: '單字列表',
-              subtitle: '已建立 ${words.length} 個單字',
+              subtitle: '已建立 ${words.length} 個單字 · 待補 $pendingWordsCount 個',
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -64,19 +85,63 @@ class WordsListPage extends StatelessWidget {
                   const Icon(Icons.sort, color: Color(0xFF0B6E99)),
                 ],
               ),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: SortSelector(
-                  mode: notifier.sortMode,
-                  onChanged: notifier.setSortMode,
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: SortSelector(
+                      mode: notifier.sortMode,
+                      onChanged: notifier.setSortMode,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      ChoiceChip(
+                        label: Text('全部 ${words.length}'),
+                        selected: !_showOnlyPending,
+                        onSelected: (selected) {
+                          if (!selected) {
+                            return;
+                          }
+                          setState(() {
+                            _showOnlyPending = false;
+                          });
+                        },
+                      ),
+                      ChoiceChip(
+                        label: Text('只看待補 $pendingWordsCount'),
+                        selected: _showOnlyPending,
+                        onSelected: (selected) {
+                          if (!selected) {
+                            return;
+                          }
+                          setState(() {
+                            _showOnlyPending = true;
+                          });
+                        },
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 16),
-            if (words.isEmpty)
+            if (visibleWords.isEmpty && words.isEmpty)
               const _EmptyList()
+            else if (visibleWords.isEmpty)
+              _EmptyPendingList(
+                onShowAll: () {
+                  setState(() {
+                    _showOnlyPending = false;
+                  });
+                },
+              )
             else
-              ...words.map(
+              ...visibleWords.map(
                 (card) => Padding(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: Container(
@@ -122,18 +187,45 @@ class WordsListPage extends StatelessWidget {
                                     Text(
                                       card.sentences.isNotEmpty
                                           ? card.sentences.first
-                                          : '無例句',
+                                          : '尚未填寫例句',
                                       maxLines: 2,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                     const SizedBox(height: 6),
                                     Text(
-                                      '${card.meaning} · ${card.partOfSpeech.label}',
+                                      _meaningAndPartText(card),
                                       style: Theme.of(context)
                                           .textTheme
                                           .bodySmall
                                           ?.copyWith(color: Colors.black54),
                                     ),
+                                    if (card.needsCompletion) ...[
+                                      const SizedBox(height: 8),
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 10,
+                                          vertical: 4,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: const Color(
+                                            0xFFF2A65A,
+                                          ).withOpacity(0.18),
+                                          borderRadius: BorderRadius.circular(
+                                            999,
+                                          ),
+                                        ),
+                                        child: Text(
+                                          '待補：${card.missingFieldLabels.join('、')}',
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodySmall
+                                              ?.copyWith(
+                                                color: const Color(0xFF8C4A06),
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                        ),
+                                      ),
+                                    ],
                                     const SizedBox(height: 8),
                                     Text(
                                       '建立：${formatDate(card.createdAt)}  ·  下次：${formatDate(card.nextReviewDate)}',
@@ -157,6 +249,38 @@ class WordsListPage extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class _EmptyPendingList extends StatelessWidget {
+  const _EmptyPendingList({required this.onShowAll});
+
+  final VoidCallback onShowAll;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 16,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('目前沒有待補資料的單字'),
+          const SizedBox(height: 8),
+          TextButton(onPressed: onShowAll, child: const Text('查看全部單字')),
+        ],
+      ),
     );
   }
 }

@@ -226,6 +226,13 @@ class _ReviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final firstSentence = card.sentences.firstWhere(
+      (sentence) => sentence.trim().isNotEmpty,
+      orElse: () => '',
+    );
+    final meaning = card.meaning.trim();
+    final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
+
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -265,18 +272,24 @@ class _ReviewCard extends StatelessWidget {
                           ),
                           const SizedBox(height: 6),
                           Text(
-                            card.sentences.isNotEmpty
-                                ? card.sentences.first
-                                : '無例句',
+                            firstSentence.isNotEmpty ? firstSentence : '尚未填寫例句',
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            '${card.meaning} · ${card.partOfSpeech.label}',
+                            '$meaningText · ${card.partOfSpeech.label}',
                             style: Theme.of(context).textTheme.bodySmall
                                 ?.copyWith(color: Colors.black54),
                           ),
+                          if (card.needsCompletion) ...[
+                            const SizedBox(height: 6),
+                            Text(
+                              '待補：${card.missingFieldLabels.join('、')}',
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(color: const Color(0xFF8C4A06)),
+                            ),
+                          ],
                           const SizedBox(height: 6),
                           Row(
                             children: [

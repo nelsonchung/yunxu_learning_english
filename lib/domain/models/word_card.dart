@@ -13,6 +13,21 @@ enum PartOfSpeech {
   other,
 }
 
+enum MissingWordField { meaning, sentence }
+
+extension MissingWordFieldLabel on MissingWordField {
+  String get label {
+    switch (this) {
+      case MissingWordField.meaning:
+        return '中文意義';
+      case MissingWordField.sentence:
+        return '例句';
+    }
+  }
+}
+
+enum WordCardStatus { complete, pending }
+
 extension PartOfSpeechLabel on PartOfSpeech {
   String get label {
     switch (this) {
@@ -77,6 +92,25 @@ class WordCard {
   final bool isDeleted;
   final bool imageCleared;
 
+  List<MissingWordField> get missingFields {
+    final missing = <MissingWordField>[];
+    if (meaning.trim().isEmpty) {
+      missing.add(MissingWordField.meaning);
+    }
+    if (!sentences.any((sentence) => sentence.trim().isNotEmpty)) {
+      missing.add(MissingWordField.sentence);
+    }
+    return missing;
+  }
+
+  List<String> get missingFieldLabels =>
+      missingFields.map((field) => field.label).toList(growable: false);
+
+  WordCardStatus get status =>
+      missingFields.isEmpty ? WordCardStatus.complete : WordCardStatus.pending;
+
+  bool get needsCompletion => status == WordCardStatus.pending;
+
   WordCard copyWith({
     String? id,
     String? word,
@@ -118,6 +152,10 @@ class WordCard {
   }
 
   Map<String, Object?> toMap() {
+    final normalizedSentences = sentences
+        .map((sentence) => sentence.trim())
+        .where((sentence) => sentence.isNotEmpty)
+        .toList(growable: false);
     final normalizedImageBytes = imageBytes == null
         ? null
         : imageBytes is Uint8List
@@ -128,7 +166,7 @@ class WordCard {
       'word': word,
       'meaning': meaning,
       'partOfSpeech': partOfSpeech.name,
-      'sentences': sentences,
+      'sentences': normalizedSentences,
       'imagePath': imagePath,
       'imageBytes': normalizedImageBytes,
       'createdAt': createdAt.millisecondsSinceEpoch,
@@ -175,7 +213,11 @@ class WordCard {
 
     final sentencesRaw = data['sentences'];
     final sentences = sentencesRaw is List
-        ? sentencesRaw.whereType<String>().toList()
+        ? sentencesRaw
+              .whereType<String>()
+              .map((sentence) => sentence.trim())
+              .where((sentence) => sentence.isNotEmpty)
+              .toList()
         : <String>[];
 
     final reviewRaw = data['reviewSchedule'];

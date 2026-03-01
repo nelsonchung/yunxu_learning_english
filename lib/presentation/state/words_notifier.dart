@@ -47,6 +47,7 @@ class WordsNotifier extends ChangeNotifier {
   SortMode _sortMode = SortMode.alphabetAsc;
   bool _isLoading = false;
   bool _isSyncing = false;
+  bool _syncQueued = false;
   bool _isBackingUp = false;
   bool _isRestoring = false;
   Timer? _pollingTimer;
@@ -69,6 +70,8 @@ class WordsNotifier extends ChangeNotifier {
   bool get syncEnabled => _syncEnabled;
   bool get canSync => syncSupported && syncEnabled;
   int get totalWords => _words.length;
+  int get pendingWordsCount =>
+      _words.where((card) => card.needsCompletion).length;
   int get dueWordsCount => dueToday().length;
   DateTime? get lastSyncAt => _lastSyncAt;
   DateTime? get lastSyncAttemptAt => _lastSyncAttemptAt;
@@ -137,12 +140,17 @@ class WordsNotifier extends ChangeNotifier {
 
   Future<bool> syncNow() async {
     final syncService = _syncService;
-    if (syncService == null || _isSyncing || !_syncEnabled) {
+    if (syncService == null || !_syncEnabled) {
+      return false;
+    }
+    if (_isSyncing) {
+      _syncQueued = true;
       return false;
     }
     _isSyncing = true;
     notifyListeners();
     var success = false;
+    var shouldRunQueuedSync = false;
     try {
       success = await syncService.sync();
       final refreshed = await _repository.fetchAll();
@@ -151,8 +159,13 @@ class WordsNotifier extends ChangeNotifier {
         ..addAll(refreshed);
       await _refreshSyncState(notify: false);
     } finally {
+      shouldRunQueuedSync = _syncQueued && canSync;
+      _syncQueued = false;
       _isSyncing = false;
       notifyListeners();
+      if (shouldRunQueuedSync) {
+        unawaited(syncNow());
+      }
     }
     return success;
   }
@@ -214,6 +227,7 @@ class WordsNotifier extends ChangeNotifier {
     }
     _syncEnabled = value;
     if (!_syncEnabled) {
+      _syncQueued = false;
       _stopPolling();
       notifyListeners();
       return;
@@ -334,19 +348,17 @@ class WordsNotifier extends ChangeNotifier {
     required List<String> sentences,
     File? imageFile,
   }) async {
+    final trimmedWord = word.trim();
+    if (trimmedWord.isEmpty) {
+      throw ArgumentError('word cannot be empty');
+    }
+
     final cleanedSentences = sentences
         .map((sentence) => sentence.trim())
         .where((sentence) => sentence.isNotEmpty)
         .toList();
 
-    if (cleanedSentences.isEmpty) {
-      throw ArgumentError('sentences cannot be empty');
-    }
-
     final trimmedMeaning = meaning.trim();
-    if (trimmedMeaning.isEmpty) {
-      throw ArgumentError('meaning cannot be empty');
-    }
 
     final now = DateTime.now();
     final schedule = ReviewScheduleService.defaultSchedule;
@@ -356,7 +368,7 @@ class WordsNotifier extends ChangeNotifier {
 
     final card = WordCard(
       id: _uuid.v4(),
-      word: word.trim(),
+      word: trimmedWord,
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
@@ -389,19 +401,17 @@ class WordsNotifier extends ChangeNotifier {
     File? imageFile,
     bool removeImage = false,
   }) async {
+    final trimmedWord = word.trim();
+    if (trimmedWord.isEmpty) {
+      throw ArgumentError('word cannot be empty');
+    }
+
     final cleanedSentences = sentences
         .map((sentence) => sentence.trim())
         .where((sentence) => sentence.isNotEmpty)
         .toList();
 
-    if (cleanedSentences.isEmpty) {
-      throw ArgumentError('sentences cannot be empty');
-    }
-
     final trimmedMeaning = meaning.trim();
-    if (trimmedMeaning.isEmpty) {
-      throw ArgumentError('meaning cannot be empty');
-    }
 
     var legacyPath = card.imagePath;
     var imageCleared = card.imageCleared;
@@ -430,7 +440,7 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     final updated = card.copyWith(
-      word: word.trim(),
+      word: trimmedWord,
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
@@ -465,6 +475,9 @@ class WordsNotifier extends ChangeNotifier {
     }
 
     notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
   }
 
   Future<void> deleteWord(WordCard card) async {

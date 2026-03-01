@@ -93,6 +93,17 @@ class _EditWordPageState extends State<EditWordPage> {
     });
   }
 
+  void _reorderSentence(int oldIndex, int newIndex) {
+    setState(() {
+      var targetIndex = newIndex;
+      if (targetIndex > oldIndex) {
+        targetIndex -= 1;
+      }
+      final controller = _sentenceControllers.removeAt(oldIndex);
+      _sentenceControllers.insert(targetIndex, controller);
+    });
+  }
+
   Future<void> _pickImage(ImageSource source) async {
     if (!_picker.supportsImageSource(source)) {
       if (!mounted) {
@@ -203,20 +214,6 @@ class _EditWordPageState extends State<EditWordPage> {
       return;
     }
 
-    if (meaning.isEmpty) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('請輸入中文意義')));
-      return;
-    }
-
-    if (sentences.isEmpty) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('請至少輸入一個句子')));
-      return;
-    }
-
     setState(() {
       _isSaving = true;
     });
@@ -270,7 +267,7 @@ class _EditWordPageState extends State<EditWordPage> {
               const SizedBox(height: 16),
               SectionCard(
                 title: '中文意義',
-                subtitle: '修改中文解釋',
+                subtitle: '可先留白，之後再補',
                 child: TextField(
                   controller: _meaningController,
                   decoration: const InputDecoration(hintText: '例如：靈感'),
@@ -306,11 +303,12 @@ class _EditWordPageState extends State<EditWordPage> {
               const SizedBox(height: 16),
               SectionCard(
                 title: '例句',
-                subtitle: '至少輸入一個例句',
+                subtitle: '可先留白，之後再補',
                 child: SentenceFieldList(
                   controllers: _sentenceControllers,
                   onAdd: _addSentence,
                   onRemove: _removeSentence,
+                  onReorder: _reorderSentence,
                 ),
               ),
               const SizedBox(height: 16),

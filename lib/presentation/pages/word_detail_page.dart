@@ -56,6 +56,8 @@ class WordDetailPage extends StatelessWidget {
                 return const Center(child: Text('找不到單字資料'));
               }
               final showImages = context.watch<SettingsNotifier>().showImages;
+              final meaning = card.meaning.trim();
+              final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
 
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
@@ -113,8 +115,14 @@ class WordDetailPage extends StatelessWidget {
                               _InfoChip(
                                 icon: Icons.translate,
                                 label:
-                                    '${card.partOfSpeech.label} · ${card.meaning}',
+                                    '${card.partOfSpeech.label} · $meaningText',
                               ),
+                              if (card.needsCompletion)
+                                _InfoChip(
+                                  icon: Icons.edit_note,
+                                  label:
+                                      '待補：${card.missingFieldLabels.join('、')}',
+                                ),
                             ],
                           ),
                         ],
@@ -125,17 +133,19 @@ class WordDetailPage extends StatelessWidget {
                   SectionCard(
                     title: '例句',
                     subtitle: '共 ${card.sentences.length} 句',
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: card.sentences
-                          .map(
-                            (sentence) => Padding(
-                              padding: const EdgeInsets.only(bottom: 8),
-                              child: Text('• $sentence'),
-                            ),
-                          )
-                          .toList(),
-                    ),
+                    child: card.sentences.isEmpty
+                        ? const Text('尚未填寫例句')
+                        : Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: card.sentences
+                                .map(
+                                  (sentence) => Padding(
+                                    padding: const EdgeInsets.only(bottom: 8),
+                                    child: Text('• $sentence'),
+                                  ),
+                                )
+                                .toList(),
+                          ),
                   ),
                   const SizedBox(height: 16),
                   SectionCard(
