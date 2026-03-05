@@ -17,7 +17,7 @@ class WordBankPage extends StatefulWidget {
 }
 
 class _WordBankPageState extends State<WordBankPage> {
-  static const String _assetPath = 'assets/word_bank/pdf_word_bank.json';
+  static const String _assetPath = 'assets/word_bank/word_bank_main.json';
 
   final _searchController = TextEditingController();
   final Set<String> _addingWords = <String>{};
@@ -263,6 +263,11 @@ class _WordBankCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final partLabel = entry.partOfSpeech.label;
+    final previewSentences = entry.sentences
+        .map((item) => item.trim())
+        .where((item) => item.isNotEmpty)
+        .take(2)
+        .toList(growable: false);
 
     return Container(
       decoration: BoxDecoration(
@@ -296,13 +301,37 @@ class _WordBankCard extends StatelessWidget {
                       context,
                     ).textTheme.bodyMedium?.copyWith(color: Colors.black87),
                   ),
-                  const SizedBox(height: 6),
-                  Text(
-                    '來源頁碼：${entry.sourcePage}',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
-                  ),
+                  if (previewSentences.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    Text(
+                      '例句',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                    const SizedBox(height: 4),
+                    ...previewSentences.map(
+                      (sentence) => Padding(
+                        padding: const EdgeInsets.only(bottom: 4),
+                        child: Text(
+                          sentence,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: Theme.of(context).textTheme.bodySmall
+                              ?.copyWith(color: Colors.black87),
+                        ),
+                      ),
+                    ),
+                  ],
+                  if (entry.sourcePage > 0) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      '來源頁碼：${entry.sourcePage}',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
                 ],
               ),
             ),

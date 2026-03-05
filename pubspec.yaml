@@ -70,7 +70,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/word_bank/pdf_word_bank.json
+    - assets/word_bank/word_bank_main.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
