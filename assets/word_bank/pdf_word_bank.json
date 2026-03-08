@@ -1,14 +1,5 @@
 [
   {
-    "word": "immersive",
-    "meaning": "沉浸式的、讓人身歷其境的。常用來形容體驗（體驗感很強）、環境（包覆感/臨場感）、科技（VR/AR）、展覽、課程等，讓你「很投入、像在其中」。",
-    "partOfSpeech": "noun",
-    "sentences": [
-      "The museum offers an immersive virtual reality tour of ancient Rome. 這間博物館提供了古羅馬的沉浸式虛擬實境導覽。",
-      "The sound system provides an immersive audio experience for movie lovers. 這套音響系統為電影愛好者提供了身歷其境的音效體驗。"
-    ]
-  },
-  {
     "word": "a/an",
     "meaning": "一個/一個",
     "partOfSpeech": "other",
@@ -48993,6 +48984,15 @@
     "sentences": [
       "A large crystal chandelier was used to illuminate the grand ballroom. 一盞巨大的水晶吊燈被用來照亮宏偉的宴會廳。",
       "The report helps to illuminate the causes of the recent economic crisis. 報告有助於闡明（啟發）最近經濟危機的原因。"
+    ]
+  },
+  {
+    "word": "immersive",
+    "meaning": "沉浸式的、讓人身歷其境的。常用來形容體驗（體驗感很強）、環境（包覆感/臨場感）、科技（VR/AR）、展覽、課程等，讓你「很投入、像在其中」。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum offers an immersive virtual reality tour of ancient Rome. 這間博物館提供了古羅馬的沉浸式虛擬實境導覽。",
+      "The sound system provides an immersive audio experience for movie lovers. 這套音響系統為電影愛好者提供了身歷其境的音效體驗。"
     ]
   },
   {
