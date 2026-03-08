@@ -27,6 +27,7 @@ class SettingsPage extends StatelessWidget {
 
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
         const syncIntervals = [5, 10, 20, 30, 60, 3600];
+        const pronunciationLocales = [('en-US', '美式英文'), ('en-GB', '英式英文')];
         final cloudSupported = wordsNotifier.syncSupported;
         final isCloudBusy =
             wordsNotifier.isSyncing ||
@@ -81,6 +82,74 @@ class SettingsPage extends StatelessWidget {
                   Switch(
                     value: notifier.showImages,
                     onChanged: notifier.setShowImages,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '單字發音',
+              subtitle: notifier.pronunciationSupported
+                  ? '使用裝置語音引擎朗讀單字'
+                  : '目前平台暫不支援發音功能',
+              trailing: const Icon(Icons.volume_up, color: Color(0xFF0B6E99)),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      const Expanded(child: Text('啟用單字發音')),
+                      Switch(
+                        value: notifier.pronunciationEnabled,
+                        onChanged: notifier.pronunciationSupported
+                            ? notifier.setPronunciationEnabled
+                            : null,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      const Expanded(child: Text('發音口音')),
+                      DropdownButton<String>(
+                        value: notifier.pronunciationLocale,
+                        items: pronunciationLocales
+                            .map(
+                              (item) => DropdownMenuItem<String>(
+                                value: item.$1,
+                                child: Text(item.$2),
+                              ),
+                            )
+                            .toList(),
+                        onChanged:
+                            notifier.pronunciationSupported &&
+                                notifier.pronunciationEnabled
+                            ? (value) async {
+                                if (value == null) {
+                                  return;
+                                }
+                                await notifier.setPronunciationLocale(value);
+                              }
+                            : null,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      const Expanded(child: Text('語速')),
+                      Text(notifier.pronunciationRate.toStringAsFixed(2)),
+                    ],
+                  ),
+                  Slider(
+                    min: 0.2,
+                    max: 0.7,
+                    divisions: 10,
+                    value: notifier.pronunciationRate,
+                    onChanged:
+                        notifier.pronunciationSupported &&
+                            notifier.pronunciationEnabled
+                        ? (value) => notifier.setPronunciationRate(value)
+                        : null,
                   ),
                 ],
               ),

@@ -16,6 +16,7 @@ import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
 import 'domain/services/install_state_service.dart';
+import 'domain/services/pronunciation_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -44,6 +45,8 @@ Future<void> main() async {
   );
   final notificationService = NotificationService();
   await notificationService.initialize();
+  final pronunciationService = PronunciationService();
+  await pronunciationService.initialize(initialSettings);
   final installStateService = InstallStateService();
   var allowAutoRestoreWhenLocalEmpty = true;
   if (Platform.isIOS) {
@@ -64,6 +67,7 @@ Future<void> main() async {
   runApp(
     MultiProvider(
       providers: [
+        Provider<PronunciationService>.value(value: pronunciationService),
         ChangeNotifierProvider(
           create: (_) => WordsNotifier(
             repository: repository,
@@ -80,6 +84,7 @@ Future<void> main() async {
           create: (_) => SettingsNotifier(
             repository: settingsRepository,
             notificationService: notificationService,
+            pronunciationService: pronunciationService,
           ),
         ),
       ],

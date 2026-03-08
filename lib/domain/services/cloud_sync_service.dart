@@ -645,6 +645,9 @@ class CloudSyncService {
       'reminderEnabled': settings.reminderEnabled,
       'syncEnabled': settings.syncEnabled,
       'syncIntervalSeconds': settings.syncIntervalSeconds,
+      'pronunciationEnabled': settings.pronunciationEnabled,
+      'pronunciationRate': settings.pronunciationRate,
+      'pronunciationLocale': settings.pronunciationLocale,
       'updatedAt': settings.updatedAt.millisecondsSinceEpoch,
     };
   }
@@ -655,6 +658,9 @@ class CloudSyncService {
     final reminderEnabledRaw = data['reminderEnabled'];
     final syncEnabledRaw = data['syncEnabled'];
     final syncIntervalSecondsRaw = data['syncIntervalSeconds'];
+    final pronunciationEnabledRaw = data['pronunciationEnabled'];
+    final pronunciationRateRaw = data['pronunciationRate'];
+    final pronunciationLocaleRaw = data['pronunciationLocale'];
     final updatedAtRaw = data['updatedAt'];
 
     return AppSettings(
@@ -665,6 +671,17 @@ class CloudSyncService {
       syncIntervalSeconds: syncIntervalSecondsRaw is int
           ? syncIntervalSecondsRaw
           : 60,
+      pronunciationEnabled: pronunciationEnabledRaw is bool
+          ? pronunciationEnabledRaw
+          : true,
+      pronunciationRate: pronunciationRateRaw is num
+          ? pronunciationRateRaw.toDouble()
+          : 0.45,
+      pronunciationLocale:
+          pronunciationLocaleRaw is String &&
+              pronunciationLocaleRaw.trim().isNotEmpty
+          ? pronunciationLocaleRaw.trim()
+          : 'en-US',
       updatedAt: updatedAtRaw is int
           ? DateTime.fromMillisecondsSinceEpoch(updatedAtRaw)
           : DateTime.fromMillisecondsSinceEpoch(0),

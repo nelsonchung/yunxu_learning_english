@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../domain/services/pronunciation_service.dart';
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
@@ -55,9 +56,13 @@ class WordDetailPage extends StatelessWidget {
               if (card == null) {
                 return const Center(child: Text('找不到單字資料'));
               }
-              final showImages = context.watch<SettingsNotifier>().showImages;
+              final settings = context.watch<SettingsNotifier>();
+              final showImages = settings.showImages;
               final meaning = card.meaning.trim();
               final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
+              final canSpeak =
+                  settings.pronunciationSupported &&
+                  settings.pronunciationEnabled;
 
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
@@ -94,9 +99,38 @@ class WordDetailPage extends StatelessWidget {
                                 card.imagePath != null)
                               const SizedBox(height: 16),
                           ],
-                          Text(
-                            card.word,
-                            style: Theme.of(context).textTheme.headlineSmall,
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  card.word,
+                                  style: Theme.of(
+                                    context,
+                                  ).textTheme.headlineSmall,
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: canSpeak
+                                    ? () async {
+                                        final ok = await context
+                                            .read<PronunciationService>()
+                                            .speak(card.word);
+                                        if (!ok && context.mounted) {
+                                          ScaffoldMessenger.of(
+                                            context,
+                                          ).showSnackBar(
+                                            const SnackBar(
+                                              content: Text('發音失敗，請確認裝置語音可用'),
+                                            ),
+                                          );
+                                        }
+                                      }
+                                    : null,
+                                icon: const Icon(Icons.volume_up_outlined),
+                                tooltip: canSpeak ? '播放發音' : '請先到設定啟用發音',
+                              ),
+                            ],
                           ),
                           const SizedBox(height: 12),
                           Wrap(
@@ -141,7 +175,10 @@ class WordDetailPage extends StatelessWidget {
                                 .map(
                                   (sentence) => Padding(
                                     padding: const EdgeInsets.only(bottom: 8),
-                                    child: Text('• $sentence'),
+                                    child: _SentenceRow(
+                                      sentence: sentence,
+                                      canSpeak: canSpeak,
+                                    ),
                                   ),
                                 )
                                 .toList(),
@@ -197,6 +234,49 @@ class _InfoChip extends StatelessWidget {
         ),
         softWrap: true,
       ),
+    );
+  }
+}
+
+class _SentenceRow extends StatelessWidget {
+  const _SentenceRow({required this.sentence, required this.canSpeak});
+
+  final String sentence;
+  final bool canSpeak;
+
+  @override
+  Widget build(BuildContext context) {
+    final pronunciationService = context.read<PronunciationService>();
+    final speakableText = pronunciationService.extractEnglishUtterance(
+      sentence,
+    );
+    final canSpeakSentence = canSpeak && speakableText != null;
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: Text('• $sentence'),
+          ),
+        ),
+        const SizedBox(width: 8),
+        IconButton(
+          onPressed: canSpeakSentence
+              ? () async {
+                  final ok = await pronunciationService.speak(speakableText);
+                  if (!ok && context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('例句發音失敗，請確認裝置語音可用')),
+                    );
+                  }
+                }
+              : null,
+          icon: const Icon(Icons.volume_up_outlined),
+          tooltip: canSpeakSentence ? '播放例句發音' : '此句目前沒有可朗讀的英文內容',
+        ),
+      ],
     );
   }
 }

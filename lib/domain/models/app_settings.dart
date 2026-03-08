@@ -5,6 +5,9 @@ class AppSettings {
     required this.reminderEnabled,
     required this.syncEnabled,
     required this.syncIntervalSeconds,
+    required this.pronunciationEnabled,
+    required this.pronunciationRate,
+    required this.pronunciationLocale,
     required this.updatedAt,
   });
 
@@ -13,6 +16,9 @@ class AppSettings {
   final bool reminderEnabled;
   final bool syncEnabled;
   final int syncIntervalSeconds;
+  final bool pronunciationEnabled;
+  final double pronunciationRate;
+  final String pronunciationLocale;
   final DateTime updatedAt;
 
   static AppSettings defaults() {
@@ -22,6 +28,9 @@ class AppSettings {
       reminderEnabled: true,
       syncEnabled: true,
       syncIntervalSeconds: 60,
+      pronunciationEnabled: true,
+      pronunciationRate: 0.45,
+      pronunciationLocale: 'en-US',
       updatedAt: DateTime.fromMillisecondsSinceEpoch(0),
     );
   }
@@ -32,6 +41,9 @@ class AppSettings {
     bool? reminderEnabled,
     bool? syncEnabled,
     int? syncIntervalSeconds,
+    bool? pronunciationEnabled,
+    double? pronunciationRate,
+    String? pronunciationLocale,
     DateTime? updatedAt,
   }) {
     return AppSettings(
@@ -40,6 +52,9 @@ class AppSettings {
       reminderEnabled: reminderEnabled ?? this.reminderEnabled,
       syncEnabled: syncEnabled ?? this.syncEnabled,
       syncIntervalSeconds: syncIntervalSeconds ?? this.syncIntervalSeconds,
+      pronunciationEnabled: pronunciationEnabled ?? this.pronunciationEnabled,
+      pronunciationRate: pronunciationRate ?? this.pronunciationRate,
+      pronunciationLocale: pronunciationLocale ?? this.pronunciationLocale,
       updatedAt: updatedAt ?? this.updatedAt,
     );
   }
@@ -51,6 +66,9 @@ class AppSettings {
       'reminderEnabled': reminderEnabled,
       'syncEnabled': syncEnabled,
       'syncIntervalSeconds': syncIntervalSeconds,
+      'pronunciationEnabled': pronunciationEnabled,
+      'pronunciationRate': pronunciationRate,
+      'pronunciationLocale': pronunciationLocale,
       'updatedAt': updatedAt.millisecondsSinceEpoch,
     };
   }
@@ -61,6 +79,9 @@ class AppSettings {
     final reminderEnabled = data['reminderEnabled'];
     final syncEnabled = data['syncEnabled'];
     final syncIntervalSeconds = data['syncIntervalSeconds'];
+    final pronunciationEnabled = data['pronunciationEnabled'];
+    final pronunciationRate = data['pronunciationRate'];
+    final pronunciationLocale = data['pronunciationLocale'];
     final updatedAtRaw = data['updatedAt'];
 
     return AppSettings(
@@ -71,6 +92,16 @@ class AppSettings {
       syncIntervalSeconds: syncIntervalSeconds is int
           ? syncIntervalSeconds
           : 60,
+      pronunciationEnabled: pronunciationEnabled is bool
+          ? pronunciationEnabled
+          : true,
+      pronunciationRate: pronunciationRate is num
+          ? pronunciationRate.toDouble()
+          : 0.45,
+      pronunciationLocale:
+          pronunciationLocale is String && pronunciationLocale.trim().isNotEmpty
+          ? pronunciationLocale.trim()
+          : 'en-US',
       updatedAt: updatedAtRaw is int
           ? DateTime.fromMillisecondsSinceEpoch(updatedAtRaw)
           : DateTime.fromMillisecondsSinceEpoch(0),
