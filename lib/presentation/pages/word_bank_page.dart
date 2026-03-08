@@ -9,6 +9,37 @@ import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
+enum _WordBankAudienceFilter {
+  all,
+  general,
+  elementary,
+  juniorHigh,
+  seniorHigh,
+  college,
+  toeic,
+}
+
+extension _WordBankAudienceFilterLabel on _WordBankAudienceFilter {
+  String get label {
+    switch (this) {
+      case _WordBankAudienceFilter.all:
+        return '全部';
+      case _WordBankAudienceFilter.general:
+        return '一般';
+      case _WordBankAudienceFilter.elementary:
+        return '國小';
+      case _WordBankAudienceFilter.juniorHigh:
+        return '國中';
+      case _WordBankAudienceFilter.seniorHigh:
+        return '高中';
+      case _WordBankAudienceFilter.college:
+        return '大學';
+      case _WordBankAudienceFilter.toeic:
+        return 'TOEIC';
+    }
+  }
+}
+
 class WordBankPage extends StatefulWidget {
   const WordBankPage({super.key});
 
@@ -23,6 +54,7 @@ class _WordBankPageState extends State<WordBankPage> {
   final Set<String> _addingWords = <String>{};
 
   List<BuiltinWordEntry> _entries = const [];
+  _WordBankAudienceFilter _selectedFilter = _WordBankAudienceFilter.all;
   bool _isLoading = true;
   String? _errorMessage;
 
@@ -84,18 +116,62 @@ class _WordBankPageState extends State<WordBankPage> {
   }
 
   List<BuiltinWordEntry> _filteredEntries(String query) {
-    if (query.isEmpty) {
-      return _entries.take(100).toList(growable: false);
+    final scopedEntries = _entries.where(_matchesSelectedFilter);
+    final filtered = query.isEmpty
+        ? scopedEntries
+        : scopedEntries.where(
+            (entry) =>
+                entry.word.toLowerCase().contains(query) ||
+                entry.meaning.contains(query),
+          );
+
+    return filtered.take(query.isEmpty ? 100 : 200).toList(growable: false);
+  }
+
+  bool _matchesSelectedFilter(BuiltinWordEntry entry) {
+    switch (_selectedFilter) {
+      case _WordBankAudienceFilter.all:
+        return true;
+      case _WordBankAudienceFilter.general:
+        return entry.audienceTags.contains(BuiltinAudienceTag.general);
+      case _WordBankAudienceFilter.elementary:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.elementary);
+      case _WordBankAudienceFilter.juniorHigh:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.juniorHigh);
+      case _WordBankAudienceFilter.seniorHigh:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.seniorHigh);
+      case _WordBankAudienceFilter.college:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.college);
+      case _WordBankAudienceFilter.toeic:
+        return entry.examTags.contains(BuiltinExamTag.toeic);
+    }
+  }
+
+  int _countForFilter(_WordBankAudienceFilter filter) {
+    if (filter == _WordBankAudienceFilter.all) {
+      return _entries.length;
     }
 
-    return _entries
-        .where(
-          (entry) =>
-              entry.word.toLowerCase().contains(query) ||
-              entry.meaning.contains(query),
-        )
-        .take(200)
-        .toList(growable: false);
+    return _entries.where((entry) => _matchesFilter(entry, filter)).length;
+  }
+
+  bool _matchesFilter(BuiltinWordEntry entry, _WordBankAudienceFilter filter) {
+    switch (filter) {
+      case _WordBankAudienceFilter.all:
+        return true;
+      case _WordBankAudienceFilter.general:
+        return entry.audienceTags.contains(BuiltinAudienceTag.general);
+      case _WordBankAudienceFilter.elementary:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.elementary);
+      case _WordBankAudienceFilter.juniorHigh:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.juniorHigh);
+      case _WordBankAudienceFilter.seniorHigh:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.seniorHigh);
+      case _WordBankAudienceFilter.college:
+        return entry.schoolLevels.contains(BuiltinSchoolLevel.college);
+      case _WordBankAudienceFilter.toeic:
+        return entry.examTags.contains(BuiltinExamTag.toeic);
+    }
   }
 
   List<String> _sentencesForAdd(BuiltinWordEntry entry) {
@@ -201,7 +277,7 @@ class _WordBankPageState extends State<WordBankPage> {
           children: [
             SectionCard(
               title: '字庫搜尋',
-              subtitle: '內建 ${_entries.length} 筆單字資料，輸入部分字串即可過濾',
+              subtitle: '內建 ${_entries.length} 筆單字資料，可依程度與考試目標過濾',
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -214,10 +290,36 @@ class _WordBankPageState extends State<WordBankPage> {
                     ),
                   ),
                   const SizedBox(height: 10),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: _WordBankAudienceFilter.values
+                          .map((filter) {
+                            return ChoiceChip(
+                              label: Text(
+                                '${filter.label} ${_countForFilter(filter)}',
+                              ),
+                              selected: _selectedFilter == filter,
+                              onSelected: (selected) {
+                                if (!selected) {
+                                  return;
+                                }
+                                setState(() {
+                                  _selectedFilter = filter;
+                                });
+                              },
+                            );
+                          })
+                          .toList(growable: false),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
                   Text(
                     normalizedQuery.isEmpty
-                        ? '目前顯示前 100 筆，輸入關鍵字可精準過濾'
-                        : '符合 ${filtered.length} 筆（最多顯示 200 筆）',
+                        ? '目前顯示「${_selectedFilter.label}」前 100 筆，輸入關鍵字可精準過濾'
+                        : '「${_selectedFilter.label}」符合 ${filtered.length} 筆（最多顯示 200 筆）',
                     style: Theme.of(
                       context,
                     ).textTheme.bodySmall?.copyWith(color: Colors.black54),
@@ -263,6 +365,7 @@ class _WordBankCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final partLabel = entry.partOfSpeech.label;
+    final badges = entry.audienceLabels;
     final previewSentences = entry.sentences
         .map((item) => item.trim())
         .where((item) => item.isNotEmpty)
@@ -301,6 +404,37 @@ class _WordBankCard extends StatelessWidget {
                       context,
                     ).textTheme.bodyMedium?.copyWith(color: Colors.black87),
                   ),
+                  if (badges.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    Wrap(
+                      spacing: 6,
+                      runSpacing: 6,
+                      children: badges
+                          .map(
+                            (badge) => Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: const Color(
+                                  0xFF0B6E99,
+                                ).withValues(alpha: 0.10),
+                                borderRadius: BorderRadius.circular(999),
+                              ),
+                              child: Text(
+                                badge,
+                                style: Theme.of(context).textTheme.bodySmall
+                                    ?.copyWith(
+                                      color: const Color(0xFF0B6E99),
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                              ),
+                            ),
+                          )
+                          .toList(growable: false),
+                    ),
+                  ],
                   if (previewSentences.isNotEmpty) ...[
                     const SizedBox(height: 8),
                     Text(
@@ -327,6 +461,15 @@ class _WordBankCard extends StatelessWidget {
                     const SizedBox(height: 6),
                     Text(
                       '來源頁碼：${entry.sourcePage}',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
+                  if (entry.difficultyLevel != null) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      '難度級數：${entry.difficultyLevel}',
                       style: Theme.of(
                         context,
                       ).textTheme.bodySmall?.copyWith(color: Colors.black54),
