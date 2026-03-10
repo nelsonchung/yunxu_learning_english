@@ -25,6 +25,40 @@ class SettingsPage extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         }
 
+        if (notifier.loadError != null) {
+          return Center(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(
+                    Icons.error_outline,
+                    size: 40,
+                    color: Color(0xFFB3261E),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    '設定載入失敗',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    notifier.loadError!,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: Colors.black54),
+                  ),
+                  const SizedBox(height: 16),
+                  FilledButton(
+                    onPressed: () => context.read<SettingsNotifier>().load(),
+                    child: const Text('重新載入'),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
+
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
         const syncIntervals = [5, 10, 20, 30, 60, 3600];
         const pronunciationLocales = [('en-US', '美式英文'), ('en-GB', '英式英文')];

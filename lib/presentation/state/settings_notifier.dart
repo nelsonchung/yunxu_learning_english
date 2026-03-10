@@ -21,8 +21,10 @@ class SettingsNotifier extends ChangeNotifier {
   AppSettings _settings = AppSettings.defaults();
   bool _isLoading = false;
   bool _didPromptSettings = false;
+  Object? _loadError;
 
   bool get isLoading => _isLoading;
+  String? get loadError => _loadError?.toString();
   bool get showImages => _settings.showImages;
   bool get reminderEnabled => _settings.reminderEnabled;
   bool get syncEnabled => _settings.syncEnabled;
@@ -40,18 +42,31 @@ class SettingsNotifier extends ChangeNotifier {
 
   Future<void> load() async {
     _isLoading = true;
+    _loadError = null;
     notifyListeners();
 
-    _settings = await _repository.fetch();
-    await _pronunciationService.applySettings(_settings);
-    if (_settings.reminderEnabled) {
-      await _ensurePermissionAndSchedule();
-    } else {
-      await _notificationService.cancelDailyReminder();
+    try {
+      debugPrint('SettingsNotifier.load: fetching settings');
+      _settings = await _repository.fetch();
+
+      debugPrint('SettingsNotifier.load: applying pronunciation settings');
+      await _pronunciationService.applySettings(_settings);
+
+      if (_settings.reminderEnabled) {
+        debugPrint('SettingsNotifier.load: scheduling reminder');
+        await _ensurePermissionAndSchedule();
+      } else {
+        debugPrint('SettingsNotifier.load: cancelling reminder');
+        await _notificationService.cancelDailyReminder();
+      }
+    } catch (error, stackTrace) {
+      _loadError = error;
+      debugPrint('SettingsNotifier.load failed: $error');
+      debugPrintStack(stackTrace: stackTrace);
+    } finally {
+      _isLoading = false;
+      notifyListeners();
     }
-
-    _isLoading = false;
-    notifyListeners();
   }
 
   Future<void> setReminderTime(TimeOfDay time) async {

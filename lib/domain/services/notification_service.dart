@@ -39,6 +39,13 @@ class NotificationService {
       await initialize();
     }
 
+    if (Platform.isAndroid) {
+      final android = _plugin.resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin>();
+      final granted = await android?.requestNotificationsPermission();
+      return granted ?? true;
+    }
+
     if (Platform.isIOS) {
       final ios = _plugin.resolvePlatformSpecificImplementation<
           IOSFlutterLocalNotificationsPlugin>();
@@ -93,7 +100,7 @@ class NotificationService {
       '今天記得複習單字',
       scheduledDate,
       details,
-      androidAllowWhileIdle: true,
+      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
