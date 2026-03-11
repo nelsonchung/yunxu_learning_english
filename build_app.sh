@@ -40,6 +40,7 @@ show_menu() {
     echo "11) 清理專案 (flutter clean + flutter pub get + macOS pod install)"
     echo "12) Xcode Archive 前準備 (11 + flutter build macos --release)"
     echo "13) 修正並檢查最新 macOS Archive (fix + check)"
+    echo "14) macOS DMG (build + package)"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -73,6 +74,7 @@ while true; do
         13)
             ./fix_macos_archive_frameworks.sh &&
             ./check_macos_archive_frameworks.sh ;;
+        14) ./build_dmg.sh ;;
         q) echo "離開程式..."; exit 0 ;;
         *) echo -e "${RED}無效選項${NC}" ;;
     esac
