@@ -73,6 +73,10 @@ class WordsNotifier extends ChangeNotifier {
   int get pendingWordsCount =>
       _words.where((card) => card.needsCompletion).length;
   int get dueWordsCount => dueToday().length;
+  int get manualWordsCount =>
+      _words.where((card) => card.origin == WordOrigin.manual).length;
+  int get unknownWordsCount =>
+      _words.where((card) => card.origin == WordOrigin.unknown).length;
   DateTime? get lastSyncAt => _lastSyncAt;
   DateTime? get lastSyncAttemptAt => _lastSyncAttemptAt;
   String? get lastSyncErrorCode => _lastSyncErrorCode;
@@ -96,6 +100,16 @@ class WordsNotifier extends ChangeNotifier {
         .toList();
     due.sort((a, b) => a.nextReviewDate.compareTo(b.nextReviewDate));
     return due;
+  }
+
+  List<WordCard> developerContributionWords({bool includeUnknown = false}) {
+    final selectedOrigins = <WordOrigin>{
+      WordOrigin.manual,
+      if (includeUnknown) WordOrigin.unknown,
+    };
+    return _words
+        .where((card) => selectedOrigins.contains(card.origin))
+        .toList(growable: false);
   }
 
   Future<void> load() async {
@@ -346,6 +360,7 @@ class WordsNotifier extends ChangeNotifier {
     required String meaning,
     required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    WordOrigin origin = WordOrigin.manual,
     File? imageFile,
   }) async {
     final trimmedWord = word.trim();
@@ -372,6 +387,7 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
+      origin: origin,
       imageCleared: false,
       imagePath: imagePath,
       imageBytes: null,

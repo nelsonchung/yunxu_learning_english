@@ -17,6 +17,7 @@ import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
 import 'domain/services/install_state_service.dart';
 import 'domain/services/pronunciation_service.dart';
+import 'domain/services/word_contribution_share_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -68,6 +69,9 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         Provider<PronunciationService>.value(value: pronunciationService),
+        Provider<WordContributionShareService>(
+          create: (_) => WordContributionShareService(),
+        ),
         ChangeNotifierProvider(
           create: (_) => WordsNotifier(
             repository: repository,

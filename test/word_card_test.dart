@@ -1,0 +1,47 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:yunxu_learning_english/domain/models/word_card.dart';
+
+void main() {
+  test('WordCard preserves origin through toMap/fromMap', () {
+    final now = DateTime.fromMillisecondsSinceEpoch(1_700_000_000_000);
+    final card = WordCard(
+      id: 'word-1',
+      word: 'inspiration',
+      meaning: '靈感',
+      partOfSpeech: PartOfSpeech.noun,
+      sentences: const ['This idea gave me inspiration.'],
+      origin: WordOrigin.manual,
+      createdAt: now,
+      updatedAt: now,
+      reviewSchedule: const [1, 2, 3],
+      nextReviewIndex: 0,
+      nextReviewDate: now,
+      history: const [],
+      isDeleted: false,
+    );
+
+    final restored = WordCard.fromMap(card.toMap());
+
+    expect(restored.origin, WordOrigin.manual);
+    expect(restored.word, 'inspiration');
+  });
+
+  test('WordCard defaults missing origin to unknown', () {
+    final restored = WordCard.fromMap({
+      'id': 'word-2',
+      'word': 'archive',
+      'meaning': '存檔',
+      'partOfSpeech': 'verb',
+      'sentences': ['Please archive the file.'],
+      'createdAt': 1_700_000_000_000,
+      'updatedAt': 1_700_000_000_000,
+      'reviewSchedule': [1, 2, 3],
+      'nextReviewIndex': 0,
+      'nextReviewDate': 1_700_000_000_000,
+      'history': const [],
+      'isDeleted': false,
+    });
+
+    expect(restored.origin, WordOrigin.unknown);
+  });
+}

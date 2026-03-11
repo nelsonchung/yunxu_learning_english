@@ -28,6 +28,8 @@ extension MissingWordFieldLabel on MissingWordField {
 
 enum WordCardStatus { complete, pending }
 
+enum WordOrigin { unknown, manual, builtinWordBank }
+
 extension PartOfSpeechLabel on PartOfSpeech {
   String get label {
     switch (this) {
@@ -55,6 +57,19 @@ extension PartOfSpeechLabel on PartOfSpeech {
   }
 }
 
+extension WordOriginLabel on WordOrigin {
+  String get label {
+    switch (this) {
+      case WordOrigin.unknown:
+        return '來源未知';
+      case WordOrigin.manual:
+        return '使用者新增';
+      case WordOrigin.builtinWordBank:
+        return '內建字庫';
+    }
+  }
+}
+
 class WordCard {
   static const Object _unset = Object();
 
@@ -64,6 +79,7 @@ class WordCard {
     required this.meaning,
     required this.partOfSpeech,
     required this.sentences,
+    required this.origin,
     required this.createdAt,
     required this.updatedAt,
     required this.reviewSchedule,
@@ -81,6 +97,7 @@ class WordCard {
   final String meaning;
   final PartOfSpeech partOfSpeech;
   final List<String> sentences;
+  final WordOrigin origin;
   final String? imagePath;
   final List<int>? imageBytes;
   final DateTime createdAt;
@@ -117,6 +134,7 @@ class WordCard {
     String? meaning,
     PartOfSpeech? partOfSpeech,
     List<String>? sentences,
+    WordOrigin? origin,
     Object? imagePath = _unset,
     Object? imageBytes = _unset,
     DateTime? createdAt,
@@ -134,6 +152,7 @@ class WordCard {
       meaning: meaning ?? this.meaning,
       partOfSpeech: partOfSpeech ?? this.partOfSpeech,
       sentences: sentences ?? this.sentences,
+      origin: origin ?? this.origin,
       imagePath: identical(imagePath, _unset)
           ? this.imagePath
           : imagePath as String?,
@@ -167,6 +186,7 @@ class WordCard {
       'meaning': meaning,
       'partOfSpeech': partOfSpeech.name,
       'sentences': normalizedSentences,
+      'origin': origin.name,
       'imagePath': imagePath,
       'imageBytes': normalizedImageBytes,
       'createdAt': createdAt.millisecondsSinceEpoch,
@@ -187,6 +207,15 @@ class WordCard {
       parsedPart = PartOfSpeech.values.firstWhere(
         (item) => item.name == partRaw,
         orElse: () => PartOfSpeech.noun,
+      );
+    }
+
+    final originRaw = data['origin'];
+    var parsedOrigin = WordOrigin.unknown;
+    if (originRaw is String) {
+      parsedOrigin = WordOrigin.values.firstWhere(
+        (item) => item.name == originRaw,
+        orElse: () => WordOrigin.unknown,
       );
     }
 
@@ -252,6 +281,7 @@ class WordCard {
       meaning: (data['meaning'] as String?) ?? '',
       partOfSpeech: parsedPart,
       sentences: sentences,
+      origin: parsedOrigin,
       imagePath: data['imagePath'] as String?,
       imageBytes: parsedBytes,
       createdAt: createdAt,

@@ -508,6 +508,7 @@ class CloudSyncService {
         'meaning': card.meaning,
         'partOfSpeech': card.partOfSpeech.name,
         'sentences': card.sentences,
+        'origin': card.origin.name,
         'imageBytes': null,
         'createdAt': card.createdAt.millisecondsSinceEpoch,
         'updatedAt': card.updatedAt.millisecondsSinceEpoch,
@@ -543,6 +544,7 @@ class CloudSyncService {
       'meaning': card.meaning,
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': card.sentences,
+      'origin': card.origin.name,
       'createdAt': card.createdAt.millisecondsSinceEpoch,
       'updatedAt': card.updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': card.reviewSchedule,
@@ -573,6 +575,15 @@ class CloudSyncService {
       part = PartOfSpeech.values.firstWhere(
         (item) => item.name == partRaw,
         orElse: () => PartOfSpeech.noun,
+      );
+    }
+
+    final originRaw = data['origin'];
+    var origin = WordOrigin.unknown;
+    if (originRaw is String) {
+      origin = WordOrigin.values.firstWhere(
+        (item) => item.name == originRaw,
+        orElse: () => WordOrigin.unknown,
       );
     }
 
@@ -625,6 +636,7 @@ class CloudSyncService {
       meaning: (data['meaning'] as String?) ?? '',
       partOfSpeech: part,
       sentences: (data['sentences'] as List?)?.cast<String>() ?? <String>[],
+      origin: origin,
       imageCleared: false,
       imagePath: null,
       imageBytes: imageBytes,

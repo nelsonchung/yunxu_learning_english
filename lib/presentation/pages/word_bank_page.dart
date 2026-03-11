@@ -215,6 +215,7 @@ class _WordBankPageState extends State<WordBankPage> {
         meaning: entry.meaning,
         partOfSpeech: entry.partOfSpeech,
         sentences: _sentencesForAdd(entry),
+        origin: WordOrigin.builtinWordBank,
       );
       if (!mounted) {
         return;

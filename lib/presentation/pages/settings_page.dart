@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
 
+import '../../domain/services/word_contribution_share_service.dart';
 import '../state/settings_notifier.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
+
+  @override
+  State<SettingsPage> createState() => _SettingsPageState();
+}
+
+class _SettingsPageState extends State<SettingsPage> {
+  bool _isSharingDeveloperWords = false;
 
   Future<void> _pickTime(BuildContext context) async {
     final notifier = context.read<SettingsNotifier>();
@@ -14,6 +23,165 @@ class SettingsPage extends StatelessWidget {
     final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) {
       await notifier.setReminderTime(picked);
+    }
+  }
+
+  Future<bool?> _showDeveloperShareDialog({
+    required int manualCount,
+    required int unknownCount,
+  }) {
+    var includeUnknown = manualCount == 0 && unknownCount > 0;
+
+    return showDialog<bool>(
+      context: context,
+      builder: (dialogContext) {
+        return StatefulBuilder(
+          builder: (dialogContext, setDialogState) {
+            final totalCount =
+                manualCount + (includeUnknown ? unknownCount : 0);
+
+            return AlertDialog(
+              title: const Text('分享新增單字 JSON'),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('會匯出 JSON 檔並開啟系統分享表單。'),
+                  const SizedBox(height: 10),
+                  const Text('分享內容只包含文字資料與建立時間，不含圖片檔本體。'),
+                  const SizedBox(height: 12),
+                  Text('使用者新增：$manualCount 筆'),
+                  if (unknownCount > 0) ...[
+                    const SizedBox(height: 8),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Checkbox(
+                          value: includeUnknown,
+                          onChanged: (value) {
+                            setDialogState(() {
+                              includeUnknown = value ?? false;
+                            });
+                          },
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 12),
+                            child: Text('包含來源未知的舊資料（$unknownCount 筆）'),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                  const SizedBox(height: 8),
+                  Text('本次匯出：$totalCount 筆'),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(dialogContext),
+                  child: const Text('取消'),
+                ),
+                FilledButton(
+                  onPressed: totalCount <= 0
+                      ? null
+                      : () => Navigator.pop(dialogContext, includeUnknown),
+                  child: const Text('匯出 JSON'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
+  Future<void> _shareDeveloperWords(BuildContext buttonContext) async {
+    final wordsNotifier = context.read<WordsNotifier>();
+    final shareService = context.read<WordContributionShareService>();
+    final manualCount = wordsNotifier.manualWordsCount;
+    final unknownCount = wordsNotifier.unknownWordsCount;
+
+    if (!shareService.isSupported) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('目前平台不支援 JSON 檔案分享')));
+      return;
+    }
+
+    if (manualCount == 0 && unknownCount == 0) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('目前沒有可分享的新增單字')));
+      return;
+    }
+
+    final includeUnknown = await _showDeveloperShareDialog(
+      manualCount: manualCount,
+      unknownCount: unknownCount,
+    );
+    if (includeUnknown == null) {
+      return;
+    }
+
+    final words = wordsNotifier.developerContributionWords(
+      includeUnknown: includeUnknown,
+    );
+    if (words.isEmpty) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('目前沒有可分享的單字資料')));
+      return;
+    }
+
+    if (!mounted || !buttonContext.mounted) {
+      return;
+    }
+
+    Rect? sharePositionOrigin;
+    final renderObject = buttonContext.findRenderObject();
+    if (renderObject is RenderBox && renderObject.hasSize) {
+      sharePositionOrigin =
+          renderObject.localToGlobal(Offset.zero) & renderObject.size;
+    }
+
+    setState(() {
+      _isSharingDeveloperWords = true;
+    });
+
+    try {
+      final result = await shareService.shareWords(
+        words: words,
+        sharePositionOrigin: sharePositionOrigin,
+      );
+      if (!mounted) {
+        return;
+      }
+      final message = switch (result.shareResult.status) {
+        ShareResultStatus.success =>
+          '已開啟分享表單，匯出 ${result.sharedCount} 筆到 ${result.fileName}',
+        ShareResultStatus.dismissed => '已取消分享，JSON 檔仍保留在暫存資料夾',
+        ShareResultStatus.unavailable => '已建立 ${result.fileName}，但系統無法回報分享結果',
+      };
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(message)));
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('匯出失敗：$error')));
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isSharingDeveloperWords = false;
+        });
+      }
     }
   }
 
@@ -67,6 +235,10 @@ class SettingsPage extends StatelessWidget {
             wordsNotifier.isSyncing ||
             wordsNotifier.isBackingUp ||
             wordsNotifier.isRestoring;
+        final shareService = context.read<WordContributionShareService>();
+        final hasDeveloperShareCandidates =
+            wordsNotifier.manualWordsCount > 0 ||
+            wordsNotifier.unknownWordsCount > 0;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -369,9 +541,101 @@ class SettingsPage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '分享新增單字',
+              subtitle: '匯出 JSON，透過 Mail、AirDrop 或訊息傳給開發者',
+              trailing: const Icon(Icons.ios_share, color: Color(0xFF0B6E99)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _SettingsInfoRow(
+                    label: '使用者新增',
+                    value: '${wordsNotifier.manualWordsCount} 筆',
+                  ),
+                  const SizedBox(height: 8),
+                  _SettingsInfoRow(
+                    label: '來源未知',
+                    value: '${wordsNotifier.unknownWordsCount} 筆',
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    '分享內容只包含文字資料與時間，不包含圖片檔本體。',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                  ),
+                  if (!shareService.isSupported) ...[
+                    const SizedBox(height: 10),
+                    Text(
+                      '目前平台不支援 JSON 檔案分享。',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
+                  const SizedBox(height: 14),
+                  Builder(
+                    builder: (buttonContext) {
+                      return SizedBox(
+                        width: double.infinity,
+                        child: FilledButton.icon(
+                          onPressed:
+                              _isSharingDeveloperWords ||
+                                  !shareService.isSupported ||
+                                  !hasDeveloperShareCandidates
+                              ? null
+                              : () => _shareDeveloperWords(buttonContext),
+                          icon: _isSharingDeveloperWords
+                              ? const SizedBox(
+                                  width: 14,
+                                  height: 14,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : const Icon(Icons.file_upload_outlined),
+                          label: Text(
+                            _isSharingDeveloperWords ? '匯出中...' : '匯出 JSON 並分享',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
           ],
         );
       },
+    );
+  }
+}
+
+class _SettingsInfoRow extends StatelessWidget {
+  const _SettingsInfoRow({required this.label, required this.value});
+
+  final String label;
+  final String value;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 88,
+          child: Text(
+            label,
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(child: Text(value)),
+      ],
     );
   }
 }
