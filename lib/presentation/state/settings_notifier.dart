@@ -52,12 +52,17 @@ class SettingsNotifier extends ChangeNotifier {
       debugPrint('SettingsNotifier.load: applying pronunciation settings');
       await _pronunciationService.applySettings(_settings);
 
-      if (_settings.reminderEnabled) {
-        debugPrint('SettingsNotifier.load: scheduling reminder');
-        await _ensurePermissionAndSchedule();
-      } else {
-        debugPrint('SettingsNotifier.load: cancelling reminder');
-        await _notificationService.cancelDailyReminder();
+      try {
+        if (_settings.reminderEnabled) {
+          debugPrint('SettingsNotifier.load: scheduling reminder');
+          await _ensurePermissionAndSchedule();
+        } else {
+          debugPrint('SettingsNotifier.load: cancelling reminder');
+          await _notificationService.cancelDailyReminder();
+        }
+      } catch (error, stackTrace) {
+        debugPrint('SettingsNotifier.load: notification sync failed: $error');
+        debugPrintStack(stackTrace: stackTrace);
       }
     } catch (error, stackTrace) {
       _loadError = error;

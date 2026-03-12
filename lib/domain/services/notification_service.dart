@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:timezone/data/latest.dart' as tz;
@@ -9,6 +10,9 @@ import 'package:timezone/timezone.dart' as tz;
 
 class NotificationService {
   static const int dailyReminderId = 1001;
+  static const MethodChannel _androidMaintenanceChannel = MethodChannel(
+    'com.yunxu.yunxulearn/android_maintenance',
+  );
 
   final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
@@ -70,8 +74,6 @@ class NotificationService {
       return;
     }
 
-    await _plugin.cancel(dailyReminderId);
-
     final scheduledDate = _nextInstanceOfTime(time);
 
     const details = NotificationDetails(
@@ -94,16 +96,46 @@ class NotificationService {
       ),
     );
 
-    await _plugin.zonedSchedule(
-      dailyReminderId,
-      '複習提醒',
-      '今天記得複習單字',
-      scheduledDate,
-      details,
-      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-      matchDateTimeComponents: DateTimeComponents.time,
+    await _runWithAndroidScheduleRecovery(() async {
+      await _plugin.cancel(dailyReminderId);
+      await _plugin.zonedSchedule(
+        dailyReminderId,
+        '複習提醒',
+        '今天記得複習單字',
+        scheduledDate,
+        details,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+        matchDateTimeComponents: DateTimeComponents.time,
+      );
+    });
+  }
+
+  Future<void> _runWithAndroidScheduleRecovery(
+    Future<void> Function() operation,
+  ) async {
+    try {
+      await operation();
+    } on PlatformException catch (error) {
+      if (!Platform.isAndroid || !_isRecoverableAndroidScheduleError(error)) {
+        rethrow;
+      }
+
+      await _clearAndroidScheduledNotificationCache();
+      await operation();
+    }
+  }
+
+  bool _isRecoverableAndroidScheduleError(PlatformException error) {
+    final message = '${error.code} ${error.message} ${error.details}';
+    return message.contains('Missing type parameter');
+  }
+
+  Future<void> _clearAndroidScheduledNotificationCache() async {
+    await _androidMaintenanceChannel.invokeMethod<void>(
+      'clearScheduledNotificationCache',
+      {'notificationId': dailyReminderId},
     );
   }
 
@@ -111,7 +143,9 @@ class NotificationService {
     if (!_initialized) {
       await initialize();
     }
-    await _plugin.cancel(dailyReminderId);
+    await _runWithAndroidScheduleRecovery(() async {
+      await _plugin.cancel(dailyReminderId);
+    });
   }
 
   tz.TZDateTime _nextInstanceOfTime(TimeOfDay time) {
