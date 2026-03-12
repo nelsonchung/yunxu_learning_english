@@ -152,7 +152,44 @@ build/app/outputs/bundle/release/app-release.aab
 1. 在 Play Console 的主商店資訊上傳這張 `512x512` PNG
 2. 完成商店資訊後送審
 3. 等待 Play 處理完成後再確認安裝頁名稱與圖示是否恢復正常
-### 5.3 版本名稱建議
+
+### 5.3 主商店資訊素材要求
+
+在 `開發更多使用者 > 商店發布 > 商店資訊`，除了 app 名稱與描述外，還需要補以下圖片素材：
+
+1. `應用程式圖示`
+2. `主題圖片`
+3. `手機螢幕截圖`
+
+目前已整理好的素材：
+
+- App icon：
+  [docs/publication/google-play/google-play-icon-512.png](/Users/nelsonchung/development/yunxu_learning_english/docs/publication/google-play/google-play-icon-512.png)
+- 主題圖片：
+  [docs/publication/google-play/google-play-feature-graphic-1024x500.png](/Users/nelsonchung/development/yunxu_learning_english/docs/publication/google-play/google-play-feature-graphic-1024x500.png)
+
+實際操作經驗：
+
+1. `google-play-icon-512.png` 要上傳到 `應用程式圖示`，不是 `主題圖片`
+2. `主題圖片` 需要另外一張 `1024 x 500` 的橫幅圖
+3. `手機螢幕截圖` 至少要 `2` 張
+4. Play Console 畫面會提示若想符合宣傳資格，建議至少提供 `4` 張截圖，且每張圖片單邊至少 `1080 px`
+
+手機螢幕截圖規格重點：
+
+1. 最少 `2` 張，最多 `8` 張
+2. 格式可為 `PNG` 或 `JPEG`
+3. 每張大小不得超過 `8 MB`
+4. 顯示比例需為 `16:9` 或 `9:16`
+5. 每邊長度需介於 `320 px` 到 `3840 px`
+
+建議做法：
+
+1. 先準備至少 `4` 張 Android 手機實機或模擬器截圖
+2. 優先挑首頁、單字列表、字庫搜尋、設定頁等核心畫面
+3. 截圖內容盡量乾淨，不要混入 debug 標記或系統彈窗
+
+### 5.4 版本名稱建議
 
 版本名稱是 Play Console 內部辨識用，使用者通常不會看到。
 
@@ -162,7 +199,7 @@ build/app/outputs/bundle/release/app-release.aab
 - `prod-1.0.3+1`
 - `internal-1.0.3+1`
 
-### 5.4 版本資訊範例
+### 5.5 版本資訊範例
 
 首次上架可用：
 
