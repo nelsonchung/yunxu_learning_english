@@ -1,0 +1,7 @@
+# Copy this file to android/key.properties and replace the placeholder values.
+# Paths are resolved relative to the android/ directory.
+
+storeFile=app/upload-keystore.jks
+storePassword=replace-with-store-password
+keyAlias=upload
+keyPassword=replace-with-key-password

@@ -24,6 +24,28 @@ run_macos_pod_install() {
     )
 }
 
+require_android_release_signing() {
+    if [ ! -f "android/key.properties" ]; then
+        echo -e "${RED}缺少 android/key.properties${NC}"
+        echo -e "${YELLOW}先執行 ./tools/generate_android_keystore.sh，或複製 android/key.properties.example 後填入正式 keystore 設定。${NC}"
+        return 1
+    fi
+}
+
+build_android_release_apk() {
+    require_android_release_signing || return 1
+    flutter build apk --release --split-per-abi
+}
+
+build_android_release_appbundle() {
+    require_android_release_signing || return 1
+    flutter build appbundle --release
+    local bundle_path="build/app/outputs/bundle/release/app-release.aab"
+    if [ -f "$bundle_path" ]; then
+        echo -e "${GREEN}AAB 產物：${bundle_path}${NC}"
+    fi
+}
+
 show_menu() {
     echo -e "\n${GREEN}請選擇動作:${NC}"
     echo "1) Android (APK)"
@@ -41,6 +63,7 @@ show_menu() {
     echo "12) Xcode Archive 前準備 (11 + flutter build macos --release)"
     echo "13) 修正並檢查最新 macOS Archive (fix + check)"
     echo "14) macOS DMG (build + package)"
+    echo "15) 產生 Android upload keystore"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -50,8 +73,8 @@ while true; do
     show_menu
     read choice
     case $choice in
-        1) flutter build apk --release --split-per-abi ;;
-        2) flutter build appbundle --release ;;
+        1) build_android_release_apk ;;
+        2) build_android_release_appbundle ;;
         3) flutter build ios --release ;;
         4) flutter build macos --release ;;
         5) flutter build windows --release ;;
@@ -75,6 +98,7 @@ while true; do
             ./fix_macos_archive_frameworks.sh &&
             ./check_macos_archive_frameworks.sh ;;
         14) ./build_dmg.sh ;;
+        15) ./tools/generate_android_keystore.sh ;;
         q) echo "離開程式..."; exit 0 ;;
         *) echo -e "${RED}無效選項${NC}" ;;
     esac
