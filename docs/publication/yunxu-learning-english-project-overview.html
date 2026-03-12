@@ -5,7 +5,7 @@
   <title>Yunxu Learning English｜英文單字學習方案 | 鋆旭科技</title>
   <meta
     name="description"
-    content="Yunxu Learning English 結合 ChatGPT 單字內容產生、單字配圖生成、內建 9854 筆字庫搜尋與艾賓浩斯複習排程，協助快速建立英文單字卡並穩定複習。"
+    content="Yunxu Learning English 結合內建 16385 筆字庫搜尋、ChatGPT 單字內容補充、單字配圖生成與艾賓浩斯複習排程，協助快速建立英文單字卡並穩定複習。"
   >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -191,6 +191,12 @@
       gap: 0.8rem;
     }
 
+    .wordsearch-card {
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .image-card img {
       width: 100%;
       border-radius: 12px;
@@ -277,11 +283,11 @@
 <body>
   <main class="container py-5">
     <section class="hero-banner mb-5">
-      <div class="badge-pill mb-3"><i class="bi bi-mortarboard-fill"></i> GPT 單字流程 + 遺忘曲線複習</div>
+      <div class="badge-pill mb-3"><i class="bi bi-mortarboard-fill"></i> 字庫搜尋優先 + GPT 補充 + 遺忘曲線複習</div>
       <h1 class="hero-title">Yunxu Learning English 英文單字學習方案</h1>
       <p class="hero-subtitle">
-        這個方案結合 ChatGPT 自動產生單字內容與 App 內複習排程，讓使用者能快速建立「英文單字、中文解釋、英文解釋、常用例句」，再透過
-        1、2、3、5、8、13、21、39 天複習節奏穩定累積長期記憶；另外也可從內建 9854 筆單字字庫搜尋後，快速新增到自己的單字列表。
+        這個方案以 App 內建 16385 筆單字字庫搜尋為優先，讓使用者可先快速挑選單字加入自己的單字列表；若字庫內沒有需要的單字，再透過
+        ChatGPT 產生「英文單字、中文解釋、英文解釋、常用例句」與學習配圖補充新增，最後搭配 1、2、3、5、8、13、21、39 天複習節奏穩定累積長期記憶。
       </p>
     </section>
 
@@ -340,12 +346,12 @@
               <h2 class="section-title h3 mb-3">本方案三步驟</h2>
               <div class="step-line">
                 <div class="step-item" data-step="01">
-                  <h5 class="fw-bold mb-2">用 2 個 GPT 先準備內容與配圖</h5>
-                  <p class="mb-0">先用「鋆旭科技 英文單字小老師」產生單字欄位，再用「{鋆旭科技} 產圖小幫手」生成對應學習圖片。</p>
+                  <h5 class="fw-bold mb-2">先從字庫搜尋頁面挑選單字</h5>
+                  <p class="mb-0">優先從內建 16385 筆單字字庫搜尋需要的單字，找到後可直接加入自己的單字列表。</p>
                 </div>
                 <div class="step-item" data-step="02">
-                  <h5 class="fw-bold mb-2">匯入內容或字庫搜尋，快速建卡</h5>
-                  <p class="mb-0">可把 GPT 結果填入單字卡，也可從內建 9854 筆單字字庫搜尋後一鍵新增到單字列表。</p>
+                  <h5 class="fw-bold mb-2">字庫沒有時，再用 GPT 補充新增</h5>
+                  <p class="mb-0">若搜尋不到需要的單字，再用「鋆旭科技 英文單字小老師」產生單字欄位，必要時搭配「{鋆旭科技} 產圖小幫手」補上學習圖片。</p>
                 </div>
                 <div class="step-item mb-0" data-step="03">
                   <h5 class="fw-bold mb-2">每日複習 + 同步提醒管理</h5>
@@ -360,10 +366,29 @@
 
     <section class="mb-5">
       <div class="text-center mb-4">
-        <div class="badge-pill mx-auto mb-3"><i class="bi bi-robot"></i> AI 內容產生流程</div>
-        <h2 class="section-title mb-2">先用 GPT 生成內容與圖片，再匯入 App</h2>
+        <div class="badge-pill mx-auto mb-3"><i class="bi bi-search"></i> 字庫搜尋挑選流程</div>
+        <h2 class="section-title mb-2">先從字庫搜尋頁面挑選單字</h2>
         <p class="section-subtitle">
-          使用者可先在 ChatGPT 完成單字內容與配圖準備，再把需要欄位填寫到 App，降低手動整理單字卡的成本。
+          App 內建 16385 筆單字，可先透過字庫搜尋頁面輸入關鍵字，快速篩選並挑選需要的單字加入自己的單字列表，作為建立單字卡的第一步。
+        </p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12">
+          <article class="image-card wordsearch-card">
+            <img src="assets/yunxulearningenglish/wordsearch.png" alt="字庫搜尋頁面示意" loading="lazy">
+            <h5 class="fw-bold mb-0">字庫搜尋頁面</h5>
+            <p class="text-muted mb-0">輸入英文單字或關鍵字後，即可從內建字庫快速篩選，找到合適單字後直接新增到單字列表。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <div class="badge-pill mx-auto mb-3"><i class="bi bi-robot"></i> GPT 補充新增流程</div>
+        <h2 class="section-title mb-2">字庫找不到時，再用 GPT 生成內容與圖片</h2>
+        <p class="section-subtitle">
+          使用者可先在字庫搜尋頁面挑選現有單字；只有在字庫內找不到需要的單字時，才透過 ChatGPT 準備單字內容與配圖，降低手動整理與新增資料的成本。
         </p>
       </div>
       <div class="row g-4">
@@ -386,7 +411,7 @@
           <article class="image-card">
             <img src="assets/yunxulearningenglish/example-gpt-space.png" alt="輸入space後 GPT 產生單字資料示範" loading="lazy">
             <h5 class="fw-bold mb-0">輸入"space"後的輸出格式</h5>
-            <p class="text-muted mb-0">可快速取得英文單字、中文解釋、英文解釋、常用例句，再填寫到 App 對應欄位。</p>
+            <p class="text-muted mb-0">當字庫沒有這個單字時，可快速取得英文單字、中文解釋、英文解釋、常用例句，再新增到 App 對應欄位。</p>
           </article>
         </div>
         <div class="col-lg-6">
@@ -415,10 +440,10 @@
     </section>
 
     <section class="mb-5">
-      <div class="text-center mb-4">
-        <div class="badge-pill mx-auto mb-3"><i class="bi bi-phone"></i> iPhone 畫面</div>
+        <div class="text-center mb-4">
+          <div class="badge-pill mx-auto mb-3"><i class="bi bi-phone"></i> iPhone 畫面</div>
         <h2 class="section-title mb-2">App 主要操作頁面</h2>
-        <p class="section-subtitle">目前為 iPhone 版六個主要頁面，涵蓋今日複習、單字列表、字庫搜尋（內建 9854 筆單字可快速新增）、設定、同步紀錄與說明；iPhone 版本已上線，mac 平台版本正同步準備上架 Mac App Store。</p>
+        <p class="section-subtitle">目前為 iPhone 版六個主要頁面，涵蓋今日複習、單字列表、字庫搜尋（內建 16385 筆單字，可作為優先挑選來源）、設定、同步紀錄與說明；iPhone 版本已上線，mac 平台版本正同步準備上架 Mac App Store。</p>
       </div>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
@@ -439,7 +464,7 @@
           <article class="iphone-card">
             <img src="assets/yunxulearningenglish/wordsearch.png" alt="字庫搜尋頁面" loading="lazy">
             <h5>字庫搜尋</h5>
-            <p>內建 9854 筆單字，輸入關鍵字即可快速篩選並新增到單字列表。</p>
+            <p>內建 16385 筆單字，輸入關鍵字即可快速篩選，並優先從字庫挑選後新增到單字列表。</p>
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -501,8 +526,8 @@
 
     <section>
       <div class="cta-card">
-        <h2 class="fw-bold mb-3">先讓 GPT 幫你準備內容，再用 App 穩定複習</h2>
-        <p class="mb-4">這個方案適合需要長期累積英文單字、並希望降低資料整理成本的學習流程。</p>
+        <h2 class="fw-bold mb-3">先從字庫挑選單字，不足時再用 GPT 補充</h2>
+        <p class="mb-4">這個方案適合需要長期累積英文單字，並希望兼顧建卡效率與資料補充彈性的學習流程。</p>
         <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
           <a
             href="https://chatgpt.com/g/g-ncSUDs6k6-yun-xu-ke-ji-ying-wen-dan-zi-xiao-lao-shi"
