@@ -14,6 +14,7 @@
 3. 上傳到 Google Play 內部測試
 4. 把測試安裝連結提供給測試人員
 5. 進行下一版更新時正確遞增版本號
+6. 用固定流程準備下一個 Google Play 版本
 
 ## 2. 目前專案設定
 
@@ -31,6 +32,7 @@
 - [android/key.properties.example](/Users/nelsonchung/development/yunxu_learning_english/android/key.properties.example)
 - [build_app.sh](/Users/nelsonchung/development/yunxu_learning_english/build_app.sh)
 - [tools/generate_android_keystore.sh](/Users/nelsonchung/development/yunxu_learning_english/tools/generate_android_keystore.sh)
+- [tools/prepare_google_play_release.sh](/Users/nelsonchung/development/yunxu_learning_english/tools/prepare_google_play_release.sh)
 
 ## 3. 第一次建立 Android 發佈金鑰
 
@@ -253,7 +255,33 @@ Google Play Console 不一定會自動寄出安裝邀請信。
 
 ## 7. 下一次發版前要做的事
 
-每次要上傳新版本前，先修改 [pubspec.yaml](/Users/nelsonchung/development/yunxu_learning_english/pubspec.yaml)：
+推薦做法是直接執行：
+
+```bash
+./tools/prepare_google_play_release.sh
+```
+
+或執行：
+
+```bash
+./build_app.sh
+```
+
+然後選：
+
+```text
+16) 準備下一個 Google Play 版本
+```
+
+腳本會：
+
+1. 讀取目前 `pubspec.yaml` 的版本
+2. 預設把 patch 與 build number 各加 `1`
+3. 讓你確認或覆寫下一版版本號
+4. 自動更新 `pubspec.yaml`
+5. 依需求直接建立新的 Android `app-release.aab`
+
+如果想手動處理，也可以直接修改 [pubspec.yaml](/Users/nelsonchung/development/yunxu_learning_english/pubspec.yaml)：
 
 ```yaml
 version: 1.0.4+2
@@ -286,11 +314,12 @@ flutter build appbundle --release
 1. `pubspec.yaml` 版本號已遞增
 2. `android/key.properties` 存在且內容正確
 3. `android/app/upload-keystore.jks` 存在
-4. `flutter build appbundle --release` 成功
-5. 已確認上傳的是最新的 `app-release.aab`
-6. Play Console 版本資訊已更新
-7. 內部測試 email 名單已正確勾選
-8. 已把內部測試連結傳給測試人員
+4. 已執行 `./tools/prepare_google_play_release.sh` 或 `build_app.sh` 的 `16) 準備下一個 Google Play 版本`
+5. `flutter build appbundle --release` 成功
+6. 已確認上傳的是最新的 `app-release.aab`
+7. Play Console 版本資訊已更新
+8. 內部測試 email 名單已正確勾選
+9. 已把內部測試連結傳給測試人員
 
 ## 9. 目前已驗證成功的事項
 

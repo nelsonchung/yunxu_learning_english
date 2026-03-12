@@ -24,6 +24,10 @@ run_macos_pod_install() {
     )
 }
 
+current_project_version() {
+    sed -nE 's/^version:[[:space:]]*([^[:space:]]+).*/\1/p' pubspec.yaml | head -n 1
+}
+
 require_android_release_signing() {
     if [ ! -f "android/key.properties" ]; then
         echo -e "${RED}缺少 android/key.properties${NC}"
@@ -48,6 +52,7 @@ build_android_release_appbundle() {
 
 show_menu() {
     echo -e "\n${GREEN}請選擇動作:${NC}"
+    echo -e "${BLUE}目前版本：$(current_project_version)${NC}"
     echo "1) Android (APK)"
     echo "2) Android (AppBundle)"
     echo "3) iOS (build)"
@@ -64,6 +69,7 @@ show_menu() {
     echo "13) 修正並檢查最新 macOS Archive (fix + check)"
     echo "14) macOS DMG (build + package)"
     echo "15) 產生 Android upload keystore"
+    echo "16) 準備下一個 Google Play 版本"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -99,6 +105,7 @@ while true; do
             ./check_macos_archive_frameworks.sh ;;
         14) ./build_dmg.sh ;;
         15) ./tools/generate_android_keystore.sh ;;
+        16) ./tools/prepare_google_play_release.sh ;;
         q) echo "離開程式..."; exit 0 ;;
         *) echo -e "${RED}無效選項${NC}" ;;
     esac
