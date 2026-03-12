@@ -145,7 +145,7 @@ build/app/outputs/bundle/release/app-release.aab
 
 本專案可直接使用的 Play icon 素材：
 
-- [docs/publication/assets/yunxulearningenglish/google-play-icon-512.png](/Users/nelsonchung/development/yunxu_learning_english/docs/publication/assets/yunxulearningenglish/google-play-icon-512.png)
+- [docs/publication/google-play/google-play-icon-512.png](/Users/nelsonchung/development/yunxu_learning_english/docs/publication/google-play/google-play-icon-512.png)
 
 建議：
 
