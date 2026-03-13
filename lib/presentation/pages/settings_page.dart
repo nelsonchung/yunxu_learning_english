@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:file_selector/file_selector.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../domain/services/word_contribution_import_service.dart';
 import '../../domain/services/word_contribution_share_service.dart';
 import '../state/settings_notifier.dart';
 import '../state/words_notifier.dart';
@@ -15,7 +17,16 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
+  static const XTypeGroup _developerWordsJsonTypeGroup = XTypeGroup(
+    label: 'JSON',
+    extensions: <String>['json'],
+    mimeTypes: <String>['application/json', 'text/json'],
+    uniformTypeIdentifiers: <String>['public.json'],
+    webWildCards: <String>['.json'],
+  );
+
   bool _isSharingDeveloperWords = false;
+  bool _isImportingDeveloperWords = false;
 
   Future<void> _pickTime(BuildContext context) async {
     final notifier = context.read<SettingsNotifier>();
@@ -183,6 +194,76 @@ class _SettingsPageState extends State<SettingsPage> {
         });
       }
     }
+  }
+
+  Future<void> _importDeveloperWords() async {
+    if (_isImportingDeveloperWords || _isSharingDeveloperWords) {
+      return;
+    }
+
+    final wordsNotifier = context.read<WordsNotifier>();
+
+    setState(() {
+      _isImportingDeveloperWords = true;
+    });
+
+    try {
+      final file = await openFile(
+        acceptedTypeGroups: const <XTypeGroup>[_developerWordsJsonTypeGroup],
+        confirmButtonText: '選擇',
+      );
+      if (file == null) {
+        return;
+      }
+
+      final jsonText = await file.readAsString();
+      if (!mounted) {
+        return;
+      }
+      final result = await wordsNotifier.importSharedWordsFromJson(jsonText);
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(_buildImportResultMessage(file.name, result))),
+      );
+    } on FormatException catch (error) {
+      if (!mounted) {
+        return;
+      }
+      final message = error.message.toString();
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('匯入失敗：$message')));
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('匯入失敗：$error')));
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isImportingDeveloperWords = false;
+        });
+      }
+    }
+  }
+
+  String _buildImportResultMessage(
+    String fileName,
+    WordContributionImportResult result,
+  ) {
+    final details = <String>[
+      if (result.importedCount > 0) '已匯入 ${result.importedCount} 筆',
+      if (result.importedCount == 0) '沒有匯入任何單字',
+      if (result.skippedDuplicateCount > 0)
+        '略過 ${result.skippedDuplicateCount} 筆重複',
+      if (result.invalidCount > 0) '忽略 ${result.invalidCount} 筆格式錯誤',
+      if (result.totalEntries == 0) '檔案內沒有單字資料',
+    ];
+    return '$fileName：${details.join('，')}';
   }
 
   @override
@@ -543,8 +624,8 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             const SizedBox(height: 16),
             SectionCard(
-              title: '分享新增單字',
-              subtitle: '匯出 JSON，透過 Mail、AirDrop 或訊息傳給開發者',
+              title: '分享與匯入單字',
+              subtitle: '用 JSON 匯出或匯入，和其他人交換自己新增的單字',
               trailing: const Icon(Icons.ios_share, color: Color(0xFF0B6E99)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -565,6 +646,13 @@ class _SettingsPageState extends State<SettingsPage> {
                       context,
                     ).textTheme.bodySmall?.copyWith(color: Colors.black54),
                   ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '匯入後會視為使用者新增單字，相同英文單字會自動略過。',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                  ),
                   if (!shareService.isSupported) ...[
                     const SizedBox(height: 10),
                     Text(
@@ -575,6 +663,26 @@ class _SettingsPageState extends State<SettingsPage> {
                     ),
                   ],
                   const SizedBox(height: 14),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed:
+                          _isImportingDeveloperWords || _isSharingDeveloperWords
+                          ? null
+                          : _importDeveloperWords,
+                      icon: _isImportingDeveloperWords
+                          ? const SizedBox(
+                              width: 14,
+                              height: 14,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            )
+                          : const Icon(Icons.file_download_outlined),
+                      label: Text(
+                        _isImportingDeveloperWords ? '匯入中...' : '選擇 JSON 檔匯入',
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
                   Builder(
                     builder: (buttonContext) {
                       return SizedBox(
@@ -582,6 +690,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         child: FilledButton.icon(
                           onPressed:
                               _isSharingDeveloperWords ||
+                                  _isImportingDeveloperWords ||
                                   !shareService.isSupported ||
                                   !hasDeveloperShareCandidates
                               ? null

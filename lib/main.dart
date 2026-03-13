@@ -17,6 +17,7 @@ import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
 import 'domain/services/install_state_service.dart';
 import 'domain/services/pronunciation_service.dart';
+import 'domain/services/word_contribution_import_service.dart';
 import 'domain/services/word_contribution_share_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
@@ -48,6 +49,9 @@ Future<void> main() async {
   await notificationService.initialize();
   final pronunciationService = PronunciationService();
   await pronunciationService.initialize(initialSettings);
+  final wordContributionImportService = WordContributionImportService(
+    scheduleService: scheduleService,
+  );
   final installStateService = InstallStateService();
   var allowAutoRestoreWhenLocalEmpty = true;
   if (Platform.isIOS) {
@@ -78,6 +82,7 @@ Future<void> main() async {
             scheduleService: scheduleService,
             sortService: SortService(),
             imageStorage: ImageStorage(),
+            wordContributionImportService: wordContributionImportService,
             syncStateRepository: syncStateRepository,
             syncService: cloudSyncService,
             initialSyncEnabled: initialSettings.syncEnabled,

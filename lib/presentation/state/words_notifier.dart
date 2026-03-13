@@ -12,6 +12,7 @@ import '../../domain/models/word_card.dart';
 import '../../domain/services/cloud_sync_service.dart';
 import '../../domain/services/review_schedule_service.dart';
 import '../../domain/services/sort_service.dart';
+import '../../domain/services/word_contribution_import_service.dart';
 
 class WordsNotifier extends ChangeNotifier {
   WordsNotifier({
@@ -19,6 +20,7 @@ class WordsNotifier extends ChangeNotifier {
     required ReviewScheduleService scheduleService,
     required SortService sortService,
     required ImageStorage imageStorage,
+    required WordContributionImportService wordContributionImportService,
     SyncStateRepository? syncStateRepository,
     CloudSyncService? syncService,
     bool initialSyncEnabled = true,
@@ -27,6 +29,7 @@ class WordsNotifier extends ChangeNotifier {
        _scheduleService = scheduleService,
        _sortService = sortService,
        _imageStorage = imageStorage,
+       _wordContributionImportService = wordContributionImportService,
        _syncStateRepository = syncStateRepository,
        _syncService = syncService,
        _syncEnabled = initialSyncEnabled,
@@ -38,6 +41,7 @@ class WordsNotifier extends ChangeNotifier {
   final ReviewScheduleService _scheduleService;
   final SortService _sortService;
   final ImageStorage _imageStorage;
+  final WordContributionImportService _wordContributionImportService;
   final SyncStateRepository? _syncStateRepository;
   final CloudSyncService? _syncService;
   final _uuid = const Uuid();
@@ -406,6 +410,36 @@ class WordsNotifier extends ChangeNotifier {
     if (canSync) {
       unawaited(syncNow());
     }
+  }
+
+  Future<WordContributionImportResult> importSharedWordsFromJson(
+    String jsonText,
+  ) async {
+    final existingWords = _words
+        .map(
+          (card) => WordContributionImportService.normalizeWordKey(card.word),
+        )
+        .where((word) => word.isNotEmpty)
+        .toSet();
+    final result = _wordContributionImportService.parseJson(
+      jsonText: jsonText,
+      existingWords: existingWords,
+    );
+
+    if (result.importedWords.isEmpty) {
+      return result;
+    }
+
+    for (final card in result.importedWords) {
+      await _repository.add(card);
+    }
+
+    _words.addAll(result.importedWords);
+    notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
+    return result;
   }
 
   Future<void> updateWord({
