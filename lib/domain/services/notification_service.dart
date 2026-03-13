@@ -23,7 +23,9 @@ class NotificationService {
       return;
     }
 
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const androidSettings = AndroidInitializationSettings(
+      '@mipmap/ic_launcher',
+    );
     const darwinSettings = DarwinInitializationSettings();
 
     await _plugin.initialize(
@@ -44,15 +46,19 @@ class NotificationService {
     }
 
     if (Platform.isAndroid) {
-      final android = _plugin.resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin>();
+      final android = _plugin
+          .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin
+          >();
       final granted = await android?.requestNotificationsPermission();
       return granted ?? true;
     }
 
     if (Platform.isIOS) {
-      final ios = _plugin.resolvePlatformSpecificImplementation<
-          IOSFlutterLocalNotificationsPlugin>();
+      final ios = _plugin
+          .resolvePlatformSpecificImplementation<
+            IOSFlutterLocalNotificationsPlugin
+          >();
       final status = await ios?.checkPermissions();
       if (status?.isEnabled == true) {
         return true;
@@ -150,8 +156,14 @@ class NotificationService {
 
   tz.TZDateTime _nextInstanceOfTime(TimeOfDay time) {
     final now = tz.TZDateTime.now(tz.local);
-    var scheduled =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, time.hour, time.minute);
+    var scheduled = tz.TZDateTime(
+      tz.local,
+      now.year,
+      now.month,
+      now.day,
+      time.hour,
+      time.minute,
+    );
     if (scheduled.isBefore(now)) {
       scheduled = scheduled.add(const Duration(days: 1));
     }
@@ -160,8 +172,25 @@ class NotificationService {
 
   Future<void> _configureLocalTimeZone() async {
     tz.initializeTimeZones();
-    final timezone = await FlutterTimezone.getLocalTimezone();
-    tz.setLocalLocation(tz.getLocation(timezone.identifier));
+    final fallbackOffset = DateTime.now().timeZoneOffset;
+
+    try {
+      final timezone = await FlutterTimezone.getLocalTimezone();
+      final location = resolveNotificationTimeZoneLocation(
+        timezone.identifier,
+        fallbackOffset: fallbackOffset,
+      );
+      tz.setLocalLocation(location);
+    } catch (error, stackTrace) {
+      debugPrint('NotificationService: failed to configure timezone: $error');
+      debugPrintStack(stackTrace: stackTrace);
+      tz.setLocalLocation(
+        buildFixedOffsetTimeZoneLocation(
+          'UTC${formatNotificationTimeZoneOffset(fallbackOffset)}',
+          fallbackOffset,
+        ),
+      );
+    }
   }
 
   Future<void> openAppNotificationSettings() async {
@@ -173,4 +202,130 @@ class NotificationService {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     } catch (_) {}
   }
+}
+
+tz.Location resolveNotificationTimeZoneLocation(
+  String rawIdentifier, {
+  Duration? fallbackOffset,
+}) {
+  final identifier = rawIdentifier.trim();
+  final candidates = <String>{
+    identifier,
+    normalizeNotificationTimeZoneIdentifier(identifier),
+  }..removeWhere((candidate) => candidate.isEmpty);
+
+  for (final candidate in candidates) {
+    final existingLocation = _tryGetNotificationTimeZoneLocation(candidate);
+    if (existingLocation != null) {
+      return existingLocation;
+    }
+
+    final fixedOffset = parseNotificationTimeZoneOffset(candidate);
+    if (fixedOffset != null) {
+      return buildFixedOffsetTimeZoneLocation(candidate, fixedOffset);
+    }
+  }
+
+  final offset = fallbackOffset ?? DateTime.now().timeZoneOffset;
+  final fallbackName = 'UTC${formatNotificationTimeZoneOffset(offset)}';
+  debugPrint(
+    'NotificationService: unsupported timezone "$rawIdentifier", '
+    'falling back to $fallbackName',
+  );
+  return buildFixedOffsetTimeZoneLocation(fallbackName, offset);
+}
+
+String normalizeNotificationTimeZoneIdentifier(String identifier) {
+  switch (identifier.trim()) {
+    case 'GMT':
+    case 'Etc/GMT':
+    case 'Etc/UTC':
+    case 'UCT':
+    case 'Universal':
+    case 'Zulu':
+      return 'UTC';
+    default:
+      return identifier.trim();
+  }
+}
+
+Duration? parseNotificationTimeZoneOffset(String identifier) {
+  final value = identifier.trim();
+  if (value.isEmpty) {
+    return null;
+  }
+
+  if (value == 'UTC') {
+    return Duration.zero;
+  }
+
+  final etcMatch = RegExp(
+    r'^Etc/GMT([+-])(\d{1,2})(?::?(\d{2}))?$',
+  ).firstMatch(value);
+  if (etcMatch != null) {
+    final sign = etcMatch.group(1) == '-' ? 1 : -1;
+    return _notificationOffsetFromMatch(
+      sign: sign,
+      hoursText: etcMatch.group(2)!,
+      minutesText: etcMatch.group(3),
+    );
+  }
+
+  final utcMatch = RegExp(
+    r'^(?:UTC|GMT)([+-])(\d{1,2})(?::?(\d{2}))?$',
+  ).firstMatch(value);
+  if (utcMatch != null) {
+    final sign = utcMatch.group(1) == '+' ? 1 : -1;
+    return _notificationOffsetFromMatch(
+      sign: sign,
+      hoursText: utcMatch.group(2)!,
+      minutesText: utcMatch.group(3),
+    );
+  }
+
+  return null;
+}
+
+tz.Location buildFixedOffsetTimeZoneLocation(
+  String identifier,
+  Duration offset,
+) {
+  return tz.Location(identifier, <int>[tz.minTime], <int>[0], <tz.TimeZone>[
+    tz.TimeZone(offset.inMilliseconds, isDst: false, abbreviation: identifier),
+  ]);
+}
+
+String formatNotificationTimeZoneOffset(Duration offset) {
+  final totalMinutes = offset.inMinutes;
+  final sign = totalMinutes >= 0 ? '+' : '-';
+  final absoluteMinutes = totalMinutes.abs();
+  final hours = absoluteMinutes ~/ 60;
+  final minutes = absoluteMinutes % 60;
+  final paddedHours = hours.toString().padLeft(2, '0');
+  final paddedMinutes = minutes.toString().padLeft(2, '0');
+  return '$sign$paddedHours:$paddedMinutes';
+}
+
+tz.Location? _tryGetNotificationTimeZoneLocation(String identifier) {
+  try {
+    return tz.getLocation(identifier);
+  } on tz.LocationNotFoundException {
+    return null;
+  }
+}
+
+Duration? _notificationOffsetFromMatch({
+  required int sign,
+  required String hoursText,
+  String? minutesText,
+}) {
+  final hours = int.tryParse(hoursText);
+  final minutes = int.tryParse(minutesText ?? '0');
+  if (hours == null || minutes == null) {
+    return null;
+  }
+  if (hours > 23 || minutes > 59) {
+    return null;
+  }
+  return Duration(minutes: sign * ((hours * 60) + minutes));
 }
