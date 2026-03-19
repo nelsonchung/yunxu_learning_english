@@ -23,10 +23,15 @@ class SettingsNotifier extends ChangeNotifier {
   bool _didPromptSettings = false;
   Object? _loadError;
 
+  AppSettings get settings => _settings;
   bool get isLoading => _isLoading;
   String? get loadError => _loadError?.toString();
   bool get showImages => _settings.showImages;
   bool get reminderEnabled => _settings.reminderEnabled;
+  bool get dailyNewWordsEnabled => _settings.dailyNewWordsEnabled;
+  int get dailyNewWordsReviewThreshold =>
+      _settings.dailyNewWordsReviewThreshold;
+  int get dailyNewWordsCount => _settings.dailyNewWordsCount;
   bool get syncEnabled => _settings.syncEnabled;
   int get syncIntervalSeconds => _settings.syncIntervalSeconds;
   bool get pronunciationEnabled => _settings.pronunciationEnabled;
@@ -107,6 +112,41 @@ class SettingsNotifier extends ChangeNotifier {
     } else {
       await _notificationService.cancelDailyReminder();
     }
+    notifyListeners();
+  }
+
+  Future<void> setDailyNewWordsEnabled(bool value) async {
+    _settings = _settings.copyWith(
+      dailyNewWordsEnabled: value,
+      updatedAt: DateTime.now(),
+    );
+    await _repository.save(_settings);
+    notifyListeners();
+  }
+
+  Future<void> setDailyNewWordsReviewThreshold(int value) async {
+    if (value < 0) {
+      return;
+    }
+
+    _settings = _settings.copyWith(
+      dailyNewWordsReviewThreshold: value,
+      updatedAt: DateTime.now(),
+    );
+    await _repository.save(_settings);
+    notifyListeners();
+  }
+
+  Future<void> setDailyNewWordsCount(int value) async {
+    if (value <= 0) {
+      return;
+    }
+
+    _settings = _settings.copyWith(
+      dailyNewWordsCount: value,
+      updatedAt: DateTime.now(),
+    );
+    await _repository.save(_settings);
     notifyListeners();
   }
 

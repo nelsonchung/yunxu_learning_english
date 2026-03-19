@@ -655,6 +655,9 @@ class CloudSyncService {
       'reminderMinutes': settings.reminderMinutes,
       'showImages': settings.showImages,
       'reminderEnabled': settings.reminderEnabled,
+      'dailyNewWordsEnabled': settings.dailyNewWordsEnabled,
+      'dailyNewWordsReviewThreshold': settings.dailyNewWordsReviewThreshold,
+      'dailyNewWordsCount': settings.dailyNewWordsCount,
       'syncEnabled': settings.syncEnabled,
       'syncIntervalSeconds': settings.syncIntervalSeconds,
       'pronunciationEnabled': settings.pronunciationEnabled,
@@ -668,6 +671,10 @@ class CloudSyncService {
     final reminderMinutesRaw = data['reminderMinutes'];
     final showImagesRaw = data['showImages'];
     final reminderEnabledRaw = data['reminderEnabled'];
+    final dailyNewWordsEnabledRaw = data['dailyNewWordsEnabled'];
+    final dailyNewWordsReviewThresholdRaw =
+        data['dailyNewWordsReviewThreshold'];
+    final dailyNewWordsCountRaw = data['dailyNewWordsCount'];
     final syncEnabledRaw = data['syncEnabled'];
     final syncIntervalSecondsRaw = data['syncIntervalSeconds'];
     final pronunciationEnabledRaw = data['pronunciationEnabled'];
@@ -679,6 +686,18 @@ class CloudSyncService {
       reminderMinutes: reminderMinutesRaw is int ? reminderMinutesRaw : 20 * 60,
       showImages: showImagesRaw is bool ? showImagesRaw : true,
       reminderEnabled: reminderEnabledRaw is bool ? reminderEnabledRaw : true,
+      dailyNewWordsEnabled: dailyNewWordsEnabledRaw is bool
+          ? dailyNewWordsEnabledRaw
+          : true,
+      dailyNewWordsReviewThreshold:
+          dailyNewWordsReviewThresholdRaw is int &&
+              dailyNewWordsReviewThresholdRaw >= 0
+          ? dailyNewWordsReviewThresholdRaw
+          : 10,
+      dailyNewWordsCount:
+          dailyNewWordsCountRaw is int && dailyNewWordsCountRaw > 0
+          ? dailyNewWordsCountRaw
+          : 3,
       syncEnabled: syncEnabledRaw is bool ? syncEnabledRaw : true,
       syncIntervalSeconds: syncIntervalSecondsRaw is int
           ? syncIntervalSecondsRaw

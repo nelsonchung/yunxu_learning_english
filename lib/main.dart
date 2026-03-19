@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 
+import 'data/repositories/builtin_word_bank_repository.dart';
 import 'data/repositories/local_word_repository.dart';
 import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
@@ -15,6 +16,7 @@ import 'domain/services/review_schedule_service.dart';
 import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
+import 'domain/services/daily_word_recommendation_service.dart';
 import 'domain/services/install_state_service.dart';
 import 'domain/services/pronunciation_service.dart';
 import 'domain/services/word_contribution_import_service.dart';
@@ -41,6 +43,8 @@ Future<void> main() async {
   final settingsRepository = LocalSettingsRepository(
     localDb: SettingsLocalDb(),
   );
+  final builtinWordBankRepository = BuiltinWordBankRepository();
+  final dailyWordRecommendationService = DailyWordRecommendationService();
   final initialSettings = await settingsRepository.fetch();
   final syncStateRepository = LocalSyncStateRepository(
     localDb: SyncStateLocalDb(),
@@ -73,6 +77,12 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         Provider<PronunciationService>.value(value: pronunciationService),
+        Provider<BuiltinWordBankRepository>.value(
+          value: builtinWordBankRepository,
+        ),
+        Provider<DailyWordRecommendationService>.value(
+          value: dailyWordRecommendationService,
+        ),
         Provider<WordContributionShareService>(
           create: (_) => WordContributionShareService(),
         ),

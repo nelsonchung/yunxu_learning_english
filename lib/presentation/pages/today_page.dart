@@ -5,10 +5,14 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../data/repositories/builtin_word_bank_repository.dart';
+import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/services/daily_word_recommendation_service.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
+import '../widgets/section_card.dart';
 
 class TodayPage extends StatelessWidget {
   const TodayPage({super.key});
@@ -29,6 +33,8 @@ class TodayPage extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
             _HeroHeader(total: dueList.length),
+            const SizedBox(height: 16),
+            _DailyNewWordsSection(dueCount: dueList.length),
             const SizedBox(height: 16),
             if (dueList.isEmpty)
               const _EmptyState()
@@ -205,6 +211,316 @@ class _EmptyState extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           const Expanded(child: Text('今天沒有需要複習的單字，做得很好！')),
+        ],
+      ),
+    );
+  }
+}
+
+class _DailyNewWordsSection extends StatefulWidget {
+  const _DailyNewWordsSection({required this.dueCount});
+
+  final int dueCount;
+
+  @override
+  State<_DailyNewWordsSection> createState() => _DailyNewWordsSectionState();
+}
+
+class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
+  final Set<String> _addingWords = <String>{};
+
+  List<BuiltinWordEntry> _entries = const [];
+  bool _isLoading = true;
+  String? _errorMessage;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadEntries();
+  }
+
+  Future<void> _loadEntries() async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      final entries = await context
+          .read<BuiltinWordBankRepository>()
+          .fetchAll();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _entries = entries;
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _errorMessage = '無法載入推薦字庫：$error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  List<String> _sentencesForAdd(BuiltinWordEntry entry) {
+    final cleaned = entry.sentences
+        .map((item) => item.trim())
+        .where((item) => item.isNotEmpty)
+        .take(2)
+        .toList(growable: true);
+    if (cleaned.length < 2) {
+      cleaned.add('I added "${entry.word}" to my review list today.');
+    }
+    if (cleaned.length < 2) {
+      cleaned.add('I will review "${entry.word}" again tonight.');
+    }
+    return cleaned;
+  }
+
+  Future<void> _addEntry(BuiltinWordEntry entry) async {
+    final key = entry.word.toLowerCase();
+    final notifier = context.read<WordsNotifier>();
+    final exists = notifier.words.any((item) => item.word.toLowerCase() == key);
+    if (exists || _addingWords.contains(key)) {
+      return;
+    }
+
+    setState(() {
+      _addingWords.add(key);
+    });
+
+    try {
+      await notifier.addWord(
+        word: entry.word,
+        meaning: entry.meaning,
+        partOfSpeech: entry.partOfSpeech,
+        sentences: _sentencesForAdd(entry),
+        origin: WordOrigin.builtinWordBank,
+      );
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('已加入「${entry.word}」到複習資料庫')));
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('加入失敗：$error')));
+    } finally {
+      if (mounted) {
+        setState(() {
+          _addingWords.remove(key);
+        });
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer2<SettingsNotifier, WordsNotifier>(
+      builder: (context, settingsNotifier, wordsNotifier, _) {
+        if (!settingsNotifier.dailyNewWordsEnabled) {
+          return const SizedBox.shrink();
+        }
+
+        if (_isLoading) {
+          return const SectionCard(
+            title: '今日補新字',
+            subtitle: '正在整理今天適合加入複習的新字',
+            child: Center(child: CircularProgressIndicator()),
+          );
+        }
+
+        if (_errorMessage != null) {
+          return SectionCard(
+            title: '今日補新字',
+            subtitle: '目前無法準備推薦清單',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(_errorMessage!),
+                const SizedBox(height: 10),
+                OutlinedButton(
+                  onPressed: _loadEntries,
+                  child: const Text('重新載入'),
+                ),
+              ],
+            ),
+          );
+        }
+
+        final threshold = settingsNotifier.dailyNewWordsReviewThreshold;
+        final desiredCount = settingsNotifier.dailyNewWordsCount;
+
+        if (widget.dueCount > threshold) {
+          return SectionCard(
+            title: '今日補新字',
+            subtitle: '今天待複習 ${widget.dueCount} 個，超過你設定的 $threshold 個',
+            child: const Text('今天先專心複習，等待補量降下來後再補新字。'),
+          );
+        }
+
+        final recommendations = context
+            .read<DailyWordRecommendationService>()
+            .recommend(
+              entries: _entries,
+              existingWords: wordsNotifier.words,
+              settings: settingsNotifier.settings,
+              dueTodayCount: widget.dueCount,
+              now: DateTime.now(),
+            );
+        if (recommendations.isEmpty) {
+          return const SizedBox.shrink();
+        }
+
+        final existingWords = wordsNotifier.words
+            .map((item) => item.word.toLowerCase())
+            .toSet();
+
+        return SectionCard(
+          title: '今日補新字',
+          subtitle:
+              '今天待複習 ${widget.dueCount} 個，幫你挑了 ${recommendations.length}/$desiredCount 個適合的新字',
+          trailing: const Icon(Icons.auto_awesome, color: Color(0xFF0B6E99)),
+          child: Column(
+            children: recommendations
+                .map(
+                  (entry) => Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: _RecommendedWordTile(
+                      entry: entry,
+                      isAdded: existingWords.contains(entry.word.toLowerCase()),
+                      isAdding: _addingWords.contains(entry.word.toLowerCase()),
+                      onAdd: () => _addEntry(entry),
+                    ),
+                  ),
+                )
+                .toList(growable: false),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _RecommendedWordTile extends StatelessWidget {
+  const _RecommendedWordTile({
+    required this.entry,
+    required this.isAdded,
+    required this.isAdding,
+    required this.onAdd,
+  });
+
+  final BuiltinWordEntry entry;
+  final bool isAdded;
+  final bool isAdding;
+  final VoidCallback onAdd;
+
+  @override
+  Widget build(BuildContext context) {
+    final badges = <String>[
+      ...entry.audienceLabels.take(2),
+      if (entry.difficultyLevel != null) '難度 ${entry.difficultyLevel}',
+    ];
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF7FBFC),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFFD8E8ED)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  entry.word,
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  '${entry.meaning} · ${entry.partOfSpeech.label}',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodyMedium?.copyWith(color: Colors.black87),
+                ),
+                if (badges.isNotEmpty) ...[
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 6,
+                    runSpacing: 6,
+                    children: badges
+                        .map(
+                          (badge) => Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 4,
+                            ),
+                            decoration: BoxDecoration(
+                              color: const Color(
+                                0xFF0B6E99,
+                              ).withValues(alpha: 0.08),
+                              borderRadius: BorderRadius.circular(999),
+                            ),
+                            child: Text(
+                              badge,
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(
+                                    color: const Color(0xFF0B6E99),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                            ),
+                          ),
+                        )
+                        .toList(growable: false),
+                  ),
+                ],
+                const SizedBox(height: 8),
+                Text(
+                  entry.sentences.first.trim(),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(color: Colors.black87),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          IconButton(
+            tooltip: isAdded ? '已在複習庫' : '加入複習庫',
+            onPressed: (isAdded || isAdding) ? null : onAdd,
+            icon: isAdding
+                ? const SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  )
+                : Icon(
+                    isAdded ? Icons.check_circle : Icons.add_circle_outline,
+                    color: isAdded
+                        ? const Color(0xFF1CA7A6)
+                        : const Color(0xFF0B6E99),
+                  ),
+          ),
         ],
       ),
     );

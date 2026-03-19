@@ -309,6 +309,8 @@ class _SettingsPageState extends State<SettingsPage> {
         }
 
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
+        const dailyReviewThresholdOptions = [5, 8, 10, 15, 20, 30, 40, 50];
+        const dailyNewWordCountOptions = [1, 2, 3, 5];
         const syncIntervals = [5, 10, 20, 30, 60, 3600];
         const pronunciationLocales = [('en-US', '美式英文'), ('en-GB', '英式英文')];
         final cloudSupported = wordsNotifier.syncSupported;
@@ -351,6 +353,89 @@ class _SettingsPageState extends State<SettingsPage> {
                         child: const Text('設定時間'),
                       ),
                     ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SectionCard(
+              title: '今日補新字',
+              subtitle: '依今天待複習量，自動補幾個適合的新字',
+              trailing: const Icon(
+                Icons.auto_awesome,
+                color: Color(0xFF0B6E99),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      const Expanded(child: Text('啟用今日補新字')),
+                      Switch(
+                        value: notifier.dailyNewWordsEnabled,
+                        onChanged: notifier.setDailyNewWordsEnabled,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      const Expanded(child: Text('待複習上限')),
+                      DropdownButton<int>(
+                        value: notifier.dailyNewWordsReviewThreshold,
+                        items: dailyReviewThresholdOptions
+                            .map(
+                              (value) => DropdownMenuItem<int>(
+                                value: value,
+                                child: Text('<= $value 個'),
+                              ),
+                            )
+                            .toList(),
+                        onChanged: notifier.dailyNewWordsEnabled
+                            ? (value) async {
+                                if (value == null) {
+                                  return;
+                                }
+                                await notifier.setDailyNewWordsReviewThreshold(
+                                  value,
+                                );
+                              }
+                            : null,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      const Expanded(child: Text('每日推薦數')),
+                      DropdownButton<int>(
+                        value: notifier.dailyNewWordsCount,
+                        items: dailyNewWordCountOptions
+                            .map(
+                              (value) => DropdownMenuItem<int>(
+                                value: value,
+                                child: Text('$value 個'),
+                              ),
+                            )
+                            .toList(),
+                        onChanged: notifier.dailyNewWordsEnabled
+                            ? (value) async {
+                                if (value == null) {
+                                  return;
+                                }
+                                await notifier.setDailyNewWordsCount(value);
+                              }
+                            : null,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    notifier.dailyNewWordsEnabled
+                        ? '當今天待複習不超過 ${notifier.dailyNewWordsReviewThreshold} 個時，今日頁會推薦 ${notifier.dailyNewWordsCount} 個新字。'
+                        : '關閉後，今日頁不會顯示自動推薦的新字。',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
                   ),
                 ],
               ),

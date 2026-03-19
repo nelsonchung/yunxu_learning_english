@@ -3,6 +3,9 @@ class AppSettings {
     required this.reminderMinutes,
     required this.showImages,
     required this.reminderEnabled,
+    required this.dailyNewWordsEnabled,
+    required this.dailyNewWordsReviewThreshold,
+    required this.dailyNewWordsCount,
     required this.syncEnabled,
     required this.syncIntervalSeconds,
     required this.pronunciationEnabled,
@@ -14,6 +17,9 @@ class AppSettings {
   final int reminderMinutes;
   final bool showImages;
   final bool reminderEnabled;
+  final bool dailyNewWordsEnabled;
+  final int dailyNewWordsReviewThreshold;
+  final int dailyNewWordsCount;
   final bool syncEnabled;
   final int syncIntervalSeconds;
   final bool pronunciationEnabled;
@@ -26,6 +32,9 @@ class AppSettings {
       reminderMinutes: 20 * 60,
       showImages: true,
       reminderEnabled: true,
+      dailyNewWordsEnabled: true,
+      dailyNewWordsReviewThreshold: 10,
+      dailyNewWordsCount: 3,
       syncEnabled: true,
       syncIntervalSeconds: 60,
       pronunciationEnabled: true,
@@ -39,6 +48,9 @@ class AppSettings {
     int? reminderMinutes,
     bool? showImages,
     bool? reminderEnabled,
+    bool? dailyNewWordsEnabled,
+    int? dailyNewWordsReviewThreshold,
+    int? dailyNewWordsCount,
     bool? syncEnabled,
     int? syncIntervalSeconds,
     bool? pronunciationEnabled,
@@ -50,6 +62,10 @@ class AppSettings {
       reminderMinutes: reminderMinutes ?? this.reminderMinutes,
       showImages: showImages ?? this.showImages,
       reminderEnabled: reminderEnabled ?? this.reminderEnabled,
+      dailyNewWordsEnabled: dailyNewWordsEnabled ?? this.dailyNewWordsEnabled,
+      dailyNewWordsReviewThreshold:
+          dailyNewWordsReviewThreshold ?? this.dailyNewWordsReviewThreshold,
+      dailyNewWordsCount: dailyNewWordsCount ?? this.dailyNewWordsCount,
       syncEnabled: syncEnabled ?? this.syncEnabled,
       syncIntervalSeconds: syncIntervalSeconds ?? this.syncIntervalSeconds,
       pronunciationEnabled: pronunciationEnabled ?? this.pronunciationEnabled,
@@ -64,6 +80,9 @@ class AppSettings {
       'reminderMinutes': reminderMinutes,
       'showImages': showImages,
       'reminderEnabled': reminderEnabled,
+      'dailyNewWordsEnabled': dailyNewWordsEnabled,
+      'dailyNewWordsReviewThreshold': dailyNewWordsReviewThreshold,
+      'dailyNewWordsCount': dailyNewWordsCount,
       'syncEnabled': syncEnabled,
       'syncIntervalSeconds': syncIntervalSeconds,
       'pronunciationEnabled': pronunciationEnabled,
@@ -77,6 +96,9 @@ class AppSettings {
     final minutes = data['reminderMinutes'];
     final showImages = data['showImages'];
     final reminderEnabled = data['reminderEnabled'];
+    final dailyNewWordsEnabled = data['dailyNewWordsEnabled'];
+    final dailyNewWordsReviewThreshold = data['dailyNewWordsReviewThreshold'];
+    final dailyNewWordsCount = data['dailyNewWordsCount'];
     final syncEnabled = data['syncEnabled'];
     final syncIntervalSeconds = data['syncIntervalSeconds'];
     final pronunciationEnabled = data['pronunciationEnabled'];
@@ -88,6 +110,17 @@ class AppSettings {
       reminderMinutes: minutes is int ? minutes : 20 * 60,
       showImages: showImages is bool ? showImages : true,
       reminderEnabled: reminderEnabled is bool ? reminderEnabled : true,
+      dailyNewWordsEnabled: dailyNewWordsEnabled is bool
+          ? dailyNewWordsEnabled
+          : true,
+      dailyNewWordsReviewThreshold:
+          dailyNewWordsReviewThreshold is int &&
+              dailyNewWordsReviewThreshold >= 0
+          ? dailyNewWordsReviewThreshold
+          : 10,
+      dailyNewWordsCount: dailyNewWordsCount is int && dailyNewWordsCount > 0
+          ? dailyNewWordsCount
+          : 3,
       syncEnabled: syncEnabled is bool ? syncEnabled : true,
       syncIntervalSeconds: syncIntervalSeconds is int
           ? syncIntervalSeconds
