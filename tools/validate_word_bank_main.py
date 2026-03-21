@@ -116,8 +116,12 @@ def main() -> int:
         source_tags = item.get("sourceTags")
         difficulty_level = item.get("difficultyLevel")
 
-        if not isinstance(meaning, str) or not meaning.strip():
-            add_issue(errors, word, "missing or empty meaning")
+        if meaning is None:
+            add_issue(errors, word, "missing meaning")
+        elif not isinstance(meaning, str):
+            add_issue(errors, word, f"meaning must be a string, got {type(meaning).__name__}")
+        elif not meaning.strip():
+            add_issue(errors, word, "meaning is empty")
         elif HTML_TAG_RE.search(meaning):
             add_issue(errors, word, "meaning contains HTML or wiki markup")
         elif "\n" in meaning:

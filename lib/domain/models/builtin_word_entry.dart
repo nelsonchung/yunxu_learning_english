@@ -118,9 +118,13 @@ class BuiltinWordEntry {
         : null;
 
     return BuiltinWordEntry(
-      word: (map['word'] as String? ?? '').trim(),
-      meaning: (map['meaning'] as String? ?? '').trim(),
-      partOfSpeech: _parsePartOfSpeech((map['partOfSpeech'] as String?) ?? ''),
+      word: _readTrimmedString(map['word']),
+      meaning: _readTrimmedString(
+        map['meaning'],
+        allowList: true,
+        separator: '；',
+      ),
+      partOfSpeech: _parsePartOfSpeech(_readTrimmedString(map['partOfSpeech'])),
       sentences: parsedSentences,
       sourcePage: parsedSourcePage,
       schoolLevels: parsedSchoolLevels,
@@ -139,6 +143,24 @@ class BuiltinWordEntry {
       }
     }
     return PartOfSpeech.other;
+  }
+
+  static String _readTrimmedString(
+    Object? raw, {
+    bool allowList = false,
+    String separator = ' ',
+  }) {
+    if (raw is String) {
+      return raw.trim();
+    }
+    if (allowList && raw is List) {
+      return raw
+          .whereType<String>()
+          .map((item) => item.trim())
+          .where((item) => item.isNotEmpty)
+          .join(separator);
+    }
+    return '';
   }
 
   static List<T> _parseEnumList<T extends Enum>({
