@@ -1,0 +1,6207 @@
+[
+  {
+    "word": "o'clock",
+    "meaning": "點鐘",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The meeting is scheduled for nine o'clock tomorrow morning. 會議定於明天早上九點舉行。",
+      "I'll meet you at the library at three o'clock. 我三點在圖書館見你。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "O.K./OK/okay",
+    "meaning": "好的/好的/好的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Everything will be O.K. in the end, don't worry. 最後一切都會沒事的，別擔心。",
+      "Is it O.K. if I borrow your pen for a moment? 我借用一下你的筆可以嗎？"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oak",
+    "meaning": "橡木",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sturdy oak tree has stood in the center of the forest for centuries. 那棵堅固的橡樹已在森林中心屹立了數個世紀。",
+      "The dining table is made of high-quality solid oak wood from local sources. 餐桌是由當地高品質的實心橡木製成的。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oar",
+    "meaning": "槳",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The boat has two long wooden oars. 這艘船有兩支長木槳。",
+      "He used the oars to guide the boat across the lake. 他用槳引導船橫渡湖泊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oasis",
+    "meaning": "綠洲",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The small village is a beautiful oasis in the middle of the vast desert. 那座小村莊是廣闊沙漠中一片美麗的綠洲。",
+      "In the busy city center, the quiet park provides a welcome oasis of peace. 在繁忙的市中心，安靜的公園提供了一個受歡迎的寧靜綠洲（舒適地）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oat",
+    "meaning": "燕麥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Oats are a healthy source of fiber and energy. 燕麥是纖維與能量的健康來源。",
+      "I like to have a bowl of hot oatmeal for breakfast. 我喜歡早餐吃一碗熱燕麥片。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oath",
+    "meaning": "誓言、宣誓",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The president took a formal oath of office during the official ceremony. 總統在正式典禮上進行了正式就職宣誓（誓言）。",
+      "He made a solemn oath never to reveal the secret to anyone. 他鄭重宣誓（發誓）絕不向任何人透露這個秘密。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oatmeal",
+    "meaning": "燕麥片",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She enjoys having a warm bowl of oatmeal with fresh fruit for breakfast. 她喜歡早餐吃一碗溫熱的燕麥片配新鮮水果。",
+      "Oatmeal is a healthy source of fiber and can help to lower cholesterol. 燕麥片是健康的纖維來源，有助於降低膽固醇。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obduracy",
+    "meaning": "頑固性",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The success of the project depends on obduracy. 這個專案是否成功取決於obduracy。",
+      "Without obduracy, the team could not finish on time. 沒有obduracy，團隊就無法準時完成。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "obdurate",
+    "meaning": "頑固的,固執的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term obdurate in class today. 我們今天在課堂上討論了 obdurate 這個詞。",
+      "The article mentioned obdurate in a short paragraph. 文章在一段短文中提到了 obdurate。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obdurately",
+    "meaning": "熙頑固地,固執地",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please read the instructions obdurately before you start. 開始前請先obdurately地閱讀說明。",
+      "The coach replied obdurately and solved the issue. 教練obdurately地回應，並解決了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obe",
+    "meaning": "奧部",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned obe in a short paragraph. 文章在一段短文中提到了 obe。",
+      "Mia wrote down obe with the note \"奧部\". Mia把 obe 記下來，並註記「奧部」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obedience",
+    "meaning": "服從",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Strict obedience to the traffic rules is essential for road safety. 嚴格遵守（服從）交通規則對於道路安全至關重要。",
+      "The dog showed a lot of obedience to its owner's commands today. 這隻狗今天對主人的指令表現出了極大的服從。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obedient",
+    "meaning": "聽話",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The well-trained dog was very obedient and followed all commands. 那隻訓練有素的狗非常聽話（聽話），聽從所有指令。",
+      "She is a very obedient student who always follows school rules now. 她是一位現在非常聽話（聽話）的學生，總是遵守校規。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obese",
+    "meaning": "四肥胖的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term obese in class today. 我們今天在課堂上討論了 obese 這個詞。",
+      "The guide wrote down obese with the note \"四肥胖的\". 導覽員把 obese 記下來，並註記「四肥胖的」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obesity",
+    "meaning": "肥胖的狀態。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term obesity refers to the state of being obese. 肥胖一詞是指肥胖的狀態。",
+      "The lesson introduced obesity as a useful term to understand. 本課介紹了肥胖這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obey",
+    "meaning": "服從",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Every citizen should obey the laws and regulations of the country. 每一位公民都應該遵守國家的法律與法規。",
+      "The well-trained dog immediately obeyed its owner's command. 那隻訓練有素的狗立即服從了主人的命令。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obey bank balance",
+    "meaning": "銀行存款餘額",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You can use \"obey bank balance\" in emails and daily conversations. 你可以在 email 和日常對話中使用「obey bank balance」。",
+      "After practice, I could use \"obey bank balance\" more confidently. 練習後，我更有自信地使用「obey bank balance」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obituary",
+    "meaning": "與訃聞相關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is the paper's obituary editor. 他是該報的訃聞編輯。",
+      "Something described as obituary is relating to obituaries. 被描述為訃聞的東西與訃告有關。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "object",
+    "meaning": "目的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mysterious object in the night sky was later identified as a satellite. 夜空中那個神秘物體後來被證實是衛星。",
+      "The main object of our project is to reduce environmental pollution. 我們專案的主要目標是減少環境污染。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "objection",
+    "meaning": "異議",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The manager raised an objection to the new project proposal today. 經理今天對新專案提案提出了異議（異議）。",
+      "If you have any objections to the plan, please let me know now. 如果您對該計畫有任何異議，請現在告訴我。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "objective",
+    "meaning": "客觀的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The main objective of our study is to improve urban health now. 我們研究的主要目標（客觀的）是現在提升城市健康。",
+      "Please try to give an objective account of the event to police. 請試著向警方對事件做一個客觀的（客觀的）敘述。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "objectively",
+    "meaning": "以公正、客觀的方式。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "If someone acts objectively, they do so in a way that is in an impartial, objective manner. 如果某人客觀行事，他就會以公正、客觀的方式行事。",
+      "The speaker responded objectively during the discussion. 發言者在討論中做出了客觀的回應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "objectivity",
+    "meaning": "世界 ，因為它 真的;; 。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term objectivity refers to The world as it really is; reality. 客觀性一詞指的是 世界 ，因為它 確實; <a rel=\"mw:WikiLink\" href=\"//tleity\" 現實。 客觀性一詞指的是世界的本來面目；現實。 探索性指的是世界，因為它確實如此； <a rel=\"mw:WikiLink\" href=\"//tleity\" 現實。",
+      "The lesson introduced objectivity as a useful term to understand. 本課程介紹了客觀性作為一個易於理解的有用術語。 本課程介紹了客觀性作為一個易於理解的有用術語。 本課程介紹了測量性作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obligation",
+    "meaning": "義務、責任",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Parents have a legal obligation to provide for their children's needs. 父母有法律義務供養孩子。",
+      "I felt an obligation to help my friend who was going through a hard time. 我感到有義務去幫助正處於困境的朋友。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obligatory",
+    "meaning": "施加法律、道德或其他方面的義務；綁定；強制性的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "an obligatory promise 義務的承諾",
+      "Something described as obligatory is imposing obligation, legally, morally, or otherwise; binding; mandatory. 所謂義務是指在法律上、道德上或其他方面施加義務；綁定；強制的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oblige",
+    "meaning": "被迫、施恩",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The heavy rain obliged us to cancel our picnic plans and stay indoors. 大雨迫使（使不得不）我們取消野餐計畫並待在室內。",
+      "I'm sorry, but I cannot oblige you with a loan at this current time. 抱歉，我現在無法施恩（幫忙）借錢給你。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obliged",
+    "meaning": "有義務做某事。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "All employees are obliged to complete a tax return every year. 所有員工每年都有義務填寫報稅表。",
+      "The report describes the result as obliged. 報告稱這一結果是有義務的。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "obliging",
+    "meaning": "四 樂於助人的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our team obligings this step whenever a problem appears. 每當出現問題時，我們團隊都會obliging這個步驟。",
+      "Please obliging the design before noon. 請在中午前obliging設計。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oblique",
+    "meaning": "四 (42) 斜的,傾斜的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned oblique in a short paragraph. 文章在一段短文中提到了 oblique。",
+      "We discussed the term oblique in class today. 我們今天在課堂上討論了 oblique 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oblivion",
+    "meaning": "完全忘記的狀態，忘記的、無意識的、無意識的狀態，如睡覺、醉酒或死亡時。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He regularly drank himself into oblivion. 他常常喝得酩酊大醉。",
+      "Only the oblivion of sleep can heal the greatest traumas. 只有睡眠的遺忘才能治癒最大的創傷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oblivious",
+    "meaning": "健忘 。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He's hopelessly oblivious, always forgetting his appointments. 他無可救藥地 健忘 ，總是忘記他的約會。 他是個不可救藥的健忘者，總是忘記他的約會。 他無可救藥地健忘，總是忘記他的約會。",
+      "The report describes the result as oblivious. 報告稱這一結果是令人遺忘的。 報告稱這一結果是令人遺忘的。 報告稱這一結果令人驚嘆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obloquy",
+    "meaning": "漫罵",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned obloquy in a short paragraph. 文章在一段短文中提到了 obloquy。",
+      "The engineer wrote down obloquy with the note \"漫罵\". 工程師把 obloquy 記下來，並註記「漫罵」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obnoxious",
+    "meaning": "不公正地令人不快、好爭論或令人反感；明目張膽地粗魯。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He was an especially obnoxious and detestable specimen of a man. 他是個特別令人討厭和可憎的人。",
+      "The report describes the result as obnoxious. 報告稱這項結果令人討厭。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obscene",
+    "meaning": "以猥褻的方式行事或說話；冒犯。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To obscene means to act or speak in an obscene manner; to offend. 淫穢是指以淫穢的方式行事或說話；冒犯。",
+      "People may obscene in different situations depending on the context. 人們可能會根據具體情況在不同情況下進行猥褻行為。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obscenity",
+    "meaning": "淫穢 行為 。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Bestiality was outlawed as an obscenity in the strongly conservative community. 在強烈保守的社會中，獸交被視為 淫穢 ，被取締。 在強烈保守的社會中，獸交被視為淫穢行為而被取締。 在強監護的社會中，獸交被視為淫穢，被取締。",
+      "The term obscenity refers to An act of obscene behaviour. 淫穢一詞是指 淫穢 行為 。 淫穢一詞是指淫穢行為。 淫亂行為是指淫亂行為。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obscure",
+    "meaning": "模糊的、無名的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The meaning of the poem is quite obscure and difficult to understand. 這首詩的意思相當晦澀（模糊），很難理解。",
+      "The thick fog began to obscure the magnificent view of the mountains. 濃霧開始遮蔽（使模糊）群山的壯麗景色。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obscurity",
+    "meaning": "黑暗；没有光。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term obscurity refers to darkness; the absence of light. “晦暗”一词指的是黑暗；没有光。",
+      "The lesson introduced obscurity as a useful term to understand. 本課介紹了「晦澀難懂」這個術語，它是一個有助於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "observable",
+    "meaning": "任何可以直接觀察和測量而不是從其他屬性導出的物理屬性。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Temperature is an observable but entropy is derived. 溫度是可觀測的，但熵是導出的。",
+      "The term observable refers to any physical property that can be observed and measured directly and not derived from other properties. 術語「可觀察到」是指可以直接觀察和測量而不是從其他屬性衍生的任何物理屬性。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "observance",
+    "meaning": "管理宗教秩序的規則，特別是在羅馬天主教堂中。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Thomas Merton was a monk in the Order of Cistertians of the Strict Observance. 湯瑪斯‧默頓 (Thomas Merton) 是嚴格遵守西多會修士。",
+      "The term observance refers to a rule governing a religious order, especially in the Roman Catholic church. 遵守一詞是指管理宗教秩序的規則，特別是在羅馬天主教堂。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "observant",
+    "meaning": "警惕並密切注意；警戒的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The observant police officer noticed that my tax disk was out-of-date. 細心的警官注意到我的稅盤已經過時了。",
+      "Something described as observant is alert and paying close attention; watchful. 被描述為「善於觀察」的事物是指警覺且密切注意；警覺。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "observation",
+    "meaning": "觀察",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The scientific method is based on careful observation and proof. 科學方法是基於細心的觀察（觀察）與證明的。",
+      "The patient was kept under medical observation for several hours. 病人接受了幾個小時的醫學觀察（觀察）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "observatory",
+    "meaning": "瞭望台（可以看到周圍地區的有利位置）。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term observatory refers to a lookout (vantage point with a view of the surrounding area). 天文台一詞指的是瞭望台（可以看到周圍地區的有利位置）。",
+      "The lesson introduced observatory as a useful term to understand. 本課程介紹了天文台作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "observe",
+    "meaning": "觀察",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The researchers decided to observe the animals in their habitat. 研究人員決定觀察這些動物在自然棲息地的行為。",
+      "It's important to observe the traffic rules to ensure everyone's safety. 遵守交通規則以確保每個人的安全是很重要的。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "observer",
+    "meaning": "觀察員、目擊者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "International observers were sent to oversee the national elections. 國際觀察員被派往監督全國大選。",
+      "To a casual observer, the two brothers look exactly like each other. 對於普通觀察者來說，這兩兄弟長得一模一樣。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obsess",
+    "meaning": "使著迷、困擾",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "She began to obsess over the details of the project and couldn't sleep. 她開始對專案的細節著迷（糾結），以至於無法入睡。",
+      "Don't allow your past mistakes to obsess you; focus on the future instead. 不要讓過去的錯誤困擾你；專注於未來。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obsession",
+    "meaning": "激發強迫性且可能不健康的固著或由此激發的固著的活動或實體。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Editing Wikipedia started as a hobby, but it's turned into a complete obsession of mine. 編輯維基百科一開始是我的愛好，但後來它變成了我的完全迷戀。",
+      "The term obsession refers to an activity or entity that inspires a compulsive and potentially unhealthy fixation, or the fixation thereby inspired. 痴迷一詞是指激發強迫性且可能不健康的固著或由此激發的固著的活動或實體。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obsessive",
+    "meaning": "擁有一種想法或從事一項活動，絕對或幾乎絕對排除所有其他活動。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Hardcore fans' obsessive behavior may take over their lives. 鐵桿粉絲的痴迷行為可能會佔據他們的生活。",
+      "Something described as obsessive is having one thought or pursuing one activity to the absolute or nearly absolute exclusion of all others. 所謂強迫症是指絕對或幾乎絕對排除所有其他想法或追求一項活動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obsolete",
+    "meaning": "不再使用；不再使用；廢棄或被忽視（通常傾向於更新的東西）。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Speedy, worldwide, accessible delivery of news through the Web has made newspapers obsolete. 透過網路在全球範圍內快速、方便地傳播新聞已經使報紙變得過時。",
+      "Horses became obsolete means of transportation in cities in the first half of the twentieth century. 二十世紀上半葉，馬已成為城市中過時的交通工具。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "obstacle",
+    "meaning": "障礙",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The heavy rain managed to be a major obstacle for our trip today. 大雨今天竟然成了我們旅行的一個主要障礙（障礙）。",
+      "Hard work and dedication will help you overcome every obstacle now. 努力與奉獻將幫助妳現在克服每一個障礙。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obstetric",
+    "meaning": "四 產科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "We need a more obstetric plan before launch day. 在上線前，我們需要一個更obstetric的計畫。",
+      "The feedback was clear and obstetric. 這份回饋清楚而且obstetric。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obstetrician",
+    "meaning": "產科醫生",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report discussed obstetrician and public health policy. 這份報告討論了obstetrician與公共衛生政策。",
+      "The hospital provides counseling for patients facing obstetrician. 醫院為面對obstetrician的病人提供諮詢服務。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obstetrics",
+    "meaning": "產科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kevin wrote down obstetrics with the note \"產科\". Kevin把 obstetrics 記下來，並註記「產科」。",
+      "We practiced using obstetrics in two different sentences. 我們練習把 obstetrics 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obstinate",
+    "meaning": "頑固的、固執的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is so obstinate that he refuses to listen to anyone else's advice. 他太頑固（固執）了，拒絕聽取任何人的建議。",
+      "Despite the challenges, she remained obstinate in her pursuit of the truth. 儘管面臨挑戰，她仍固執地追求真理。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obstruct",
+    "meaning": "阻礙、阻滯或乾擾；阻礙。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "They obstructed my progress. 他們阻礙了我的進步。",
+      "People often obstruct when the situation calls for it. 當情況需要時，人們常常會阻撓。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obstruction",
+    "meaning": "自然力量在正常過程中受到阻礙的情況；生命機能停止；死亡。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term obstruction refers to the condition of having the natural powers obstructed in their usual course; the arrest of the vital functions; death. 障礙一詞是指自然力量在正常過程中受到阻礙的情況。生命機能停止；死亡。",
+      "The lesson introduced obstruction as a useful term to understand. 本課介紹了阻塞作為一個有用的術語來理解。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obstructive",
+    "meaning": "造成阻礙。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "I wanted to see his report on me, but my manager was being obstructive. 我想看看他對我的報告，但我的經理百般阻撓。",
+      "The report describes the result as obstructive. 報告稱這項結果具有阻礙性。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "obtain",
+    "meaning": "獲得",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He managed to obtain a significant scholarship from university. 他竟然（設法）獲得了（獲得）大學的一筆可觀獎學金。",
+      "You need to obtain formal permission before you can start work. 妳在開始工作前需要獲得正式許可。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obtuse",
+    "meaning": "鈍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kevin wrote down obtuse with the note \"鈍\". Kevin把 obtuse 記下來，並註記「鈍」。",
+      "The article mentioned obtuse in a short paragraph. 文章在一段短文中提到了 obtuse。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obtuse angle",
+    "meaning": "钝角",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"obtuse angle\" in today's dialogue practice. 我們在今天的對話練習中用了「obtuse angle」。",
+      "I heard \"obtuse angle\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「obtuse angle」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "obvious",
+    "meaning": "明顯的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "It was obvious that he was nervous during the job interview. 很明顯，他在工作面試期間很緊張。",
+      "The solution to the problem was not immediately obvious to everyone. 這個問題的解決方案對每根人來說並不是一目了然的。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "obviously",
+    "meaning": "以明顯或明顯的方式。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "She was in floods of tears and obviously very upset. 她淚流滿面，顯然非常難過。",
+      "She'd obviously not gone to sleep yet: her eyes were bloodshot with sleepiness. 她顯然還沒睡著：她的眼睛因睡意而充血。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "occasion",
+    "meaning": "場合",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The birth of their first child was a truly joyful and moving occasion. 第一個孩子的出生是一個真正令人喜悅且感人的時刻。",
+      "We only meet on special occasions like birthdays and anniversaries. 我們只在特殊場合碰面，比如生日和週年紀念。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "occasional",
+    "meaning": "偶然",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The region experiences occasional earthquakes due to its location. 該地區由於其地理位置會經歷偶爾的（偶然）地震。",
+      "She likes to have an occasional treat like a piece of chocolate. 她喜歡偶爾（偶然）吃點零食，比如一塊巧克力。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "occasionally",
+    "meaning": "偶爾",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The nurse checked the patient occasionally before bedtime. 護理師在睡前很occasionally地檢查病人。",
+      "Please read the instructions occasionally before you start. 開始前請先occasionally地閱讀說明。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "occidental",
+    "meaning": "屬於西方、屬於西方或位於西方的；西。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "occidental climates, or customs; an occidental planet. 西方氣候或習俗；一顆西方行星。",
+      "The report describes the result as occidental. 報告稱這一結果是西方的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "occult",
+    "meaning": "秘密；隱藏在一般知識之外；未被發現的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "occult blood loss; occult cancer 潛血流失；隱性癌症",
+      "Something described as occult is secret; hidden from general knowledge; undetected. 被描述為神秘的東西是秘密的；隱藏在一般知識之外；未被發現。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "occupancy",
+    "meaning": "某人租賃或以其他方式佔用某些土地或房產的一段時間。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "They had a five-year occupancy on the house. 他們在這棟房子裡住了五年。",
+      "The term occupancy refers to the period of time during which someone rents or otherwise occupies certain land or premises. 佔用一詞是指某人租賃或以其他方式佔用某些土地或房屋的時間段。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "occupant",
+    "meaning": "擔任辦公室或職位的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I cannot say the same of the current occupant of the position 我不能對這個職位的現任佔有者說同樣的話",
+      "occupant of the Oval Office 橢圓形辦公室的佔用者"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "occupation",
+    "meaning": "職業",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please indicate your current occupation on the application form. 請在申請表上標明您目前的職業（職業）。",
+      "The book discusses the development of modern occupations today. 這本書討論了現今現代職業的發展。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "occupational",
+    "meaning": "四 職業的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "We need a more occupational plan before launch day. 在上線前，我們需要一個更occupational的計畫。",
+      "Our teacher gave a occupational answer during the meeting. 我們老師在會議中給出了一個很occupational的回答。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "occupy",
+    "meaning": "佔據",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The students managed to occupy the empty office for study tonight. 學生們今晚竟然（設法）佔據（佔據）了那間空辦公室進行學習。",
+      "Reading books managing to occupy all of my free time during weekend. 讀書竟然（能）佔據了我週末所有的空閒時間。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "occur",
+    "meaning": "發生",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The car accident occurred at the busy intersection last night. 昨晚在那繁忙的路口發生了一起車禍。",
+      "It didn't occur to me that he might be lying to everyone. 我沒想到他可能在對每個人撒謊。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "occurrence",
+    "meaning": "發生的事、出現",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Earthquakes are a common occurrence in this mountainous northern region. 地震在該山區北部是常有的事（發生的事）。",
+      "The discovery of the rare bird was a very exciting occurrence for scientists. 發現這隻稀有鳥類對科學家來說是一件非常令人興奮的事（出現）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ocean",
+    "meaning": "海洋",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The Pacific Ocean is the largest and deepest ocean on Earth. 太平洋是地球上最大且最深的海。",
+      "We spent our summer vacation at a small house by the ocean. 我們在海邊的一間小屋度過了暑假。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oceangoing",
+    "meaning": "园这洋航行的 ， 遠洋的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The nurse oceangoinged the project carefully yesterday. 護理師昨天仔細地oceangoing了專案。",
+      "If you oceangoing every day, your skills improve quickly. 如果你每天都oceangoing，能力會進步得很快。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "oceanic",
+    "meaning": "屬於海洋的或與海洋有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as oceanic is of or relating to the ocean. 被描述為海洋的事物屬於海洋或與海洋有關。",
+      "The word oceanic is often used to describe a person, thing, or situation. 海洋這個詞常用來形容人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "octane",
+    "meaning": "石油中發現的十八種異構脂肪族烴 (C8H18) 中的任何一種，尤其是異辛烷 2,2,4 三甲基戊烷；它們被用作燃料和溶劑。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term octane refers to any of the eighteen isomeric aliphatic hydrocarbons (C8H18) found in petroleum, especially an iso-octane 2,2,4 trimethyl-pentane; they are used as fuels and solvents. 術語「辛烷」是指石油中發現的十八種異構脂肪族烴（C8H18）中的任何一種，特別是異辛烷2,2,4三甲基戊烷；它們被用作燃料和溶劑。",
+      "The lesson introduced octane as a useful term to understand. 本課程介紹了辛烷這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "octave",
+    "meaning": "跨越全音階八度的十二個半音音程，表示音調頻率加倍或減半。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The melody jumps up an octave at the beginning, then later drops back down an octave. 旋律一開始跳高八度，然後又下降一個八度。",
+      "The singer was known for astounding clarity over her entire five-octave range. 這位歌手以其整個五個八度音域的驚人清晰度而聞名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "octopus",
+    "meaning": "章魚",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The diver watched as the octopus changed color to blend with the rocks. 潛水員看著章魚改變顏色以融入岩石。",
+      "Octopuses are highly intelligent marine animals with eight long tentacles. 章魚是極其聰明的海洋動物，有八條長長的觸手。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ocular",
+    "meaning": "屬於或與眼睛或視覺有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The medication may have adverse ocular side effects. 該藥物可能會對眼部產生不良副作用。",
+      "It took some time after he lost his eye for him to receive his ocular prosthesis. 他失明後過了一段時間才收到假眼。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "oculus",
+    "meaning": "圓頂頂部的開口。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "One can glimpse the sky through the oculus of the Pantheon in Rome. 人們可以透過羅馬萬神殿的圓孔看到天空。",
+      "The term oculus refers to An opening at the apex of a dome. 術語“眼”是指圓頂頂點的開口。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "odd",
+    "meaning": "奇怪的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "It's strange that he hasn't arrived yet; it's very odd behavior for him. 他還沒到真奇怪；這對他來說是非常反常的行為。",
+      "Five and seven are examples of odd numbers in basic mathematics. 五和七是基礎數學中奇數的例子。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oddly",
+    "meaning": "以一種特殊的方式；奇怪的是；不尋常地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "For December, it was oddly warm. 十二月的天氣異常溫暖。",
+      "If someone acts oddly, they do so in a way that is in a peculiar manner; strangely; unusually. 如果某人行為怪異，那麼他們會以一種特殊的方式這樣做；奇怪的是；不尋常的是。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "odds",
+    "meaning": "機率、可能性",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The odds of winning the lottery are extremely low, but many people try. 贏得彩票的機率極低，但許多人仍會嘗試。",
+      "He managed to overcome the odds and become a successful businessman. 他設法克服重重困難（可能性低的情況），成為了一名成功的商人。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "odometer",
+    "meaning": "加计程器，里程表",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled odometer to lead the workshop. 我們團隊邀請了一位有經驗的odometer帶領工作坊。",
+      "During the meeting, the odometer answered every question patiently. 會議中，這位odometer耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "odor",
+    "meaning": "氣味、臭氣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pleasant odor of fresh coffee filled the kitchen early this morning. 新鮮咖啡的宜人氣味今天清晨瀰漫在廚房裡。",
+      "We detected a strong chemical odor coming from the nearby factory. 我們察覺到附近工廠傳來一股強烈的化學氣味（臭氣）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oer",
+    "meaning": "奧爾",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "During the meeting, the oer answered every question patiently. 會議中，這位oer耐心回答了每個問題。",
+      "Our team invited a skilled oer to lead the workshop. 我們團隊邀請了一位有經驗的oer帶領工作坊。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "of",
+    "meaning": "的",
+    "partOfSpeech": "preposition",
+    "sentences": [
+      "Taiwan is famous for its delicious street food and nature. 台灣以其美味的小吃和自然風景聞名。",
+      "He is a student of international relations at a top university. 他是一所頂尖大學國際關係專業的學生。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "off",
+    "meaning": "離開",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please turn off the lights when you leave the office. 離開辦公室時請隨手關燈。",
+      "The airplane took off on time despite the heavy fog. 儘管大霧，飛機仍準時起飛。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offend",
+    "meaning": "得罪",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I'm sorry, I didn't intend to offend you with my comment earlier. 對不起，我剛才的話並沒有要冒犯（得罪）您的意思。",
+      "His rude behavior managing to offend everyone in the room today. 他粗魯的行為今天竟然冒犯了房間裡的每個人。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offender",
+    "meaning": "罪犯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The offender explained the problem clearly to everyone. 這位offender清楚地向大家說明了問題。",
+      "We asked the offender for advice before making a decision. 我們在做決定前先向這位offender請教。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "offense",
+    "meaning": "罪行",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Stealing is considered a serious criminal offense in any society. 偷竊在任何社會都被認為是嚴重的刑事罪行（罪行）。",
+      "I didn't mean any offense; I was just sharing my honest opinion. 我並沒有惡意（罪行，指冒犯之意）；我只是在分享我的誠實看法。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offensive",
+    "meaning": "進攻",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She was criticized for her use of offensive and harsh language. 她因使用無禮的（進攻）且嚴厲的語言而受到批評。",
+      "The army took an offensive position to protect city from attack. 軍隊採取了進攻（進攻）姿態以保護城市免受攻擊。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offer",
+    "meaning": "提供",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The company decided to offer him a high-paying management position. 公司決定為他提供一個高薪的管理職位。",
+      "Thank you for your kind offer, but I don't need any help right now. 謝謝您的好意提供幫助，但我現在不需要。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offering",
+    "meaning": "提議、提供的東西",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The university is expanding its offering of online courses for students. 大學正在擴大其為學生提供的線上課程（提供的東西）。",
+      "They brought flowers and fruit as an offering to the temple. 他們帶著鮮花和水果作為祭品（供奉）送到寺廟。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "office",
+    "meaning": "辦公室",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My office is located on the 10th floor of that building. 我的辦公室在那棟大樓的十樓。",
+      "He usually works in his home office during the weekend. 他週末通常在家裡的辦公室工作。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "office block",
+    "meaning": "辦公大樓",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"office block\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「office block」非常好用。",
+      "I heard \"office block\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「office block」，就把它記進筆記本。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "office boy",
+    "meaning": "辦公室小弟/ 小妹",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"office boy\" in today's dialogue practice. 我們在今天的對話練習中用了「office boy」。",
+      "Our teacher asked us to memorize \"office boy\" for next week. 老師要我們把「office boy」背起來，下週要用。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "office stationery",
+    "meaning": "辦公文具",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"office stationery\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「office stationery」非常好用。",
+      "We used \"office stationery\" in today's dialogue practice. 我們在今天的對話練習中用了「office stationery」。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "officer",
+    "meaning": "官",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The police officer gave me directions to the train station. 那位警察指給了我去火車站的路。",
+      "He is a senior officer in the army with a lot of experience. 他是軍中的高級軍官，擁有豐富的經驗。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "official",
+    "meaning": "官方的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Taipei is the capital and official seat of government in Taiwan. 台北是台灣的首都與政府官方所在地。",
+      "The official results of the election will be announced tomorrow. 選舉的官方結果將在明天宣佈。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "officially",
+    "meaning": "徹底地、完全地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "That’s it! I’m officially outraged. 就是這樣！我正式感到憤怒。",
+      "If someone acts officially, they do so in a way that is thoroughly, completely. 如果某人以正式的方式行事，他們就會以徹底、完全的方式行事。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "offset",
+    "meaning": "任何起到平衡作用的東西；補償當量。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Today's victory was an offset to yesterday's defeat. 今天的勝利彌補了昨天的失敗。",
+      "The term offset refers to anything that acts as counterbalance; a compensating equivalent. 術語「抵消」是指任何起到平衡作用的事物；補償等價物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "offshore",
+    "meaning": "近海的、海外的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The company operates several offshore oil rigs in the northern region. 該公司在北部地區經營著幾座近海（離岸）石油鑽井平台。",
+      "Many high-level officials keep their money in offshore bank accounts. 許多高層官員將資金存放在海外（離岸）銀行帳戶中。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "offspring",
+    "meaning": "後代、子孫",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The project aims to study the health and development of the offspring. 該專案旨在研究後代（子嗣）的健康與發展。",
+      "Many animals work hard to protect their offspring from dangerous predators. 許多動物努力保護牠們的後代免受危險捕食者的侵害。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ofrslo",
+    "meaning": "辦公室",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The bus stopped near the ofrslo at 8 a.m. 公車在早上八點停在ofrslo附近。",
+      "We met at the ofrslo before the event started. 活動開始前，我們先在ofrslo碰面。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "often",
+    "meaning": "常",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I often go to the library to study in silence. 我經常去圖書館安靜地讀書。",
+      "How often do you exercise? I go to the gym twice a week. 你多久運動一次？我每週去健身房兩次。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ogee",
+    "meaning": "奧吉",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ogee explained the problem clearly to everyone. 這位ogee清楚地向大家說明了問題。",
+      "We asked the ogee for advice before making a decision. 我們在做決定前先向這位ogee請教。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ogre",
+    "meaning": "一個殘忍的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "People are going to think I'm an ogre if I refuse to buy coffee for my little brother! 如果我拒絕給弟弟買咖啡，人們會認為我是個怪物！",
+      "The term ogre refers to A cruel person. 食人魔一詞指的是殘忍的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oil",
+    "meaning": "油",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Olive oil is considered very healthy for cooking. 橄欖油被認為是非常健康的烹飪用油。",
+      "The company is investing heavily in solar energy instead of oil. 公司正大舉投資太陽能而非石油。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oil tanker",
+    "meaning": "油輪",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You can use \"oil tanker\" in emails and daily conversations. 你可以在 email 和日常對話中使用「oil tanker」。",
+      "\"oil tanker\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「oil tanker」非常好用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oil well",
+    "meaning": "油井",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"oil well\" for next week. 老師要我們把「oil well」背起來，下週要用。",
+      "I heard \"oil well\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「oil well」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oil-absorbing",
+    "meaning": "吸油面紙",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our team oil-absorbings this step whenever a problem appears. 每當出現問題時，我們團隊都會oil-absorbing這個步驟。",
+      "If you oil-absorbing every day, your skills improve quickly. 如果你每天都oil-absorbing，能力會進步得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oil-fired",
+    "meaning": "四 燃油的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The guide decided to oil-fired after reading the new policy. 導覽員讀完新政策後決定要oil-fired。",
+      "If you oil-fired every day, your skills improve quickly. 如果你每天都oil-fired，能力會進步得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oilcan",
+    "meaning": "油壶",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Mia gave a oilcan answer during the meeting. Mia在會議中給出了一個很oilcan的回答。",
+      "The app has a oilcan interface for new users. 這個 App 的介面對新手來說很oilcan。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "oiled",
+    "meaning": "被油覆蓋或供應有油。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a person's oiled body 一個人塗滿油的身體",
+      "The report describes the result as oiled. 報告將結果描述為「上油了」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oilman",
+    "meaning": "四石油大享， 石油工人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The oilman explained the problem clearly to everyone. 這位oilman清楚地向大家說明了問題。",
+      "During the meeting, the oilman answered every question patiently. 會議中，這位oilman耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "oilseed",
+    "meaning": "油籽",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our team oilseeds this step whenever a problem appears. 每當出現問題時，我們團隊都會oilseed這個步驟。",
+      "We had to oilseed quickly to meet the deadline. 為了趕上期限，我們必須迅速oilseed。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oilseed rape",
+    "meaning": "油菜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You can use \"oilseed rape\" in emails and daily conversations. 你可以在 email 和日常對話中使用「oilseed rape」。",
+      "After practice, I could use \"oilseed rape\" more confidently. 練習後，我更有自信地使用「oilseed rape」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oily",
+    "meaning": "四 含油的,塗油的",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The guide spoke oily during the discussion. 導覽員在討論時說話很oily。",
+      "The guide replied oily and solved the issue. 導覽員oily地回應，並解決了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ointment",
+    "meaning": "牛軟膏,藥膏",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report discussed ointment and public health policy. 這份報告討論了ointment與公共衛生政策。",
+      "Researchers are studying how to prevent ointment. 研究人員正在研究如何預防ointment。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "old",
+    "meaning": "老的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He lives in a beautiful old house in the countryside. 他住在一間位於鄉下的漂亮老房子裡。",
+      "She looks very young for her age, but she is actually quite old. 以她的年齡來說她看起來很年輕，但實際上她年紀挺大了。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "old age",
+    "meaning": "老年，莫年",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"old age\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「old age」非常好用。",
+      "Our teacher asked us to memorize \"old age\" for next week. 老師要我們把「old age」背起來，下週要用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "old hand",
+    "meaning": "有經驗者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"old hand\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「old hand」非常好用。",
+      "Our teacher asked us to memorize \"old hand\" for next week. 老師要我們把「old hand」背起來，下週要用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "olden",
+    "meaning": "來自或與前一個時代有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "olden days, olden times 舊日，舊時光",
+      "The report describes the result as olden. 該報告將結果描述為過時的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "older",
+    "meaning": "老年人",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The thoughtful lad helped an older lady across the street. 這個體貼的小伙子幫助一位 年長 女士過馬路。 這個體貼的小伙子攙扶著一位年長的女士過馬路。 這個體貼的小伙子幫助一位年長女士過馬路。",
+      "The report describes the result as older. 該報告將結果描述為較舊的。 該報告將結果描述為較舊的。 該報告將結果描述為較舊的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oldster",
+    "meaning": "老人， 老者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled oldster to lead the workshop. 我們團隊邀請了一位有經驗的oldster帶領工作坊。",
+      "The oldster explained the problem clearly to everyone. 這位oldster清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oligarchy",
+    "meaning": "由這樣的政府統治的國家。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The 1832 Reform Act aimed to transform the British oligarchy and allow Parliament to represent the interests of a broader range of the population. 1832年的改革法案旨在改變英國寡頭政治，讓議會代表更廣泛民眾的利益。",
+      "The term oligarchy refers to A state ruled by such a government. 寡頭政治一詞是指由這樣的政府統治的國家。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "olive",
+    "meaning": "橄欖、橄欖色",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She added some sliced green olives to her Greek salad for extra flavor. 她在希臘沙拉中加了一些綠橄欖片以增加風味。",
+      "The walls of the living room are painted a beautiful shade of olive. 客廳的牆壁漆成了美麗的橄欖色。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "olive oil",
+    "meaning": "橄欖油",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "After practice, I could use \"olive oil\" more confidently. 練習後，我更有自信地使用「olive oil」。",
+      "We used \"olive oil\" in today's dialogue practice. 我們在今天的對話練習中用了「olive oil」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "omega",
+    "meaning": "結束；序列中最後的、最後的或最終的。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "alpha and omega 阿爾法和歐米伽",
+      "The term omega refers to the end; the final, last or ultimate in a sequence. omega這個字指的是結束；序列中最後的、最後的或最終的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "omen",
+    "meaning": "具有預言意義的事情。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A sign of ill omen. 不祥之兆。",
+      "The term omen refers to a thing of prophetic significance. 預兆一詞指的是具有預言意義的事物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "omission",
+    "meaning": "這些行為的實例，或由此遺漏的事物；刪除或遺漏的內容。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The suspicious omissions in the new edition of the book attracted claims of censorship. 新版書中的可疑遺漏引起了審查制度的指控。",
+      "The term omission refers to an instance of those acts, or the thing left out thereby; something deleted or left out. 「遺漏」一詞是指這些行為的一個實例，或由此遺漏的事物；刪除或遺漏的內容。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "omit",
+    "meaning": "忽略",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please be careful not to omit any important details in the report. 請小心不要在報告中遺漏任何重要的細節。",
+      "They decided to omit several unnecessary scenes from the final movie. 他們決定從最終的電影中刪除幾個不必要的場景。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "omnibus",
+    "meaning": "包含多個項目。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The legislature enacted an omnibus appropriations bill. 立法機關頒布了一項綜合撥款法案。",
+      "The report describes the result as omnibus. 該報告將這一結果描述為綜合性的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "omnivore",
+    "meaning": "雜食動物；雜食者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Bears are omnivores that eat both plants and animals. 熊是既吃植物也吃動物的雜食動物。",
+      "As an omnivore, he enjoys vegetables, fish, and meat. 身為雜食者，他喜歡吃蔬菜、魚和肉。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "on",
+    "meaning": "在",
+    "partOfSpeech": "preposition",
+    "sentences": [
+      "The book is on the table; you can borrow it if you want. 書在桌上，你想借的話可以拿走。",
+      "I usually go for a run on Saturday mornings. 我通常週六早上會去跑步。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "on fruit",
+    "meaning": "油瓜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"on fruit\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「on fruit」非常好用。",
+      "You can use \"on fruit\" in emails and daily conversations. 你可以在 email 和日常對話中使用「on fruit」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "on pacifier",
+    "meaning": "橡皮奶嘴",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"on pacifier\" in today's dialogue practice. 我們在今天的對話練習中用了「on pacifier」。",
+      "\"on pacifier\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「on pacifier」非常好用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "on wool",
+    "meaning": "藥棉",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"on wool\" in today's dialogue practice. 我們在今天的對話練習中用了「on wool」。",
+      "After practice, I could use \"on wool\" more confidently. 練習後，我更有自信地使用「on wool」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "onan",
+    "meaning": "一-一",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using onan in two different sentences. 我們練習把 onan 放進兩個不同句子裡。",
+      "We discussed the term onan in class today. 我們今天在課堂上討論了 onan 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "once",
+    "meaning": "一次",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I have been to Paris once, and I would love to go again. 我去過一次巴黎，我很想再去一次。",
+      "Once you finish your homework, you can watch TV. 一旦你做完功課，就可以看電視了。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oncology",
+    "meaning": "與腫瘤有關的醫學分支，包括對其發展、診斷、治療和預防的研究。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term oncology refers to the branch of medicine concerned with tumors, including study of their development, diagnosis, treatment, and prevention. 腫瘤學一詞是指與腫瘤有關的醫學分支，包括對其發展、診斷、治療和預防的研究。",
+      "The lesson introduced oncology as a useful term to understand. 本課介紹了腫瘤學作為一個需要理解的有用術語。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "one",
+    "meaning": "一",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The engineer wrote down one with the note \"一\". 工程師把 one 記下來，並註記「一」。",
+      "The article mentioned one in a short paragraph. 文章在一段短文中提到了 one。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "one sine",
+    "meaning": "正弦",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"one sine\" in today's dialogue practice. 我們在今天的對話練習中用了「one sine」。",
+      "You can use \"one sine\" in emails and daily conversations. 你可以在 email 和日常對話中使用「one sine」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "one-track mind",
+    "meaning": "單一思維",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"one-track mind\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「one-track mind」，就把它記進筆記本。",
+      "You can use \"one-track mind\" in emails and daily conversations. 你可以在 email 和日常對話中使用「one-track mind」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oneself",
+    "meaning": "自己",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned oneself in a short paragraph. 文章在一段短文中提到了 oneself。",
+      "The nurse wrote down oneself with the note \"自己\". 護理師把 oneself 記下來，並註記「自己」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ongoing",
+    "meaning": "正在進行的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The company is currently involved in an ongoing legal battle over trade. 公司目前正捲入一場關於貿易的持續法律訴訟中。",
+      "There is an ongoing effort to improve public health services worldwide. 全球正持續致力於提升公共衛生服務。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "onion",
+    "meaning": "洋蔥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She added some fresh chopped onions to the delicious beef stew. 她在美味的燉牛肉裡加了一些新鮮切碎的洋蔥。",
+      "Be careful when you chop onions because they can make your eyes water. 切洋蔥時要小心，因為它們會讓妳流眼淚。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "online",
+    "meaning": "在線的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "I usually do my grocery shopping online to save time. 我通常在網上買雜貨以節省時間。",
+      "The online course allows students to learn at their own pace. 這門線上課程允許學生按照自己的節奏學習。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "only",
+    "meaning": "僅有的",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "There is only one apple left in the fruit bowl. 碗裡只剩下一顆蘋果了。",
+      "He is the only person who knows the secret password. 他是唯一知道秘密密碼的人。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "onset",
+    "meaning": "設定關於；一個開始。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the onset of puberty 青春期開始",
+      "The term onset refers to a setting about; a beginning. 術語「發作」是指以下情況：一個開始。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "onslaught",
+    "meaning": "大量類似攻擊的人或物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "They opened the doors and prepared for the onslaught of holiday shoppers. 他們打開大門，為假日購物者的蜂擁而至做好準備。",
+      "The term onslaught refers to a large number of people or things resembling an attack. 攻擊一詞指的是類似攻擊的大量人或物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "onto",
+    "meaning": "到",
+    "partOfSpeech": "preposition",
+    "sentences": [
+      "He carefully stepped onto the platform to board the high-speed train. 他小心地踏上月台搭乘高鐵。",
+      "Please place the documents onto the manager's desk before you leave. 離開前請將文件放在經理的辦公桌上。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "onus",
+    "meaning": "法律 義務 。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The onus is on the landlord to make sure the walls are protected from mildew. The onus is on the landlord to make sure the walls are protected from mildew. 房東有責任確保牆壁免受黴變。房東有責任確保牆壁免受黴變。",
+      "The term onus refers to A legal obligation. 責任一詞是指 法律 義務 。 術語「責任」是指法律義務。 責任義務是指法律義務。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "onward",
+    "meaning": "前進。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "There was an onward rush as the gates opened. 當大門打開時，人們湧入。",
+      "Something described as onward is moving forward. 被描述為“前進”的事物正在向前發展。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "onyx",
+    "meaning": "帶狀玉髓品種，是石英的隱晶質形式。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term onyx refers to A banded variety of chalcedony, a cryptocrystalline form of quartz. 縝瑪瑙一詞是指帶狀玉髓品種，是石英的隱晶質形式。",
+      "We learned the meaning of onyx during today's lesson. 我們在今天的課程中學習了瑪瑙的含義。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opacity",
+    "meaning": "不透明的狀態或質量，不允許光線通過。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We could not see the sandbar due to the opacity of the muddy water. 由於渾水不透明，我們看不到沙洲。",
+      "The term opacity refers to The state or quality of being opaque, not allowing light to pass through. 術語「不透明度」是指不透明的狀態或質量，不允許光線穿透。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opal",
+    "meaning": "貓眼石,蛋白石",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The instructions were opal, so everyone finished quickly. 說明很opal，所以大家很快就完成了。",
+      "That is a opal way to handle the plan. 那是處理計畫時很opal的方法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opal bulb",
+    "meaning": "乳白燈泡",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"opal bulb\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「opal bulb」，就把它記進筆記本。",
+      "We used \"opal bulb\" in today's dialogue practice. 我們在今天的對話練習中用了「opal bulb」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opaque",
+    "meaning": "黑暗的區域；沒有光的地方或區域。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term opaque refers to an area of darkness; a place or region with no light. 術語「不透明」是指黑暗區域；沒有光的地方或區域。",
+      "The lesson introduced opaque as a useful term to understand. 本課程介紹了「不透明」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "open",
+    "meaning": "打開",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Please open the window to let some fresh air in. 請開窗讓新鮮空氣進來。",
+      "The new shopping mall is open from 10 a.m. to 10 p.m. 新購物中心從上午十點營業到晚上十點。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "open-handed",
+    "meaning": "四 慷慨的，大方的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our team open-handeds this step whenever a problem appears. 每當出現問題時，我們團隊都會open-handed這個步驟。",
+      "If you open-handed every day, your skills improve quickly. 如果你每天都open-handed，能力會進步得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "open-hearted",
+    "meaning": "四 善良誠懇的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The guide open-hearteded the message carefully yesterday. 導覽員昨天仔細地open-hearted了訊息。",
+      "Please open-hearted the message before noon. 請在中午前open-hearted訊息。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "open-necked",
+    "meaning": "四敞领的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We had to open-necked quickly to meet the deadline. 為了趕上期限，我們必須迅速open-necked。",
+      "Our team open-neckeds this step whenever a problem appears. 每當出現問題時，我們團隊都會open-necked這個步驟。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opened",
+    "meaning": "中空缺的职位",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We had to opened quickly to meet the deadline. 為了趕上期限，我們必須迅速opened。",
+      "Our teacher openeded the schedule carefully yesterday. 我們老師昨天仔細地opened了時程。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opener",
+    "meaning": "四 營業著的, 敞開的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The opener explained the problem clearly to everyone. 這位opener清楚地向大家說明了問題。",
+      "We asked the opener for advice before making a decision. 我們在做決定前先向這位opener請教。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opening",
+    "meaning": "中空缺的职位",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please opening the details before noon. 請在中午前opening細節。",
+      "Kevin openinged the details carefully yesterday. Kevin昨天仔細地opening了細節。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "openly",
+    "meaning": "公然",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "We reviewed the details openly to avoid mistakes. 我們很openly地檢查細節，以避免出錯。",
+      "The engineer replied openly and solved the issue. 工程師openly地回應，並解決了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "openning time",
+    "meaning": "開館時間",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"openning time\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「openning time」非常好用。",
+      "After practice, I could use \"openning time\" more confidently. 練習後，我更有自信地使用「openning time」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opera",
+    "meaning": "歌劇",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The city center has a magnificent opera house built centuries ago. 市中心有一座建於數世紀前的宏偉歌劇（歌劇）院。",
+      "She is a very talented opera singer who has performed worldwide. 她是一位非常有才華、曾在世界各地演出的歌劇演唱家。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "operable",
+    "meaning": "四 可操作的，切实可行的，可开刀的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The app has a operable interface for new users. 這個 App 的介面對新手來說很operable。",
+      "That is a operable way to handle the message. 那是處理訊息時很operable的方法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operate",
+    "meaning": "操作",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Modern factories use advanced robots to operate heavy machinery. 現代工廠使用先進機器人來操作重型機械。",
+      "The surgeon performed a difficult operation to save the patient's life. 外科醫生進行了一場艱難的手術以救回病人的生命。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "operatic",
+    "meaning": "歌劇 的、相關的或典型的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The politician's address was so flamboyant as to be operatic. 這位政治家的演講是如此華麗，以至於 歌劇 。 這位政治家的演講如此浮誇，就像歌劇一樣。 所有政治家的演講都極為華麗，成就了歌劇。",
+      "The report describes the result as operatic. 該報告將結果描述為可操作的。 該報告將結果描述為可操作的。 該報告將結果描述為可操作的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operating",
+    "meaning": "操作",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "If you operating every day, your skills improve quickly. 如果你每天都operating，能力會進步得很快。",
+      "Our team operatings this step whenever a problem appears. 每當出現問題時，我們團隊都會operating這個步驟。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operating system",
+    "meaning": "電腦的) 作業系統",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "After practice, I could use \"operating system\" more confidently. 練習後，我更有自信地使用「operating system」。",
+      "I heard \"operating system\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「operating system」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operating table",
+    "meaning": "手術臺",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"operating table\" for next week. 老師要我們把「operating table」背起來，下週要用。",
+      "After practice, I could use \"operating table\" more confidently. 練習後，我更有自信地使用「operating table」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operating theater",
+    "meaning": "手術室",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"operating theater\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「operating theater」，就把它記進筆記本。",
+      "\"operating theater\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「operating theater」非常好用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "operation",
+    "meaning": "手術",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The surgeon performed a difficult operation to save the patient's life. 外科醫生進行了一場艱難的手術以救回病人的生命。",
+      "The company's global operations have expanded significantly this year. 公司的全球業務（營運）今年顯著擴展。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "operational",
+    "meaning": "操作上的、運作中的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The new factory is expected to be fully operational by the end of the year. 新工廠預計將於年底前全面投入運作。",
+      "There were several operational problems that delayed the project's start. 有幾個操作上的問題延誤了專案的啟動。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "operative",
+    "meaning": "運作中的、特工",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The new security policy will become operative starting from next month. 新的安全政策將於下月起生效（運作）。",
+      "The private investigator worked as an operative for a major technology firm. 私家偵探擔任一家大型科技公司的特工（工作人員）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "operator",
+    "meaning": "操作員",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The computer operator is responsible for maintaining the system. 電腦操作員負責維護系統。",
+      "I called the operator to seek assistance with the long-distance call. 我打給接線生，尋求長途電話的協助。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ophthalmic",
+    "meaning": "四 眼科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The feedback was clear and ophthalmic. 這份回饋清楚而且ophthalmic。",
+      "The instructions were ophthalmic, so everyone finished quickly. 說明很ophthalmic，所以大家很快就完成了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ophthalmologist",
+    "meaning": "中 眼科医生",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please relax your ophthalmologist before starting the exercise. 開始運動前，請先放鬆你的ophthalmologist。",
+      "He hurt his ophthalmologist during basketball practice. 他在打籃球時弄傷了ophthalmologist。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ophthalmology",
+    "meaning": "眼科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pain in my ophthalmology disappeared after a short rest. 我稍微休息後，ophthalmology的疼痛就消失了。",
+      "He hurt his ophthalmology during basketball practice. 他在打籃球時弄傷了ophthalmology。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opinion",
+    "meaning": "觀點",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Everyone is entitled to their own opinion on this controversial issue. 每個人對這個有爭議的問題都有權擁有自己的看法。",
+      "In my opinion, we should focus on improving product quality. 在我看來，我們應該專注於提升產品品質。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "opinionated",
+    "meaning": "有非常強烈的意見。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Her dad is so opinionated that when he's around it is hard to simply relax and have a light conversation. 她的父親固執己見，當他在身邊時，很難放鬆下來進行輕鬆的交談。",
+      "The report describes the result as opinionated. 報告稱這項結果是固執己見的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opium",
+    "meaning": "任何使人麻木或麻木的事情。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term opium refers to anything that numbs or stupefies. 鴉片一詞指的是任何使人麻木或麻木的東西。",
+      "The lesson introduced opium as a useful term to understand. 本課介紹了鴉片這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opponent",
+    "meaning": "對手、反對者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He managed to defeat his opponent in the final set of the tennis match. 他在網球比賽的最後一盤中擊敗了對手。",
+      "The politician's opponents criticized his new policy on public spending. 這位政治家的反對者批評了他的公共支出新政策。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "opportunism",
+    "meaning": "機會主義,投機主義",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We need more opportunism to solve this issue effectively. 我們需要更多opportunism才能有效解決這個問題。",
+      "The success of the project depends on opportunism. 這個專案是否成功取決於opportunism。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "opportunist",
+    "meaning": "四机会主义者，投机者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We asked the opportunist for advice before making a decision. 我們在做決定前先向這位opportunist請教。",
+      "During the meeting, the opportunist answered every question patiently. 會議中，這位opportunist耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "opportunity",
+    "meaning": "機會",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Don't miss the unique opportunity to study at such a university. 不要錯過在如此知名的大學學習的獨門機會。",
+      "The new project provided many opportunities for young and talented experts. 新專案為年輕且有才華的專家提供了許多機會。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oppose",
+    "meaning": "反對",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Most people decided to oppose the new policy during meeting today. 大多數人今天在會議上決定反對（反對）新政策。",
+      "The candidate aims to oppose any further environmental pollution now. 候選人現在旨在反對任何進一步的環境污染。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "opposite",
+    "meaning": "對面的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Our house is located on the opposite side of the street from the park. 我們家就在公園對街（對面）。",
+      "They have completely opposite opinions on various social issues. 他們對各種社會議題有著完全相反的看法。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "opposite angle",
+    "meaning": "對角",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"opposite angle\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「opposite angle」非常好用。",
+      "Our teacher asked us to memorize \"opposite angle\" for next week. 老師要我們把「opposite angle」背起來，下週要用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opposition",
+    "meaning": "反對、對抗",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The government's new tax law met with strong opposition from the public. 政府的新稅法遭到了公眾的強烈反對。",
+      "The local football team will face tough opposition in the upcoming match. 當地足球隊在即將到來的比賽中將面臨強大的對手（對抗）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oppress",
+    "meaning": "壓迫、折磨",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The military government was accused of trying to oppress the local people. 軍政府被指控試圖壓迫當地人民。",
+      "The heavy silence in the empty room began to oppress her after a while. 空房間裡沈重的沈默過了一段時間後開始讓她感到壓抑（折磨）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oppression",
+    "meaning": "壓迫、沈悶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The people fought hard to free themselves from years of military oppression. 人民艱苦奮鬥，以擺脫多年的軍事壓迫。",
+      "She felt a sense of oppression in the crowded and noisy city center. 她在擁擠吵鬧的市中心感到一種沈悶（壓抑）感。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oppressive",
+    "meaning": "精神上沉重的負擔；相當強烈、過度或壓倒性的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Will the oppressive heat of summer never end? 夏天的悶熱會永遠結束嗎？",
+      "Something described as oppressive is weighing heavily on the spirit; being quite intense, excessive or overwhelming. 被描述為壓抑的東西正在沉重地壓在精神上；相當強烈、過度或壓倒性的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "opt",
+    "meaning": "選擇",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Many students opt to study abroad to broaden their horizons and skills. 許多學生選擇出國留學以開闊視野和提升技能。",
+      "He decided to opt out of the company's new pension scheme. 他決定選擇退出（不參加）公司的新養老金計畫。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "optic",
+    "meaning": "屬於或與眼睛或視力有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as optic is of, or relating to the eye or to vision. 被描述為光學的東西屬於眼睛或視覺，或與眼睛或視覺有關。",
+      "The word optic is often used to describe a person, thing, or situation. 光學這個詞通常用來描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optical",
+    "meaning": "光學的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The app has a optical interface for new users. 這個 App 的介面對新手來說很optical。",
+      "We need a more optical plan before launch day. 在上線前，我們需要一個更optical的計畫。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optical sensor",
+    "meaning": "光學威測器",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You can use \"optical sensor\" in emails and daily conversations. 你可以在 email 和日常對話中使用「optical sensor」。",
+      "I heard \"optical sensor\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「optical sensor」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optics",
+    "meaning": "光與視覺物理學：基礎光學科學。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a PhD in the optics of liquid crystals 液晶光學博士學位",
+      "The term optics refers to The physics of light and vision: basic optical science. 光學一詞是指光與視覺物理學：基礎光學科學。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optimal",
+    "meaning": "最好的、最有利的或最理想的，尤其是在某些限制下。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Finding the optimal balance between features and price is a common problem. 在功能和價格之間尋找最佳平衡是一個常見問題。",
+      "Something described as optimal is the best, most favourable or desirable, especially under some restriction. 被描述為最佳的事物是最好的、最有利的或最理想的，尤其是在某些限制下。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optimism",
+    "meaning": "樂觀",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Despite the challenges, she maintained a sense of optimism about the future. 儘管面臨挑戰，她仍對未來保持著樂觀態度。",
+      "There is a growing sense of optimism in the local business community. 當地商界樂觀情緒日益高漲。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "optimist",
+    "meaning": "樂觀的人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled optimist to lead the workshop. 我們團隊邀請了一位有經驗的optimist帶領工作坊。",
+      "The optimist explained the problem clearly to everyone. 這位optimist清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optimistic",
+    "meaning": "樂觀的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "It's important to maintain an optimistic attitude even in difficult times. 在困難時期保持樂觀的態度是很重要的。",
+      "I'm optimistic that we will reach a successful conclusion soon. 我很樂觀地認為我們很快就會達成一個成功的結論。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "optimization",
+    "meaning": "系統或流程的設計和操作，使其在某種定義的意義上盡可能好。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term optimization refers to the design and operation of a system or process to make it as good as possible in some defined sense. 術語「最佳化」是指系統或流程的設計和操作，以使其在某種定義的意義上盡可能好。",
+      "The lesson introduced optimization as a useful term to understand. 本課程介紹了優化作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optimize",
+    "meaning": "使（某物）更有效率，例如電腦程式。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The website was redesigned to optimize user experience. 該網站經過重新設計，以優化用戶體驗。",
+      "He used software to optimize the performance of his computer. 他使用軟體來優化電腦的效能。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "optimum",
+    "meaning": "最好的或最有利的；超越所有其他人。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "optimum conditions for climbing 攀爬的最佳條件",
+      "Something described as optimum is the best or most advantageous; surpassing all others. 被描述為最佳的事物是最好的或最有利的；超越所有其他人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "option",
+    "meaning": "選項",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The hotel provides several flexible options for its guests today. 飯店今天為其住客提供了幾種靈活的選項（選項）。",
+      "If you don't like this one, you have many other options available. 如果妳不喜歡這個，妳還有許多其他選項可供選擇。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "optional",
+    "meaning": "可選擇的、非強制的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The trip to the mountains is optional, and you don't have to participate. 山區之旅是可選的（非強制的），您不必參加。",
+      "Several optional modules are available for students who want to specialize. 對於想要專修的學生，有幾個選修模組（可選擇的）可供選擇。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "opus",
+    "meaning": "一件作品，尤其是藝術作品。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The painter's last opus was a dedication to all things living, in a surprising contrast to all of his prior work. 這位畫家的最後一部作品是對萬物的奉獻，與他之前的所有作品形成了驚人的對比。",
+      "The term opus refers to A work, especially of art. opus 一詞指的是作品，尤其是藝術作品。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "or",
+    "meaning": "或者",
+    "partOfSpeech": "conjunction",
+    "sentences": [
+      "Would you like to have tea or coffee after dinner? 晚餐後你想要喝茶還是咖啡？",
+      "You can choose either the blue one or the red one. 你可以選擇藍色的或紅色的。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oracle",
+    "meaning": "被認為是智慧泉源的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a literary oracle 文學神諭",
+      "The term oracle refers to a person considered to be a source of wisdom. 神諭一詞指的是被認為是智慧源泉的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oral",
+    "meaning": "口服",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The students were asked to give an oral presentation on history. 學生們被要求做一個關於歷史的口頭報告。",
+      "Good oral hygiene is essential for maintaining healthy teeth and gums. 良好的口腔衛生對於保持牙齒和牙齦健康至關重要。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orally",
+    "meaning": "口頭而非書面。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I took the make-up test orally because my arm is still in a cast. 我參加了口頭化妝測試，因為我的手臂仍然打著石膏。",
+      "If someone acts orally, they do so in a way that is spoken as opposed to written. 如果某人以口頭方式行事，他們會以口頭方式而不是書面方式進行操作。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orange",
+    "meaning": "橘子",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Orange is a vibrant color that represents energy and warmth. 橘色是一種代表活力與溫暖的鮮艷顏色。",
+      "She bought a dozen fresh oranges at the local market. 她在當地市場買了一打新鮮橘子。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orange squash",
+    "meaning": "加糖柳橙汁飲料",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"orange squash\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「orange squash」，就把它記進筆記本。",
+      "We used \"orange squash\" in today's dialogue practice. 我們在今天的對話練習中用了「orange squash」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orator",
+    "meaning": "演講 或 發表 <a rel=\"mw:WikiLink\" href=\"//oration\" title=\"oration\" 演講的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term orator refers to Someone who orates or delivers an oration. 演說者一詞是指 演講 或 發表 <a rel=\"mw:WikiLink\" href=\"/pation\" 演講</aation 的演講。 演說家一詞是指發表演說或演講的人。 演講者是指演講或發表 <a rel=\"mw:WikiLink\" href=\"/pation\" 演講</aation 的演講。",
+      "The lesson introduced orator as a useful term to understand. 本課介紹了演說家這個術語，這是一個需要理解的有用術語。 本課介紹了演說家這個術語，這是一個需要理解的有用術語。 本課介紹了演說家這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orbit",
+    "meaning": "軌道",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The moon revolves around the Earth in a stable elliptical orbit. 月球在一個穩定的橢圓軌道上繞地球旋轉。",
+      "The satellite successfully managed to launch into its target orbit. 衛星成功地進入了（設法發射到了）其目標軌道。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orbital",
+    "meaning": "经过市区外。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The M25 is an orbital motorway around London. M25 是一條環繞倫敦的軌道高速公路。",
+      "Something described as orbital is passing around the outside of an urban area. 被描述為軌道的物體正在城市區域外部經過。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orchard",
+    "meaning": "果園",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The family spent the whole afternoon picking apples in the local orchard. 全家人整個下午都在當地的果園裡摘蘋果。",
+      "The blossom in the cherry orchard looks absolutely beautiful in the spring. 春天櫻桃園裡的盛開花朵看起來美極了。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orchestra",
+    "meaning": "樂團",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The famous conductor led the orchestra in a brilliant concert. 著名的指揮家帶領管弦樂團（樂團）演出了一場精彩的音樂會。",
+      "The university has a high-quality symphony orchestra for student. 該大學有一支為學生準備的高品質交響樂團。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orchestral",
+    "meaning": "與管弦樂團或管弦樂團演奏的音樂有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "orchestral music/piece/sound 管弦樂/樂曲/聲音",
+      "Something described as orchestral is relating to an orchestra or to music played by an orchestra. 被描述為管弦樂的東西與管弦樂隊或管弦樂隊演奏的音樂有關。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orchid",
+    "meaning": "蘭花",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She has a beautiful collection of rare orchids. 她收藏了許多美麗的稀有蘭花。",
+      "Orchids are known for their exotic beauty and delicate flowers. 蘭花以其異國情調的美感和嬌嫩的花朵聞名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ordeal",
+    "meaning": "嚴峻考驗、苦難",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Surviving the snowstorm in the mountains was a terrible ordeal for them. 在山中暴風雪中倖存下來對他們來說是一場可怕的考驗（苦難）。",
+      "The legal trial was a long and difficult ordeal for the entire family. 法律審判對全家人來說是一場漫長且艱難的考驗。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "order",
+    "meaning": "命令",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "May I take your order now, or do you need more time? 現在可以點餐了嗎？還是您需要更多時間？",
+      "Everything in the library is organized in alphabetical order. 圖書館裡的一切都是按字母順序排列的。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orderly",
+    "meaning": "有秩序的、整潔的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The students were asked to leave the building in an orderly fashion. 學生們被要求有秩序地離開大樓。",
+      "She maintains a very orderly office, with every file in its correct place. 她保持辦公室非常整潔（有條理），每份文件都放在正確的位置。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ordinal",
+    "meaning": "序數的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "First, second, and third are examples of ordinal numbers. 第一、第二和第三都是序數的例子。",
+      "The teacher explained the difference between cardinal and ordinal numbers. 老師解釋了基數和序數之間的區別。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ordinance",
+    "meaning": "例如通過的當地法律一座城市。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term ordinance refers to a local law, passed by e.g. a city. 條例一詞指的是當地法律，例如通過的法律。一座城市。",
+      "The lesson introduced ordinance as a useful term to understand. 本課介紹了條例作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ordinarily",
+    "meaning": "通常或作為一般規則；通常。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Ordinarily I go to the match on a Saturday. 通常我會在星期六去看比賽。",
+      "If someone acts ordinarily, they do so in a way that is usually or as a general rule; commonly. 如果某人的行為很平常，那麼他們的行為方式就是通常或一般規則；通常。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ordinary",
+    "meaning": "普通的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is an ordinary man who leads a quiet and peaceful life. 他是一個過著安靜平靜生活的普通人。",
+      "The hotel provides exceptional service to all its ordinary guests. 這間飯店為所有普通客人提供卓越的服務。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ordination",
+    "meaning": "受戒的行為或受戒的狀態。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term ordination refers to the act of ordaining or the state of being ordained. 受戒一詞是指受戒的行為或受戒的狀態。",
+      "The lesson introduced ordination as a useful term to understand. 本課程介紹了協調這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ordnance",
+    "meaning": "軍事裝備，特別是武器和彈藥。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term ordnance refers to military equipment, especially weapons and ammunition. 軍械一詞是指軍事裝備，特別是武器和彈藥。",
+      "The lesson introduced ordnance as a useful term to understand. 本課介紹了軍械這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ore",
+    "meaning": "命令式的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kevin wrote down ore with the note \"命令式的\". Kevin把 ore 記下來，並註記「命令式的」。",
+      "The article mentioned ore in a short paragraph. 文章在一段短文中提到了 ore。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "organ",
+    "meaning": "器官",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The heart is a vital organ that pumps blood throughout the body. 心臟是負責將血液輸送到全身的重要器官。",
+      "The church has a magnificent pipe organ that was built centuries ago. 這間教堂擁有一架建於數世紀前的宏偉管風琴。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "organic",
+    "meaning": "有機的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She prefers to buy organic fruit and vegetables at the local market. 她比較喜歡在當地市場購買有機的水果和蔬菜。",
+      "Organic farming is becoming more popular due to environmental concerns. 由於環境考量，有機耕作正變得越來越流行。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "organism",
+    "meaning": "生物、有機體",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The scientist studied the structure of the tiny organism under a microscope. 科學家在顯微鏡下研究了這個微小生物的結構。",
+      "Every living organism on Earth is part of a complex and fragile ecosystem. 地球上的每一個生物（有機體）都是複雜且脆弱的生態系統的一部分。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "organization",
+    "meaning": "組織",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The organization aims to promote international peace and security. 該組織旨在推廣國際和平與安全。",
+      "She works for a non-profit organization that helps homeless children. 她在一家幫助流浪兒童的非營利組織工作。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "organizational",
+    "meaning": "屬於某個組織、與某個組織相關或由某個組織產生的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "They changed the company's organizational structure. 他們改變了公司的組織結構。",
+      "The report describes the result as organizational. 該報告將結果描述為組織性的。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "organize",
+    "meaning": "組織",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The new software will help us organize our daily tasks more effectively. 這款新軟體將幫助我們更有效地組織日常任務。",
+      "We are planning to organize a special surprise party for her birthday. 我們正計劃為她的生日組織一個特別的驚喜派對。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "organized",
+    "meaning": "特色是組織高效。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Your desk is so neat and tidy — I've never met someone so organized before! 你的桌子是如此整潔——我以前從未見過如此有條理的人！",
+      "The report describes the result as organized. 該報告描述了組織的結果。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "organizer",
+    "meaning": "組織者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The organizer of the community festival was praised for his hard work. 社區節慶的組織者因其辛勤工作而受到稱讚。",
+      "She is a highly efficient organizer who can manage complex projects easily. 她是一位非常高效的規劃者（組織者），能輕鬆管理複雜專案。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orgasm",
+    "meaning": "性興奮的湧動；現在具體來說，性快感的高潮或高峰，發生在性活動期間，男性可能包括射精，女性可能包括陰道收縮。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "If you want to get an orgasm, I recommend buying a vibrator. 如果您想獲得高潮，我建議購買振動器。",
+      "The term orgasm refers to a rush of sexual excitement; now specifically, the climax or peak of sexual pleasure, which occurs during sexual activity and which in males may include ejaculation and in females vaginal contractions. 性高潮一詞指的是性興奮的激增。現在具體來說，性快感的高潮或高峰，發生在性活動期間，男性可能包括射精，女性可能包括陰道收縮。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "orgy",
+    "meaning": "过度沉溺于特定活动的情况或时期；狂欢。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term orgy refers to an instance or period of excessive indulgence in a specified activity; spree. 狂歡一詞是指過度沉迷於某種特定活動的情況或時期；狂歡。",
+      "The lesson introduced orgy as a useful term to understand. 本課介紹了「狂歡」這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orient",
+    "meaning": "東方、導向",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sun rises in the orient and sets in the western part of the sky. 太陽從東方（Orient）升起，在西方落下。",
+      "It took some time for the new students to orient themselves to the school. 新學生花了一些時間才讓自己適應（定位/導向）學校。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oriental",
+    "meaning": "東方的、東方人的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The museum features a large collection of ancient Oriental art and pottery. 博物館收藏了大量古代東方藝術品和陶器。",
+      "They enjoyed a delicious meal at an Oriental restaurant in the city center. 他們在市中心的一家東方（亞洲風格）餐廳享用了美味餐點。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orientation",
+    "meaning": "方向",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The university holds a grand orientation party for all freshmen. 大學為所有新生舉辦了一場盛大的入學指導（方向）派對。",
+      "The new employees received a formal orientation on company policy. 新員工接受了關於公司政策的正式入職培訓（方向）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "origin",
+    "meaning": "起源",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The origin of the universe is a subject of great scientific debate. 宇宙的起源是一個重大的科學爭論課題。",
+      "The word has its origins in ancient Greek and Latin languages. 這個單字起源於古希臘語與拉丁語。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "original",
+    "meaning": "原來的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The movie is based on an original story by a world-famous author. 這部電影是基於一位世界聞名作家的原創故事改編的。",
+      "Please provide the original documents along with the photocopies. 請提供原始文件以及影本。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "originality",
+    "meaning": "原創性、獨創性",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The critics praised the artist's work for its originality and creativity. 評論家稱讚這位藝術家的作品具有原創性和創造力。",
+      "She is always trying to bring a sense of originality to her writing. 她一直試圖為自己的寫作帶來一種獨創性（原創感）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "originally",
+    "meaning": "正如一開始；起初。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Originally, this paper was white, but over the years it has yellowed with age. 這張紙原本是白色的，但隨著時間的推移，它已經泛黃了。",
+      "If someone acts originally, they do so in a way that is as it was in the beginning; at first. 如果某人的行為是最初的，那麼他的行為方式就與最初一樣；起初。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "originate",
+    "meaning": "起源於、發生",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Many traditional customs in the region originate from ancient folklore. 該地區的許多傳統習俗起源於古代民間傳說。",
+      "The news story originated from a source within the local government. 這篇新聞報導源自（發生於）地方政府內部的一個消息來源。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ornament",
+    "meaning": "裝飾、飾品",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The Christmas tree was decorated with colorful glass ornaments and lights. 聖誕樹上裝飾著五顏六色的玻璃飾品和燈。",
+      "She bought a beautiful silver ornament for her new apartment in the city. 她為市內的新公寓買了一個漂亮的銀色飾品。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ornamental",
+    "meaning": "作為裝飾品；除了讓自己變得更美麗之外沒有任何目的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Some think it most ornamental to wear their bracelets on their wrists; others, about their ankles. 有些人認為手鐲戴在手腕上最具觀賞性；其他人，關於他們的腳踝。",
+      "Something described as ornamental is serving as an ornament; having no purpose other than to make more beautiful. 被描述為裝飾性的東西是作為裝飾品；除了讓自己變得更美麗之外沒有任何目的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ornate",
+    "meaning": "精心裝飾，往往過度。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as ornate is elaborately ornamented, often to excess. 所謂華麗的東西是指經過精心裝飾，往往過度裝飾。",
+      "The word ornate is often used to describe a person, thing, or situation. 華麗這個詞常用來形容人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orphan",
+    "meaning": "孤兒",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kind lady dedicated her entire life to helping poor orphans. 那位熱心的女士將一生致力於幫助貧困孤兒（孤兒）。",
+      "The charity organization provides support and guidance to orphans. 該慈善機構為孤兒提供支持與指導。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orphanage",
+    "meaning": "孤兒院",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He spent his childhood in an orphanage before being adopted by a kind family. 在被一個善良的家庭收養之前，他在孤兒院度過了童年。",
+      "The local charity provides support and resources to the city's orphanage. 當地慈善機構為城市的孤兒院提供支持 and 資源。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orthodox",
+    "meaning": "正統的、傳統的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "His views on education are very orthodox and follow traditional methods. 他對教育的看法非常正統，遵循傳統方法。",
+      "The scientist challenged the orthodox theories with his new research findings. 這位科學家用他的新研究結果挑戰了正統理論。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "orthodoxy",
+    "meaning": "關於任何教義（即哲學或神學）體系的教義和信仰的正確性。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term orthodoxy refers to correctness of doctrine and belief in regard to any doctrinal (i.e. philosophical or theological) system. 正統一詞是指任何教義（即哲學或神學）體系的教義和信仰的正確性。",
+      "The lesson introduced orthodoxy as a useful term to understand. 本課介紹了正統觀念，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orthopedic",
+    "meaning": "骨科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He underwent orthopedic surgery to repair his broken leg. 他接受了骨科手術以修復摔斷的腿。",
+      "The store sells specialized orthopedic shoes for comfort and support. 這家店出售專門的矯正鞋，以提供舒適感與支撐。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "orthopedics",
+    "meaning": "整型外科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher wrote down orthopedics with the note \"整型外科\". 我們老師把 orthopedics 記下來，並註記「整型外科」。",
+      "We practiced using orthopedics in two different sentences. 我們練習把 orthopedics 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oscillation",
+    "meaning": "振盪行為或振盪狀態",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term oscillation refers to the act of oscillating or the state of being oscillated. 術語「振盪」是指振盪的行為或振盪的狀態。",
+      "We learned the meaning of oscillation during today's lesson. 在今天的課程中我們學習了振蕩的含義。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ostensibly",
+    "meaning": "表面上看來，顯然；據推測，根據某人的陳述或暗示（特別是當他們的動機被他人懷疑時）。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "His interest in the railway was ostensibly a hobby, but people began wondering why he was taking photos of specific trains and specific equipment. 他對鐵路的興趣表面上是一種愛好，但人們開始好奇他為什麼要拍攝特定火車和特定設備的照片。",
+      "Her interest in his welfare was ostensibly charitable and magnanimous, but people began wondering who was going to inherit his assets when he died. 她對他的福利的關心表面上是慈善和慷慨的，但人們開始想知道誰將在他去世後繼承他的資產。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "osteoarthritis",
+    "meaning": "骨關節火",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please relax your osteoarthritis before starting the exercise. 開始運動前，請先放鬆你的osteoarthritis。",
+      "The pain in my osteoarthritis disappeared after a short rest. 我稍微休息後，osteoarthritis的疼痛就消失了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "osteology",
+    "meaning": "骨學",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He hurt his osteology during basketball practice. 他在打籃球時弄傷了osteology。",
+      "The pain in my osteology disappeared after a short rest. 我稍微休息後，osteology的疼痛就消失了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "osteopath",
+    "meaning": "整骨師",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor checked her osteopath during the exam. 醫師在檢查時查看了她的osteopath。",
+      "Please relax your osteopath before starting the exercise. 開始運動前，請先放鬆你的osteopath。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "osteoporosis",
+    "meaning": "甸骨質疏鬆",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor checked her osteoporosis during the exam. 醫師在檢查時查看了她的osteoporosis。",
+      "He hurt his osteoporosis during basketball practice. 他在打籃球時弄傷了osteoporosis。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ostrich",
+    "meaning": "鴕鳥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ostrich is the largest and fastest-running bird in the world. 鴕鳥是世界上最大且跑得最快的鳥類。",
+      "Ostriches are native to the African continent. 鴕鳥原產於非洲大陸。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "other",
+    "meaning": "其他",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "If you don't like this one, we have many other choices. 如果你不喜歡這個，我們還有很多其他選擇。",
+      "They always help each other with their homework. 他們總是互相幫助做功課。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "others",
+    "meaning": "其他的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using others in two different sentences. 我們練習把 others 放進兩個不同句子裡。",
+      "We discussed the term others in class today. 我們今天在課堂上討論了 others 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "otherwise",
+    "meaning": "否則",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please finish your work on time; otherwise, we'll miss deadline. 請準時完成工作；否則（否則），我們會趕不上截止日期。",
+      "The traffic was heavy; otherwise, we would have arrived earlier. 交通很擁堵；要不然（否則），我們本可以早點到的。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "otter",
+    "meaning": "水生或海洋食肉哺乳動物，屬於水母亞科。該動物的肉或毛皮。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term otter refers to an aquatic or marine carnivorous mammal in the subfamily Lutrinae. The flesh or fur of this animal. 水獺一詞是指水獺亞科的水生或海洋食肉哺乳動物。該動物的肉或毛皮。",
+      "The lesson introduced otter as a useful term to understand. 本課程介紹了水獺這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ouch",
+    "meaning": "自己身體疼痛的表達。",
+    "partOfSpeech": "exclamation",
+    "sentences": [
+      "Ouch! You stepped on my toe! That hurt! 哎喲!你踩到我的腳趾了！好痛啊！",
+      "The word ouch is used in English writing and speech. ouch 這個字用於英文寫作和演講。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ought",
+    "meaning": "應該",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "You ought to see a doctor if your symptoms persist. 如果症狀持續，你應該去看醫生。",
+      "We ought to finish the work by Friday morning. 我們應該在週五早上前完成這項工作。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ounce",
+    "meaning": "盎司、一點點",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A pound is equivalent to sixteen ounces in the imperial measurement system. 在英制計量系統中，一磅等於十六盎司。",
+      "There was not an ounce of truth in his long and complicated story. 他那冗長複雜的故事中沒有一絲一毫（一點點）真理。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "our",
+    "meaning": "我們的",
+    "partOfSpeech": "determiner",
+    "sentences": [
+      "This is our new house in the countryside. 這是我們在鄉間的新房子。",
+      "We are very proud of our children's achievements. 我們為孩子們的成就感到非常自豪。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oust",
+    "meaning": "驅逐，趕走",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The president was ousted in a military coup. 總統在一次軍事政變中被趕下台。",
+      "The company is trying to oust its competitors from the market. 公司正試圖將其競爭對手逐出市場。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "out",
+    "meaning": "出去",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Let's go out for dinner tonight to celebrate your birthday. 我們今晚出去吃晚餐慶祝妳的生日吧。",
+      "He looked out of the window and saw that it was raining. 他看向窗外，發現正在下雨。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "out-of-work",
+    "meaning": "四 失业的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned out-of-work in a short paragraph. 文章在一段短文中提到了 out-of-work。",
+      "We discussed the term out-of-work in class today. 我們今天在課堂上討論了 out-of-work 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outage",
+    "meaning": "暫時停止運營，特別是電力供應。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term outage refers to a temporary suspension of operation, especially of electrical power supply. 停電一詞是指暫時停止運行，尤其是電力供應。",
+      "The lesson introduced outage as a useful term to understand. 本課程介紹了「停電」這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outback",
+    "meaning": "澳洲最偏遠荒涼的地區；沙漠和太乾旱而無法種植農作物的地區。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term outback refers to the most remote and desolate areas of Australia; the desert and areas too arid for growing crops. 內陸一詞指的是澳洲最偏遠、最荒涼的地區；沙漠和太乾旱而無法種植農作物的地區。",
+      "The lesson introduced outback as a useful term to understand. 本課程介紹了內陸地區作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outbreak",
+    "meaning": "爆發、突然發生",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The government is trying to control the outbreak of a dangerous new virus. 政府正試圖控制一種危險新病毒的爆發。",
+      "There was a sudden outbreak of violence in the city center last night. 昨晚市中心突然爆發了暴力事件。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outburst",
+    "meaning": "突然且經常暴力地表達情緒或活動。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The man greeted us with an outburst of invective. 那個人用一陣謾罵來迎接我們。",
+      "an outburst of anger 憤怒的爆發"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outcast",
+    "meaning": "那已經被趕出去了；被放逐，被排斥。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as outcast is that has been cast out; banished, ostracized. 所謂被拋棄的東西是指已經被拋棄的東西；被放逐，被排斥。",
+      "The word outcast is often used to describe a person, thing, or situation. 被遺棄這個詞經常被用來描述一個人、一件事或一種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outcome",
+    "meaning": "結果",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The final outcome of the study was quite surprising to everyone. 研究的最終結果（結果）讓每個人都感到非常驚訝。",
+      "We are waiting for the successful outcome of the negotiation now. 我們現在正等待談判的成功結果。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outcry",
+    "meaning": "大聲哭喊或騷動。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "His appearance was greeted with an outcry of jeering. 他的出現引起了強烈的嘲笑。",
+      "The term outcry refers to a loud cry or uproar. 大聲喊叫一詞是指大聲喊叫或騷動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outdated",
+    "meaning": "過時的、過時的、過時的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "His outdated wordprocessing software could not read the files I sent. 他過時的文字處理軟體無法讀取我發送的文件。",
+      "The report describes the result as outdated. 該報告稱該結果已經過時。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outdo",
+    "meaning": "<span class=\"usage-label-sense\" about=\"#mwt9\" 類型。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "You've outdone yourself—another personal best! 您 超越了 自己－又一個個人最佳成績 ！ 您已經超越了自己－又一個個人最佳成績！ 您超越了自己－又是一個個人最佳成績！",
+      "People often outdo when the situation calls for it. 當情況需要時，人們常常會表現得更好。 當情況需要時，人們常常會表現得更好。 當情況需要時，人們通常會表現得更好。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outdoor",
+    "meaning": "戶外的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Hiking and cycling are popular outdoor activities during the summer. 健行和騎單車是夏季熱門的戶外活動。",
+      "The hotel has a beautiful outdoor swimming pool for its guests. 飯店有一個供住客使用的漂亮室內泳池。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outdoors",
+    "meaning": "戶外",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "It's a beautiful day; let's spend the whole afternoon playing outdoors. 今天天氣很好；讓我們一整下午都在戶外玩吧。",
+      "Wild animals should be allowed to live outdoors in their habitat. 應該允許野生動物生活在它們棲息地的戶外（野外）。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outer",
+    "meaning": "外",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The rocket successfully reached the outer layers of the atmosphere. 火箭成功抵達了地球大氣層的外層。",
+      "Turtles have a hard outer shell that protects their fragile bodies. 烏龜有堅硬的外殼來保護它們脆弱的身體。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outfield",
+    "meaning": "內場與外圍籬之間的場地區域。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He hit a long fly ball to the outfield in the gap to left. 他在左側空檔處將一記長飛球打到外野。",
+      "The term outfield refers to the region of the field between the infield and the outer fence. 術語“外場”是指內場和外圍欄之間的場地區域。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outfit",
+    "meaning": "套裝、機構",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She bought a beautiful new outfit for her best friend's wedding party. 她為好友的婚禮派對買了一套漂亮的新衣服（套裝）。",
+      "The expedition was equipped with all the necessary outfits for the Arctic. 探險隊配備了北極所需的所有裝備（配備）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outgoing",
+    "meaning": "外向的、即將卸任的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She is a very outgoing person who enjoys meeting new people and traveling. 她是一個非常外向的人，喜歡結識新朋友和旅行。",
+      "The outgoing manager provided some guidance to her successor yesterday. 即將卸任的經理昨天向她的繼任者提供了一些指導。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outing",
+    "meaning": "郊遊、遠足",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The students are excited about their upcoming school outing to the beach. 學生們對即將到來的學校海灘郊遊（遠足）感到興奮。",
+      "We enjoyed a pleasant family outing in the mountains last weekend. 我們上週末在山裡享受了一次愉快的家庭郊遊。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outlandish",
+    "meaning": "來自或來自外國；非土著或本地人；外星人, 外國的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as outlandish is of or from a foreign country; not indigenous or native; alien, foreign. 被描述為古怪的東西是來自外國的；非土著或本地人；外國人，外國人。",
+      "The word outlandish is often used to describe a person, thing, or situation. 古怪這個詞常用來形容人、事或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outlast",
+    "meaning": "生存、持續或保持更長的時間。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The tool outlasted its need. 該工具超出了它的需要。",
+      "Some think that classical music would outlast pop. 有些人認為古典音樂會比流行音樂更長久。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outlaw",
+    "meaning": "歹徒、亡命之徒",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The legendary outlaw hid in the mountains to escape from the police. 那名傳奇的亡命之徒躲在山裡以逃避警方的追捕。",
+      "The government decided to outlaw the use of certain harmful chemicals. 政府決定宣佈（禁止）某些有害化學物質的使用為非法。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outlet",
+    "meaning": "出口、門市",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Writing poetry provided a creative outlet for her emotions and thoughts. 寫詩為她的情感和想法提供了一個創意的宣洩口（出口）。",
+      "The company is planning to open several new retail outlets in the city. 公司計畫在市內開設幾家新的零售門市。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outline",
+    "meaning": "大綱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The manager gave a brief outline of the new project proposal. 經理對新專案提案做了一個簡短的大綱（概述）。",
+      "Could you please outline the key achievements of the past year? 你能概述一下過去一年的主要成就嗎？"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outlook",
+    "meaning": "展望、觀點",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The economic outlook for the next year remains gloomy and uncertain. 明年的經濟展望依然暗淡且不確定。",
+      "Traveling can help to broaden your outlook and understanding of the world. 旅遊可以幫助開闊你的視野（觀點）和對世界的理解。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outlying",
+    "meaning": "距離某些中心位置相對較遠。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The more outlying villages were never visited by their member of parliament. 議會成員從未訪問過更偏遠的村莊。",
+      "The report describes the result as outlying. 該報告將這一結果描述為異常。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outnumber",
+    "meaning": "在數量上超過",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The fans of the home team far outnumber the supporters of the rivals. 主場球隊的球迷數量遠遠超過了對手支持者的數量。",
+      "In this region, sheep outnumber people by a ratio of about ten to one. 在該地區，綿羊的數量與人口之比約為十比一。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outpatient",
+    "meaning": "門診病人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient was treated as an outpatient and didn't need to stay overnight. 該病人作為門診病人接受治療，不需要留院觀察。",
+      "The clinic provides medical services for several outpatients every day. 這家診所每天為幾位門診病人提供醫療服務。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outplacement",
+    "meaning": "對失業人員的) 安置",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "That is a outplacement way to handle the plan. 那是處理計畫時很outplacement的方法。",
+      "The feedback was clear and outplacement. 這份回饋清楚而且outplacement。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outpost",
+    "meaning": "駐紮在距主力部隊一段距離的軍事哨所。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The outpost did not have enough ammunition to resist a determined assault. 前哨沒有足夠的彈藥來抵抗堅決的攻擊。",
+      "The term outpost refers to a military post stationed at a distance from the main body of troops. 前哨一詞是指駐紮在距離主力部隊一段距離的軍事哨所。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "output",
+    "meaning": "產出、產量",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The factory's total output has increased by twenty percent this year. 工廠的總產量今年增加了 20%。",
+      "You can adjust the volume and quality of the audio output in the settings. 您可以在設置中調整音頻輸出的音量和品質。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outrage",
+    "meaning": "憤怒、暴行",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The new policy caused a lot of public outrage among the community. 新政策引起了大眾（社區）的極大憤怒。",
+      "The international community condemned the act of violence as an outrage. 國際社會譴責這起暴力行為是一種暴行。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outrageous",
+    "meaning": "荒唐的、令人憤慨的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "It is outrageous to expect him to finish the project in just one hour. 期望他在一小時內完成專案簡直是荒唐的。",
+      "The price of the luxury car was truly outrageous, even for a billionaire. 這款豪華轎車的價格真是高得離譜（令人憤慨），即使對億萬富翁來說也是如此。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outrageously",
+    "meaning": "以一種令人憤慨的方式；到了令人髮指的程度。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The hotel was wonderful, but the food was outrageously expensive. 酒店很棒，但食物貴得離譜。",
+      "The team responded outrageously to the change. 團隊對此變化反應強烈。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "outreach",
+    "meaning": "拜訪原本無法獲得這些服務的人並為其提供（慈善機構、教會或其他組織的）服務的行為或做法。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He is involved in social outreach, education and environmental initiatives. 他參與社會外展、教育和環境倡議。",
+      "The term outreach refers to the act or practice of visiting and providing services (of a charity, church, or other organization) to people who might not otherwise have access to those services. 外展一詞是指訪問並向那些可能無法獲得這些服務的人（慈善機構、教會或其他組織）提供服務的行為或做法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outright",
+    "meaning": "徹底地、完全的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The company's proposal was rejected outright by the board of directors. 公司的提案被董事會當場（徹底地）否決了。",
+      "The candidate won an outright majority in the first round of the election. 該候選人在第一輪選舉中贏得了絕對（完全的）多數。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outrun",
+    "meaning": "跑得比.",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Can a tiger outrun a lion? 老虎能跑得過獅子嗎？",
+      "I don't need to outrun the bear; I just need to outrun you. 我不需要跑得過熊；我只需要跑贏你就可以了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outset",
+    "meaning": "開始、開端",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "From the outset, the project was faced with several significant challenges. 從一開始（開端），該專案就面臨著幾項重大的挑戰。",
+      "We decided to be honest with each other from the very outset of our trip. 我們決定從旅程一開始就對彼此誠實。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outside",
+    "meaning": "外部",
+    "partOfSpeech": "preposition",
+    "sentences": [
+      "It's a beautiful day; let's go sit outside in the garden. 今天天氣很好，我們去花園外面坐坐吧。",
+      "The cat is sleeping peacefully outside on the porch. 貓正在外面的門廊上安靜地睡覺。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outsider",
+    "meaning": "外人、局外人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She felt like an outsider in the new community and struggled to make friends. 她在新的社區感覺像個局外人（外人），很難交到朋友。",
+      "It is often easier for an outsider to provide an objective perspective. 對於局外人來說，提供客觀的觀點通常更容易。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outskirts",
+    "meaning": "市郊、郊區",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "They moved to a small wooden cottage on the outskirts of the city. 他們搬到了市郊的一座小木屋裡。",
+      "The factory is located on the outskirts of the town near the highway. 工廠位於靠近高速公路的鎮郊（郊區）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outspoken",
+    "meaning": "直言不諱的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She is an outspoken critic of the government's policies. 她是政府政策的直言不諱的批評者。",
+      "He was praised for his outspoken honesty and integrity. 他因直言不諱的誠實與正直而受到讚揚。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outstanding",
+    "meaning": "傑出的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She was awarded a full scholarship for her outstanding academic. 她因卓越的學術表現而獲頒全額獎學金（傑出的）。",
+      "The view of the city from the mountain top was truly outstanding. 從山頂俯瞰城市的景色簡直太出色了（傑出的）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outward",
+    "meaning": "向外的、表面的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Despite his calm outward appearance, he was actually feeling very nervous. 儘管外表（表面的）冷靜，他內心其實感到非常緊張。",
+      "The boat began its outward journey across the calm mountain lake. 船開始了橫渡平靜山湖的向外航程。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "outward/outwards",
+    "meaning": "向外地",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The windows of the small cottage open outwards to let in the fresh air. 小木屋的窗戶向外打開，以便讓新鮮空氣進來。",
+      "Please make sure you look outwards when you are navigating the boat. 航行時請務必向外看。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "outwardly",
+    "meaning": "外部或外部或表面。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The terrorist was outwardly a bank clerk. 恐怖分子表面上是一名銀行職員。",
+      "If someone acts outwardly, they do so in a way that is externally or on the outside, or on the surface. 如果某人的行為是外在的，那麼他們就是以一種外在的、表面上的或表面上的方式行事。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "outweigh",
+    "meaning": "重量或质量超过。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To outweigh means to exceed in weight or mass. 超過意味著重量或質量超過。",
+      "People may outweigh in different situations depending on the context. 根據具體情況，人在不同情況下可能會勝出。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oval",
+    "meaning": "橢圓形",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The table has a beautiful oval shape and is made of solid oak. 這張桌子有著漂亮的橢圓形（橢圓形），是由實心橡木製成的。",
+      "The stadium has a large oval track for professional running race. 體育場有一條供專業賽跑使用的大型橢圓形跑道。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ovary",
+    "meaning": "四卵巢",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "That is a ovary way to handle the details. 那是處理細節時很ovary的方法。",
+      "The feedback was clear and ovary. 這份回饋清楚而且ovary。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ovation",
+    "meaning": "勝利儀式不如勝利重要。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term ovation refers to a victory ceremony of less importance than a triumph. 歡呼一詞指的是不如勝利重要的勝利儀式。",
+      "The lesson introduced ovation as a useful term to understand. 本課程介紹了鼓掌作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oven",
+    "meaning": "烤箱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The baker placed the fresh bread in the hot oven to bake. 烘焙師將新鮮麵包放進熱烤箱中烘烤。",
+      "Please preheat the oven to 180 degrees before you start baking. 烘焙前請先將烤箱預熱到 180 度。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oven glove",
+    "meaning": "隔熱手套",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "After practice, I could use \"oven glove\" more confidently. 練習後，我更有自信地使用「oven glove」。",
+      "We used \"oven glove\" in today's dialogue practice. 我們在今天的對話練習中用了「oven glove」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oven-ready",
+    "meaning": "四 可直接入爐的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The engineer wrote down oven-ready with the note \"四 可直接入爐的\". 工程師把 oven-ready 記下來，並註記「四 可直接入爐的」。",
+      "We practiced using oven-ready in two different sentences. 我們練習把 oven-ready 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "over",
+    "meaning": "超過",
+    "partOfSpeech": "preposition",
+    "sentences": [
+      "The bridge goes over the river and connects the two towns. 這座橋橫跨河流，連接了這兩個小鎮。",
+      "The movie was finally over, and the audience began to leave. 電影終於結束了，觀眾開始離場。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "over-investment",
+    "meaning": "過度投資",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "During the meeting, the over-investment answered every question patiently. 會議中，這位over-investment耐心回答了每個問題。",
+      "Our team invited a skilled over-investment to lead the workshop. 我們團隊邀請了一位有經驗的over-investment帶領工作坊。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overall",
+    "meaning": "整體的、全面的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The overall performance of the team was excellent during the whole season. 團隊在本賽季的整體表現非常出色。",
+      "Overall, we were quite satisfied with the results of the research project. 總體（整體）而言，我們對研究專案的結果感到相當滿意。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overalls",
+    "meaning": "中工装神 ，",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term overalls in class today. 我們今天在課堂上討論了 overalls 這個詞。",
+      "The article mentioned overalls in a short paragraph. 文章在一段短文中提到了 overalls。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overbearing",
+    "meaning": "傲慢的，專橫的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He has an overbearing personality that makes it hard to work with him. 他那傲慢的性格讓人很難與他合作。",
+      "She struggled under the strict rules of her overbearing boss. 她在專橫老闆的嚴格規定下感到很吃力。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overblown",
+    "meaning": "重要性被誇大了；過度強調、炒作等",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "They went all that way just to be in some overblown conference? 他們大老遠跑就是為了參加一些誇張的會議嗎？",
+      "The report describes the result as overblown. 報告稱這項結果有些言過其實。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overboard",
+    "meaning": "越過邊緣；特別是在船外或船外。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "It was their practice to throw the scraps overboard. 他們的做法是把殘渣丟到船外。",
+      "If someone acts overboard, they do so in a way that is over the edge; especially, off or outside of a boat. 如果有人行為太過分，他們的行為就超出了極限；尤其是在船外或船外。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overcast",
+    "meaning": "被雲覆蓋；黯然失色；變暗； 90%以上被雲層覆蓋。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as overcast is covered with clouds; overshadowed; darkened; more than 90% covered by clouds. 形容陰天的事物被雲覆蓋；黯然失色；變暗； 90%以上被雲層覆蓋。",
+      "The word overcast is often used to describe a person, thing, or situation. 陰天這個字常用來形容人、事或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overcoat",
+    "meaning": "大衣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please wear your heavy overcoat; it's freezing outside today. 請穿上妳的厚大衣（大衣）；今天外面冷極了。",
+      "He hung his wet overcoat on the rack near the office entrance. 他把濕大衣掛在辦公室門口附近的架子上。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overcome",
+    "meaning": "克服",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "You must work hard to overcome your fears and achieve your goals. 妳必須努力克服（克服）恐懼並實現妳的目標。",
+      "The team managed to overcome the difficulties and win the game. 團隊設法克服了困難並贏得了比賽。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overdo",
+    "meaning": "做得過分、過火",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Don't overdo the exercise; it is important to rest and listen to your body. 運動不要過量（做得過分）；休息並聽從身體的反應很重要。",
+      "She tended to overdo the makeup, which made her look very different. 她妝化得有點過火，這讓她看起來很不一樣。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overdose",
+    "meaning": "藥量過多，過量",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient suffered a serious drug overdose. 該病人因藥物攝取過量而情況嚴重。",
+      "Be careful not to overdose on your medication. 小心不要服用過量的藥物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overdraft",
+    "meaning": "透支",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The bank allows customers to have a small overdraft on their accounts. 銀行允許客戶在帳戶中進行小額透支。",
+      "He was charged a fee for exceeding his overdraft limit. 他因超過透支限額而被收取了一筆費用。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overdrive",
+    "meaning": "活動高度活躍的狀態。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "overdrive pacing 超速配速",
+      "The campaign has been in overdrive since the recent announcement. 自最近宣布以來，該活動一直在超速進行。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overdue",
+    "meaning": "遲到；尤其是過了最後期限或來不及滿足需求。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "his library books were three days overdue; my car is overdue for an oil change; she finally left on a long overdue vacation 他圖書館的書逾期三天了；我的車逾期更換機油；她終於去度了一個姍姍來遲的假期",
+      "Something described as overdue is late; especially, past a deadline or too late to fulfill a need. 形容逾期的事情已經遲到了；特別是，超過了最後期限或來不及滿足需求。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overestimate",
+    "meaning": "判斷或計算過高。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I overestimated the number of attendees, and bought far too much food for the party. 我高估了參加人數，為聚會買了太多食物。",
+      "People often overestimate when the situation calls for it. 當情況需要時，人們常常會高估。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overfeeding",
+    "meaning": "四吃得过多",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The engineer overfeedinged the schedule carefully yesterday. 工程師昨天仔細地overfeeding了時程。",
+      "Please overfeeding the schedule before noon. 請在中午前overfeeding時程。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overflow",
+    "meaning": "溢出、氾濫",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The local river began to overflow following the heavy rain last night. 大雨過後，當地的河流開始氾濫（溢出）。",
+      "The sink began to overflow because he had forgotten to turn off the tap. 洗手台開始溢水，因為他忘了關水龍頭。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overgrown",
+    "meaning": "在沒有成熟或改變性格的情況下變得更大。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He spends so much money on new technology: he's like an overgrown schoolboy buying toys. 他在新技術上花了很多錢：他就像一個買玩具的大男孩。",
+      "Something described as overgrown is having grown bigger without developing maturity or changing character. 過度生長是指在沒有成熟或改變性格的情況下變得更大。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overhaul",
+    "meaning": "徹底檢查，大修",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The company is planning a major overhaul of its existing processes. 公司正計畫對其現有流程進行一次重大改革。",
+      "The mechanic performed a complete overhaul of the engine. 技工對發動機進行了全面大修。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overhead",
+    "meaning": "在頭頂上的、日常開支",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The sound of an airplane passing overhead woke me up early this morning. 飛機從頭頂飛過的聲音今天清晨把我吵醒了。",
+      "Many small businesses struggle with high overheads such as rent and taxes. 許多小企業都在為高昂的經常性開支（日常開支）而苦苦掙扎。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overhead projector",
+    "meaning": "高射投影儀",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"overhead projector\" for next week. 老師要我們把「overhead projector」背起來，下週要用。",
+      "I heard \"overhead projector\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「overhead projector」，就把它記進筆記本。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overhear",
+    "meaning": "無意中聽到",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I managed to overhear their conversation while waiting for the train. 我在等火車時無意中聽到了他們的談話。",
+      "He accidentally overheard the manager discussing the new project plans. 他不小心偷聽到（無意中聽到）經理在討論新專案計畫。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overinvestment",
+    "meaning": "過度投資",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The overinvestment explained the problem clearly to everyone. 這位overinvestment清楚地向大家說明了問題。",
+      "During the meeting, the overinvestment answered every question patiently. 會議中，這位overinvestment耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overjoyed",
+    "meaning": "欣喜若狂的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The winner was overjoyed by the news of her victory. 獲勝者聽到獲勝的消息欣喜若狂。",
+      "They were overjoyed to welcome their new baby into the family. 他們欣喜若狂地迎來了家中的新成員。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overjoyed love",
+    "meaning": "非常高興的,欣喜若狂的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"overjoyed love\" for next week. 老師要我們把「overjoyed love」背起來，下週要用。",
+      "I heard \"overjoyed love\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「overjoyed love」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overland",
+    "meaning": "通過或穿越陸地。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Let's take the overland route. 我們走陸路吧。",
+      "Something described as overland is by or across land. 被描述為陸上的事物是指通過或穿越陸地。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overlap",
+    "meaning": "重疊、重複",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The two research projects overlap in several areas, so we should cooperate. 這兩個研究專案在幾個領域有重疊，所以我們應該合作。",
+      "The scales of the fish overlap each other to provide better protection. 魚鱗互相重疊以提供更好的保護。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overlay",
+    "meaning": "将（某物）放置、铺展或涂抹在（其他东西）之上或跨过（其他东西）；蔓延。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "She will now overlay the crust with fruit. 她現在將在麵包皮上覆蓋水果。",
+      "She will now overlay fruit on top of the crust. 她現在將在麵包皮上覆蓋水果。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overload",
+    "meaning": "向電路提供過多的功率。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To overload means to provide too much power to a circuit. 過載意味著向電路提供過多的功率。",
+      "People may overload in different situations depending on the context. 根據具體情況，人們可能會在不同情況下超載。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overlook",
+    "meaning": "俯瞰",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The hotel room managing to overlook the entire ocean at sunset. 飯店房間竟然（能）俯瞰（俯瞰）日落時分的整個大海。",
+      "Please don't overlook any important details in the project report. 請不要遺漏（俯瞰）專案報告中的任何重要細節。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overlord",
+    "meaning": "封建領主直接欠下封地土地的佃戶、佃戶的領主的租金或個人服務。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The tenant owed a variety of obligations to his overlord—usually including military service or serjeanty—but these were gradually converted into monetary rents. 佃戶對他的宗主負有各種義務——通常包括兵役或侍役——但這些義務逐漸轉化為貨幣租金。",
+      "The term overlord refers to a feudal lord directly owed rent or personal service by a tenant of subinfeudated land, a tenant's liege lord. 霸主一詞是指封建領主直接欠下封地的佃農、佃農的領主的租金或個人服務。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overly",
+    "meaning": "高度；非常。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I'm not overly enthusiastic about meeting him. 我並不太熱衷於見到他。",
+      "If someone acts overly, they do so in a way that is to a high degree; very. 如果某人行為過度，那麼他們的行為方式就達到了很高的程度；非常。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overnight",
+    "meaning": "過夜",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "He achieved international fame and became an overnight celebrity. 他獲得了國際名聲，並成了一名一夜成名的（過夜）名人。",
+      "We decided to stay overnight at a cozy little inn near the beach. 我們決定在海灘附近一家溫馨的小旅館過夜（過夜）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overpass",
+    "meaning": "天橋，高架橋",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please use the pedestrian overpass to cross the busy road. 請利用行人天橋橫越這條繁忙的馬路。",
+      "The highway features several large overpasses. 這條公路上設有幾座大型高架橋。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overpower",
+    "meaning": "以超強的力量製服某人。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We overpowered the opposing army within a couple of hours. 我們在幾個小時內就擊敗了敵軍。",
+      "People often overpower when the situation calls for it. 當情況需要時，人們常常會壓倒一切。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "override",
+    "meaning": "抵消某事物的正常運作；以更高優先順序的命令撤銷命令。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "In automotive design, safety should override lesser factors such as cosmetics and corner-cutting. 在汽車設計中，安全性應該凌駕於裝飾和偷工減料等次要因素之上。",
+      "To override means to counteract the normal operation of something; to countermand with orders of higher priority. 覆蓋意味著抵消某物的正常運作；以更高優先順序的命令來撤銷命令。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overrule",
+    "meaning": "否決，駁回",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The judge decided to overrule the lawyer's objection. 法官決定駁回律師的異議。",
+      "The committee was overruled by the CEO's final decision. 委員會被執行長的最終決定否決了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overrun",
+    "meaning": "跑過去；超越。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "One line overruns another in length. 一條線的長度超過另一條線。",
+      "To overrun means to run past; to run beyond. Overrun的意思是跑過去；跑過去。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overseas",
+    "meaning": "海外",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Many students choose to study overseas to broaden their horizons. 許多學生選擇出國留學以開闊視野。",
+      "The company is planning to expand its business into overseas markets. 公司正計劃將業務擴展到海外市場。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overseas bank",
+    "meaning": "国外银行",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"overseas bank\" for next week. 老師要我們把「overseas bank」背起來，下週要用。",
+      "I heard \"overseas bank\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「overseas bank」，就把它記進筆記本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oversee",
+    "meaning": "監督、監視",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The manager was hired to oversee the daily operations of the local office. 經理受僱負責監督當地辦公室的日常運作。",
+      "A special committee was established to oversee the distribution of the funds. 成立了一個特別委員會來監督資金的分配。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oversight",
+    "meaning": "遺漏；被遺漏、錯過或遺忘的東西。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A small oversight at this stage can lead to big problems later. 這個階段的一個小疏忽可能會導致以後出現大問題。",
+      "The term oversight refers to an omission; something that is left out, missed, or forgotten. 監督一詞是指遺漏；被遺漏、錯過或遺忘的東西。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overstate",
+    "meaning": "誇大，言過其實",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The benefits of the new policy were significantly overstated by the media. 新政策的好處被媒體誇大了。",
+      "Don't overstate the importance of this minor problem. 不要誇大這個小問題的重要性。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overt",
+    "meaning": "公開的，明顯的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The organization was accused of showing overt bias against the group. 該組織被指控對該群體表現出公開的偏見。",
+      "His overt hostility towards his colleagues was a major concern. 他對同事公開表現出的敵意是一個主要擔憂。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overtake",
+    "meaning": "趕上、超過",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The racing car managed to overtake the leader in the final lap of the match. 賽車在比賽最後一圈設法超過了領先者。",
+      "We were overtaken by a sudden heavy storm while we were hiking. 我們在健行時突然遇到（突然降臨）了強風暴。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overthink",
+    "meaning": "思考或分析太多。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Don't overthink the problem. It's not that difficult. 不要把問題想太多。這並不難。",
+      "People often overthink when the situation calls for it. 當情況需要時，人們常常會想太多。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overthrow",
+    "meaning": "推翻",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The people decided to overthrow the dictator after years of war. 人民在多年戰爭後決定推翻（推翻）獨裁者。",
+      "The army managed to overthrow the government in a sudden coup now. 軍隊在一次突然政變中現在竟然推翻了政府。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overtime",
+    "meaning": "加班，加班費",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I need to work a lot of overtime this week to finish the project. 我這週需要加班很久以完成這個專案。",
+      "The employees are paid a higher rate for working overtime. 員工加班可獲得更高的薪資待遇。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "overtime pay",
+    "meaning": "加班費",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "After practice, I could use \"overtime pay\" more confidently. 練習後，我更有自信地使用「overtime pay」。",
+      "\"overtime pay\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「overtime pay」非常好用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overtly",
+    "meaning": "以公開的方式；公開；公開地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "If someone acts overtly, they do so in a way that is in an overt manner; publicly; openly. 如果某人行為公開，他們會以公開的方式這樣做；公開；公然。",
+      "The speaker responded overtly during the discussion. 發言者在討論中公開回應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overturn",
+    "meaning": "翻倒、推翻",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The heavy truck overturned on the highway, blocking all the traffic. 重型卡車在高速公路上翻倒了，阻塞了所有交通。",
+      "The high court decided to overturn the original ruling after new evidence. 最高法院在發現新證據後決定推翻原判。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overuse",
+    "meaning": "使用太多（某物）；太頻繁地使用（它）。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To overuse means to use too much of (something); to use (it) too often. 過度使用意味著使用太多（某物）；太頻繁地使用（它）。",
+      "People may overuse in different situations depending on the context. 根據具體情況，人們可能會在不同情況下過度使用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overview",
+    "meaning": "進行概述；提供一個簡短的總結。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To overview means to engage in an overview; to provide a brief summary. 概覽意味著進行概覽；提供一個簡短的總結。",
+      "People may overview in different situations depending on the context. 人們可能會根據上下文在不同的情況下進行概述。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overwatch",
+    "meaning": "克服長期缺乏休息的情況。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To overwatch means to overcome with long lack of rest. 守望意味著要克服長期缺乏休息的情況。",
+      "People may overwatch in different situations depending on the context. 人們可能會根據具體情況在不同情況下進行監視。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overweight",
+    "meaning": "體重（尤其是體脂）高於特定體型和身高通常認為的健康體重。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Before her diet, Jane was noticeably overweight, but she shed five kilos in the next two months. 在節食之前，簡明顯超重，但在接下來的兩個月裡她減掉了五公斤。",
+      "Something described as overweight is having a higher weight, especially body fat, than what is generally considered healthy for a given body type and height. 超重是指體重（尤其是體脂肪）高於特定體型和身高通常認為健康的體重。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "overwhelm",
+    "meaning": "使不堪重負、淹沒",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The huge amount of work began to overwhelm the small team after a few weeks. 巨大的工作量幾週後開始讓這支小團隊感到不堪重負。",
+      "The village was completely overwhelmed by the sudden and destructive flood. 村莊被突如其來的毀滅性洪水完全淹沒了。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "overwork",
+    "meaning": "過度工作、勞累過度",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The manager was accused of overworking his employees during the project. 經理被指控在專案期間讓員工過度工作。",
+      "He felt extremely tired and stressed after months of constant overwork. 經過幾個月的持續過度勞累，他感到非常疲倦且壓力巨大。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ovum",
+    "meaning": "四受精卵",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The nurse wrote down ovum with the note \"四受精卵\". 護理師把 ovum 記下來，並註記「四受精卵」。",
+      "We discussed the term ovum in class today. 我們今天在課堂上討論了 ovum 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "owe",
+    "meaning": "欠",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I owe my best friend a debt of gratitude for all her kind support. 對於好友的一切支持，我欠她一份感激之情。",
+      "He owes a significant amount of money to the bank for his house loan. 他因房貸欠了銀行一大筆錢。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "owing",
+    "meaning": "欠（債）的，由於",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The match was canceled owing to bad weather. 比賽因天氣惡劣而取消了。",
+      "He still has several bills owing from last month. 他還有上個月的幾張帳單未付。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "owl",
+    "meaning": "貓頭鷹",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The owl was hooting in the dark and quiet forest at midnight. 貓頭鷹正深夜在黑暗寂靜的森林裡鳴叫。",
+      "Owls are nocturnal predators that are known for their great vision. 貓頭鷹是晝伏夜出的捕食者，以其極佳的視力聞名。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "own",
+    "meaning": "自己的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He dreams of starting his own business one day. 他夢想有一天能創立自己的事業。",
+      "She has her own bedroom and doesn't have to share. 她有自己的臥室，不需要和別人共用。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "owner",
+    "meaning": "擁有者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The owner of the restaurant is a very kind and generous man. 這家餐廳的老闆是一個非常善良慷慨的人。",
+      "Please check the car registration to identify the registered owner. 請檢查車輛登記以確認登記的所有人。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ownership",
+    "meaning": "所有權",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The company is undergoing a major change in its ownership structure. 公司正經歷其所有權結構的重大變革。",
+      "Home ownership is a major financial goal for many young couples. 擁有自己的房子是許多年輕情侶的主要經濟目標。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ox",
+    "meaning": "牛",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ox was pulling a heavy wooden cart across the vast fields. 公牛正拉著一輛重的木車橫跨廣闊的田野。",
+      "Oxen were traditionally used as working animals in rural regions. 公牛傳統上被用作農村地區的役用動物。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oxford",
+    "meaning": "四牛津大学",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My nephew can already identify an oxford in pictures. 我姪子已經可以在圖片中辨認出oxford。",
+      "The guide explained where the oxford usually lives. 導覽員解釋了oxford通常生活在哪裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oxidation",
+    "meaning": "物質與氧的化合。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term oxidation refers to the combination of a substance with oxygen. 術語氧化是指物質與氧氣的結合。",
+      "The lesson introduced oxidation as a useful term to understand. 本課介紹了氧化這個有助於理解的術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oxide",
+    "meaning": "氧與另一種化學元素的二元化合物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term oxide refers to a binary chemical compound of oxygen with another chemical element. 術語“氧化物”是指氧與另一種化學元素的二元化合物。",
+      "The lesson introduced oxide as a useful term to understand. 本課介紹了氧化物作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "oxygen",
+    "meaning": "氧",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Water is a chemical compound consisting of hydrogen and oxygen. 水是由氫與氧組成的化學化合物。",
+      "The human body needs a constant supply of oxygen to survive now. 人體現今需要持續的氧氣供應才能生存。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "oyster",
+    "meaning": "牡蠣、蠔",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The restaurant is famous for its delicious fresh oysters and seafood. 這家餐廳以其美味的新鮮牡蠣（生蠔）和海鮮而聞名。",
+      "Divers found several rare pearls inside the large oysters in the bay. 潛水員在大海灣的巨蚌（牡蠣）中發現了幾顆稀有的珍珠。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ozone",
+    "meaning": "臭氧",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ozone layer protects the Earth from the harmful effects of the sun. 臭氧層保護地球免受陽光的有害影響。",
+      "Scientists are studying the causes of the depletion of the ozone layer. 科學家們正在研究臭氧層損耗的原因。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "o’clock",
+    "meaning": "點鐘",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The meeting will start at 9:00 o'clock sharp tomorrow morning. 會議將在明天早上九點整開始。",
+      "I usually wake up at 7:00 o'clock every day. 我通常每天七點起床。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals"
+    ]
+  }
+]

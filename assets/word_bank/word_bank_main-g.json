@@ -1,0 +1,7098 @@
+[
+  {
+    "word": "gabble",
+    "meaning": "急促而不清楚地說",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "She was so excited that she began to gabble and I couldn't understand her. 她興奮得開始語無倫次，我都聽不懂她的話。",
+      "The children were gabbling away in the playground. 孩子們在操場上嘰嘰喳喳地說個不停。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gabby",
+    "meaning": "傾向於談論太多，尤其是瑣事。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as gabby is inclined to talk too much, especially about trivia. 被描述為「饒舌」的人傾向於談論太多，尤其是關於瑣事。",
+      "The word gabby is often used to describe a person, thing, or situation. 「gabby」這個字常被用來形容一個人、一件事或一種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gable",
+    "meaning": "與兩個傾斜屋頂表面（坡度）相鄰並終止的外牆頂部的三角形區域。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gable refers to the triangular area at the peak of an external wall adjacent to, and terminating, two sloped roof surfaces (pitches). 術語「山牆」是指與兩個傾斜屋頂表面（坡度）相鄰並終止的外牆頂部的三角形區域。",
+      "The lesson introduced gable as a useful term to understand. 本課介紹了山牆作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gadget",
+    "meaning": "任何設備或機器，尤其是名字記不起的設備或機器，通常要么聰明要么複雜。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He bought a neat new gadget for shredding potatoes. 他買了一個漂亮的新玩意兒，用來切馬鈴薯絲。",
+      "That's quite a lot of gadgets you have collected. Do you use any of them? 你已經收集了相當多的小工具了。你使用它們中的任何一個嗎？"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gag",
+    "meaning": "塞住...的口，惡作劇",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The kidnappers gagged the victim to prevent him from shouting. 綁匪塞住了受害者的嘴以防止他大喊大叫。",
+      "The comedian used a funny gag to start his performance. 喜劇演員用一個滑稽的笑話（惡作劇）開始了他的表演。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gage",
+    "meaning": "透過承諾或擔保來約束（某人）；參與。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To gage means to bind (someone) by pledge or security; to engage. To gage 是指透過保證或擔保來約束（某人）；參與。",
+      "People may gage in different situations depending on the context. 人們可能會根據具體情況在不同的情況下進行衡量。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gain",
+    "meaning": "獲得",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Hard work and dedication will help you gain valuable experience. 努力與奉獻將幫助你獲得寶貴的經驗。",
+      "The company managed to gain a larger market share this year. 公司今年設法獲得了更大的市場份額。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gait",
+    "meaning": "行走或邁步的方式；用腿移動時的軸承或託架。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Carrying a heavy suitcase, he had a lopsided gait. 他背著沉重的行李箱，步態歪歪扭扭。",
+      "The term gait refers to a manner of walking or stepping; a bearing or carriage while moving on legs. 步態一詞是指行走或邁步的方式。用腿移動時的軸承或託架。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gala",
+    "meaning": "一場比賽。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a swimming gala 游泳盛會",
+      "The term gala refers to a competition. Gala一詞指的是比賽。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "galactic",
+    "meaning": "與星係有關。與銀河係有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Galactic astronomy is the study of the Milky Way. 銀河天文學是對銀河系的研究。",
+      "Something described as galactic is relating to a galaxy. Relating to the Milky Way galaxy. 被描述為銀河的東西與星係有關。與銀河係有關。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "galaxy",
+    "meaning": "星系、銀河",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our solar system is located in a spiral galaxy called the Milky Way. 我們的太陽系位於一個名為銀河系的螺旋星系中。",
+      "The award ceremony was attended by a galaxy of Hollywood stars. 頒獎典禮上有一群顯赫的（星光熠熠的）好萊塢明星出席。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gale",
+    "meaning": "非常強的風，大於微風，小於暴風雨； 12 級蒲福風級中的 7 至 9 級風。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It's blowing a gale outside. 外面刮著大風。",
+      "Many parts of the boat were damaged in the gale. 船的許多部分在大風中受損。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gall",
+    "meaning": "由於兩個表面之間的摩擦力超過材料在某一點的黏合力，導致被切割表面出現點蝕。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Improper cooling and a dull milling cutter on titanium can gall the surface. 冷卻不當和鈦合金上的鈍銑刀會磨損表面。",
+      "To gall means to cause pitting on a surface being cut from the friction between the two surfaces exceeding the bond of the material at a point. 磨傷是指由於兩個表面之間的摩擦超過材料在一點處的結合而在被切割的表面上造成點蝕。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gallant",
+    "meaning": "勇敢的，（對女性）殷勤的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The gallant soldiers defended the city against the attack. 英勇的士兵保衛城市抵禦攻擊。",
+      "He made a gallant effort to help the lady with her heavy bags. 他殷勤地努力幫助那位女士提重包。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gallery",
+    "meaning": "畫廊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The local art gallery is hosting an exhibition of modern painting. 當地藝廊（畫廊）正舉辦一場現代繪畫展。",
+      "She decided to display her latest landscape photos in the gallery. 她決定在畫廊（藝廊）展示她最新的風景照片。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "galley",
+    "meaning": "船舶或飛機上的廚房和烹飪設備；有時在稱為守車的商船上。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term galley refers to the cookroom or kitchen and cooking apparatus of a vessel or aircraft; sometimes on merchant vessels called the caboose. 廚房一詞是指船舶或飛機上的廚房和烹飪設備；有時在稱為守車的商船上。",
+      "The lesson introduced galley as a useful term to understand. 本課程介紹了廚房作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gallon",
+    "meaning": "加侖",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There are four quarts in one single US gallon of liquid. 一美制加侖液體等於四夸脫。",
+      "The car's fuel tank has a capacity of over fifteen gallons. 這輛車的油箱容量超過十五加侖。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gallop",
+    "meaning": "奔馳",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The horse began to gallop across the wide green fields at sunset. 馬兒在日落時分開始在廣闊的綠色田野上奔馳。",
+      "The little boy galloped down the hallway to greet his father. 小男孩飛跑著穿過走廊去迎接父親。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "galloway",
+    "meaning": "一種最初在蘇格蘭加洛韋飼養的小型馬。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term galloway refers to a kind of small horse originally bred in Galloway, Scotland. 加洛韋一詞指的是一種最初在蘇格蘭加洛韋飼養的小型馬。",
+      "The lesson introduced galloway as a useful term to understand. 本課程介紹了加洛韋作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gambit",
+    "meaning": "國際象棋中犧牲材料以獲得優勢的開局。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Her clever gambit gave her an advantage. 她的巧妙策略為她帶來了優勢。",
+      "The term gambit refers to An opening in chess in which material is sacrificed to gain an advantage. 術語“棄兵”是指國際象棋中犧牲材料以獲得優勢的開局。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gamble",
+    "meaning": "賭博",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You should never gamble with money that you cannot afford to lose. 你絕對不應該拿你輸不起的錢去賭博。",
+      "Starting a new business is always a bit of a financial gamble. 創立新事業總是一場經濟上的冒險（賭博）。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gambler",
+    "meaning": "玩機會遊戲的人，賭博的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gambler refers to one who plays at a game of chance, who gambles. 賭徒一詞指的是玩機會遊戲、賭博的人。",
+      "The lesson introduced gambler as a useful term to understand. 本課介紹了「賭徒」這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "game",
+    "meaning": "遊戲",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kids are playing a computer game in the living room. 孩子們正在客廳玩電腦遊戲。",
+      "Our team won the championship game last night. 我們團隊昨晚贏得了冠軍賽。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gamma",
+    "meaning": "飛行航跡角；飛機的飛行路徑偏離水平面的角度。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gamma refers to flight path angle; the angle by which an aircraft's flight path deviates from the horizontal plane. 術語「伽瑪」指的是飛行航跡角；飛機的飛行路徑偏離水平面的角度。",
+      "The lesson introduced gamma as a useful term to understand. 本課程介紹了伽馬作為一個易於理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gander",
+    "meaning": "公鵝，瞥一眼",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The gander is usually larger and more aggressive than the female goose. 公鵝通常比母鵝大且更具攻擊性。",
+      "Let me take a gander at your new car. 讓我看一眼你的新車。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gang",
+    "meaning": "幫派",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The police are investigating several active criminal gangs in the city. 警方正調查城市裡幾個活躍的犯罪幫派。",
+      "A gang of young kids was playing happily in the neighborhood park. 一群小孩正在社區公園開心地玩耍。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gangrene",
+    "meaning": "壞疽",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient's leg had to be amputated due to severe gangrene. 由於嚴重的壞疽，病人的腿不得不被截肢。",
+      "The wound began to gangrene after it became infected. 傷口在感染後開始出現壞疽。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gangster",
+    "meaning": "歹徒、幫派分子",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The movie tells the story of a notorious gangster in the city during the 1920s. 這部電影講述了 1920 年代城內一名臭名昭著的歹徒的故事。",
+      "He was arrested for his involvement with a local gangster group. 他因參與當地的幫派組織而被捕。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gap",
+    "meaning": "差距",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There is a significant income gap between the rich and the poor. 貧富之間存在著顯著的收入差距。",
+      "We need to find a way to bridge the gap between our cultures. 我們需要找到一種方法來彌合我們的文化差距。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gaping",
+    "meaning": "敞開。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "There’s a gaping hole in the fence. 柵欄上有一個大洞。",
+      "The report describes the result as gaping. 報告稱這項結果令人震驚。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garage",
+    "meaning": "車庫",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He usually parks his car in the garage behind the house. 他通常把車停在房子後面的車庫裡。",
+      "The mechanic owns a small garage and repairs older automobiles. 技師擁有一間小修車廠並修理舊汽車。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "garb",
+    "meaning": "裝束，服裝",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The actors were dressed in traditional medieval garb. 演員們穿著傳統的中世紀服裝。",
+      "He was garbed in a dark suit for the formal event. 他穿著深色西裝參加正式活動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garbage",
+    "meaning": "垃圾",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please remember to take out the garbage before you leave. 離開前請記得把垃圾拿出去倒。",
+      "The beach was littered with garbage after the music festival. 音樂節過後，海灘上到處都是垃圾。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "garbage can",
+    "meaning": "垃圾桶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher asked us to memorize \"garbage can\" for next week. 老師要我們把「garbage can」背起來，下週要用。",
+      "\"garbage can\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「garbage can」非常好用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garbage truck",
+    "meaning": "垃圾車",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The garbage truck comes every Tuesday morning to collect the trash. 垃圾車每週二早上來收垃圾。",
+      "The loud noise of the garbage truck woke me up early. 垃圾車巨大的響聲早早把我吵醒了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garden",
+    "meaning": "花園",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The garden is full of beautiful colorful flowers in spring. 春天時花園裡開滿了美麗繽紛的花朵。",
+      "He likes to spend his weekends working in the garden. 他喜歡在週末在花園裡忙活。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gardener",
+    "meaning": "園丁",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He works as a professional gardener at a large private estate. 他在一個大型私人莊園擔任專業園丁。",
+      "The gardener spent the whole afternoon planting colorful spring flowers. 園丁花了一整下午種植繽紛的春季花卉。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gardenia",
+    "meaning": "梔子花",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The room was filled with the sweet scent of fresh gardenias. 房間裡瀰漫著新鮮梔子花的甜美香氣。",
+      "She wore a white gardenia in her hair for the wedding. 她婚禮時在頭髮上戴了一朵白梔子花。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gardening",
+    "meaning": "耕種土壤的過程或行為，特別是在花園中；照顧花園；園藝。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "His hobby was gardening. 他的興趣是園藝。",
+      "The term gardening refers to The process or action of cultivating the soil, particularly in a garden; the care of a garden; horticulture. 園藝一詞是指耕種土壤的過程或行為，特別是在花園中；照顧花園；園藝。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garish",
+    "meaning": "炫耀的，過於艷麗的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The room was decorated in garish colors that were hard to look at. 房間佈置得花裡胡哨，讓人很難直視。",
+      "She wore a garish necklace with huge, bright stones. 她戴了一條鑲有巨大鮮豔寶石的俗氣項鍊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garland",
+    "meaning": "花環，環繞",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The winner was presented with a beautiful garland of flowers. 獲勝者獲贈了一個美麗的花環。",
+      "The walls were garlanded with festive decorations. 牆上掛滿了節日裝飾。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garlic",
+    "meaning": "蒜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Garlic is a key ingredient in many delicious Italian dishes. 大蒜是許多美味義大利菜的主要食材。",
+      "She added some minced garlic to the pan to enhance the flavor. 她在鍋裡加了一些蒜末以增添風味。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "garment",
+    "meaning": "衣服、服裝",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The boutique sells a variety of high-quality silk garments and accessories. 這家精品店出售各式各樣的高品質絲綢服裝和配飾。",
+      "Please make sure you clean the delicate garment according to the instructions. 請務必按照說明清洗這件精緻的衣服。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "garner",
+    "meaning": "去賺取；要得到;透過某種努力或由於某種事實而累積或獲得。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To garner support 為了獲得支持",
+      "He garnered a reputation as a language expert. 他贏得了語言專家的聲譽。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garnet",
+    "meaning": "一種堅硬透明的礦物，通常用作寶石和磨料。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term garnet refers to a hard transparent mineral that is often used as gemstones and abrasives. 石榴石一詞是指一種堅硬透明的礦物，通常用作寶石和磨料。",
+      "The lesson introduced garnet as a useful term to understand. 本課程介紹了石榴石作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garnish",
+    "meaning": "裝飾，點綴",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "She used a slice of lemon to garnish the fish dish. 她用一片檸檬裝飾魚肉料理。",
+      "The chef added a sprig of parsley as a garnish to the soup. 廚師加了一枝歐芹作為湯的點綴。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garrison",
+    "meaning": "駐紮在這樣的哨所的部隊。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term garrison refers to the troops stationed at such a post. 駐軍一詞是指駐紮在該哨所的部隊。",
+      "The lesson introduced garrison as a useful term to understand. 本課程介紹了「駐軍」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garrulous",
+    "meaning": "饒舌的，多嘴的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He became very garrulous after a few glasses of wine. 喝了幾杯酒後，他變得非常饒舌。",
+      "The garrulous old man spent the afternoon telling stories to the children. 那位饒舌的老人花了一個下午給孩子們講故事。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "garth",
+    "meaning": "關閉；一個院子；克羅夫特；一個花園。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a cloister garth 修道院花園",
+      "The term garth refers to a close; a yard; a croft; a garden. Garth一詞指的是結束；一個院子；克羅夫特；一個花園。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gas",
+    "meaning": "氣體，瓦斯，汽油",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The room was filled with a mysterious gas. 房間裡充滿了一種神祕的氣體。",
+      "Don't forget to turn off the gas after cooking. 別忘了做完飯後關掉瓦斯。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gaseous",
+    "meaning": "與氣體有關或以氣體形式存在（處於液體和等離子體之間的中間狀態的物質）。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "At room temperature, oxygen remains in a gaseous state. 在室溫下，氧氣保持氣態。",
+      "The mixture produced a gaseous vapor when heated. 此混合物在加熱時產生氣態蒸氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gash",
+    "meaning": "做一個又深又長的切口；削減。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "My leg got gashed. 我的腿被刮傷了。",
+      "People often gash when the situation calls for it. 當情況需要時，人們常常會感到痛苦。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gasoline/gas",
+    "meaning": "汽油/天然氣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The price of gasoline has increased significantly lately. 汽油的價格最近顯著上漲。",
+      "Don't forget to fill up the gas tank before starting the trip. 長途旅行前別忘了加滿油。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "gasp",
+    "meaning": "喘氣、倒抽一口氣",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The audience gasped in surprise at the magician's final trick. 觀眾對魔術師最後的戲法驚訝地倒抽了一口氣（喘氣）。",
+      "He was gasping for breath after running up the steep hill. 他爬上陡峭的山坡後直喘氣。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gastric",
+    "meaning": "胃的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The patient was suffering from a gastric infection. 病人正患有胃部感染。",
+      "Gastric problems can be caused by poor diet and stress. 胃部問題可能是由飲食不當和壓力引起的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gastrointestinal",
+    "meaning": "胃腸的。與胃和腸道有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The patient is being treated for a gastrointestinal infection. 病人正在接受胃腸道感染的治療。",
+      "Gastrointestinal symptoms include nausea, vomiting, and diarrhea. 胃腸症狀包括噁心、嘔吐和腹瀉。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gate",
+    "meaning": "門",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please remember to lock the front gate when you leave. 離開時請記得鎖上大門。",
+      "The passengers are waiting at the boarding gate. 乘客們正在登機口等待。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gated",
+    "meaning": "有大門或其他限制通道。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a gated community; a source control system with gated check-ins 封閉式社群；具有門控簽入功能的原始碼控制系統",
+      "The report describes the result as gated. 該報告將結果描述為“門控”。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gateway",
+    "meaning": "任何可能導致更深入參與的興趣的事物或領域。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a gateway drug 入門藥物",
+      "The term gateway refers to any thing or area of interest that tends to lead to deeper involvement. 術語「網關」指的是任何傾向於導致更深入參與的興趣的事物或領域。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gather",
+    "meaning": "收集",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "A large crowd gathered in the square to hear the politician's speech. 一大群人聚集在廣場聽政治家的演講。",
+      "The children were happily gathering colorful seashells on the beach. 孩子們正在海灘上開心地收集彩色貝殼。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gathering",
+    "meaning": "聚會、集會",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The family gathering at Christmas was a very happy and moving occasion. 聖誕節的家庭聚會是一個非常快樂且動人的場合。",
+      "The annual gathering of local artists features exhibitions and workshops. 一年一度的當地藝術家集會（聚會）設有展覽和工作坊。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gator",
+    "meaning": "輪胎的一部分，例如在高速公路一側看到的。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gator refers to a portion of a tire, such as seen on the side of a highway. 術語“鱷魚”指的是輪胎的一部分，例如在高速公路一側看到的。",
+      "The lesson introduced gator as a useful term to understand. 本課介紹了 gator 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gauche",
+    "meaning": "笨拙的，不善社交的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He felt very gauche and out of place at the formal event. 在正式活動中，他感到非常笨拙且格格不入。",
+      "It was a gauche remark that offended many people. 那是個笨拙的發言，冒犯了許多人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gaudy",
+    "meaning": "俗氣的，過於艷麗的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The hotel was decorated in a gaudy style with too much gold and velvet. 這家飯店裝修得很俗氣，用了太多的金飾和絲絨。",
+      "She wore a gaudy outfit that attracted a lot of attention. 她穿了一套俗氣的服裝，引發了很多關注。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gauge",
+    "meaning": "測量、評估",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The technician used a special tool to gauge the pressure in the tank. 技術員使用特殊工具測量水箱內的壓力。",
+      "It is difficult to gauge the success of the project without more data. 沒有更多數據，很難評估專案的成功。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gauntlet",
+    "meaning": "手部防護甲，以前作為戰鬥挑戰而被扔下。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gauntlet refers to protective armor for the hands, formerly thrown down as a challenge to combat. 手套一詞指的是手部的防護盔甲，以前是作為戰鬥挑戰而扔下的。",
+      "The lesson introduced gauntlet as a useful term to understand. 本課程介紹了「挑戰」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gauze",
+    "meaning": "紗布，薄紗",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The nurse wrapped the wound in clean medical gauze. 護理師用乾淨的醫用紗布包紮了傷口。",
+      "She wore a beautiful dress made of light and delicate gauze. 她穿了一件由輕薄精緻的薄紗製成的漂亮連衣裙。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gay",
+    "meaning": "快樂的、同性戀的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The city held a colorful parade to celebrate the rights of gay and lesbian people. 這座城市舉行了一場精彩的遊行來慶祝同性戀者的權利。",
+      "The children were in a gay mood as they prepared for the summer holiday. 孩子們在準備暑假時心情非常愉快（快樂）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gaze",
+    "meaning": "目光",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She stood on the pier and gazed out at the vast ocean at sunset. 她站在碼頭上，日落時分凝視（目光）著廣闊的大海。",
+      "He managed to hold her steady gaze for a few intense seconds now. 他現在竟然（能）與她那強烈的目光對視了幾秒鐘。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gazette",
+    "meaning": "在官方公報上宣布（某人）的地位；這涉及任命和破產。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To gazette means to announce the status of (someone) in an official gazette; this pertained to both appointments and bankruptcies. 公報是指在官方公報上宣布（某人）的地位；這涉及任命和破產。",
+      "People may gazette in different situations depending on the context. 人們可能會根據上下文在不同的情況下發佈公報。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gear",
+    "meaning": "齒輪",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please remember to pack all your essential camping gear tonight. 請記得今晚帶上妳所有的必備露營裝備（齒輪）。",
+      "The new mountain bicycle has over twenty different gears today. 這款新的山地自行車今天有超過二十個不同的檔位（齒輪）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gearbox",
+    "meaning": "變速箱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mechanic is busy repairing the faulty gearbox. 技工正忙著修理故障的變速箱。",
+      "The new model features a smoother and more efficient gearbox. 新車型配備了更平順且更高效的變速箱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gearing",
+    "meaning": "齒輪系統的比率。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The 4×4 could climb well, as it had relatively low gearing. 4×4 可以很好地爬升，因為它的傳動裝置相對較低。",
+      "The term gearing refers to The ratio of a system of gears. 術語“齒輪傳動”是指齒輪系統的比率。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geek",
+    "meaning": "一位專門從事怪異和令人倒胃口行為的嘉年華表演者。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I once saw a geek bite the head off a live chicken. 我曾經看到一個極客咬掉了一隻活雞的頭。",
+      "The term geek refers to a carnival performer specializing in bizarre and unappetizing behavior. 極客一詞指的是專門從事怪異和令人倒胃口行為的嘉年華表演者。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geese",
+    "meaning": "鵝 (Goose 之複數)",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A flock of geese was flying across the sky. 一群鵝飛過天空。",
+      "The geese were swimming peacefully in the pond. 鵝群在池塘裡安詳地游泳。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geezer",
+    "meaning": "對男性的稱呼。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Hi, geezer, you alright? 嗨，老兄，你還好嗎？",
+      "The term geezer refers to Term of address for a male. 「geezer」一詞是指對男性的稱呼。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gel",
+    "meaning": "凝膠",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She applied some hair gel to style her hair. 她抹了一些髮膠來造型。",
+      "The team finally began to gel after several months of working together. 團隊在合作幾個月後終於開始磨合成功了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gem",
+    "meaning": "寶石，精華",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The necklace was decorated with several small gems. 這條項鍊裝飾著幾顆小寶石。",
+      "The small village is a real hidden gem in the mountains. 這座小村莊真是群山中一顆隱藏的明珠。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gender",
+    "meaning": "性別",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The company is committed to promoting gender equality in office. 公司致力於在辦公室內推廣性別（平等）。",
+      "The study explores the recent trends in global gender roles lately. 該研究最近探索了全球性別角色的趨勢。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gene",
+    "meaning": "基因",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Scientists are studying the role of genes in human health today. 科學家現今正研究基因在人類健康中的作用。",
+      "The researchers identified a specific gene related to the disease. 研究人員鑑定出了一個與該疾病相關的特定基因。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "genealogical",
+    "meaning": "屬於家譜的或與家譜有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as genealogical is of or relating to genealogy. 被描述為家譜的事物屬於家譜或與家譜有關。",
+      "The word genealogical is often used to describe a person, thing, or situation. 家譜這個字常用來描述一個人、一個事物或一個情境。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genealogy",
+    "meaning": "個人、家庭或群體的祖先的後裔；血統或血統。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term genealogy refers to the descent of a person, family, or group from an ancestor or ancestors; lineage or pedigree. 「家譜」一詞是指一個人、一個家庭或一個群體的祖先的血統；血統或血統。",
+      "The lesson introduced genealogy as a useful term to understand. 本課介紹了家譜作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "general",
+    "meaning": "一般的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The manager gave a general overview of the new project proposal. 經理對新專案提案做了一個概括性的介紹。",
+      "In general, people in Taiwan are very friendly and helpful. 一般來說，台灣人非常友善且熱心。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generalize",
+    "meaning": "概括，歸納",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "It's hard to generalize about the behavior of young people today. 很難對現代年輕人的行為進行概括。",
+      "The researcher attempted to generalize the findings to a larger population. 研究人員試圖將研究結果推廣到更大的群體。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "generalized",
+    "meaning": "概括性的,籠統的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "If you generalized every day, your skills improve quickly. 如果你每天都generalized，能力會進步得很快。",
+      "Our team generalizeds this step whenever a problem appears. 每當出現問題時，我們團隊都會generalized這個步驟。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "generally",
+    "meaning": "一般來說",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please read the instructions generally before you start. 開始前請先generally地閱讀說明。",
+      "The nurse checked the patient generally before bedtime. 護理師在睡前很generally地檢查病人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "generate",
+    "meaning": "產生、引起",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The new project is expected to generate a lot of income for the company. 新專案預計將為公司產生（帶來）大量收入。",
+      "Wind turbines use wind energy to generate clean electricity for our homes. 風力發電機利用風能為我們家庭產生清潔電力。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generation",
+    "meaning": "世代",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The older generation often has very different values from the young. 老一輩的人往往與年輕人的價值觀大不相同。",
+      "Technology has managed to change rapidly across each new generation. 科技在每一個新世代中都竟然在快速變化。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generation gap",
+    "meaning": "代满，两代人之癌的隔闫",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"generation gap\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「generation gap」，就把它記進筆記本。",
+      "We used \"generation gap\" in today's dialogue practice. 我們在今天的對話練習中用了「generation gap」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "generational",
+    "meaning": "出色；一代人中最好/最差的；一代一次的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as generational is exceptional; the best/worst of a generation; once-in-a-generation. 被描述為世代相傳的東西是特殊的。一代中最好/最差的；一代一次。",
+      "The word generational is often used to describe a person, thing, or situation. 「世代」這個字常被用來形容一個人、一件事或一種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "generator",
+    "meaning": "發電機、產生器",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The hospital has an emergency generator to ensure power during outages. 醫院配備了緊急發電機，以確保停電期間的電力供應。",
+      "The password generator creates a unique and secure code for every user. 密碼產生器為每位使用者創建一個獨特且安全的代碼。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generic",
+    "meaning": "非常廣泛；與特定實例相關或適合於大類或群體。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Capri pants can be a generic term for any cropped slim pants. 卡普里褲是任何九分修身褲的總稱。",
+      "Something described as generic is very broad; pertaining or appropriate to large classes or groups as opposed to specific instances. 被描述為通用的東西非常廣泛；與特定實例相關或適合於大類或群體。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "generosity",
+    "meaning": "慷慨",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It was very generous of him to donate such a large amount of money. 他捐贈了這麼大一筆錢，真是非常慷慨（慷慨之情）。",
+      "The organization aims to promote generosity and social justice now. 該組織旨在推廣（慷慨）慈善與社會正義。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generous",
+    "meaning": "慷慨的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "It was very generous of him to donate such a large amount of money. 他捐贈了這麼大一筆錢，真是非常慷慨。",
+      "She gave me a generous helping of her delicious homemade apple pie. 她給了我一大塊她親手做的美味蘋果派。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "generously",
+    "meaning": "慷慨地，大方地",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please read the instructions generously before you start. 開始前請先generously地閱讀說明。",
+      "The nurse checked the patient generously before bedtime. 護理師在睡前很generously地檢查病人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genesis",
+    "meaning": "某事物產生的起源、開始或點。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Some point to the creation of Magna Carta as the genesis of English common law. 有些人指出《大憲章》的製定是英國普通法的起源。",
+      "The term genesis refers to The origin, start, or point at which something comes into being. 「創世」一詞指的是事物產生的起源、開始或點。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genetic",
+    "meaning": "基因的、遺傳的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Genetic research has led to many breakthroughs in the field of medicine. 基因研究在醫療領域取得了許多突破。",
+      "Some diseases are genetic and can be passed down from parents to children. 有些疾病是遺傳的（基因的），可以由父母傳給孩子。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "genetically",
+    "meaning": "以與基因或遺傳學有關的方式。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Genetically modified crops. 基因改造作物。",
+      "John Smith is genetically related to Jane Doe. 約翰·史密斯與無名氏有血緣關係。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geneticist",
+    "meaning": "遗传学家",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled geneticist to lead the workshop. 我們團隊邀請了一位有經驗的geneticist帶領工作坊。",
+      "The geneticist explained the problem clearly to everyone. 這位geneticist清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genetics",
+    "meaning": "遺傳學",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She decided to major in genetics because she is fascinated by DNA. 她決定主修遺傳學，因為她對 DNA 很著迷。",
+      "Modern genetics helps scientists to understand the causes of many diseases. 現代遺傳學幫助科學家了解許多疾病的原因。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "genie",
+    "meaning": "一種虛構的魔法生物，通常必須服從擁有其容器的凡人的命令。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "genie in a bottle 瓶子裡的精靈",
+      "The term genie refers to a fictional magical being that is typically bound to obey the commands of a mortal possessing its container. 精靈一詞指的是虛構的魔法生物，通常必須服從擁有其容器的凡人的命令。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genital",
+    "meaning": "四 生殖的,生殖器的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The manager gave a genital answer during the meeting. 經理在會議中給出了一個很genital的回答。",
+      "That is a genital way to handle the report. 那是處理報告時很genital的方法。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "genitals",
+    "meaning": "生殖器",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled genitals to lead the workshop. 我們團隊邀請了一位有經驗的genitals帶領工作坊。",
+      "The genitals explained the problem clearly to everyone. 這位genitals清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genius",
+    "meaning": "天才",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Albert Einstein was a world-famous scientific genius of his time. 阿爾伯特·愛因斯坦是他那個時代舉世聞名的科學天才。",
+      "Her ability to solve complex problems easily is a mark of genius. 她輕鬆解決難題的能力是天才的標誌。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "genocide",
+    "meaning": "有系統地、蓄意地摧毀一群人；通常是根據種族、宗教或國籍殺害大量人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A genocide will always be followed by the denial that it ever happened. 種族滅絕之後總會有人否認它曾經發生過。",
+      "The term genocide refers to the systematic and deliberate destruction of a group of people; typically by killing substantial numbers of them, on the basis of their ethnicity, religion, or nationality. 種族滅絕一詞是指有系統地、蓄意地毀滅一群人；通常是根據種族、宗教或國籍殺害大量的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genomic",
+    "meaning": "屬於或關於基因組的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as genomic is of or pertaining to a genome. 被描述為基因組的東西屬於或屬於基因組。",
+      "The word genomic is often used to describe a person, thing, or situation. 基因組這個詞常用來描述一個人、一個事物或一個情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genre",
+    "meaning": "類型、流派",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Science fiction is my favorite literary genre because it is so imaginative. 科幻小說是我最喜歡的文學類型，因為它非常有想像力。",
+      "The movie features a unique blend of several different film genres. 這部電影融合了幾種不同的電影流派（類型）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gens",
+    "meaning": "四",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gens in a short paragraph. 文章在一段短文中提到了 gens。",
+      "Our teacher wrote down gens with the note \"四\". 我們老師把 gens 記下來，並註記「四」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gent",
+    "meaning": "四率高的, 有能力的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The gent explained the problem clearly to everyone. 這位gent清楚地向大家說明了問題。",
+      "We asked the gent for advice before making a decision. 我們在做決定前先向這位gent請教。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gentle",
+    "meaning": "溫和的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The doctor had a gentle touch that made the patient feel at ease. 醫生的動作溫柔，讓病人感到安心。",
+      "There is a gentle breeze blowing from the mountains this evening. 今晚從山那邊吹來一陣微風。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gentleman",
+    "meaning": "紳士",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He is a true gentleman who always treats everyone with respect. 他是一位真正的紳士，總是對每個人都非常有禮貌。",
+      "The old gentleman was sitting on a bench and reading a newspaper. 那位老先生正坐在長椅上讀報紙。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gently",
+    "meaning": "温柔地，温和地",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "We reviewed the design gently to avoid mistakes. 我們很gently地檢查設計，以避免出錯。",
+      "The nurse checked the patient gently before bedtime. 護理師在睡前很gently地檢查病人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gentry",
+    "meaning": "受過教育、有良好教養的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "landed gentry 地主",
+      "English gentry 英國紳士"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "genuine",
+    "meaning": "真的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The ancient artifacts were found to be genuine and high-quality. 這些古代文物被發現是真品（真的）且高品質的。",
+      "I really appreciate your genuine concern and support for my project. 我非常感激妳對我專案的真誠關心與支持。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "genuinely",
+    "meaning": "以真誠的方式；真實地，真實地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I thought they were joking at first, but it seemed they were genuinely interested in the talk about glaciers. 我一開始以為他們在開玩笑，但看起來他們真的對談論冰川感興趣。",
+      "If someone acts genuinely, they do so in a way that is in a genuine manner; truthfully, truly. 如果一個人的行為是真誠的，那麼他就會以真誠的方式去做；說實話，真的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geo",
+    "meaning": "甸同名的人 (或物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled geo to lead the workshop. 我們團隊邀請了一位有經驗的geo帶領工作坊。",
+      "The geo explained the problem clearly to everyone. 這位geo清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geographic",
+    "meaning": "與地理有關（或地理）。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as geographic is pertaining to geography (or to geographics). 被描述為地理的東西與地理學（或地理）有關。",
+      "The word geographic is often used to describe a person, thing, or situation. 地理這個詞通常用來描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geographical",
+    "meaning": "地理的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report provides a detailed account of the geographical features of the region. 報告詳細說明了該地區的地理特徵。",
+      "The island's geographical location makes it an ideal center for regional trade. 該島的地理位置使其成為地區貿易的理想中心。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "geography",
+    "meaning": "地理",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She is very interested in physical geography and earth science. 她對自然地理與地球科學非常感興趣。",
+      "Geography is an essential subject for understanding the world. 地理是了解世界的重要學科。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "geologic",
+    "meaning": "地質學或地質時間尺度的或與之相關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as geologic is of, or relating to geology or a geologic time scale. 被描述為地質學的事物屬於地質學或地質時間尺度，或與地質學或地質時間尺度相關。",
+      "The word geologic is often used to describe a person, thing, or situation. 地質一詞通常用於描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geologist",
+    "meaning": "職業專門從事地質學，特別是專業或學術水平的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term geologist refers to a person whose occupation specializes in the science of geology, especially at a professional or academic level. 地質學家一詞是指專門從事地質科學的人，特別是在專業或學術層面。",
+      "The lesson introduced geologist as a useful term to understand. 本課介紹了地質學家這個易於理解的有用術語。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "geology",
+    "meaning": "一個地區的地質結構。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the geology of the Alps 阿爾卑斯山的地質",
+      "The term geology refers to the geological structure of a region. 地質學一詞是指一個地區的地質結構。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geometric",
+    "meaning": "面幾何 (學) 的，",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The coach gave a geometric answer during the meeting. 教練在會議中給出了一個很geometric的回答。",
+      "We need a more geometric plan before launch day. 在上線前，我們需要一個更geometric的計畫。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "geometrical",
+    "meaning": "四 幾何學的,幾何的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The guide gave a geometrical answer during the meeting. 導覽員在會議中給出了一個很geometrical的回答。",
+      "The feedback was clear and geometrical. 這份回饋清楚而且geometrical。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "geometrician",
+    "meaning": "幾何學家",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled geometrician to lead the workshop. 我們團隊邀請了一位有經驗的geometrician帶領工作坊。",
+      "During the meeting, the geometrician answered every question patiently. 會議中，這位geometrician耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "geometry",
+    "meaning": "幾何學",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The students are learning about circles and triangles in their geometry class. 學生們正在幾何課上學習圓和三角形。",
+      "Geometry is a fundamental branch of mathematics that explores shapes and spaces. 幾何學是數學的一個基本分支，探索形狀和空間。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "geophysical",
+    "meaning": "屬於或關於地球物理學的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as geophysical is of or pertaining to geophysics. 被描述為地球物理學的事物屬於地球物理學或與地球物理學有關。",
+      "The word geophysical is often used to describe a person, thing, or situation. 地球物理這個詞常用來描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geopolitical",
+    "meaning": "地緣政治的或與之相關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as geopolitical is of or relating to geopolitics. 被描述为地缘政治的事物属于地缘政治或与地缘政治相关。",
+      "The word geopolitical is often used to describe a person, thing, or situation. 地緣政治這個字常用來描述人、事或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "george",
+    "meaning": "喬治",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using george in two different sentences. 我們練習把 george 放進兩個不同句子裡。",
+      "The guide wrote down george with the note \"喬治\". 導覽員把 george 記下來，並註記「喬治」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geothermal",
+    "meaning": "與從地球內部儲層提取的熱能有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as geothermal is pertaining to heat energy extracted from reservoirs in the earth's interior. 地熱是指從地球內部的儲層中提取的熱能。",
+      "The word geothermal is often used to describe a person, thing, or situation. 地熱這個字常用來描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gerd",
+    "meaning": "格爾德",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The engineer wrote down gerd with the note \"格爾德\". 工程師把 gerd 記下來，並註記「格爾德」。",
+      "We discussed the term gerd in class today. 我們今天在課堂上討論了 gerd 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geriatric",
+    "meaning": "與老人有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The study examined the efficacy of geriatric interventions in reducing the frequency of falls among the elderly. 該研究檢驗了老年幹預措施在減少老年人跌倒頻率的功效。",
+      "Proper nutrition is a cornerstone of geriatric health, yet it is often overlooked in home-care settings. 適當的營養是老年人健康的基石，但在家庭照護環境中卻常被忽略。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "germ",
+    "meaning": "胚芽",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It's important to wash your hands to kill harmful germs and bacteria. 洗手以殺死有害細菌（胚芽，指細菌）是很重要的。",
+      "The researchers are studying the germs that manage to cause illness. 研究人員正研究那些竟然（能）引起疾病的細菌。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "german",
+    "meaning": "有同一個母親和父親；完整的（兄弟或姊妹）。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "brother-german 德國兄弟",
+      "Something described as german is having the same mother and father; a full (brother or sister). 被描述為德國人的東西是有同一個母親和父親；一個完整的（兄弟或姐妹）。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "germanic",
+    "meaning": "含4價鍺。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as germanic is containing germanium with a valence of 4. 被描述為日耳曼元素的物質含有價態為 4 的鍺。",
+      "The word germanic is often used to describe a person, thing, or situation. 日耳曼語這個字常用來形容人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gerund",
+    "meaning": "四 动名词",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Mia wrote down gerund with the note \"四 动名词\". Mia把 gerund 記下來，並註記「四 动名词」。",
+      "The article mentioned gerund in a short paragraph. 文章在一段短文中提到了 gerund。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ges",
+    "meaning": "四 降低身分的,失去尊嚴的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term ges in class today. 我們今天在課堂上討論了 ges 這個詞。",
+      "The nurse wrote down ges with the note \"四 降低身分的,失去尊嚴的\". 護理師把 ges 記下來，並註記「四 降低身分的,失去尊嚴的」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gest",
+    "meaning": "精液",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The nurse wrote down gest with the note \"精液\". 護理師把 gest 記下來，並註記「精液」。",
+      "We discussed the term gest in class today. 我們今天在課堂上討論了 gest 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gestate",
+    "meaning": "懷孕",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gestate in a short paragraph. 文章在一段短文中提到了 gestate。",
+      "We discussed the term gestate in class today. 我們今天在課堂上討論了 gestate 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gestation",
+    "meaning": "四妊娠期，怀孕期",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The success of the project depends on gestation. 這個專案是否成功取決於gestation。",
+      "We need more gestation to solve this issue effectively. 我們需要更多gestation才能有效解決這個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "geste",
+    "meaning": "蓋斯特",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using geste in two different sentences. 我們練習把 geste 放進兩個不同句子裡。",
+      "The coach wrote down geste with the note \"蓋斯特\". 教練把 geste 記下來，並註記「蓋斯特」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gesture",
+    "meaning": "手勢",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The host made a welcoming gesture and showed us to our seats. 主人做了一個歡迎的手勢，並帶我們就座。",
+      "Giving flowers is a beautiful and thoughtful romantic gesture. 送花是一種美麗且貼心的浪漫舉動。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "get",
+    "meaning": "得到",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I need to get some groceries from the supermarket. 我需要去超市買些雜貨。",
+      "What time did you get home last night? 你昨晚幾點到家？"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "geta",
+    "meaning": "四 傲慢的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term geta in class today. 我們今天在課堂上討論了 geta 這個詞。",
+      "The engineer wrote down geta with the note \"四 傲慢的\". 工程師把 geta 記下來，並註記「四 傲慢的」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geta hygienic",
+    "meaning": "四 卫生的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"geta hygienic\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「geta hygienic」，就把它記進筆記本。",
+      "You can use \"geta hygienic\" in emails and daily conversations. 你可以在 email 和日常對話中使用「geta hygienic」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "getaway",
+    "meaning": "與逃跑有關，如在車輛或計劃中。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "They'd been discussing their getaway plans for weeks. 他們已經討論了幾週的逃跑計畫。",
+      "Something described as getaway is pertaining to an escape, as in a vehicle or plans. 被描述為逃亡的事物與逃避有關，例如在車輛或計劃中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "getting",
+    "meaning": "得到",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We had to getting quickly to meet the deadline. 為了趕上期限，我們必須迅速getting。",
+      "The manager decided to getting after reading the new policy. 經理讀完新政策後決定要getting。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gey",
+    "meaning": "蓋伊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gey in a short paragraph. 文章在一段短文中提到了 gey。",
+      "We discussed the term gey in class today. 我們今天在課堂上討論了 gey 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "geyser",
+    "meaning": "加热水器",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled geyser to lead the workshop. 我們團隊邀請了一位有經驗的geyser帶領工作坊。",
+      "We asked the geyser for advice before making a decision. 我們在做決定前先向這位geyser請教。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gez",
+    "meaning": "四 無情的,毫不憐憫的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gez in a short paragraph. 文章在一段短文中提到了 gez。",
+      "The guide wrote down gez with the note \"四 無情的,毫不憐憫的\". 導覽員把 gez 記下來，並註記「四 無情的,毫不憐憫的」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghastly",
+    "meaning": "外表像鬼一樣；死亡般的；蒼白;蒼白;慘淡。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report describes the result as ghastly. 報告稱結果是可怕的。",
+      "Everyone noticed the ghastly tone of the message. 所有人都注意到了這則訊息的陰森語氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghee",
+    "meaning": "器使噁心,使作嘔",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please relax your ghee before starting the exercise. 開始運動前，請先放鬆你的ghee。",
+      "He hurt his ghee during basketball practice. 他在打籃球時弄傷了ghee。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghee fever",
+    "meaning": "發燒",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"ghee fever\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「ghee fever」，就把它記進筆記本。",
+      "Our teacher asked us to memorize \"ghee fever\" for next week. 老師要我們把「ghee fever」背起來，下週要用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghetto",
+    "meaning": "不體面、不雅觀或品質低劣的；便宜的;破舊的, 簡陋的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "My apartment's so ghetto, the rats and cockroaches filed a complaint with the city! 我的公寓太貧民窟了，老鼠和蟑螂向市政府投訴了！",
+      "I like to drive ghetto cars; if they break down you can just abandon them and pick up a new one! 我喜歡開貧民區的汽車；如果它們壞了，您可以拋棄它們併購買一個新的！"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghost",
+    "meaning": "鬼",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Do you believe in ghosts? 你相信有鬼嗎？",
+      "The old castle is said to be haunted by a ghost. 據說這座古堡有鬼魂出沒。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "ghost house",
+    "meaning": "鬼屋",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "After practice, I could use \"ghost house\" more confidently. 練習後，我更有自信地使用「ghost house」。",
+      "You can use \"ghost house\" in emails and daily conversations. 你可以在 email 和日常對話中使用「ghost house」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghost train",
+    "meaning": "魔鬼列車",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"ghost train\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「ghost train」非常好用。",
+      "We used \"ghost train\" in today's dialogue practice. 我們在今天的對話練習中用了「ghost train」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ghostly",
+    "meaning": "與靈魂有關；不屬肉體或世俗；精神的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a ghostly confessor 幽靈般的懺悔者",
+      "Something described as ghostly is relating to the soul; not carnal or secular; spiritual. 被描述為幽靈的東西與靈魂有關；不屬肉體或世俗；精神。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "giant",
+    "meaning": "巨大的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The new skyscraper is a giant structure that dominates the city skyline. 這座新摩天大樓是一個主宰城市天際線的巨大建築。",
+      "Pandas are often called giant pandas to distinguish them from other species. 熊貓通常被稱為大熊貓，以區別於其他物種。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "giblets",
+    "meaning": "含類的) 內臟",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using giblets in two different sentences. 我們練習把 giblets 放進兩個不同句子裡。",
+      "We discussed the term giblets in class today. 我們今天在課堂上討論了 giblets 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gid",
+    "meaning": "四",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using gid in two different sentences. 我們練習把 gid 放進兩個不同句子裡。",
+      "We discussed the term gid in class today. 我們今天在課堂上討論了 gid 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "giddiness",
+    "meaning": "自暈眩",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We need more giddiness to solve this issue effectively. 我們需要更多giddiness才能有效解決這個問題。",
+      "The success of the project depends on giddiness. 這個專案是否成功取決於giddiness。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "giddy",
+    "meaning": "感覺頭部有天旋地轉的感覺，有站不穩、快要摔倒的感覺；頭暈。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The man became giddy upon standing up so fast. 男人站起來的速度如此之快，頓時頭暈目眩。",
+      "Something described as giddy is feeling a sense of spinning in the head, causing a perception of unsteadiness and being about to fall down; dizzy. 所謂頭暈，就是感覺頭部有旋轉的感覺，感覺站不穩，快要摔倒了；暈眩的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gift",
+    "meaning": "禮物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She received a beautiful necklace as a birthday gift from her husband. 她收到丈夫送的一條漂亮項鍊作為生日禮物。",
+      "He has a natural gift for music and can play several instruments. 他有音樂天賦，會演奏好幾種樂器。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gift shop",
+    "meaning": "禮品店",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"gift shop\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「gift shop」非常好用。",
+      "We used \"gift shop\" in today's dialogue practice. 我們在今天的對話練習中用了「gift shop」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gift-wrap",
+    "meaning": "四将……包装成礼品",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using gift-wrap in two different sentences. 我們練習把 gift-wrap 放進兩個不同句子裡。",
+      "We discussed the term gift-wrap in class today. 我們今天在課堂上討論了 gift-wrap 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gifted",
+    "meaning": "天才",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She is a very gifted musician who can play several instruments well. 她是一位非常有才華（天才）的音樂家，會演奏幾種樂器。",
+      "The school offers a special program for highly gifted young students. 學校為極具天賦（天才）的年輕學生提供特別課程。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gigantic",
+    "meaning": "巨大",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The new skyscraper is a gigantic structure that dominates the city. 這座新摩天大樓是一個主宰城市的巨大建築。",
+      "The project required a gigantic effort and a lot of dedicated time. 該專案需要巨大的努力以及大量的投入時間。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "giggle",
+    "meaning": "傻笑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The little children were happily giggling in the neighborhood park. 孩子們正在社區公園裡開心地傻笑（咯咯笑）。",
+      "She couldn't help but giggle when she heard the funny joke tonight. 聽到那個有趣的笑話時，她今晚忍不住傻笑了起來。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gigi",
+    "meaning": "吉吉",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our teacher wrote down gigi with the note \"吉吉\". 我們老師把 gigi 記下來，並註記「吉吉」。",
+      "We discussed the term gigi in class today. 我們今天在課堂上討論了 gigi 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gigot",
+    "meaning": "熟的)羊腿",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide explained where the gigot usually lives. 導覽員解釋了gigot通常生活在哪裡。",
+      "We saw a gigot at the zoo last weekend. 上週末我們在動物園看到了gigot。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gilbert",
+    "meaning": "磁動勢的 CGS 單位等於 0.7958 安匝。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gilbert refers to the CGS unit of magnetomotive force equal to 0.7958 ampere-turns. 吉伯特一詞是指磁動勢的 CGS 單位，等於 0.7958 安匝。",
+      "The lesson introduced gilbert as a useful term to understand. 本課程介紹了吉爾伯特這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gill",
+    "meaning": "角",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Mia wrote down gill with the note \"角\". Mia把 gill 記下來，並註記「角」。",
+      "The article mentioned gill in a short paragraph. 文章在一段短文中提到了 gill。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gilt",
+    "meaning": "鍍金",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gilt in a short paragraph. 文章在一段短文中提到了 gilt。",
+      "We discussed the term gilt in class today. 我們今天在課堂上討論了 gilt 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gimmick",
+    "meaning": "用來達到某種目的的技巧或手段。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The box had a gimmick to make the coin appear to vanish. 盒子裡有一個裝置，可以讓硬幣看起來消失了。",
+      "The term gimmick refers to a trick or device used to attain some end. 術語「噱頭」是指用於達到某種目的的技巧或手段。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gin",
+    "meaning": "回杜松子酒",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The taste of the gin was richer than I expected. gin的味道比我想像中更濃郁。",
+      "We ordered gin for dinner at the seafood restaurant. 我們在海鮮餐廳晚餐時點了gin。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "ginger",
+    "meaning": "薑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She added some fresh grated ginger to the delicious hot tea now. 她現在在美味的熱茶裡加了一些新鮮的薑末。",
+      "Ginger is a key ingredient in many traditional Asian dishes today. 薑現今是許多傳統亞洲菜餚的主要食材。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gingerbread",
+    "meaning": "一些代用品；一些華而不實的東西。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gingerbread refers to something ersatz; something showy but insubstantial. 薑餅這個詞所指涉的東西。一些華而不實的東西。",
+      "The lesson introduced gingerbread as a useful term to understand. 本課介紹了薑餅作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gingili",
+    "meaning": "加芝麻，芝麻油",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term gingili in class today. 我們今天在課堂上討論了 gingili 這個詞。",
+      "The article mentioned gingili in a short paragraph. 文章在一段短文中提到了 gingili。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ginseng",
+    "meaning": "四人参，西洋参",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ginseng explained the problem clearly to everyone. 這位ginseng清楚地向大家說明了問題。",
+      "Our team invited a skilled ginseng to lead the workshop. 我們團隊邀請了一位有經驗的ginseng帶領工作坊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gio",
+    "meaning": "女用) 手提包",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor checked her gio during the exam. 醫師在檢查時查看了她的gio。",
+      "Please relax your gio before starting the exercise. 開始運動前，請先放鬆你的gio。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "giraffe",
+    "meaning": "長頸鹿",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The giraffe is the tallest land animal, known for its long neck. 長頸鹿是陸地上最高的動物，以其長脖子聞名。",
+      "We saw a family of giraffes eating leaves from the tops of trees. 我們看到一群長頸鹿在吃樹頂的葉子。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "girder",
+    "meaning": "面有木樑的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We asked the girder for advice before making a decision. 我們在做決定前先向這位girder請教。",
+      "During the meeting, the girder answered every question patiently. 會議中，這位girder耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "girdle",
+    "meaning": "環繞、環繞或包圍的東西；一個圓週。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the girdle of the world 世界的腰帶",
+      "The term girdle refers to That which girds, encircles, or encloses; a circumference. 術語「腰帶」指的是圍繞、環繞或包圍的東西；一個圓週。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "girl",
+    "meaning": "女孩",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The little girl was skipping happily down the street. 那個小女孩正開心地在街上蹦蹦跳跳。",
+      "She was a studious and intelligent girl throughout her school years. 她求學期間一直是一個勤奮且聰明的女孩。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "girlfriend",
+    "meaning": "女朋友",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned girlfriend in a short paragraph. 文章在一段短文中提到了 girlfriend。",
+      "We practiced using girlfriend in two different sentences. 我們練習把 girlfriend 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "girls",
+    "meaning": "辦公室小弟/ 小妹",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Many visitors take photos around the girls. 許多遊客會在girls周邊拍照。",
+      "We met at the girls before the event started. 活動開始前，我們先在girls碰面。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "girly",
+    "meaning": "屬於或關於年輕、有魅力的女性的；尤其是衣著暴露的人。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a girly calendar 少女日曆",
+      "Something described as girly is of, or pertaining to, a young, attractive woman; especially one who is scantily clad. 被描述為「少女氣」的事物是屬於或屬於年輕、有魅力的女性；尤其是衣著暴露的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gist",
+    "meaning": "較長或較複雜問題的主要思想或實質，或最本質的部分；癥結、核心、核心。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I don't wanna belabor my point; I'm sure you get the gist. 我不想贅述我的觀點；我相信你已經明白要點了。",
+      "The term gist refers to the main idea or substance, or the most essential part, of a longer or more complicated matter; the crux, the heart, the pith. 「要點」一詞是指較長或較複雜的事物的主要思想或實質，或最本質的部分；癥結、心臟、髓髓。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "give",
+    "meaning": "給",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Can you please give me a hand with these heavy suitcases? 你能幫我搬一下這些重的行李箱嗎？",
+      "It's better to give than to receive. 施比受更有福。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "giveaway",
+    "meaning": "免費贈送或發行的東西。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The T-shirt was a giveaway from the company that sells the software. 這件 T 卹是銷售該軟體的公司贈送的贈品。",
+      "The term giveaway refers to something that is given away or handed out for free. 贈品一詞是指免費贈送或分發的東西。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "given",
+    "meaning": "給定",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our teacher givened the plan carefully yesterday. 我們老師昨天仔細地given了計畫。",
+      "Our teacher decided to given after reading the new policy. 我們老師讀完新政策後決定要given。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "given name",
+    "meaning": "名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I heard \"given name\" in a podcast and wrote it in my notebook. 我在 Podcast 聽到「given name」，就把它記進筆記本。",
+      "After practice, I could use \"given name\" more confidently. 練習後，我更有自信地使用「given name」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "giver",
+    "meaning": "一個給予的人；捐贈者或貢獻者。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term giver refers to one who gives; a donor or contributor. 給予者一詞指的是給予的人；捐贈者或貢獻者。",
+      "The lesson introduced giver as a useful term to understand. 本課程介紹了給予者這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "giving",
+    "meaning": "給予",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please giving the message before noon. 請在中午前giving訊息。",
+      "The engineer givinged the message carefully yesterday. 工程師昨天仔細地giving了訊息。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gizzard",
+    "meaning": "脫,腑,砂圳",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gizzard in a short paragraph. 文章在一段短文中提到了 gizzard。",
+      "The manager wrote down gizzard with the note \"脫,腑,砂圳\". 經理把 gizzard 記下來，並註記「脫,腑,砂圳」。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "glacial",
+    "meaning": "屬於冰川的或與冰川有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "We examined the glacial deposits. 我們檢查了冰川沉積物。",
+      "Wang Shijin is a glacier expert and director of the Yulong Snow Mountain Glacial and Environmental Observation Research Station. 王世錦，冰河專家，玉龍雪山冰川與環境觀測研究站站長。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "glacier",
+    "meaning": "冰河",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The magnificent glacier has been slowly melting due to global warming. 宏偉的冰河因全球變暖而緩慢融化。",
+      "Tourists can take a guided tour to explore the surface of the ancient glacier. 遊客可以參加導覽行程，探索這座古老冰河的表面。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glad",
+    "meaning": "高興的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "I'm so glad to hear that you passed your driving test. 聽說你通過了駕駛考試，我真為你高興。",
+      "She was glad of the opportunity to speak with the manager in person. 她很高興有機會親自與經理交談。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gladden",
+    "meaning": "四使高归，使愉快",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The engineer decided to gladden after reading the new policy. 工程師讀完新政策後決定要gladden。",
+      "We had to gladden quickly to meet the deadline. 為了趕上期限，我們必須迅速gladden。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glade",
+    "meaning": "明亮的冰或雪表面。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a glade of ice 冰 林間空地 冰林間空地",
+      "The term glade refers to A bright surface of ice or snow. 林間空地一詞是指明亮的冰或雪表面。 林間空地一詞是指明亮的冰或雪表面。 林間空地是指明亮的冰或雪面。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gladiator",
+    "meaning": "透過與他人或野生動物進行殊死搏鬥來娛樂大眾的人（職業者或奴隸）。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gladiator refers to a person (professional or slave) who entertained the public by engaging in mortal combat with another, or with a wild animal. 角鬥士一詞是指透過與他人或野生動物進行殊死搏鬥來娛樂大眾的人（職業或奴隸）。",
+      "The lesson introduced gladiator as a useful term to understand. 本課程介紹了角鬥士作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gladly",
+    "meaning": "到高归地，欣然地",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Please read the instructions gladly before you start. 開始前請先gladly地閱讀說明。",
+      "The engineer replied gladly and solved the issue. 工程師gladly地回應，並解決了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gladness",
+    "meaning": "歡樂",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The success of the project depends on gladness. 這個專案是否成功取決於gladness。",
+      "The guide's gladness made the plan easier to follow. 導覽員的gladness讓計畫更容易執行。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gladness sein",
+    "meaning": "高興",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"gladness sein\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「gladness sein」非常好用。",
+      "We used \"gladness sein\" in today's dialogue practice. 我們在今天的對話練習中用了「gladness sein」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glam",
+    "meaning": "四暴食",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My family likes to try glam when traveling. 我們家旅行時喜歡嘗試glam。",
+      "We ordered glam for dinner at the seafood restaurant. 我們在海鮮餐廳晚餐時點了glam。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "glamor",
+    "meaning": "吸引力,魅力",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled glamor to lead the workshop. 我們團隊邀請了一位有經驗的glamor帶領工作坊。",
+      "The glamor explained the problem clearly to everyone. 這位glamor清楚地向大家說明了問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glamorize",
+    "meaning": "四美化",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The guide glamorized the report carefully yesterday. 導覽員昨天仔細地glamorize了報告。",
+      "Our team glamorizes this step whenever a problem appears. 每當出現問題時，我們團隊都會glamorize這個步驟。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glamorous",
+    "meaning": "迷人的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She looked absolutely glamorous in her long red silk dress at the party. 她穿著長紅絲綢禮服出現在派對上，看起來真是魅力四射。",
+      "He has a glamorous job that involves traveling all over the world. 他有一份令人羨慕的（迷人的）工作，足跡遍佈世界各地。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glamour",
+    "meaning": "魅力",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The actress brought a touch of old-fashioned glamour to the awards ceremony. 這位女演員為頒獎典禮增添了一抹老派的魅力。",
+      "He was attracted by the glamour and excitement of living in a big city. 他被大城市生活的魅力和刺激所吸引。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glance",
+    "meaning": "一眼",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He stole a quick glance at his watch during the long meeting. 他在漫長的會議期間偷看了一眼手錶。",
+      "At first glance, the two paintings manage to look very similar. 乍看之下，這兩幅畫看起來非常相似。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glancing",
+    "meaning": "掃視,匆匆看一眼",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our teacher glancinged the message carefully yesterday. 我們老師昨天仔細地glancing了訊息。",
+      "Our teacher decided to glancing after reading the new policy. 我們老師讀完新政策後決定要glancing。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gland",
+    "meaning": "腺",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned gland in a short paragraph. 文章在一段短文中提到了 gland。",
+      "We discussed the term gland in class today. 我們今天在課堂上討論了 gland 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glans",
+    "meaning": "掃視,匆匆看一眼",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pain in my glans disappeared after a short rest. 我稍微休息後，glans的疼痛就消失了。",
+      "The doctor checked her glans during the exam. 醫師在檢查時查看了她的glans。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glare",
+    "meaning": "怒視、刺眼的光",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The teacher glared at the student who was talking during the lecture. 老師怒視著那個在講座中說話的學生。",
+      "The sun's glare on the water was so bright that I had to wear sunglasses. 水面上刺眼的陽光太亮了，我不得不戴上太陽眼鏡。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glaring",
+    "meaning": "四 瞪視的,耀眼的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Our team glarings this step whenever a problem appears. 每當出現問題時，我們團隊都會glaring這個步驟。",
+      "Please glaring the design before noon. 請在中午前glaring設計。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glass",
+    "meaning": "玻璃",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Be careful not to break the glass; it's very fragile. 小心別打破玻璃，它非常易碎。",
+      "Would you like a glass of cold water or some juice? 你想要一杯冷水還是果汁？"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glass rod",
+    "meaning": "玻璃棒",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"glass rod\" in today's dialogue practice. 我們在今天的對話練習中用了「glass rod」。",
+      "After practice, I could use \"glass rod\" more confidently. 練習後，我更有自信地使用「glass rod」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glasses",
+    "meaning": "眼鏡",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I need to wear my glasses for reading and driving. 我讀書和開車時需要戴眼鏡。",
+      "She bought a new pair of stylish sunglasses for her vacation. 她為假期買了一副時尚的新太陽眼鏡。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glassware",
+    "meaning": "四玻璃器血",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please relax your glassware before starting the exercise. 開始運動前，請先放鬆你的glassware。",
+      "The doctor checked her glassware during the exam. 醫師在檢查時查看了她的glassware。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glassy",
+    "meaning": "屬於或類似玻璃，尤其是光滑且具有一定程度的反光性。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a resin tabletop with a glassy polish 帶有玻璃光澤的樹脂桌面",
+      "a fair day on a glassy sea 清澈的大海上美好的一天"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glaucoma",
+    "meaning": "四青光眼",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor checked her glaucoma during the exam. 醫師在檢查時查看了她的glaucoma。",
+      "The pain in my glaucoma disappeared after a short rest. 我稍微休息後，glaucoma的疼痛就消失了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glaze",
+    "meaning": "釉",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using glaze in two different sentences. 我們練習把 glaze 放進兩個不同句子裡。",
+      "We discussed the term glaze in class today. 我們今天在課堂上討論了 glaze 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glazed",
+    "meaning": "窗戶上有玻璃。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a shelter at the bus stop with glazed sides and rear 公車站的候車亭，側面和後面都是玻璃的",
+      "a glazed garden shed 玻璃花園棚"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glazing",
+    "meaning": "此類行為或過程中使用的材料；釉。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Before new glazier's putty can be applied, the various bits of old glazing must be scraped off. 在塗抹新玻璃膩子之前，必須刮掉舊玻璃的各種碎片。",
+      "The term glazing refers to The material used in such act or process; glaze. 術語“玻璃”是指在此類行為或過程中使用的材料；釉。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gleam",
+    "meaning": "閃爍、流露",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The moonlight began to gleam on the calm surface of the mountain lake. 月光開始在平靜的山湖水面上閃爍。",
+      "There was a gleam of excitement in her eyes when she heard the good news. 當她聽到好消息時，眼中流露（閃爍）出一絲興奮。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gleaming",
+    "meaning": "具有明亮的光澤。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The knight rode into battle with a gleaming sword. 騎士騎著一把閃閃發光的劍投入戰鬥。",
+      "The city skyline looked beautiful under the gleaming lights. 城市的天際線在閃爍的燈光下顯得格外美麗。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glee",
+    "meaning": "句構思,構想",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We asked the glee for advice before making a decision. 我們在做決定前先向這位glee請教。",
+      "During the meeting, the glee answered every question patiently. 會議中，這位glee耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "glee ivy",
+    "meaning": "長春藤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "\"glee ivy\" is useful when you want to sound natural in conversation. 當你想讓對話更自然時，「glee ivy」非常好用。",
+      "After practice, I could use \"glee ivy\" more confidently. 練習後，我更有自信地使用「glee ivy」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glen",
+    "meaning": "僻靜而狹窄的山谷，尤其是有河流穿過的山谷；山間窪地；戴爾。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term glen refers to a secluded and narrow valley, especially one with a river running through it; a depression between hills; a dale. 「glen」一詞指的是僻靜而狹窄的山谷，尤其是有河流穿過的山谷；山間窪地；一個山谷。",
+      "The lesson introduced glen as a useful term to understand. 本課介紹了 Glen 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glide",
+    "meaning": "滑動、滑翔",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The small boat began to glide slowly and peacefully down the narrow canal. 小船開始在狹窄的運河上緩慢而平靜地滑行（滑動）。",
+      "The eagle managed to glide high above the mountains without moving its wings. 老鷹成功地在山巒上空高高滑翔，無需扇動翅膀。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glider",
+    "meaning": "任何針對無動力飛行進行最佳化的比空氣重的飛機；滑翔機。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term glider refers to any heavier-than-air aircraft optimised for unpowered flight; a sailplane. 滑翔機一詞是指任何比空氣重且針對無動力飛行進行優化的飛機；一架滑翔機。",
+      "The lesson introduced glider as a useful term to understand. 本課程介紹了滑翔機作為一個需要理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "glimmer",
+    "meaning": "微弱的光；昏暗的光芒。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The glimmer of the fireflies was pleasant to watch. 螢火蟲的閃爍令人賞心悅目。",
+      "The term glimmer refers to a faint light; a dim glow. 術語“微光”是指微弱的光。昏暗的光芒。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glimpse",
+    "meaning": "一瞥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I managed to catch a quick glimpse of the famous actor earlier today. 我今天一早竟然（設法）瞥見了那位著名演員一眼（一瞥）。",
+      "The sunset provided a beautiful glimpse of the natural world glory. 日落展現了大自然輝煌景觀的美麗一瞥。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glitter",
+    "meaning": "閃爍、光輝",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The diamond ring began to glitter under the bright lights of the store. 鑽戒在商店明亮的燈光下開始閃爍。",
+      "Everything that glitters is not gold, as the famous old saying goes. 閃閃發光的不一定都是金子，正如那句著名的古語所言。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "global",
+    "meaning": "全球的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Climate change is a global issue that requires global cooperation. 氣候變化是一個需要全球合作的全球性議題。",
+      "The company has built a very strong global distribution network. 公司已經建立了非常強大的全球分銷網絡。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "globally",
+    "meaning": "在所有地點或情況下。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "If someone acts globally, they do so in a way that is in all places or situations. 如果某人在全球範圍內採取行動，那麼他們在所有地點或情況下都會以同樣的方式行事。",
+      "The speaker responded globally during the discussion. 演講者在討論中做出了全球性的回應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "globe",
+    "meaning": "地球",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The company aims to expand its business across the entire globe now. 公司現在旨在將業務擴展到全球（地球）。",
+      "Climate change is a major concern for governments all over globe. 氣候變化是全球各國政府的主要憂慮。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gloom",
+    "meaning": "陰暗、憂鬱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The room was filled with gloom, as the only light came from a small candle. 房間裡一片陰暗，唯一的光源來自一支小蠟燭。",
+      "A sense of gloom fell over the office following the news of the budget cuts. 削減預算的消息讓辦公室籠罩在憂鬱（沈悶）的氣氛中。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gloomy",
+    "meaning": "陰暗的、沮喪的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The gloomy weather and constant rain began to depress her after a few days. 陰沈的（陰暗的）天氣和連日的降雨幾天後開始讓她感到沮喪。",
+      "The economic outlook for the next year remains gloomy and uncertain. 明年的經濟前景依然黯淡（沮喪的）且充滿不確定性。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glorify",
+    "meaning": "使（某事）看起來比實際情況更光榮；毫無根據地認為某事或某人優秀。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Some movies glorify mobsters by making them seem like the cool kids around the block. 有些電影透過讓黑幫看起來像街區裡很酷的孩子來美化他們。",
+      "To glorify means to make (something) appear to be more glorious than it is; regard something or someone as excellent baselessly. 榮耀意味著使（某物）看起來比實際情況更榮耀；毫無根據地認為某事或某人優秀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glorious",
+    "meaning": "輝煌",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The view of the city from the mountain top was truly glorious today. 從山頂俯瞰城市的景色今天簡直太輝煌（壯麗）了。",
+      "The athlete was proud to win a glorious victory for his country. 那位運動員為能代表國家贏得一場輝煌的勝利感到自豪。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glory",
+    "meaning": "榮耀",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The athlete was proud to represent his country and win glory. 運動員為能代表國家並贏得榮耀感到自豪。",
+      "The old castle has lost much of its former glory over time. 這座舊城堡隨著時間的流逝失去了往日的許多榮光。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gloss",
+    "meaning": "光澤，注釋",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The new car has a beautiful high-gloss finish. 這輛新車有著漂亮的高光澤飾面。",
+      "She applied some lip gloss before going out. 她出門前抹了一些唇彩。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glossy",
+    "meaning": "具有光滑、絲綢般的反光（閃亮）表面。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "glossy magazine 光面雜誌",
+      "Something described as glossy is having a smooth, silklike, reflective (shiny) surface. 所謂光澤是指具有光滑、絲狀、反光（有光澤）的表面。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glove",
+    "meaning": "手套",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Don't forget to wear your gloves; it's freezing outside. 別忘了戴手套；外面冷極了。",
+      "He wore a pair of thick leather gloves for gardening. 他戴著一雙厚厚的皮手套做園藝。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glove(s)",
+    "meaning": "手套）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Don't forget to wear your gloves; it's freezing outside today. 別忘了戴上手套，今天外面冷極了。",
+      "The goalkeeper made a spectacular save with his gloved hands. 守門員用戴著手套的手做了一次精彩的撲救。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "glover",
+    "meaning": "製造或銷售手套的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term glover refers to a person who makes or sells gloves. 手套一詞是指製造或銷售手套的人。",
+      "The lesson introduced glover as a useful term to understand. 本課程介紹了 glover 作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glow",
+    "meaning": "輝光",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The setting sun cast a beautiful warm glow across the landscape. 落日為大地灑下了一層美麗溫暖的光輝。",
+      "I could see the soft glow of the television in the dark room. 我能看到黑暗房間裡電視機發出的微弱光芒。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glower",
+    "meaning": "怒目而視",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The manager glowered at the employee for being late again. 經理對再次遲到的員工怒目而視。",
+      "He gave me a long, silent glower. 他對我長時間地怒視，一言不發。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "glucose",
+    "meaning": "葡萄糖",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Glucose is a major source of energy for the body's cells. 葡萄糖是人體細胞的主要能量來源。",
+      "The doctor monitored the patient's blood glucose levels. 醫生監測了病人的血糖水平。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glue",
+    "meaning": "膠水",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I used some strong glue to fix the broken leg of the chair. 我用一些強力膠修好了椅子斷掉的腿。",
+      "The children were using glue and glitter to decorate their cards. 孩子們正在用膠水和亮粉裝飾他們的卡片。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "glum",
+    "meaning": "憂鬱的，悶悶不樂的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He looked glum after hearing the test results. 聽到考試結果後，他看起來悶悶不樂。",
+      "Why are you looking so glum today? 你今天為什麼看起來這麼憂鬱？"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glut",
+    "meaning": "過剩，過多。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "a glut of the market 市場供過於求",
+      "The term glut refers to An excess, too much. 術語「過剩」指的是過量、太多。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gluten",
+    "meaning": "穀物中的主要蛋白質，尤其是小麥；負責麵團的彈性和烤麵包的結構。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gluten refers to the major protein in cereal grains, especially wheat; responsible for the elasticity in dough and the structure in baked bread. 麩質一詞是指穀物中的主要蛋白質，尤其是小麥；負責麵團的彈性和烤麵包的結構。",
+      "The lesson introduced gluten as a useful term to understand. 本課介紹了麩質作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "glutton",
+    "meaning": "大胃王，酷愛...的人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He is a real glutton for chocolate cake. 他是個真正的巧克力蛋糕狂。",
+      "She is a glutton for punishment and always takes on extra work. 她是個自討苦吃的人，總是承擔額外的工作。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gluttony",
+    "meaning": "暴飲暴食，貪食",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Gluttony is considered one of the seven deadly sins in some cultures. 在某些文化中，貪食被認為是七宗罪之一。",
+      "His gluttony led to several health problems over time. 他的暴飲暴食隨時間導致了幾個健康問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gnash",
+    "meaning": "（因憤怒等）咬牙切齒",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He gnashed his teeth in anger after hearing the decision. 聽到決定後，他憤怒地咬牙切齒。",
+      "The pain made him gnash his teeth. 疼痛讓他咬緊牙關。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gnaw",
+    "meaning": "囓，啃",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The dog was gnawing on a bone in the garden. 狗正在花園裡啃骨頭。",
+      "The mouse had gnawed a hole in the bag. 老鼠在袋子上啃了一個洞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gnawing",
+    "meaning": "啃咬某物的過程。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the gnawings of mice 老鼠的啃咬",
+      "The term gnawing refers to The process by which something is gnawed. 啃咬一詞是指啃咬某物的過程。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gnome",
+    "meaning": "銀行家，尤其是一位神秘的國際銀行家。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the gnomes of Zurich 苏黎世的侏儒",
+      "The term gnome refers to a banker, especially a secretive international one. 侏儒一詞指的是銀行家，尤其是一位神秘的國際銀行家。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "go",
+    "meaning": "去",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We are planning to go to Japan for our summer vacation. 我們計劃去日本度暑假。",
+      "I have to go now, or I'll miss the last train home. 我現在得走了，否則我會趕不上最後一班回家的火車。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goal",
+    "meaning": "目標",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My main goal this year is to improve my English speaking skills. 我今年的主要目標是提升我的英文聽說能力。",
+      "He scored a spectacular goal in the final minutes of the match. 他在比賽最後幾分鐘踢進了一個精彩絕倫的球。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goalie",
+    "meaning": "擔任守門員、照顧球門、看管球網。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To goalie means to act as a goalie, to tend the goals, to mind the net. 守門員的意思是擔任守門員，負責射門，負責守門。",
+      "People may goalie in different situations depending on the context. 根據具體情況，人們可能會在不同的情況下守門員。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goalkeeper",
+    "meaning": "守門員",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The talented goalkeeper managed to save several difficult shots during the match. 那位天才守門員在比賽中成功救下了幾次險球。",
+      "He decided to become a goalkeeper because he enjoyed the pressure and challenge. 他決定成為一名守門員，因為他喜歡壓力和挑戰。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goat",
+    "meaning": "山羊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A family of mountain goats was climbing the steep rocky slopes. 一群山羊正攀爬在陡峭的岩石坡上。",
+      "Goat milk is considered very healthy and easy to digest for many. 對許多人來說，山羊奶被認為是非常健康且易於消化的。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goatee",
+    "meaning": "山羊鬍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He decided to grow a goatee during his holiday. 他決定在假期期間留山羊鬍。",
+      "The man with the goatee was wearing a dark suit. 那個留山羊鬍的男人穿著一套深色西裝。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goblet",
+    "meaning": "高腳杯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The wine was served in a beautiful crystal goblet. 葡萄酒盛放在漂亮的水晶高腳杯中。",
+      "They raised their goblets to make a toast to the new couple. 他們舉起高腳杯向這對新人乾杯。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goblin",
+    "meaning": "一種惡毒而怪誕的小型人形生物，通常與獸人或巨魔聯繫在一起。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term goblin refers to a malevolent and grotesque diminutive humanoid, often associated with orcs or trolls. 妖精一詞指的是一種惡毒且怪誕的小型人形生物，通常與獸人或巨魔聯繫在一起。",
+      "The lesson introduced goblin as a useful term to understand. 本課介紹了妖精這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "god",
+    "meaning": "神，天主",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Many people pray to God for guidance and support. 許多人向天主祈求指引和支持。",
+      "The ancient Greeks believed in many different gods and goddesses. 古希臘人信仰許多不同的男神和女神。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "god/goddess",
+    "meaning": "男神/女神",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "In ancient Greek mythology, Athena was the goddess of wisdom. 在古希臘神話中，雅典娜是智慧女神。",
+      "They prayed to God for strength and guidance during the difficult times. 他們祈求上帝在困難時期給予力量和指引。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "godfather",
+    "meaning": "在促進某事物發展中發揮關鍵作用的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term godfather refers to someone who plays a key role in fostering the development of something. 教父一詞指的是促進某事物發展中發揮關鍵作用的人。",
+      "The lesson introduced godfather as a useful term to understand. 本課程介紹了「教父」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "godly",
+    "meaning": "以敬虔的方式；虔誠地；虔誠地；正義地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "All that will live godly in Christ Jesus shall suffer persecution. — 2. Tim. iii. 12. 凡在基督耶穌裡敬虔度日的人都會遭受迫害。 — 2.提姆.三. 12.",
+      "If someone acts godly, they do so in a way that is in a godly manner; piously; devoutly; righteously. 如果有人敬虔行事，他就會以敬虔的方式行事；虔誠地；虔誠地；正義地。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "going",
+    "meaning": "地面是否適合騎乘、步行等",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The going was very difficult over the ice. 在冰面上行走非常困難。",
+      "The term going refers to The suitability of ground for riding, walking etc. 術語「行走」是指地面是否適合騎行、步行等。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gold",
+    "meaning": "金子",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The wedding ring is made of pure gold and has a beautiful diamond. 婚戒是由純金製成的，上面鑲有一顆漂亮的鑽石。",
+      "The athlete was proud to win a gold medal for his country. 那位運動員為能代表國家贏得金牌感到自豪。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "golden",
+    "meaning": "金的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The sunrise cast a beautiful golden light across the ocean. 日出在海面上灑下了美麗的金色光芒。",
+      "This is a golden opportunity for you to advance your career. 這是你晉升事業的一個黃金機會。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goldfish",
+    "meaning": "金魚",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The child was proud of her new pet goldfish. 孩子為她的新寵物金魚感到自豪。",
+      "There were several bright orange goldfish swimming in the pond. 池塘裡有幾條亮橘色的金魚在游動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goldie",
+    "meaning": "顏色是金色的東西。金鷹。金鴴。金翅雀。一條金魚。一隻黃金獵犬。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term goldie refers to something which is golden in color. The golden eagle. The golden plover. The goldfinch. A goldfish. A Golden Retriever. 「goldie」一詞指的是顏色呈金色的東西。金鷹。金鴴。金翅雀。一條金魚。一隻黃金獵犬。",
+      "The lesson introduced goldie as a useful term to understand. 本課程介紹了 Goldie 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "golf",
+    "meaning": "高爾夫球",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He plays golf with his friends every Sunday morning at the club. 他每週日早上都在俱樂部與朋友打高爾夫球。",
+      "The city is famous for its high-quality professional golf courses. 這座城市以其高品質的專業高爾夫球場聞名。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "golfer",
+    "meaning": "參加代碼高爾夫或正規表示式高爾夫的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term golfer refers to one who takes part in code golf or regex golf. 高爾夫球手一詞是指參加代碼高爾夫或正規表示式高爾夫的人。",
+      "The lesson introduced golfer as a useful term to understand. 本課程介紹了高爾夫球手這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goliath",
+    "meaning": "Goliath 的替代字母大小寫形式。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term goliath refers to alternative letter-case form of Goliath. 術語“歌利亞”是指“歌利亞”的替代字母大小寫形式。",
+      "The lesson introduced goliath as a useful term to understand. 本課介紹了歌利亞這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gone",
+    "meaning": "已不復存在，已過去。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The days of my youth are gone. 我的青春歲月已經一去不復返了。",
+      "All the little shops that used to be here are now gone. 以前這裡的所有小商店現在都消失了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gong",
+    "meaning": "使用鑼或類似裝置發送訊號。停止（原指才藝表演中的參賽者；後來指表演者、演講者）。警告。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The driver gonged the pedestrian crossing the tracks, but the pedestrian didn't stop. 司機催促行人過馬路，但行人並沒有停下來。",
+      "To gong means to send a signal to, using a gong or similar device. To halt (originally, a contestant in a talent show; later, a performer, a speaker). To warn. 鑼意味著使用鑼或類似設備發送訊號。停止（原指才藝表演中的參賽者；後來指表演者、演講者）。警告。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "good",
+    "meaning": "好的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is a very good friend who is always there for me. 他是一位總是在我身邊的好朋友。",
+      "The weather is good today, so let's go for a picnic in the park. 今天天氣很好，我們去公園野餐吧。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goodbye",
+    "meaning": "再見",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She waved goodbye to her parents as the train left the station. 火車離開車站時，她向父母揮手告別。",
+      "It's always hard to say goodbye to someone you love. 向心愛的人告別總是件難事。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goodman",
+    "meaning": "一個丈夫；房子或家庭的主人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term goodman refers to a husband; the master of a house or family. Goodman一詞指的是丈夫；房子或家庭的主人。",
+      "The lesson introduced goodman as a useful term to understand. 本課程介紹了 Goodman 作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goods",
+    "meaning": "商品",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The huge cargo ship was carrying a wide variety of imported goods. 巨大的貨輪載著各式各樣的進口商品。",
+      "The local market sells fresh fruit and vegetables and other goods. 當地市場銷售新鮮的水果、蔬菜與其他商品。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goodwill",
+    "meaning": "善意、友好",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The international summit aimed to promote peace and goodwill between nations. 國際峰會旨在促進各國之間的和平與友好（善意）。",
+      "The company's positive reputation and goodwill are its most valuable assets. 公司良好的聲譽和商譽是其最寶貴的資產。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "goody",
+    "meaning": "用來表示高興或喜悅。",
+    "partOfSpeech": "exclamation",
+    "sentences": [
+      "Oh goody, ice cream! 哦，天哪，冰淇淋！",
+      "The lesson introduced goody as a useful term to understand. 本課介紹了 Goody 作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goodyear",
+    "meaning": "在文法上需要名詞的片語中用作咒語。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term goodyear refers to used as an expletive in phrases grammatically requiring a noun. 術語“固特異”是指在語法上需要名詞的短語中用作咒語。",
+      "The lesson introduced goodyear as a useful term to understand. 本課介紹了固特異這個術語，它是一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goof",
+    "meaning": "錯誤 或 錯誤。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I made a goof in that last calculation. 我在最後的計算中 犯了一個錯誤 。 我在最後的計算中犯了一個錯誤。 我在最後一次計算中犯了一個錯誤。",
+      "The term goof refers to A mistake or error. 術語「錯誤」指的是 錯誤 或 錯誤。 術語“goof”指的是錯誤或失誤。 術語“錯誤”是指錯誤或錯誤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goofy",
+    "meaning": "右腳向前騎行。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as goofy is riding with the right foot forward. 右腳向前騎行被描述為愚蠢的事情。",
+      "The word goofy is often used to describe a person, thing, or situation. 「goofy」這個字常用來形容一個人、一件事或一種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goon",
+    "meaning": "中日漢字發音層，被認為是日本使用的第一個中日漢字閱讀類型。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The Buddhist term 権化 is read as gonge, using the kanji's goon readings. The Buddhist term 権化 is read as gonge, using the kanji's goon readings.",
+      "The term goon refers to a Sino-Japanese kanji pronunciation layer, considered the first Sino-Japanese kanji reading type used in Japan. goon 一詞指的是中日漢字發音層，被認為是日本使用的第一個中日漢字閱讀類型。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "goose",
+    "meaning": "鵝",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A flock of wild geese was flying south for the cold winter. 一群大雁正向南飛去度過寒冬。",
+      "We saw several white geese swimming peacefully in the pond. 我們看到幾隻白鵝在池塘裡平靜地游泳。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gore",
+    "meaning": "用角或像牙刺穿。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The bull gored the matador. 公牛用角頂傷了鬥牛士。",
+      "To gore means to pierce with a horn or tusk. To gore 的意思是用角或獠牙刺穿。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gorge",
+    "meaning": "通道或通道被障礙物阻塞或阻塞；障礙本身。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "an ice gorge in a river 河中的冰峽谷",
+      "The term gorge refers to a choking or filling of a channel or passage by an obstruction; the obstruction itself. 峽谷一詞是指通道或通道被障礙物堵塞或充滿。障礙本身。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gorgeous",
+    "meaning": "極其美麗的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The bride looked absolutely gorgeous in her white lace wedding dress. 新娘穿著白色蕾絲婚紗看起來真是美極了。",
+      "The sunset last night was gorgeous, with vibrant colors across the sky. 昨晚的日落非常華麗（極其美麗），天空中色彩繽紛。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gorilla",
+    "meaning": "大猩猩",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The project aims to protect the mountain gorillas and their natural habitats. 該專案旨在保護山地大猩猩及其自然棲息地。",
+      "Gorillas are intelligent and powerful animals that live in social groups. 大猩猩是生活在群體中的聰明且強壯的動物。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gory",
+    "meaning": "可恥的，而且常常令人不快。 （我們應該刪除這個感覺嗎？）",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Her autobiography gives all the gory details of her many divorces. 她的自傳講述了她多次離婚的所有血腥細節。",
+      "The report describes the result as gory. 報告稱這一結果是血腥的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gosh",
+    "meaning": "驚訝或熱情的溫和表達。",
+    "partOfSpeech": "exclamation",
+    "sentences": [
+      "Gosh, I didn’t realize I’d cause so much trouble! 天哪，我沒想到我會惹這麼多麻煩！",
+      "Gosh, I’d love to go to that concert! 天哪，我很想去聽那場音樂會！"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gospel",
+    "meaning": "福音、絕對真理",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The choir performed a selection of powerful and uplifting gospel songs. 合唱團演唱了一系列強而有力且激勵人心的福音歌曲。",
+      "He believed that everything written in the book was the absolute gospel truth. 他相信書中寫的一切都是絕對的真理（福音）。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gossip",
+    "meaning": "閒話",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You shouldn't listen to office gossip; it's often not true. 你不應該聽信辦公室的閒言碎語；那通常不是真的。",
+      "The magazine is full of gossip about famous movie stars. 這本雜誌充斥著關於著名影星的八卦。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gourd",
+    "meaning": "葫蘆，瓜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The garden is filled with pumpkins and other varieties of gourds. 花園裡長滿了南瓜和其他各種瓜類。",
+      "Dried gourds can be used as decorative bowls or containers. 乾葫蘆可以用作裝飾碗或容器。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gourmet",
+    "meaning": "吃喝行家；認真對待食物的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gourmet refers to a connoisseur in eating and drinking; someone who takes their food seriously. 美食家一詞指的是飲食方面的鑑賞家；認真對待食物的人",
+      "The lesson introduced gourmet as a useful term to understand. 本課程介紹了「美食」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "govern",
+    "meaning": "治理",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The country is governed by a democratically elected parliament. 國家由民主選舉產生的議會治理。",
+      "Emotions should not govern your decisions in a business setting. 在商業環境中，情緒不應主導你的決定。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "governance",
+    "meaning": "治理的過程或權力；政府或行政部門。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term governance refers to the process, or the power, of governing; government or administration. 治理一詞是指治理的過程或權力；政府或行政部門。",
+      "The lesson introduced governance as a useful term to understand. 本課程介紹了治理作為一個需要理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "governess",
+    "meaning": "一位 女士 向自己家裡的 教育 教育 <a rel=\"mw:WikiLink\" href=\"/wiki=\"ren\" 兒童。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term governess refers to A woman paid to educate children in their own home. 家庭教師這個字是指在自己家裡為 教育 孩子 wikiman:Wikirel=\"m/wiki=\"m\" href=\"m/Cadman\" href/wikiman)。 家庭女教師一詞是指受僱在自己家中教育孩子的婦女。 家庭教師這個字是指在自己家裡為教育孩子wikiman:Wikirel=\"m/wiki=\"m\" href=\"m/Cadman\" href/wikiman)。",
+      "The lesson introduced governess as a useful term to understand. 本課程介紹了家庭女教師這個易於理解的有用術語。 本課程介紹了家庭女教師這個易於理解的有用術語。 本課程介紹了家庭女教師這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "government",
+    "meaning": "政府",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The government is taking steps to address environmental pollution. 政府正採取措施處理環境污染問題。",
+      "He works as a senior advisor for the local provincial government. 他擔任當地省政府的高級顧問。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "governmental",
+    "meaning": "與政府有關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "governmental agency 政府機構",
+      "governmental decision 政府決定"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "governor",
+    "meaning": "州長",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The governor addressed the citizens on television last night. 州長昨晚在電視上對公民們發表了演講。",
+      "She was recently elected as the first female governor of the state. 她最近被選為該州的第一位女州長。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gown",
+    "meaning": "袍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She wore a beautiful long white silk gown to the grand gala dinner. 她穿了一件漂亮的白色長絲綢袍（禮服）參加盛大的正式晚宴。",
+      "The graduates were proudly wearing their academic gowns and caps. 畢業生們正自豪地穿著他們的學士袍與帽子。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grab",
+    "meaning": "抓住",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please grab your coat and umbrella; we need to leave now. 請拿好妳的大衣和傘；我們現在得走了。",
+      "I managed to grab a quick snack before heading to the meeting. 我在去開會前設法快速吃了一點點心。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grabble",
+    "meaning": "摸索，抓取",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He managed to grabble the keys from the bottom of his bag. 他設法從包包底部摸索到了鑰匙。",
+      "She grabbled for support as she tripped over the stone. 她在被石頭絆倒時胡亂抓取支撐物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grace",
+    "meaning": "優雅",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She managed to handle the difficult situation with grace and poise. 她優雅且沉著地（優雅）處理了那個困難的局面。",
+      "The ancient statue represents the beauty and grace of human body. 這座古代雕像展現了人體之美與優雅。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graceful",
+    "meaning": "優美",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The figure skater made a very graceful move on the frozen ice now. 花式滑冰選手現在在冰面上做出了一個非常優美（優雅）的動作。",
+      "The swan was swimming gracefully in the calm waters of the pond. 天鵝正在池塘平靜的水面上優美地游著。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gracious",
+    "meaning": "親切",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The host was very gracious and made all the guests feel welcome. 主人非常親切（和藹），讓所有的客人都感到賓至如歸。",
+      "She gave a gracious reply to the manager's polite question today. 她對經理今天禮貌的提問做出了一個親切的回應。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graciously",
+    "meaning": "以親切的方式；帶著優雅和禮貌。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The team responded graciously to the change. 團隊對這項變化做出了慷慨的回應。",
+      "She handled the problem graciously during the meeting. 她在會議期間大方地處理了這個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "grad",
+    "meaning": "Grad 的替代字母大小寫形式。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grad refers to alternative letter-case form of Grad. 術語 grad 是指 Grad 的替代字母大小寫形式。",
+      "The lesson introduced grad as a useful term to understand. 本課程介紹了「畢業生」這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grade",
+    "meaning": "年級",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My younger brother is currently in the third grade of primary school. 我弟弟目前就讀小學三年級。",
+      "She worked very hard and received a top grade on her final exam. 她非常努力，在期末考試中拿到了最高分。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graded",
+    "meaning": "經過分級機平滑處理。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report describes the result as graded. 該報告將結果描述為分級的。",
+      "Everyone noticed the graded tone of the message. 每個人都注意到了這則訊息的分級語氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grader",
+    "meaning": "評分者，或透過其完成或促進評分的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the graders of a school examination 學校考試的評分者",
+      "The term grader refers to one who grades, or that by means of which grading is done or facilitated. 術語「評分者」是指評分的人，或透過其完成或促進評分的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gradient",
+    "meaning": "以規則的傾斜度上升或下降。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "the gradient line of a railroad 鐵路的坡度線",
+      "Something described as gradient is rising or descending by regular degrees of inclination. 被描述為梯度的東西是按規則的傾斜度上升或下降。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gradual",
+    "meaning": "漸進的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "There has been a gradual improvement in his health over the weeks. 在過去的幾週裡，他的健康狀況有了逐漸的改善。",
+      "The transition to the new system will be a gradual process. 向新系統的過渡將是一個漸進的過程。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gradually",
+    "meaning": "循序漸進；進展緩慢；慢慢地。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "If someone acts gradually, they do so in a way that is in a gradual manner; making slow progress; slowly. 如果某人採取漸進的方式，那麼他們會以漸進的方式這樣做；進展緩慢；慢慢地。",
+      "The speaker responded gradually during the discussion. 發言者在討論中逐漸做出回應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "graduate",
+    "meaning": "畢業",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My elder sister is a recent graduate of a top university in Taipei. 我姐姐是台北一所頂尖大學的應屆畢業生。",
+      "The graduation ceremony was attended by thousands of graduates. 數以千計的畢業生參加了畢業典禮。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graduation",
+    "meaning": "畢業",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Everyone gathered together to attend the university graduation today. 大家今天都聚在一起參加大學畢業典禮。",
+      "Next year marks the tenth anniversary of his high school graduation. 明年是他高中畢業十週年。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graft",
+    "meaning": "工作；需要努力的勞動。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We had to put in a lot of hard graft to get the job done. 我們必須投入大量的精力才能完成這項工作。",
+      "The term graft refers to work; labor requiring effort. 「嫁接」一詞指的是工作；需要努力的勞動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "graham",
+    "meaning": "研磨小麥漿果（包括麩皮）製成的麵粉。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term graham refers to flour made by grinding wheat berries including the bran. 全麥一詞是指研磨包括麩皮在內的小麥漿果製成的麵粉。",
+      "The lesson introduced graham as a useful term to understand. 本課程介紹了格雷厄姆這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grail",
+    "meaning": "熱切尋求或尋求的東西。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Becoming an astronaut was his grail. 成為太空人是他的夢想。",
+      "The term grail refers to something eagerly sought or quested for. 聖杯一詞指的是熱切尋求或尋求的東西。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grain",
+    "meaning": "糧食",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Wheat and rice are the most important types of grain crops. 小麥和稻米是最重要的穀類作物種類。",
+      "The sand on the beach was very fine, almost like grains of sugar. 海灘上的沙子非常細，幾乎像糖粒一樣。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gram",
+    "meaning": "克",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There are one thousand grams in one kilogram. 一公斤等於一千公克。",
+      "The recipe requires fifty grams of butter and two eggs. 這份食譜需要五十公克的奶油和兩個雞蛋。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grammar",
+    "meaning": "文法",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Reading books is a great way to improve your English grammar now. 讀書是提升妳英文文法的一種好方法。",
+      "The teacher corrected the student's grammar errors during class. 老師在課堂上糾正了學生的文法錯誤。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grammatical",
+    "meaning": "語法的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report contained several serious grammatical errors and typos. 報告包含了幾項嚴重的語法（文法）錯誤與拼寫錯誤。",
+      "You should pay close attention to grammatical structure in writing. 寫作時妳應密切注意語法結構。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grand",
+    "meaning": "盛大",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The grand entrance of the hotel was decorated with fresh flowers. 飯店宏偉的入口裝飾著鮮花。",
+      "They are planning a grand celebration for their anniversary. 他們正計劃為他們的週年紀念日舉行盛大的慶祝活動。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grandchild",
+    "meaning": "某人的孩子的孩子。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grandchild refers to a child of someone's child. 孫子一詞是指某人孩子的孩子。",
+      "The lesson introduced grandchild as a useful term to understand. 本課介紹了孫子這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grandeur",
+    "meaning": "偉大 或 輝煌 的狀態；",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grandeur refers to The state of being grand or splendid; magnificence. 宏偉一詞指的是 宏偉 或 輝煌 的狀態； 輝煌 的狀態； 宏偉一詞是指宏偉或輝煌的狀態；壯麗。 宏偉指的是宏偉或輝煌的狀態；輝煌的狀態；",
+      "The lesson introduced grandeur as a useful term to understand. 本課介紹了「宏偉」這個術語，它是一個需要理解的有用術語。 本課介紹了「宏偉」這個術語，它是一個需要理解的有用術語。 本課介紹了「宏偉」這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grandfather",
+    "meaning": "祖父",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My grandfather tells the most amazing stories about his youth. 我祖父會講許多關於他年輕時精彩的故事。",
+      "We always visit our grandfather in the countryside during the holidays. 我們假期總是去鄉下探望祖父。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grandma",
+    "meaning": "稱呼（某人）為“奶奶”。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To grandma means to address (someone) as “grandma”. 奶奶的意思是稱呼（某人）為「奶奶」。",
+      "People may grandma in different situations depending on the context. 人們可能會根據具體情況在不同的情況下使用奶奶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grandmother",
+    "meaning": "祖母",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My grandmother makes the best apple pie in the world. 我祖母做的蘋果派是世界上最棒的。",
+      "She lives with her grandmother in a quiet little village. 她和祖母住在一個安靜的小村莊裡。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grandstand",
+    "meaning": "表現得戲劇化或華麗，以給觀眾或觀察者留下深刻印象；迎合人群。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Many politicians prefer to grandstand on hot-button issues rather than enact tough policy changes. 許多政客更喜歡在熱門議題上譁眾取寵，而不是實施強硬的政策改變。",
+      "People often grandstand when the situation calls for it. 當情況需要時，人們常常會譁眾取寵。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grange",
+    "meaning": "農場及其相關建築物；農舍，尤指與修道院或莊園相關的農舍。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grange refers to a farm, with its associated buildings; a farmhouse, particularly one associated with a monastic order, or manor. 「grange」一詞指的是農場及其相關建築物；農舍，尤指與修道院或莊園相關的農舍。",
+      "The lesson introduced grange as a useful term to understand. 本課程介紹了田莊這個術語，它是一個需要理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "granger",
+    "meaning": "田莊、國家畜牧贊助人田莊的成員，該協會是一個代表農民的協會。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term granger refers to a member of the Grange, National Grange of the Patrons of Husbandry, an association representing farmers. 格蘭傑一詞指的是農莊、國家畜牧贊助人農莊（一個代表農民的協會）的成員。",
+      "The lesson introduced granger as a useful term to understand. 本課介紹了格蘭傑這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "granite",
+    "meaning": "韌性;臉皮厚或粗糙的品質。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term granite refers to toughness; the quality of having a thick skin or being rough. 花崗岩一詞指的是韌性；臉皮厚或粗糙的品質。",
+      "The lesson introduced granite as a useful term to understand. 本課程介紹了花崗岩作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "granny",
+    "meaning": "任何老年婦女，無論她是否有孫子。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "That granny over there needs your assistance. 那邊的那位奶奶需要你的幫忙。",
+      "The term granny refers to any elderly woman, regardless of if she has grandchildren. 奶奶一詞指的是任何老年婦女，無論她是否有孫子。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grant",
+    "meaning": "授予、補助金",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The university decided to grant him a scholarship for his academic achievement. 大學決定因他的學術成就授予他獎學金。",
+      "The government provided a generous grant to support the new research project. 政府提供了一筆優厚的補助金（撥款）來支持這項新研究計畫。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "granular",
+    "meaning": "由顆粒或顆粒組成或類似。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a granular substance 顆粒狀物質",
+      "Something described as granular is consisting of, or resembling, granules or grains. 被描述為顆粒狀的東西由顆粒或顆粒組成，或類似顆粒或顆粒。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "granulated",
+    "meaning": "顆粒狀的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "You should use granulated sugar for this recipe. 你應該為這個食譜使用顆粒砂糖。",
+      "Granulated fertilizers are easy to apply to the soil. 顆粒狀肥料很容易施用於土壤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grape",
+    "meaning": "葡萄",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Taiwan is famous for its delicious and sweet black grapes. 台灣以其美味香甜的黑葡萄聞名。",
+      "Would you like some fresh red grapes or green grapes? 你想來點新鮮的紅葡萄還是綠葡萄？"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grapefruit",
+    "meaning": "葡萄柚",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She enjoys having half a fresh grapefruit for her breakfast every morning. 她喜歡每天早餐吃半個新鮮葡萄柚。",
+      "Grapefruit is a great source of Vitamin C and is good for your health. 葡萄柚是維生素 C 的重要來源，對健康有益。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grapevine",
+    "meaning": "葡萄藤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The manager wrote down grapevine with the note \"葡萄藤\". 經理把 grapevine 記下來，並註記「葡萄藤」。",
+      "We practiced using grapevine in two different sentences. 我們練習把 grapevine 放進兩個不同句子裡。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "graph",
+    "meaning": "圖形",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sales graph shows a significant increase in profit this quarter. 銷售圖形（圖表）顯示本季度利潤顯著增加。",
+      "Please look at the graph on page twenty of your science textbook. 請看妳科學課本第二十頁的圖形。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graphic",
+    "meaning": "圖表的、形象的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report contains many graphic illustrations to explain the complex data. 報告中包含了許多圖表說明來解釋複雜數據。",
+      "She gave a very graphic account of the accident, which shocked everyone. 她對事故做了非常形象（生動）的描述，震驚了每個人。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graphical",
+    "meaning": "書寫或雕刻；由字母或線條組成。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as graphical is written or engraved; formed of letters or lines. 被描述為圖形的東西被書寫或雕刻；由字母或線條組成。",
+      "The word graphical is often used to describe a person, thing, or situation. 圖形這個字通常用來描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "graphics",
+    "meaning": "電腦顯示的藝術或視覺表現。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "This game is really fun, but the graphics aren't very good. 這個遊戲確實很有趣，但是圖形不是很好。",
+      "The term graphics refers to The art or visual representations displayed by a computer. 術語圖形是指電腦顯示的藝術或視覺表示。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "graphite",
+    "meaning": "石墨增強塑料是一種由石墨纖維製成的複合塑料，具有輕質強度和剛度。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Modern tennis racquets are made of graphite, fibreglass and other man-made materials. 現代網球拍由石墨、玻璃纖維和其他人造材料製成。",
+      "The term graphite refers to graphite-reinforced plastic, a composite plastic made with graphite fibers noted for lightweight strength and stiffness. 石墨一詞是指石墨增強塑料，這是一種由石墨纖維製成的複合塑料，以輕質強度和剛度而聞名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grapple",
+    "meaning": "思考並認真評估問題；努力應對。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "to grapple with one's conscience 與自己的良心奮戰",
+      "To grapple means to ponder and intensely evaluate a problem; to struggle to deal with. 解決問題意味著思考並認真評估問題；去掙扎去應對。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grasp",
+    "meaning": "抓牢",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "It took me a while to grasp the meaning of the complex theory. 我花了一段時間才理解（掌握）這個複雜理論的含義。",
+      "She managed to grasp the heavy suitcase with both of her hands. 她設法用雙手抓住了那個沉重的行李箱。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grass",
+    "meaning": "草",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The children were running barefoot on the soft green grass. 孩子們赤腳在柔軟的綠草地上跑著。",
+      "Don't walk on the grass; please stay on the path. 請勿踐踏草地，請走步道。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grasshopper",
+    "meaning": "蚱蜢",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A large green grasshopper was happily jumping in the field. 一隻綠色大蚱蜢正開心地在田野裡跳躍。",
+      "Grasshoppers are known for their strong legs and loud chirping. 蚱蜢以其強壯的腿和響亮的鳴叫聲聞名。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grassland",
+    "meaning": "以草或草狀植被為主的區域。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grassland refers to An area dominated by grass or grasslike vegetation. 草原一詞是指以草或草狀植被為主的區域。",
+      "We learned the meaning of grassland during today's lesson. 今天的課我們學習了草原的涵義。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grassy",
+    "meaning": "長滿青草的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The children were happily playing on the soft grassy hill. 孩子們正開心地在柔軟的草坡上玩耍。",
+      "We spent the afternoon having a picnic in a quiet grassy area. 我們下午在一個安靜的草地上野餐度過。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grate",
+    "meaning": "配備格柵；用格柵或橫桿保護。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "to grate a window 磨碎窗戶",
+      "To grate means to furnish with grates; to protect with a grating or crossbars. 格柵意味著配備格柵；用格柵或橫桿進行保護。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grateful",
+    "meaning": "感激的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "I am truly grateful for all the help and support you've given me. 我對妳給我的一切幫助與支持深表感激（感激的）。",
+      "She was grateful that the accident didn't result in any injuries. 她慶幸（感激）那場事故沒有導致任何受傷。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gratification",
+    "meaning": "使心靈、食慾或味覺得滿足或愉悅的行為。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "gratification of the heart gratification of the palate 心靈的滿足 味覺的滿足",
+      "The term gratification refers to The act of gratifying or pleasing, either the mind, or the appetite or taste. 滿足一詞是指使心靈、食慾或味覺得滿足或愉悅的行為。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grating",
+    "meaning": "來自被磨碎的東西的鬆散材料。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Add a few gratings of nutmeg to the hot milk. 在熱牛奶中加入幾碎肉荳蔻。",
+      "The term grating refers to The loose material that comes from something being grated. 術語“光柵”是指來自被磨碎的物體的鬆散材料。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gratitude",
+    "meaning": "感激",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Everyone expressed their deep gratitude to the brave firefighters. 每個人都向勇敢的消防員們表達了深深的感激（之情）。",
+      "She sent a beautiful bouquet of flowers as a token of gratitude. 她送了一束鮮花作為感激的象徵。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grave",
+    "meaning": "嚴重",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The situation managed to become very grave as the crisis continued. 隨著危機持續，局勢竟然變得非常嚴重（沉重）。",
+      "The doctor warned him that the condition was grave and serious. 醫生警告他病況（沉重）非常嚴重。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gravel",
+    "meaning": "碎石，礫石",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The path was covered with fresh gray gravel. 小徑上鋪滿了新鮮的灰色碎石。",
+      "We heard the sound of footsteps on the gravel driveway. 我們聽到碎石路面上傳來的腳步聲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "graveyard",
+    "meaning": "清晨的一段時間，活動很少。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "graveyard shift, graveyard slot, graveyard watch 墓地輪班、墓地老虎機、墓地守望",
+      "The term graveyard refers to a period very early in the morning in which there is very little activity. 「墓地」一詞指的是清晨，活動很少的時期。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gravitate",
+    "meaning": "傾向於或漂向某人或某物，就好像被重力拉著一樣。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Children naturally gravitate to such a big, friendly man. 孩子自然會被這樣一個大而友善的男人所吸引。",
+      "The guests slowly gravitated to the kitchen. 客人們慢慢被吸引到廚房。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gravity",
+    "meaning": "重力、嚴重性",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The force of gravity keeps our feet on the ground and the planets in orbit. 重力使我們站在地面上，並使行星保持在軌道上。",
+      "We must all understand the gravity of the situation regarding climate change. 我們都必須了解氣候變遷局勢的嚴重性。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gravy",
+    "meaning": "一種由高湯和通常是肉汁製成的深色鹹味醬汁；棕色肉汁。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A roast dinner isn't complete without gravy. 沒有肉汁的烤晚餐是不完整的。",
+      "The term gravy refers to a dark savoury sauce prepared from stock and usually meat juices; brown gravy. 肉汁一詞是指由高湯和通常是肉汁製成的深色鹹味醬汁；棕色肉汁。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gray",
+    "meaning": "灰色的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The sky turned gray just before the heavy rain started. 下大雨前天空變成了灰色。",
+      "He started to turn gray in his late thirties. 他在三十多歲末開始長白頭髮。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "graze",
+    "meaning": "吃草、擦傷",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The cows were peacefully grazing in the green fields near the small village. 牛群正在小村莊附近的綠色田野裡平靜地吃草。",
+      "He managed to graze his knee when he tripped and fell on the stony path. 他絆倒在石頭路上時，擦傷了膝蓋。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grease",
+    "meaning": "油脂、塗油",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mechanic's hands were covered with black grease after repairing the engine. 技工修好引擎後，手上沾滿了黑色的油脂。",
+      "You should apply some grease to the door hinges to stop them from squeaking. 你應該在門鉸鏈上塗些潤滑脂，以免發出吱吱聲。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greasy",
+    "meaning": "膩",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fried chicken was a bit too greasy for my personal taste now. 炸雞對我現在的口味來說有點太油膩（膩）了。",
+      "You should avoid eating too much greasy food for your health today. 為了健康，妳現今應避免吃太油膩的食物。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "great",
+    "meaning": "偉大的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The Great Wall of China is one of the seven wonders of the world. 中國長城是世界七大奇觀之一。",
+      "We had a great time at the concert last night. 我們昨晚在音樂會上玩得很開心。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greater",
+    "meaning": "兩個（或很少超過兩個）事物：規模較大（更大）、價值、重要性等。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "greater yellowlegs 大黃腿",
+      "Something described as greater is of two (or, rarely, more than two) things: the larger in size (bigger), in value, in importance etc. 被描述為「更大」的東西是由兩個（或很少是兩個以上）事物組成的：尺寸較大（更大）、價值較大、重要性較大等。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greatly",
+    "meaning": "在很大程度上或程度上。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Expenses greatly exceeded revenues this year, much to nobody's surprise. 今年的支出大大超過了收入，這並不奇怪。",
+      "He was more greatly beloved than anyone in living memory. 他比人們記憶中的任何人都更受愛戴。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greatness",
+    "meaning": "偉大的狀態、條件或品質",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Due to the greatness of his size, he was an effective bodyguard. 由於他的體型巨大，他是一名有效的保鑣。",
+      "The term greatness refers to The state, condition, or quality of being great. 偉大一詞指的是偉大的狀態、條件或品質。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greed",
+    "meaning": "貪婪、貪心",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "His greed for power and money eventually led to his downfall. 他對權力和金錢的貪婪最終導致了他的垮台。",
+      "The company was accused of putting its greed for profit above the environment. 該公司被指控將其對利潤的貪心置於環境之上。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greedy",
+    "meaning": "貪婪的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "You should not be so greedy; try to share with other people. 你不應該這麼貪心；試著與他人分享。",
+      "The greedy merchant was criticized for charging excessive prices. 那個貪婪的商人因收取過高價格而受到批評。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "green",
+    "meaning": "綠色的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fields are lush and green after the spring rain. 春雨過後，田野一片翠綠。",
+      "Green is my favorite color because it represents nature and life. 綠色是我最喜歡的顏色，因為它代表自然與生命。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greener",
+    "meaning": "一個新人；最近移民。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term greener refers to a newcomer; a recent immigrant. 綠色者一詞指的是新來者；新移民。",
+      "The lesson introduced greener as a useful term to understand. 本課程介紹了「綠色」是一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greenhouse",
+    "meaning": "溫室",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The farmer uses a greenhouse to grow fresh tropical plants. 農夫使用溫室來種植新鮮的熱帶植物。",
+      "The greenhouse effect is a major factor in global warming. 溫室效應是全球暖化的主要因素。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greenwood",
+    "meaning": "木頭是綠色的；換句話說，沒有經過調味。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term greenwood refers to wood that is green; in other words, not seasoned. 綠木一詞指的是綠色的木材；換句話說，沒有經驗豐富。",
+      "The lesson introduced greenwood as a useful term to understand. 本課介紹了綠林這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greet",
+    "meaning": "迎接",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He greeted everyone with a warm and friendly smile. 他帶著溫暖友善的笑容向每個人打招呼。",
+      "The host stood at the door to greet the guests as they arrived. 主人站在門口迎接抵達的客人。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "greeting",
+    "meaning": "問候，賀辭",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The two friends exchanged warm greetings after not seeing each other for years. 兩位朋友在多年未見後互致親切問候。",
+      "She received a birthday greeting from her favorite aunt. 她收到了她最喜歡的姨媽寄來的生日祝福。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greeting(s)",
+    "meaning": "問候）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The host gave a warm and friendly greeting to all of the guests. 主人對所有的賓客給予了溫暖友好的問候（打招呼）。",
+      "Season's greetings to you and your entire family for the holiday! 祝妳和妳全家節日快樂（問候）！"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "grenade",
+    "meaning": "一種小型爆炸裝置，設計用於用手投擲或使用步槍、榴彈發射器或火箭發射。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grenade refers to a small explosive device, designed to be thrown by hand or launched using a rifle, grenade launcher, or rocket. 手榴彈一詞是指一種小型爆炸裝置，設計用於用手投擲或使用步槍、榴彈發射器或火箭發射。",
+      "The lesson introduced grenade as a useful term to understand. 本課介紹了手榴彈作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grey",
+    "meaning": "灰色的英聯邦標準拼寫。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as grey is commonwealth standard spelling of gray. 被描述為灰色的東西是灰色的英聯邦標準拼寫。",
+      "The word grey is often used to describe a person, thing, or situation. 灰色這個字常用來形容人、事或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "greyhound",
+    "meaning": "靈緹犬（格力犬）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Greyhounds are known for their incredible speed and grace. 靈緹犬以其驚人的速度和優雅著稱。",
+      "He rescued a retired racing greyhound from a local shelter. 他在當地的收容所救出了一隻退役的比賽用靈緹犬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grid",
+    "meaning": "輸入網格。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "On the SAT, to answer a grid-in question, you grid in your answer by filling out the ovals. 在 SAT 考試中，要回答網格問題，您可以透過填寫橢圓形來將答案網格化。",
+      "To grid means to enter in a grid. 進入網格意味著進入網格。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grief",
+    "meaning": "悲傷",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Everyone felt a deep sense of grief after the news of the accident. 每個人在聽到事故的消息後都感到深深的悲傷。",
+      "Time is often considered the best healer for intense human grief. 時間通常被認為是癒合人類極度悲傷的最佳良藥。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grievance",
+    "meaning": "不滿，委屈，怨言",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Employees can submit their grievances to the human resources department. 員工可以向人力資源部門提交他們的不滿。",
+      "She felt she had a legitimate grievance about the way she was treated. 她覺得自己對受到的對待有正當的怨言。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "grieve",
+    "meaning": "悲傷、哀悼",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The family gathered to grieve for their beloved grandfather who had passed away. 全家人聚集在一起，哀悼（悲傷）他們去世的祖父。",
+      "It takes time to grieve the loss of a loved one and find peace again. 哀悼失去所愛的人並重新找到平靜需要時間。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "griffin",
+    "meaning": "一種具有獅子身體、鷹翼和頭的神獸。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term griffin refers to a mythical beast having the body of a lion and the wings and head of an eagle. 獅鷲這個字指的是一種神話中的野獸，有獅子的身體和鷹的翅膀和頭。",
+      "The lesson introduced griffin as a useful term to understand. 本課程介紹了「格里芬」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grill",
+    "meaning": "燒烤、盤問",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We decided to grill some steaks and vegetables in the backyard for dinner. 我們決定在後院烤一些牛排和蔬菜當晚餐。",
+      "The police spent hours grilling the suspect about his whereabouts. 警方花了幾個小時盤問嫌疑人的去向。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grilled",
+    "meaning": "就像在烤架上煮熟一樣。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "After a day in the sun, he looked more grilled than his hamburger. 在陽光下曬了一天后，他看起來比他的漢堡還要烤。",
+      "The report describes the result as grilled. 報告將結果描述為「烤焦」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grim",
+    "meaning": "嚴峻的、沈重的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The economic outlook for the next year remains grim and uncertain. 明年的經濟前景依然嚴峻且充滿不確定性。",
+      "The soldiers' faces were grim as they prepared for the difficult battle. 士兵們準備迎接艱難戰鬥時，臉上表情沈重（嚴峻）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grimace",
+    "meaning": "痛苦的表情，扮鬼臉",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He let out a grimace of pain after hitting his thumb. 大拇指被砸到後，他露出痛苦的表情。",
+      "The child made a funny grimace at his mother. 孩子對母親扮了個滑稽的鬼臉。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grime",
+    "meaning": "根深蒂固且難以清除的污垢、油脂、煙灰等。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Underneath all that soot, dirt and grime is the true beauty of the church in soft shades of sandstone. 在所有煙灰、污垢和污垢之下，是教堂在柔和的砂岩色調下的真正美麗。",
+      "The term grime refers to dirt, grease, soot, etc. that is ingrained and difficult to remove. 污垢一詞是指根深蒂固且難以清除的污垢、油脂、煙灰等。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grin",
+    "meaning": "咧嘴笑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He had a wide grin on his face when he heard the good news. 聽到好消息時，他臉上帶著燦爛的咧嘴笑。",
+      "She grinned at me and waved her hand from across the street. 她對我咧嘴一笑，並從街道對面揮了揮手。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grind",
+    "meaning": "研磨",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "She used a traditional stone mortar to grind the fresh spices. 她用傳統的石臼來研磨新鮮香料。",
+      "The machine manages to grind the hard coffee beans into powder. 這台機器竟然（能）將堅硬的咖啡豆磨成（研磨）粉末。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grinding",
+    "meaning": "無情地徵稅；繁重的；嚴格到精疲力盡的地步。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "A week of filled with grinding toil. 一週的時間充滿了艱辛的勞動。",
+      "The report describes the result as grinding. 報告將結果描述為研磨。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grinning",
+    "meaning": "grin 的現在分詞與動名詞",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I’m grinning because someone told me a joke. 我笑了，因為有人跟我講了個笑話。",
+      "People often grinning when the situation calls for it. 當情況需要時，人們常常會微笑。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grip",
+    "meaning": "緊握、掌控",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She had a firm grip on the handle of the heavy suitcase. 她緊緊握住沈重手提箱的把手。",
+      "The city was in the grip of a severe winter storm for several days. 這座城市連續幾天都籠罩在嚴重的冬季風暴之中（受掌控）。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gripe",
+    "meaning": "所掌握的；一個把手；握力。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "the gripe of a sword 劍的握力",
+      "The term gripe refers to That which is grasped; a handle; a grip. 抱怨這個字指的是被抓住的東西；一個把手；握力。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grit",
+    "meaning": "沙礫，勇氣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sand was full of tiny pieces of grit. 沙子裡充滿了細小的沙礫。",
+      "It takes a lot of grit and determination to succeed in this industry. 要在這個產業成功需要很大的勇氣與決心。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gritty",
+    "meaning": "精神飽滿；堅決;不屈。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "That goth woman is very gritty. 那個哥德女人非常堅韌。",
+      "Something described as gritty is spirited; resolute; unyielding. 被描述為堅韌的東西是充滿活力的；堅決;不屈。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grizzly",
+    "meaning": "脾氣暴躁或煩躁地哭泣或抱怨。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "a grizzly baby 灰熊寶寶",
+      "Something described as grizzly is crying or whingeing in a bad-tempered or irritable way. 被描述為灰熊的東西是指以脾氣暴躁或易怒的方式哭泣或抱怨。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "groan",
+    "meaning": "呻吟、抱怨",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The patient began to groan in pain as the medication began to wear off. 隨著藥效開始消退，病人開始因痛苦而呻吟。",
+      "He's always groaning about how much work he has to do every single day. 他總是抱怨（呻吟）自己每天有做不完的工作。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "groaning",
+    "meaning": "負載沉重，彷彿在壓力下嘎吱作響。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "We sat down to a groaning table and feasted all evening. 我們坐在一張嘎吱作響的桌子旁，吃了一整晚的大餐。",
+      "The report describes the result as groaning. 報告將結果描述為“呻吟”。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grocer",
+    "meaning": "出售雜貨；充當雜貨商。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To grocer means to sell groceries; to act as a grocer. Togrocer 指的是出售雜貨；充當雜貨商。",
+      "People may grocer in different situations depending on the context. 人們可能會根據具體情況在不同的情況下去雜貨店。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grocery",
+    "meaning": "雜貨店",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I need to go to the grocery store to buy some milk and eggs. 我需要去雜貨店買點牛奶和雞蛋。",
+      "We usually do our grocery shopping on Saturday morning. 我們通常在週六早上買雜貨。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "groin",
+    "meaning": "腹股溝",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The athlete suffered a strain in his groin during practice. 這位運動員在練習時拉傷了腹股溝。",
+      "The doctor examined the patient's groin area for any abnormalities. 醫生檢查了病人的腹股溝區域是否有任何異常。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "groove",
+    "meaning": "表演、跳舞或享受有節奏的音樂。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I was just starting to groove to the band when we had to leave. 當我們不得不離開時，我正開始跟著樂團一起律動。",
+      "To groove means to perform, dance to, or enjoy rhythmic music. 律動意味著表演、跳舞或享受有節奏的音樂。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "groovy",
+    "meaning": "屬於、關於或具有凹槽的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The back of the tile was groovy so that it could hold the adhesive compound. 磁磚的背面有凹槽，可以容納黏合劑。",
+      "Something described as groovy is of, pertaining to, or having grooves. 被描述為「groovy」的東西是屬於、屬於或具有凹槽的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gross",
+    "meaning": "總共的、噁心的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The company's gross income has increased significantly over the past year. 公司的總收入在過去一年中顯著增加。",
+      "That's gross! Please don't pick your nose in front of everyone. 太噁心了！請不要在大家面前挖鼻子。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grossly",
+    "meaning": "大大;在很大程度上，尤其是大到足以坦率地評價的程度。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "grossly inflated expectations 嚴重誇大的期望",
+      "grossly enlarged hepatic lobes, evident on palpation 肝葉明顯增大，觸診明顯"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grotesque",
+    "meaning": "形狀或大小扭曲且不自然；異常的，尤其是以一種可怕的方式。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as grotesque is distorted and unnatural in shape or size; abnormal, especially in a hideous way. 被描述為怪誕的事物是指形狀或大小扭曲且不自然的事物；不正常，尤其是以一種可怕的方式。",
+      "The word grotesque is often used to describe a person, thing, or situation. 怪誕這個詞常用來形容人、事或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ground",
+    "meaning": "地面",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ground was covered with colorful fallen leaves in autumn. 地面覆蓋著繽紛的落葉。",
+      "Be careful not to sit on the cold and damp ground. 小心別坐在寒冷潮濕的地上。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grounds",
+    "meaning": "液體底部的沉積物，或液體已從中過濾出來的沉積物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grounds refers to The sediment at the bottom of a liquid, or from which a liquid has been filtered. 術語「渣」是指液體底部的沉積物，或液體已從中過濾出來的沉積物。",
+      "We learned the meaning of grounds during today's lesson. 我們在今天的課程中學習了理由的含義。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "groundwork",
+    "meaning": "基金會 ；支持或允許其餘部分的 基本 或<a rel=\"mw:WikiLink\" href=\"/tiftlement\" 基本部分。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The discovery of the laws of electricity laid the groundwork for a century of innovation. 電定律的發現為一個世紀的創新奠定了 基礎 。 電定律的發現為一個世紀的創新奠定了基礎。 電動力學的發現為一個世紀的創新奠定了基礎。",
+      "The term groundwork refers to The foundation; the basic or fundamental parts that support or allow for the rest. 「基礎」一詞指的是 基金會 ；支持或允許其餘部分的 基本 或<a rel=\"m=\") 基本部分。 「基礎」一詞是指基礎；支持或允許其餘部分的基本或基本部分。 「基礎」指的是基金會；支持或允許其餘部分的基本部分或<a rel=\"m=\") 基本部分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "group",
+    "meaning": "團體",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A group of students was discussing the project in the library. 一群學生正在圖書館討論專案。",
+      "The company is divided into several different work groups. 公司被分成幾個不同的工作小組。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grouse",
+    "meaning": "投訴理由；發牢騷。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term grouse refers to a cause for complaint; a grumble. 松雞一詞指的是抱怨的原因；一聲抱怨。",
+      "The lesson introduced grouse as a useful term to understand. 本課程介紹了松雞作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grout",
+    "meaning": "在磁磚之間插入砂漿。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "I spent the whole afternoon grouting the kitchen floor. 我花了整個下午給廚房地板灌漿。",
+      "People often grout when the situation calls for it. 當情況需要時，人們常常會發牢騷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grove",
+    "meaning": "在樹林中耕種；自然生長，形成樹林。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To grove means to cultivate in groves; to grow naturally so as to form groves. To grove的意思是在樹林裡耕種；自然生長，形成樹林。",
+      "People may grove in different situations depending on the context. 根據環境的不同，人們可能會陷入不同的情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grovel",
+    "meaning": "卑躬屈膝，匍匐前進",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He had to grovel to his boss to keep his job. 他不得不對老闆卑躬屈膝以保住工作。",
+      "The beggar was groveling on the ground, asking for money. 乞丐蜷伏在地上乞討錢財。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grow",
+    "meaning": "生長",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Rice and vegetables grow well in this fertile soil. 水稻和蔬菜在這種肥沃的土壤中生長良好。",
+      "Children grow up so fast these days! 現在的孩子長大得真快！"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grower",
+    "meaning": "一個農民；種東西的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He was an orange grower from Florida. 他是來自佛羅裡達州的一名橙子種植者。",
+      "The term grower refers to a farmer; one who grows things. 種植者一詞指的是農民；種植東西的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "growing",
+    "meaning": "植物的飼養。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The growing season here begins in March. 這裡的生長季節從三月開始。",
+      "The term growing refers to The raising of plants. 術語“種植”是指植物的培育。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "growl",
+    "meaning": "咆哮、低吼",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The large dog began to growl at the stranger who was approaching the gate. 大狗對著靠近大門的陌生人低吼（咆哮）。",
+      "I could hear his stomach growl, as he hadn't eaten anything all day. 我能聽到他肚子咕咕叫（低吼），因為他一整天都沒吃東西。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "growling",
+    "meaning": "持續發出咆哮聲或喉音。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The growling from her stomach told us she was hungry. 她的肚子咕嚕咕嚕叫，告訴我們她餓了。",
+      "The term growling refers to A sustained instance of growls or guttural noises. 咆哮一詞是指持續的咆哮或喉音。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grown",
+    "meaning": "被生長覆蓋；雜草叢生。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "What once was a farm was grown with trees. 曾經的農場現在種滿了樹木。",
+      "Something described as grown is covered by growth; overgrown. 被描述為「成長」的東西被「成長」所覆蓋；雜草叢生。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "growth",
+    "meaning": "生長",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Regular exercise is essential for the healthy growth of children. 定期運動對於兒童的健康成長至關重要。",
+      "The company has experienced rapid growth in the international market. 公司在國際市場經歷了快速增長。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grub",
+    "meaning": "挖掘；連根拔起；藉由挖掘來連根拔起；經常跟隨 up。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "to grub up trees, rushes, or sedge 拔除樹木、燈芯草或莎草",
+      "To grub means to dig; to dig up by the roots; to root out by digging; often followed by up. grub 的意思是挖掘；連根拔起；透過挖掘來連根拔起；經常跟著up。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grubby",
+    "meaning": "骯髒 、 未清洗 、 </unced。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He's a grubby little boy, always playing around by the stream. 他是個 骯髒 的小男孩，總是在溪邊玩耍。 他是個髒兮兮的小男孩，總是在小溪邊玩耍。 他是個骯髒的小男孩，總是在溪邊。",
+      "The report describes the result as grubby. The report describes the result as grubby. 報告將結果描述為骯髒不堪。報告將結果描述為骯髒不堪。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grudge",
+    "meaning": "對某事或某人的根深蒂固和/或長期的敵意或惡意，尤其是由於感知到的虐待。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "to have, hold, owe or bear a grudge against someone 對某人有、持有、欠某人或懷有怨恨",
+      "The term grudge refers to deep-seated and/or long-term animosity or ill will about something or someone, especially due to perceived mistreatment. 怨恨一詞指的是對某事或某人的根深蒂固和/或長期的敵意或惡意，尤其是由於感知到的虐待而產生的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gruesome",
+    "meaning": "可怕，可怕。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The team was so unprepared that the way it played was just gruesome. 球隊毫無準備，比賽的方式非常可怕。",
+      "Something described as gruesome is awful, terrible. 形容為可怕的東西是可怕的、可怕的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grumble",
+    "meaning": "抱怨、發牢騷",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Stop grumbling about the weather and try to enjoy your summer holiday. 別再為天氣發牢騷（抱怨）了，試著享受你的暑假吧。",
+      "We could hear the distant grumble of thunder as the storm approached. 我們能聽到暴風雪臨近時遠處隆隆的雷聲。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "grumpy",
+    "meaning": "脾氣暴躁的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is always grumpy in the morning before he has his coffee. 他在早晨喝咖啡前總是很暴躁。",
+      "The grumpy old man shouted at the children playing in front of his house. 那個脾氣暴躁的老人對著在他家門前玩耍的孩子大喊大叫。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "grunt",
+    "meaning": "放風；放屁。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Who just grunted? 剛才是誰咕噥了一聲？",
+      "To grunt means to break wind; to fart. 咕嚕聲意味著放屁；放屁。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guarantee",
+    "meaning": "保證",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The company provides a one-year guarantee for its new products. 公司為其新產品提供一年保證（保固）。",
+      "I can guarantee that everything will be fine in the end, really. 我可以保證最後一切都會好起來的，真的。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guard",
+    "meaning": "警衛",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The security guard checked my identification at the entrance. 保全人員在入口處檢查了我的身分證。",
+      "You should always be on your guard against online scams. 你應該時刻警惕，防範網路詐騙。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guardian",
+    "meaning": "監護人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "His elder brother was appointed as his legal guardian lately. 他的哥哥最近被任命為他的法定監護人。",
+      "The organization aims to act as a guardian of the environment. 該組織旨在擔任環境的守護者（監護人）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guardianship",
+    "meaning": "擔任監護人或保管人（尤其是具有法律身分）的職務或職位。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term guardianship refers to The office or position of one acting as a guardian or conservator, especially in a legal capacity. 監護權一詞是指擔任監護人或保管人的職務或職位，尤其是具有法律身分的人。",
+      "We learned the meaning of guardianship during today's lesson. 在今天的課程中我們學習了監護的意義。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "guava",
+    "meaning": "番石榴",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Guava is a tropical fruit that is rich in Vitamin C and fiber. 番石榴是一種富含維生素 C 和纖維的熱帶水果。",
+      "Taiwanese guavas are very sweet and crunchy, and everyone loves them. 台灣的番石榴又甜又脆，每個人都喜歡吃。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guernsey",
+    "meaning": "海員針織羊毛衫，類似運動衫。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term guernsey refers to a seaman's knitted woolen sweater, similar to a jersey. 根西島一詞指的是海員針織羊毛衫，類似運動衫。",
+      "The lesson introduced guernsey as a useful term to understand. 本課介紹了根西島作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guerrilla",
+    "meaning": "獨立小團體中的士兵，透過突襲與政府或正規軍作戰。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The right-wing paramilitary's offensive against the Marxist guerrillas failed because they did not know the terrain well enough. 右翼準軍事部隊對馬克思主義遊擊隊的攻擊失敗，是因為他們對地形不夠了解。",
+      "The term guerrilla refers to a soldier in a small independent group, fighting against the government or regular forces by surprise raids. 遊擊隊一詞指的是一個小型獨立團體中的士兵，透過突襲與政府或正規部隊作戰。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guess",
+    "meaning": "猜測",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Can you guess how old she is? 她看起來非常年輕。 你能猜出她幾歲嗎？",
+      "I guess that we will reach our destination in about an hour. 我猜我們大約在一小時後會到達目的地。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guest",
+    "meaning": "客人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We are expecting some guests for dinner tomorrow evening. 我們預計明晚會有一些客人來家裡吃晚餐。",
+      "The hotel provides various amenities to ensure its guests' comfort. 飯店提供各種設施以確保客人的舒適。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guidance",
+    "meaning": "指導",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The counselor provided professional guidance to the students. 顧問為學生提供了專業的指導。",
+      "We need more guidance from the manager on how to finish the task. 我們需要經理就如何完成任務提供更多指導。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guide",
+    "meaning": "指導",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The experienced guide led us through the dense mountain forest. 經驗豐富的導遊帶領我們穿過茂密的森林。",
+      "This handbook is a useful guide for new employees at the company. 這本手冊是公司新員工的實用指南。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guideline",
+    "meaning": "指導方針、準則",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The government issued new guidelines for healthy eating and physical exercise. 政府發布了新的健康飲食和體育鍛煉指導方針。",
+      "Please make sure you follow the guidelines provided in the instruction manual. 請確保您遵循說明書中提供的準則。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guild",
+    "meaning": "一群具有共同特徵或習慣的不同物種。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term guild refers to a group of diverse species that share common characteristics or habits. 行會一詞是指具有共同特徵或習慣的不同物種的群體。",
+      "The lesson introduced guild as a useful term to understand. 本課程介紹了「行會」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guile",
+    "meaning": "狡詐，欺詐",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The detective used a bit of guile to catch the suspect. 探員用了一點計謀抓住了嫌犯。",
+      "He is a man of great intelligence and guile. 他是一個非常聰明且有心機的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guillotine",
+    "meaning": "使用斷頭台（對某人或某事）。用斷頭台處決（某人）。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Many counterrevolutionaries were guillotined during the French Revolution. 法國大革命期間，許多反革命分子被送上斷頭台。",
+      "People often guillotine when the situation calls for it. 當情況需要時，人們常常會被送上斷頭台。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guilt",
+    "meaning": "有罪",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He felt a sense of deep guilt for his dishonest behavior earlier. 他對自己早先不誠實的行為感到深深的內疚（有罪感）。",
+      "The prisoner managing to admit his guilt in the court today. 囚犯今天在法庭上竟然（設法）承認了自己的罪行（有罪）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guilty",
+    "meaning": "有罪的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The jury found the defendant guilty of all the serious charges. 陪審團判定被告所有嚴重指控罪名成立（有罪的）。",
+      "She felt very guilty about forgetting her best friend's birthday. 她對忘記好友的生日感到非常內疚（有罪的）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guinea",
+    "meaning": "幾尼（舊英國金幣）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The antique vase was sold for five hundred guineas at the auction. 這只古董花瓶在拍賣會上以五百幾尼的價格成交。",
+      "Guinea was a currency used in Britain before decimalization. 幾尼是英國在實行十進制前使用的貨幣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guise",
+    "meaning": "具有誤導性的外觀；一個罩子，一件斗篷。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Under the guise of patriotism 打著愛國主義的幌子",
+      "The term guise refers to a misleading appearance; a cover, a cloak. 偽裝一詞指的是具有誤導性的外觀；蓋，斗篷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guitar",
+    "meaning": "吉他",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My brother is a talented musician who plays the guitar and piano. 我哥哥是一位有才華的音樂家，會彈吉他和鋼琴。",
+      "She is learning how to play the guitar through online tutorials. 她正在透過線上教學學習如何彈吉他。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "guitarist",
+    "meaning": "彈吉他的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term guitarist refers to someone who plays a guitar. 吉他手一詞是指彈吉他的人。",
+      "The lesson introduced guitarist as a useful term to understand. 本課程介紹了吉他手這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gulf",
+    "meaning": "海灣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The city is located on the beautiful coast of the Persian Gulf. 這座城市位於波斯灣美麗的海岸上。",
+      "There is a significant income gulf between the rich and the poor. 貧富之間存在著顯著的收入鴻溝（海灣，指差距）。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gullible",
+    "meaning": "容易受騙或受騙；天真，容易被欺騙或愚弄。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Andrew is so gullible, the way he still believes in Santa Claus, the Easter Bunny, the Tooth Fairy, and the Sandman at the age of fourteen. 安德魯太容易受騙了，他在十四歲的時候仍然相信聖誕老人、復活節兔子、牙齒仙子和睡魔。",
+      "The report describes the result as gullible. 報告稱這一結果是容易受騙的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gully",
+    "meaning": "守備位置位於方陣後方約 30 度的偏側，位於卡位和點之間；處於此位置的外野手。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gully refers to a fielding position on the off side about 30 degrees behind square, between the slips and point; a fielder in such a position. 術語「溝壑」是指在方陣後方約 30 度的邊線防守位置，位於卡瓦和點之間；處於這種位置的外野手。",
+      "The lesson introduced gully as a useful term to understand. 本課介紹了溝壑作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gum",
+    "meaning": "膠",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It is considered impolite to chew gum during an interview. 在面試中嚼口香糖被認為是不禮貌的。",
+      "The dentist checked his gums to ensure they were healthy. 牙醫檢查了他的牙齦，以確保它們健康。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gun",
+    "meaning": "槍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The police officer was required to carry a gun for safety reasons. 警察出於安全原因被要求攜帶槍支。",
+      "Hunting with a gun is strictly regulated in many world countries. 在許多國家，持槍狩獵受到嚴格管制。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gunfire",
+    "meaning": "用槍射擊，通常會發出響亮的聲音。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Let's hide in the trees to avoid the gunfire. 我們躲到樹上躲避槍聲吧。",
+      "Sergeant, direct your gunfire toward that copse of trees. 中士，將你的槍口對準那片樹林。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gunman",
+    "meaning": "持槍的罪犯，尤其是職業殺手。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gunman refers to a criminal armed with a gun, especially a professional killer. 槍手一詞是指持有槍枝的犯罪分子，尤其是職業殺手。",
+      "The lesson introduced gunman as a useful term to understand. 本課介紹了「槍手」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gunner",
+    "meaning": "過於積極進取的人；表現出過度野心的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gunner refers to an excessive go-getter; one exhibiting over-ambition. 砲手一詞指的是過度進取的人。一個表現出過度野心的人。",
+      "The lesson introduced gunner as a useful term to understand. 本課程介紹了「槍手」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gunpowder",
+    "meaning": "硝石（硝酸鉀）、木炭和硫磺的爆炸性混合物；以前用於射擊，但現在主要用於煙火。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gunpowder refers to an explosive mixture of saltpetre (potassium nitrate), charcoal and sulfur; formerly used in gunnery but now mostly used in fireworks. 火藥一詞是指硝石（硝酸鉀）、木炭和硫磺的爆炸性混合物；以前用於射擊，但現在主要用於煙火。",
+      "The lesson introduced gunpowder as a useful term to understand. 本課介紹了火藥，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gunshot",
+    "meaning": "槍的射擊距離；槍的射程或射程。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gunshot refers to the distance to which shot can be thrown from a gun; the reach or range of a gun. 槍聲一詞是指從槍中射出子彈的距離；槍的射程或射程。",
+      "The lesson introduced gunshot as a useful term to understand. 本課介紹了槍聲作為一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guru",
+    "meaning": "充當導師；提供明智的建議。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To guru means to act as a guru; to give wise advice. To guru（上師）意味著充當上師；提供明智的建議。",
+      "People may guru in different situations depending on the context. 人們可能會根據具體情況在不同的情況下擔任導師。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gust",
+    "meaning": "一陣強烈、突然的風。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gust refers to a strong, abrupt rush of wind. 陣風一詞指的是強烈、突然的風。",
+      "The lesson introduced gust as a useful term to understand. 本課介紹了陣風這個非常有用的術語，需要理解。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gusto",
+    "meaning": "熱情; 享受 ，<a rel=\"mw:WikiLink\" href=\"ti=\"/vigor\" href=\"",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He sang with more gusto than talent. 他唱歌時 熱情 多於才華。 他唱歌的熱情多於才華。 他歌唱時熱情多於才華。",
+      "The term gusto refers to Enthusiasm; enjoyment, vigor. 「gusto」一詞指的是 熱情; 享受 ，<a rel=\"m=\"w/ikitt gusto 這個字指的是熱情；享受，活力。 「熱情」指的是熱情； 享受，<a rel=\"m=\"w/ikitt"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gut",
+    "meaning": "內臟、直覺",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I have a gut feeling that something is not quite right about this situation. 我有種直覺，覺得這種情況有些不對勁。",
+      "It took a lot of guts for her to quit her stable job and start her own business. 她辭掉穩定工作去創業需要很大的勇氣。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gutter",
+    "meaning": "建築物屋簷下輸送雨水的管道或通道；屋簷。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The gutters must be cleared of leaves a few times a year. 每年必須清除排水溝幾次樹葉。",
+      "The term gutter refers to a duct or channel beneath the eaves of a building to carry rain water; eavestrough. 天溝一詞是指建築物屋簷下用於輸送雨水的管道或渠道；屋簷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "guy",
+    "meaning": "傢伙",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He is a nice guy who is always willing to help others. 他是個好人，總是樂於助人。",
+      "Who is that guy standing over there by the door? 站在門邊的那個人是誰？"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "gymnasium/gym",
+    "meaning": "體育館/體育館",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He goes to the local gym every morning before work to exercise. 他每天早上上班前去當地的健身房鍛煉。",
+      "The school gymnasium was renovated with new basketball courts. 學校體育館經過翻修，增加了新的籃球場。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "gymnastics",
+    "meaning": "一項需要進行一系列動作的運動，需要體力、靈活性和動覺意識。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Gymnastics was a significant part of the physical education curriculum. 體操是體育課程的重要組成部分。",
+      "The term gymnastics refers to A sport involving the performance of sequences of movements requiring physical strength, flexibility, and kinesthetic awareness. 體操一詞是指一項需要體力、靈活性和動覺意識的一系列動作的運動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "gynecological",
+    "meaning": "婦科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Women should have regular gynecological check-ups. 女性應定期進行婦科檢查。",
+      "The hospital has a specialized gynecological department. 這家醫院設有專門的婦科部門。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gypsy",
+    "meaning": "流動人士或任何人，不一定是羅姆人；修補匠、旅行者或狂歡者。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term gypsy refers to an itinerant person or any person, not necessarily Romani; a tinker, a traveller or a carny. 吉卜賽一詞指的是流動的人或任何人，不一定是羅姆人；修補匠、旅行者或狂歡者。",
+      "The lesson introduced gypsy as a useful term to understand. 本課程介紹了「吉普賽人」這個易於理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "gyro",
+    "meaning": "一種希臘三明治，通常填入烤肉、番茄、洋蔥和酸奶黃瓜醬。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I'll have a gyro, please. 請給我一個陀螺儀。",
+      "The term gyro refers to A style of Greek sandwich commonly filled with grilled meat, tomato, onions, and tzatziki sauce. 陀螺儀一詞指的是一種希臘三明治，通常填入烤肉、番茄、洋蔥和酸奶黃瓜醬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  }
+]

@@ -1,0 +1,1766 @@
+[
+  {
+    "word": "kale",
+    "meaning": "羽衣甘藍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kale is a highly nutritious green leafy vegetable. 羽衣甘藍是一種營養豐富的綠葉蔬菜。",
+      "I like to add fresh kale to my morning smoothies. 我喜歡在晨間冰沙中加入新鮮的羽衣甘藍。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kang",
+    "meaning": "傳統的磚、黏土或混凝土長平台，用於中國寒冷地區取暖，適合晚上睡覺。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kang refers to a traditional long platform of brick, clay or concrete, used for heating in colder parts of China and suitable for sleeping on at night. 「炕」一詞指的是傳統的磚、黏土或混凝土長平台，用於中國寒冷地區取暖，適合晚上睡覺。",
+      "The lesson introduced kang as a useful term to understand. 本課介紹了「康」這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kangaroo",
+    "meaning": "袋鼠",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kangaroo is a unique animal native to the Australian outback. 袋鼠是澳洲特有的獨特動物。",
+      "We saw a female kangaroo carrying its baby in its protective pouch. 我們看到一隻母袋鼠正把寶寶裝在育兒袋裡。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kappa",
+    "meaning": "衡量選擇權價值對標的資產價格隱含波動率變化的敏感度。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kappa refers to a measurement of the sensitivity of the value of an option to changes in the implied volatility of the price of the underlying asset. kappa 一詞是指衡量選擇權價值對標的資產價格隱含波動率變化的敏感度。",
+      "The lesson introduced kappa as a useful term to understand. 本課程介紹了 kappa 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "karate",
+    "meaning": "用空手道或類似技術攻擊（某人或某物）。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To karate means to attack (somebody or something) with karate or similar techniques. 空手道意味著用空手道或類似技術攻擊（某人或某物）。",
+      "People may karate in different situations depending on the context. 人們可能會根據具體情況在不同的情況下練習空手道。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "karma",
+    "meaning": "種瓜得瓜，種豆得豆的自然力量或法則；命運;命運。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term karma refers to a force or law of nature which causes one to reap what one sows; destiny; fate. 業力一詞指的是一種自然力量或法則，它使人種瓜得瓜，種豆得豆。命運;命運。",
+      "The lesson introduced karma as a useful term to understand. 本課程介紹了「業力」這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kayak",
+    "meaning": "使用皮划艇、乘坐皮划艇旅行或比賽。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Kayaking is an Olympic sport. 皮划艇是奧林匹克運動項目。",
+      "To kayak means to use a kayak, to travel or race in a kayak. To kayak 的意思是使用皮划艇、乘坐皮划艇旅行或比賽。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "kebab",
+    "meaning": "一家賣烤肉串的餐廳。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Let's go to the kebab after the club. 俱樂部結束後我們去吃烤肉吧。",
+      "The term kebab refers to a restaurant that sells kebabs. 烤肉串一詞是指販售烤肉串的餐廳。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "keel",
+    "meaning": "崩潰、墜落。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He keeled over after having a stroke. 他中風後暈倒了。",
+      "People often keel when the situation calls for it. 當情況需要時，人們常常會崩潰。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "keen",
+    "meaning": "敏銳的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She has a very keen interest in learning foreign languages today. 她對現今學習外語有著非常濃厚的（敏銳的）興趣。",
+      "He is a keen observer who notices every small detail in the room. 他是一個敏銳的觀察者，能注意到房間裡的每一個細小細節。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keenly",
+    "meaning": "以敏銳的方式。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "watch something keenly 敏銳地觀察某事",
+      "We played keenly. 我們玩得很投入。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "keep",
+    "meaning": "保持",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please keep the door closed to keep the heat inside the room. 請保持門關閉，以留住室內的暖氣。",
+      "You should keep your promises if you want people to trust you. 如果你想讓別人信任你，就應該守信用。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keeper",
+    "meaning": "守門員",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The zoo keeper takes great care of all the animals. 動物園管理員把所有的動物都照顧得很好。",
+      "He is a reliable goalkeeper who has made several great saves. 他是一位可靠的守門員，曾有幾次精彩的撲救。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keeping",
+    "meaning": "一致或和諧。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The songs are new but in keeping with tradition. 這些歌曲很新，但符合傳統。",
+      "The foreground of this painting is not in keeping. 這幅畫的前景不協調。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kelp",
+    "meaning": "昆布，海帶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kelp is a large seaweed that grows in underwater forests. 昆布是一種生長在水下森林中的大型海藻。",
+      "Some dietary supplements are made from dried kelp. 一些膳食補充劑是由乾昆布製成的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kelvin",
+    "meaning": "此尺度上的一度差異，作為單位間隔。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The dew point here today is only 1 kelvin above what it was yesterday. 今天這裡的露點只比昨天高 1 開爾文。",
+      "The interval between the freezing and boiling points of water is 100 kelvins. 水的冰點和沸點之間的間隔是 100 開爾文。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kemp",
+    "meaning": "粗毛或硬毛、鬍鬚；感覺不到的打結的頭髮。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kemp refers to a coarse or bristly hair, whisker; knotty hairs that will not felt. 術語「kemp」指的是粗糙或硬毛、鬍鬚；不會感覺到的打結的頭髮。",
+      "The lesson introduced kemp as a useful term to understand. 本課程介紹了 kemp 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kennel",
+    "meaning": "狗屋，犬舍",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The dog was sleeping in its wooden kennel in the backyard. 狗正睡在後院的木製狗屋裡。",
+      "We need to kennel our pet while we are away on holiday. 我們度假期間需要把寵物寄放在犬舍。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kensington",
+    "meaning": "女性縫紉圈。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kensington refers to a sewing circle for women. 肯辛頓一詞指的是女性縫紉圈。",
+      "The lesson introduced kensington as a useful term to understand. 本課程介紹了 kensington 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kent",
+    "meaning": "用一根桿子推動（船）。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To kent means to propel (a boat) using a pole. To kent 的意思是用一根桿子推動（船）。",
+      "People may kent in different situations depending on the context. 人們可能會根據具體情況出現不同的情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kerchief",
+    "meaning": "頭巾，手帕",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She wore a colorful silk kerchief over her hair. 她頭上戴著一條繽紛的絲綢頭巾。",
+      "The dancer used a traditional kerchief in her performance. 舞者在表演中使用了傳統手帕。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kern",
+    "meaning": "為慶祝豐收而舉起的玩偶或小雕像；核心嬰兒。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kern refers to a doll or figurine raised in celebration of a successful harvest; kern-baby. 「克恩」一詞指的是為慶祝豐收而舉起的玩偶或雕像；克恩寶貝。",
+      "The lesson introduced kern as a useful term to understand. 本課程介紹了 kern 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kernel",
+    "meaning": "果仁，核心",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kernel of the nut is rich in healthy fats. 堅果的果仁富含健康脂肪。",
+      "There is a kernel of truth in what he said. 他的話中有一絲真理的核心。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ketchup",
+    "meaning": "番茄醬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Would you like some tomato ketchup with your French fries? 你的薯條要加點番茄醬嗎？",
+      "The little boy accidentally spilled some ketchup on his shirt. 小男孩不小心把番茄醬濺到了襯衫上。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keto",
+    "meaning": "酮的羰基。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term keto refers to the carbonyl group of a ketone. 術語酮是指酮的羰基。",
+      "The lesson introduced keto as a useful term to understand. 本課程介紹了酮作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kettle",
+    "meaning": "壺",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The water in the tea kettle managing to boil earlier this morning. 茶壺裡的水今天早上竟然（能）開了。",
+      "Please remember to turn off the electric kettle after use tonight. 請記得今晚用完後關掉電熱水壺。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "key",
+    "meaning": "鑰匙",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "I can't find my car keys anywhere; have you seen them? 我到處找不到我的車鑰匙，你看到了嗎？",
+      "Education is the key to a successful future. 教育是通往成功未來的關鍵。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keyboard",
+    "meaning": "鍵盤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He is learning how to play the electronic keyboard this semester. 他這學期正在學習如何彈電子琴。",
+      "I need to buy a new wireless keyboard for my computer home office. 我需要為我家的辦公室買一個新的無線鍵盤。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "keyed",
+    "meaning": "值得讚揚和欽佩，通常是透過表現出獨立性和安全感；基於。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "OP is keyed as fuck OP 是他媽的鍵控",
+      "The report describes the result as keyed. 該報告將結果描述為鍵控的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "keyhole",
+    "meaning": "鑰匙孔",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The child was peeking through the keyhole. 孩子正透過鑰匙孔偷看。",
+      "The key fits perfectly into the keyhole. 鑰匙與鑰匙孔完美契合。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "keynote",
+    "meaning": "確定會議或其他聚會主題的演講；主題演講或主題演講。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term keynote refers to a speech that sets the main theme of a conference or other gathering; a keynote speech or keynote address. 主題演講一詞是指確定會議或其他聚會主題的演講；主題演講或主題演講。",
+      "The lesson introduced keynote as a useful term to understand. 本課程介紹了 keynote 作為一個易於理解的有用術語。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "keystone",
+    "meaning": "零售價是成本價的兩倍； 100% 的加價。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term keystone refers to a retail price that is double the cost price; a markup of 100%. 「基石」一詞是指零售價是成本價的兩倍； 100% 的加價。",
+      "The lesson introduced keystone as a useful term to understand. 本課程介紹了梯形失真校正這個術語，它是一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "khaki",
+    "meaning": "暗淡的黃棕色，灰塵的顏色。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "khaki (Pantone): 卡其色（潘通色卡）：",
+      "khaki (HTML): 卡其色 (HTML)："
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "khan",
+    "meaning": "中世紀突厥人和蒙古人的統治者。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term khan refers to a ruler over various Turkic and Mongol peoples in the Middle Ages. 可汗一詞指的是中世紀突厥人和蒙古人的統治者。",
+      "The lesson introduced khan as a useful term to understand. 本課程介紹了可汗作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kick",
+    "meaning": "踢",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "He kicked the ball hard and it flew over the fence. 他用力踢球，球飛過了圍欄。",
+      "Be careful, that horse might kick if you stand behind it. 小心，如果你站在那匹馬後面，它可能會踢人。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kicker",
+    "meaning": "意想不到的情況、細節或情況，通常令人不愉快，作為笑點或關鍵點。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "John wants to climb the wall, but the kicker is that it is thirty feet tall. 約翰想爬牆，但令人驚訝的是它有三十英尺高。",
+      "Tuition is free; the kicker is that mandatory room and board costs twice as much as at other colleges. 學費全免；更重要的是，強制性的食宿費用是其他大學的兩倍。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "kid",
+    "meaning": "孩子",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kids are playing happily in the backyard. 孩子們正在後院開心地玩耍。",
+      "Are you kidding me? That sounds too good to be true! 你在跟我開玩笑嗎？那聽起來好得不像是真的！"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kidnap",
+    "meaning": "綁架、誘拐",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The terrorists threatened to kidnap the foreign diplomat for ransom. 恐怖分子威脅要綁架外國外交官以索取贖金。",
+      "The police are searching for the suspect who tried to kidnap the child. 警方正在搜尋試圖誘拐（綁架）該兒童的嫌疑人。"
+    ],
+    "difficultyLevel": 5,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kidney",
+    "meaning": "腎",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor performed a successful kidney transplant operation. 醫生成功進行了一場腎臟移植手術。",
+      "Drinking plenty of water is important for maintaining healthy kidneys. 喝充足的水對於保持腎臟健康很重要。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kidney bean",
+    "meaning": "腰豆",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Red kidney beans are a common ingredient in many chili recipes. 紅腰豆是許多辣椒醬食譜中常見的食材。",
+      "She added some cooked kidney beans to the salad. 她在沙拉中加了一些煮熟的腰豆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kiki",
+    "meaning": "朋友聚會，以閒聊、閒聊為目的。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kiki refers to a gathering of friends for the purpose of gossiping and chit-chat. 「kiki」一詞指的是朋友們為了八卦和閒聊而聚集的聚會。",
+      "The lesson introduced kiki as a useful term to understand. 本課程介紹了 kiki 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kill",
+    "meaning": "殺",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The intense heat of the desert can kill an unprotected person. 沙漠的酷熱會讓沒有防護的人喪命。",
+      "We need to find a way to kill the weeds in the garden. 我們需要找到一種方法來除掉花園裡的雜草。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "killer",
+    "meaning": "殺人的人或物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There’s a killer on the loose. 有一名殺手逍遙法外。",
+      "My cat is a habitual bird killer. 我的貓是個習慣性的捕鳥者。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "killing",
+    "meaning": "這實際上剝奪了生命；致命的，致命的，致命的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report describes the result as killing. 報告將結果描述為“死亡”。",
+      "Everyone noticed the killing tone of the message. 所有人都注意到了這則訊息充滿殺意的語氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kiln",
+    "meaning": "在窯中烘烤；開火。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "When making pottery we need to allow the bisque to dry before we kiln it. 製作陶器時，我們需要在燒製之前讓素坯乾燥。",
+      "To kiln means to bake in a kiln; to fire. To kiln的意思是在窯中烘烤；開火。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kilo",
+    "meaning": "公斤 (Kilogram 之縮寫)",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He bought two kilos of fresh apples from the market. 他在市場買了兩公斤新鮮蘋果。",
+      "The weight of the package is about five kilos. 包裹的重量大約是五公斤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kilogram",
+    "meaning": "公斤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There are one thousand grams in one single kilogram. 一公斤等於一千公克。",
+      "She bought two kilograms of fresh red apples at the market. 她在市場買了兩公斤新鮮的紅蘋果。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kilometer",
+    "meaning": "公里",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It takes about fifteen minutes to drive ten kilometers on the highway. 走高速公路行駛十公里大約需要十五分鐘。",
+      "The marathon is a long-distance running race of over forty kilometers. 馬拉松是一項超過四十公里的長跑比賽。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kilt",
+    "meaning": "蘇格蘭裙",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The man was wearing a traditional Scottish kilt. 那個男人穿著傳統的蘇格蘭裙。",
+      "He wore a kilt for the special family event. 他為了家族特別活動穿上了蘇格蘭裙。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kin",
+    "meaning": "親屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She felt a strong sense of responsibility towards her next of kin. 她對自己的直系親屬（近親）感到有一種強烈的責任感。",
+      "They are not blood kin, but they have been close friends for many years. 他們雖然不是血親（親屬），但已經是多年的好朋友。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kind",
+    "meaning": "種類",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "What kind of music do you like to listen to? 你喜歡聽哪種音樂？",
+      "It was very kind of you to help me with my heavy bags. 你能幫我提重物真是太好了。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kindergarten",
+    "meaning": "幼稚園",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My younger brother started kindergarten this year and he loves it. 我弟弟今年開始上幼兒園，他非常喜歡。",
+      "She works as a teacher at a local private bilingual kindergarten. 她在當地的一家私立雙語幼兒園擔任老師。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kindle",
+    "meaning": "點燃、激起",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The teacher managed to kindle an interest in history among her students. 老師成功地激發（點燃）了學生對歷史的興趣。",
+      "We used dry grass and small twigs to kindle a fire in the fireplace. 我們利用乾草和小細枝點燃了壁爐裡的火。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kindly",
+    "meaning": "具有善良的個性；善良、熱心、富同情心。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "A kindly old man sits on the park bench every afternoon feeding pigeons. 每天下午，一位慈祥的老人坐在公園的長椅上餵鴿子。",
+      "Something described as kindly is having a kind personality; kind, warmhearted, sympathetic. 所謂仁慈，就是指性格仁慈；善良，熱心，富有同情心。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kindness",
+    "meaning": "某種 實例 或 慈善 <a rel=\"mw:WikiLink\" href=\"/wiki/wikimaviour\"",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "How can I thank you for your many kindnesses? 我該如何感謝您的 好意 ？ 我該如何感謝您的這麼多好意呢？ 我想感謝您的好意？",
+      "Do me a kindness and leave. 幫我一個 善意 然後離開。 幫我一個忙然後離開。 幫我一個善意然後離開。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kindred",
+    "meaning": "已連接 、 相關 、 、 類似 。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report describes the result as kindred. 報告將這一結果描述為「類似」。 報告將這一結果描述為「類似」。 報告將此結果描述為「類似」。",
+      "Everyone noticed the kindred tone of the message. 每個人都注意到了這則訊息的相似語氣。 每個人都注意到了這則訊息的相似語氣。 每個人都注意到了這則訊息的相似語氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kinetic",
+    "meaning": "與運動或運動功能相關。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as kinetic is relating to kinesis or motor function. 被描述為動力學的東西與運動或運動功能有關。",
+      "The word kinetic is often used to describe a person, thing, or situation. 「動力學」一詞通常用於描述人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "king",
+    "meaning": "國王",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The king ruled over his vast kingdom for over fifty years. 國王統治了他那遼闊的王國超過五十年。",
+      "The lion is often called the king of the jungle. 獅子通常被稱為萬獸之王。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kingdom",
+    "meaning": "王國",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ancient kingdom was famous for its rich culture and history. 這個古代王國以其豐富的文化與歷史聞名。",
+      "The lion is often called the king of the entire animal kingdom. 獅子常被稱為整個動物界的王者。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kingfisher",
+    "meaning": "翠鳥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A beautiful kingfisher was sitting on a branch near the river. 一隻漂亮的翠鳥正坐在河邊的樹枝上。",
+      "Kingfishers are known for their vibrant blue and orange feathers. 翠鳥以其鮮豔的藍橘色羽毛著稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kingship",
+    "meaning": "國王的尊嚴、等級或職位；身為國王的狀態。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kingship refers to The dignity, rank, or office of a king; the state of being a king. 王權一詞是指國王的尊嚴、等級或職位；身為國王的狀態。",
+      "We learned the meaning of kingship during today's lesson. 在今天的課程中我們學習了王權的意義。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "kink",
+    "meaning": "要大聲笑。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "People often kink when the situation calls for it. 當情況需要時，人們常常會糾結。",
+      "Learning when to kink helps you communicate more clearly. 學習何時扭結可以幫助你更清晰地溝通。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kinky",
+    "meaning": "充滿了糾結；容易扭結或捲曲。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as kinky is full of kinks; liable to kink or curl. 被形容為「kinky」的東西就是充滿了「kinks」的東西。容易扭結或捲曲。",
+      "The word kinky is often used to describe a person, thing, or situation. 「kinky」這個字常被用來形容一個人、一件事或一種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kino",
+    "meaning": "特別好的或複雜的電影。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Man, I hate Marvel movies, but Scorsese, now that's some real kino. 夥計，我討厭漫威電影，但史柯西斯，現在那是一些真正的電影。",
+      "The term kino refers to Especially good or sophisticated cinema. 「kino」一詞指的是特別好的或複雜的電影。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kinship",
+    "meaning": "親屬關係",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The study explores the complex system of kinship in tribal societies. 這項研究探討了部落社會中複雜的親屬關係體系。",
+      "They felt a strong sense of kinship and shared values. 他們感到一種強烈的親密感和共同價值觀。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "kinsman",
+    "meaning": "男親屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He sought help from his wealthy kinsman in the city. 他向城裡富有的男親戚尋求幫助。",
+      "The kinsmen gathered to celebrate the traditional festival. 親戚們聚集在一起慶祝傳統節日。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kiss",
+    "meaning": "吻",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She gave her mother a gentle kiss on the cheek before leaving. 出門前，她在母親臉上輕輕吻了一下。",
+      "The couple shared a romantic kiss under the moonlight. 那對情侶在月光下浪漫接吻。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kit",
+    "meaning": "成套工具",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You should always carry a first-aid kit when you go hiking. 妳去健行時一定要隨身攜帶急救包（成套工具）。",
+      "The software development kit includes various tools for developers. 軟體開發工具包為開發者包含了各種工具。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kitchen",
+    "meaning": "廚房",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My mother spends a lot of time in the kitchen preparing delicious meals. 我媽媽花很多時間在廚房準備美味的餐點。",
+      "The new house has a large modern kitchen with all the latest appliances. 這間新房子有一個寬敞現代且配備所有最新家電的廚房。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kite",
+    "meaning": "風箏",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The children were flying their colorful kites in the park. 孩子們正在公園裡放彩色風箏。",
+      "It's a perfect windy day for flying a kite. 今天是個適合放風箏的有風好天氣。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kitten",
+    "meaning": "小貓",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The children were playing with a cute little kitten. 孩子們正在和一隻可愛的小貓玩。",
+      "She rescued an abandoned kitten from the park. 她在公園裡救了一隻被遺棄的小貓。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kitty",
+    "meaning": "一隻成年貓；另外，有時採用 Kitty 的形式：任何年齡的貓的寵物名。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Here, kitty kitty! Nice kitty! 來了，小貓小貓！好貓咪！",
+      "The term kitty refers to an adult cat; also, sometimes in the form Kitty: a pet name for a cat of any age. 小貓一詞是指成年貓；另外，有時採用 Kitty 的形式：任何年齡的貓的暱稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kiwi",
+    "meaning": "奇異果，奇異鳥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Kiwi fruit is a rich source of vitamin C. 奇異果是維生素 C 的豐富來源。",
+      "The kiwi is a unique flightless bird native to New Zealand. 奇異鳥是紐西蘭特有的獨特無翼鳥。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "knack",
+    "meaning": "一個小發明；一個玩具。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term knack refers to a petty contrivance; a toy. “knack”一詞指的是小發明。一個玩具。",
+      "The lesson introduced knack as a useful term to understand. 本課介紹了「訣竅」這個術語，它是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knead",
+    "meaning": "揉，捏",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "You should knead the dough thoroughly before baking the bread. 烘焙麵包前你應該徹底揉捏麵糰。",
+      "The baker was busy kneading a large batch of dough. 麵包師正忙著揉捏一大批麵糰。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knee",
+    "meaning": "膝蓋",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He hurt his knee while playing football and had to see a doctor. 他踢足球時弄傷了膝蓋，不得不去看醫生。",
+      "The little girl fell down and scraped her knee. 小女孩摔倒並擦傷了膝蓋。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knee-jerk",
+    "meaning": "膝跳反應，下意識的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor performed a test to check his knee-jerk reflex. 醫生進行了測試，以檢查他的膝跳反射。",
+      "It was a knee-jerk reaction to the news, without any careful thought. 那是對消息做出的下意識反應，沒有經過仔細考慮。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kneel",
+    "meaning": "下跪",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The people decided to kneel in silent prayer at the ancient temple. 人們決定在那座古代寺廟裡跪下（下跪）靜靜祈禱。",
+      "He had to kneel on the floor to reach the books on the low shelf. 他不得不跪在地板上去夠低架上的書。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knickers",
+    "meaning": "燈籠褲，女用短褲",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The cyclist was wearing a pair of old-fashioned knickers. 騎自行車的人穿著一條老式的燈籠褲。",
+      "She bought a set of comfortable cotton knickers. 她買了一套舒適的棉質女用短褲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knife",
+    "meaning": "刀",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Be careful not to cut yourself with that sharp kitchen knife. 小心別被那把鋒利的廚刀割傷了。",
+      "I need a knife and fork to eat this steak. 我需要刀叉來吃這塊牛排。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knight",
+    "meaning": "騎士",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The story is about a brave knight who rescues a beautiful princess. 這個故事是關於一位勇敢騎士救出美麗公主的故事。",
+      "In the past, knights were expected to follow a strict code of honor. 在過去，騎士被要求遵守嚴格的榮譽準則。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knighthood",
+    "meaning": "騎士稱號",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Without knighthood, the team could not finish on time. 沒有knighthood，團隊就無法準時完成。",
+      "We need more knighthood to solve this issue effectively. 我們需要更多knighthood才能有效解決這個問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knightly",
+    "meaning": "四) 騎士的",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The coach replied knightly and solved the issue. 教練knightly地回應，並解決了問題。",
+      "The nurse checked the patient knightly before bedtime. 護理師在睡前很knightly地檢查病人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knit",
+    "meaning": "針織",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "My grandmother is learning how to knit a warm wool sweater. 我祖母正在學習如何織一件暖和的羊毛衣。",
+      "She spent the whole afternoon knitting colorful scarves for her nieces. 她花了一整下午為她的姪女們織繽紛的絲巾。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knitted",
+    "meaning": "四 編織的,針織的",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The nurse decided to knitted after reading the new policy. 護理師讀完新政策後決定要knitted。",
+      "Please knitted the list before noon. 請在中午前knitted清單。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knitter",
+    "meaning": "四针织工",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "During the meeting, the knitter answered every question patiently. 會議中，這位knitter耐心回答了每個問題。",
+      "The knitter explained the problem clearly to everyone. 這位knitter清楚地向大家說明了問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "knitting",
+    "meaning": "篇织物，针织品",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We had to knitting quickly to meet the deadline. 為了趕上期限，我們必須迅速knitting。",
+      "The coach decided to knitting after reading the new policy. 教練讀完新政策後決定要knitting。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knitting needle",
+    "meaning": "毛衣針",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We used \"knitting needle\" in today's dialogue practice. 我們在今天的對話練習中用了「knitting needle」。",
+      "After practice, I could use \"knitting needle\" more confidently. 練習後，我更有自信地使用「knitting needle」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knitwear",
+    "meaning": "针织品",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using knitwear in two different sentences. 我們練習把 knitwear 放進兩個不同句子裡。",
+      "We discussed the term knitwear in class today. 我們今天在課堂上討論了 knitwear 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knob",
+    "meaning": "旋鈕",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Please turn the knob to the right to open the heavy wooden door. 請向右轉動旋鈕以開啟那扇沉重的木門。",
+      "The volume knob on the radio managing to be broken earlier today. 收音機上的音量旋鈕今天一早竟然（能）壞了。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knock",
+    "meaning": "敲",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "There was a sudden knock at the front door. 前門突然傳來了敲門聲。",
+      "Please knock before you enter the office. 進入辦公室前請先敲門。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knocked",
+    "meaning": "敲,擊",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "We had to knocked quickly to meet the deadline. 為了趕上期限，我們必須迅速knocked。",
+      "If you knocked every day, your skills improve quickly. 如果你每天都knocked，能力會進步得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knocking",
+    "meaning": "敲,擊",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Mia knockinged the details carefully yesterday. Mia昨天仔細地knocking了細節。",
+      "If you knocking every day, your skills improve quickly. 如果你每天都knocking，能力會進步得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knockout",
+    "meaning": "使人失去知覺，或至少在一定時間內無法重新站起來的行為；一次技術擊倒。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The boxer scored a knockout on his opponent. 這位拳擊手擊倒了對手。",
+      "The term knockout refers to the act of making one unconscious, or at least unable to come back on one's feet within a certain period of time; a TKO. 「擊倒」一詞是指使一個人失去知覺，或至少在一定時間內無法重新站起來的行為；一次技術擊倒。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knot",
+    "meaning": "結",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sailors used a complex knot to secure the boat to the dock. 水手們用一個複雜的結將船固定在碼頭上。",
+      "He struggled to untie the tight knot in his shoelaces earlier. 他剛才努力解開鞋帶上那個緊緊的結。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "know",
+    "meaning": "知道",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Do you know the answer to this difficult math question? 你知道這個數學難題的答案嗎？",
+      "I've known my best friend since we were in primary school. 我從小學起就認識我最好的朋友了。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knowing",
+    "meaning": "會心",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Please knowing the list before noon. 請在中午前knowing清單。",
+      "Mia decided to knowing after reading the new policy. Mia讀完新政策後決定要knowing。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knowingly",
+    "meaning": "以一個知道的人的方式。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "She smiled knowingly, but kept the secret. 她會意地笑了笑，但還是保守了秘密。",
+      "If someone acts knowingly, they do so in a way that is in the manner of one who knows. 如果某人有意行事，他們就會以知情者的方式行事。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knowledge",
+    "meaning": "知識",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Reading books is a great way to gain new knowledge about the world. 讀書是獲得關於世界新知識的好方法。",
+      "She has extensive knowledge of traditional Chinese medicine. 她對中醫擁有廣博的知識。"
+    ],
+    "difficultyLevel": 1,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "elementary"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "knowledgeable",
+    "meaning": "知識淵博的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "He is very knowledgeable about modern art and has published several books. 他在現代藝術方面知識淵博，並出版了幾本書。",
+      "She is a knowledgeable guide who can answer all your questions. 她是一位見多識廣的導遊，能回答你所有的問題。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "known",
+    "meaning": "已知的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The engineer wrote down known with the note \"已知的\". 工程師把 known 記下來，並註記「已知的」。",
+      "The article mentioned known in a short paragraph. 文章在一段短文中提到了 known。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "knuckle",
+    "meaning": "指節",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned knuckle in a short paragraph. 文章在一段短文中提到了 knuckle。",
+      "We discussed the term knuckle in class today. 我們今天在課堂上討論了 knuckle 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "ko'edlm",
+    "meaning": "男女同校的学生",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Our team invited a skilled ko'edlm to lead the workshop. 我們團隊邀請了一位有經驗的ko'edlm帶領工作坊。",
+      "During the meeting, the ko'edlm answered every question patiently. 會議中，這位ko'edlm耐心回答了每個問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "koala",
+    "meaning": "無尾熊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The koala is a beloved animal native to the Australian forests. 無尾熊是澳洲森林特有的受人喜愛的動物。",
+      "We saw several koalas sleeping peacefully in the eucalyptus trees. 我們看到幾隻無尾熊在尤加利樹上安靜地睡覺。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "kodak",
+    "meaning": "相機：拍攝靜態照片的設備。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kodak refers to a camera: a device for taking still photographs. 柯達一詞指的是相機：一種拍攝靜態照片的設備。",
+      "The lesson introduced kodak as a useful term to understand. 本課程介紹了「柯達」這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "koko",
+    "meaning": "科科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned koko in a short paragraph. 文章在一段短文中提到了 koko。",
+      "We practiced using koko in two different sentences. 我們練習把 koko 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kol",
+    "meaning": "大聲呼叫,大聲說",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned kol in a short paragraph. 文章在一段短文中提到了 kol。",
+      "Kevin wrote down kol with the note \"大聲呼叫,大聲說\". Kevin把 kol 記下來，並註記「大聲呼叫,大聲說」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kon",
+    "meaning": "康",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using kon in two different sentences. 我們練習把 kon 放進兩個不同句子裡。",
+      "The article mentioned kon in a short paragraph. 文章在一段短文中提到了 kon。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kor",
+    "meaning": "科爾",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "During the meeting, the kor answered every question patiently. 會議中，這位kor耐心回答了每個問題。",
+      "We asked the kor for advice before making a decision. 我們在做決定前先向這位kor請教。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "korn",
+    "meaning": "柯恩",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term korn in class today. 我們今天在課堂上討論了 korn 這個詞。",
+      "We practiced using korn in two different sentences. 我們練習把 korn 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kors",
+    "meaning": "科爾斯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned kors in a short paragraph. 文章在一段短文中提到了 kors。",
+      "Kevin wrote down kors with the note \"科爾斯\". Kevin把 kors 記下來，並註記「科爾斯」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kosher",
+    "meaning": "適合使用或消費，符合猶太法律（特別是與食品有關的法律）。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Only in New York can you find a good, kosher hamburger! 只有在紐約你才能找到美味的猶太漢堡！",
+      "David's mother kept a kosher kitchen, with separate sets of dishes for meat and for dairy. 大衛的母親擁有一間符合猶太潔食標準的廚房，裡面有單獨的肉類和乳製品餐具。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kozlo",
+    "meaning": "衣服,，服装 2 2 =£ 0620",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The nurse wrote down kozlo with the note \"衣服,，服装 2 2 =£ 0620\". 護理師把 kozlo 記下來，並註記「衣服,，服装 2 2 =£ 0620」。",
+      "The article mentioned kozlo in a short paragraph. 文章在一段短文中提到了 kozlo。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kra",
+    "meaning": "月人碰撞,撞擊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "During the meeting, the kra answered every question patiently. 會議中，這位kra耐心回答了每個問題。",
+      "The kra explained the problem clearly to everyone. 這位kra清楚地向大家說明了問題。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "kraft",
+    "meaning": "牛皮紙",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "My nephew can already identify a kraft in pictures. 我姪子已經可以在圖片中辨認出kraft。",
+      "The documentary introduced the habits of the kraft. 那部紀錄片介紹了kraft的習性。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kredit",
+    "meaning": "信貸",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using kredit in two different sentences. 我們練習把 kredit 放進兩個不同句子裡。",
+      "We discussed the term kredit in class today. 我們今天在課堂上討論了 kredit 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kreeft",
+    "meaning": "克雷夫特",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We practiced using kreeft in two different sentences. 我們練習把 kreeft 放進兩個不同句子裡。",
+      "We discussed the term kreeft in class today. 我們今天在課堂上討論了 kreeft 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kremlin",
+    "meaning": "在俄羅斯各個城市發現的一個強化的中央建築群。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kremlin refers to a fortified, central complex found in various Russian cities. 克里姆林宮一詞指的是俄羅斯各個城市中發現的一個堅固的中央建築群。",
+      "The lesson introduced kremlin as a useful term to understand. 本課介紹了克里姆林宮這個術語，這是一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kris",
+    "meaning": "克里斯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned kris in a short paragraph. 文章在一段短文中提到了 kris。",
+      "We discussed the term kris in class today. 我們今天在課堂上討論了 kris 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kros",
+    "meaning": "克羅斯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "We discussed the term kros in class today. 我們今天在課堂上討論了 kros 這個詞。",
+      "We practiced using kros in two different sentences. 我們練習把 kros 放進兩個不同句子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kudos",
+    "meaning": "讚美;榮譽。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The talented, young playwright received much kudos for his new drama. 這位才華橫溢的年輕劇作家因其新劇而廣受讚譽。",
+      "I gave Chelsea much kudos for the birth of her first daughter. 我對切爾西第一個女兒的出生表示了極大的敬意。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kuhollg",
+    "meaning": "鎖眼,鑰匙孔",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor checked her kuhollg during the exam. 醫師在檢查時查看了她的kuhollg。",
+      "The pain in my kuhollg disappeared after a short rest. 我稍微休息後，kuhollg的疼痛就消失了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kuki",
+    "meaning": "久喜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned kuki in a short paragraph. 文章在一段短文中提到了 kuki。",
+      "We discussed the term kuki in class today. 我們今天在課堂上討論了 kuki 這個詞。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kwarot",
+    "meaning": "面容言少語的,文靜的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned kwarot in a short paragraph. 文章在一段短文中提到了 kwarot。",
+      "Kevin wrote down kwarot with the note \"面容言少語的,文靜的\". Kevin把 kwarot 記下來，並註記「面容言少語的,文靜的」。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "kyle",
+    "meaning": "島嶼與大陸之間或兩個島嶼之間的狹窄海域或通道。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term kyle refers to a narrow arm or channel of the sea between an island and the mainland, or between two islands. 「凱爾」一詞指的是島嶼與大陸或兩個島嶼之間的狹窄海灣或海峽。",
+      "The lesson introduced kyle as a useful term to understand. 本課程介紹了 kyle 作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  }
+]

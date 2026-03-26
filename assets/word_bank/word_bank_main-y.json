@@ -1,0 +1,709 @@
+[
+  {
+    "word": "yacht",
+    "meaning": "遊艇",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The wealthy billionaire owns a luxurious yacht and travels all over the world. 那位富有億萬富翁擁有一艘豪華遊艇，環遊世界。",
+      "They spent a relaxing weekend sailing on their private yacht. 他們在私人遊艇上航行，度過了一個輕鬆的週末。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yachting",
+    "meaning": "遊艇運動，帆船運動",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Yachting is a popular sport among the wealthy in coastal cities. 遊艇運動在沿海城市的富人中是一項受歡迎的運動。",
+      "He enjoys going yachting with his friends every weekend. 他喜歡週末和朋友們一起去玩帆船（遊艇運動）。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yachtsman",
+    "meaning": "遊艇駕駛者，帆船運動員",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The experienced yachtsman guided the vessel through the narrow channel. 有經驗的遊艇駕駛者引導船隻通過狹窄的水道。",
+      "He has been a professional yachtsman for over twenty years. 他擔任專業帆船運動員已超過二十年。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yahoo",
+    "meaning": "粗魯、粗魯、大聲或粗魯的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term yahoo refers to a rough, coarse, loud or uncouth individual. 雅虎一詞指的是粗魯、粗俗、大聲或粗俗的人。",
+      "The lesson introduced yahoo as a useful term to understand. 本課介紹了雅虎這個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yale",
+    "meaning": "耶魯大學，耶魯鎖",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He was accepted into Yale University to study law. 他被耶魯大學錄取學習法律。",
+      "The front door is secured with a high-quality Yale lock. 前門用高品質的耶魯鎖鎖著。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "yam",
+    "meaning": "薯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Yams are a healthy and delicious type of root vegetable. 山藥是一種健康且美味的根莖類蔬菜。",
+      "She added some roasted yams to the fresh garden salad. 她在新鮮花園沙拉中加入了一些烤山藥。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yammer",
+    "meaning": "嘮叨，抱怨",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Stop yammering about the weather and let's go for a walk. 別再嘮叨天氣了，我們去散步吧。",
+      "He spent the entire afternoon yammering about his boss. 他整個下午都在抱怨他的老闆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yang",
+    "meaning": "大雁的叫聲；鳴喇叭。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term yang refers to the cry of the wild goose; a honk. 陽，指大雁的叫聲；一聲喇叭。",
+      "The lesson introduced yang as a useful term to understand. 本課介紹了“陽”這個術語，它是一個值得理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yank",
+    "meaning": "從分發中刪除。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "They yanked the product as soon as they learned it was unsafe. 當他們得知該產品不安全時，他們立即撤回了該產品。",
+      "People often yank when the situation calls for it. 當情況需要時，人們常常會猛烈地撤退。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yar",
+    "meaning": "年 (修正為 year)",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Happy New Yar! I hope you have a great one. 新年快樂（新「年」快樂）！希望你過得愉快。",
+      "She plans to travel to Europe later this yar. 她計畫今「年」晚些時候去歐洲旅行。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "yard",
+    "meaning": "庭院",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The kids are playing happily with the dog in the backyard. 孩子們正和狗在後院開心地玩耍。",
+      "Our new house has a large front yard with many flowers. 我們的換新家有一個種了很多花的大前院。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yarn",
+    "meaning": "紗線，故事",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She bought several skeins of colorful wool yarn to knit a sweater. 她買了幾捲彩色羊毛紗線來織毛衣。",
+      "The old sailor told us a long and fascinating yarn about his travels. 那位老海員給我們講了一個關於他旅行的漫長且迷人的故事。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "yashmak",
+    "meaning": "雅什馬克（穆斯林婦女戴的面紗）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The woman wore a yashmak as part of her traditional attire. 那位婦女戴著雅什馬克面紗，作為她傳統服飾的一部分。",
+      "In some cultures, wearing a yashmak is a sign of modesty. 在某些文化中，佩戴面紗（雅什馬克）是端莊的象徵。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yawn",
+    "meaning": "打哈欠",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He couldn't stop yawning during the long and boring lecture. 在漫長而乏味的講座中，他忍不住一直打哈欠。",
+      "A yawn is often a sign that someone is tired or needs more oxygen. 打哈欠通常是某人疲勞或需要更多氧氣的信號。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "year",
+    "meaning": "年",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There are 365 days in a year, and 366 in a leap year. 一年有 365 天，閏年則有 366 天。",
+      "She graduated from university last year and started working. 她去年大學畢業並開始工作。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yearbook",
+    "meaning": "參考書，每年出版。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term yearbook refers to a reference book, published annually. 年鑑一詞是指每年出版的參考書。",
+      "The lesson introduced yearbook as a useful term to understand. 本課程介紹了年鑑作為一個易於理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yearly",
+    "meaning": "每年",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The company holds a grand yearly celebration for its staff. 公司每年為員工舉行一次盛大的年度慶祝活動。",
+      "The yearly subscription fee for the magazine is fifty dollars. 該雜誌的年度訂閱費是五十美元。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yearn",
+    "meaning": "嚮往、渴望",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The young students yearn for adventure and want to travel the world. 年輕學生嚮往冒險，想環遊世界。",
+      "She yearned to return to the small mountain village where she grew up. 她渴望（嚮往）回到自己成長的小山村。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yearning",
+    "meaning": "渴望，思念",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "There is a deep yearning for peace in the hearts of the people. 人們心中有著對和平的深切渴望。",
+      "She felt a yearning sadness as she looked at the old photographs. 看著舊照片，她感到一種思念的憂傷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "years",
+    "meaning": "年份（複數）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "It took many years of hard work to achieve his goals. 他花了多年的努力工作才達成目標。",
+      "They have been best friends for over twenty years. 他們當最好的朋友已經超過二十年了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yeast",
+    "meaning": "酵母",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "You need to add yeast to the flour to make the bread rise. 你需要在麵粉中加入酵母以使麵包發酵升起。",
+      "Yeast is an essential ingredient in the brewing process. 酵母是釀造過程中必不可少的成分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yell",
+    "meaning": "叫喊",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "Don't yell at me; I can hear you perfectly well. 別對我喊；我聽得很清楚。",
+      "The coach yelled instructions to the players from the sidelines. 教練從場邊對球員們大聲喊著指令。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yellow",
+    "meaning": "黃色的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Sunflowers are famous for their large and bright yellow petals. 向日葵以其大而鮮艷的黃色花瓣聞名。",
+      "The taxi was painted bright yellow so it was easy to spot. 計程車被漆成鮮黃色，所以很容易辨認。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yellowish",
+    "meaning": "颜色有点黄。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Something described as yellowish is somewhat yellow in colour. 被描述為黃色的東西的顏色有點黃色。",
+      "The word yellowish is often used to describe a person, thing, or situation. 黃色這個詞常用來形容人、事物或情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yelp",
+    "meaning": "突然的、高亢的噪音或話語。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The puppy let out a yelp when I stepped on her tail. 當我踩到小狗的尾巴時，小狗發出了一聲叫聲。",
+      "The term yelp refers to an abrupt, high-pitched noise or utterance. 術語「尖叫」指的是突然的、高音調的噪音或話語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yen",
+    "meaning": "日圓，渴望",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The price of the camera is fifty thousand yen. 這台相機的價格是五萬日圓。",
+      "I have a yen to travel to exotic places during my vacation. 我有渴望在假期時去異國他鄉旅行。"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "toeicSignals"
+    ]
+  },
+  {
+    "word": "yes/yeah",
+    "meaning": "是/是",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Yes, I would love to go for a movie with you tonight. 是的，我很想今晚和妳一起去看電影。",
+      "Yeah, that sounds like a great idea! Let's do it. 沒錯，聽起來是個好主意！我們就這麼辦吧。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec"
+    ]
+  },
+  {
+    "word": "yesterday",
+    "meaning": "昨天",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I visited my grandparents in the countryside yesterday. 我昨天去探望了鄉下的祖父母。",
+      "What did you do yesterday afternoon after you finished work? 你昨天下午下班後做了什麼？"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yet",
+    "meaning": "然而",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "I haven't finished my homework yet, but I'm working on it. 我還沒做完功課，但我正在努力。",
+      "The best part of the trip is yet to come, believe me! 這趟旅行最棒的部分還在後頭，相信我！"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yield",
+    "meaning": "產量、讓步",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Significant advances in technology have helped to increase crop yields. 科技的重大進步有助於提高農作物產量。",
+      "The government decided to yield to the protesters' demands after weeks of negotiation. 經過數週談判後，政府決定對抗議者的要求做出讓步。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yoga",
+    "meaning": "瑜伽",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Daily yoga can help to improve your physical flexibility and balance. 每日練習瑜伽可以幫助提高身體的靈活性和平衡。",
+      "She decided to join a local yoga class to reduce stress and stay fit. 她決定參加當地的瑜伽課，以減輕壓力並保持健康。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yogi",
+    "meaning": "將（某人）變成瑜伽士；引導練習瑜伽。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To yogi means to turn (someone) into a yogi; to lead into practicing yoga. 瑜伽士意味著將（某人）變成瑜伽士；引導練習瑜伽。",
+      "People may yogi in different situations depending on the context. 人們可能會根據具體情況在不同的情況下練習瑜伽。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yogurt",
+    "meaning": "優格",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She enjoys having a bowl of fresh yogurt with fruit for her breakfast. 她喜歡早餐吃一碗配有水果的新鮮優格。",
+      "Greek yogurt is a great source of protein and is good for your health. 希臘優格是蛋白質的重要來源，對健康有益。"
+    ],
+    "difficultyLevel": 6,
+    "schoolLevels": [
+      "seniorHigh",
+      "college"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "collegeSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yoke",
+    "meaning": "與役畜有關的大量工作，持續約半天；任何工作的數量或輪班。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "to work two yokes 工作兩個軛",
+      "The term yoke refers to an amount of work done with draught animals, lasting about half a day; an amount or shift of any work. 「軛」一詞是指對役畜所做的大量工作，持續約半天；任何工作的數量或班次。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yolk",
+    "meaning": "蛋黃",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She carefully separated the egg yolk from the white for the recipe. 她小心地將蛋黃與蛋白分開以備食譜之用。",
+      "The soft-boiled egg had a perfectly runny and rich yellow yolk. 這顆半熟蛋有著完美的、流動且濃郁的黃色蛋黃。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yonder",
+    "meaning": "在或在遙遠但有指示的地方。",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "Whose doublewide is that over yonder? 那邊的雙寬是誰的？",
+      "The team responded yonder to the change. 團隊對那邊的變化做出了反應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yorker",
+    "meaning": "球被投出，以便在擊球手的彈出摺痕處或附近彈跳。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He bowled forty-seven toe crushing yorkers that resulted in the wickets of 6 batsmen. 他擊中了 47 個約克郡球員的腳趾，導致 6 名擊球手擊中三柱門。",
+      "The term yorker refers to a ball bowled so as to bounce at or near the batsman's popping crease. 術語「約克」指的是擊球時在擊球手的彈出摺痕處或附近彈跳的球。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "you",
+    "meaning": "你，你們",
+    "partOfSpeech": "pronoun",
+    "sentences": [
+      "How are you feeling today? 你今天感覺如何？",
+      "I can help you with your homework if you need it. 如果你需要的話，我可以幫你做功課。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "you (your, yours, yourself, yourselves)",
+    "meaning": "你（你的，你的，你自己，你自己）",
+    "partOfSpeech": "pronoun",
+    "sentences": [
+      "You are the most hardworking student in the entire class. 你是全班最勤奮的學生。",
+      "Please take good care of yourself during your trip to Japan. 妳去日本旅行期間請好好照顧自己。"
+    ],
+    "schoolLevels": [
+      "college"
+    ],
+    "sourceTags": [
+      "collegeSignals"
+    ]
+  },
+  {
+    "word": "young",
+    "meaning": "年輕的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "She looks very young for her age, but she is quite experienced. 以她的年齡來說她看起來很年輕，但她很有經驗。",
+      "When I was young, I used to dream of becoming an astronaut. 當我年輕時，我曾夢想成為一名太空人。"
+    ],
+    "difficultyLevel": 2,
+    "schoolLevels": [
+      "seniorHigh",
+      "juniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "younger",
+    "meaning": "一個比另一個年輕。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term younger refers to one who is younger than another. 「年輕」一詞是指一個人比另一個人年輕。",
+      "The lesson introduced younger as a useful term to understand. 本課程介紹了「年輕」這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "youngster",
+    "meaning": "青少年",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The community center offers various activities for local youngsters. 社區中心為當地的青少年提供多樣化的活動。",
+      "Many youngsters nowadays spend too much time on social media. 現今許多青少年在社交媒體上花了太多的時間。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "youth",
+    "meaning": "青年",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The organization aims to promote the development of local youth. 該組織旨在促進當地青年的發展。",
+      "He spent most of his youth traveling and exploring the world. 他青年時期的大部分時間都在旅行與探索世界。"
+    ],
+    "difficultyLevel": 3,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "youthful",
+    "meaning": "年輕的、青春活力的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "Despite being over sixty, she still has a very youthful appearance and energy. 儘管已經六十多歲了，她仍然擁有非常年輕的外表和活力。",
+      "The company wants to project a youthful and innovative image to its customers. 該公司希望向客戶展現年輕且創新的形象。"
+    ],
+    "difficultyLevel": 4,
+    "schoolLevels": [
+      "seniorHigh"
+    ],
+    "examTags": [
+      "toeic"
+    ],
+    "sourceTags": [
+      "twCeec",
+      "toeicSignals",
+      "pdfExamBook"
+    ]
+  },
+  {
+    "word": "yuan",
+    "meaning": "中國貨幣的基本單位。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term yuan refers to the basic unit of money in China. 人民幣一詞是指中國的基本貨幣單位。",
+      "The lesson introduced yuan as a useful term to understand. 本課介紹了元這個術語，這是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "yuck",
+    "meaning": "說「噁心」；來表達厭惡。",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "To yuck means to say \"yuck\"; to express disgust. To yuck 的意思是說「yuck」；來表達厭惡。",
+      "People may yuck in different situations depending on the context. 根據具體情況，人們可能會在不同的情況下感到噁心。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  }
+]
