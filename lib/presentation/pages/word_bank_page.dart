@@ -1,9 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../../data/repositories/builtin_word_bank_repository.dart';
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
@@ -48,12 +46,11 @@ class WordBankPage extends StatefulWidget {
 }
 
 class _WordBankPageState extends State<WordBankPage> {
-  static const String _assetPath = 'assets/word_bank/word_bank_main.json';
-
   final _searchController = TextEditingController();
   final Set<String> _addingWords = <String>{};
 
   List<BuiltinWordEntry> _entries = const [];
+  Map<_WordBankAudienceFilter, int> _filterCounts = _createEmptyFilterCounts();
   _WordBankAudienceFilter _selectedFilter = _WordBankAudienceFilter.all;
   bool _isLoading = true;
   String? _errorMessage;
@@ -77,20 +74,8 @@ class _WordBankPageState extends State<WordBankPage> {
     });
 
     try {
-      final rawJson = await rootBundle.loadString(_assetPath);
-      final parsed = jsonDecode(rawJson);
-      if (parsed is! List) {
-        throw const FormatException('字庫資料格式錯誤');
-      }
-      final loaded = parsed
-          .whereType<Map>()
-          .map(
-            (item) => BuiltinWordEntry.fromMap(
-              item.map((key, value) => MapEntry(key.toString(), value)),
-            ),
-          )
-          .where((entry) => entry.word.isNotEmpty && entry.meaning.isNotEmpty)
-          .toList(growable: false);
+      final loaded = await context.read<BuiltinWordBankRepository>().fetchAll();
+      final counts = _buildFilterCounts(loaded);
 
       if (!mounted) {
         return;
@@ -98,6 +83,7 @@ class _WordBankPageState extends State<WordBankPage> {
 
       setState(() {
         _entries = loaded;
+        _filterCounts = counts;
       });
     } catch (error) {
       if (!mounted) {
@@ -148,11 +134,7 @@ class _WordBankPageState extends State<WordBankPage> {
   }
 
   int _countForFilter(_WordBankAudienceFilter filter) {
-    if (filter == _WordBankAudienceFilter.all) {
-      return _entries.length;
-    }
-
-    return _entries.where((entry) => _matchesFilter(entry, filter)).length;
+    return _filterCounts[filter] ?? 0;
   }
 
   bool _matchesFilter(BuiltinWordEntry entry, _WordBankAudienceFilter filter) {
@@ -172,6 +154,36 @@ class _WordBankPageState extends State<WordBankPage> {
       case _WordBankAudienceFilter.toeic:
         return entry.examTags.contains(BuiltinExamTag.toeic);
     }
+  }
+
+  Map<_WordBankAudienceFilter, int> _buildFilterCounts(
+    List<BuiltinWordEntry> entries,
+  ) {
+    final counts = _createEmptyFilterCounts();
+
+    for (final entry in entries) {
+      counts[_WordBankAudienceFilter.all] =
+          (counts[_WordBankAudienceFilter.all] ?? 0) + 1;
+
+      for (final filter in _WordBankAudienceFilter.values) {
+        if (filter == _WordBankAudienceFilter.all) {
+          continue;
+        }
+        if (_matchesFilter(entry, filter)) {
+          counts[filter] = (counts[filter] ?? 0) + 1;
+        }
+      }
+    }
+
+    return counts;
+  }
+
+  static Map<_WordBankAudienceFilter, int> _createEmptyFilterCounts() {
+    return Map<_WordBankAudienceFilter, int>.fromEntries(
+      _WordBankAudienceFilter.values.map(
+        (filter) => MapEntry<_WordBankAudienceFilter, int>(filter, 0),
+      ),
+    );
   }
 
   List<String> _sentencesForAdd(BuiltinWordEntry entry) {

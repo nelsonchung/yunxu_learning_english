@@ -73,7 +73,32 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/word_bank/word_bank_main.json
+    - assets/word_bank/word_bank_main-a.json
+    - assets/word_bank/word_bank_main-b.json
+    - assets/word_bank/word_bank_main-c.json
+    - assets/word_bank/word_bank_main-d.json
+    - assets/word_bank/word_bank_main-e.json
+    - assets/word_bank/word_bank_main-f.json
+    - assets/word_bank/word_bank_main-g.json
+    - assets/word_bank/word_bank_main-h.json
+    - assets/word_bank/word_bank_main-i.json
+    - assets/word_bank/word_bank_main-j.json
+    - assets/word_bank/word_bank_main-k.json
+    - assets/word_bank/word_bank_main-l.json
+    - assets/word_bank/word_bank_main-m.json
+    - assets/word_bank/word_bank_main-n.json
+    - assets/word_bank/word_bank_main-o.json
+    - assets/word_bank/word_bank_main-p.json
+    - assets/word_bank/word_bank_main-q.json
+    - assets/word_bank/word_bank_main-r.json
+    - assets/word_bank/word_bank_main-s.json
+    - assets/word_bank/word_bank_main-t.json
+    - assets/word_bank/word_bank_main-u.json
+    - assets/word_bank/word_bank_main-v.json
+    - assets/word_bank/word_bank_main-w.json
+    - assets/word_bank/word_bank_main-x.json
+    - assets/word_bank/word_bank_main-y.json
+    - assets/word_bank/word_bank_main-z.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
