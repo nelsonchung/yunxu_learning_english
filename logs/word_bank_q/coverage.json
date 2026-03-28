@@ -1,0 +1,40 @@
+{
+  "prefix": "q",
+  "sourceCount": 1152,
+  "targetPrefixCount": 1159,
+  "coveredCount": 1152,
+  "missingCount": 0,
+  "extraCount": 7,
+  "coverageRatio": 1.0,
+  "missingWords": [],
+  "extraWords": [
+    "q-tips",
+    "question mark",
+    "question paper",
+    "questioning",
+    "questions",
+    "quick fix",
+    "quick-witted"
+  ],
+  "casefoldCollisionCount": 4,
+  "casefoldCollisions": [
+    [
+      "Q",
+      "q"
+    ],
+    [
+      "Quaker",
+      "quaker"
+    ],
+    [
+      "Quillaja",
+      "quillaja"
+    ],
+    [
+      "Quintin",
+      "quintin"
+    ]
+  ],
+  "duplicateSourceWords": [],
+  "duplicateTargetWords": []
+}

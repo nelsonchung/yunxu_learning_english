@@ -25,6 +25,21 @@ TEMPLATE_SENTENCE_PATTERNS = [
     (re.compile(r"^The note explained ", re.IGNORECASE), "template_generated_sentence", 2),
     (re.compile(r"^The article explained ", re.IGNORECASE), "template_generated_sentence", 2),
     (re.compile(r"^The textbook defined ", re.IGNORECASE), "template_generated_sentence", 2),
+    (
+        re.compile(r"^She adjusted the sample .+ to match the description in the manual\.", re.IGNORECASE),
+        "template_adverb_sentence",
+        3,
+    ),
+    (
+        re.compile(r"^The report says the movement happened .+ during the test\.", re.IGNORECASE),
+        "generic_adverb_sentence",
+        3,
+    ),
+    (
+        re.compile(r"^She responded .+ after reading the short message\.", re.IGNORECASE),
+        "generic_adverb_sentence",
+        3,
+    ),
 ]
 
 MEANING_PATTERNS = [
@@ -32,6 +47,11 @@ MEANING_PATTERNS = [
     (re.compile(r"\b(obsolete|dated spelling|nonstandard spelling|eye dialect)\b", re.IGNORECASE), "lexicography_nonstandard_form", 4),
     (re.compile(r"\b(plural of|past tense of|past participle of|present participle of|third-person singular|comparative of|superlative of|inflection of)\b", re.IGNORECASE), "lexicography_inflection_gloss", 4),
     (re.compile(r"\b(surname|given name|proper noun)\b", re.IGNORECASE), "lexicography_name_gloss", 3),
+    (re.compile(r"^罕見或專門用語。?$"), "placeholder_meaning", 4),
+]
+
+BAD_TRANSLATION_MARKERS = [
+    ("用上了這個副詞", "meta_adverb_translation", 3),
 ]
 
 
@@ -100,6 +120,11 @@ def review_entry(index: int, entry: dict) -> Optional[dict]:
     for sentence_index, sentence in enumerate(sentences, start=1):
         for pattern, reason, weight in TEMPLATE_SENTENCE_PATTERNS:
             if pattern.search(sentence):
+                reasons.append(f"{reason}:s{sentence_index}")
+                score += weight
+
+        for marker, reason, weight in BAD_TRANSLATION_MARKERS:
+            if marker in sentence:
                 reasons.append(f"{reason}:s{sentence_index}")
                 score += weight
 

@@ -1,0 +1,6 @@
+*
+!.gitignore
+!coverage.json
+!final_review_after_quality_cleanup.json
+!old_review_rebuild_summary.json
+!quality_cleanup_summary.json

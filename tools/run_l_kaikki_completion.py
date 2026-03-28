@@ -59,6 +59,7 @@ COMPLETION_SUMMARY_PATH = LOG_DIR / "completion_summary.json"
 SEP_TOKEN = "|||SEP|||"
 SEP_RE = re.compile(r"\|\|\|.*?\|\|\|")
 HTML_PARENS_RE = re.compile(r"^\([^)]{1,40}\)\s*")
+PLACEHOLDER_MEANING = "罕見或專門用語。"
 
 KAIKKI_POS_MAP = {
     "noun": "noun",
@@ -102,7 +103,44 @@ FORM_PATTERNS = [
     (re.compile(r"^superlative of ([^.;]+)", re.I), "superlative"),
 ]
 
-SPECIAL_CANDIDATES = {}
+SPECIAL_CANDIDATES = {
+    "quaggle": {
+        "partOfSpeech": "verb",
+        "definition": "To shake.",
+        "relationType": None,
+        "relationTarget": None,
+        "source": "manual-special",
+        "confidence": "high",
+        "score": 60,
+    },
+    "qualmyish": {
+        "partOfSpeech": "adjective",
+        "definition": "Somewhat qualmy or uneasy.",
+        "relationType": None,
+        "relationTarget": None,
+        "source": "manual-special",
+        "confidence": "high",
+        "score": 60,
+    },
+    "quintupliribbed": {
+        "partOfSpeech": "adjective",
+        "definition": "Having five ribs.",
+        "relationType": None,
+        "relationTarget": None,
+        "source": "manual-special",
+        "confidence": "high",
+        "score": 60,
+    },
+    "quondamly": {
+        "partOfSpeech": "adverb",
+        "definition": "Formerly; in the past.",
+        "relationType": None,
+        "relationTarget": None,
+        "source": "manual-special",
+        "confidence": "high",
+        "score": 60,
+    },
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -507,6 +545,28 @@ def domain_from_definition(definition: str) -> str:
         return "phonetics"
     if any(token in lower for token in ("cervix", "pharynx", "larynx", "maxilla", "chin", "teeth", "tooth", "surgery", "medical", "clinical")):
         return "medical"
+    if any(
+        token in lower
+        for token in (
+            "mathematical",
+            "mathematics",
+            "geometry",
+            "algebra",
+            "equation",
+            "quadratic",
+            "quantitative",
+            "quantity",
+            "ratio",
+            "proportion",
+            "measurement",
+            "measure",
+            "number",
+            "numeric",
+            "fourfold",
+            "fivefold",
+        )
+    ):
+        return "math"
     if any(token in lower for token in ("genus", "family", "order", "species", "botanical", "tree", "plant", "orchid", "flower", "herb", "moss", "lichen", "fungus", "alga")):
         return "taxonomy"
     if any(token in lower for token in ("instrument", "device", "tool")):
@@ -528,16 +588,115 @@ def primary_meaning_text(meaning: str) -> str:
     return primary.rstrip("。")
 
 
-def meaning_from_candidate(candidate: dict) -> str:
+def primary_definition_gloss(definition: str) -> str:
+    for part in re.split(r"[；;]", strip_leading_domain(definition)):
+        gloss = clean_markup(part).strip().strip(".")
+        if gloss:
+            return gloss
+    return strip_leading_domain(definition)
+
+
+def translate_sentence_text(english: str, fallback: str) -> str:
+    translated = clean_chinese_text(translate_text(english))
+    if not translated or translated.casefold() == english.casefold():
+        return fallback
+    return translated
+
+
+def extract_base_word(word: str, suffix: str) -> str:
+    base = word[: -len(suffix)]
+    if suffix in {"ness", "less", "ful", "ly", "proof", "ship", "hood"} and base.endswith("i"):
+        return base[:-1] + "y"
+    if suffix == "ability" and base.endswith("i"):
+        return base[:-1] + "y"
+    if suffix in {"ation", "ation", "ative", "able"} and base.endswith("ic"):
+        return base
+    return base
+
+
+def guess_placeholder_gloss(word: str, part_of_speech: str) -> Optional[str]:
+    clean_word = clean_markup(word).strip()
+    if not clean_word:
+        return None
+    if " " in clean_word:
+        return clean_word
+
+    lower = clean_word.casefold()
+    suffix_rules = [
+        ("ability", "the ability or quality of being {base}"),
+        ("ness", "the state or quality of being {base}"),
+        ("ship", "the role, state, or quality of {base}"),
+        ("proof", "resistant to {base}"),
+        ("less", "without {base}"),
+        ("ful", "full of {base}"),
+        ("like", "like {base}"),
+        ("hearted", "having a {base} heart or temperament"),
+        ("able", "able to be {base}"),
+        ("ation", "the act or process related to {base}"),
+        ("ition", "the act or process related to {base}"),
+        ("ment", "the act, process, or result related to {base}"),
+        ("ism", "a doctrine, condition, or practice related to {base}"),
+        ("ist", "a person connected with {base}"),
+        ("ize", "to make something {base}"),
+        ("ise", "to make something {base}"),
+        ("ation", "the act or process of making something {base}"),
+        ("ic", "related to {base}"),
+        ("ical", "related to {base}"),
+        ("ous", "full of or related to {base}"),
+        ("al", "related to {base}"),
+        ("ary", "related to {base}"),
+        ("ian", "related to {base}"),
+        ("oid", "resembling {base}"),
+        ("ly", "in a {base} way"),
+    ]
+    for suffix, template in suffix_rules:
+        if lower.endswith(suffix) and len(clean_word) > len(suffix) + 2:
+            base = extract_base_word(clean_word, suffix).replace("-", " ")
+            if base:
+                return template.format(base=base)
+
+    if part_of_speech == "adverb" and lower.endswith("ly") and len(clean_word) > 4:
+        return f"in a {clean_word[:-2]} way"
+    if part_of_speech == "adjective":
+        return f"related to {clean_word}"
+    if part_of_speech == "verb":
+        return f"to use or make something {clean_word}"
+    if part_of_speech == "noun":
+        return clean_word
+    return None
+
+
+def guess_placeholder_meaning(word: str, part_of_speech: str) -> str:
+    translated_word = clean_chinese_text(translate_text(word))
+    if translated_word and translated_word.casefold() != word.casefold():
+        if part_of_speech == "adverb" and translated_word.endswith("地"):
+            return translated_word
+        if part_of_speech == "adjective" and (translated_word.endswith("的") or translated_word.endswith("狀") or translated_word.endswith("化")):
+            return translated_word
+        if part_of_speech == "noun" and translated_word not in {"四鳥"}:
+            return translated_word
+
+    gloss = guess_placeholder_gloss(word, part_of_speech)
+    if gloss:
+        translated = clean_chinese_text(translate_text(gloss))
+        if translated and translated.casefold() not in {gloss.casefold(), word.casefold()}:
+            return translated
+
+    return PLACEHOLDER_MEANING
+
+
+def meaning_from_candidate(word: str, candidate: dict) -> str:
     source = candidate.get("source")
     definition = candidate["definition"]
     lower = definition.casefold()
     part_of_speech = candidate.get("partOfSpeech")
     if source == "placeholder":
-        return "罕見或專門用語。"
+        return guess_placeholder_meaning(word, part_of_speech or infer_pos(word, definition))
     translated = clean_chinese_text(translate_text(definition))
+    if part_of_speech == "adverb":
+        translated = clean_chinese_text(translate_text(primary_definition_gloss(definition)))
     if not translated or translated.casefold() == definition.casefold():
-        translated = "罕見或專門用語。"
+        translated = PLACEHOLDER_MEANING
     if source == "morphology":
         if part_of_speech == "verb":
             return "使其發音同時涉及嘴唇與另一個發音部位。"
@@ -548,6 +707,103 @@ def meaning_from_candidate(candidate: dict) -> str:
         if "superfamily" in lower:
             return "分類學上的一個總科或相關類群。"
     return translated
+
+
+def generate_placeholder_sentence_pairs(word: str, part_of_speech: str, meaning_zh: str) -> tuple[str, str, str, str]:
+    meaning_core = primary_meaning_text(meaning_zh) or "相關概念"
+    if part_of_speech == "adverb":
+        return (
+            f"Writers sometimes use {word} to describe how an action happens.",
+            f"寫作者有時會用這個副詞來描述動作發生的方式。",
+            f"Readers may still see {word} in older or specialist writing.",
+            "讀者仍可能在較早或較專門的文本中看到這個副詞。",
+        )
+    if part_of_speech == "adjective":
+        return (
+            f"Specialist notes describe one feature as {word}.",
+            f"專業說明有時會用這個詞描述「{meaning_core}」這類特徵。",
+            f"The term {word} appears in technical descriptions and older dictionaries.",
+            "這個詞也可能出現在技術性描述或較早的字典中。",
+        )
+    if part_of_speech == "verb":
+        return (
+            f"Older sources sometimes use {word} as a verb in a specialized context.",
+            "較早的資料有時會把這個字當成動詞使用。",
+            f"Readers may encounter {word} when a text needs that exact specialized meaning.",
+            f"當文本需要表達「{meaning_core}」這類意思時，讀者可能會看到這個動詞。",
+        )
+    return (
+        f"The glossary lists {word} as a specialized term.",
+        f"詞彙表會把這個詞列為一個較專門的名稱。",
+        f"Readers may encounter {word} in older or technical writing.",
+        "讀者可能會在較早或技術性的文章中看到這個詞。",
+    )
+
+
+def classify_adverb_usage(word: str, definition: str, meaning_zh: str) -> str:
+    lower = definition.casefold()
+    lower_word = word.casefold()
+    lower_meaning = meaning_zh.casefold()
+    if any(
+        token in lower
+        for token in ("qualitative", "quantitative", "quote", "quotation", "cited", "described", "measured", "valued", "valent")
+    ) or any(token in lower_word for token in ("qualit", "quantit", "quot", "value", "valent")) or any(
+        token in lower_meaning for token in ("定性", "定量", "量化", "引用", "可引用", "四價")
+    ):
+        return "analysis"
+    if any(
+        token in lower
+        for token in (
+            "every ",
+            "daily",
+            "weekly",
+            "monthly",
+            "yearly",
+            "annually",
+            "once",
+            "twice",
+            "per ",
+            "periodic",
+            "habitual",
+            "usual",
+        )
+    ) or any(token in lower_meaning for token in ("每", "日常", "經常", "一次")):
+        return "frequency"
+    if any(
+        token in lower
+        for token in (
+            "square",
+            "angular",
+            "corner",
+            "sided",
+            "in four parts",
+            "in five parts",
+            "crosswise",
+            "arranged",
+            "positioned",
+        )
+    ) or any(token in meaning_zh for token in ("四邊形", "四方", "角", "交錯", "排列", "象限", "部分")):
+        return "arrangement"
+    if any(
+        token in lower
+        for token in (
+            "question",
+            "curious",
+            "quizzical",
+            "complain",
+            "quarrel",
+            "fear",
+            "trembl",
+            "quiet",
+            "quick",
+            "eager",
+        )
+    ) or any(
+        token in lower_word
+        for token in ("question", "quiz", "quer", "quarrel", "quiver", "quake", "quick", "quiet", "quixot", "queasy")
+    ):
+        return "reaction"
+    return "fallback"
 
 
 def generate_relation_sentence_pairs(word: str, relation_type: str, target: str) -> tuple[str, str, str, str]:
@@ -595,9 +851,11 @@ def generate_relation_sentence_pairs(word: str, relation_type: str, target: str)
     )
 
 
-def generate_sentence_pairs(word: str, part_of_speech: str, definition: str, meaning_zh: str, relation_type: Optional[str], relation_target: Optional[str]) -> tuple[str, str, str, str]:
+def generate_sentence_pairs(word: str, part_of_speech: str, definition: str, meaning_zh: str, relation_type: Optional[str], relation_target: Optional[str], source: Optional[str]) -> tuple[str, str, str, str]:
     if relation_type and relation_target:
         return generate_relation_sentence_pairs(word, relation_type, relation_target)
+    if source == "placeholder":
+        return generate_placeholder_sentence_pairs(word, part_of_speech, meaning_zh)
 
     phrase = normalize_phrase(definition)
     domain = domain_from_definition(definition)
@@ -613,12 +871,61 @@ def generate_sentence_pairs(word: str, part_of_speech: str, definition: str, mea
         )
 
     if part_of_speech == "adverb":
-        return (
-            f"The report says the movement happened {word} during the test.",
-            "報告表示，這個動作是以這種方式發生的。",
-            f"She adjusted the sample {word} to match the description in the manual.",
-            "她依照手冊描述調整樣本時，用上了這個副詞。",
-        )
+        if domain == "math":
+            sentence_one = f"The report models the change {word} over time."
+            sentence_two = f"Researchers described the pattern {word} in the final section."
+            return (
+                sentence_one,
+                translate_sentence_text(sentence_one, "報告用這個副詞描述變化的方式。"),
+                sentence_two,
+                translate_sentence_text(sentence_two, "研究者在最後一節用這個副詞描述相關模式。"),
+            )
+        usage = classify_adverb_usage(word, definition, meaning_zh)
+        if usage == "frequency":
+            sentence_one = f"The festival is held {word} in the old town square."
+            sentence_two = f"The committee reviews the rules {word}."
+            return (
+                sentence_one,
+                translate_sentence_text(sentence_one, "這個副詞可用來表達某件事發生的頻率。"),
+                sentence_two,
+                translate_sentence_text(sentence_two, "這個副詞也可以用來描述定期進行的安排。"),
+            )
+        elif usage == "arrangement":
+            sentence_one = f"The lamps were arranged {word} around the hall."
+            sentence_two = f"The paths were laid out {word} near the garden."
+            return (
+                sentence_one,
+                translate_sentence_text(sentence_one, "這個副詞可用來描述物件的排列方式。"),
+                sentence_two,
+                translate_sentence_text(sentence_two, "這個副詞也可以表示空間上的配置方式。"),
+            )
+        elif usage == "reaction":
+            sentence_one = f"She looked {word} at the note on the door."
+            sentence_two = f"He answered {word} when the question was repeated."
+            return (
+                sentence_one,
+                translate_sentence_text(sentence_one, "這個副詞可用來描述人物的反應方式。"),
+                sentence_two,
+                translate_sentence_text(sentence_two, "這個副詞也能表達回應時的語氣或態度。"),
+            )
+        elif usage == "analysis":
+            sentence_one = f"The study discusses the change {word} in its main section."
+            sentence_two = f"The writer described the contrast {word} in the final paragraph."
+            return (
+                sentence_one,
+                translate_sentence_text(sentence_one, "這個副詞可用來描述分析或討論的方式。"),
+                sentence_two,
+                translate_sentence_text(sentence_two, "這個副詞也能用來表達說明或比較的角度。"),
+            )
+        else:
+            sentence_one = f"Writers sometimes use {word} to describe how something happened."
+            sentence_two = f"Readers may still see {word} in older or specialist writing."
+            return (
+                sentence_one,
+                "這個副詞可用來描述事情發生的方式。",
+                sentence_two,
+                "讀者仍可能在較早或較專門的文本中看到這個副詞。",
+            )
 
     if part_of_speech == "adjective":
         if domain == "phonetics":
@@ -793,7 +1100,7 @@ def build_entry(word: str, hs_levels: dict[str, int], exam_book_words: set[str])
     if part_of_speech not in ALLOWED_POS:
         part_of_speech = infer_pos(word, definition)
 
-    translated_definition = meaning_from_candidate(candidate)
+    translated_definition = meaning_from_candidate(word, candidate)
     sentence_one, translated_one, sentence_two, translated_two = generate_sentence_pairs(
         word,
         part_of_speech,
@@ -801,8 +1108,9 @@ def build_entry(word: str, hs_levels: dict[str, int], exam_book_words: set[str])
         translated_definition,
         relation_type,
         relation_target,
+        candidate.get("source"),
     )
-    translated_definition = clean_chinese_text(translated_definition) or "罕見或專門用語。"
+    translated_definition = clean_chinese_text(translated_definition) or PLACEHOLDER_MEANING
     translated_one = clean_chinese_text(translated_one) or "這個詞會出現在相關語境中。"
     translated_two = clean_chinese_text(translated_two) or "讀者可能會在字典或專業文本中看到這個詞。"
 

@@ -1,0 +1,67 @@
+{
+  "initialCandidateCount": 165,
+  "initialReasonCounts": {
+    "placeholder_meaning": 112,
+    "generic_adverb_sentence": 110
+  },
+  "finalCandidateCount": 0,
+  "finalReasonCounts": {},
+  "rebuildSummaries": {
+    "round1": {
+      "wordCount": 165,
+      "sourceCounts": {
+        "placeholder": 112,
+        "kaikki-search": 2,
+        "kaikki-html": 51
+      },
+      "confidenceCounts": {
+        "low": 112,
+        "high": 53
+      }
+    },
+    "round3": {
+      "wordCount": 110,
+      "sourceCounts": {
+        "manual-special": 1,
+        "placeholder": 108,
+        "kaikki-html": 1
+      },
+      "confidenceCounts": {
+        "high": 2,
+        "low": 108
+      }
+    },
+    "round4": {
+      "wordCount": 3,
+      "sourceCounts": {
+        "manual-special": 3
+      },
+      "confidenceCounts": {
+        "high": 3
+      }
+    },
+    "semanticAdverbs": {
+      "wordCount": 31,
+      "sourceCounts": {
+        "kaikki-html": 30,
+        "kaikki-search": 1
+      },
+      "confidenceCounts": {
+        "high": 31
+      }
+    },
+    "translationRegression": {
+      "wordCount": 34,
+      "sourceCounts": {
+        "kaikki-html": 30,
+        "kaikki-search": 1,
+        "placeholder": 2,
+        "manual-special": 1
+      },
+      "confidenceCounts": {
+        "high": 32,
+        "low": 2
+      }
+    }
+  }
+}
