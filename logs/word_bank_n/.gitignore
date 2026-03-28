@@ -1,0 +1,7 @@
+batches/
+completion_summary.json
+extra_words.txt
+final_review.json
+manifest.json
+missing_words.txt
+run_progress.json

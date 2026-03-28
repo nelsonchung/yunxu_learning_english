@@ -1,0 +1,13 @@
+{
+  "wordCount": 95,
+  "sourceCounts": {
+    "kaikki-html": 81,
+    "kaikki-search": 10,
+    "placeholder": 4
+  },
+  "confidenceCounts": {
+    "high": 89,
+    "medium": 2,
+    "low": 4
+  }
+}

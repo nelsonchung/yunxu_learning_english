@@ -1,0 +1,190 @@
+{
+  "prefix": "n",
+  "sourceCount": 6780,
+  "targetPrefixCount": 6805,
+  "coveredCount": 6780,
+  "missingCount": 0,
+  "extraCount": 25,
+  "coverageRatio": 1.0,
+  "missingWords": [],
+  "extraWords": [
+    "naan",
+    "nae punch in",
+    "nail file",
+    "nail polish",
+    "nail scissors",
+    "nama",
+    "nambe",
+    "nanan",
+    "narcissus",
+    "nasal cavity",
+    "nate",
+    "national gallery",
+    "natt",
+    "natural number",
+    "nauseating",
+    "near",
+    "needle mushroom",
+    "nerve-racking",
+    "newborn",
+    "no/nope",
+    "non-profit",
+    "non-stop",
+    "notepad",
+    "nourish(ment)",
+    "november"
+  ],
+  "casefoldCollisionCount": 37,
+  "casefoldCollisions": [
+    [
+      "N",
+      "n"
+    ],
+    [
+      "Naga",
+      "naga"
+    ],
+    [
+      "Namaqua",
+      "namaqua"
+    ],
+    [
+      "Nan",
+      "nan"
+    ],
+    [
+      "Nana",
+      "nana"
+    ],
+    [
+      "Nancy",
+      "nancy"
+    ],
+    [
+      "Nandi",
+      "nandi"
+    ],
+    [
+      "Nankin",
+      "nankin"
+    ],
+    [
+      "Nanny",
+      "nanny"
+    ],
+    [
+      "Naos",
+      "naos"
+    ],
+    [
+      "Napoleon",
+      "napoleon"
+    ],
+    [
+      "Nasalis",
+      "nasalis"
+    ],
+    [
+      "Natal",
+      "natal"
+    ],
+    [
+      "Neal",
+      "neal"
+    ],
+    [
+      "Negro",
+      "negro"
+    ],
+    [
+      "Negus",
+      "negus"
+    ],
+    [
+      "Nep",
+      "nep"
+    ],
+    [
+      "Nepenthes",
+      "nepenthes"
+    ],
+    [
+      "Nephele",
+      "nephele"
+    ],
+    [
+      "Nerine",
+      "nerine"
+    ],
+    [
+      "Nesslerize",
+      "nesslerize"
+    ],
+    [
+      "Net",
+      "net"
+    ],
+    [
+      "Netty",
+      "netty"
+    ],
+    [
+      "Nice",
+      "nice"
+    ],
+    [
+      "Nick",
+      "nick"
+    ],
+    [
+      "Nicolo",
+      "nicolo"
+    ],
+    [
+      "Ninon",
+      "ninon"
+    ],
+    [
+      "Niobite",
+      "niobite"
+    ],
+    [
+      "Nip",
+      "nip"
+    ],
+    [
+      "Nizam",
+      "nizam"
+    ],
+    [
+      "No",
+      "no"
+    ],
+    [
+      "Noctiluca",
+      "noctiluca"
+    ],
+    [
+      "Noel",
+      "noel"
+    ],
+    [
+      "Noetic",
+      "noetic"
+    ],
+    [
+      "Noll",
+      "noll"
+    ],
+    [
+      "Norm",
+      "norm"
+    ],
+    [
+      "Norma",
+      "norma"
+    ]
+  ],
+  "duplicateSourceWords": [],
+  "duplicateTargetWords": []
+}

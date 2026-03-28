@@ -5,6 +5,7 @@ import html
 import json
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -73,11 +74,16 @@ def fetch_json(url: str, retries: int = 3) -> dict:
     for attempt in range(retries):
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         try:
-            with urllib.request.urlopen(req, timeout=20) as response:
+            with urllib.request.urlopen(req, timeout=12) as response:
                 return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:  # pragma: no cover - network retries
+            last_error = exc
+            if exc.code in {404, 410}:
+                break
+            time.sleep(0.3 * (attempt + 1))
         except Exception as exc:  # pragma: no cover - network retries
             last_error = exc
-            time.sleep(0.5 * (attempt + 1))
+            time.sleep(0.3 * (attempt + 1))
     raise last_error
 
 
