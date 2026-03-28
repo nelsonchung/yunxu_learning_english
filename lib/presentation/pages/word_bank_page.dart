@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../data/repositories/builtin_word_bank_repository.dart';
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/services/word_bank_search_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
@@ -48,6 +49,7 @@ class WordBankPage extends StatefulWidget {
 class _WordBankPageState extends State<WordBankPage> {
   final _searchController = TextEditingController();
   final Set<String> _addingWords = <String>{};
+  final _searchService = WordBankSearchService();
 
   List<BuiltinWordEntry> _entries = const [];
   Map<_WordBankAudienceFilter, int> _filterCounts = _createEmptyFilterCounts();
@@ -103,15 +105,7 @@ class _WordBankPageState extends State<WordBankPage> {
 
   List<BuiltinWordEntry> _filteredEntries(String query) {
     final scopedEntries = _entries.where(_matchesSelectedFilter);
-    final filtered = query.isEmpty
-        ? scopedEntries
-        : scopedEntries.where(
-            (entry) =>
-                entry.word.toLowerCase().contains(query) ||
-                entry.meaning.contains(query),
-          );
-
-    return filtered.take(query.isEmpty ? 100 : 200).toList(growable: false);
+    return _searchService.search(entries: scopedEntries, query: query);
   }
 
   bool _matchesSelectedFilter(BuiltinWordEntry entry) {
