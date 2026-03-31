@@ -1,11 +1,4469 @@
 [
   {
+    "word": "X",
+    "meaning": "英文字母表中的第二十四個字母，大寫 X",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Write a large X on the paper. 在紙上寫一個大寫字母。",
+      "The teacher pointed to the letter X. 老師指著那個字母。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "x",
+    "meaning": "英文字母表中的第二十四個字母，小寫 x",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lowercase x is easy to recognize. 小寫字母很容易辨認。",
+      "She drew an x beside the answer. 她在答案旁邊畫了一個記號。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthaline",
+    "meaning": "一種黃色的化學物質",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report mentioned xanthaline in the sample. 那份報告提到樣本裡有這種物質。",
+      "Scientists tested xanthaline under bright light. 科學家在強光下測試這種物質。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthamic",
+    "meaning": "略帶黃色的；與黃色化學物質有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The stain looked xanthamic after drying. 汙漬乾掉後看起來帶點黃色。",
+      "A xanthamic tint covered the old paper. 這張舊紙上覆著一層淡黃色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthamide",
+    "meaning": "一種含硫的化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist isolated xanthamide from the mixture. 化學家從混合物中分離出這種化合物。",
+      "Researchers stored xanthamide in a sealed vial. 研究人員把這種化合物裝進密封小瓶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthane",
+    "meaning": "一種黃色樹脂或膠質物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text described xanthane as a sticky resin. 舊文獻把它描述成黏性的樹脂。",
+      "They scraped xanthane from the bark carefully. 他們小心地從樹皮上刮下這種物質。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthate",
+    "meaning": "黃原酸鹽",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The student prepared xanthate for the experiment. 學生為了實驗製備黃原酸鹽。",
+      "Xanthate can react quickly in the lab. 黃原酸鹽在實驗室裡反應得很快。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthation",
+    "meaning": "黃化作用；變黃的過程",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The leaves showed xanthation after the frost. 霜凍之後，葉子出現了變黃現象。",
+      "The botanist noted xanthation in several plants. 植物學家記下幾種植物的黃化現象。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthein",
+    "meaning": "一種黃色色素",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pigment xanthein gave the liquid a warm color. 這種色素讓液體呈現暖黃色。",
+      "Scientists found xanthein in the old specimen. 科學家在舊標本中找到了這種色素。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthelasma",
+    "meaning": "瞼黃瘤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor noticed xanthelasma near the eyelid. 醫生注意到眼瞼附近有瞼黃瘤。",
+      "Xanthelasma often appears as a soft yellow patch. 瞼黃瘤通常呈現柔軟的黃色斑塊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthelasmic",
+    "meaning": "與瞼黃瘤有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xanthelasmic area was carefully examined. 那塊與瞼黃瘤有關的部位被仔細檢查。",
+      "The surgeon described a xanthelasmic lesion. 外科醫師描述了一處相關病灶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthelasmoidea",
+    "meaning": "類似瞼黃瘤的病變",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report mentioned xanthelasmoidea on the skin. 報告提到皮膚上有類似瞼黃瘤的病變。",
+      "A dermatologist reviewed the xanthelasmoidea carefully. 皮膚科醫師仔細查看那種病變。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthene",
+    "meaning": "一種有機化合物骨架",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The dye was built on a xanthene structure. 這種染料以那種有機骨架為基礎。",
+      "Chemists studied xanthene in the laboratory. 化學家在實驗室裡研究這種骨架。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthian",
+    "meaning": "與古代色黃城邦有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The museum displayed a Xanthian inscription. 博物館展出了一塊與古城邦有關的銘文。",
+      "Historians discussed the Xanthian tradition. 歷史學家討論那個古城邦的傳統。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthic",
+    "meaning": "黃色的；帶有黃色的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The flower had a xanthic glow in the sun. 那朵花在陽光下泛著黃色光澤。",
+      "A xanthic tint spread across the page. 頁面上鋪開一層黃色色調。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthide",
+    "meaning": "一種黃色殘渣或沉澱物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The filter trapped a tiny amount of xanthide. 濾器截住了一點黃色沉澱。",
+      "The technician collected the xanthide in a tube. 技術員把那種殘渣收進試管。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthidium",
+    "meaning": "一種綠藻屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The slide showed a Xanthidium cell under the microscope. 顯微鏡下可以看到一個屬於該類的細胞。",
+      "Biologists compared Xanthidium with other algae. 生物學家把這種綠藻和其他藻類做比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthin",
+    "meaning": "一種嘌呤類化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab recorded a high level of xanthin. 實驗室記錄到這種化合物含量偏高。",
+      "Xanthin can appear in certain biological samples. 某些生物樣本裡會出現這種化合物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthine",
+    "meaning": "黃嘌呤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The biochemist analyzed xanthine in the sample. 生化學家分析了樣本中的黃嘌呤。",
+      "Xanthine is a nitrogen-containing compound. 黃嘌呤是一種含氮化合物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthinuria",
+    "meaning": "黃嘌呤尿症",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor diagnosed xanthinuria after testing. 醫生在檢驗後診斷出黃嘌呤尿症。",
+      "Xanthinuria can affect how the body removes waste. 黃嘌呤尿症會影響身體排出廢物的方式。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthione",
+    "meaning": "一種含硫的化學化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist named the compound xanthione. 化學家把這種化合物命名為黃硫酮類物質。",
+      "Xanthione was stored away from light. 這種化合物被避光保存。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthisma",
+    "meaning": "一種植物屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The gardener planted Xanthisma near the path. 園丁把這個植物屬種在小路旁。",
+      "Xanthisma blooms with small yellow flowers. 這個植物屬會開出小黃花。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthite",
+    "meaning": "一種黃色礦石",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The geologist studied a sample of xanthite. 地質學家研究了一塊黃色礦石樣本。",
+      "Xanthite shimmered under the lamp. 那塊礦石在燈下微微發亮。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthium",
+    "meaning": "蒼耳屬植物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The field was full of Xanthium after the rain. 雨後那片田地長滿了蒼耳屬植物。",
+      "Xanthium can cling to clothing easily. 蒼耳屬植物很容易黏在衣服上。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthiuria",
+    "meaning": "黃嘌呤尿症",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chart listed xanthiuria as a rare disorder. 圖表把這種病症列為罕見疾病。",
+      "Xanthiuria may show up in urine tests. 尿液檢查中可能會發現這種情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocarpous",
+    "meaning": "有黃色果實的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The botanist labeled the plant xanthocarpous. 植物學家把那株植物標記為果實偏黃的種類。",
+      "A xanthocarpous tree stood beside the road. 路邊站著一棵果實偏黃的樹。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthocephalus",
+    "meaning": "黃頭黑鶇屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ornithologist identified the bird as Xanthocephalus. 鳥類學家把那隻鳥辨認為黃頭黑鶇屬。",
+      "Xanthocephalus is known for its bright head color. 黃頭黑鶇屬以鮮明的頭部顏色著稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthoceras",
+    "meaning": "文冠果屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The botanist compared Xanthoceras with other trees. 植物學家把文冠果屬和其他樹種做比較。",
+      "Xanthoceras produces decorative seed capsules. 文冠果屬會結出有觀賞性的果莢。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthochroi",
+    "meaning": "淺色膚色的人們",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article used the word Xanthochroi in a historical sense. 那篇文章以歷史用法使用了這個詞。",
+      "Xanthochroi described a fair-skinned group of people. 這個詞用來指膚色較淺的一群人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochroia",
+    "meaning": "皮膚發黃；黃染",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor noted xanthochroia around the eyes. 醫生注意到眼周出現黃染。",
+      "Xanthochroia can be a sign of illness. 皮膚發黃可能是疾病的徵兆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthochroic",
+    "meaning": "呈淺黃色的；膚色偏淡的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The historian described the portrait as Xanthochroic. 歷史學家把那幅肖像描述為膚色偏淡。",
+      "A Xanthochroic complexion appeared in the sketch. 草圖中呈現出偏淡的膚色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochroid",
+    "meaning": "膚色偏黃的；頭髮偏淺的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The writer described the character as xanthochroid. 作者把角色寫成膚色偏黃的人。",
+      "A xanthochroid face appeared in the old painting. 舊畫裡出現一張膚色偏黃的臉。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochroism",
+    "meaning": "黃化現象；膚色偏黃",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The scientist studied xanthochroism in the bird species. 科學家研究那種鳥類的黃化現象。",
+      "Xanthochroism can alter the look of feathers or skin. 黃化現象會改變羽毛或皮膚的外觀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochromia",
+    "meaning": "黃染症；呈黃色的狀態",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab report mentioned xanthochromia in the fluid. 實驗報告提到液體出現黃染。",
+      "Xanthochromia may require medical attention. 這種黃染狀態可能需要醫療處理。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochromic",
+    "meaning": "呈黃色的；帶黃染的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The sample looked xanthochromic under the light. 樣本在燈光下看起來帶黃染。",
+      "A xanthochromic tint appeared in the fluid. 液體中出現了黃色調。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthochroous",
+    "meaning": "膚色偏黃的；帶黃色的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The poet used xanthochroous to describe the figure. 詩人用這個詞來描寫那個人物的膚色。",
+      "The drawing showed a xanthochroous complexion. 這幅畫呈現出偏黃的膚色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocobaltic",
+    "meaning": "與含鈷的黃色化合物有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The notes referred to a xanthocobaltic compound. 筆記提到一種含鈷的黃色化合物。",
+      "A xanthocobaltic solution was kept in a flask. 那種黃色溶液被放在燒瓶中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocone",
+    "meaning": "黃色錐形物；黃色錐狀結構",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The model had a small xanthocone at the top. 模型頂端有一個小小的黃色錐形部分。",
+      "The artist painted the xanthocone in bright color. 藝術家把那個錐狀部分畫成鮮明顏色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoconite",
+    "meaning": "黃銻礦",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mineral cabinet included a sample of xanthoconite. 礦物櫃裡收藏了一塊黃銻礦樣本。",
+      "Xanthoconite often has a bright yellow sheen. 黃銻礦通常帶有明亮的黃色光澤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocreatinine",
+    "meaning": "一種化學化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist documented xanthocreatinine in the study. 化學家在研究中記錄了這種化合物。",
+      "Xanthocreatinine was handled with care in the lab. 這種化合物在實驗室裡被小心處理。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocyanopsia",
+    "meaning": "黃視症；把視野看成黃色的狀況",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient reported xanthocyanopsia after the injury. 病人在受傷後表示自己出現黃視症。",
+      "Xanthocyanopsia can affect how colors are seen. 黃視症會影響看見顏色的方式。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocyanopsy",
+    "meaning": "黃視症；視覺變黃的現象",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The eye specialist wrote down xanthocyanopsy. 眼科醫師記錄了黃視的症狀。",
+      "Xanthocyanopsy may appear after certain illnesses. 某些疾病之後可能會出現黃視現象。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthocyanopy",
+    "meaning": "黃視症；視覺帶黃色的現象",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The case notes mentioned xanthocyanopy as a symptom. 病歷把黃視現象列為症狀之一。",
+      "Xanthocyanopy can make objects look yellow. 黃視現象會讓物體看起來偏黃。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoderm",
+    "meaning": "皮膚偏黃的人",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old term xanthoderm is rarely used today. 這個舊詞現在很少使用。",
+      "The article described a xanthoderm as a person with yellowish skin. 文章把這個詞解釋成皮膚偏黃的人。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoderma",
+    "meaning": "皮膚發黃；黃皮膚",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor noted xanthoderma on the patient's face. 醫生注意到病人的臉色發黃。",
+      "Xanthoderma can point to a health problem. 皮膚發黃可能暗示健康問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthodont",
+    "meaning": "黃齒的動物；黃牙的",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The researcher labeled the fossil as xanthodont. 研究人員把那個化石標為黃齒類型。",
+      "A xanthodont creature was drawn in the notebook. 筆記本裡畫了一種黃齒的生物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthodontous",
+    "meaning": "黃齒的；有黃色牙齒的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The description used the word xanthodontous. 那段描述用了黃齒的說法。",
+      "A xanthodontous animal appeared in the sketch. 草圖裡出現了一種牙齒偏黃的動物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthogen",
+    "meaning": "黃原基",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The textbook defined xanthogen in a chemistry chapter. 教科書在化學章節中定義了黃原基。",
+      "Xanthogen is part of a larger chemical group. 黃原基是更大化學群的一部分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthogenamic",
+    "meaning": "與黃原基有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report used a xanthogenamic descriptor. 那份報告用了與黃原基有關的描述。",
+      "A xanthogenamic reaction was listed in the notes. 筆記中列出了一種相關反應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthogenamide",
+    "meaning": "黃原酰胺；一種含硫化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist prepared xanthogenamide for testing. 化學家製備黃原酰胺以便測試。",
+      "Xanthogenamide was kept in a labeled bottle. 黃原酰胺被放在貼標籤的瓶子裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthogenate",
+    "meaning": "a salt or ester of xanthogenic acid",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist prepared a xanthogenate for the experiment. 那位化學家為實驗製備了一種黃原酸鹽。",
+      "This compound can help separate minerals. 這種化合物可用來分離礦物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthogenic",
+    "meaning": "producing or relating to yellow coloring",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report described a xanthogenic reaction in the sample. 報告說樣本中出現了會產生黃色的反應。",
+      "A xanthogenic process can tint the material yellow. 這種產生黃色的過程會讓材料染成黃顏色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xantholeucophore",
+    "meaning": "a pigment cell associated with yellow and pale color",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The biologist noted a xantholeucophore under the microscope. 生物學家在顯微鏡下觀察到一種黃色與白色相關的色素細胞。",
+      "Such cells help give an animal its body color. 這類細胞有助於形成動物的體色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoma",
+    "meaning": "a yellowish fatty deposit in or on the skin",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor identified the bump as a xanthoma. 醫生判定那個腫塊是黃瘤。",
+      "A xanthoma often appears as a yellow patch on the skin. 黃瘤常呈現為皮膚上的黃色斑塊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthomata",
+    "meaning": "plural of xanthoma",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Several xanthomata appeared around the patient's eyes. 病人的眼周出現了幾處黃瘤。",
+      "The specialist examined the xanthomata carefully. 專科醫師仔細檢查那些黃瘤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthomatosis",
+    "meaning": "a condition marked by the formation of xanthomas",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chart listed xanthomatosis as a rare disorder. 病歷把黃瘤病列為一種罕見疾病。",
+      "Xanthomatosis can affect the skin and the blood. 黃瘤病可能影響皮膚與血液。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthomatous",
+    "meaning": "having the nature or appearance of a xanthoma",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The biopsy showed xanthomatous tissue. 切片顯示那是黃瘤樣的組織。",
+      "Doctors used xanthomatous to describe the lesion. 醫生用黃瘤樣來形容那個病灶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthomelanoi",
+    "meaning": "a historical ethnic name meaning yellow-black people",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text used Xanthomelanoi as a group name. 舊文獻把這個名稱當作族群稱呼。",
+      "Modern readers treat the term as historical. 現代讀者多半把這個詞視為歷史用語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthomelanous",
+    "meaning": "yellowish and dark in color",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The shell had a xanthomelanous pattern. 那個貝殼帶有黃黑相間的色澤。",
+      "Its xanthomelanous surface looked mottled. 它那種黃黑色表面看起來斑駁。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthometer",
+    "meaning": "an instrument for measuring yellowness or color intensity",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab used a xanthometer to compare samples. 實驗室用一種測黃儀來比較樣本。",
+      "A xanthometer helps measure color strength. 測黃儀有助於量測顏色強度。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthomonas",
+    "meaning": "a genus of plant-pathogenic bacteria",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xanthomonas can damage leaves and stems. 黃單胞菌屬細菌會損害葉片與莖。",
+      "Farmers worry when Xanthomonas spreads through crops. 這種細菌在作物間擴散時，農民會很擔心。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthomyeloma",
+    "meaning": "a yellowish tumor or tumor-like growth of the marrow",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pathology note mentioned xanthomyeloma. 病理報告提到一種黃樣骨髓瘤樣病變。",
+      "The term is rare in modern medical writing. 這個詞在現代醫學寫作中很少見。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthone",
+    "meaning": "a yellow crystalline compound",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist isolated xanthone from the mixture. 化學家從混合物中分離出一種黃色晶體化合物。",
+      "Xanthone is studied in organic chemistry. 黃酮酮在有機化學中會被研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophane",
+    "meaning": "a yellow pigment or coloring matter",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pigment was identified as xanthophane. 那種色素被確認為黃色色素。",
+      "Artists valued xanthophane for its warm tone. 藝術家喜歡它溫暖的色調。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophore",
+    "meaning": "a yellow pigment cell",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fish had bright xanthophores in its skin. 那條魚的皮膚裡有鮮亮的黃色色素細胞。",
+      "Xanthophores can give animals a yellow hue. 黃色色素細胞能讓動物呈現黃色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophose",
+    "meaning": "yellowish or having a yellow tint",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The old glass had a xanthophose tint. 那塊舊玻璃帶有淡黃的色澤。",
+      "A xanthophose surface can look slightly faded. 帶淡黃色調的表面看起來會有些褪色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthophyceae",
+    "meaning": "a class of yellow-green algae",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sample belonged to the Xanthophyceae. 這個樣本屬於黃綠藻綱。",
+      "Scientists study Xanthophyceae in freshwater systems. 科學家研究淡水系統中的黃綠藻綱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophyll",
+    "meaning": "a yellow carotenoid pigment in plants",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Leaves contain xanthophyll along with chlorophyll. 葉片除了葉綠素，也含有葉黃素。",
+      "Xanthophyll helps give plants a yellow color. 葉黃素能讓植物呈現黃色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophyllite",
+    "meaning": "a yellow mineral or mineral variety",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mineral tray included xanthophyllite. 那盤礦物樣本裡有葉黃石。",
+      "Xanthophyllite is usually studied by mineral collectors. 葉黃石通常由礦物收藏者研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthophyllous",
+    "meaning": "containing xanthophyll or yellow in color",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The botanist described the leaves as xanthophyllous. 植物學家把那些葉子描述成含葉黃素的。",
+      "A xanthophyllous leaf often looks yellow-green. 含葉黃素的葉子常呈黃綠色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthopia",
+    "meaning": "seeing things as yellow; yellow vision",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text used Xanthopia for yellow vision. 舊文獻用這個詞表示黃視症。",
+      "Xanthopia is a visual disturbance. 黃視症是一種視覺障礙。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopia",
+    "meaning": "seeing things as yellow; yellow vision",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient complained of xanthopia after the fever. 病人發燒後抱怨自己出現黃視症。",
+      "Xanthopia can make colors seem tinted yellow. 黃視症會讓顏色看起來偏黃。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopicrin",
+    "meaning": "a yellow bitter substance",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist noted xanthopicrin in the extract. 化學家在萃取物中記錄到一種黃色苦味物質。",
+      "Xanthopicrin is mentioned in older chemistry texts. 舊化學書中會提到這種物質。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopicrite",
+    "meaning": "a yellow bitter compound or substance",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The archive listed xanthopicrite among rare compounds. 檔案把這種物質列為罕見化合物之一。",
+      "Its yellow color gave it its name. 它的名稱來自其黃色外觀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoproteic",
+    "meaning": "relating to the yellow protein test",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The lab performed a xanthoproteic reaction. 實驗室做了黃蛋白反應。",
+      "A xanthoproteic test can show protein presence. 黃蛋白試驗可以顯示蛋白質的存在。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoprotein",
+    "meaning": "a yellow protein compound formed in the xanthoproteic reaction",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sample produced xanthoprotein after treatment. 樣本經處理後產生了黃蛋白化合物。",
+      "Xanthoprotein is a product of the protein test. 黃蛋白是蛋白質試驗的產物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoproteinic",
+    "meaning": "relating to xanthoprotein",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The article discussed xanthoproteinic compounds. 那篇文章討論了與黃蛋白有關的化合物。",
+      "Xanthoproteinic changes are used in analysis. 與黃蛋白相關的變化可用於分析。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopsia",
+    "meaning": "a visual defect in which things appear yellow",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The physician suspected xanthopsia after the exam. 醫師在檢查後懷疑是黃視症。",
+      "Xanthopsia makes objects seem yellow or golden. 黃視症會讓物體看起來偏黃或偏金。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopsin",
+    "meaning": "a yellow visual pigment",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The retina contains xanthopsin in some cells. 視網膜某些細胞裡含有黃色視色素。",
+      "Scientists once studied xanthopsin in vision research. 科學家曾在視覺研究中探討這種色素。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopsydracia",
+    "meaning": "a rare term for yellow-tinted vision or perception",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The medical glossary listed xanthopsydracia as a rare term. 醫學詞彙表把這個詞列為罕見術語。",
+      "It refers to a yellow-tinted way of seeing. 它指的是一種偏黃色的視覺感受。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopterin",
+    "meaning": "a yellow pterin pigment",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The insect tissue contained xanthopterin. 那些昆蟲組織含有葉黃蝶呤色素。",
+      "Xanthopterin gives some insects a yellow color. 葉黃蝶呤能讓某些昆蟲呈現黃色。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthopurpurin",
+    "meaning": "a yellow-red dye or pigment compound",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The laboratory sample included xanthopurpurin. 那份實驗樣本中含有黃紫紅素。",
+      "Xanthopurpurin was once used in dye chemistry. 黃紫紅素曾用於染料化學。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthorhamnin",
+    "meaning": "a yellow glycoside dye from plants",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The plant extract yielded xanthorhamnin. 植物萃取物中分離出黃鼠李素。",
+      "Xanthorhamnin is a natural coloring matter. 黃鼠李素是一種天然色素。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthorrhiza",
+    "meaning": "a plant genus known as yellowroot",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xanthorrhiza grows in moist woodland. 黃根屬植物生長在潮濕林地。",
+      "Botanists recognize Xanthorrhiza by its yellow roots. 植物學家可從它的黃色根部辨認這一屬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthorrhoea",
+    "meaning": "an Australian plant genus with grass-tree forms",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide pointed to a Xanthorrhoea on the hillside. 嚮導指向山坡上的一株草樹。",
+      "Xanthorrhoea is native to Australia. 草樹屬原產於澳洲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthorrhoea",
+    "meaning": "an Australian plant genus with grass-tree forms",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lowercase name xanthorrhoea appeared in the catalog. 目錄裡出現了小寫的草樹屬名稱。",
+      "Xanthorrhoea can store moisture in dry climates. 草樹屬能在乾燥氣候中儲存水分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthosiderite",
+    "meaning": "a yellow iron-bearing mineral",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen was labeled xanthosiderite. 那件標本被標為黃鐵礦物。",
+      "Collectors note xanthosiderite for its yellow tone. 收藏家會注意它的黃色調。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthosis",
+    "meaning": "a yellow discoloration or condition of yellowness",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor noted xanthosis in the skin. 醫生注意到皮膚出現黃染。",
+      "Xanthosis often signals a medical problem. 黃染常是醫療問題的徵兆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthosoma",
+    "meaning": "a plant genus that includes elephant ears",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xanthosoma is often grown as a tropical plant. 海芋屬常被當作熱帶植物栽培。",
+      "The garden had several Xanthosoma leaves. 那座花園裡有好幾片海芋屬葉片。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthospermous",
+    "meaning": "having yellow seeds",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The botanist described the plant as xanthospermous. 植物學家把那株植物描述為黃籽的。",
+      "Its xanthospermous seeds stood out in the pod. 它那黃色的種子在果莢中很顯眼。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthotic",
+    "meaning": "yellowish or relating to yellowness",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The mineral had a xanthotic sheen. 那種礦物帶有黃澤。",
+      "A xanthotic tint can make a surface look warm. 黃色調會讓表面看起來更溫暖。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthoura",
+    "meaning": "a bird genus name",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum label listed Xanthoura as a bird genus. 博物館標籤把它列為一個鳥屬。",
+      "Researchers compared Xanthoura with related birds. 研究人員將這個鳥屬與近緣鳥類做比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthous",
+    "meaning": "yellow; blond; yellowish in color",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The writer described the hair as xanthous. 作者把那頭髮描述為金黃色。",
+      "A xanthous tone can look pale and bright. 金黃色調看起來會偏淡且明亮。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xanthoxalis",
+    "meaning": "a plant genus name for wood sorrels",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xanthoxalis spread across the shaded garden bed. 酢漿草屬植物在陰影花圃裡蔓延開來。",
+      "The guide book listed Xanthoxalis among small herbs. 那本指南把酢漿草屬列為小型草本之一。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoxenite",
+    "meaning": "a mineral species",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mineral drawer contained xanthoxenite. 那個礦物抽屜裡有黃異石。",
+      "Xanthoxenite is a rare name in mineralogy. 黃異石在礦物學中是罕見名稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthoxylin",
+    "meaning": "a yellow crystalline compound or dye",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist extracted xanthoxylin from the plant. 化學家從植物中萃取出黃木素。",
+      "Xanthoxylin can appear as a yellow solid. 黃木素可能呈現為黃色固體。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthuria",
+    "meaning": "the presence of yellow pigments in the urine",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor recorded xanthuria in the notes. 醫師在紀錄中寫下尿液帶黃色素。",
+      "Xanthuria is a rare medical term. 尿黃素症是一個罕見的醫學術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthydrol",
+    "meaning": "a yellow crystalline chemical compound",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab stored xanthydrol in a sealed vial. 實驗室把黃醇放在密封小瓶裡。",
+      "Xanthydrol is used in some chemical tests. 黃醇可用於某些化學測試。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xanthyl",
+    "meaning": "a yellow chemical radical or group",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The formula included a xanthyl group. 那個分子式包含一個黃基。",
+      "Chemists used xanthyl in older naming systems. 化學家在舊式命名法中會使用黃基這個名稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xarque",
+    "meaning": "dried, salted meat",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The traveler packed xarque for the long journey. 旅人為長途旅程準備了風乾鹽肉。",
+      "Xarque was useful before refrigeration. 在沒有冷藏設備的年代，風乾鹽肉很實用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xaverian",
+    "meaning": "related to Saint Francis Xavier or his followers",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The school kept a Xaverian tradition of service. 這所學校保有聖方濟各沙勿略式的服務傳統。",
+      "He read about a Xaverian order in church history. 他在教會史裡讀到一個與聖方濟各沙勿略相關的修會。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xebec",
+    "meaning": "a small three-masted Mediterranean sailing ship",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum displayed a model of a xebec. 博物館展示了一艘三桅輕快帆船的模型。",
+      "A xebec could move quickly in warm coastal waters. 三桅輕快帆船在溫暖的沿海水域可以快速航行。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xema",
+    "meaning": "a genus name used for certain gulls",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The field guide listed Xema among seabird names. 野外指南把這個名稱列在海鳥名稱之中。",
+      "A Xema specimen was labeled in the bird room. 鳥類展區裡有一件標著這個名稱的標本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenacanthine",
+    "meaning": "related to an extinct group of freshwater sharks",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil was described as xenacanthine in shape. 這塊化石被描述為具有古鯊類的特徵。",
+      "Scientists compared the tooth with xenacanthine remains. 科學家把這顆牙和古鯊類遺骸拿來比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenacanthini",
+    "meaning": "an extinct group or tribe of freshwater sharks",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article placed the fossil in Xenacanthini. 文章把這塊化石歸入一個已滅絕的古鯊類群。",
+      "A class chart listed Xenacanthini with ancient fish. 課堂圖表把這個古鯊類群列在遠古魚類之中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenagogue",
+    "meaning": "a guide or leader of strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The host acted as a xenagogue for the visitors. 主人像一位引導陌生客人的嚮導。",
+      "In the story, the xenagogue led travelers through the city. 故事裡，那位嚮導帶著旅人穿過城市。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenagogy",
+    "meaning": "the act of guiding strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide's work was a form of xenagogy. 那位導遊的工作可算是一種引導外來者的行為。",
+      "The book treated xenagogy as a rare formal term. 這本書把這個詞當作一個罕見的正式用語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenarchi",
+    "meaning": "a taxonomic group name used for certain fishes",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The catalog listed Xenarchi as a fish group name. 目錄把這個名稱列為一種魚類群名。",
+      "A label in the archive referred to Xenarchi. 檔案室中的標籤提到這個魚類群名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenarthra",
+    "meaning": "a mammalian order that includes armadillos, sloths, and anteaters",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The zoology lecture introduced Xenarthra today. 今天的動物學課介紹了異關節總目。",
+      "Armadillos belong to Xenarthra in modern classification. 犰狳在現代分類中屬於異關節總目。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenarthral",
+    "meaning": "relating to Xenarthra or its special joints",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The skeleton showed xenarthral joints. 那具骨骼顯示出異關節總目的特徵關節。",
+      "Researchers noted the xenarthral pattern in the fossil. 研究人員在那塊化石上注意到異關節式的特徵。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenarthrous",
+    "meaning": "having the characteristics of Xenarthra",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil was described as xenarthrous by the team. 研究團隊把那塊化石描述為具異關節總目特徵。",
+      "Its xenarthrous body plan helped identify the specimen. 它那種具異關節總目特徵的身體構造幫助辨識了標本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenelasia",
+    "meaning": "the expulsion of foreigners or strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The essay discussed xenelasia in ancient history. 那篇文章討論了古代史中的逐外現象。",
+      "Such xenelasia made travelers feel unwelcome. 這種逐外做法讓旅人感到不受歡迎。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenelasy",
+    "meaning": "the practice of driving out strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The text used xenelasy for the banishment of outsiders. 文章用一個較冷僻的詞來表示驅逐外人。",
+      "The custom of xenelasy appears in old records. 驅逐外人的習俗出現在古老紀錄裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenia",
+    "meaning": "hospitality shown to guests or strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Greek stories often praise xenia. 希臘故事常常讚揚待客之道。",
+      "The family showed great xenia to the travelers. 那家人對旅人展現了極好的待客之道。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenial",
+    "meaning": "friendly to guests or relating to hospitality",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The host gave the guests a xenial welcome. 主人以熱情好客的方式歡迎賓客。",
+      "Her xenial manner made everyone feel relaxed. 她那種好客的態度讓大家都感到放鬆。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenian",
+    "meaning": "related to guests or hospitality",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The author used xenian to describe the old custom. 作者用這個詞來描述古老的待客習俗。",
+      "Its xenian tone made the passage feel formal. 這種偏向待客之意的語氣讓段落顯得正式。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenicidae",
+    "meaning": "a family name used for certain New Zealand wrens",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum note placed the bird in Xenicidae. 博物館說明把這種鳥歸入一個新西蘭鷦鷯科群名。",
+      "Xenicidae appears in older bird classifications. 這個群名出現在較早期的鳥類分類中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenicus",
+    "meaning": "a genus name used for certain New Zealand wrens",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen was listed under Xenicus. 標本被列在一個新西蘭鷦鷯屬名之下。",
+      "Birdwatchers studied Xenicus in old field books. 觀鳥者在舊野外書裡研究這個屬名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenium",
+    "meaning": "a gift offered to a guest or stranger",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The host brought a small xenium for the visitor. 主人為來客準備了一份小禮物。",
+      "In ancient texts, xenium means a guest gift. 在古文中，這個詞就是指送給客人的禮物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenobiosis",
+    "meaning": "a form of living together between different species or organisms",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The biologist used xenobiosis to describe the partnership. 生物學家用這個詞描述不同生物的共居關係。",
+      "The class discussed xenobiosis in a simple example. 課堂用一個簡單例子討論了不同生物的共居。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenoblast",
+    "meaning": "a crystal included in a different mineral",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The rock contained a xenoblast inside the matrix. 那塊岩石的基質裡包著一顆異晶。",
+      "Geologists identified the xenoblast under strong light. 地質學家在強光下辨認出那顆異晶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenocratean",
+    "meaning": "related to Xenocrates or his philosophy",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The paper discussed Xenocratean ideas about the soul. 論文討論了關於靈魂的色諾克拉底式思想。",
+      "A Xenocratean passage appeared in the anthology. 文選中出現了一段與色諾克拉底相關的文字。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenocratic",
+    "meaning": "related to Xenocrates or his teachings",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The philosopher's notes had a Xenocratic tone. 哲學家的筆記帶有色諾克拉底式的氣息。",
+      "She compared the Xenocratic view with Plato's. 她把這種觀點和柏拉圖的思想做了比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenocryst",
+    "meaning": "a foreign crystal embedded in an igneous rock",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The sample contained a clear xenocryst. 那個樣本裡有一顆清楚可見的異晶。",
+      "A xenocryst can reveal the rock's history. 異晶可以透露岩石的形成歷史。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenodochium",
+    "meaning": "an inn or lodging house for strangers",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old travel book mentioned a xenodochium. 那本舊旅行書提到一間旅舍。",
+      "Pilgrims stayed in the xenodochium overnight. 朝聖者在那間旅舍過了一夜。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogamous",
+    "meaning": "relating to cross-fertilization between different flowers or plants",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The botanist described the plant as xenogamous. 植物學家說這株植物屬於異花授粉型。",
+      "Its xenogamous nature improved genetic variety. 它的異花授粉特性提高了遺傳多樣性。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogamy",
+    "meaning": "cross-fertilization between different flowers or plants",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lesson explained xenogamy in simple terms. 這堂課用簡單說法解釋了異花授粉。",
+      "Xenogamy helps many plants stay healthy. 異花授粉有助於許多植物保持健康。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogenesis",
+    "meaning": "the supposed production of offspring unlike the parent",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old theory of xenogenesis is no longer accepted. 關於異生的舊理論如今已不被接受。",
+      "The article traced xenogenesis in nineteenth-century science. 文章追溯了十九世紀科學中的異生概念。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogenetic",
+    "meaning": "relating to xenogenesis or foreign development",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The writer used xenogenetic to describe the theory. 作者用這個詞來形容那種理論。",
+      "Its xenogenetic meaning is mostly historical. 它那種與異生有關的意義多半屬於歷史用法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogenic",
+    "meaning": "originating from a different species or source",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The doctor spoke about xenogenic tissue. 醫生談到了來自異種的組織。",
+      "The xenogenic sample was studied carefully. 那份異種樣本被仔細研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogenous",
+    "meaning": "produced from a different species or source",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report described the material as xenogenous. 報告把那種材料描述為異源的。",
+      "A xenogenous origin can affect compatibility. 異源起源可能會影響相容性。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenogeny",
+    "meaning": "the origin or development of something foreign",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term xenogeny appears in older biology texts. 這個詞出現在較早的生物學書裡。",
+      "The class read a note on xenogeny and change. 班上閱讀了關於異源起源與變化的註解。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenolite",
+    "meaning": "a foreign rock fragment enclosed in another rock",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The geologist pointed out a xenolite in the stone. 地質學家指出石頭裡有一塊異地岩塊。",
+      "A xenolite can show where the magma traveled. 異地岩塊可以顯示岩漿曾經流經的地方。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenolith",
+    "meaning": "a piece of foreign rock included in igneous rock",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lava flow trapped a xenolith. 熔岩流把一塊外來岩石包了進去。",
+      "Scientists studied the xenolith for clues. 科學家研究那塊外來岩石以尋找線索。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenolithic",
+    "meaning": "containing xenoliths or foreign rock fragments",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The sample had a xenolithic texture. 那個樣本具有含外來岩塊的質地。",
+      "A xenolithic layer appeared in the core. 岩芯中出現了一層含外來岩塊的部分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenomania",
+    "meaning": "an attraction to foreign things or customs",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The essay called this fashion xenomania. 那篇文章把這種迷外現象稱為崇外癖。",
+      "Xenomania can shape taste and travel habits. 崇外癖會影響品味和旅行習慣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenomaniac",
+    "meaning": "a person strongly attracted to foreign things",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He joked that he was a xenomaniac. 他開玩笑說自己很迷外來文化。",
+      "The novel portrays a xenomaniac collector. 這本小說描寫了一位迷戀外來事物的收藏家。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenomi",
+    "meaning": "a zoological group name used for certain fishes",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The catalog placed the fish under Xenomi. 目錄把這種魚放在一個魚類群名之下。",
+      "Xenomi appears in older zoological references. 這個名稱出現在較早的動物學參考書裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenomorpha",
+    "meaning": "a taxonomic name used for certain organisms",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The archive listed Xenomorpha in the index. 檔案索引裡列出了這個分類名稱。",
+      "Researchers checked Xenomorpha against related names. 研究人員把這個名稱和相關類群做了比對。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenomorphic",
+    "meaning": "having a form unlike the usual one",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The crystals looked xenomorphic under the lens. 這些晶體在放大鏡下看起來形態異常。",
+      "Its xenomorphic shape made identification harder. 它那種異常的形狀讓辨識變得更困難。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenomorphosis",
+    "meaning": "a change into an unusual or foreign form",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The writer used xenomorphosis for the strange change. 作者用這個詞來表示那種奇異變形。",
+      "The story describes xenomorphosis as a gradual process. 故事把這種異形變化描寫成一個逐漸形成的過程。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenon",
+    "meaning": "a chemical element, a noble gas",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xenon is used in some bright lamps. 氙有時會用在高亮度燈具裡。",
+      "The scientist filled the tube with xenon. 科學家把管子裡充入了氙氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenoparasite",
+    "meaning": "a parasite living on a different kind of host",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The biologist called it a xenoparasite. 生物學家把它稱作一種異宿寄生體。",
+      "A xenoparasite depends on another species. 異宿寄生體依附於另一個物種而生存。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenoparasitism",
+    "meaning": "parasitism involving a different species as host",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The paper discussed xenoparasitism in insects. 那篇論文討論了昆蟲中的異宿寄生現象。",
+      "Xenoparasitism can damage the host population. 異宿寄生現象可能傷害宿主族群。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenopeltid",
+    "meaning": "related to the sunbeam snakes",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The reptile guide used xenopeltid as an adjective. 那本爬蟲指南把這個詞當形容詞使用。",
+      "A xenopeltid snake has shiny scales. 太陽蛇類動物有發亮的鱗片。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopeltidae",
+    "meaning": "a family of sunbeam snakes",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The snake was placed in Xenopeltidae. 這條蛇被歸入太陽蛇科。",
+      "Xenopeltidae includes the shining sunbeam snakes. 太陽蛇科包括具有光澤的太陽蛇。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophanean",
+    "meaning": "related to Xenophanes or his thought",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The lecture had a Xenophanean focus. 這場講座聚焦於克塞諾芬尼式的思想。",
+      "A Xenophanean fragment appeared in the text. 文章裡出現了一段與克塞諾芬尼相關的片段。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophile",
+    "meaning": "a person attracted to foreign people or cultures",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She described herself as a xenophile. 她說自己很喜歡外國文化。",
+      "A xenophile often enjoys new customs and food. 喜愛外國文化的人通常樂於接受新習俗和食物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophilism",
+    "meaning": "fondness for foreign people, cultures, or things",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article linked xenophilism with travel. 那篇文章把喜外心態和旅行聯繫起來。",
+      "Xenophilism can be positive when it stays respectful. 當喜外心態保持尊重時，通常是正面的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophobe",
+    "meaning": "a person who fears or dislikes foreigners",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The character was portrayed as a xenophobe. 這個角色被描寫成一個仇外的人。",
+      "No one wants to be called a xenophobe. 沒有人喜歡被稱作仇外者。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
     "word": "xenophobia",
     "meaning": "對陌生人或外國人的恐懼、反感或仇恨。",
     "partOfSpeech": "noun",
     "sentences": [
       "The term xenophobia refers to a fear, antipathy, or hatred of strangers or foreigners. 仇外心理一詞是指對陌生人或外國人的恐懼、反感或仇恨。",
       "The lesson introduced xenophobia as a useful term to understand. 本課介紹了仇外心理是一個需要理解的有用術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophobian",
+    "meaning": "仇外的；對外來者抱持反感的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xenophobian remarks made the room tense. 那些仇外的言論讓房間裡的氣氛變得緊繃。",
+      "She rejected xenophobian attitudes in the discussion. 她在討論中拒絕那種仇外的態度。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophobism",
+    "meaning": "仇外心理；仇外主義",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article warned against xenophobism in public debate. 那篇文章警告大眾辯論中不要出現仇外心理。",
+      "Teachers used the story to explain xenophobism. 老師用那個故事來說明仇外主義。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophoby",
+    "meaning": "仇外；對外來者的厭惡",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The speaker criticized xenophoby as a harmful fear. 講者批評仇外情緒是一種有害的恐懼。",
+      "The novel shows how xenophoby can damage a community. 那本小說呈現仇外情緒如何傷害社群。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophonic",
+    "meaning": "色諾芬的；帶有色諾芬風格的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The essay had a Xenophonic tone that felt classical. 那篇文章帶有一種古典的色諾芬風格。",
+      "Readers noticed the Xenophonic style in the dialogue. 讀者注意到對話裡的色諾芬式風格。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophontean",
+    "meaning": "色諾芬的；像色諾芬作品風格的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The lecture highlighted the Xenophontean style of the text. 那場演講強調了那篇文字的色諾芬風格。",
+      "Her notes captured a Xenophontean balance of plainness and clarity. 她的筆記抓住了那種簡潔而清楚的色諾芬式平衡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophontian",
+    "meaning": "色諾芬的；與色諾芬相關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The professor called the passage Xenophontian in spirit. 教授稱那段文字在精神上很色諾芬。",
+      "The Xenophontian influence was clear in the calm narration. 那種色諾芬式影響在平靜的敘述裡很明顯。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophontic",
+    "meaning": "色諾芬的；具有色諾芬風格的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The review praised the Xenophontic simplicity of the account. 那篇評論稱讚敘述帶有色諾芬式的簡明。",
+      "The writer aimed for a Xenophontic tone in the chapter. 那位作家在這一章裡刻意營造色諾芬式語氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophontine",
+    "meaning": "色諾芬式的；屬於色諾芬風格的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The editor described the prose as Xenophontine and direct. 編輯把那段散文形容成色諾芬式而直接。",
+      "A Xenophontine calm runs through the whole story. 整個故事瀰漫著一種色諾芬式的平靜。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophora",
+    "meaning": "攜殼螺屬；一類會背負外殼的海螺",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum display included a shell from Xenophora. 博物館展出了一枚攜殼螺屬的殼。",
+      "Xenophora is known for carrying bits of shell on its back. 攜殼螺屬以背著碎殼聞名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophoran",
+    "meaning": "攜殼螺的；與攜殼螺有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The field guide described the xenophoran shell pattern. 那本野外指南描述了攜殼螺的殼紋。",
+      "The collector labeled the specimen as xenophoran. 收藏者把那個標本標為攜殼螺類。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenophoridae",
+    "meaning": "攜殼螺科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The textbook placed the shell in Xenophoridae. 那本教科書把這枚殼放在攜殼螺科裡。",
+      "Xenophoridae are often studied for their unusual shells. 攜殼螺科常因特殊的殼而被研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophthalmia",
+    "meaning": "異常眼部狀況；眼睛異常",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor recorded xenophthalmia as a rare condition. 醫生把異常眼部狀況記為一種罕見疾病。",
+      "The case report explained how xenophthalmia affected vision. 那份病例報告說明了異常眼部狀況如何影響視力。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenophya",
+    "meaning": "異常形態；不尋常的外形",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen showed a xenophya that puzzled the class. 那個標本呈現出一種讓全班困惑的異常形態。",
+      "The scientist noted the xenophya before storing the sample. 科學家在收起樣本前先記下了那種異常形態。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenopodid",
+    "meaning": "翼足類的；翼足類動物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fossil was identified as a xenopodid. 那塊化石被判定屬於翼足類。",
+      "The label described the creature as a xenopodid from the sea. 標籤把那生物描述為來自海中的翼足類。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopodidae",
+    "meaning": "翼足科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The curator filed the shell under Xenopodidae. 館員把那枚殼歸入翼足科。",
+      "Xenopodidae appears in older zoological classifications. 翼足科出現在較早的動物分類裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenopodoid",
+    "meaning": "像翼足類的；翼足類似的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The description called the shell xenopodoid in shape. 那份描述把那枚殼的形狀說成像翼足類。",
+      "Its xenopodoid outline made it easy to recognize. 它那種像翼足類的輪廓讓人很容易辨認。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopsylla",
+    "meaning": "印鼠蚤屬；一類跳蚤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The pest report mentioned Xenopsylla in the sample. 那份害蟲報告在樣本中提到印鼠蚤屬。",
+      "Xenopsylla includes species that live on rodents. 印鼠蚤屬包含寄生在囓齒類身上的物種。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenopteran",
+    "meaning": "異翅類的；屬於異翅類",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil was described as xenopteran in the catalog. 目錄中把那塊化石描述為異翅類的。",
+      "A xenopteran insect was drawn beside the note. 註解旁邊畫了一隻異翅類昆蟲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopteri",
+    "meaning": "異翅類；一個舊式分類名稱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old classification listed Xenopteri as a group. 舊分類把異翅類列為一個群組。",
+      "The chapter compared Xenopteri with related insects. 那一章把異翅類和相關昆蟲作比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenopterygian",
+    "meaning": "異翼魚類的；屬於異翼魚類",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The paper used xenopterygian to describe the fish. 那篇論文用異翼魚類來描述那條魚。",
+      "Its xenopterygian features were noted in the sketch. 草圖裡標出了它的異翼魚類特徵。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopterygii",
+    "meaning": "異翼魚類；一個舊式魚類分類",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The glossary placed the species under Xenopterygii. 詞彙表把那個物種列入異翼魚類。",
+      "Xenopterygii appears in some older zoology books. 異翼魚類出現在一些較舊的動物學書裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenopus",
+    "meaning": "爪蟾屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The biology class studied Xenopus as a model organism. 生物課把爪蟾屬當作模式生物來研究。",
+      "Xenopus is common in laboratory experiments. 爪蟾屬常見於實驗室研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenorhynchus",
+    "meaning": "異嘴鹳屬；一個舊式鳥類屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum card listed Xenorhynchus as a bird genus. 博物館卡片把異嘴鹳屬列為一個鳥類屬名。",
+      "Xenorhynchus is now treated as an older classification. 異嘴鹳屬如今被視為較早的分類名稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenos",
+    "meaning": "外來者；陌生人；異物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The story used Xenos to mean a stranger from outside. 那個故事用這個詞來表示來自外面的陌生人。",
+      "In the lecture, Xenos stood for something foreign. 在講課中，這個詞代表外來的事物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenosaurid",
+    "meaning": "變蜥蜴類的；屬於變蜥蜴科",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil had a clearly xenosaurid skull shape. 那塊化石有明顯的變蜥蜴類頭骨形狀。",
+      "The article described the creature as xenosaurid. 那篇文章把那生物描述為變蜥蜴類。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenosauridae",
+    "meaning": "變蜥蜴科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The exhibit grouped the skeleton with Xenosauridae. 展覽把那具骨架歸在變蜥蜴科。",
+      "Xenosauridae includes a small group of lizards. 變蜥蜴科包含一小群蜥蜴。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenosauroid",
+    "meaning": "像變蜥蜴的；變蜥蜴樣的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The drawing gave the reptile a xenosauroid look. 那幅圖讓那隻爬蟲看起來像變蜥蜴。",
+      "Its xenosauroid head shape was unusual. 它那種像變蜥蜴的頭型很不尋常。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenosaurus",
+    "meaning": "變蜥蜴屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guidebook listed Xenosaurus among the lizards. 那本指南把變蜥蜴屬列在蜥蜴之中。",
+      "Xenosaurus is known from rocky habitats. 變蜥蜴屬以棲息在岩石環境聞名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenotime",
+    "meaning": "磷釔礦",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The mineral sample was labeled xenotime. 那塊礦物樣本標示為磷釔礦。",
+      "Xenotime is studied for its rare-earth content. 磷釔礦因含稀土元素而受到研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xenurus",
+    "meaning": "裸尾犰狳屬；一個舊式動物屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The zoology text mentioned Xenurus as an armadillo genus. 動物學課本把它提作一個犰狳屬名。",
+      "Xenurus appears in older mammal classifications. 裸尾犰狳屬出現在較早的哺乳類分類裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenyl",
+    "meaning": "二甲苯基；一種芳香族基團",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist drew xenyl on the whiteboard. 化學家在白板上畫出二甲苯基。",
+      "Xenyl is used when discussing aromatic compounds. 討論芳香族化合物時會用到二甲苯基。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xenylamine",
+    "meaning": "含二甲苯基的胺類化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report listed xenylamine among the test samples. 報告把含二甲苯基的胺類化合物列為測試樣本之一。",
+      "Researchers measured how xenylamine reacted in solution. 研究者測量那種胺類化合物在溶液中的反應。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerafin",
+    "meaning": "一種罕見的舊式名稱；常見於早期文獻",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The dictionary marked xerafin as an old rare term. 詞典把它標為罕見的舊詞。",
+      "Only a few notes in the archive mention xerafin. 檔案裡只有少數筆記提到它。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeransis",
+    "meaning": "乾燥枯萎；逐漸變乾",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The plant showed signs of xeransis after the drought. 那株植物在乾旱後出現乾燥枯萎的跡象。",
+      "The gardener tried to stop the xeransis with water. 園丁試著用水來阻止枯乾。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xeranthemum",
+    "meaning": "千年菊屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The botany lesson introduced Xeranthemum as a flower genus. 植物學課把千年菊屬介紹為一種花卉屬名。",
+      "Xeranthemum flowers keep their shape after drying. 千年菊屬的花乾燥後仍能保持形狀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeranthemum",
+    "meaning": "千年菊屬植物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The label called the bloom a xeranthemum. 標籤把那朵花稱作千年菊屬植物。",
+      "A xeranthemum can look bright even when dried. 千年菊屬植物即使乾燥後也可能仍很鮮明。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerantic",
+    "meaning": "促乾的；使乾燥的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The coating had a xerantic effect on the surface. 那層塗料對表面有促乾作用。",
+      "Scientists tested a xerantic treatment in the lab. 科學家在實驗室測試了一種促乾處理。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerarch",
+    "meaning": "始於乾旱環境的；乾地演替初期的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The ecologist described the habitat as xerarch. 生態學家把那個棲地描述為始於乾旱環境。",
+      "A xerarch community develops on very dry ground. 乾地演替初期的群落會在非常乾燥的土地上形成。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerasia",
+    "meaning": "乾髮症；頭髮乾枯的病症",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor noted xerasia in the patient record. 醫生在病歷中記下乾髮症。",
+      "Xerasia can make hair fragile and brittle. 乾髮症會讓頭髮變得脆弱易斷。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xeres",
+    "meaning": "赫雷斯雪利酒；西班牙赫雷斯",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The menu offered a glass of Xeres after dinner. 菜單上列有晚餐後的一杯赫雷斯雪利酒。",
+      "He bought Xeres for the holiday meal. 他為節日餐點買了赫雷斯雪利酒。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeric",
+    "meaning": "乾旱的；耐旱的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The garden used xeric plants to save water. 那座花園用耐旱植物來節省用水。",
+      "The region has a xeric climate for much of the year. 那個地區一年中大部分時間都是乾旱氣候。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerically",
+    "meaning": "以乾旱方式；在乾燥條件下",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The plants were arranged xerically to reduce watering. 那些植物以適應乾旱的方式擺放，以減少澆水。",
+      "The seeds grow xerically in the dry greenhouse. 這些種子在乾燥溫室裡也能適應生長。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeriff",
+    "meaning": "郡長；舊式 sheriff 的拼法",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The archive used xeriff for an old county officer. 檔案用這個字來表示舊時的郡長。",
+      "The story says the xeriff kept order in town. 故事裡說那位郡長維持了城鎮秩序。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerocline",
+    "meaning": "乾濕分界層；乾旱梯度",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The map showed a xerocline across the valley. 地圖上顯示山谷裡有一道乾濕分界層。",
+      "Plants changed quickly along the xerocline. 植物沿著那條乾濕分界層很快發生變化。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeroderma",
+    "meaning": "乾皮症；皮膚過度乾燥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The clinic treated xeroderma with a moisturizing cream. 診所用保濕乳膏治療乾皮症。",
+      "Xeroderma often causes rough and itchy skin. 乾皮症常讓皮膚變得粗糙又發癢。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerodermatic",
+    "meaning": "與乾皮症有關的；造成皮膚乾燥的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The doctor discussed xerodermatic symptoms with the family. 醫生和家屬討論了與乾皮症有關的症狀。",
+      "The lotion eased the xerodermatic irritation. 那種乳液緩解了造成皮膚乾燥的不適。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerodermatous",
+    "meaning": "皮膚乾燥的；有乾皮症傾向的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The dermatologist described the rash as xerodermatous. 皮膚科醫師把那種皮疹描述為皮膚乾燥型。",
+      "Cold weather can make xerodermatous skin worse. 寒冷天氣會讓皮膚乾燥的情況更嚴重。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerodermia",
+    "meaning": "乾皮症；皮膚乾燥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chart listed xerodermia as the main complaint. 圖表把乾皮症列為主要症狀。",
+      "Xerodermia can improve with regular skin care. 乾皮症可以透過規律護膚改善。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerodermic",
+    "meaning": "皮膚乾燥的；屬於乾皮症的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The doctor used xerodermic to describe the skin. 醫生用這個詞來形容那層皮膚。",
+      "The xerodermic patches improved after treatment. 那些皮膚乾燥的斑塊在治療後改善了。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerogel",
+    "meaning": "乾凝膠；脫液後形成的凝膠",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The scientist produced a xerogel in the experiment. 科學家在實驗中製作出乾凝膠。",
+      "Xerogel can be very porous after drying. 乾凝膠在脫液後可能非常多孔。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerography",
+    "meaning": "乾式複印術；利用靜電和碳粉成像的複印方法",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xerography changed the way offices copied documents. 乾式複印術改變了辦公室複製文件的方式。",
+      "The old machine used xerography to make fast copies. 那台舊機器靠乾式複印術快速製作複本。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeroma",
+    "meaning": "乾燥病灶；乾性斑塊",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor described the patch as a xeroma. 醫生把那塊斑點稱為乾燥病灶。",
+      "A xeroma can form when tissue stays too dry. 組織長期過乾時，就可能形成乾燥病灶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromata",
+    "meaning": "xeroma 的複數；多個乾燥病灶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report listed several xeromata on the skin. 報告上列出了皮膚上的幾個乾燥病灶。",
+      "Those xeromata were noted during the exam. 那些乾燥病灶在檢查時被記錄下來。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromenia",
+    "meaning": "月經過少症；月經稀少",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chart mentioned xeromenia as a symptom. 病歷把月經過少症列為一種症狀。",
+      "Xeromenia can signal an underlying health issue. 月經稀少可能代表潛在的健康問題。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromorph",
+    "meaning": "耐旱生物；適應乾燥環境的生物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xeromorph survived on the rocky hillside. 那株耐旱生物在多石山坡上存活下來。",
+      "A xeromorph usually needs very little water. 耐旱生物通常只需要很少的水。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromorphic",
+    "meaning": "耐旱的；適應乾燥環境的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xeromorphic leaves were thick and waxy. 那些耐旱的葉子又厚又有蠟質。",
+      "Xeromorphic plants often store moisture well. 耐旱植物通常很會儲存水分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromorphous",
+    "meaning": "耐旱的；外形適合乾燥環境的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xeromorphous shrubs stayed green through summer. 那些耐旱灌木整個夏天都保持綠色。",
+      "A xeromorphous surface can reduce water loss. 耐旱外形的表面可以減少水分流失。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromorphy",
+    "meaning": "耐旱外形；適應乾燥環境的形態",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The plant's xeromorphy helped it save water. 這株植物的耐旱外形幫助它保存水分。",
+      "Xeromorphy is common in desert species. 耐旱外形在沙漠物種中很常見。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromyron",
+    "meaning": "罕見的乾燥相關術語",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The manuscript used xeromyron as an old technical term. 那份手稿把這個詞當作一個舊技術術語。",
+      "The researcher treated xeromyron as a rare label. 研究人員把這個詞當作一個罕見標籤。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeromyrum",
+    "meaning": "罕見的乾燥相關術語",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The glossary included xeromyrum among obscure words. 詞彙表把這個詞列入冷僻字詞。",
+      "She read xeromyrum as a special dry-related term. 她把這個詞理解成一個與乾燥有關的特殊術語。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeronate",
+    "meaning": "使乾燥；讓物體脫水",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The conservator xeronated the paper before storage. 修復員在收藏前先把紙張乾燥處理。",
+      "They xeronated the sample to keep it stable. 他們把樣本乾燥處理，好讓它保持穩定。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeronic",
+    "meaning": "乾性的；與乾燥有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xeronic coating repelled moisture well. 那層乾性塗層很能排斥濕氣。",
+      "A xeronic surface can feel rough to the touch. 乾性的表面摸起來可能會很粗糙。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophagia",
+    "meaning": "乾食療法；只吃乾燥食物的療法",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text described xerophagia as a strict diet. 舊文獻把乾食療法描述為一種嚴格飲食。",
+      "Xerophagia was once used in medical treatment. 乾食療法過去曾被用於醫療處置。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophagy",
+    "meaning": "乾食療法；只吃乾燥食物的飲食方式",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The nurse explained xerophagy to the patient. 護士向病人解釋了乾食療法。",
+      "Xerophagy can be hard to follow for long periods. 乾食療法若持續太久，會很難遵守。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophil",
+    "meaning": "耐旱生物；喜乾物種",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A xerophil survives where water is scarce. 耐旱生物能在缺水的地方生存。",
+      "The biologist grouped the cactus as a xerophil. 生物學家把那株仙人掌歸為耐旱生物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophile",
+    "meaning": "耐旱生物；喜乾環境的生物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xerophile needed very little irrigation. 那種耐旱生物幾乎不需要灌溉。",
+      "Each xerophile in the garden had thick leaves. 花園裡每種耐旱生物都有厚實的葉子。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophilous",
+    "meaning": "耐旱的；喜乾燥環境的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xerophilous shrubs stayed healthy in summer. 那些耐旱灌木在夏天依然健康。",
+      "Xerophilous plants often have waxy skins. 耐旱植物通常帶有蠟質表層。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophily",
+    "meaning": "耐旱性；喜乾燥環境的性質",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The cactus shows strong xerophily. 仙人掌展現出很強的耐旱性。",
+      "Xerophily helps plants live in dry places. 耐旱性幫助植物在乾燥地區生存。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophobous",
+    "meaning": "怕乾的；避開乾燥環境的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fern is xerophobous and prefers shade. 那種蕨類怕乾，喜歡陰涼。",
+      "A xerophobous plant wilts quickly in heat. 怕乾的植物在高溫下很快就會枯萎。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophthalmia",
+    "meaning": "乾眼症；眼睛過度乾燥的狀態",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The doctor treated xerophthalmia with eye drops. 醫生用眼藥水治療乾眼症。",
+      "Xerophthalmia can make the eyes feel gritty. 乾眼症會讓眼睛有砂礫感。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophthalmos",
+    "meaning": "乾眼病；眼表乾燥疾病",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specialist recognized xerophthalmos at once. 專科醫師立刻辨認出乾眼病。",
+      "Xerophthalmos can affect daily comfort. 乾眼病會影響日常舒適度。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophthalmy",
+    "meaning": "乾眼病；眼睛乾燥的舊稱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old report used xerophthalmy for severe eye dryness. 那份舊報告用乾眼病的舊稱來描述嚴重眼乾。",
+      "Xerophthalmy appears in older medical writing. 乾眼病的舊稱常見於較老的醫學文獻。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xerophyllum",
+    "meaning": "Xerophyllum 屬；一類耐旱山地植物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xerophyllum grows in dry mountain meadows. 這個屬常長在乾燥的山地草原。",
+      "The botanist labeled the specimen as Xerophyllum. 植物學家把那株標本標為這個屬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophyte",
+    "meaning": "耐旱植物；適合乾燥環境的植物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A xerophyte stores water in thick tissues. 耐旱植物會在厚實組織裡儲水。",
+      "The desert garden was filled with xerophytes. 那座沙漠花園裡種滿了耐旱植物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophytic",
+    "meaning": "耐旱的；屬於耐旱植物的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xerophytic cactus handled drought well. 那株耐旱的仙人掌很能應付乾旱。",
+      "Xerophytic leaves often stay small and firm. 耐旱的葉子通常又小又結實。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophytically",
+    "meaning": "以耐旱方式；像耐旱植物那樣",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The plant grew xerophytically on the cliff. 那株植物以耐旱方式長在懸崖上。",
+      "It adapted xerophytically to the desert wind. 它以耐旱的方式適應了沙漠風。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerophytism",
+    "meaning": "耐旱性；耐旱植物的特徵",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xerophytism helps plants live in deserts. 耐旱性幫助植物在沙漠中生存。",
+      "The study explained the role of xerophytism. 那項研究解釋了耐旱性的作用。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xeroprinting",
+    "meaning": "乾式列印；不用濕墨的列印方式",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xeroprinting made the copies look sharp and clean. 乾式列印讓複本看起來清楚俐落。",
+      "The office switched to xeroprinting for speed. 辦公室為了速度改用乾式列印。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerosis",
+    "meaning": "乾燥症；組織或皮膚過度乾燥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xerosis made her skin feel rough. 乾燥症讓她的皮膚摸起來很粗糙。",
+      "The cream was meant to ease xerosis. 那款乳霜是為了緩解乾燥症。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerostoma",
+    "meaning": "口乾；口腔乾燥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient complained of xerostoma after treatment. 病人治療後抱怨口乾。",
+      "Xerostoma can make eating less comfortable. 口乾會讓進食變得不舒服。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerostomia",
+    "meaning": "口乾症；唾液分泌不足造成的口腔乾燥",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xerostomia can make speaking and swallowing harder. 口乾症會讓說話和吞嚥更困難。",
+      "The doctor asked about xerostomia during the visit. 醫生在看診時詢問了口乾症的情況。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerotes",
+    "meaning": "乾燥；乾燥狀態",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xerotes of the room irritated his throat. 房間的乾燥讓他的喉嚨不舒服。",
+      "Summer xerotes can stress fragile plants. 夏季的乾燥狀態會讓脆弱植物承受壓力。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerotherm",
+    "meaning": "乾熱環境；乾熱地帶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xerotherm damaged many tender seedlings. 乾熱環境傷害了許多嬌嫩幼苗。",
+      "A xerotherm can be harsh on wildlife. 乾熱地帶對野生動物來說可能很嚴苛。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerotic",
+    "meaning": "乾性的；與乾燥症有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xerotic lotion eased the itching. 那種抗乾乳液緩解了搔癢。",
+      "A xerotic condition often needs careful care. 乾性的狀況通常需要細心照護。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerotocia",
+    "meaning": "乾產；罕見的分娩異常",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old case note mentioned xerotocia as a rare birth complication. 舊病例把這種情況記為罕見的分娩併發症。",
+      "Xerotocia appears in very old medical records. 乾產這個說法出現在很舊的醫學紀錄裡。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xerotripsis",
+    "meaning": "乾磨；不用液體的摩擦拋光",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The craftsman used xerotripsis to polish the wood. 工匠用乾磨把木頭磨亮。",
+      "Xerotripsis can remove small rough spots. 乾磨可以去除細小粗糙處。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xerus",
+    "meaning": "Xerus 屬；非洲地松鼠屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The zookeeper identified the animal as a Xerus. 動物園管理員把這隻動物辨認成非洲地松鼠屬。",
+      "A Xerus often lives in open dry country. 非洲地松鼠屬通常生活在開闊乾燥的地區。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xi",
+    "meaning": "希臘字母 xi",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xi is a Greek letter. 這是希臘字母之一。",
+      "Students practiced writing xi on the worksheet. 學生在練習單上書寫這個字母。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xicak",
+    "meaning": "西卡克；族名或地名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The atlas mentioned Xicak near the coast. 那本地圖冊提到西卡克位於海岸附近。",
+      "Archaeologists found a Xicak artifact. 考古學家找到一件西卡克文物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xicaque",
+    "meaning": "西卡克族；中美洲原住民族",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The Xicaque keep some traditional customs. 西卡克族仍保留一些傳統習俗。",
+      "A Xicaque elder spoke at the meeting. 一位西卡克族長者在會上發言。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Ximenia",
+    "meaning": "西梅尼亞屬；刺果木屬",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Ximenia bears small fruits with a sharp taste. 西梅尼亞會結出小型果實，味道帶點酸澀。",
+      "The gardener planted Ximenia by the path. 園丁把西梅尼亞種在小徑旁。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xina",
+    "meaning": "希娜；人名或地名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The name Xina appeared in the record. 希娜這個名字出現在紀錄裡。",
+      "People in the village still remembered Xina. 村裡的人仍記得希娜。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xinca",
+    "meaning": "辛卡族；中美洲民族",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The Xinca language is part of the region's heritage. 辛卡語是該地區文化遺產的一部分。",
+      "Researchers studied Xinca traditions. 研究人員研究了辛卡族的傳統。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xipe",
+    "meaning": "西佩；阿茲特克神名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The festival honored Xipe with dance and song. 節慶用舞蹈和歌聲向西佩致敬。",
+      "Artists painted a mask for Xipe. 藝術家為西佩畫了一張面具。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphias",
+    "meaning": "劍魚屬；劍魚的屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xiphias is the genus of the swordfish. 劍魚屬是劍魚的屬名。",
+      "Biologists cataloged the specimen as Xiphias. 生物學家把這個標本編入劍魚屬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphias",
+    "meaning": "劍魚屬；劍魚的屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The label used xiphias for the swordfish specimen. 標籤把這個劍魚標本記為劍魚屬。",
+      "Researchers compared xiphias with other billfish. 研究人員把這個屬和其他旗魚作比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphihumeralis",
+    "meaning": "劍肩形的；肩部呈劍狀的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphihumeralis armor had a pointed shoulder line. 那副劍肩形鎧甲的肩線很尖。",
+      "The artist drew a xiphihumeralis silhouette. 畫家畫出一個劍肩形輪廓。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphiid",
+    "meaning": "劍魚狀的；像劍魚的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphiid snout looked narrow and sharp. 那種劍魚狀吻部又窄又尖。",
+      "A xiphiid feature appeared in the fossil. 化石上出現了劍魚狀特徵。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphiidae",
+    "meaning": "劍魚科；包含劍魚的魚科",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xiphiidae includes the swordfish and its relatives. 劍魚科包括劍魚及其近親。",
+      "The chart placed the fish in Xiphiidae. 圖表把這條魚歸入劍魚科。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphiiform",
+    "meaning": "劍魚形的；呈劍形的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphiiform bow gave the boat a sleek look. 那個劍魚形船首讓船身看起來很俐落。",
+      "The fossil had a xiphiiform outline. 那塊化石呈現劍形輪廓。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphioid",
+    "meaning": "劍形的；像劍突一樣的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The bone has a xiphioid tip. 這塊骨頭末端呈劍形。",
+      "A xiphioid shape is narrow and pointed. 劍形輪廓又窄又尖。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphiplastra",
+    "meaning": "龜類腹甲後部的成對骨板",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum display labeled the xiphiplastra. 博物館展板標出了龜類腹甲後部的骨板。",
+      "The xiphiplastra help form the turtle's shell. 這些骨板有助於形成烏龜的甲殼。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphiplastral",
+    "meaning": "腹甲後部骨板的；與其有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report mentioned a xiphiplastral ridge. 報告提到一條腹甲後部的骨脊。",
+      "Researchers noted the xiphiplastral pattern on the shell. 研究人員記錄了甲殼上的腹甲後部圖樣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphiplastron",
+    "meaning": "龜類腹甲後部的單一骨板",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xiphiplastron is part of the lower shell. 腹甲後部的單一骨板屬於下方甲殼的一部分。",
+      "A crack in the xiphiplastron can weaken the shell. 這塊骨板裂開會削弱甲殼。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphisterna",
+    "meaning": "胸骨劍突部的複數形式",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The diagram marked the xiphisterna near the chest. 圖解在胸部附近標出了劍突部骨片。",
+      "The xiphisterna are small but important bones. 這些骨片雖小，卻很重要。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphisternal",
+    "meaning": "胸骨劍突部的；與其相連的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphisternal area lies low on the sternum. 劍突部位於胸骨下端。",
+      "Doctors checked the xiphisternal junction carefully. 醫師仔細檢查了劍突連接處。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphisternum",
+    "meaning": "胸骨劍突；胸骨下端",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "He pointed to the xiphisternum on the diagram. 他指著圖上的胸骨劍突。",
+      "The xiphisternum sits at the lower end of the sternum. 胸骨劍突位於胸骨的下端。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphisura",
+    "meaning": "劍尾類；一種海生節肢動物分類群",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fossil was assigned to Xiphisura. 那塊化石被歸入劍尾類。",
+      "Xiphisura includes animals with a long tail spine. 劍尾類包含尾刺很長的動物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphisuran",
+    "meaning": "劍尾類的；屬於該類群的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The specimen had xiphisuran features. 這件標本具有劍尾類特徵。",
+      "Scientists compared the xiphisuran body plan. 科學家比較了劍尾類的身體構造。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphiura",
+    "meaning": "劍尾類的一個舊分類名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text used the name Xiphiura. 舊書使用了劍尾類的一個舊分類名。",
+      "Xiphiura appears in historical zoology writing. 這個名稱出現在古老的動物學著作中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphius",
+    "meaning": "一種劍魚屬名；劍魚相關的舊名稱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The catalog listed Xiphius among fish names. 目錄把這個名稱列在魚類名稱之中。",
+      "Xiphius is an old name found in taxonomy. 這是分類學文獻裡見到的舊名稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphocostal",
+    "meaning": "劍狀部與肋骨相連的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphocostal region is near the lower ribs. 劍狀部連著下方肋骨的區域。",
+      "A xiphocostal ligament can be discussed in anatomy class. 解剖課上會談到劍狀部與肋骨相連的韌帶。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphodon",
+    "meaning": "劍齒獸屬；一種古生物屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fossil was labeled Xiphodon. 那塊化石被標為劍齒獸屬。",
+      "Xiphodon is known from ancient mammal remains. 劍齒獸屬是從古代哺乳類遺骸得知的。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphodontidae",
+    "meaning": "劍齒獸科；一個古生物科名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article discussed Xiphodontidae fossils. 那篇文章討論了劍齒獸科的化石。",
+      "Members of Xiphodontidae are extinct mammals. 劍齒獸科的成員都是已滅絕的哺乳動物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphodynia",
+    "meaning": "劍突痛；胸骨下端疼痛",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The patient complained of xiphodynia. 病人抱怨劍突部位疼痛。",
+      "Xiphodynia can feel sharp when pressed. 劍突痛在按壓時可能會很尖銳。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphoid",
+    "meaning": "劍形的；像劍突的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphoid process is at the bottom of the breastbone. 劍突位於胸骨下端。",
+      "A xiphoid blade would be long and narrow. 劍形刀片會又長又窄。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphoidal",
+    "meaning": "劍形的；劍突樣的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The surgeon noted a xiphoidal contour. 外科醫師注意到一個劍形輪廓。",
+      "Xiphoidal structures are often pointed and thin. 劍形構造通常尖而細。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphoidian",
+    "meaning": "劍形的；像劍突的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The drawing showed a xiphoidian outline. 那張圖畫出一個劍形外輪廓。",
+      "Its xiphoidian tip ended in a fine point. 它的劍形尖端收成細點。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphopagic",
+    "meaning": "連體雙胞胎的；胸腹部相連的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The medical text described xiphopagic twins. 醫學文本描述了胸腹部相連的雙胞胎。",
+      "Xiphopagic cases are very rare. 胸腹部相連的病例非常罕見。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphopagous",
+    "meaning": "胸腹部相連的；連體的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The exhibit mentioned xiphopagous growth. 展覽提到了胸腹部相連的生長情形。",
+      "A xiphopagous pair shares part of the body. 一對胸腹部相連的個體共用身體的一部分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphopagus",
+    "meaning": "胸腹部相連的連體個體",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article referred to a xiphopagus. 文章提到一例胸腹部相連的連體個體。",
+      "A xiphopagus may share organs or tissue. 這類個體可能共用器官或組織。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphophyllous",
+    "meaning": "葉片狹長如劍的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The plant had xiphophyllous leaves. 那株植物長著劍形長葉。",
+      "Xiphophyllous foliage looks narrow and pointed. 劍形長葉看起來狹窄而尖。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphosterna",
+    "meaning": "胸骨劍突部的複數形式",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The anatomy chart labeled the xiphosterna. 解剖圖標出了胸骨劍突部骨片。",
+      "The xiphosterna are located at the lower sternum. 這些骨片位於胸骨下端。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphosternum",
+    "meaning": "胸骨劍突部的單數骨片",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xiphosternum lies at the base of the sternum. 胸骨劍突部位於胸骨底端。",
+      "A fractured xiphosternum can cause pain. 劍突部骨片受傷會引起疼痛。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphosura",
+    "meaning": "劍尾目；一類海生節肢動物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The crab-like fossil was placed in Xiphosura. 那個像螃蟹的化石被歸入劍尾目。",
+      "Xiphosura includes horseshoe crabs. 劍尾目包含馬蹄蟹。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphosuran",
+    "meaning": "劍尾目的；屬於劍尾目的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphosuran body plan is ancient. 劍尾目的身體構造非常古老。",
+      "Scientists studied xiphosuran fossils closely. 科學家仔細研究了劍尾目的化石。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphosure",
+    "meaning": "劍尾類動物；劍尾目的成員",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The book used xiphosure as an old term. 那本書用劍尾類動物作為舊稱。",
+      "A xiphosure has a hard shell and tail spine. 劍尾類動物有堅硬甲殼和尾刺。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphosuridae",
+    "meaning": "劍尾科；一個海生節肢動物科名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen was placed in Xiphosuridae. 這個標本被歸入劍尾科。",
+      "Xiphosuridae includes animals related to horseshoe crabs. 劍尾科包含和馬蹄蟹相關的動物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphosurous",
+    "meaning": "屬於劍尾類的；像劍尾類的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil showed xiphosurous features. 那塊化石顯出劍尾類特徵。",
+      "Its xiphosurous tail was long and stiff. 它那像劍尾類的尾部又長又硬。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphosurus",
+    "meaning": "劍尾屬；一個舊的分類名稱",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old taxonomy text mentioned Xiphosurus. 舊分類學文本提到了劍尾屬。",
+      "Xiphosurus is an obsolete zoological name. 劍尾屬是一個已過時的動物學名稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphuous",
+    "meaning": "劍形的；細長尖銳的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The seed had a xiphuous point. 那顆種子有一個劍形尖端。",
+      "Xiphuous objects are shaped like a blade. 劍形物體的輪廓像刀刃。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphura",
+    "meaning": "劍尾類的一個舊名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The historical record used the name Xiphura. 歷史紀錄使用了劍尾類的一個舊名。",
+      "Xiphura appears in older zoological catalogs. 這個名稱出現在較早的動物學目錄中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphydria",
+    "meaning": "劍蜂屬；一類木蜂相關昆蟲",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The insect sample was labeled Xiphydria. 那個昆蟲標本標為劍蜂屬。",
+      "Xiphydria is a genus of sawfly-like insects. 劍蜂屬是一類像葉蜂的昆蟲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xiphydriid",
+    "meaning": "劍蜂科昆蟲的；劍蜂科成員",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The xiphydriid larva fed on wood. 那隻劍蜂科幼蟲以木材為食。",
+      "Xiphydriid insects are known for their slender bodies. 劍蜂科昆蟲以細長身體著稱。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiphydriidae",
+    "meaning": "劍蜂科；一類昆蟲科名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide listed Xiphydriidae among insect families. 指南把劍蜂科列入昆蟲科名之中。",
+      "Xiphydriidae includes wood-boring insects. 劍蜂科包含鑽木類昆蟲。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xiraxara",
+    "meaning": "希拉克薩拉；一個地名或族名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The atlas mentioned Xiraxara in the region. 地圖集在該地區提到了希拉克薩拉。",
+      "Xiraxara may refer to a local place name. 希拉克薩拉可能是一個地方名。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xmas",
+    "meaning": "聖誕節；Christmas 的縮寫",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "They decorated the room for Xmas. 他們把房間布置成聖誕節的樣子。",
+      "Xmas is a common short form for Christmas. 這是聖誕節的常見縮寫。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xoana",
+    "meaning": "古代木像的複數形式",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum displayed several xoana. 博物館展出了幾尊古代木像。",
+      "Ancient xoana were often carved from wood. 古代木像通常以木頭雕成。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xoanon",
+    "meaning": "古代木雕神像；木製偶像",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xoanon stood in the shrine for centuries. 那尊木雕神像在神壇中矗立了數世紀。",
+      "A xoanon is a very old wooden cult image. 木雕神像是一種非常古老的木製崇拜像。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xosa",
+    "meaning": "科薩族；科薩語",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lesson introduced the Xosa language. 這堂課介紹了科薩語。",
+      "A Xosa speaker helped translate the story. 一位科薩語使用者幫忙翻譯這個故事。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xurel",
+    "meaning": "一種不常見的植物名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The botanist noted xurel in the field journal. 植物學家在野外日誌裡記下了這種植物。",
+      "A xurel can be hard to identify without flowers. 沒有花時，這種植物很難辨認。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyla",
+    "meaning": "木質部分；與木材有關的東西",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The text referred to xyla in the stem. 文章提到莖中的木質部分。",
+      "Xyla helps give plants strength and support. 木質部分有助於植物獲得強度與支撐。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylan",
+    "meaning": "木聚糖；一種植物多醣",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xylan is found in plant cell walls. 木聚糖存在於植物細胞壁中。",
+      "Scientists study xylan in wood and grain. 科學家研究木材與穀物中的木聚糖。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xylaria",
+    "meaning": "炭角菌屬；一類真菌屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fungus was identified as Xylaria. 那個真菌被辨認為炭角菌屬。",
+      "Xylaria often grows on dead wood. 炭角菌屬常生長在枯木上。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xylariaceae",
+    "meaning": "炭角菌科；一類真菌科名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen belonged to Xylariaceae. 這個標本屬於炭角菌科。",
+      "Xylariaceae includes fungi that live on wood. 炭角菌科包含生活在木材上的真菌。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylate",
+    "meaning": "以木質部分處理；用木質材料製作",
+    "partOfSpeech": "verb",
+    "sentences": [
+      "The artisan decided to xylate the frame. 工匠決定用木質材料處理這個框架。",
+      "To xylate something is to give it a woodlike form. 也就是讓它呈現木質外觀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xyleborus",
+    "meaning": "小蠹屬；一類鑽木甲蟲屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The insect was identified as Xyleborus. 這隻昆蟲被辨認為小蠹屬。",
+      "Xyleborus beetles bore into wood. 小蠹屬甲蟲會鑽入木材。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylem",
+    "meaning": "木質部；植物輸水組織",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Water moves upward through the xylem. 水分經由木質部向上運輸。",
+      "The xylem helps a plant carry water. 木質部幫助植物輸送水分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylene",
+    "meaning": "二甲苯；一種有機溶劑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab used xylene as a solvent. 實驗室把二甲苯當作溶劑使用。",
+      "Xylene can dissolve many organic substances. 二甲苯可以溶解許多有機物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylenol",
+    "meaning": "二甲酚；一種芳香族化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist measured the xylenol sample. 化學家測量了二甲酚樣本。",
+      "Xylenol is used in some industrial processes. 二甲酚用於某些工業製程。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylenyl",
+    "meaning": "二甲苯基；由二甲苯衍生的基團",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist discussed a xylenyl group in the compound. 化學家談到這個化合物裡的一個二甲苯基。",
+      "A xylenyl fragment can appear in rare organic names. 二甲苯基片段會出現在罕見的有機名稱中。"
+    ]
+  },
+  {
+    "word": "xyletic",
+    "meaning": "木質的；像木頭的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The old resin had a xyletic smell. 那塊舊樹脂有一種木質的氣味。",
+      "The sample showed a xyletic texture under the lens. 在放大鏡下，這個樣本呈現木質的紋理。"
+    ]
+  },
+  {
+    "word": "Xylia",
+    "meaning": "Xylia屬；一種樹木屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The botanist labeled the tree as Xylia. 植物學家把那棵樹標為該樹屬。",
+      "A Xylia specimen was placed beside other tropical plants. 一株這個樹屬的標本被放在其他熱帶植物旁邊。"
+    ]
+  },
+  {
+    "word": "xylic",
+    "meaning": "木質的；與木材有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report described a xylic layer in the fossil. 報告描述了化石中的一層木質結構。",
+      "A xylic surface can feel hard and dry. 木質表面摸起來通常堅硬而乾燥。"
+    ]
+  },
+  {
+    "word": "xylidic",
+    "meaning": "與二甲苯胺有關的；二甲苯胺類的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The article mentioned a xylidic derivative. 那篇文章提到一種二甲苯胺類衍生物。",
+      "A xylidic compound belongs to rare chemical studies. 二甲苯胺類化合物屬於罕見的化學研究範圍。"
+    ]
+  },
+  {
+    "word": "xylidine",
+    "meaning": "二甲苯胺；一種有機化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The label identified the liquid as xylidine. 標籤把那瓶液體標為二甲苯胺。",
+      "Xylidine is used in some specialized chemical work. 二甲苯胺可用於某些專門的化學工作。"
+    ]
+  },
+  {
+    "word": "Xylina",
+    "meaning": "Xylina屬；一種蛾類屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide listed Xylina among moth genera. 指南把它列在蛾類屬名之中。",
+      "A Xylina specimen rested near the pinned insects. 一隻這個蛾屬的標本停在針插昆蟲旁邊。"
+    ]
+  },
+  {
+    "word": "xylindein",
+    "meaning": "木綠素；一種綠色真菌色素",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The fungus produced a green xylindein pigment. 那種真菌產生了一種綠色的木綠素色素。",
+      "Xylindein can stain wood with a vivid color. 木綠素會把木頭染成鮮明的顏色。"
+    ]
+  },
+  {
+    "word": "xylinid",
+    "meaning": "二甲苯胺類化合物；二甲苯胺衍生物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The chemist noted a xylinid in the sample. 化學家在樣本中注意到一種二甲苯胺衍生物。",
+      "A xylinid is mentioned only in specialized texts. 二甲苯胺衍生物只會在專門文獻裡提到。"
+    ]
+  },
+  {
+    "word": "xylite",
+    "meaning": "木煤；木質化的褐煤",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum displayed a lump of xylite. 博物館展示了一塊木煤。",
+      "Xylite forms from ancient wood-like material. 木煤形成於古老的木質材料。"
+    ]
+  },
+  {
+    "word": "xylitol",
+    "meaning": "木糖醇；一種甜味劑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The label showed that the gum contained xylitol. 標籤顯示那包口香糖含有木糖醇。",
+      "Xylitol is used as a sweetener in many foods. 木糖醇常被用作許多食品中的甜味劑。"
+    ]
+  },
+  {
+    "word": "xylitone",
+    "meaning": "木音；木琴般的音色",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The composer described the melody as xylitone. 作曲家把那段旋律形容為木音。",
+      "A xylitone sound is bright and dry. 木琴般的音色通常明亮而乾脆。"
+    ]
+  },
+  {
+    "word": "xylobalsamum",
+    "meaning": "木香樹脂；來自樹木的香脂",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ancient text referred to xylobalsamum. 古文獻提到了木香樹脂。",
+      "Xylobalsamum was valued for its fragrance. 木香樹脂因香氣而受到重視。"
+    ]
+  },
+  {
+    "word": "xylocarp",
+    "meaning": "木質果；果皮堅硬如木的果實",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The coconut is a classic xylocarp. 椰子是典型的木質果。",
+      "A xylocarp has a hard outer shell. 木質果的外殼通常很硬。"
+    ]
+  },
+  {
+    "word": "xylocarpous",
+    "meaning": "具有木質果的；果皮堅硬如木的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The botanist called the fruit xylocarpous. 植物學家稱這種果實為木質果型。",
+      "Xylocarpous plants often protect their seeds well. 具有木質果的植物通常能很好保護種子。"
+    ]
+  },
+  {
+    "word": "Xylocopa",
+    "meaning": "木蜂屬；一種熊蜂樣的大型蜜蜂屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The field guide listed Xylocopa as a bee genus. 野外圖鑑把它列為一種蜜蜂屬名。",
+      "A Xylocopa bee was hovering near the flowers. 一隻木蜂在花旁盤旋。"
+    ]
+  },
+  {
+    "word": "xylocopid",
+    "meaning": "木蜂的；屬於木蜂科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The specimen showed xylocopid traits. 這件標本呈現出木蜂科的特徵。",
+      "A xylocopid insect can be large and dark. 木蜂科昆蟲通常體型大而且顏色深。"
+    ]
+  },
+  {
+    "word": "Xylocopidae",
+    "meaning": "木蜂科；一類大型蜂類",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The insect was identified as part of Xylocopidae. 那隻昆蟲被辨認為木蜂科的一員。",
+      "Xylocopidae includes the carpenter bees. 木蜂科包含木蜂。"
+    ]
+  },
+  {
+    "word": "xylogen",
+    "meaning": "木質形成物；促成木質生成的物質",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The article mentioned xylogen in plant growth. 那篇文章提到植物生長中的木質形成物。",
+      "Xylogen is a rare term in botany. 木質形成物是植物學裡的罕見術語。"
+    ]
+  },
+  {
+    "word": "xyloglyphy",
+    "meaning": "木刻術；木雕刻",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum explained the history of xyloglyphy. 博物館介紹了木刻術的歷史。",
+      "Xyloglyphy requires patience and steady hands. 木刻術需要耐心與穩定的手法。"
+    ]
+  },
+  {
+    "word": "xylograph",
+    "meaning": "木刻版畫；木版印刷品",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The gallery displayed an old xylograph. 畫廊展出了一幅古老的木刻版畫。",
+      "A xylograph can show fine carved lines. 木刻版畫可以呈現細緻的刻線。"
+    ]
+  },
+  {
+    "word": "xylographer",
+    "meaning": "木刻師；木版雕刻者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xylographer carved the block by hand. 那位木刻師用手雕刻木版。",
+      "A skilled xylographer works with sharp tools. 熟練的木刻師會使用鋒利工具。"
+    ]
+  },
+  {
+    "word": "xylographic",
+    "meaning": "木刻的；木版印刷的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The book included a xylographic illustration. 那本書裡有一幅木刻插圖。",
+      "Xylographic printing leaves a clear pattern. 木版印刷會留下清楚的圖樣。"
+    ]
+  },
+  {
+    "word": "xylographical",
+    "meaning": "木刻的；木版印刷的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The archive kept a xylographical plate. 檔案館保存了一塊木版印刷版。",
+      "A xylographical style is often bold and crisp. 木刻風格通常大膽而俐落。"
+    ]
+  },
+  {
+    "word": "xylographically",
+    "meaning": "以木刻方式；以木版印刷方式",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The image was reproduced xylographically. 這幅圖是以木刻方式再製的。",
+      "The page looked xylographically printed. 那一頁看起來像是用木版印刷的。"
+    ]
+  },
+  {
+    "word": "xylography",
+    "meaning": "木刻術；木版印刷",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The class studied xylography as an art. 那堂課把木刻術當作一門藝術來學習。",
+      "Xylography was important before modern printing. 在現代印刷出現前，木版印刷很重要。"
+    ]
+  },
+  {
+    "word": "xyloid",
+    "meaning": "木質的；像木頭的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fossil had a xyloid appearance. 那塊化石看起來很木質。",
+      "A xyloid surface often feels stiff and dry. 木質表面摸起來常常僵硬而乾燥。"
+    ]
+  },
+  {
+    "word": "xyloidin",
+    "meaning": "硝化纖維素；一種可燃膠質",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The lab stored the sample as xyloidin. 實驗室把這個樣本保存為硝化纖維素。",
+      "Xyloidin was once used in early chemistry. 硝化纖維素曾經用於早期化學。"
+    ]
+  },
+  {
+    "word": "xylol",
+    "meaning": "二甲苯；一種有機溶劑",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The solvent in the bottle was xylol. 瓶中的溶劑是二甲苯。",
+      "Xylol is used in some laboratory procedures. 二甲苯可用於某些實驗步驟。"
+    ]
+  },
+  {
+    "word": "xylology",
+    "meaning": "木材學；研究木材的學問",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The professor taught a course in xylology. 教授開了一門木材學課程。",
+      "Xylology studies the structure and use of wood. 木材學研究木材的結構與用途。"
+    ]
+  },
+  {
+    "word": "xyloma",
+    "meaning": "木樣腫塊；木質樣病灶",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old medical text mentioned a xyloma. 那本舊醫學書提到一種木樣腫塊。",
+      "A xyloma sounds like a hard growth. 木樣腫塊聽起來像堅硬的增生。"
+    ]
+  },
+  {
+    "word": "xylomancy",
+    "meaning": "木占；以木材占卜",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The legend referred to xylomancy. 那則傳說提到了木占。",
+      "Xylomancy is a form of divination with wood. 木占是一種用木材占卜的方法。"
+    ]
+  },
+  {
+    "word": "xylometer",
+    "meaning": "木材測量器；測量木材體積的工具",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The forester used a xylometer to check the log. 林務員用木材測量器檢查那根原木。",
+      "A xylometer helps estimate the volume of wood. 木材測量器有助於估算木材體積。"
+    ]
+  },
+  {
+    "word": "xylon",
+    "meaning": "木材；木頭",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old text used xylon for wood. 舊文獻用這個詞表示木材。",
+      "Xylon is a simple word in classical writing. 這個古詞在古典寫作裡很常見。"
+    ]
+  },
+  {
+    "word": "xylonic",
+    "meaning": "木糖酸的；與木糖酸有關的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The chemist described a xylonic acid derivative. 化學家描述了一種木糖酸衍生物。",
+      "A xylonic compound belongs to rare organic chemistry. 木糖酸類化合物屬於罕見的有機化學範圍。"
+    ]
+  },
+  {
+    "word": "Xylonite",
+    "meaning": "賽璐珞；早期塑膠材料",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The antique comb was made of Xylonite. 那把古董梳子是賽璐珞做的。",
+      "Xylonite was an early plastic material. 賽璐珞是一種早期塑膠材料。"
+    ]
+  },
+  {
+    "word": "xylonitrile",
+    "meaning": "木腈；一種有機化合物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The paper discussed xylonitrile as a compound. 那篇論文把木腈當作一種化合物來討論。",
+      "Xylonitrile appears in specialized chemistry texts. 木腈出現在專門的化學文本裡。"
+    ]
+  },
+  {
+    "word": "Xylophaga",
+    "meaning": "食木貝屬；一類鑽木貝類",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The shell was identified as Xylophaga. 那個貝殼被辨認為食木貝屬。",
+      "Xylophaga lives in wood and similar material. 食木貝屬會生活在木材及類似材料中。"
+    ]
+  },
+  {
+    "word": "xylophagan",
+    "meaning": "食木的；屬於食木貝類的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The article described xylophagan behavior. 那篇文章描述了食木性的行為。",
+      "A xylophagan animal feeds on wood. 食木動物以木材為食。"
+    ]
+  },
+  {
+    "word": "xylophage",
+    "meaning": "食木動物；吃木頭的生物",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The termite is a common xylophage. 白蟻是一種常見的食木動物。",
+      "A xylophage can damage timber quickly. 食木動物會很快損害木材。"
+    ]
+  },
+  {
+    "word": "xylophagid",
+    "meaning": "食木貝科的；屬於食木貝科的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The specimen showed xylophagid features. 這件標本呈現出食木貝科的特徵。",
+      "A xylophagid species is tied to wood. 食木貝科物種通常與木材有關。"
+    ]
+  },
+  {
+    "word": "Xylophagidae",
+    "meaning": "食木貝科；一類鑽木貝類",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The guide placed the shell in Xylophagidae. 指南把那個貝類放入食木貝科。",
+      "Xylophagidae includes wood-boring marine animals. 食木貝科包含鑽木的海洋動物。"
+    ]
+  },
+  {
+    "word": "xylophagous",
+    "meaning": "食木的；以木材為食的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The insect has xylophagous habits. 這種昆蟲有食木的習性。",
+      "Xylophagous pests can destroy beams. 食木害蟲會破壞樑柱。"
+    ]
+  },
+  {
+    "word": "Xylophagus",
+    "meaning": "食木蠅屬；一種昆蟲屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The insect was classified under Xylophagus. 那隻昆蟲被歸入食木蠅屬。",
+      "A Xylophagus specimen was pinned in the tray. 一隻食木蠅屬標本被針插在標本盤中。"
+    ]
+  },
+  {
+    "word": "xylophilous",
+    "meaning": "喜木的；以木材為棲地的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fungus is xylophilous and grows on logs. 這種真菌喜木，會長在原木上。",
+      "Xylophilous organisms live in or on wood. 喜木生物會住在木材裡或木材上。"
+    ]
+  },
+  {
+    "word": "xylophone",
+    "meaning": "木琴",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The child played the xylophone in class. 那個孩子在課堂上演奏木琴。",
+      "A xylophone has bars that make bright notes. 木琴有能發出明亮音符的琴鍵。"
+    ]
+  },
+  {
+    "word": "xylophonic",
+    "meaning": "像木琴的；木琴式的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The melody had a xylophonic quality. 那段旋律帶有木琴般的質感。",
+      "A xylophonic tone is clear and percussive. 木琴式音色清楚而有敲擊感。"
+    ]
+  },
+  {
+    "word": "xylophonist",
+    "meaning": "木琴演奏者",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The xylophonist led the school band. 那位木琴演奏者帶領校隊演出。",
+      "A skilled xylophonist keeps perfect rhythm. 熟練的木琴演奏者能維持完美節奏。"
+    ]
+  },
+  {
+    "word": "Xylopia",
+    "meaning": "Xylopia屬；一種熱帶樹木屬名",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The botanist identified the plant as Xylopia. 植物學家把那株植物辨認為該樹屬。",
+      "A Xylopia tree grows in warm regions. 這種樹屬生長在溫暖地區。"
+    ]
+  },
+  {
+    "word": "xyloplastic",
+    "meaning": "木塑的；以木材塑形的",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The craft used xyloplastic material. 那件工藝品使用了木塑材料。",
+      "A xyloplastic form combines wood and shaping. 木塑形態結合了木材與塑形技術。"
+    ]
+  },
+  {
+    "word": "xylopyrography",
+    "meaning": "木燒畫；在木材上以熱燒出圖案的技法。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xylopyrography uses heat to burn designs into wood. 這種技法用熱把圖案燒進木頭裡。",
+      "The artist practiced xylopyrography on a smooth panel. 這位藝術家在一塊平滑木板上練習木燒畫。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyloquinone",
+    "meaning": "木質醌；一種與木材相關的有機化合物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Chemists described xyloquinone as a wood-derived compound. 化學家把這種化合物描述為來自木材的物質。",
+      "Researchers compared xyloquinone with similar aromatic compounds. 研究人員把木質醌和相似的芳香化合物做比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylorcin",
+    "meaning": "木酚素；一種從木材來源取得的酚類化合物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The report identified xylorcin in the extracted sample. 報告在萃取樣本中辨認出木酚素。",
+      "Chemists studied xylorcin for its unusual structure. 化學家研究木酚素的特殊結構。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylorcinol",
+    "meaning": "木酚二醇；一種木材來源的酚類化合物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The laboratory isolated xylorcinol from the mixture. 實驗室從混合物中分離出木酚二醇。",
+      "Students compared xylorcinol with related phenols. 學生把木酚二醇和相關的酚類做比較。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylose",
+    "meaning": "木糖；一種常見於木質纖維中的單糖。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The term xylose refers to a wood sugar. 木糖是一種來源於木材的糖。",
+      "Scientists measured the amount of xylose in the sample. 科學家測量樣本中的木糖含量。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyloside",
+    "meaning": "木糖苷；含有木糖的糖苷。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The formula included a xyloside linked to another sugar. 這個配方含有一種和另一種糖相連的木糖苷。",
+      "Chemists traced the xyloside back to its precursor. 化學家追溯這個木糖苷的前驅物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xylosma",
+    "meaning": "木薯屬？；一個植物屬名。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Botanists studied Xylosma in the greenhouse. 植物學家在溫室裡研究這個植物屬。",
+      "The guidebook listed Xylosma among rare shrubs. 指南把這個屬列在稀有灌木之中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylostroma",
+    "meaning": "木質菌座；外形像木頭的真菌菌座。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The specimen formed a hard xylostroma on the bark. 標本在樹皮上形成堅硬的木質菌座。",
+      "Mycologists examined the xylostroma under bright light. 真菌學家在強光下檢查這個木質菌座。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylostromata",
+    "meaning": "木質菌座的複數形式。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The collection contained several xylostromata from old logs. 這批收藏裡有幾個來自舊木段的木質菌座。",
+      "Researchers cataloged the xylostromata by shape. 研究人員依形狀為這些木質菌座編目。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylostromatoid",
+    "meaning": "木質菌座狀的；外形像木質菌座的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The fungus had a xylostromatoid texture. 這種真菌具有木質菌座般的質地。",
+      "The report described the growth as xylostromatoid. 報告把這種生長狀態描述為木質菌座狀。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotile",
+    "meaning": "木化石；外觀像木頭的化石或礦物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Collectors identified xylotile in the old quarry. 收藏家在舊採石場辨認出木化石。",
+      "The guide described xylotile as a wood-like fossil material. 指南把木化石描述成一種外觀像木頭的化石材料。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotomist",
+    "meaning": "木材解剖學研究者；研究木材切片的人。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "A xylotomist examined the sample under a lens. 一位木材解剖學研究者用放大鏡檢查樣本。",
+      "The xylotomist explained the grain pattern to the class. 那位木材解剖學研究者向全班說明木紋。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotomous",
+    "meaning": "與木材切片有關的；可用於木材解剖的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The manual used a xylotomous method for the samples. 那本手冊用木材切片的方法處理樣本。",
+      "The teacher praised the xylotomous approach in the lab. 老師稱讚實驗室裡這種木材切片的做法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotomy",
+    "meaning": "木材解剖；木材切片術。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The class learned xylotomy to study tree structure. 課堂上學習木材切片術來研究樹木結構。",
+      "A laboratory course introduced xylotomy to beginners. 實驗課向初學者介紹木材切片術。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xylotrya",
+    "meaning": "木屬名；一個生物分類學上的屬名。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Biologists listed Xylotrya as a genus name. 生物學家把這個名稱列為一個屬名。",
+      "The handbook gave Xylotrya a short taxonomic note. 手冊為這個屬名附上一則簡短分類註記。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotypographic",
+    "meaning": "木刻印刷的；與木版印刷有關的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The archive preserved a xylotypographic page. 檔案館保存了一頁木刻印刷作品。",
+      "The scholar studied the xylotypographic style closely. 那位學者仔細研究木刻印刷風格。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylotypography",
+    "meaning": "木刻印刷術；以木版印製圖文的技術。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xylotypography was common before modern presses. 在現代印刷機出現前，木刻印刷術很常見。",
+      "The museum display explained xylotypography step by step. 博物館展覽一步一步說明木刻印刷術。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyloyl",
+    "meaning": "木酰基；一種與木質酸相關的有機基團。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The paper referred to a xyloyl group in the reaction. 那篇論文提到反應中的一個木酰基。",
+      "Chemists tracked the xyloyl fragment through the process. 化學家在過程中追蹤這個木酰基片段。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylyl",
+    "meaning": "二甲苯基；由二甲苯衍生的有機基團。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The compound contains a xylyl radical. 這個化合物含有二甲苯基。",
+      "Researchers noted the xylyl group in the formula. 研究人員在式子中標出二甲苯基。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylylene",
+    "meaning": "亞二甲苯基；一種由二甲苯衍生的雙價基團。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Scientists discussed xylylene as a reactive intermediate. 科學家把亞二甲苯基討論為一種活潑中間體。",
+      "The reaction produced a short-lived xylylene species. 這個反應產生了一種短暫存在的亞二甲苯基物種。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xylylic",
+    "meaning": "與二甲苯基有關的；含二甲苯基的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The report described a xylylic fragment in the molecule. 報告描述分子中有一個與二甲苯基有關的片段。",
+      "The lab studied xylylic compounds for their behavior. 實驗室研究這些含二甲苯基的化合物行為。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyphoid",
+    "meaning": "劍狀的；形狀像劍的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The bone had a narrow xyphoid shape. 這塊骨頭呈現狹長的劍狀。",
+      "The diagram marked the xyphoid part of the structure. 圖表標出了這個結構中的劍狀部分。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xyrichthys",
+    "meaning": "長鯛屬；一個魚類屬名。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xyrichthys is a genus of marine fish. 長鯛屬是一個海洋魚類的屬。",
+      "The field guide listed Xyrichthys among reef species. 野外圖鑑把這個屬列在珊瑚礁魚類之中。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyrid",
+    "meaning": "黃眼草科植物；黃眼草類植物的成員。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The wetland guide mentioned a xyrid growing nearby. 濕地指南提到附近長著一種黃眼草科植物。",
+      "A botanist collected the xyrid for further study. 一位植物學家採集了這種黃眼草科植物作進一步研究。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xyridaceae",
+    "meaning": "黃眼草科；一科生長在濕地的植物。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xyridaceae includes several wetland plants. 黃眼草科包含幾種濕地植物。",
+      "The taxonomic chart placed the family in a clear position. 分類圖表把這一科放在清楚的位置。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyridaceous",
+    "meaning": "黃眼草科的；屬於黃眼草科的。",
+    "partOfSpeech": "adjective",
+    "sentences": [
+      "The specimen showed xyridaceous features. 這個標本呈現黃眼草科植物的特徵。",
+      "The botanist noted the xyridaceous leaf form. 植物學家記下這種黃眼草科的葉形。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xyridales",
+    "meaning": "黃眼草目；一個植物分類的目。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Older texts placed these plants in Xyridales. 舊文獻把這些植物歸入黃眼草目。",
+      "The lecture explained how Xyridales was used historically. 那堂課解釋了黃眼草目在歷史上的用法。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "Xyris",
+    "meaning": "黃眼草屬；一個常見於濕地的植物屬。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Xyris often grows in marshy ground. 黃眼草屬常生長在沼澤地。",
+      "The garden display featured a bright Xyris plant. 園藝展區展示了一株明亮的黃眼草屬植物。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyst",
+    "meaning": "柱廊；古希臘式的有頂長廊或運動場。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The ancient city had a long xyst for exercise. 那座古城有一條很長的柱廊作為運動場所。",
+      "Historians described the xyst as a covered walk. 歷史學家把柱廊描述成有頂長廊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xyster",
+    "meaning": "刮削器；外科或骨科使用的刮削工具。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The surgeon used a xyster to remove tissue carefully. 外科醫生小心地用刮削器去除組織。",
+      "The old instrument tray still contained a xyster. 舊式器械盤裡仍放著一把刮削器。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xysti",
+    "meaning": "xystus 的複數；柱廊或有頂長廊。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The museum labels referred to the xysti of Greece. 博物館標牌提到希臘的那些柱廊。",
+      "The guidebook used xysti when discussing ancient walks. 指南在討論古代長廊時用了這個複數形式。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xystos",
+    "meaning": "柱廊；有頂長廊或運動步道。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "The old handbook defined xystos as a covered walk. 舊手冊把這個字定義為有頂長廊。",
+      "Travelers rested under the xystos during the heat. 旅行者在炎熱時躲到這條長廊下休息。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xystum",
+    "meaning": "長廊；有頂通道或柱廊式空間。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "They sheltered in the xystum during the rain. 他們在下雨時躲進長廊裡。",
+      "The architect drew a xystum along the courtyard. 建築師沿著庭院畫出一條長廊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "xystus",
+    "meaning": "柱廊；古希臘常見的有頂長廊。",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "Visitors walked through the xystus at sunset. 遊客在日落時穿過那座長廊。",
+      "The scholar compared the xystus with other porticoes. 那位學者把這座柱廊和其他長廊做比較。"
     ],
     "audienceTags": [
       "general"
