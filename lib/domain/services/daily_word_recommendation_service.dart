@@ -9,6 +9,7 @@ class DailyWordRecommendationService {
     required AppSettings settings,
     required int dueTodayCount,
     required DateTime now,
+    Set<String> excludedWords = const <String>{},
   }) {
     if (!settings.dailyNewWordsEnabled) {
       return const [];
@@ -24,6 +25,10 @@ class DailyWordRecommendationService {
         .map((card) => _normalizeKey(card.word))
         .where((key) => key.isNotEmpty)
         .toSet();
+    final excludedKeys = excludedWords
+        .map(_normalizeKey)
+        .where((key) => key.isNotEmpty)
+        .toSet();
     final existingRoots = existingWords
         .map((card) => _stemWord(card.word))
         .where((root) => root.length >= 4)
@@ -36,7 +41,10 @@ class DailyWordRecommendationService {
 
     final scored =
         entries
-            .where((entry) => _isEligible(entry, existingKeys, existingRoots))
+            .where(
+              (entry) =>
+                  _isEligible(entry, existingKeys, existingRoots, excludedKeys),
+            )
             .map(
               (entry) => _ScoredEntry(
                 entry: entry,
@@ -116,9 +124,13 @@ class DailyWordRecommendationService {
     BuiltinWordEntry entry,
     Set<String> existingKeys,
     Set<String> existingRoots,
+    Set<String> excludedKeys,
   ) {
     final normalizedWord = _normalizeKey(entry.word);
     if (normalizedWord.isEmpty || !_looksLikeSingleWord(entry.word)) {
+      return false;
+    }
+    if (excludedKeys.contains(normalizedWord)) {
       return false;
     }
     if (existingKeys.contains(normalizedWord)) {

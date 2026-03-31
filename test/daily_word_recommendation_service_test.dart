@@ -83,6 +83,49 @@ void main() {
       expect(recommendedWords, containsAll(['travel', 'bright', 'apple']));
     });
 
+    test('skips words that the user dismissed for today', () {
+      final entries = [
+        _entry(
+          word: 'travel',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.verb,
+        ),
+        _entry(
+          word: 'bright',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.adjective,
+        ),
+        _entry(
+          word: 'apple',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+        _entry(
+          word: 'gently',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.adverb,
+        ),
+      ];
+
+      final recommendations = service.recommend(
+        entries: entries,
+        existingWords: const [],
+        settings: settings,
+        dueTodayCount: 2,
+        now: now,
+        excludedWords: const {'travel', 'bright'},
+      );
+
+      expect(
+        recommendations.map((entry) => entry.word),
+        isNot(containsAll(['travel', 'bright'])),
+      );
+      expect(
+        recommendations.map((entry) => entry.word),
+        containsAll(['apple', 'gently']),
+      );
+    });
+
     test(
       'prefers words close to the learner difficulty and mixes parts of speech',
       () {

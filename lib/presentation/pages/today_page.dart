@@ -228,6 +228,7 @@ class _DailyNewWordsSection extends StatefulWidget {
 
 class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   final Set<String> _addingWords = <String>{};
+  final Set<String> _dismissedWords = <String>{};
 
   List<BuiltinWordEntry> _entries = const [];
   bool _isLoading = true;
@@ -286,8 +287,115 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     return cleaned;
   }
 
+  String _normalizeWord(String word) {
+    return word.trim().toLowerCase();
+  }
+
+  List<BuiltinWordEntry> _recommendationsFor({
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+    Set<String>? excludedWords,
+  }) {
+    return context.read<DailyWordRecommendationService>().recommend(
+      entries: _entries,
+      existingWords: wordsNotifier.words,
+      settings: settingsNotifier.settings,
+      dueTodayCount: widget.dueCount,
+      now: DateTime.now(),
+      excludedWords: excludedWords ?? _dismissedWords,
+    );
+  }
+
+  void _restoreDismissedWords(Iterable<String> keys) {
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _dismissedWords.removeAll(keys);
+    });
+  }
+
+  void _dismissEntry(
+    BuiltinWordEntry entry, {
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+  }) {
+    final key = _normalizeWord(entry.word);
+    if (_dismissedWords.contains(key) || _addingWords.contains(key)) {
+      return;
+    }
+
+    final currentRecommendations = _recommendationsFor(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+    );
+    final nextDismissed = <String>{..._dismissedWords, key};
+    final nextRecommendations = _recommendationsFor(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+      excludedWords: nextDismissed,
+    );
+    final hasReplacement =
+        nextRecommendations.length >= currentRecommendations.length;
+
+    setState(() {
+      _dismissedWords.add(key);
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          hasReplacement
+              ? '已略過「${entry.word}」，幫你換一個'
+              : '已略過「${entry.word}」，目前沒有更多推薦字',
+        ),
+        action: SnackBarAction(
+          label: '復原',
+          onPressed: () => _restoreDismissedWords([key]),
+        ),
+      ),
+    );
+  }
+
+  void _dismissBatch(
+    List<BuiltinWordEntry> recommendations, {
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+  }) {
+    final keys = recommendations
+        .map((entry) => _normalizeWord(entry.word))
+        .where((key) => !_dismissedWords.contains(key))
+        .toList(growable: false);
+    if (keys.isEmpty) {
+      return;
+    }
+
+    final nextDismissed = <String>{..._dismissedWords, ...keys};
+    final nextRecommendations = _recommendationsFor(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+      excludedWords: nextDismissed,
+    );
+
+    setState(() {
+      _dismissedWords.addAll(keys);
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          nextRecommendations.isNotEmpty ? '已換一批推薦字' : '這批先略過了，目前沒有更多推薦字',
+        ),
+        action: SnackBarAction(
+          label: '復原',
+          onPressed: () => _restoreDismissedWords(keys),
+        ),
+      ),
+    );
+  }
+
   Future<void> _addEntry(BuiltinWordEntry entry) async {
-    final key = entry.word.toLowerCase();
+    final key = _normalizeWord(entry.word);
     final notifier = context.read<WordsNotifier>();
     final exists = notifier.words.any((item) => item.word.toLowerCase() == key);
     if (exists || _addingWords.contains(key)) {
@@ -373,15 +481,10 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           );
         }
 
-        final recommendations = context
-            .read<DailyWordRecommendationService>()
-            .recommend(
-              entries: _entries,
-              existingWords: wordsNotifier.words,
-              settings: settingsNotifier.settings,
-              dueTodayCount: widget.dueCount,
-              now: DateTime.now(),
-            );
+        final recommendations = _recommendationsFor(
+          settingsNotifier: settingsNotifier,
+          wordsNotifier: wordsNotifier,
+        );
         if (recommendations.isEmpty) {
           return const SizedBox.shrink();
         }
@@ -394,7 +497,17 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           title: '今日補新字',
           subtitle:
               '今天待複習 ${widget.dueCount} 個，幫你挑了 ${recommendations.length}/$desiredCount 個適合的新字',
-          trailing: const Icon(Icons.auto_awesome, color: Color(0xFF0B6E99)),
+          trailing: TextButton.icon(
+            onPressed: recommendations.isEmpty
+                ? null
+                : () => _dismissBatch(
+                    recommendations,
+                    settingsNotifier: settingsNotifier,
+                    wordsNotifier: wordsNotifier,
+                  ),
+            icon: const Icon(Icons.refresh, size: 18),
+            label: const Text('換一批'),
+          ),
           child: Column(
             children: recommendations
                 .map(
@@ -404,6 +517,11 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
                       entry: entry,
                       isAdded: existingWords.contains(entry.word.toLowerCase()),
                       isAdding: _addingWords.contains(entry.word.toLowerCase()),
+                      onDismiss: () => _dismissEntry(
+                        entry,
+                        settingsNotifier: settingsNotifier,
+                        wordsNotifier: wordsNotifier,
+                      ),
                       onAdd: () => _addEntry(entry),
                     ),
                   ),
@@ -421,12 +539,14 @@ class _RecommendedWordTile extends StatelessWidget {
     required this.entry,
     required this.isAdded,
     required this.isAdding,
+    required this.onDismiss,
     required this.onAdd,
   });
 
   final BuiltinWordEntry entry;
   final bool isAdded;
   final bool isAdding;
+  final VoidCallback onDismiss;
   final VoidCallback onAdd;
 
   @override
@@ -500,6 +620,12 @@ class _RecommendedWordTile extends StatelessWidget {
                   style: Theme.of(
                     context,
                   ).textTheme.bodySmall?.copyWith(color: Colors.black87),
+                ),
+                const SizedBox(height: 10),
+                TextButton.icon(
+                  onPressed: (isAdded || isAdding) ? null : onDismiss,
+                  icon: const Icon(Icons.shuffle, size: 18),
+                  label: const Text('換一個'),
                 ),
               ],
             ),
