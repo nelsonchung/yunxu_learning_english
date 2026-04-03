@@ -25,7 +25,8 @@ void main() {
       "word": "Space",
       "meaning": "太空",
       "partOfSpeech": "noun",
-      "sentences": ["The space is vast."]
+      "sentences": ["The space is vast."],
+      "customTags": ["課本A 第3課", "期中考", "課本A 第3課"]
     },
     {
       "word": "space",
@@ -54,6 +55,7 @@ void main() {
       expect(card.meaning, '太空');
       expect(card.partOfSpeech, PartOfSpeech.noun);
       expect(card.sentences, ['The space is vast.']);
+      expect(card.customTags, ['課本A 第3課', '期中考']);
       expect(card.origin, WordOrigin.manual);
       expect(card.createdAt, importedAt);
       expect(card.updatedAt, importedAt);

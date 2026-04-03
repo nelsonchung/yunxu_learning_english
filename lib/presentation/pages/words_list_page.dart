@@ -19,7 +19,10 @@ class WordsListPage extends StatefulWidget {
 }
 
 class _WordsListPageState extends State<WordsListPage> {
+  static const String _untaggedFilterValue = '__untagged__';
+
   bool _showOnlyPending = false;
+  String? _selectedTagFilter;
 
   String _meaningAndPartText(WordCard card) {
     final meaning = card.meaning.trim();
@@ -27,6 +30,17 @@ class _WordsListPageState extends State<WordsListPage> {
       return '未填中文意義 · ${card.partOfSpeech.label}';
     }
     return '$meaning · ${card.partOfSpeech.label}';
+  }
+
+  bool _matchesSelectedTag(WordCard card) {
+    final selectedTagFilter = _selectedTagFilter;
+    if (selectedTagFilter == null) {
+      return true;
+    }
+    if (selectedTagFilter == _untaggedFilterValue) {
+      return card.customTags.isEmpty;
+    }
+    return card.customTags.contains(selectedTagFilter);
   }
 
   @override
@@ -38,16 +52,22 @@ class _WordsListPageState extends State<WordsListPage> {
         }
 
         final words = notifier.words;
+        final tagCounts = notifier.customTagCounts;
+        final untaggedCount = words
+            .where((card) => card.customTags.isEmpty)
+            .length;
         final pendingWordsCount = notifier.pendingWordsCount;
-        final visibleWords = _showOnlyPending
-            ? words
-                  .where((card) => card.needsCompletion)
-                  .toList(growable: false)
-            : words;
+        final visibleWords = words
+            .where((card) => !_showOnlyPending || card.needsCompletion)
+            .where(_matchesSelectedTag)
+            .toList(growable: false);
         final canSync = notifier.canSync;
         final isSyncing = notifier.isSyncing;
         final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
+        final hasTagFilters = tagCounts.isNotEmpty || untaggedCount > 0;
+        final hasActiveTagFilter = _selectedTagFilter != null;
+        final hasAnyFilter = _showOnlyPending || hasActiveTagFilter;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -126,6 +146,65 @@ class _WordsListPageState extends State<WordsListPage> {
                       ),
                     ],
                   ),
+                  if (hasTagFilters) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      '標籤篩選',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                    const SizedBox(height: 8),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: [
+                          ChoiceChip(
+                            label: Text('全部標籤 ${words.length}'),
+                            selected: _selectedTagFilter == null,
+                            onSelected: (selected) {
+                              if (!selected) {
+                                return;
+                              }
+                              setState(() {
+                                _selectedTagFilter = null;
+                              });
+                            },
+                          ),
+                          if (untaggedCount > 0)
+                            ChoiceChip(
+                              label: Text('未標籤 $untaggedCount'),
+                              selected:
+                                  _selectedTagFilter == _untaggedFilterValue,
+                              onSelected: (selected) {
+                                if (!selected) {
+                                  return;
+                                }
+                                setState(() {
+                                  _selectedTagFilter = _untaggedFilterValue;
+                                });
+                              },
+                            ),
+                          ...tagCounts.entries.map(
+                            (entry) => ChoiceChip(
+                              label: Text('${entry.key} ${entry.value}'),
+                              selected: _selectedTagFilter == entry.key,
+                              onSelected: (selected) {
+                                if (!selected) {
+                                  return;
+                                }
+                                setState(() {
+                                  _selectedTagFilter = entry.key;
+                                });
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),
@@ -133,10 +212,17 @@ class _WordsListPageState extends State<WordsListPage> {
             if (visibleWords.isEmpty && words.isEmpty)
               const _EmptyList()
             else if (visibleWords.isEmpty)
-              _EmptyPendingList(
-                onShowAll: () {
+              _EmptyFilteredList(
+                message: _showOnlyPending && hasActiveTagFilter
+                    ? '這個標籤目前沒有待補資料的單字'
+                    : _showOnlyPending
+                    ? '目前沒有待補資料的單字'
+                    : '這個標籤目前沒有單字',
+                actionLabel: hasAnyFilter ? '清除篩選' : '查看全部單字',
+                onReset: () {
                   setState(() {
                     _showOnlyPending = false;
+                    _selectedTagFilter = null;
                   });
                 },
               )
@@ -150,7 +236,7 @@ class _WordsListPageState extends State<WordsListPage> {
                       borderRadius: BorderRadius.circular(18),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
+                          color: Colors.black.withValues(alpha: 0.05),
                           blurRadius: 16,
                           offset: const Offset(0, 8),
                         ),
@@ -199,6 +285,26 @@ class _WordsListPageState extends State<WordsListPage> {
                                           .bodySmall
                                           ?.copyWith(color: Colors.black54),
                                     ),
+                                    if (card.customTags.isNotEmpty) ...[
+                                      const SizedBox(height: 8),
+                                      Wrap(
+                                        spacing: 6,
+                                        runSpacing: 6,
+                                        children: [
+                                          ...card.customTags
+                                              .take(3)
+                                              .map(
+                                                (tag) =>
+                                                    _WordTagChip(label: tag),
+                                              ),
+                                          if (card.customTags.length > 3)
+                                            _WordTagChip(
+                                              label:
+                                                  '+${card.customTags.length - 3}',
+                                            ),
+                                        ],
+                                      ),
+                                    ],
                                     if (card.needsCompletion) ...[
                                       const SizedBox(height: 8),
                                       Container(
@@ -209,7 +315,7 @@ class _WordsListPageState extends State<WordsListPage> {
                                         decoration: BoxDecoration(
                                           color: const Color(
                                             0xFFF2A65A,
-                                          ).withOpacity(0.18),
+                                          ).withValues(alpha: 0.18),
                                           borderRadius: BorderRadius.circular(
                                             999,
                                           ),
@@ -253,10 +359,16 @@ class _WordsListPageState extends State<WordsListPage> {
   }
 }
 
-class _EmptyPendingList extends StatelessWidget {
-  const _EmptyPendingList({required this.onShowAll});
+class _EmptyFilteredList extends StatelessWidget {
+  const _EmptyFilteredList({
+    required this.message,
+    required this.actionLabel,
+    required this.onReset,
+  });
 
-  final VoidCallback onShowAll;
+  final String message;
+  final String actionLabel;
+  final VoidCallback onReset;
 
   @override
   Widget build(BuildContext context) {
@@ -267,7 +379,7 @@ class _EmptyPendingList extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 16,
             offset: const Offset(0, 8),
           ),
@@ -276,9 +388,9 @@ class _EmptyPendingList extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('目前沒有待補資料的單字'),
+          Text(message),
           const SizedBox(height: 8),
-          TextButton(onPressed: onShowAll, child: const Text('查看全部單字')),
+          TextButton(onPressed: onReset, child: Text(actionLabel)),
         ],
       ),
     );
@@ -297,7 +409,7 @@ class _EmptyList extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 16,
             offset: const Offset(0, 8),
           ),
@@ -309,7 +421,7 @@ class _EmptyList extends StatelessWidget {
             width: 46,
             height: 46,
             decoration: BoxDecoration(
-              color: const Color(0xFFF2A65A).withOpacity(0.2),
+              color: const Color(0xFFF2A65A).withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Icon(Icons.edit_note, color: Color(0xFFF2A65A)),
@@ -366,10 +478,34 @@ class _Thumb extends StatelessWidget {
       width: 56,
       height: 56,
       decoration: BoxDecoration(
-        color: const Color(0xFF0B6E99).withOpacity(0.1),
+        color: const Color(0xFF0B6E99).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
       ),
       child: const Icon(Icons.book, color: Color(0xFF0B6E99)),
+    );
+  }
+}
+
+class _WordTagChip extends StatelessWidget {
+  const _WordTagChip({required this.label});
+
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: const Color(0xFF0B6E99).withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        label,
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+          color: const Color(0xFF0B6E99),
+          fontWeight: FontWeight.w600,
+        ),
+      ),
     );
   }
 }

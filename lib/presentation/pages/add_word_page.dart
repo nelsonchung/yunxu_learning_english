@@ -9,6 +9,7 @@ import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
+import '../widgets/custom_tag_editor.dart';
 import '../widgets/image_preview.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sentence_field_list.dart';
@@ -31,6 +32,7 @@ class _AddWordPageState extends State<AddWordPage> {
   File? _imageFile;
   bool _isSaving = false;
   PartOfSpeech _partOfSpeech = PartOfSpeech.noun;
+  List<String> _customTags = const [];
 
   @override
   void dispose() {
@@ -167,6 +169,7 @@ class _AddWordPageState extends State<AddWordPage> {
       meaning: meaning,
       partOfSpeech: _partOfSpeech,
       sentences: sentences,
+      customTags: _customTags,
       imageFile: _imageFile,
     );
 
@@ -183,6 +186,8 @@ class _AddWordPageState extends State<AddWordPage> {
 
   @override
   Widget build(BuildContext context) {
+    final existingTags = context.watch<WordsNotifier>().availableCustomTags;
+
     return Scaffold(
       appBar: AppBar(title: const Text('新增單字')),
       body: AppBackground(
@@ -214,7 +219,7 @@ class _AddWordPageState extends State<AddWordPage> {
                 title: '詞性',
                 subtitle: '選擇此單字的詞性',
                 child: DropdownButtonFormField<PartOfSpeech>(
-                  value: _partOfSpeech,
+                  initialValue: _partOfSpeech,
                   items: PartOfSpeech.values
                       .map(
                         (item) => DropdownMenuItem(
@@ -243,6 +248,20 @@ class _AddWordPageState extends State<AddWordPage> {
                   onAdd: _addSentence,
                   onRemove: _removeSentence,
                   onReorder: _reorderSentence,
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '標籤',
+                subtitle: '可自訂考試範圍或課次，例如課本A 第3課',
+                child: CustomTagEditor(
+                  tags: _customTags,
+                  suggestions: existingTags,
+                  onChanged: (tags) {
+                    setState(() {
+                      _customTags = tags;
+                    });
+                  },
                 ),
               ),
               const SizedBox(height: 16),

@@ -9,6 +9,7 @@ import '../../domain/models/word_card.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/app_background.dart';
+import '../widgets/custom_tag_editor.dart';
 import '../widgets/image_preview.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sentence_field_list.dart';
@@ -32,6 +33,7 @@ class _EditWordPageState extends State<EditWordPage> {
   bool _removeImage = false;
   bool _isSaving = false;
   PartOfSpeech _partOfSpeech = PartOfSpeech.noun;
+  List<String> _customTags = const [];
   WordCard? _card;
   bool _initialized = false;
 
@@ -64,6 +66,7 @@ class _EditWordPageState extends State<EditWordPage> {
       _wordController.text = card.word;
       _meaningController.text = card.meaning;
       _partOfSpeech = card.partOfSpeech;
+      _customTags = card.customTags;
       _existingImagePath = card.imagePath;
       _existingImageBytes = card.imageBytes;
       final sentences = card.sentences.isEmpty ? [''] : card.sentences;
@@ -225,6 +228,7 @@ class _EditWordPageState extends State<EditWordPage> {
       meaning: meaning,
       partOfSpeech: _partOfSpeech,
       sentences: sentences,
+      customTags: _customTags,
       imageFile: _imageFile,
       removeImage: _removeImage,
     );
@@ -248,6 +252,7 @@ class _EditWordPageState extends State<EditWordPage> {
 
     final imagePath = _imageFile?.path ?? _existingImagePath;
     final imageBytes = _imageFile == null ? _existingImageBytes : null;
+    final existingTags = context.watch<WordsNotifier>().availableCustomTags;
 
     return Scaffold(
       appBar: AppBar(title: const Text('編輯單字')),
@@ -280,7 +285,7 @@ class _EditWordPageState extends State<EditWordPage> {
                 title: '詞性',
                 subtitle: '選擇此單字的詞性',
                 child: DropdownButtonFormField<PartOfSpeech>(
-                  value: _partOfSpeech,
+                  initialValue: _partOfSpeech,
                   items: PartOfSpeech.values
                       .map(
                         (item) => DropdownMenuItem(
@@ -309,6 +314,20 @@ class _EditWordPageState extends State<EditWordPage> {
                   onAdd: _addSentence,
                   onRemove: _removeSentence,
                   onReorder: _reorderSentence,
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '標籤',
+                subtitle: '可自訂考試範圍或課次，例如課本A 第3課',
+                child: CustomTagEditor(
+                  tags: _customTags,
+                  suggestions: existingTags,
+                  onChanged: (tags) {
+                    setState(() {
+                      _customTags = tags;
+                    });
+                  },
                 ),
               ),
               const SizedBox(height: 16),

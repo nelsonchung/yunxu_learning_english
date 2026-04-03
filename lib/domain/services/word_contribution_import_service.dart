@@ -102,6 +102,7 @@ class WordContributionImportService {
         nextReviewDate: _scheduleService.initialNextDate(now),
         history: const [],
         isDeleted: false,
+        customTags: _readCustomTags(map['customTags']),
       );
       importedWords.add(card);
     }
@@ -135,6 +136,13 @@ class WordContributionImportService {
         .map((sentence) => sentence.trim())
         .where((sentence) => sentence.isNotEmpty)
         .toList(growable: false);
+  }
+
+  List<String> _readCustomTags(Object? value) {
+    if (value is! List) {
+      return const <String>[];
+    }
+    return WordCard.normalizeCustomTags(value.whereType<String>());
   }
 
   PartOfSpeech _parsePartOfSpeech(Object? value) {

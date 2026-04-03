@@ -111,6 +111,7 @@ class WordContributionShareService {
       'meaning': card.meaning.trim(),
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': cleanedSentences,
+      'customTags': WordCard.normalizeCustomTags(card.customTags),
       'createdAt': card.createdAt.toUtc().toIso8601String(),
       'updatedAt': card.updatedAt.toUtc().toIso8601String(),
       'hasImage':

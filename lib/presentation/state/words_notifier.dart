@@ -81,6 +81,28 @@ class WordsNotifier extends ChangeNotifier {
       _words.where((card) => card.origin == WordOrigin.manual).length;
   int get unknownWordsCount =>
       _words.where((card) => card.origin == WordOrigin.unknown).length;
+  Map<String, int> get customTagCounts {
+    final counts = <String, int>{};
+    for (final card in _words) {
+      for (final tag in card.customTags) {
+        counts[tag] = (counts[tag] ?? 0) + 1;
+      }
+    }
+
+    final entries = counts.entries.toList(growable: false)
+      ..sort((a, b) {
+        final countCompare = b.value.compareTo(a.value);
+        if (countCompare != 0) {
+          return countCompare;
+        }
+        return a.key.toLowerCase().compareTo(b.key.toLowerCase());
+      });
+
+    return Map<String, int>.unmodifiable(Map<String, int>.fromEntries(entries));
+  }
+
+  List<String> get availableCustomTags =>
+      customTagCounts.keys.toList(growable: false);
   DateTime? get lastSyncAt => _lastSyncAt;
   DateTime? get lastSyncAttemptAt => _lastSyncAttemptAt;
   String? get lastSyncErrorCode => _lastSyncErrorCode;
@@ -364,6 +386,7 @@ class WordsNotifier extends ChangeNotifier {
     required String meaning,
     required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    List<String> customTags = const [],
     WordOrigin origin = WordOrigin.manual,
     File? imageFile,
   }) async {
@@ -378,6 +401,7 @@ class WordsNotifier extends ChangeNotifier {
         .toList();
 
     final trimmedMeaning = meaning.trim();
+    final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
 
     final now = DateTime.now();
     final schedule = ReviewScheduleService.defaultSchedule;
@@ -402,6 +426,7 @@ class WordsNotifier extends ChangeNotifier {
       nextReviewDate: _scheduleService.initialNextDate(now),
       history: [],
       isDeleted: false,
+      customTags: cleanedCustomTags,
     );
 
     await _repository.add(card);
@@ -448,6 +473,7 @@ class WordsNotifier extends ChangeNotifier {
     required String meaning,
     required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    List<String> customTags = const [],
     File? imageFile,
     bool removeImage = false,
   }) async {
@@ -462,6 +488,7 @@ class WordsNotifier extends ChangeNotifier {
         .toList();
 
     final trimmedMeaning = meaning.trim();
+    final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
 
     var legacyPath = card.imagePath;
     var imageCleared = card.imageCleared;
@@ -494,6 +521,7 @@ class WordsNotifier extends ChangeNotifier {
       meaning: trimmedMeaning,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
+      customTags: cleanedCustomTags,
       imageCleared: imageCleared,
       imagePath: legacyPath,
       imageBytes: null,

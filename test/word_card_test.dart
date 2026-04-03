@@ -18,12 +18,14 @@ void main() {
       nextReviewDate: now,
       history: const [],
       isDeleted: false,
+      customTags: const ['課本A 第3課', '期中考', '課本A 第3課'],
     );
 
     final restored = WordCard.fromMap(card.toMap());
 
     expect(restored.origin, WordOrigin.manual);
     expect(restored.word, 'inspiration');
+    expect(restored.customTags, ['課本A 第3課', '期中考']);
   });
 
   test('WordCard defaults missing origin to unknown', () {
@@ -43,5 +45,6 @@ void main() {
     });
 
     expect(restored.origin, WordOrigin.unknown);
+    expect(restored.customTags, isEmpty);
   });
 }

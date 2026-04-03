@@ -87,6 +87,7 @@ class WordCard {
     required this.nextReviewDate,
     required this.history,
     required this.isDeleted,
+    this.customTags = const [],
     this.imageCleared = false,
     this.imagePath,
     this.imageBytes,
@@ -107,7 +108,28 @@ class WordCard {
   final DateTime nextReviewDate;
   final List<DateTime> history;
   final bool isDeleted;
+  final List<String> customTags;
   final bool imageCleared;
+
+  static List<String> normalizeCustomTags(Iterable<String> rawTags) {
+    final normalized = <String>[];
+    final seen = <String>{};
+
+    for (final rawTag in rawTags) {
+      final collapsed = rawTag.trim().replaceAll(RegExp(r'\s+'), ' ');
+      if (collapsed.isEmpty) {
+        continue;
+      }
+
+      final key = collapsed.toLowerCase();
+      if (!seen.add(key)) {
+        continue;
+      }
+      normalized.add(collapsed);
+    }
+
+    return List<String>.unmodifiable(normalized);
+  }
 
   List<MissingWordField> get missingFields {
     final missing = <MissingWordField>[];
@@ -144,6 +166,7 @@ class WordCard {
     DateTime? nextReviewDate,
     List<DateTime>? history,
     bool? isDeleted,
+    List<String>? customTags,
     bool? imageCleared,
   }) {
     return WordCard(
@@ -166,6 +189,7 @@ class WordCard {
       nextReviewDate: nextReviewDate ?? this.nextReviewDate,
       history: history ?? this.history,
       isDeleted: isDeleted ?? this.isDeleted,
+      customTags: customTags ?? this.customTags,
       imageCleared: imageCleared ?? this.imageCleared,
     );
   }
@@ -196,6 +220,7 @@ class WordCard {
       'nextReviewDate': nextReviewDate.millisecondsSinceEpoch,
       'history': history.map((item) => item.millisecondsSinceEpoch).toList(),
       'isDeleted': isDeleted,
+      'customTags': normalizeCustomTags(customTags),
       'imageCleared': imageCleared,
     };
   }
@@ -269,6 +294,10 @@ class WordCard {
               .map((item) => DateTime.fromMillisecondsSinceEpoch(item))
               .toList()
         : <DateTime>[];
+    final customTagsRaw = data['customTags'];
+    final customTags = customTagsRaw is List
+        ? normalizeCustomTags(customTagsRaw.whereType<String>())
+        : const <String>[];
 
     final isDeletedRaw = data['isDeleted'];
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
@@ -291,6 +320,7 @@ class WordCard {
       nextReviewDate: nextReviewDate,
       history: history,
       isDeleted: isDeleted,
+      customTags: customTags,
       imageCleared: imageCleared,
     );
   }

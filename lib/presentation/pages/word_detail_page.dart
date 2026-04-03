@@ -73,7 +73,7 @@ class WordDetailPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.06),
+                          color: Colors.black.withValues(alpha: 0.06),
                           blurRadius: 18,
                           offset: const Offset(0, 10),
                         ),
@@ -165,6 +165,25 @@ class WordDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   SectionCard(
+                    title: '標籤',
+                    subtitle: '共 ${card.customTags.length} 個',
+                    child: card.customTags.isEmpty
+                        ? const Text('尚未設定標籤')
+                        : Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: card.customTags
+                                .map(
+                                  (tag) => _InfoChip(
+                                    icon: Icons.label_outline,
+                                    label: tag,
+                                  ),
+                                )
+                                .toList(growable: false),
+                          ),
+                  ),
+                  const SizedBox(height: 16),
+                  SectionCard(
                     title: '例句',
                     subtitle: '共 ${card.sentences.length} 句',
                     child: card.sentences.isEmpty
@@ -218,7 +237,7 @@ class _InfoChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: const Color(0xFF0B6E99).withOpacity(0.1),
+        color: const Color(0xFF0B6E99).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text.rich(

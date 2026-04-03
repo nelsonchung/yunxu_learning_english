@@ -509,6 +509,7 @@ class CloudSyncService {
         'partOfSpeech': card.partOfSpeech.name,
         'sentences': card.sentences,
         'origin': card.origin.name,
+        'customTags': card.customTags,
         'imageBytes': null,
         'createdAt': card.createdAt.millisecondsSinceEpoch,
         'updatedAt': card.updatedAt.millisecondsSinceEpoch,
@@ -545,6 +546,7 @@ class CloudSyncService {
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': card.sentences,
       'origin': card.origin.name,
+      'customTags': card.customTags,
       'createdAt': card.createdAt.millisecondsSinceEpoch,
       'updatedAt': card.updatedAt.millisecondsSinceEpoch,
       'reviewSchedule': card.reviewSchedule,
@@ -626,6 +628,10 @@ class CloudSyncService {
     final reviewSchedule = reviewRaw is List
         ? reviewRaw.whereType<int>().toList()
         : const <int>[1, 2, 3, 5, 8, 13, 21, 39];
+    final customTagsRaw = data['customTags'];
+    final customTags = customTagsRaw is List
+        ? WordCard.normalizeCustomTags(customTagsRaw.whereType<String>())
+        : const <String>[];
 
     final isDeletedRaw = data['isDeleted'];
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
@@ -647,6 +653,7 @@ class CloudSyncService {
       nextReviewDate: nextReviewDate,
       history: history,
       isDeleted: isDeleted,
+      customTags: customTags,
     );
   }
 
