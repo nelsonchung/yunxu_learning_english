@@ -272,8 +272,9 @@ class _WordBankPageState extends State<WordBankPage> {
 
     return Consumer<WordsNotifier>(
       builder: (context, notifier, _) {
-        final normalizedQuery = _searchController.text.trim().toLowerCase();
-        final filtered = _filteredEntries(normalizedQuery);
+        final query = _searchController.text;
+        final hasQuery = query.trim().isNotEmpty;
+        final filtered = _filteredEntries(query);
         final existingWords = notifier.words
             .map((item) => item.word.toLowerCase())
             .toSet();
@@ -292,9 +293,16 @@ class _WordBankPageState extends State<WordBankPage> {
                     controller: _searchController,
                     onChanged: (_) => setState(() {}),
                     decoration: const InputDecoration(
-                      hintText: '例如：co、trans、ability',
+                      hintText: '例如：co、trans、ability、麵包、補償',
                       prefixIcon: Icon(Icons.search),
                     ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    '可搜尋英文單字或中文意思',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
                   ),
                   const SizedBox(height: 10),
                   SingleChildScrollView(
@@ -324,8 +332,8 @@ class _WordBankPageState extends State<WordBankPage> {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    normalizedQuery.isEmpty
-                        ? '目前顯示「${_selectedFilter.label}」前 100 筆，輸入關鍵字可精準過濾'
+                    !hasQuery
+                        ? '目前顯示「${_selectedFilter.label}」前 100 筆，輸入英文或中文關鍵字可精準過濾'
                         : '「${_selectedFilter.label}」符合 ${filtered.length} 筆（最多顯示 200 筆）',
                     style: Theme.of(
                       context,
@@ -539,7 +547,7 @@ class _EmptyWordBankResult extends StatelessWidget {
             child: const Icon(Icons.search_off, color: Color(0xFF0B6E99)),
           ),
           const SizedBox(width: 12),
-          const Expanded(child: Text('查不到符合的單字，請換一個關鍵字試試看。')),
+          const Expanded(child: Text('查不到符合的英文單字或中文意思，請換個關鍵字試試看。')),
         ],
       ),
     );

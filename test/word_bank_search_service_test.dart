@@ -39,6 +39,31 @@ void main() {
     ]);
   });
 
+  test('matches Chinese query against meaning', () {
+    final entries = [
+      _entry(word: 'naan', meaning: '在泥爐中烘烤的圓形扁平麵包，在南亞和中亞美食中很受歡迎。'),
+      _entry(word: 'neutral'),
+    ];
+
+    final results = service.search(entries: entries, query: '麵包');
+
+    expect(results.map((entry) => entry.word).toList(), ['naan']);
+  });
+
+  test(
+    'normalizes full-width whitespace and punctuation for meaning matches',
+    () {
+      final entries = [
+        _entry(word: 'N', meaning: '中性（性別）的縮寫。'),
+        _entry(word: 'nature'),
+      ];
+
+      final results = service.search(entries: entries, query: '  中性　性別  ');
+
+      expect(results.map((entry) => entry.word).toList(), ['N']);
+    },
+  );
+
   test('keeps empty query limit behavior', () {
     final entries = [
       _entry(word: 'alpha'),
