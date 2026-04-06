@@ -38,15 +38,7 @@ class PronunciationService {
       }
       if (Platform.isIOS || Platform.isMacOS) {
         await _flutterTts.setSharedInstance(true);
-        await _flutterTts.setIosAudioCategory(
-          IosTextToSpeechAudioCategory.ambient,
-          [
-            IosTextToSpeechAudioCategoryOptions.allowBluetooth,
-            IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
-            IosTextToSpeechAudioCategoryOptions.mixWithOthers,
-          ],
-          IosTextToSpeechAudioMode.voicePrompt,
-        );
+        await _configureAppleAudioSession();
       }
       _initialized = true;
       await applySettings(settings);
@@ -178,5 +170,30 @@ class PronunciationService {
     }
 
     await _flutterTts.setLanguage('en-US');
+  }
+
+  Future<void> _configureAppleAudioSession() async {
+    if (Platform.isIOS) {
+      await _flutterTts.setIosAudioCategory(
+        // `playback` keeps TTS audible even when the iPhone mute switch is on.
+        IosTextToSpeechAudioCategory.playback,
+        [
+          IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+          IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+          IosTextToSpeechAudioCategoryOptions.duckOthers,
+          IosTextToSpeechAudioCategoryOptions
+              .interruptSpokenAudioAndMixWithOthers,
+        ],
+        IosTextToSpeechAudioMode.voicePrompt,
+      );
+      return;
+    }
+
+    await _flutterTts
+        .setIosAudioCategory(IosTextToSpeechAudioCategory.ambient, [
+          IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+          IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+          IosTextToSpeechAudioCategoryOptions.mixWithOthers,
+        ], IosTextToSpeechAudioMode.voicePrompt);
   }
 }
