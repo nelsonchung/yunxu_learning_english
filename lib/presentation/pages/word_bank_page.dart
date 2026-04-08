@@ -48,6 +48,7 @@ class WordBankPage extends StatefulWidget {
 
 class _WordBankPageState extends State<WordBankPage> {
   final _searchController = TextEditingController();
+  final _searchFocusNode = FocusNode();
   final Set<String> _addingWords = <String>{};
   final _searchService = WordBankSearchService();
 
@@ -65,8 +66,15 @@ class _WordBankPageState extends State<WordBankPage> {
 
   @override
   void dispose() {
+    _searchFocusNode.dispose();
     _searchController.dispose();
     super.dispose();
+  }
+
+  void _clearSearchQuery() {
+    _searchController.clear();
+    _searchFocusNode.requestFocus();
+    setState(() {});
   }
 
   Future<void> _loadWordBank() async {
@@ -291,10 +299,18 @@ class _WordBankPageState extends State<WordBankPage> {
                 children: [
                   TextField(
                     controller: _searchController,
+                    focusNode: _searchFocusNode,
                     onChanged: (_) => setState(() {}),
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       hintText: '例如：co、trans、ability、麵包、補償',
-                      prefixIcon: Icon(Icons.search),
+                      prefixIcon: const Icon(Icons.search),
+                      suffixIcon: hasQuery
+                          ? IconButton(
+                              tooltip: '清除搜尋',
+                              onPressed: _clearSearchQuery,
+                              icon: const Icon(Icons.close),
+                            )
+                          : null,
                     ),
                   ),
                   const SizedBox(height: 8),
