@@ -227,6 +227,8 @@ class _DailyNewWordsSection extends StatefulWidget {
 }
 
 class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
+  static const Duration _dismissFeedbackDuration = Duration(seconds: 2);
+
   final Set<String> _addingWords = <String>{};
   final Set<String> _dismissedWords = <String>{};
 
@@ -315,6 +317,13 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     });
   }
 
+  void _showDismissFeedback(SnackBar snackBar) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      snackBar,
+      snackBarAnimationStyle: AnimationStyle.noAnimation,
+    );
+  }
+
   void _dismissEntry(
     BuiltinWordEntry entry, {
     required SettingsNotifier settingsNotifier,
@@ -342,8 +351,10 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       _dismissedWords.add(key);
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
+    _showDismissFeedback(
       SnackBar(
+        duration: _dismissFeedbackDuration,
+        persist: false,
         content: Text(
           hasReplacement
               ? '已略過「${entry.word}」，幫你換一個'
@@ -381,8 +392,10 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       _dismissedWords.addAll(keys);
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
+    _showDismissFeedback(
       SnackBar(
+        duration: _dismissFeedbackDuration,
+        persist: false,
         content: Text(
           nextRecommendations.isNotEmpty ? '已換一批推薦字' : '這批先略過了，目前沒有更多推薦字',
         ),
