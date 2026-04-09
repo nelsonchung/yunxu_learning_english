@@ -1,7 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
@@ -10,6 +7,7 @@ import 'package:yunxu_learning_english/data/repositories/settings_repository.dar
 import 'package:yunxu_learning_english/data/repositories/word_repository.dart';
 import 'package:yunxu_learning_english/data/storage/image_storage.dart';
 import 'package:yunxu_learning_english/domain/models/app_settings.dart';
+import 'package:yunxu_learning_english/domain/models/builtin_word_entry.dart';
 import 'package:yunxu_learning_english/domain/models/word_card.dart';
 import 'package:yunxu_learning_english/domain/services/daily_word_recommendation_service.dart';
 import 'package:yunxu_learning_english/domain/services/notification_service.dart';
@@ -25,31 +23,14 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('換一個提示會在兩秒後自動消失', (tester) async {
-    final scheduleService = ReviewScheduleService();
-    final wordsNotifier = WordsNotifier(
-      repository: _FakeWordRepository(),
-      scheduleService: scheduleService,
-      sortService: SortService(),
-      imageStorage: ImageStorage(),
-      wordContributionImportService: WordContributionImportService(
-        scheduleService: scheduleService,
-      ),
-      initialSyncEnabled: false,
-    );
-    final settingsNotifier = SettingsNotifier(
-      repository: _FakeSettingsRepository(),
-      notificationService: NotificationService(),
-      pronunciationService: PronunciationService(),
-    );
+    final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    final builtinRepository = _FakeBuiltinWordBankRepository();
 
     await tester.pumpWidget(
       MultiProvider(
         providers: [
-          Provider<BuiltinWordBankRepository>.value(
-            value: BuiltinWordBankRepository(
-              assetBundle: _FakeWordBankAssetBundle(),
-            ),
-          ),
+          Provider<BuiltinWordBankRepository>.value(value: builtinRepository),
           Provider<DailyWordRecommendationService>.value(
             value: DailyWordRecommendationService(),
           ),
@@ -66,6 +47,7 @@ void main() {
 
     final changeOneButton = find.widgetWithText(TextButton, '換一個').first;
     expect(changeOneButton, findsOneWidget);
+    expect(builtinRepository.recommendationRequestCount, 1);
 
     await tester.tap(changeOneButton);
     await tester.pump();
@@ -83,30 +65,14 @@ void main() {
   });
 
   testWidgets('加入新字提示會在兩秒後自動消失', (tester) async {
-    final scheduleService = ReviewScheduleService();
-    final wordsNotifier = WordsNotifier(
-      repository: _FakeWordRepository(),
-      scheduleService: scheduleService,
-      sortService: SortService(),
-      imageStorage: ImageStorage(),
-      wordContributionImportService: WordContributionImportService(
-        scheduleService: scheduleService,
-      ),
-      initialSyncEnabled: false,
-    );
-    final settingsNotifier = SettingsNotifier(
-      repository: _FakeSettingsRepository(),
-      notificationService: NotificationService(),
-      pronunciationService: PronunciationService(),
-    );
+    final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
 
     await tester.pumpWidget(
       MultiProvider(
         providers: [
           Provider<BuiltinWordBankRepository>.value(
-            value: BuiltinWordBankRepository(
-              assetBundle: _FakeWordBankAssetBundle(),
-            ),
+            value: _FakeBuiltinWordBankRepository(),
           ),
           Provider<DailyWordRecommendationService>.value(
             value: DailyWordRecommendationService(),
@@ -139,66 +105,132 @@ void main() {
 
     expect(find.textContaining('已加入「'), findsNothing);
   });
+
+  testWidgets('每日推薦關閉時不會載入推薦候選', (tester) async {
+    final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+    final builtinRepository = _FakeBuiltinWordBankRepository();
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(value: builtinRepository),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    expect(find.text('今日補新字'), findsNothing);
+    expect(builtinRepository.recommendationRequestCount, 0);
+  });
 }
 
-class _FakeWordBankAssetBundle extends CachingAssetBundle {
-  static final String _entriesJson = jsonEncode([
-    _entryMap(
-      word: 'anchor',
-      partOfSpeech: 'noun',
-      meaning: '錨；支點',
-      difficultyLevel: 2,
+WordsNotifier _buildWordsNotifier() {
+  final scheduleService = ReviewScheduleService();
+  return WordsNotifier(
+    repository: _FakeWordRepository(),
+    scheduleService: scheduleService,
+    sortService: SortService(),
+    imageStorage: ImageStorage(),
+    wordContributionImportService: WordContributionImportService(
+      scheduleService: scheduleService,
     ),
-    _entryMap(
-      word: 'balance',
-      partOfSpeech: 'verb',
-      meaning: '使平衡',
-      difficultyLevel: 2,
+    initialSyncEnabled: false,
+  );
+}
+
+SettingsNotifier _buildSettingsNotifier({AppSettings? initialSettings}) {
+  return SettingsNotifier(
+    repository: _FakeSettingsRepository(
+      initialSettings: initialSettings ?? AppSettings.defaults(),
     ),
-    _entryMap(
-      word: 'curious',
-      partOfSpeech: 'adjective',
-      meaning: '好奇的',
-      difficultyLevel: 2,
-    ),
-    _entryMap(
-      word: 'daily',
-      partOfSpeech: 'adverb',
-      meaning: '每天地',
-      difficultyLevel: 2,
-    ),
-  ]);
+    notificationService: NotificationService(),
+    pronunciationService: PronunciationService(),
+  );
+}
+
+class _FakeBuiltinWordBankRepository extends BuiltinWordBankRepository {
+  _FakeBuiltinWordBankRepository()
+    : _entries = [
+        _BuiltinWordBankFixture.entry(
+          word: 'anchor',
+          partOfSpeech: PartOfSpeech.noun,
+          meaning: '錨；支點',
+          difficultyLevel: 2,
+        ),
+        _BuiltinWordBankFixture.entry(
+          word: 'balance',
+          partOfSpeech: PartOfSpeech.verb,
+          meaning: '使平衡',
+          difficultyLevel: 2,
+        ),
+        _BuiltinWordBankFixture.entry(
+          word: 'curious',
+          partOfSpeech: PartOfSpeech.adjective,
+          meaning: '好奇的',
+          difficultyLevel: 2,
+        ),
+        _BuiltinWordBankFixture.entry(
+          word: 'daily',
+          partOfSpeech: PartOfSpeech.adverb,
+          meaning: '每天地',
+          difficultyLevel: 2,
+        ),
+      ];
+
+  final List<BuiltinWordEntry> _entries;
+  int recommendationRequestCount = 0;
 
   @override
-  Future<ByteData> load(String key) async {
-    final contents = key.endsWith('word_bank_main-a.json')
-        ? _entriesJson
-        : '[]';
-    final bytes = Uint8List.fromList(utf8.encode(contents));
-    return ByteData.view(bytes.buffer);
+  Future<List<BuiltinWordEntry>> fetchAll() {
+    throw StateError('TodayPage should not call fetchAll() after optimization');
   }
 
-  static Map<String, Object?> _entryMap({
+  @override
+  Future<List<BuiltinWordEntry>> fetchRecommendationCandidates({
+    required List<WordCard> existingWords,
+    required DateTime now,
+    required int desiredCount,
+    int minimumShardCount = 6,
+    int? candidateLimit,
+  }) async {
+    recommendationRequestCount += 1;
+    return List<BuiltinWordEntry>.unmodifiable(_entries);
+  }
+}
+
+class _BuiltinWordBankFixture {
+  static BuiltinWordEntry entry({
     required String word,
-    required String partOfSpeech,
+    required PartOfSpeech partOfSpeech,
     required String meaning,
     required int difficultyLevel,
   }) {
-    return {
-      'word': word,
-      'meaning': meaning,
-      'partOfSpeech': partOfSpeech,
-      'sentences': [
+    return BuiltinWordEntry(
+      word: word,
+      meaning: meaning,
+      partOfSpeech: partOfSpeech,
+      sentences: [
         'This is a sample sentence for $word.',
         'We use $word again in a second sentence.',
       ],
-      'sourcePage': 1,
-      'schoolLevels': ['seniorHigh'],
-      'examTags': const <String>[],
-      'audienceTags': const <String>[],
-      'sourceTags': ['twCeec'],
-      'difficultyLevel': difficultyLevel,
-    };
+      sourcePage: 1,
+      schoolLevels: const [BuiltinSchoolLevel.seniorHigh],
+      examTags: const [],
+      audienceTags: const [],
+      sourceTags: const [BuiltinSourceTag.twCeec],
+      difficultyLevel: difficultyLevel,
+    );
   }
 }
 
@@ -243,7 +275,10 @@ class _FakeWordRepository implements WordRepository {
 }
 
 class _FakeSettingsRepository implements SettingsRepository {
-  AppSettings _settings = AppSettings.defaults();
+  _FakeSettingsRepository({required AppSettings initialSettings})
+    : _settings = initialSettings;
+
+  AppSettings _settings;
 
   @override
   Future<AppSettings> fetch() async => _settings;

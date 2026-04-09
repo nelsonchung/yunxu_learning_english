@@ -233,41 +233,156 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   final Set<String> _addingWords = <String>{};
   final Set<String> _dismissedWords = <String>{};
 
+  SettingsNotifier? _settingsNotifier;
+  WordsNotifier? _wordsNotifier;
   List<BuiltinWordEntry> _entries = const [];
+  List<BuiltinWordEntry> _recommendations = const [];
   bool _isLoading = true;
   String? _errorMessage;
+  String? _loadedCandidateCacheKey;
+  String? _recommendationCacheKey;
+  int _loadRequestVersion = 0;
 
   @override
   void initState() {
     super.initState();
-    _loadEntries();
   }
 
-  Future<void> _loadEntries() async {
-    setState(() {
-      _isLoading = true;
-      _errorMessage = null;
-    });
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final nextSettingsNotifier = context.read<SettingsNotifier>();
+    final nextWordsNotifier = context.read<WordsNotifier>();
 
-    try {
-      final entries = await context
-          .read<BuiltinWordBankRepository>()
-          .fetchAll();
+    if (!identical(_settingsNotifier, nextSettingsNotifier)) {
+      _settingsNotifier?.removeListener(_handleDependenciesChanged);
+      _settingsNotifier = nextSettingsNotifier;
+      _settingsNotifier?.addListener(_handleDependenciesChanged);
+    }
+    if (!identical(_wordsNotifier, nextWordsNotifier)) {
+      _wordsNotifier?.removeListener(_handleDependenciesChanged);
+      _wordsNotifier = nextWordsNotifier;
+      _wordsNotifier?.addListener(_handleDependenciesChanged);
+    }
+
+    _handleDependenciesChanged();
+  }
+
+  @override
+  void didUpdateWidget(covariant _DailyNewWordsSection oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.dueCount != widget.dueCount) {
+      _handleDependenciesChanged();
+    }
+  }
+
+  @override
+  void dispose() {
+    _settingsNotifier?.removeListener(_handleDependenciesChanged);
+    _wordsNotifier?.removeListener(_handleDependenciesChanged);
+    super.dispose();
+  }
+
+  void _handleDependenciesChanged() {
+    final settingsNotifier = _settingsNotifier;
+    final wordsNotifier = _wordsNotifier;
+    if (settingsNotifier == null || wordsNotifier == null) {
+      return;
+    }
+
+    if (!_shouldPrepareRecommendations(settingsNotifier)) {
+      final requestVersion = ++_loadRequestVersion;
       if (!mounted) {
         return;
       }
       setState(() {
+        _isLoading = false;
+        _errorMessage = null;
+        _recommendations = const [];
+        _recommendationCacheKey = null;
+      });
+      if (requestVersion != _loadRequestVersion) {
+        return;
+      }
+      return;
+    }
+
+    final candidateCacheKey = _buildCandidateCacheKey(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+    );
+    if (_loadedCandidateCacheKey == candidateCacheKey) {
+      _refreshRecommendations(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+      );
+      return;
+    }
+
+    unawaited(
+      _loadRecommendationCandidates(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+        candidateCacheKey: candidateCacheKey,
+      ),
+    );
+  }
+
+  bool _shouldPrepareRecommendations(SettingsNotifier settingsNotifier) {
+    return settingsNotifier.dailyNewWordsEnabled &&
+        widget.dueCount <= settingsNotifier.dailyNewWordsReviewThreshold;
+  }
+
+  Future<void> _loadRecommendationCandidates({
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+    required String candidateCacheKey,
+  }) async {
+    final requestVersion = ++_loadRequestVersion;
+
+    if (mounted) {
+      setState(() {
+        _isLoading = true;
+        _errorMessage = null;
+      });
+    }
+
+    try {
+      final entries = await context
+          .read<BuiltinWordBankRepository>()
+          .fetchRecommendationCandidates(
+            existingWords: wordsNotifier.words,
+            now: DateTime.now(),
+            desiredCount: settingsNotifier.dailyNewWordsCount,
+          );
+
+      if (!mounted || requestVersion != _loadRequestVersion) {
+        return;
+      }
+
+      final recommendations = _buildRecommendations(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+        entries: entries,
+      );
+      setState(() {
         _entries = entries;
+        _recommendations = recommendations;
+        _loadedCandidateCacheKey = candidateCacheKey;
+        _recommendationCacheKey = _buildRecommendationCacheKey(
+          settingsNotifier: settingsNotifier,
+          wordsNotifier: wordsNotifier,
+        );
       });
     } catch (error) {
-      if (!mounted) {
+      if (!mounted || requestVersion != _loadRequestVersion) {
         return;
       }
       setState(() {
         _errorMessage = '無法載入推薦字庫：$error';
       });
     } finally {
-      if (mounted) {
+      if (mounted && requestVersion == _loadRequestVersion) {
         setState(() {
           _isLoading = false;
         });
@@ -294,13 +409,73 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     return word.trim().toLowerCase();
   }
 
-  List<BuiltinWordEntry> _recommendationsFor({
+  String _buildCandidateCacheKey({
     required SettingsNotifier settingsNotifier,
     required WordsNotifier wordsNotifier,
+  }) {
+    return [
+      DateTime.now().year,
+      DateTime.now().month,
+      DateTime.now().day,
+      settingsNotifier.dailyNewWordsCount,
+      _hashWords(wordsNotifier.words),
+    ].join(':');
+  }
+
+  String _buildRecommendationCacheKey({
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+  }) {
+    return [
+      DateTime.now().year,
+      DateTime.now().month,
+      DateTime.now().day,
+      widget.dueCount,
+      settingsNotifier.dailyNewWordsEnabled,
+      settingsNotifier.dailyNewWordsCount,
+      settingsNotifier.dailyNewWordsReviewThreshold,
+      _hashWords(wordsNotifier.words),
+      _hashKeys(_dismissedWords),
+    ].join(':');
+  }
+
+  int _hashWords(List<WordCard> words) {
+    var hash = 0;
+    for (final word in words) {
+      hash = _combineHash(hash, _normalizeWord(word.word));
+      hash = _combineHash(
+        hash,
+        word.createdAt.millisecondsSinceEpoch.toString(),
+      );
+    }
+    return hash;
+  }
+
+  int _hashKeys(Iterable<String> keys) {
+    final sortedKeys = keys.toList(growable: false)..sort();
+    var hash = 0;
+    for (final key in sortedKeys) {
+      hash = _combineHash(hash, key);
+    }
+    return hash;
+  }
+
+  int _combineHash(int seed, String value) {
+    var hash = seed;
+    for (final codeUnit in value.codeUnits) {
+      hash = (hash * 31 + codeUnit) & 0x7fffffff;
+    }
+    return hash;
+  }
+
+  List<BuiltinWordEntry> _buildRecommendations({
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+    List<BuiltinWordEntry>? entries,
     Set<String>? excludedWords,
   }) {
     return context.read<DailyWordRecommendationService>().recommend(
-      entries: _entries,
+      entries: entries ?? _entries,
       existingWords: wordsNotifier.words,
       settings: settingsNotifier.settings,
       dueTodayCount: widget.dueCount,
@@ -309,16 +484,59 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     );
   }
 
-  void _restoreDismissedWords(Iterable<String> keys) {
+  void _refreshRecommendations({
+    required SettingsNotifier settingsNotifier,
+    required WordsNotifier wordsNotifier,
+  }) {
+    final nextCacheKey = _buildRecommendationCacheKey(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+    );
+    if (nextCacheKey == _recommendationCacheKey) {
+      return;
+    }
+
+    final recommendations = _buildRecommendations(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+    );
     if (!mounted) {
       return;
     }
     setState(() {
+      _recommendations = recommendations;
+      _recommendationCacheKey = nextCacheKey;
+    });
+  }
+
+  void _restoreDismissedWords(Iterable<String> keys) {
+    final settingsNotifier = _settingsNotifier;
+    final wordsNotifier = _wordsNotifier;
+    if (!mounted || settingsNotifier == null || wordsNotifier == null) {
+      return;
+    }
+
+    final nextDismissed = <String>{..._dismissedWords}..removeAll(keys);
+    final nextRecommendations = _buildRecommendations(
+      settingsNotifier: settingsNotifier,
+      wordsNotifier: wordsNotifier,
+      excludedWords: nextDismissed,
+    );
+
+    setState(() {
       _dismissedWords.removeAll(keys);
+      _recommendations = nextRecommendations;
+      _recommendationCacheKey = _buildRecommendationCacheKey(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+      );
     });
   }
 
   void _showDismissFeedback(SnackBar snackBar) {
+    if (!mounted) {
+      return;
+    }
     ScaffoldMessenger.of(context).showSnackBar(
       snackBar,
       snackBarAnimationStyle: AnimationStyle.noAnimation,
@@ -346,12 +564,9 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       return;
     }
 
-    final currentRecommendations = _recommendationsFor(
-      settingsNotifier: settingsNotifier,
-      wordsNotifier: wordsNotifier,
-    );
+    final currentRecommendations = _recommendations;
     final nextDismissed = <String>{..._dismissedWords, key};
-    final nextRecommendations = _recommendationsFor(
+    final nextRecommendations = _buildRecommendations(
       settingsNotifier: settingsNotifier,
       wordsNotifier: wordsNotifier,
       excludedWords: nextDismissed,
@@ -361,6 +576,11 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
 
     setState(() {
       _dismissedWords.add(key);
+      _recommendations = nextRecommendations;
+      _recommendationCacheKey = _buildRecommendationCacheKey(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+      );
     });
 
     _showDismissFeedback(
@@ -394,7 +614,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     }
 
     final nextDismissed = <String>{..._dismissedWords, ...keys};
-    final nextRecommendations = _recommendationsFor(
+    final nextRecommendations = _buildRecommendations(
       settingsNotifier: settingsNotifier,
       wordsNotifier: wordsNotifier,
       excludedWords: nextDismissed,
@@ -402,6 +622,11 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
 
     setState(() {
       _dismissedWords.addAll(keys);
+      _recommendations = nextRecommendations;
+      _recommendationCacheKey = _buildRecommendationCacheKey(
+        settingsNotifier: settingsNotifier,
+        wordsNotifier: wordsNotifier,
+      );
     });
 
     _showDismissFeedback(
@@ -465,6 +690,17 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           return const SizedBox.shrink();
         }
 
+        final threshold = settingsNotifier.dailyNewWordsReviewThreshold;
+        final desiredCount = settingsNotifier.dailyNewWordsCount;
+
+        if (widget.dueCount > threshold) {
+          return SectionCard(
+            title: '今日補新字',
+            subtitle: '今天待複習 ${widget.dueCount} 個，超過你設定的 $threshold 個',
+            child: const Text('今天先專心複習，等待補量降下來後再補新字。'),
+          );
+        }
+
         if (_isLoading) {
           return const SectionCard(
             title: '今日補新字',
@@ -483,7 +719,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
                 Text(_errorMessage!),
                 const SizedBox(height: 10),
                 OutlinedButton(
-                  onPressed: _loadEntries,
+                  onPressed: _handleDependenciesChanged,
                   child: const Text('重新載入'),
                 ),
               ],
@@ -491,21 +727,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           );
         }
 
-        final threshold = settingsNotifier.dailyNewWordsReviewThreshold;
-        final desiredCount = settingsNotifier.dailyNewWordsCount;
-
-        if (widget.dueCount > threshold) {
-          return SectionCard(
-            title: '今日補新字',
-            subtitle: '今天待複習 ${widget.dueCount} 個，超過你設定的 $threshold 個',
-            child: const Text('今天先專心複習，等待補量降下來後再補新字。'),
-          );
-        }
-
-        final recommendations = _recommendationsFor(
-          settingsNotifier: settingsNotifier,
-          wordsNotifier: wordsNotifier,
-        );
+        final recommendations = _recommendations;
         if (recommendations.isEmpty) {
           return const SizedBox.shrink();
         }

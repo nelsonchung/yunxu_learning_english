@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 import '../../domain/models/builtin_word_entry.dart';
+import '../../domain/models/word_card.dart';
 import '../../domain/services/word_bank_search_service.dart';
 
 enum BuiltinWordBankAudienceFilter {
@@ -30,6 +31,8 @@ class BuiltinWordBankRepository {
 
   static const int _alphabetLength = 26;
   static const int _lowercaseACodeUnit = 97;
+  static const int _recommendationRecentSampleLimit = 12;
+  static const int _recommendationMinimumShardCount = 6;
   static final List<String> _assetPaths = List<String>.unmodifiable(
     List<String>.generate(_alphabetLength, (index) {
       final letter = String.fromCharCode(_lowercaseACodeUnit + index);
@@ -112,6 +115,88 @@ class BuiltinWordBankRepository {
     } finally {
       _loadingFilterCountsFuture = null;
     }
+  }
+
+  Future<List<BuiltinWordEntry>> fetchRecommendationCandidates({
+    required List<WordCard> existingWords,
+    required DateTime now,
+    required int desiredCount,
+    int minimumShardCount = _recommendationMinimumShardCount,
+    int? candidateLimit,
+  }) async {
+    final sortedExisting = List<WordCard>.from(existingWords)
+      ..sort((a, b) => b.createdAt.compareTo(a.createdAt));
+    final sampledExisting = sortedExisting.take(
+      _recommendationRecentSampleLimit,
+    );
+    final sampleKeys = sampledExisting
+        .map((card) => _normalizeRecommendationKey(card.word))
+        .where((key) => key.isNotEmpty)
+        .toSet();
+    final supportEntries = <BuiltinWordEntry>[];
+
+    for (final shardPath
+        in sampledExisting
+            .map((card) => _assetPathForWord(card.word))
+            .whereType<String>()
+            .toSet()) {
+      final shardEntries = await _loadShard(shardPath);
+      for (final entry in shardEntries) {
+        if (sampleKeys.contains(_normalizeRecommendationKey(entry.word))) {
+          supportEntries.add(entry);
+        }
+      }
+    }
+
+    final existingKeys = existingWords
+        .map((card) => _normalizeRecommendationKey(card.word))
+        .where((key) => key.isNotEmpty)
+        .toSet();
+    final existingRoots = existingWords
+        .map((card) => _stemRecommendationWord(card.word))
+        .where((root) => root.length >= 4)
+        .toSet();
+    final effectiveCandidateLimit =
+        candidateLimit ??
+        ((desiredCount <= 0 ? 3 : desiredCount) * 300 < 900
+            ? 900
+            : (desiredCount <= 0 ? 3 : desiredCount) * 300);
+    final rotatedShardPaths = _rotatedAssetPathsForDay(now);
+    final candidates = <BuiltinWordEntry>[];
+    var visitedShardCount = 0;
+
+    for (final shardPath in rotatedShardPaths) {
+      final shardEntries = await _loadShard(shardPath);
+      visitedShardCount += 1;
+
+      for (final entry in shardEntries) {
+        if (_isRecommendationCandidate(
+          entry,
+          existingKeys: existingKeys,
+          existingRoots: existingRoots,
+        )) {
+          candidates.add(entry);
+        }
+      }
+
+      if (visitedShardCount >= minimumShardCount &&
+          candidates.length >= effectiveCandidateLimit) {
+        break;
+      }
+    }
+
+    final mergedEntries = <BuiltinWordEntry>[];
+    final seenWords = <String>{};
+
+    for (final entry in supportEntries.followedBy(candidates)) {
+      final key = _normalizeRecommendationKey(entry.word);
+      if (key.isEmpty || !seenWords.add(key)) {
+        continue;
+      }
+      mergedEntries.add(entry);
+    }
+
+    return List<BuiltinWordEntry>.unmodifiable(mergedEntries);
   }
 
   Future<List<BuiltinWordEntry>> _loadAllEntries() async {
@@ -271,6 +356,140 @@ class BuiltinWordBankRepository {
 
   String _assetPathForLeadingLetter(String normalizedQuery) {
     return 'assets/word_bank/word_bank_main-${normalizedQuery[0]}.json';
+  }
+
+  String? _assetPathForWord(String word) {
+    final normalized = _normalizeRecommendationKey(word);
+    if (normalized.isEmpty) {
+      return null;
+    }
+
+    final codeUnit = normalized.codeUnitAt(0);
+    if (codeUnit < _lowercaseACodeUnit ||
+        codeUnit >= _lowercaseACodeUnit + _alphabetLength) {
+      return null;
+    }
+
+    return 'assets/word_bank/word_bank_main-${normalized[0]}.json';
+  }
+
+  List<String> _rotatedAssetPathsForDay(DateTime now) {
+    final dayKey = '${now.year}-${now.month}-${now.day}';
+    final offset = _stableHash(dayKey) % _assetPaths.length;
+
+    return List<String>.generate(
+      _assetPaths.length,
+      (index) => _assetPaths[(offset + index) % _assetPaths.length],
+      growable: false,
+    );
+  }
+
+  bool _isRecommendationCandidate(
+    BuiltinWordEntry entry, {
+    required Set<String> existingKeys,
+    required Set<String> existingRoots,
+  }) {
+    final normalizedWord = _normalizeRecommendationKey(entry.word);
+    if (normalizedWord.isEmpty || !_looksLikeSingleWord(entry.word)) {
+      return false;
+    }
+    if (existingKeys.contains(normalizedWord)) {
+      return false;
+    }
+    if (entry.difficultyLevel == null) {
+      return false;
+    }
+    if (entry.sentences.length < 2) {
+      return false;
+    }
+    if (entry.meaning.trim().isEmpty) {
+      return false;
+    }
+    if (entry.sourceTags.isEmpty) {
+      return false;
+    }
+
+    final root = _stemRecommendationWord(entry.word);
+    if (root.length >= 4 && existingRoots.contains(root)) {
+      return false;
+    }
+
+    for (final existingKey in existingKeys) {
+      if (_looksTooSimilar(normalizedWord, existingKey)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  String _normalizeRecommendationKey(String word) {
+    return word.trim().toLowerCase();
+  }
+
+  bool _looksLikeSingleWord(String word) {
+    final trimmed = word.trim();
+    if (trimmed.isEmpty) {
+      return false;
+    }
+    return !trimmed.contains(' ') &&
+        !trimmed.contains('-') &&
+        !trimmed.contains('/') &&
+        !trimmed.contains(RegExp(r'\d'));
+  }
+
+  String _stemRecommendationWord(String word) {
+    final normalized = _normalizeRecommendationKey(word);
+    const suffixes = [
+      'ingly',
+      'edly',
+      'ing',
+      'edly',
+      'ed',
+      'ies',
+      'es',
+      's',
+      'ly',
+      'er',
+      'est',
+      'ment',
+      'tion',
+      'ions',
+      'al',
+      'ity',
+      'ness',
+    ];
+
+    for (final suffix in suffixes) {
+      if (normalized.length - suffix.length < 4) {
+        continue;
+      }
+      if (normalized.endsWith(suffix)) {
+        return normalized.substring(0, normalized.length - suffix.length);
+      }
+    }
+
+    return normalized;
+  }
+
+  bool _looksTooSimilar(String candidate, String existing) {
+    if (candidate == existing) {
+      return true;
+    }
+    if (candidate.length >= 4 &&
+        existing.length >= 4 &&
+        (candidate.startsWith(existing) || existing.startsWith(candidate))) {
+      return true;
+    }
+    return false;
+  }
+
+  int _stableHash(String value) {
+    var hash = 0;
+    for (final codeUnit in value.codeUnits) {
+      hash = (hash * 31 + codeUnit) & 0x7fffffff;
+    }
+    return hash;
   }
 
   bool _matchesFilter(
