@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -47,14 +49,21 @@ class WordBankPage extends StatefulWidget {
 }
 
 class _WordBankPageState extends State<WordBankPage> {
+  static const Duration _searchDebounceDuration = Duration(milliseconds: 250);
+
   final _searchController = TextEditingController();
   final _searchFocusNode = FocusNode();
   final Set<String> _addingWords = <String>{};
   final _searchService = WordBankSearchService();
 
+  Timer? _searchDebounceTimer;
   List<BuiltinWordEntry> _entries = const [];
+  List<BuiltinWordEntry> _visibleEntries = const [];
   Map<_WordBankAudienceFilter, int> _filterCounts = _createEmptyFilterCounts();
   _WordBankAudienceFilter _selectedFilter = _WordBankAudienceFilter.all;
+  String _inputQuery = '';
+  String _activeQuery = '';
+  bool _isSearchPending = false;
   bool _isLoading = true;
   String? _errorMessage;
 
@@ -66,15 +75,22 @@ class _WordBankPageState extends State<WordBankPage> {
 
   @override
   void dispose() {
+    _searchDebounceTimer?.cancel();
     _searchFocusNode.dispose();
     _searchController.dispose();
     super.dispose();
   }
 
   void _clearSearchQuery() {
+    _searchDebounceTimer?.cancel();
     _searchController.clear();
     _searchFocusNode.requestFocus();
-    setState(() {});
+    _applySearch(
+      query: '',
+      inputQuery: '',
+      filter: _selectedFilter,
+      isSearchPending: false,
+    );
   }
 
   Future<void> _loadWordBank() async {
@@ -85,7 +101,13 @@ class _WordBankPageState extends State<WordBankPage> {
 
     try {
       final loaded = await context.read<BuiltinWordBankRepository>().fetchAll();
+      _searchService.prime(loaded);
       final counts = _buildFilterCounts(loaded);
+      final visibleEntries = _filteredEntries(
+        query: _activeQuery,
+        filter: _selectedFilter,
+        entries: loaded,
+      );
 
       if (!mounted) {
         return;
@@ -93,6 +115,7 @@ class _WordBankPageState extends State<WordBankPage> {
 
       setState(() {
         _entries = loaded;
+        _visibleEntries = visibleEntries;
         _filterCounts = counts;
       });
     } catch (error) {
@@ -111,28 +134,59 @@ class _WordBankPageState extends State<WordBankPage> {
     }
   }
 
-  List<BuiltinWordEntry> _filteredEntries(String query) {
-    final scopedEntries = _entries.where(_matchesSelectedFilter);
+  List<BuiltinWordEntry> _filteredEntries({
+    required String query,
+    required _WordBankAudienceFilter filter,
+    Iterable<BuiltinWordEntry>? entries,
+  }) {
+    final sourceEntries = entries ?? _entries;
+    final scopedEntries = sourceEntries.where(
+      (entry) => _matchesFilter(entry, filter),
+    );
     return _searchService.search(entries: scopedEntries, query: query);
   }
 
-  bool _matchesSelectedFilter(BuiltinWordEntry entry) {
-    switch (_selectedFilter) {
-      case _WordBankAudienceFilter.all:
-        return true;
-      case _WordBankAudienceFilter.general:
-        return entry.audienceTags.contains(BuiltinAudienceTag.general);
-      case _WordBankAudienceFilter.elementary:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.elementary);
-      case _WordBankAudienceFilter.juniorHigh:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.juniorHigh);
-      case _WordBankAudienceFilter.seniorHigh:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.seniorHigh);
-      case _WordBankAudienceFilter.college:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.college);
-      case _WordBankAudienceFilter.toeic:
-        return entry.examTags.contains(BuiltinExamTag.toeic);
+  void _handleSearchChanged(String value) {
+    _searchDebounceTimer?.cancel();
+
+    final shouldDeferSearch = value != _activeQuery;
+    setState(() {
+      _inputQuery = value;
+      _isSearchPending = shouldDeferSearch;
+    });
+
+    if (!shouldDeferSearch) {
+      return;
     }
+
+    _searchDebounceTimer = Timer(_searchDebounceDuration, () {
+      if (!mounted) {
+        return;
+      }
+      _applySearch(
+        query: value,
+        inputQuery: value,
+        filter: _selectedFilter,
+        isSearchPending: false,
+      );
+    });
+  }
+
+  void _applySearch({
+    required String query,
+    required String inputQuery,
+    required _WordBankAudienceFilter filter,
+    required bool isSearchPending,
+  }) {
+    final visibleEntries = _filteredEntries(query: query, filter: filter);
+
+    setState(() {
+      _activeQuery = query;
+      _inputQuery = inputQuery;
+      _selectedFilter = filter;
+      _visibleEntries = visibleEntries;
+      _isSearchPending = isSearchPending;
+    });
   }
 
   int _countForFilter(_WordBankAudienceFilter filter) {
@@ -280,100 +334,117 @@ class _WordBankPageState extends State<WordBankPage> {
 
     return Consumer<WordsNotifier>(
       builder: (context, notifier, _) {
-        final query = _searchController.text;
-        final hasQuery = query.trim().isNotEmpty;
-        final filtered = _filteredEntries(query);
+        final hasQuery = _inputQuery.trim().isNotEmpty;
+        final hasActiveQuery = _activeQuery.trim().isNotEmpty;
+        final filtered = _visibleEntries;
         final existingWords = notifier.words
             .map((item) => item.word.toLowerCase())
             .toSet();
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120;
+        final resultCount = filtered.length;
+        final hasResults = filtered.isNotEmpty;
+        final itemCount = 2 + (hasResults ? resultCount : 1);
 
-        return ListView(
+        return ListView.builder(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
-          children: [
-            SectionCard(
-              title: '字庫搜尋',
-              subtitle: '內建 ${_entries.length} 筆單字資料，可依程度與考試目標過濾',
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  TextField(
-                    controller: _searchController,
-                    focusNode: _searchFocusNode,
-                    onChanged: (_) => setState(() {}),
-                    decoration: InputDecoration(
-                      hintText: '例如：co、trans、ability、麵包、補償',
-                      prefixIcon: const Icon(Icons.search),
-                      suffixIcon: hasQuery
-                          ? IconButton(
-                              tooltip: '清除搜尋',
-                              onPressed: _clearSearchQuery,
-                              icon: const Icon(Icons.close),
-                            )
-                          : null,
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          itemCount: itemCount,
+          itemBuilder: (context, index) {
+            if (index == 0) {
+              return SectionCard(
+                title: '字庫搜尋',
+                subtitle: '內建 ${_entries.length} 筆單字資料，可依程度與考試目標過濾',
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextField(
+                      controller: _searchController,
+                      focusNode: _searchFocusNode,
+                      onChanged: _handleSearchChanged,
+                      decoration: InputDecoration(
+                        hintText: '例如：co、trans、ability、麵包、補償',
+                        prefixIcon: const Icon(Icons.search),
+                        suffixIcon: hasQuery
+                            ? IconButton(
+                                tooltip: '清除搜尋',
+                                onPressed: _clearSearchQuery,
+                                icon: const Icon(Icons.close),
+                              )
+                            : null,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    '可搜尋英文單字或中文意思',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
-                  ),
-                  const SizedBox(height: 10),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: _WordBankAudienceFilter.values
-                          .map((filter) {
-                            return ChoiceChip(
-                              label: Text(
-                                '${filter.label} ${_countForFilter(filter)}',
-                              ),
-                              selected: _selectedFilter == filter,
-                              onSelected: (selected) {
-                                if (!selected) {
-                                  return;
-                                }
-                                setState(() {
-                                  _selectedFilter = filter;
-                                });
-                              },
-                            );
-                          })
-                          .toList(growable: false),
+                    const SizedBox(height: 8),
+                    Text(
+                      '可搜尋英文單字或中文意思',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
                     ),
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    !hasQuery
-                        ? '目前顯示「${_selectedFilter.label}」前 100 筆，輸入英文或中文關鍵字可精準過濾'
-                        : '「${_selectedFilter.label}」符合 ${filtered.length} 筆（最多顯示 200 筆）',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 16),
-            if (filtered.isEmpty)
-              const _EmptyWordBankResult()
-            else
-              ...filtered.map(
-                (entry) => Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: _WordBankCard(
-                    entry: entry,
-                    isAdded: existingWords.contains(entry.word.toLowerCase()),
-                    isAdding: _addingWords.contains(entry.word.toLowerCase()),
-                    onAdd: () => _addEntry(entry),
-                  ),
+                    const SizedBox(height: 10),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: _WordBankAudienceFilter.values
+                            .map((filter) {
+                              return ChoiceChip(
+                                label: Text(
+                                  '${filter.label} ${_countForFilter(filter)}',
+                                ),
+                                selected: _selectedFilter == filter,
+                                onSelected: (selected) {
+                                  if (!selected) {
+                                    return;
+                                  }
+                                  _searchDebounceTimer?.cancel();
+                                  _applySearch(
+                                    query: _searchController.text,
+                                    inputQuery: _searchController.text,
+                                    filter: filter,
+                                    isSearchPending: false,
+                                  );
+                                },
+                              );
+                            })
+                            .toList(growable: false),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      _isSearchPending
+                          ? '正在更新搜尋結果...'
+                          : !hasActiveQuery
+                          ? '目前顯示「${_selectedFilter.label}」前 100 筆，輸入英文或中文關鍵字可精準過濾'
+                          : '「${_selectedFilter.label}」符合 $resultCount 筆（最多顯示 200 筆）',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ],
                 ),
+              );
+            }
+
+            if (index == 1) {
+              return const SizedBox(height: 16);
+            }
+
+            if (!hasResults) {
+              return const _EmptyWordBankResult();
+            }
+
+            final entry = filtered[index - 2];
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: _WordBankCard(
+                entry: entry,
+                isAdded: existingWords.contains(entry.word.toLowerCase()),
+                isAdding: _addingWords.contains(entry.word.toLowerCase()),
+                onAdd: () => _addEntry(entry),
               ),
-          ],
+            );
+          },
         );
       },
     );

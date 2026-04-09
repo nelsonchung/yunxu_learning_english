@@ -63,6 +63,52 @@ void main() {
     expect(tester.widget<TextField>(searchField).controller?.text, isEmpty);
     expect(find.widgetWithIcon(IconButton, Icons.close), findsNothing);
   });
+
+  testWidgets('搜尋結果會在 debounce 後才更新', (tester) async {
+    final scheduleService = ReviewScheduleService();
+    final wordsNotifier = WordsNotifier(
+      repository: _FakeWordRepository(),
+      scheduleService: scheduleService,
+      sortService: SortService(),
+      imageStorage: ImageStorage(),
+      wordContributionImportService: WordContributionImportService(
+        scheduleService: scheduleService,
+      ),
+      initialSyncEnabled: false,
+    );
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: BuiltinWordBankRepository(
+              assetBundle: _FakeWordBankAssetBundle(),
+            ),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+        ],
+        child: const MaterialApp(home: Scaffold(body: WordBankPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    expect(find.text('bread'), findsOneWidget);
+    expect(find.text('compensate'), findsOneWidget);
+
+    await tester.enterText(find.byType(TextField), 'co');
+    await tester.pump();
+
+    expect(find.text('bread'), findsOneWidget);
+    expect(find.text('compensate'), findsOneWidget);
+    expect(find.text('正在更新搜尋結果...'), findsOneWidget);
+
+    await tester.pump(const Duration(milliseconds: 260));
+
+    expect(find.text('bread'), findsNothing);
+    expect(find.text('compensate'), findsOneWidget);
+    expect(find.text('正在更新搜尋結果...'), findsNothing);
+  });
 }
 
 class _FakeWordBankAssetBundle extends CachingAssetBundle {

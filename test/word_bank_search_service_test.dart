@@ -50,6 +50,29 @@ void main() {
     expect(results.map((entry) => entry.word).toList(), ['naan']);
   });
 
+  test('single-character query only uses exact and prefix matching', () {
+    final entries = [
+      _entry(word: 'money'),
+      _entry(word: 'almoney'),
+      _entry(word: 'wallet', meaning: 'money bag'),
+    ];
+
+    final results = service.search(entries: entries, query: 'm');
+
+    expect(results.map((entry) => entry.word).toList(), ['money']);
+  });
+
+  test('requires at least two characters before meaning search runs', () {
+    final entries = [
+      _entry(word: 'naan', meaning: '在泥爐中烘烤的圓形扁平麵包，在南亞和中亞美食中很受歡迎。'),
+      _entry(word: 'neutral'),
+    ];
+
+    final results = service.search(entries: entries, query: '麵');
+
+    expect(results, isEmpty);
+  });
+
   test(
     'normalizes full-width whitespace and punctuation for meaning matches',
     () {
