@@ -6,36 +6,25 @@ import 'package:provider/provider.dart';
 import '../../data/repositories/builtin_word_bank_repository.dart';
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
-import '../../domain/services/word_bank_search_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
-enum _WordBankAudienceFilter {
-  all,
-  general,
-  elementary,
-  juniorHigh,
-  seniorHigh,
-  college,
-  toeic,
-}
-
-extension _WordBankAudienceFilterLabel on _WordBankAudienceFilter {
+extension _WordBankAudienceFilterLabel on BuiltinWordBankAudienceFilter {
   String get label {
     switch (this) {
-      case _WordBankAudienceFilter.all:
+      case BuiltinWordBankAudienceFilter.all:
         return '全部';
-      case _WordBankAudienceFilter.general:
+      case BuiltinWordBankAudienceFilter.general:
         return '一般';
-      case _WordBankAudienceFilter.elementary:
+      case BuiltinWordBankAudienceFilter.elementary:
         return '國小';
-      case _WordBankAudienceFilter.juniorHigh:
+      case BuiltinWordBankAudienceFilter.juniorHigh:
         return '國中';
-      case _WordBankAudienceFilter.seniorHigh:
+      case BuiltinWordBankAudienceFilter.seniorHigh:
         return '高中';
-      case _WordBankAudienceFilter.college:
+      case BuiltinWordBankAudienceFilter.college:
         return '大學';
-      case _WordBankAudienceFilter.toeic:
+      case BuiltinWordBankAudienceFilter.toeic:
         return 'TOEIC';
     }
   }
@@ -55,18 +44,20 @@ class _WordBankPageState extends State<WordBankPage> {
   final _searchController = TextEditingController();
   final _searchFocusNode = FocusNode();
   final Set<String> _addingWords = <String>{};
-  final _searchService = WordBankSearchService();
 
   Timer? _searchDebounceTimer;
-  List<BuiltinWordEntry> _entries = const [];
   List<BuiltinWordEntry> _visibleEntries = const [];
-  Map<_WordBankAudienceFilter, int> _filterCounts = _createEmptyFilterCounts();
-  _WordBankAudienceFilter _selectedFilter = _WordBankAudienceFilter.all;
+  Map<BuiltinWordBankAudienceFilter, int> _filterCounts =
+      _createEmptyFilterCounts();
+  BuiltinWordBankAudienceFilter _selectedFilter =
+      BuiltinWordBankAudienceFilter.all;
   String _inputQuery = '';
   String _activeQuery = '';
   bool _isSearchPending = false;
+  bool _hasFilterCounts = false;
   bool _isLoading = true;
   String? _errorMessage;
+  int _searchRequestVersion = 0;
 
   @override
   void initState() {
@@ -86,11 +77,13 @@ class _WordBankPageState extends State<WordBankPage> {
     _searchDebounceTimer?.cancel();
     _searchController.clear();
     _searchFocusNode.requestFocus();
-    _applySearch(
-      query: '',
-      inputQuery: '',
-      filter: _selectedFilter,
-      isSearchPending: false,
+    unawaited(
+      _runSearch(
+        query: '',
+        inputQuery: '',
+        filter: _selectedFilter,
+        markPending: false,
+      ),
     );
   }
 
@@ -101,24 +94,17 @@ class _WordBankPageState extends State<WordBankPage> {
     });
 
     try {
-      final loaded = await context.read<BuiltinWordBankRepository>().fetchAll();
-      _searchService.prime(loaded);
-      final counts = _buildFilterCounts(loaded);
-      final visibleEntries = _filteredEntries(
+      unawaited(_loadFilterCounts());
+      await _runSearch(
         query: _activeQuery,
+        inputQuery: _inputQuery,
         filter: _selectedFilter,
-        entries: loaded,
+        markPending: false,
       );
 
       if (!mounted) {
         return;
       }
-
-      setState(() {
-        _entries = loaded;
-        _visibleEntries = visibleEntries;
-        _filterCounts = counts;
-      });
     } catch (error) {
       if (!mounted) {
         return;
@@ -135,16 +121,66 @@ class _WordBankPageState extends State<WordBankPage> {
     }
   }
 
-  List<BuiltinWordEntry> _filteredEntries({
+  Future<void> _loadFilterCounts() async {
+    try {
+      final counts = await context
+          .read<BuiltinWordBankRepository>()
+          .fetchFilterCounts();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _filterCounts = counts;
+        _hasFilterCounts = true;
+      });
+    } catch (error) {
+      debugPrint('WordBankPage fetchFilterCounts failed: $error');
+    }
+  }
+
+  Future<void> _runSearch({
     required String query,
-    required _WordBankAudienceFilter filter,
-    Iterable<BuiltinWordEntry>? entries,
-  }) {
-    final sourceEntries = entries ?? _entries;
-    final scopedEntries = sourceEntries.where(
-      (entry) => _matchesFilter(entry, filter),
-    );
-    return _searchService.search(entries: scopedEntries, query: query);
+    required String inputQuery,
+    required BuiltinWordBankAudienceFilter filter,
+    required bool markPending,
+  }) async {
+    final requestVersion = ++_searchRequestVersion;
+
+    if (mounted) {
+      setState(() {
+        _selectedFilter = filter;
+        _inputQuery = inputQuery;
+        _isSearchPending = markPending;
+        _errorMessage = null;
+      });
+    }
+
+    try {
+      final result = await context.read<BuiltinWordBankRepository>().search(
+        query: query,
+        filter: filter,
+      );
+
+      if (!mounted || requestVersion != _searchRequestVersion) {
+        return;
+      }
+
+      setState(() {
+        _activeQuery = query;
+        _inputQuery = inputQuery;
+        _selectedFilter = filter;
+        _visibleEntries = result.entries;
+        _isSearchPending = false;
+      });
+    } catch (error) {
+      if (!mounted || requestVersion != _searchRequestVersion) {
+        return;
+      }
+      setState(() {
+        _isSearchPending = false;
+        _errorMessage = '無法讀取字庫：$error';
+      });
+    }
   }
 
   void _handleSearchChanged(String value) {
@@ -164,81 +200,25 @@ class _WordBankPageState extends State<WordBankPage> {
       if (!mounted) {
         return;
       }
-      _applySearch(
-        query: value,
-        inputQuery: value,
-        filter: _selectedFilter,
-        isSearchPending: false,
+      unawaited(
+        _runSearch(
+          query: value,
+          inputQuery: value,
+          filter: _selectedFilter,
+          markPending: false,
+        ),
       );
     });
   }
 
-  void _applySearch({
-    required String query,
-    required String inputQuery,
-    required _WordBankAudienceFilter filter,
-    required bool isSearchPending,
-  }) {
-    final visibleEntries = _filteredEntries(query: query, filter: filter);
-
-    setState(() {
-      _activeQuery = query;
-      _inputQuery = inputQuery;
-      _selectedFilter = filter;
-      _visibleEntries = visibleEntries;
-      _isSearchPending = isSearchPending;
-    });
-  }
-
-  int _countForFilter(_WordBankAudienceFilter filter) {
+  int _countForFilter(BuiltinWordBankAudienceFilter filter) {
     return _filterCounts[filter] ?? 0;
   }
 
-  bool _matchesFilter(BuiltinWordEntry entry, _WordBankAudienceFilter filter) {
-    switch (filter) {
-      case _WordBankAudienceFilter.all:
-        return true;
-      case _WordBankAudienceFilter.general:
-        return entry.audienceTags.contains(BuiltinAudienceTag.general);
-      case _WordBankAudienceFilter.elementary:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.elementary);
-      case _WordBankAudienceFilter.juniorHigh:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.juniorHigh);
-      case _WordBankAudienceFilter.seniorHigh:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.seniorHigh);
-      case _WordBankAudienceFilter.college:
-        return entry.schoolLevels.contains(BuiltinSchoolLevel.college);
-      case _WordBankAudienceFilter.toeic:
-        return entry.examTags.contains(BuiltinExamTag.toeic);
-    }
-  }
-
-  Map<_WordBankAudienceFilter, int> _buildFilterCounts(
-    List<BuiltinWordEntry> entries,
-  ) {
-    final counts = _createEmptyFilterCounts();
-
-    for (final entry in entries) {
-      counts[_WordBankAudienceFilter.all] =
-          (counts[_WordBankAudienceFilter.all] ?? 0) + 1;
-
-      for (final filter in _WordBankAudienceFilter.values) {
-        if (filter == _WordBankAudienceFilter.all) {
-          continue;
-        }
-        if (_matchesFilter(entry, filter)) {
-          counts[filter] = (counts[filter] ?? 0) + 1;
-        }
-      }
-    }
-
-    return counts;
-  }
-
-  static Map<_WordBankAudienceFilter, int> _createEmptyFilterCounts() {
-    return Map<_WordBankAudienceFilter, int>.fromEntries(
-      _WordBankAudienceFilter.values.map(
-        (filter) => MapEntry<_WordBankAudienceFilter, int>(filter, 0),
+  static Map<BuiltinWordBankAudienceFilter, int> _createEmptyFilterCounts() {
+    return Map<BuiltinWordBankAudienceFilter, int>.fromEntries(
+      BuiltinWordBankAudienceFilter.values.map(
+        (filter) => MapEntry<BuiltinWordBankAudienceFilter, int>(filter, 0),
       ),
     );
   }
@@ -350,6 +330,9 @@ class _WordBankPageState extends State<WordBankPage> {
         final resultCount = filtered.length;
         final hasResults = filtered.isNotEmpty;
         final itemCount = 2 + (hasResults ? resultCount : 1);
+        final totalCountLabel = _hasFilterCounts
+            ? '內建 ${_countForFilter(BuiltinWordBankAudienceFilter.all)} 筆單字資料，可依程度與考試目標過濾'
+            : '內建字庫資料，可依程度與考試目標過濾';
 
         return ListView.builder(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -359,7 +342,7 @@ class _WordBankPageState extends State<WordBankPage> {
             if (index == 0) {
               return SectionCard(
                 title: '字庫搜尋',
-                subtitle: '內建 ${_entries.length} 筆單字資料，可依程度與考試目標過濾',
+                subtitle: totalCountLabel,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -392,23 +375,26 @@ class _WordBankPageState extends State<WordBankPage> {
                       child: Wrap(
                         spacing: 8,
                         runSpacing: 8,
-                        children: _WordBankAudienceFilter.values
+                        children: BuiltinWordBankAudienceFilter.values
                             .map((filter) {
+                              final chipLabel = _hasFilterCounts
+                                  ? '${filter.label} ${_countForFilter(filter)}'
+                                  : filter.label;
                               return ChoiceChip(
-                                label: Text(
-                                  '${filter.label} ${_countForFilter(filter)}',
-                                ),
+                                label: Text(chipLabel),
                                 selected: _selectedFilter == filter,
                                 onSelected: (selected) {
                                   if (!selected) {
                                     return;
                                   }
                                   _searchDebounceTimer?.cancel();
-                                  _applySearch(
-                                    query: _searchController.text,
-                                    inputQuery: _searchController.text,
-                                    filter: filter,
-                                    isSearchPending: false,
+                                  unawaited(
+                                    _runSearch(
+                                      query: _searchController.text,
+                                      inputQuery: _searchController.text,
+                                      filter: filter,
+                                      markPending: true,
+                                    ),
                                   );
                                 },
                               );

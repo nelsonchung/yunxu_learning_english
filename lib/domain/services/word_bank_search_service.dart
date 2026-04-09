@@ -17,6 +17,10 @@ class WordBankSearchService {
     'relaxedMeaning',
   );
 
+  String normalizeQuery(String query) {
+    return _normalizeSearchText(query);
+  }
+
   void prime(Iterable<BuiltinWordEntry> entries) {
     for (final entry in entries) {
       _normalizedWordFor(entry);
