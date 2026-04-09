@@ -94,7 +94,7 @@ class _HeroHeader extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 24,
             offset: const Offset(0, 12),
           ),
@@ -165,7 +165,7 @@ class _Pill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.2),
+        color: Colors.white.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(
@@ -192,7 +192,7 @@ class _EmptyState extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 16,
             offset: const Offset(0, 8),
           ),
@@ -204,7 +204,7 @@ class _EmptyState extends StatelessWidget {
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              color: const Color(0xFF0B6E99).withOpacity(0.15),
+              color: const Color(0xFF0B6E99).withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(14),
             ),
             child: const Icon(Icons.check_circle, color: Color(0xFF0B6E99)),
@@ -227,6 +227,7 @@ class _DailyNewWordsSection extends StatefulWidget {
 }
 
 class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
+  static const Duration _addFeedbackDuration = Duration(seconds: 2);
   static const Duration _dismissFeedbackDuration = Duration(seconds: 2);
 
   final Set<String> _addingWords = <String>{};
@@ -320,6 +321,17 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   void _showDismissFeedback(SnackBar snackBar) {
     ScaffoldMessenger.of(context).showSnackBar(
       snackBar,
+      snackBarAnimationStyle: AnimationStyle.noAnimation,
+    );
+  }
+
+  void _showAddFeedback(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        duration: _addFeedbackDuration,
+        persist: false,
+        content: Text(message),
+      ),
       snackBarAnimationStyle: AnimationStyle.noAnimation,
     );
   }
@@ -430,16 +442,12 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('已加入「${entry.word}」到複習資料庫')));
+      _showAddFeedback('已加入「${entry.word}」到複習資料庫');
     } catch (error) {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('加入失敗：$error')));
+      _showAddFeedback('加入失敗：$error');
     } finally {
       if (mounted) {
         setState(() {
@@ -694,7 +702,7 @@ class _ReviewCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 18,
             offset: const Offset(0, 10),
           ),
@@ -822,7 +830,7 @@ class _Thumb extends StatelessWidget {
       width: 70,
       height: 70,
       decoration: BoxDecoration(
-        color: const Color(0xFF0B6E99).withOpacity(0.1),
+        color: const Color(0xFF0B6E99).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(14),
       ),
       child: const Icon(Icons.book, color: Color(0xFF0B6E99)),

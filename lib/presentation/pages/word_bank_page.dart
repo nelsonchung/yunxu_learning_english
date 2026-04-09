@@ -49,6 +49,7 @@ class WordBankPage extends StatefulWidget {
 }
 
 class _WordBankPageState extends State<WordBankPage> {
+  static const Duration _addFeedbackDuration = Duration(seconds: 2);
   static const Duration _searchDebounceDuration = Duration(milliseconds: 250);
 
   final _searchController = TextEditingController();
@@ -257,15 +258,24 @@ class _WordBankPageState extends State<WordBankPage> {
     return cleaned;
   }
 
+  void _showAddFeedback(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        duration: _addFeedbackDuration,
+        persist: false,
+        content: Text(message),
+      ),
+      snackBarAnimationStyle: AnimationStyle.noAnimation,
+    );
+  }
+
   Future<void> _addEntry(BuiltinWordEntry entry) async {
     final key = entry.word.toLowerCase();
     final notifier = context.read<WordsNotifier>();
     final exists = notifier.words.any((item) => item.word.toLowerCase() == key);
 
     if (exists) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('「${entry.word}」已在複習資料庫中')));
+      _showAddFeedback('「${entry.word}」已在複習資料庫中');
       return;
     }
 
@@ -288,16 +298,12 @@ class _WordBankPageState extends State<WordBankPage> {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('已加入「${entry.word}」到複習資料庫')));
+      _showAddFeedback('已加入「${entry.word}」到複習資料庫');
     } catch (error) {
       if (!mounted) {
         return;
       }
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('加入失敗：$error')));
+      _showAddFeedback('加入失敗：$error');
     } finally {
       if (mounted) {
         setState(() {

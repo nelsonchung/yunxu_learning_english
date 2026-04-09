@@ -109,6 +109,53 @@ void main() {
     expect(find.text('compensate'), findsOneWidget);
     expect(find.text('正在更新搜尋結果...'), findsNothing);
   });
+
+  testWidgets('加入字庫單字提示會在兩秒後自動消失', (tester) async {
+    final scheduleService = ReviewScheduleService();
+    final wordsNotifier = WordsNotifier(
+      repository: _FakeWordRepository(),
+      scheduleService: scheduleService,
+      sortService: SortService(),
+      imageStorage: ImageStorage(),
+      wordContributionImportService: WordContributionImportService(
+        scheduleService: scheduleService,
+      ),
+      initialSyncEnabled: false,
+    );
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: BuiltinWordBankRepository(
+              assetBundle: _FakeWordBankAssetBundle(),
+            ),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+        ],
+        child: const MaterialApp(home: Scaffold(body: WordBankPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    final addButton = find.byIcon(Icons.add_circle_outline).first;
+    expect(addButton, findsOneWidget);
+
+    await tester.tap(addButton);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 250));
+
+    expect(find.textContaining('已加入「'), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.textContaining('已加入「'), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pump(const Duration(milliseconds: 1));
+
+    expect(find.textContaining('已加入「'), findsNothing);
+  });
 }
 
 class _FakeWordBankAssetBundle extends CachingAssetBundle {

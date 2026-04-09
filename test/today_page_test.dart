@@ -81,6 +81,64 @@ void main() {
 
     expect(find.textContaining('已略過'), findsNothing);
   });
+
+  testWidgets('加入新字提示會在兩秒後自動消失', (tester) async {
+    final scheduleService = ReviewScheduleService();
+    final wordsNotifier = WordsNotifier(
+      repository: _FakeWordRepository(),
+      scheduleService: scheduleService,
+      sortService: SortService(),
+      imageStorage: ImageStorage(),
+      wordContributionImportService: WordContributionImportService(
+        scheduleService: scheduleService,
+      ),
+      initialSyncEnabled: false,
+    );
+    final settingsNotifier = SettingsNotifier(
+      repository: _FakeSettingsRepository(),
+      notificationService: NotificationService(),
+      pronunciationService: PronunciationService(),
+    );
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: BuiltinWordBankRepository(
+              assetBundle: _FakeWordBankAssetBundle(),
+            ),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    final addButton = find.byIcon(Icons.add_circle_outline).first;
+    expect(addButton, findsOneWidget);
+
+    await tester.tap(addButton);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 250));
+
+    expect(find.textContaining('已加入「'), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.textContaining('已加入「'), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pump(const Duration(milliseconds: 1));
+
+    expect(find.textContaining('已加入「'), findsNothing);
+  });
 }
 
 class _FakeWordBankAssetBundle extends CachingAssetBundle {
