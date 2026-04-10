@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../../domain/models/builtin_word_entry.dart';
@@ -46,6 +47,7 @@ class BuiltinWordBankRepository {
       <String, List<BuiltinWordEntry>>{};
   final Map<String, Future<List<BuiltinWordEntry>>> _loadingShardEntries =
       <String, Future<List<BuiltinWordEntry>>>{};
+  final Set<String> _searchPrimedShardPaths = <String>{};
   List<BuiltinWordEntry>? _cachedEntries;
   Future<List<BuiltinWordEntry>>? _loadingEntriesFuture;
   Map<BuiltinWordBankAudienceFilter, int>? _cachedFilterCounts;
@@ -140,7 +142,7 @@ class BuiltinWordBankRepository {
             .map((card) => _assetPathForWord(card.word))
             .whereType<String>()
             .toSet()) {
-      final shardEntries = await _loadShard(shardPath);
+      final shardEntries = await _loadShard(shardPath, primeForSearch: false);
       for (final entry in shardEntries) {
         if (sampleKeys.contains(_normalizeRecommendationKey(entry.word))) {
           supportEntries.add(entry);
@@ -166,7 +168,7 @@ class BuiltinWordBankRepository {
     var visitedShardCount = 0;
 
     for (final shardPath in rotatedShardPaths) {
-      final shardEntries = await _loadShard(shardPath);
+      final shardEntries = await _loadShard(shardPath, primeForSearch: false);
       visitedShardCount += 1;
 
       for (final entry in shardEntries) {
@@ -302,15 +304,25 @@ class BuiltinWordBankRepository {
     return Map<BuiltinWordBankAudienceFilter, int>.unmodifiable(counts);
   }
 
-  Future<List<BuiltinWordEntry>> _loadShard(String assetPath) async {
+  Future<List<BuiltinWordEntry>> _loadShard(
+    String assetPath, {
+    bool primeForSearch = true,
+  }) async {
     final cachedEntries = _cachedShardEntries[assetPath];
     if (cachedEntries != null) {
+      if (primeForSearch) {
+        _primeShardForSearch(assetPath, cachedEntries);
+      }
       return cachedEntries;
     }
 
     final inFlight = _loadingShardEntries[assetPath];
     if (inFlight != null) {
-      return inFlight;
+      final entries = await inFlight;
+      if (primeForSearch) {
+        _primeShardForSearch(assetPath, entries);
+      }
+      return entries;
     }
 
     final loadFuture = _loadShardFromBundle(assetPath);
@@ -318,29 +330,28 @@ class BuiltinWordBankRepository {
     try {
       final entries = await loadFuture;
       _cachedShardEntries[assetPath] = entries;
+      if (primeForSearch) {
+        _primeShardForSearch(assetPath, entries);
+      }
       return entries;
     } finally {
       _loadingShardEntries.remove(assetPath);
     }
   }
 
+  void _primeShardForSearch(String assetPath, List<BuiltinWordEntry> entries) {
+    if (!_searchPrimedShardPaths.add(assetPath)) {
+      return;
+    }
+    _searchService.prime(entries);
+  }
+
   Future<List<BuiltinWordEntry>> _loadShardFromBundle(String assetPath) async {
     final rawJson = await _assetBundle.loadString(assetPath);
-    final parsed = jsonDecode(rawJson);
-    if (parsed is! List) {
-      throw FormatException('字庫資料格式錯誤：$assetPath');
-    }
-
-    final entries = parsed
-        .whereType<Map>()
-        .map(
-          (item) => BuiltinWordEntry.fromMap(
-            item.map((key, value) => MapEntry(key.toString(), value)),
-          ),
-        )
-        .where((entry) => entry.word.isNotEmpty && entry.meaning.isNotEmpty)
-        .toList(growable: false);
-    _searchService.prime(entries);
+    final entries = await compute(
+      _parseBuiltinWordEntriesOnBackground,
+      <String, String>{'assetPath': assetPath, 'rawJson': rawJson},
+    );
     return List<BuiltinWordEntry>.unmodifiable(entries);
   }
 
@@ -521,4 +532,25 @@ class BuiltinWordBankRepository {
       ),
     );
   }
+}
+
+List<BuiltinWordEntry> _parseBuiltinWordEntriesOnBackground(
+  Map<String, String> payload,
+) {
+  final assetPath = payload['assetPath'] ?? '';
+  final rawJson = payload['rawJson'] ?? '[]';
+  final parsed = jsonDecode(rawJson);
+  if (parsed is! List) {
+    throw FormatException('字庫資料格式錯誤：$assetPath');
+  }
+
+  return parsed
+      .whereType<Map>()
+      .map(
+        (item) => BuiltinWordEntry.fromMap(
+          item.map((key, value) => MapEntry(key.toString(), value)),
+        ),
+      )
+      .where((entry) => entry.word.isNotEmpty && entry.meaning.isNotEmpty)
+      .toList(growable: false);
 }

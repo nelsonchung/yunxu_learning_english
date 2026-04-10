@@ -64,6 +64,41 @@ void main() {
     expect(find.textContaining('已略過'), findsNothing);
   });
 
+  testWidgets('推薦會在背景準備完成後才顯示，不會先出現 loading spinner', (tester) async {
+    final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    final builtinRepository = _FakeBuiltinWordBankRepository(
+      delay: const Duration(milliseconds: 300),
+    );
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(value: builtinRepository),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+
+    await tester.pump();
+
+    expect(find.text('今日補新字'), findsNothing);
+    expect(find.byType(CircularProgressIndicator), findsNothing);
+
+    await tester.pump(const Duration(milliseconds: 300));
+    await tester.pumpAndSettle();
+
+    expect(find.text('今日補新字'), findsOneWidget);
+    expect(find.byIcon(Icons.add_circle_outline), findsWidgets);
+  });
+
   testWidgets('加入新字提示會在兩秒後自動消失', (tester) async {
     final wordsNotifier = _buildWordsNotifier();
     final settingsNotifier = _buildSettingsNotifier();
@@ -160,7 +195,7 @@ SettingsNotifier _buildSettingsNotifier({AppSettings? initialSettings}) {
 }
 
 class _FakeBuiltinWordBankRepository extends BuiltinWordBankRepository {
-  _FakeBuiltinWordBankRepository()
+  _FakeBuiltinWordBankRepository({this.delay = Duration.zero})
     : _entries = [
         _BuiltinWordBankFixture.entry(
           word: 'anchor',
@@ -188,6 +223,7 @@ class _FakeBuiltinWordBankRepository extends BuiltinWordBankRepository {
         ),
       ];
 
+  final Duration delay;
   final List<BuiltinWordEntry> _entries;
   int recommendationRequestCount = 0;
 
@@ -205,6 +241,9 @@ class _FakeBuiltinWordBankRepository extends BuiltinWordBankRepository {
     int? candidateLimit,
   }) async {
     recommendationRequestCount += 1;
+    if (delay > Duration.zero) {
+      await Future<void>.delayed(delay);
+    }
     return List<BuiltinWordEntry>.unmodifiable(_entries);
   }
 }

@@ -237,7 +237,6 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   WordsNotifier? _wordsNotifier;
   List<BuiltinWordEntry> _entries = const [];
   List<BuiltinWordEntry> _recommendations = const [];
-  bool _isLoading = true;
   String? _errorMessage;
   String? _loadedCandidateCacheKey;
   String? _recommendationCacheKey;
@@ -296,7 +295,6 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
         return;
       }
       setState(() {
-        _isLoading = false;
         _errorMessage = null;
         _recommendations = const [];
         _recommendationCacheKey = null;
@@ -342,7 +340,6 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
 
     if (mounted) {
       setState(() {
-        _isLoading = true;
         _errorMessage = null;
       });
     }
@@ -381,12 +378,6 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       setState(() {
         _errorMessage = '無法載入推薦字庫：$error';
       });
-    } finally {
-      if (mounted && requestVersion == _loadRequestVersion) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
     }
   }
 
@@ -701,15 +692,9 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           );
         }
 
-        if (_isLoading) {
-          return const SectionCard(
-            title: '今日補新字',
-            subtitle: '正在整理今天適合加入複習的新字',
-            child: Center(child: CircularProgressIndicator()),
-          );
-        }
+        final recommendations = _recommendations;
 
-        if (_errorMessage != null) {
+        if (_errorMessage != null && recommendations.isEmpty) {
           return SectionCard(
             title: '今日補新字',
             subtitle: '目前無法準備推薦清單',
@@ -727,7 +712,6 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
           );
         }
 
-        final recommendations = _recommendations;
         if (recommendations.isEmpty) {
           return const SizedBox.shrink();
         }
