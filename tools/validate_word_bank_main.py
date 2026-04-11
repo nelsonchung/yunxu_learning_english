@@ -5,7 +5,7 @@ import re
 import sys
 from collections import Counter
 from pathlib import Path
-from typing import List
+from typing import Any, Dict, List
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,15 +48,40 @@ def parse_args() -> argparse.Namespace:
         default=50,
         help="Maximum number of errors or warnings to print.",
     )
+    parser.add_argument(
+        "--format",
+        choices=("text", "json"),
+        default="text",
+        help="Output format.",
+    )
     return parser.parse_args()
 
 
-def add_issue(issues: List[str], word: str, message: str) -> None:
-    issues.append(f"{word}: {message}")
+def add_issue(
+    issues: List[Dict[str, str]],
+    *,
+    severity: str,
+    category: str,
+    word: str,
+    message: str,
+) -> None:
+    issues.append(
+        {
+            "severity": severity,
+            "category": category,
+            "word": word,
+            "message": message,
+        }
+    )
+
+
+def format_issue(issue: Dict[str, str]) -> str:
+    return f"{issue['word']}: {issue['message']}"
 
 
 def validate_string_list(
-    issues: List[str],
+    issues: List[Dict[str, str]],
+    *,
     word: str,
     field_name: str,
     raw_value: object,
@@ -65,19 +90,109 @@ def validate_string_list(
     if raw_value is None:
         return
     if not isinstance(raw_value, list):
-        add_issue(issues, word, f"{field_name} must be a list when present")
+        add_issue(
+            issues,
+            severity="error",
+            category="schema",
+            word=word,
+            message=f"{field_name} must be a list when present",
+        )
         return
 
     seen: set[str] = set()
     for item in raw_value:
         if not isinstance(item, str) or not item.strip():
-            add_issue(issues, word, f"{field_name} contains an invalid value")
+            add_issue(
+                issues,
+                severity="error",
+                category="field-value",
+                word=word,
+                message=f"{field_name} contains an invalid value",
+            )
             continue
         if item not in allowed_values:
-            add_issue(issues, word, f"{field_name} contains unsupported value: {item!r}")
+            add_issue(
+                issues,
+                severity="error",
+                category="field-value",
+                word=word,
+                message=f"{field_name} contains unsupported value: {item!r}",
+            )
         if item in seen:
-            add_issue(issues, word, f"{field_name} contains duplicate value: {item!r}")
+            add_issue(
+                issues,
+                severity="error",
+                category="duplicates",
+                word=word,
+                message=f"{field_name} contains duplicate value: {item!r}",
+            )
         seen.add(item)
+
+
+def group_issue_counts(issues: List[Dict[str, str]]) -> Dict[str, int]:
+    counter: Counter[str] = Counter()
+    for issue in issues:
+        counter[issue["category"]] += 1
+    return dict(counter.most_common())
+
+
+def build_payload(
+    *,
+    path: Path,
+    data: object,
+    errors: List[Dict[str, str]],
+    warnings: List[Dict[str, str]],
+    exit_code: int,
+) -> Dict[str, Any]:
+    entry_count = len(data) if isinstance(data, list) else None
+    status = "VALIDATION OK"
+    if errors:
+        status = "VALIDATION FAILED"
+    elif warnings:
+        status = "VALIDATION OK WITH WARNINGS"
+
+    return {
+        "path": str(path),
+        "file": path.name,
+        "status": status,
+        "entryCount": entry_count,
+        "errorCount": len(errors),
+        "warningCount": len(warnings),
+        "errorCategoryCounts": group_issue_counts(errors),
+        "warningCategoryCounts": group_issue_counts(warnings),
+        "errors": errors,
+        "warnings": warnings,
+        "exitCode": exit_code,
+    }
+
+
+def print_text_output(
+    *,
+    path: Path,
+    data: object,
+    errors: List[Dict[str, str]],
+    warnings: List[Dict[str, str]],
+    max_issues: int,
+) -> None:
+    if errors:
+        print(f"VALIDATION FAILED: {len(errors)} error(s), {len(warnings)} warning(s)")
+        for issue in errors[:max_issues]:
+            print(f"ERROR {format_issue(issue)}")
+        if len(errors) > max_issues:
+            print(f"... {len(errors) - max_issues} more errors")
+        if warnings:
+            print(f"WARNINGS NOT SHOWN: {len(warnings)}")
+        return
+
+    print(f"{'VALIDATION OK WITH WARNINGS' if warnings else 'VALIDATION OK'}: {len(data)} entries")
+    print(
+        "Checks: structure, duplicates, sorting, HTML markup, newline, partOfSpeech, sentence count"
+    )
+    if warnings:
+        for issue in warnings[:max_issues]:
+            print(f"WARN {format_issue(issue)}")
+        if len(warnings) > max_issues:
+            print(f"... {len(warnings) - max_issues} more warnings")
 
 
 def main() -> int:
@@ -86,23 +201,53 @@ def main() -> int:
     with path.open(encoding="utf-8") as file:
         data = json.load(file)
 
-    errors: List[str] = []
-    warnings: List[str] = []
+    errors: List[Dict[str, str]] = []
+    warnings: List[Dict[str, str]] = []
 
     if not isinstance(data, list):
-        print("ERROR: top-level JSON value must be a list")
+        add_issue(
+            errors,
+            severity="error",
+            category="schema",
+            word="GLOBAL",
+            message="top-level JSON value must be a list",
+        )
+        payload = build_payload(
+            path=path,
+            data=data,
+            errors=errors,
+            warnings=warnings,
+            exit_code=1,
+        )
+        if args.format == "json":
+            json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
+            sys.stdout.write("\n")
+        else:
+            print("ERROR: top-level JSON value must be a list")
         return 1
 
     words = []
     for index, item in enumerate(data):
         word = f"index:{index}"
         if not isinstance(item, dict):
-            errors.append(f"{word}: item must be an object")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="item must be an object",
+            )
             continue
 
         actual_word = item.get("word")
         if not isinstance(actual_word, str) or not actual_word.strip():
-            errors.append(f"{word}: missing or invalid word")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="missing or invalid word",
+            )
             continue
         word = actual_word
         words.append(word)
@@ -117,104 +262,209 @@ def main() -> int:
         difficulty_level = item.get("difficultyLevel")
 
         if meaning is None:
-            add_issue(errors, word, "missing meaning")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="missing meaning",
+            )
         elif not isinstance(meaning, str):
-            add_issue(errors, word, f"meaning must be a string, got {type(meaning).__name__}")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message=f"meaning must be a string, got {type(meaning).__name__}",
+            )
         elif not meaning.strip():
-            add_issue(errors, word, "meaning is empty")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="meaning is empty",
+            )
         elif HTML_TAG_RE.search(meaning):
-            add_issue(errors, word, "meaning contains HTML or wiki markup")
+            add_issue(
+                errors,
+                severity="error",
+                category="markup",
+                word=word,
+                message="meaning contains HTML or wiki markup",
+            )
         elif "\n" in meaning:
-            add_issue(warnings, word, "meaning contains newline")
+            add_issue(
+                warnings,
+                severity="warning",
+                category="newline",
+                word=word,
+                message="meaning contains newline",
+            )
         elif "\\n" in meaning:
-            add_issue(warnings, word, "meaning contains escaped newline")
+            add_issue(
+                warnings,
+                severity="warning",
+                category="newline",
+                word=word,
+                message="meaning contains escaped newline",
+            )
 
         if not isinstance(part_of_speech, str) or not part_of_speech.strip():
-            add_issue(errors, word, "missing or empty partOfSpeech")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="missing or empty partOfSpeech",
+            )
         elif part_of_speech not in ALLOWED_POS:
-            add_issue(warnings, word, f"legacy or non-standard partOfSpeech: {part_of_speech!r}")
+            add_issue(
+                warnings,
+                severity="warning",
+                category="field-value",
+                word=word,
+                message=f"legacy or non-standard partOfSpeech: {part_of_speech!r}",
+            )
 
         if not isinstance(sentences, list):
-            add_issue(errors, word, "sentences must be a list")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message="sentences must be a list",
+            )
             continue
         if len(sentences) != 2:
-            add_issue(errors, word, f"sentences must contain exactly 2 items, got {len(sentences)}")
+            add_issue(
+                errors,
+                severity="error",
+                category="schema",
+                word=word,
+                message=f"sentences must contain exactly 2 items, got {len(sentences)}",
+            )
         for sentence_index, sentence in enumerate(sentences):
             if not isinstance(sentence, str) or not sentence.strip():
-                add_issue(errors, word, f"sentence {sentence_index + 1} is missing or empty")
+                add_issue(
+                    errors,
+                    severity="error",
+                    category="schema",
+                    word=word,
+                    message=f"sentence {sentence_index + 1} is missing or empty",
+                )
                 continue
             if "\n" in sentence:
-                add_issue(warnings, word, f"sentence {sentence_index + 1} contains newline")
+                add_issue(
+                    warnings,
+                    severity="warning",
+                    category="newline",
+                    word=word,
+                    message=f"sentence {sentence_index + 1} contains newline",
+                )
             elif "\\n" in sentence:
-                add_issue(warnings, word, f"sentence {sentence_index + 1} contains escaped newline")
+                add_issue(
+                    warnings,
+                    severity="warning",
+                    category="newline",
+                    word=word,
+                    message=f"sentence {sentence_index + 1} contains escaped newline",
+                )
             if HTML_TAG_RE.search(sentence):
-                add_issue(errors, word, f"sentence {sentence_index + 1} contains HTML or wiki markup")
+                add_issue(
+                    errors,
+                    severity="error",
+                    category="markup",
+                    word=word,
+                    message=f"sentence {sentence_index + 1} contains HTML or wiki markup",
+                )
 
         validate_string_list(
             errors,
-            word,
-            "schoolLevels",
-            school_levels,
-            ALLOWED_SCHOOL_LEVELS,
+            word=word,
+            field_name="schoolLevels",
+            raw_value=school_levels,
+            allowed_values=ALLOWED_SCHOOL_LEVELS,
         )
         validate_string_list(
             errors,
-            word,
-            "examTags",
-            exam_tags,
-            ALLOWED_EXAM_TAGS,
+            word=word,
+            field_name="examTags",
+            raw_value=exam_tags,
+            allowed_values=ALLOWED_EXAM_TAGS,
         )
         validate_string_list(
             errors,
-            word,
-            "audienceTags",
-            audience_tags,
-            ALLOWED_AUDIENCE_TAGS,
+            word=word,
+            field_name="audienceTags",
+            raw_value=audience_tags,
+            allowed_values=ALLOWED_AUDIENCE_TAGS,
         )
         validate_string_list(
             errors,
-            word,
-            "sourceTags",
-            source_tags,
-            ALLOWED_SOURCE_TAGS,
+            word=word,
+            field_name="sourceTags",
+            raw_value=source_tags,
+            allowed_values=ALLOWED_SOURCE_TAGS,
         )
         if difficulty_level is not None:
             if not isinstance(difficulty_level, int):
-                add_issue(errors, word, "difficultyLevel must be an integer when present")
+                add_issue(
+                    errors,
+                    severity="error",
+                    category="field-value",
+                    word=word,
+                    message="difficultyLevel must be an integer when present",
+                )
             elif difficulty_level < 1 or difficulty_level > 6:
-                add_issue(errors, word, f"difficultyLevel out of range: {difficulty_level}")
+                add_issue(
+                    errors,
+                    severity="error",
+                    category="field-value",
+                    word=word,
+                    message=f"difficultyLevel out of range: {difficulty_level}",
+                )
 
     duplicates = sorted(word for word, count in Counter(words).items() if count > 1)
     for word in duplicates:
-        add_issue(errors, word, "duplicate word entry")
+        add_issue(
+            errors,
+            severity="error",
+            category="duplicates",
+            word=word,
+            message="duplicate word entry",
+        )
 
     if words != sorted(words, key=str.casefold):
-        errors.append("GLOBAL: word list is not sorted by casefold()")
+        add_issue(
+            errors,
+            severity="error",
+            category="sorting",
+            word="GLOBAL",
+            message="word list is not sorted by casefold()",
+        )
 
-    if errors:
-        print(f"VALIDATION FAILED: {len(errors)} error(s), {len(warnings)} warning(s)")
-        for issue in errors[: args.max_issues]:
-            print(f"ERROR {issue}")
-        if len(errors) > args.max_issues:
-            print(f"... {len(errors) - args.max_issues} more errors")
-        if warnings:
-            print(f"WARNINGS NOT SHOWN: {len(warnings)}")
-        return 1
-
-    status = "VALIDATION OK"
-    if warnings:
-        status = "VALIDATION OK WITH WARNINGS"
-    print(f"{status}: {len(data)} entries")
-    print(
-        "Checks: structure, duplicates, sorting, HTML markup, newline, partOfSpeech, sentence count"
+    exit_code = 1 if errors else 1 if warnings and args.fail_on_warnings else 0
+    payload = build_payload(
+        path=path,
+        data=data,
+        errors=errors,
+        warnings=warnings,
+        exit_code=exit_code,
     )
-    if warnings:
-        for issue in warnings[: args.max_issues]:
-            print(f"WARN {issue}")
-        if len(warnings) > args.max_issues:
-            print(f"... {len(warnings) - args.max_issues} more warnings")
-        return 1 if args.fail_on_warnings else 0
-    return 0
+
+    if args.format == "json":
+        json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
+        sys.stdout.write("\n")
+    else:
+        print_text_output(
+            path=path,
+            data=data,
+            errors=errors,
+            warnings=warnings,
+            max_issues=args.max_issues,
+        )
+    return exit_code
 
 
 if __name__ == "__main__":

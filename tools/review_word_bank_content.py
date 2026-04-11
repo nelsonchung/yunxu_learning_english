@@ -5,7 +5,7 @@ import re
 import sys
 from collections import Counter
 from pathlib import Path
-from typing import Optional
+from typing import Dict, Optional
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +25,28 @@ TEMPLATE_SENTENCE_PATTERNS = [
     (re.compile(r"^The note explained ", re.IGNORECASE), "template_generated_sentence", 2),
     (re.compile(r"^The article explained ", re.IGNORECASE), "template_generated_sentence", 2),
     (re.compile(r"^The textbook defined ", re.IGNORECASE), "template_generated_sentence", 2),
+    (re.compile(r"^Writers use .+ for ", re.IGNORECASE), "template_writers_use_sentence", 3),
+    (
+        re.compile(r"^Writers use .+ to describe something that is ", re.IGNORECASE),
+        "template_writers_use_sentence",
+        3,
+    ),
+    (re.compile(r"^Writers use .+ to mean ", re.IGNORECASE), "template_writers_use_sentence", 3),
+    (
+        re.compile(r"^The word .+ still appears in older books and notes\.", re.IGNORECASE),
+        "template_older_books_sentence",
+        3,
+    ),
+    (
+        re.compile(r"^In the report, the sample looked .+ to the researchers\.", re.IGNORECASE),
+        "template_report_sample_sentence",
+        3,
+    ),
+    (
+        re.compile(r"^How to use .+ in a sentence\.", re.IGNORECASE),
+        "sentence_prompt_pollution",
+        4,
+    ),
     (
         re.compile(r"^She adjusted the sample .+ to match the description in the manual\.", re.IGNORECASE),
         "template_adverb_sentence",
@@ -48,6 +70,9 @@ MEANING_PATTERNS = [
     (re.compile(r"\b(plural of|past tense of|past participle of|present participle of|third-person singular|comparative of|superlative of|inflection of)\b", re.IGNORECASE), "lexicography_inflection_gloss", 4),
     (re.compile(r"\b(surname|given name|proper noun)\b", re.IGNORECASE), "lexicography_name_gloss", 3),
     (re.compile(r"^罕見或專門用語。?$"), "placeholder_meaning", 4),
+    (re.compile(r"^罕見或專門的英語術語", re.IGNORECASE), "placeholder_meaning", 4),
+    (re.compile(r"如何(?:用|使用).{0,30}造句"), "meaning_prompt_pollution", 5),
+    (re.compile(r"How to use .+ in a sentence", re.IGNORECASE), "meaning_prompt_pollution", 5),
 ]
 
 BAD_TRANSLATION_MARKERS = [
@@ -97,12 +122,26 @@ def has_ascii_letter(text: str) -> bool:
     return any(char.isascii() and char.isalpha() for char in text)
 
 
-def translation_contains_word(sentence: str, word: str) -> bool:
-    lower_word = word.casefold()
+def split_bilingual_sentence(sentence: str) -> tuple[str, str]:
     for index, char in enumerate(sentence):
         if "\u4e00" <= char <= "\u9fff":
-            return lower_word in sentence[index:].casefold()
-    return False
+            start = index
+            while start > 0 and sentence[start - 1].isspace():
+                start -= 1
+            return sentence[:start].strip(), sentence[start:].strip()
+    return sentence.strip(), ""
+
+
+def translation_contains_word(sentence: str, word: str) -> bool:
+    _, translation = split_bilingual_sentence(sentence)
+    if not translation:
+        return False
+    lower_word = word.casefold()
+    return lower_word in translation.casefold()
+
+
+def english_half_repeats_meaning_prompt(text: str) -> bool:
+    return bool(re.search(r"How to use .+ in a sentence", text, re.IGNORECASE))
 
 
 def review_entry(index: int, entry: dict) -> Optional[dict]:
@@ -118,8 +157,10 @@ def review_entry(index: int, entry: dict) -> Optional[dict]:
             score += weight
 
     for sentence_index, sentence in enumerate(sentences, start=1):
+        english_half, translation_half = split_bilingual_sentence(sentence)
+
         for pattern, reason, weight in TEMPLATE_SENTENCE_PATTERNS:
-            if pattern.search(sentence):
+            if pattern.search(english_half):
                 reasons.append(f"{reason}:s{sentence_index}")
                 score += weight
 
@@ -128,7 +169,11 @@ def review_entry(index: int, entry: dict) -> Optional[dict]:
                 reasons.append(f"{reason}:s{sentence_index}")
                 score += weight
 
-        if sentence and sentence[0].isascii() and sentence[0].islower():
+        if english_half_repeats_meaning_prompt(english_half):
+            reasons.append(f"sentence_prompt_pollution:s{sentence_index}")
+            score += 4
+
+        if english_half and english_half[0].isascii() and english_half[0].islower():
             reasons.append(f"sentence_fragment_style:s{sentence_index}")
             score += 1
 
@@ -140,6 +185,10 @@ def review_entry(index: int, entry: dict) -> Optional[dict]:
             reasons.append(f"untranslated_word_in_translation:s{sentence_index}")
             score += 2
 
+        if translation_half and english_half and translation_half == english_half:
+            reasons.append(f"copied_translation_half:s{sentence_index}")
+            score += 3
+
     if score == 0:
         return None
 
@@ -148,9 +197,20 @@ def review_entry(index: int, entry: dict) -> Optional[dict]:
         "word": word,
         "score": score,
         "reasons": reasons,
+        "reasonCounts": dict(Counter(reason.split(":")[0] for reason in reasons).most_common()),
         "meaning": meaning,
         "partOfSpeech": entry.get("partOfSpeech", ""),
         "sentences": sentences,
+    }
+
+
+def build_payload(path: Path, results: list[dict], reason_counts: Counter[str]) -> Dict[str, object]:
+    return {
+        "path": str(path),
+        "file": path.name,
+        "candidateCount": len(results),
+        "reasonCounts": dict(reason_counts.most_common()),
+        "candidates": results,
     }
 
 
@@ -178,12 +238,7 @@ def main() -> int:
     results.sort(key=lambda item: (-item["score"], item["word"]))
 
     if args.format == "json":
-        payload = {
-            "path": str(path),
-            "candidateCount": len(results),
-            "reasonCounts": dict(reason_counts.most_common()),
-            "candidates": results,
-        }
+        payload = build_payload(path, results, reason_counts)
         json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
         return 0
