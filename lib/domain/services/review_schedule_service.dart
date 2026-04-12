@@ -15,6 +15,8 @@ class ReviewScheduleService {
       return card.copyWith(
         nextReviewIndex: nextIndex,
         history: updatedHistory,
+        reviewState: WordReviewState.active,
+        masteredAt: null,
       );
     }
 
@@ -25,14 +27,27 @@ class ReviewScheduleService {
       nextReviewIndex: nextIndex,
       nextReviewDate: nextDate,
       history: updatedHistory,
+      reviewState: WordReviewState.active,
+      masteredAt: null,
     );
+  }
+
+  WordCard markMastered(WordCard card, DateTime now) {
+    return card.copyWith(
+      reviewState: WordReviewState.mastered,
+      masteredAt: now,
+    );
+  }
+
+  WordCard resumeReview(WordCard card) {
+    return card.copyWith(reviewState: WordReviewState.active, masteredAt: null);
   }
 
   bool isDueOnOrBefore(WordCard card, DateTime day) {
     if (card.isDeleted) {
       return false;
     }
-    if (card.nextReviewIndex >= card.reviewSchedule.length) {
+    if (card.isReviewFinished) {
       return false;
     }
     final endOfDay = DateTime(day.year, day.month, day.day, 23, 59, 59);

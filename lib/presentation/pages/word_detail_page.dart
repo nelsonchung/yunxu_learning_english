@@ -143,14 +143,30 @@ class WordDetailPage extends StatelessWidget {
                               ),
                               _InfoChip(
                                 icon: Icons.schedule,
-                                label:
-                                    '下次複習 ${formatDate(card.nextReviewDate)}',
+                                label: card.isMastered
+                                    ? '狀態 ${card.reviewState.label}'
+                                    : card.hasCompletedReviewSchedule
+                                    ? '狀態 已完成複習週期'
+                                    : '下次複習 ${formatDate(card.nextReviewDate)}',
                               ),
                               _InfoChip(
                                 icon: Icons.translate,
                                 label:
                                     '${card.partOfSpeech.label} · $meaningText',
                               ),
+                              if (card.isMastered)
+                                _InfoChip(
+                                  icon: Icons.school_outlined,
+                                  label: card.masteredAt == null
+                                      ? '已掌握'
+                                      : '已掌握 ${formatDate(card.masteredAt!)}',
+                                ),
+                              if (!card.isMastered &&
+                                  card.hasCompletedReviewSchedule)
+                                const _InfoChip(
+                                  icon: Icons.check_circle_outline,
+                                  label: '已完成完整複習週期',
+                                ),
                               if (card.needsCompletion)
                                 _InfoChip(
                                   icon: Icons.edit_note,
@@ -159,6 +175,73 @@ class WordDetailPage extends StatelessWidget {
                                 ),
                             ],
                           ),
+                          if (card.isMastered ||
+                              !card.hasCompletedReviewSchedule) ...[
+                            const SizedBox(height: 16),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: OutlinedButton.icon(
+                                onPressed: () async {
+                                  try {
+                                    if (card.isMastered) {
+                                      await notifier.resumeReview(card);
+                                    } else {
+                                      final confirmed = await showDialog<bool>(
+                                        context: context,
+                                        builder: (dialogContext) => AlertDialog(
+                                          title: const Text('標記為已掌握'),
+                                          content: Text(
+                                            '「${card.word}」將提前結束複習，之後不再出現在今日複習。',
+                                          ),
+                                          actions: [
+                                            TextButton(
+                                              onPressed: () => Navigator.pop(
+                                                dialogContext,
+                                                false,
+                                              ),
+                                              child: const Text('取消'),
+                                            ),
+                                            FilledButton(
+                                              onPressed: () => Navigator.pop(
+                                                dialogContext,
+                                                true,
+                                              ),
+                                              child: const Text('確認'),
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                      if (confirmed != true) {
+                                        return;
+                                      }
+                                      await notifier.markMastered(card);
+                                    }
+                                  } catch (error) {
+                                    if (!context.mounted) {
+                                      return;
+                                    }
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          card.isMastered
+                                              ? '重新加入複習失敗，請稍後再試'
+                                              : '標記已掌握失敗，請稍後再試',
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                },
+                                icon: Icon(
+                                  card.isMastered
+                                      ? Icons.restart_alt
+                                      : Icons.school_outlined,
+                                ),
+                                label: Text(
+                                  card.isMastered ? '重新加入複習' : '標記已掌握',
+                                ),
+                              ),
+                            ),
+                          ],
                         ],
                       ),
                     ),

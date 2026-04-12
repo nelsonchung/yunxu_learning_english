@@ -558,6 +558,40 @@ class WordsNotifier extends ChangeNotifier {
     }
   }
 
+  Future<void> markMastered(WordCard card) async {
+    final updated = _scheduleService
+        .markMastered(card, DateTime.now())
+        .copyWith(updatedAt: DateTime.now());
+    await _repository.update(updated);
+
+    final index = _words.indexWhere((item) => item.id == card.id);
+    if (index != -1) {
+      _words[index] = updated;
+    }
+
+    notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
+  }
+
+  Future<void> resumeReview(WordCard card) async {
+    final updated = _scheduleService
+        .resumeReview(card)
+        .copyWith(updatedAt: DateTime.now());
+    await _repository.update(updated);
+
+    final index = _words.indexWhere((item) => item.id == card.id);
+    if (index != -1) {
+      _words[index] = updated;
+    }
+
+    notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
+  }
+
   Future<void> deleteWord(WordCard card) async {
     final updated = card.copyWith(isDeleted: true, updatedAt: DateTime.now());
     await _repository.update(updated);

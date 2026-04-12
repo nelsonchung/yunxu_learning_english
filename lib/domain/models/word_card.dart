@@ -30,6 +30,8 @@ enum WordCardStatus { complete, pending }
 
 enum WordOrigin { unknown, manual, builtinWordBank }
 
+enum WordReviewState { active, mastered }
+
 extension PartOfSpeechLabel on PartOfSpeech {
   String get label {
     switch (this) {
@@ -70,6 +72,17 @@ extension WordOriginLabel on WordOrigin {
   }
 }
 
+extension WordReviewStateLabel on WordReviewState {
+  String get label {
+    switch (this) {
+      case WordReviewState.active:
+        return '複習中';
+      case WordReviewState.mastered:
+        return '已掌握';
+    }
+  }
+}
+
 class WordCard {
   static const Object _unset = Object();
 
@@ -89,6 +102,8 @@ class WordCard {
     required this.isDeleted,
     this.customTags = const [],
     this.imageCleared = false,
+    this.reviewState = WordReviewState.active,
+    this.masteredAt,
     this.imagePath,
     this.imageBytes,
   });
@@ -110,6 +125,8 @@ class WordCard {
   final bool isDeleted;
   final List<String> customTags;
   final bool imageCleared;
+  final WordReviewState reviewState;
+  final DateTime? masteredAt;
 
   static List<String> normalizeCustomTags(Iterable<String> rawTags) {
     final normalized = <String>[];
@@ -149,6 +166,10 @@ class WordCard {
       missingFields.isEmpty ? WordCardStatus.complete : WordCardStatus.pending;
 
   bool get needsCompletion => status == WordCardStatus.pending;
+  bool get isMastered => reviewState == WordReviewState.mastered;
+  bool get hasCompletedReviewSchedule =>
+      nextReviewIndex >= reviewSchedule.length;
+  bool get isReviewFinished => isMastered || hasCompletedReviewSchedule;
 
   WordCard copyWith({
     String? id,
@@ -168,6 +189,8 @@ class WordCard {
     bool? isDeleted,
     List<String>? customTags,
     bool? imageCleared,
+    WordReviewState? reviewState,
+    Object? masteredAt = _unset,
   }) {
     return WordCard(
       id: id ?? this.id,
@@ -191,6 +214,10 @@ class WordCard {
       isDeleted: isDeleted ?? this.isDeleted,
       customTags: customTags ?? this.customTags,
       imageCleared: imageCleared ?? this.imageCleared,
+      reviewState: reviewState ?? this.reviewState,
+      masteredAt: identical(masteredAt, _unset)
+          ? this.masteredAt
+          : masteredAt as DateTime?,
     );
   }
 
@@ -222,6 +249,8 @@ class WordCard {
       'isDeleted': isDeleted,
       'customTags': normalizeCustomTags(customTags),
       'imageCleared': imageCleared,
+      'reviewState': reviewState.name,
+      'masteredAt': masteredAt?.millisecondsSinceEpoch,
     };
   }
 
@@ -303,6 +332,17 @@ class WordCard {
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
     final imageClearedRaw = data['imageCleared'];
     final imageCleared = imageClearedRaw is bool ? imageClearedRaw : false;
+    final reviewStateRaw = data['reviewState'];
+    final reviewState = reviewStateRaw is String
+        ? WordReviewState.values.firstWhere(
+            (item) => item.name == reviewStateRaw,
+            orElse: () => WordReviewState.active,
+          )
+        : WordReviewState.active;
+    final masteredAtRaw = data['masteredAt'];
+    final masteredAt = masteredAtRaw is int
+        ? DateTime.fromMillisecondsSinceEpoch(masteredAtRaw)
+        : null;
 
     return WordCard(
       id: (data['id'] as String?) ?? '',
@@ -322,6 +362,8 @@ class WordCard {
       isDeleted: isDeleted,
       customTags: customTags,
       imageCleared: imageCleared,
+      reviewState: reviewState,
+      masteredAt: masteredAt,
     );
   }
 }

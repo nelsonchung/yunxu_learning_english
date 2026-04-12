@@ -168,12 +168,71 @@ void main() {
     expect(find.text('今日補新字'), findsNothing);
     expect(builtinRepository.recommendationRequestCount, 0);
   });
+
+  testWidgets('可將今日複習單字標記為已掌握', (tester) async {
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: [
+        _reviewWordCard(
+          id: 'word-mastered',
+          word: 'brisk',
+          nextReviewDate: now.subtract(const Duration(days: 1)),
+        ),
+      ],
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+
+    expect(
+      wordsNotifier.dueToday().map((card) => card.word),
+      contains('brisk'),
+    );
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    await tester.scrollUntilVisible(
+      find.widgetWithText(TextButton, '已掌握'),
+      300,
+    );
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextButton, '已掌握'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(TextButton, '已掌握').first);
+    await tester.pumpAndSettle();
+
+    expect(find.text('標記為已掌握'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(FilledButton, '確認'));
+    await tester.pumpAndSettle();
+
+    expect(wordsNotifier.dueToday(), isEmpty);
+    expect(find.text('今天沒有需要複習的單字，做得很好！'), findsOneWidget);
+    expect(wordsNotifier.findById('word-mastered')?.isMastered, isTrue);
+  });
 }
 
-WordsNotifier _buildWordsNotifier() {
+WordsNotifier _buildWordsNotifier({List<WordCard> initialCards = const []}) {
   final scheduleService = ReviewScheduleService();
   return WordsNotifier(
-    repository: _FakeWordRepository(),
+    repository: _FakeWordRepository(initialCards: initialCards),
     scheduleService: scheduleService,
     sortService: SortService(),
     imageStorage: ImageStorage(),
@@ -181,6 +240,29 @@ WordsNotifier _buildWordsNotifier() {
       scheduleService: scheduleService,
     ),
     initialSyncEnabled: false,
+  );
+}
+
+WordCard _reviewWordCard({
+  required String id,
+  required String word,
+  required DateTime nextReviewDate,
+}) {
+  final createdAt = nextReviewDate.subtract(const Duration(days: 2));
+  return WordCard(
+    id: id,
+    word: word,
+    meaning: '$word 的意思',
+    partOfSpeech: PartOfSpeech.adjective,
+    sentences: ['We learned $word yesterday.'],
+    origin: WordOrigin.manual,
+    createdAt: createdAt,
+    updatedAt: createdAt,
+    reviewSchedule: const [1, 2, 3],
+    nextReviewIndex: 0,
+    nextReviewDate: nextReviewDate,
+    history: const [],
+    isDeleted: false,
   );
 }
 
@@ -274,7 +356,10 @@ class _BuiltinWordBankFixture {
 }
 
 class _FakeWordRepository implements WordRepository {
-  final List<WordCard> _cards = <WordCard>[];
+  _FakeWordRepository({List<WordCard> initialCards = const []})
+    : _cards = List<WordCard>.from(initialCards);
+
+  final List<WordCard> _cards;
 
   @override
   Future<void> add(WordCard card) async {

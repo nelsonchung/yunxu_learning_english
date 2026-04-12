@@ -60,6 +60,44 @@ class TodayPage extends StatelessWidget {
                         );
                       }
                     },
+                    onMarkMastered: () async {
+                      final confirmed = await showDialog<bool>(
+                        context: context,
+                        builder: (dialogContext) => AlertDialog(
+                          title: const Text('標記為已掌握'),
+                          content: Text('「${card.word}」將提前結束複習，之後不再出現在今日複習。'),
+                          actions: [
+                            TextButton(
+                              onPressed: () =>
+                                  Navigator.pop(dialogContext, false),
+                              child: const Text('取消'),
+                            ),
+                            FilledButton(
+                              onPressed: () =>
+                                  Navigator.pop(dialogContext, true),
+                              child: const Text('確認'),
+                            ),
+                          ],
+                        ),
+                      );
+
+                      if (confirmed != true) {
+                        return;
+                      }
+
+                      try {
+                        await notifier.markMastered(card);
+                      } catch (error, stackTrace) {
+                        debugPrint('markMastered failed: $error');
+                        debugPrintStack(stackTrace: stackTrace);
+                        if (!context.mounted) {
+                          return;
+                        }
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('標記已掌握失敗，請稍後再試')),
+                        );
+                      }
+                    },
                     onTap: () => Navigator.pushNamed(
                       context,
                       '/detail',
@@ -884,12 +922,14 @@ class _ReviewCard extends StatelessWidget {
   const _ReviewCard({
     required this.card,
     required this.onReview,
+    required this.onMarkMastered,
     required this.onTap,
     required this.showImage,
   });
 
   final WordCard card;
   final Future<void> Function() onReview;
+  final Future<void> Function() onMarkMastered;
   final VoidCallback onTap;
   final bool showImage;
 
@@ -977,6 +1017,11 @@ class _ReviewCard extends StatelessWidget {
                   children: [
                     TextButton(onPressed: onTap, child: const Text('查看詳情')),
                     const Spacer(),
+                    TextButton(
+                      onPressed: () => unawaited(onMarkMastered()),
+                      child: const Text('已掌握'),
+                    ),
+                    const SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: () => unawaited(onReview()),
                       child: const Text('完成複習'),

@@ -520,6 +520,8 @@ class CloudSyncService {
             .map((item) => item.millisecondsSinceEpoch)
             .toList(),
         'isDeleted': card.isDeleted,
+        'reviewState': card.reviewState.name,
+        'masteredAt': card.masteredAt?.millisecondsSinceEpoch,
       };
     }
 
@@ -556,6 +558,8 @@ class CloudSyncService {
           .map((item) => item.millisecondsSinceEpoch)
           .toList(),
       'isDeleted': card.isDeleted,
+      'reviewState': card.reviewState.name,
+      'masteredAt': card.masteredAt?.millisecondsSinceEpoch,
     };
 
     if (typedImageBytes != null) {
@@ -635,6 +639,17 @@ class CloudSyncService {
 
     final isDeletedRaw = data['isDeleted'];
     final isDeleted = isDeletedRaw is bool ? isDeletedRaw : false;
+    final reviewStateRaw = data['reviewState'];
+    final reviewState = reviewStateRaw is String
+        ? WordReviewState.values.firstWhere(
+            (item) => item.name == reviewStateRaw,
+            orElse: () => WordReviewState.active,
+          )
+        : WordReviewState.active;
+    final masteredAtRaw = data['masteredAt'];
+    final masteredAt = masteredAtRaw is int
+        ? DateTime.fromMillisecondsSinceEpoch(masteredAtRaw)
+        : null;
 
     return WordCard(
       id: (data['id'] as String?) ?? '',
@@ -654,6 +669,8 @@ class CloudSyncService {
       history: history,
       isDeleted: isDeleted,
       customTags: customTags,
+      reviewState: reviewState,
+      masteredAt: masteredAt,
     );
   }
 

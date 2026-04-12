@@ -334,7 +334,11 @@ class _WordsListPageState extends State<WordsListPage> {
                                     ],
                                     const SizedBox(height: 8),
                                     Text(
-                                      '建立：${formatDate(card.createdAt)}  ·  下次：${formatDate(card.nextReviewDate)}',
+                                      card.isMastered
+                                          ? '建立：${formatDate(card.createdAt)}  ·  狀態：已掌握'
+                                          : card.hasCompletedReviewSchedule
+                                          ? '建立：${formatDate(card.createdAt)}  ·  狀態：已完成複習週期'
+                                          : '建立：${formatDate(card.createdAt)}  ·  下次：${formatDate(card.nextReviewDate)}',
                                       style: Theme.of(context)
                                           .textTheme
                                           .bodySmall
