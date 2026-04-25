@@ -689,6 +689,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       await notifier.addWord(
         word: entry.word,
         meaning: entry.meaning,
+        memoryHint: entry.memoryHint,
         partOfSpeech: entry.partOfSpeech,
         sentences: _sentencesForAdd(entry),
         origin: WordOrigin.builtinWordBank,

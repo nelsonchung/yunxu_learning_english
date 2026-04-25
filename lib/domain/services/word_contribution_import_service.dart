@@ -89,6 +89,7 @@ class WordContributionImportService {
         id: _uuid.v4(),
         word: word,
         meaning: _readTrimmedString(map['meaning']),
+        memoryHint: _readTrimmedString(map['memoryHint']),
         partOfSpeech: _parsePartOfSpeech(map['partOfSpeech']),
         sentences: _readSentences(map['sentences']),
         origin: WordOrigin.manual,

@@ -24,6 +24,7 @@ class AddWordPage extends StatefulWidget {
 class _AddWordPageState extends State<AddWordPage> {
   final _wordController = TextEditingController();
   final _meaningController = TextEditingController();
+  final _memoryHintController = TextEditingController();
   final List<TextEditingController> _sentenceControllers = [
     TextEditingController(),
   ];
@@ -38,6 +39,7 @@ class _AddWordPageState extends State<AddWordPage> {
   void dispose() {
     _wordController.dispose();
     _meaningController.dispose();
+    _memoryHintController.dispose();
     for (final controller in _sentenceControllers) {
       controller.dispose();
     }
@@ -147,6 +149,7 @@ class _AddWordPageState extends State<AddWordPage> {
   Future<void> _save() async {
     final word = _wordController.text.trim();
     final meaning = _meaningController.text.trim();
+    final memoryHint = _memoryHintController.text.trim();
     final sentences = _sentenceControllers
         .map((controller) => controller.text.trim())
         .where((text) => text.isNotEmpty)
@@ -167,6 +170,7 @@ class _AddWordPageState extends State<AddWordPage> {
     await notifier.addWord(
       word: word,
       meaning: meaning,
+      memoryHint: memoryHint,
       partOfSpeech: _partOfSpeech,
       sentences: sentences,
       customTags: _customTags,
@@ -212,6 +216,19 @@ class _AddWordPageState extends State<AddWordPage> {
                   decoration: const InputDecoration(hintText: '例如：靈感'),
                   minLines: 2,
                   maxLines: 4,
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '記憶聯想',
+                subtitle: '可寫生活畫面、字根拆解或其他幫助記憶的說明',
+                child: TextField(
+                  controller: _memoryHintController,
+                  decoration: const InputDecoration(
+                    hintText: '例如：harvest 想到秋天收成，把努力種下的東西收回來。',
+                  ),
+                  minLines: 2,
+                  maxLines: 5,
                 ),
               ),
               const SizedBox(height: 16),

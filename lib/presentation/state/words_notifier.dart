@@ -386,6 +386,7 @@ class WordsNotifier extends ChangeNotifier {
     required String meaning,
     required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    String memoryHint = '',
     List<String> customTags = const [],
     WordOrigin origin = WordOrigin.manual,
     File? imageFile,
@@ -401,6 +402,7 @@ class WordsNotifier extends ChangeNotifier {
         .toList();
 
     final trimmedMeaning = meaning.trim();
+    final trimmedMemoryHint = memoryHint.trim();
     final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
 
     final now = DateTime.now();
@@ -413,6 +415,7 @@ class WordsNotifier extends ChangeNotifier {
       id: _uuid.v4(),
       word: trimmedWord,
       meaning: trimmedMeaning,
+      memoryHint: trimmedMemoryHint,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
       origin: origin,
@@ -473,6 +476,7 @@ class WordsNotifier extends ChangeNotifier {
     required String meaning,
     required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    String memoryHint = '',
     List<String> customTags = const [],
     File? imageFile,
     bool removeImage = false,
@@ -488,6 +492,7 @@ class WordsNotifier extends ChangeNotifier {
         .toList();
 
     final trimmedMeaning = meaning.trim();
+    final trimmedMemoryHint = memoryHint.trim();
     final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
 
     var legacyPath = card.imagePath;
@@ -519,6 +524,7 @@ class WordsNotifier extends ChangeNotifier {
     final updated = card.copyWith(
       word: trimmedWord,
       meaning: trimmedMeaning,
+      memoryHint: trimmedMemoryHint,
       partOfSpeech: partOfSpeech,
       sentences: cleanedSentences,
       customTags: cleanedCustomTags,

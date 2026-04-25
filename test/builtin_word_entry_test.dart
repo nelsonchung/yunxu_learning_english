@@ -25,6 +25,7 @@ void main() {
     final entry = BuiltinWordEntry.fromMap({
       'word': 'ambulatory',
       'meaning': '流動的；步行的',
+      'memoryHint': '看到 ambulatory 想到 ambulance 會移動。',
       'partOfSpeech': 'adjective',
       'sentences': const [
         'The report describes the result as ambulatory.',
@@ -33,6 +34,7 @@ void main() {
     });
 
     expect(entry.meaning, '流動的；步行的');
+    expect(entry.memoryHint, '看到 ambulatory 想到 ambulance 會移動。');
     expect(entry.partOfSpeech, PartOfSpeech.adjective);
   });
 }

@@ -68,10 +68,12 @@ class BuiltinWordEntry {
     required this.audienceTags,
     required this.sourceTags,
     this.difficultyLevel,
+    this.memoryHint = '',
   });
 
   final String word;
   final String meaning;
+  final String memoryHint;
   final PartOfSpeech partOfSpeech;
   final List<String> sentences;
   final int sourcePage;
@@ -124,6 +126,7 @@ class BuiltinWordEntry {
         allowList: true,
         separator: '；',
       ),
+      memoryHint: _readTrimmedString(map['memoryHint']),
       partOfSpeech: _parsePartOfSpeech(_readTrimmedString(map['partOfSpeech'])),
       sentences: parsedSentences,
       sourcePage: parsedSourcePage,

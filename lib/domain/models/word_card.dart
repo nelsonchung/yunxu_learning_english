@@ -104,6 +104,7 @@ class WordCard {
     this.imageCleared = false,
     this.reviewState = WordReviewState.active,
     this.masteredAt,
+    this.memoryHint = '',
     this.imagePath,
     this.imageBytes,
   });
@@ -111,6 +112,7 @@ class WordCard {
   final String id;
   final String word;
   final String meaning;
+  final String memoryHint;
   final PartOfSpeech partOfSpeech;
   final List<String> sentences;
   final WordOrigin origin;
@@ -175,6 +177,7 @@ class WordCard {
     String? id,
     String? word,
     String? meaning,
+    String? memoryHint,
     PartOfSpeech? partOfSpeech,
     List<String>? sentences,
     WordOrigin? origin,
@@ -196,6 +199,7 @@ class WordCard {
       id: id ?? this.id,
       word: word ?? this.word,
       meaning: meaning ?? this.meaning,
+      memoryHint: memoryHint ?? this.memoryHint,
       partOfSpeech: partOfSpeech ?? this.partOfSpeech,
       sentences: sentences ?? this.sentences,
       origin: origin ?? this.origin,
@@ -235,6 +239,7 @@ class WordCard {
       'id': id,
       'word': word,
       'meaning': meaning,
+      'memoryHint': memoryHint.trim(),
       'partOfSpeech': partOfSpeech.name,
       'sentences': normalizedSentences,
       'origin': origin.name,
@@ -348,6 +353,7 @@ class WordCard {
       id: (data['id'] as String?) ?? '',
       word: (data['word'] as String?) ?? '',
       meaning: (data['meaning'] as String?) ?? '',
+      memoryHint: (data['memoryHint'] as String?)?.trim() ?? '',
       partOfSpeech: parsedPart,
       sentences: sentences,
       origin: parsedOrigin,

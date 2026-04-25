@@ -33,6 +33,7 @@
 必要欄位與型別：
 - `word` (String)
 - `meaning` (String)
+- `memoryHint` (String)
 - `partOfSpeech` (String)
 - `sentences` (String, List)
 - `reviewSchedule` (Int64, List)

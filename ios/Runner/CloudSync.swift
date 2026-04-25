@@ -42,6 +42,7 @@ final class CloudSyncHandler {
 
       ckRecord["word"] = record["word"] as? NSString ?? ""
       ckRecord["meaning"] = record["meaning"] as? NSString ?? ""
+      ckRecord["memoryHint"] = record["memoryHint"] as? NSString ?? ""
       ckRecord["partOfSpeech"] = record["partOfSpeech"] as? NSString ?? ""
 
       if let sentences = record["sentences"] as? [String] {
@@ -258,6 +259,7 @@ final class CloudSyncHandler {
       "id": record.recordID.recordName,
       "word": record["word"] as? String ?? "",
       "meaning": record["meaning"] as? String ?? "",
+      "memoryHint": record["memoryHint"] as? String ?? "",
       "partOfSpeech": record["partOfSpeech"] as? String ?? "",
       "sentences": record["sentences"] as? [String] ?? [],
       "reviewSchedule": (record["reviewSchedule"] as? [NSNumber])?.map { $0.intValue } ?? [],

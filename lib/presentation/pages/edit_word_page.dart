@@ -24,6 +24,7 @@ class EditWordPage extends StatefulWidget {
 class _EditWordPageState extends State<EditWordPage> {
   final _wordController = TextEditingController();
   final _meaningController = TextEditingController();
+  final _memoryHintController = TextEditingController();
   final List<TextEditingController> _sentenceControllers = [];
   final _picker = ImagePicker();
 
@@ -41,6 +42,7 @@ class _EditWordPageState extends State<EditWordPage> {
   void dispose() {
     _wordController.dispose();
     _meaningController.dispose();
+    _memoryHintController.dispose();
     for (final controller in _sentenceControllers) {
       controller.dispose();
     }
@@ -65,6 +67,7 @@ class _EditWordPageState extends State<EditWordPage> {
     if (card != null) {
       _wordController.text = card.word;
       _meaningController.text = card.meaning;
+      _memoryHintController.text = card.memoryHint;
       _partOfSpeech = card.partOfSpeech;
       _customTags = card.customTags;
       _existingImagePath = card.imagePath;
@@ -205,6 +208,7 @@ class _EditWordPageState extends State<EditWordPage> {
 
     final word = _wordController.text.trim();
     final meaning = _meaningController.text.trim();
+    final memoryHint = _memoryHintController.text.trim();
     final sentences = _sentenceControllers
         .map((controller) => controller.text.trim())
         .where((text) => text.isNotEmpty)
@@ -226,6 +230,7 @@ class _EditWordPageState extends State<EditWordPage> {
       card: card,
       word: word,
       meaning: meaning,
+      memoryHint: memoryHint,
       partOfSpeech: _partOfSpeech,
       sentences: sentences,
       customTags: _customTags,
@@ -278,6 +283,19 @@ class _EditWordPageState extends State<EditWordPage> {
                   decoration: const InputDecoration(hintText: '例如：靈感'),
                   minLines: 2,
                   maxLines: 4,
+                ),
+              ),
+              const SizedBox(height: 16),
+              SectionCard(
+                title: '記憶聯想',
+                subtitle: '可寫生活畫面、字根拆解或其他幫助記憶的說明',
+                child: TextField(
+                  controller: _memoryHintController,
+                  decoration: const InputDecoration(
+                    hintText: '例如：harvest 想到秋天收成，把努力種下的東西收回來。',
+                  ),
+                  minLines: 2,
+                  maxLines: 5,
                 ),
               ),
               const SizedBox(height: 16),

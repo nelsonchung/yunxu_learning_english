@@ -109,6 +109,7 @@ class WordContributionShareService {
       'origin': card.origin.name,
       'word': card.word.trim(),
       'meaning': card.meaning.trim(),
+      'memoryHint': card.memoryHint.trim(),
       'partOfSpeech': card.partOfSpeech.name,
       'sentences': cleanedSentences,
       'customTags': WordCard.normalizeCustomTags(card.customTags),

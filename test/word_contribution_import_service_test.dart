@@ -24,6 +24,7 @@ void main() {
     {
       "word": "Space",
       "meaning": "太空",
+      "memoryHint": "想到抬頭看夜空，整片都是 space。",
       "partOfSpeech": "noun",
       "sentences": ["The space is vast."],
       "customTags": ["課本A 第3課", "期中考", "課本A 第3課"]
@@ -53,6 +54,7 @@ void main() {
       final card = result.importedWords.single;
       expect(card.word, 'Space');
       expect(card.meaning, '太空');
+      expect(card.memoryHint, '想到抬頭看夜空，整片都是 space。');
       expect(card.partOfSpeech, PartOfSpeech.noun);
       expect(card.sentences, ['The space is vast.']);
       expect(card.customTags, ['課本A 第3課', '期中考']);

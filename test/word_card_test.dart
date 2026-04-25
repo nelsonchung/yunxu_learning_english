@@ -8,6 +8,7 @@ void main() {
       id: 'word-1',
       word: 'inspiration',
       meaning: '靈感',
+      memoryHint: '想到一盞燈突然亮起，靈感就來了。',
       partOfSpeech: PartOfSpeech.noun,
       sentences: const ['This idea gave me inspiration.'],
       origin: WordOrigin.manual,
@@ -27,6 +28,7 @@ void main() {
 
     expect(restored.origin, WordOrigin.manual);
     expect(restored.word, 'inspiration');
+    expect(restored.memoryHint, '想到一盞燈突然亮起，靈感就來了。');
     expect(restored.customTags, ['課本A 第3課', '期中考']);
     expect(restored.reviewState, WordReviewState.mastered);
     expect(restored.masteredAt, now);
@@ -49,6 +51,7 @@ void main() {
     });
 
     expect(restored.origin, WordOrigin.unknown);
+    expect(restored.memoryHint, isEmpty);
     expect(restored.customTags, isEmpty);
     expect(restored.reviewState, WordReviewState.active);
     expect(restored.masteredAt, isNull);

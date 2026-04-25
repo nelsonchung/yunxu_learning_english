@@ -20,7 +20,7 @@
 
 | 項目 | 說明 | CloudKit RecordType |
 |------|------|---------------------|
-| 單字資料 | 字詞、詞性、解釋、例句、建立/更新時間、刪除狀態 | `WordCard` |
+| 單字資料 | 字詞、詞性、解釋、記憶聯想、例句、建立/更新時間、刪除狀態 | `WordCard` |
 | 複習資料 | `history`、`nextReviewDate`、`nextReviewIndex`、`reviewSchedule`（皆為 `WordCard` 欄位） | `WordCard` |
 | 設定 | 顯示圖片、提醒相關設定、同步頻率、同步開關 | `AppSettings` |
 | 通知偏好 | `reminderEnabled`、`reminderMinutes` | `AppSettings` |

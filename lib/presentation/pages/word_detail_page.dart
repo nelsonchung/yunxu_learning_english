@@ -60,6 +60,7 @@ class WordDetailPage extends StatelessWidget {
               final showImages = settings.showImages;
               final meaning = card.meaning.trim();
               final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
+              final memoryHint = card.memoryHint.trim();
               final canSpeak =
                   settings.pronunciationSupported &&
                   settings.pronunciationEnabled;
@@ -247,6 +248,14 @@ class WordDetailPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
+                  if (memoryHint.isNotEmpty) ...[
+                    SectionCard(
+                      title: '記憶聯想',
+                      subtitle: '幫助你把單字和生活畫面連在一起',
+                      child: Text(memoryHint),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
                   SectionCard(
                     title: '標籤',
                     subtitle: '共 ${card.customTags.length} 個',
