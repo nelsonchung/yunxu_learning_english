@@ -94,6 +94,7 @@ class WordDetailPage extends StatelessWidget {
                                 imagePath: card.imagePath,
                                 imageBytes: card.imageBytes,
                                 height: 220,
+                                enableZoom: true,
                               ),
                             if ((card.imageBytes != null &&
                                     card.imageBytes!.isNotEmpty) ||
