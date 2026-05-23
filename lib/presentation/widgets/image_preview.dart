@@ -164,22 +164,33 @@ class _ImageZoomDialog extends StatefulWidget {
   State<_ImageZoomDialog> createState() => _ImageZoomDialogState();
 }
 
-class _ImageZoomDialogState extends State<_ImageZoomDialog> {
+class _ImageZoomDialogState extends State<_ImageZoomDialog>
+    with SingleTickerProviderStateMixin {
   static const double _minScale = 1;
   static const double _maxScale = 5;
   static const double _scaleStep = 0.5;
+  static const double _doubleTapScale = 2.5;
 
   final TransformationController _controller = TransformationController();
+  late final AnimationController _zoomAnimationController;
+  Animation<Matrix4>? _zoomAnimation;
   double _scale = _minScale;
 
   @override
   void initState() {
     super.initState();
     _controller.addListener(_syncScale);
+    _zoomAnimationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 220),
+    )..addListener(_syncZoomAnimation);
   }
 
   @override
   void dispose() {
+    _zoomAnimationController
+      ..removeListener(_syncZoomAnimation)
+      ..dispose();
     _controller.removeListener(_syncScale);
     _controller.dispose();
     super.dispose();
@@ -232,15 +243,25 @@ class _ImageZoomDialogState extends State<_ImageZoomDialog> {
             Expanded(
               child: LayoutBuilder(
                 builder: (context, constraints) {
-                  return InteractiveViewer(
-                    transformationController: _controller,
-                    minScale: _minScale,
-                    maxScale: _maxScale,
-                    boundaryMargin: const EdgeInsets.all(120),
-                    child: SizedBox(
-                      width: constraints.maxWidth,
-                      height: constraints.maxHeight,
-                      child: Center(child: _buildImage()),
+                  final size = Size(
+                    constraints.maxWidth,
+                    constraints.maxHeight,
+                  );
+                  return GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: _resetZoom,
+                    onDoubleTapDown: (details) =>
+                        _zoomToTap(details.localPosition, size),
+                    child: InteractiveViewer(
+                      transformationController: _controller,
+                      minScale: _minScale,
+                      maxScale: _maxScale,
+                      boundaryMargin: const EdgeInsets.all(120),
+                      child: SizedBox(
+                        width: constraints.maxWidth,
+                        height: constraints.maxHeight,
+                        child: Center(child: _buildImage()),
+                      ),
                     ),
                   );
                 },
@@ -288,13 +309,50 @@ class _ImageZoomDialogState extends State<_ImageZoomDialog> {
   }
 
   void _setScale(double scale) {
+    _zoomAnimationController.stop();
     final nextScale = scale.clamp(_minScale, _maxScale).toDouble();
     _controller.value = Matrix4.identity()
       ..scaleByDouble(nextScale, nextScale, nextScale, 1);
   }
 
   void _resetZoom() {
-    _controller.value = Matrix4.identity();
+    _animateTo(Matrix4.identity());
+  }
+
+  void _zoomToTap(Offset localPosition, Size viewportSize) {
+    final nextScale = _doubleTapScale.clamp(_minScale, _maxScale).toDouble();
+    final nextMatrix = Matrix4.identity()
+      ..translateByDouble(
+        viewportSize.width / 2 - localPosition.dx * nextScale,
+        viewportSize.height / 2 - localPosition.dy * nextScale,
+        0,
+        1,
+      )
+      ..scaleByDouble(nextScale, nextScale, nextScale, 1);
+    _animateTo(nextMatrix);
+  }
+
+  void _animateTo(Matrix4 matrix) {
+    _zoomAnimationController.stop();
+    _zoomAnimation =
+        Matrix4Tween(
+          begin: Matrix4.copy(_controller.value),
+          end: matrix,
+        ).animate(
+          CurvedAnimation(
+            parent: _zoomAnimationController,
+            curve: Curves.easeOutCubic,
+          ),
+        );
+    _zoomAnimationController.forward(from: 0);
+  }
+
+  void _syncZoomAnimation() {
+    final matrix = _zoomAnimation?.value;
+    if (matrix == null) {
+      return;
+    }
+    _controller.value = matrix;
   }
 
   void _syncScale() {
