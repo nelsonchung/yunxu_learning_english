@@ -31,20 +31,27 @@ class WordDetailPage extends StatelessWidget {
               tooltip: '編輯單字',
             ),
           if (id != null)
-            IconButton(
-              onPressed: () async {
-                final notifier = context.read<WordsNotifier>();
-                final card = notifier.findById(id);
-                if (card == null) {
-                  return;
-                }
-                await notifier.deleteWord(card);
-                if (context.mounted) {
-                  Navigator.pop(context);
+            PopupMenuButton<_WordDetailAction>(
+              tooltip: '更多操作',
+              icon: const Icon(Icons.more_vert),
+              onSelected: (action) {
+                switch (action) {
+                  case _WordDetailAction.delete:
+                    _confirmDeleteWord(context, id);
                 }
               },
-              icon: const Icon(Icons.delete_outline),
-              tooltip: '刪除單字',
+              itemBuilder: (context) => const [
+                PopupMenuItem(
+                  value: _WordDetailAction.delete,
+                  child: Row(
+                    children: [
+                      Icon(Icons.delete_outline, color: Colors.red),
+                      SizedBox(width: 12),
+                      Text('刪除單字', style: TextStyle(color: Colors.red)),
+                    ],
+                  ),
+                ),
+              ],
             ),
         ],
       ),
@@ -317,7 +324,54 @@ class WordDetailPage extends StatelessWidget {
       ),
     );
   }
+
+  Future<void> _confirmDeleteWord(BuildContext context, String id) async {
+    final notifier = context.read<WordsNotifier>();
+    final card = notifier.findById(id);
+    if (card == null) {
+      return;
+    }
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) {
+        final colorScheme = Theme.of(dialogContext).colorScheme;
+        return AlertDialog(
+          title: const Text('刪除單字'),
+          content: Text('確定要刪除「${card.word}」嗎？這個動作無法直接復原。'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext, false),
+              child: const Text('取消'),
+            ),
+            FilledButton(
+              style: FilledButton.styleFrom(
+                backgroundColor: colorScheme.error,
+                foregroundColor: colorScheme.onError,
+              ),
+              onPressed: () => Navigator.pop(dialogContext, true),
+              child: const Text('刪除'),
+            ),
+          ],
+        );
+      },
+    );
+    if (confirmed != true || !context.mounted) {
+      return;
+    }
+
+    final latestCard = notifier.findById(id);
+    if (latestCard == null) {
+      return;
+    }
+    await notifier.deleteWord(latestCard);
+    if (context.mounted) {
+      Navigator.pop(context);
+    }
+  }
 }
+
+enum _WordDetailAction { delete }
 
 class _InfoChip extends StatelessWidget {
   const _InfoChip({required this.icon, required this.label});
