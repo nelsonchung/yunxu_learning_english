@@ -71,6 +71,10 @@ class WordDetailPage extends StatelessWidget {
               final canSpeak =
                   settings.pronunciationSupported &&
                   settings.pronunciationEnabled;
+              final imagePreviewHeight =
+                  (MediaQuery.sizeOf(context).width * 1.05)
+                      .clamp(280.0, 420.0)
+                      .toDouble();
 
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
@@ -100,7 +104,7 @@ class WordDetailPage extends StatelessWidget {
                                 imageFile: null,
                                 imagePath: card.imagePath,
                                 imageBytes: card.imageBytes,
-                                height: 220,
+                                height: imagePreviewHeight,
                                 enableZoom: true,
                               ),
                             if ((card.imageBytes != null &&
