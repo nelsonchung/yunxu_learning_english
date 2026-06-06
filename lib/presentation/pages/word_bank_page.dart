@@ -6,6 +6,8 @@ import 'package:provider/provider.dart';
 import '../../data/repositories/builtin_word_bank_repository.dart';
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/services/pronunciation_service.dart';
+import '../state/settings_notifier.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
@@ -459,6 +461,9 @@ class _WordBankCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final settings = context.watch<SettingsNotifier>();
+    final canSpeak =
+        settings.pronunciationSupported && settings.pronunciationEnabled;
     final partLabel = entry.partOfSpeech.label;
     final badges = entry.audienceLabels;
     final previewSentences = entry.sentences
@@ -488,9 +493,40 @@ class _WordBankCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    entry.word,
-                    style: Theme.of(context).textTheme.titleMedium,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          entry.word,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                      ),
+                      IconButton(
+                        visualDensity: VisualDensity.compact,
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(
+                          minWidth: 36,
+                          minHeight: 36,
+                        ),
+                        onPressed: canSpeak
+                            ? () async {
+                                final ok = await context
+                                    .read<PronunciationService>()
+                                    .speak(entry.word);
+                                if (!ok && context.mounted) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text('發音失敗，請確認裝置語音可用'),
+                                    ),
+                                  );
+                                }
+                              }
+                            : null,
+                        icon: const Icon(Icons.volume_up_outlined),
+                        tooltip: canSpeak ? '播放發音' : '請先到設定啟用發音',
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 4),
                   Text(
@@ -542,12 +578,9 @@ class _WordBankCard extends StatelessWidget {
                     ...previewSentences.map(
                       (sentence) => Padding(
                         padding: const EdgeInsets.only(bottom: 4),
-                        child: Text(
-                          sentence,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.bodySmall
-                              ?.copyWith(color: Colors.black87),
+                        child: _WordBankSentenceRow(
+                          sentence: sentence,
+                          canSpeak: canSpeak,
                         ),
                       ),
                     ),
@@ -593,6 +626,59 @@ class _WordBankCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _WordBankSentenceRow extends StatelessWidget {
+  const _WordBankSentenceRow({
+    required this.sentence,
+    required this.canSpeak,
+  });
+
+  final String sentence;
+  final bool canSpeak;
+
+  @override
+  Widget build(BuildContext context) {
+    final pronunciationService = context.read<PronunciationService>();
+    final speakableText = pronunciationService.extractEnglishUtterance(
+      sentence,
+    );
+    final canSpeakSentence = canSpeak && speakableText != null;
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Text(
+            sentence,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: Colors.black87),
+          ),
+        ),
+        const SizedBox(width: 4),
+        IconButton(
+          visualDensity: VisualDensity.compact,
+          padding: EdgeInsets.zero,
+          constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+          onPressed: canSpeakSentence
+              ? () async {
+                  final ok = await pronunciationService.speak(speakableText);
+                  if (!ok && context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('例句發音失敗，請確認裝置語音可用')),
+                    );
+                  }
+                }
+              : null,
+          icon: const Icon(Icons.volume_up_outlined, size: 18),
+          tooltip: canSpeakSentence ? '播放例句發音' : '此句目前沒有可朗讀的英文內容',
+        ),
+      ],
     );
   }
 }
