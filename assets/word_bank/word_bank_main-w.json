@@ -1,11 +1,11 @@
 [
   {
     "word": "W",
-    "meaning": "英文字母表中的第二十三個字母，大寫 W",
+    "meaning": "英文字母表中的第二十三個字母，大寫形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "Write a large W on the board. 在黑板上寫一個大寫 W。",
-      "The alphabet begins with A and ends with W here. 在這裡，字母表從 A 開始，以 W 結束。"
+      "Write a large W on the board. 在黑板上寫一個大的雙峰字母。",
+      "The letter W has two sharp points in this font. 這個字型裡，這個大寫字母有兩個尖角。"
     ],
     "audienceTags": [
       "general"
@@ -13,11 +13,11 @@
   },
   {
     "word": "w",
-    "meaning": "英文字母表中的第二十三個字母，小寫 w",
+    "meaning": "英文字母表中的第二十三個字母，小寫形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lowercase w is easy to write in print. 小寫 w 很容易用印刷體寫出來。",
-      "She practiced the letter w again and again. 她一再練習字母 w。"
+      "The lowercase w is easy to write in print. 這個小寫字母用印刷體很好寫。",
+      "She practiced the letter w again and again. 她一再練習這個小寫字母。"
     ],
     "audienceTags": [
       "general"
@@ -346,11 +346,11 @@
   },
   {
     "word": "wack",
-    "meaning": "在各種意義上，令人煩惱或令人失望的糟糕；糟糕、老套、卑鄙、不酷、一團糟。",
+    "meaning": "怪異的；糟糕的；瘋狂的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Every record they ever made was straight-up wack. 他們製作的每張唱片都非常古怪。",
-      "The report describes the result as wack. 報告稱這項結果很奇怪。"
+      "That movie was funny but a little wack. 那部電影很好笑，但有點怪。",
+      "His excuse sounded wack to everyone. 他的藉口聽起來讓大家覺得很離譜。"
     ],
     "audienceTags": [
       "general"
@@ -625,11 +625,11 @@
   },
   {
     "word": "wading",
-    "meaning": "適合涉水。",
-    "partOfSpeech": "adjective",
+    "meaning": "涉水；蹚水",
+    "partOfSpeech": "noun",
     "sentences": [
-      "The pool is too small for doing laps: it’s only a wading pool. 泳池太小，無法繞圈：它只是一個淺水池。",
-      "The report describes the result as wading. 報告將結果描述為涉水。"
+      "The children went wading in the shallow stream. 孩子們在淺溪裡涉水玩。",
+      "Wading through the flooded street took a long time. 涉水穿過淹水街道花了很久。"
     ],
     "audienceTags": [
       "general"
@@ -1276,11 +1276,11 @@
   },
   {
     "word": "wagering",
-    "meaning": "下注金額。",
+    "meaning": "下注；打賭",
     "partOfSpeech": "noun",
     "sentences": [
-      "His repeated wagerings of his allowances led him to ruin. 他反覆 下注 他的津貼導致他破產。 他反覆用自己的津貼下注，導致他破產。 他反复支付了他的津貼導致他破產。",
-      "The term wagering refers to An amount wagered. 術語「下注」是指下注的金額。 術語「下注」是指下注的金額。 術語“下注”是指下注的金額。"
+      "Online wagering is restricted in many places. 許多地方限制線上下注。",
+      "He lost money through careless wagering. 他因為隨便下注而輸了錢。"
     ],
     "audienceTags": [
       "general"
@@ -1288,11 +1288,11 @@
   },
   {
     "word": "wages",
-    "meaning": "一段時間內的總收入",
+    "meaning": "工資；薪水",
     "partOfSpeech": "noun",
     "sentences": [
-      "Factory workers demanded higher wages. 工廠工人要求提高工資。",
-      "The term wages refers to one's total income for a time period. 工資一詞是指一個人在一段時間內的總收入。"
+      "Factory wages rose this year. 今年工廠工資上升了。",
+      "She saves part of her wages every month. 她每個月都存下一部分薪水。"
     ],
     "audienceTags": [
       "general"
@@ -3171,11 +3171,11 @@
   },
   {
     "word": "waken",
-    "meaning": "喚醒",
+    "meaning": "喚醒；醒來",
     "partOfSpeech": "verb",
     "sentences": [
-      "We should try to 'waken' the problem from a different angle. 我們應該嘗試從不同角度來「waken」這個問題。",
-      "The new software will help us 'waken' tasks more efficiently. 這款新軟體將幫助我們更有效地「waken」任務。"
+      "The noise may waken the baby. 這個聲音可能會吵醒寶寶。",
+      "I usually waken before sunrise. 我通常在日出前醒來。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -3821,11 +3821,11 @@
   },
   {
     "word": "walkout",
-    "meaning": "人們以 抗議 形式離開某個地方的類似大規模行動。",
+    "meaning": "罷工；退席抗議",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term walkout refers to A similar mass action of people leaving a place as a form of protest. 罷工一詞指的是人們離開某個地方的類似大規模行動，以 抗議 的形式。 罷工一詞指的是人們離開某個地方作為抗議形式的類似大規模行動。 抗議指的是人們離開某個地方的類似大規模行動，以抗議的形式。",
-      "The lesson introduced walkout as a useful term to understand. 本課程介紹了「罷工」作為一個易於理解的有用術語。 本課程介紹了「罷工」作為一個易於理解的有用術語。 本課程介紹了“工會”作為一個易於理解的有用術語。"
+      "Workers planned a walkout on Friday. 工人計畫週五罷工。",
+      "Students held a walkout to protest the rule. 學生退席抗議那項規定。"
     ],
     "audienceTags": [
       "general"
@@ -4064,11 +4064,11 @@
   },
   {
     "word": "waller",
-    "meaning": "動物鋪床的地方。",
+    "meaning": "動物打滾或休息的地方；砌牆工",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term waller refers to the place where animals make their bed. Waller一詞指的是動物鋪床的地方。",
-      "The lesson introduced waller as a useful term to understand. 本課程介紹了 Waller 作為一個易於理解的有用術語。"
+      "The pigs left mud in the waller. 豬在打滾的泥坑裡留下泥巴。",
+      "The old waller repaired the stone fence. 那位老砌牆工修好了石牆。"
     ],
     "audienceTags": [
       "general"
@@ -4459,11 +4459,11 @@
   },
   {
     "word": "wally",
-    "meaning": "一個大的醃小黃瓜或黃瓜。",
+    "meaning": "傻瓜；大型醃黃瓜",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wally refers to a large pickled gherkin or cucumber. 「沃利」一詞指的是醃製的大黃瓜或黃瓜。",
-      "The lesson introduced wally as a useful term to understand. 本課程介紹了 wally 作為一個易於理解的有用術語。"
+      "Do not be a wally; check the address first. 別傻了，先確認地址。",
+      "He added a sliced wally to the sandwich. 他在三明治裡加了切片醃黃瓜。"
     ],
     "audienceTags": [
       "general"
@@ -4970,11 +4970,11 @@
   },
   {
     "word": "Wanapum",
-    "meaning": "瓦納彭族人；族名",
+    "meaning": "瓦納普姆族；美國西北部原住民族名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson included the history of the Wanapum people. 那堂課包含瓦納彭族人的歷史。",
-      "A Wanapum fisherman described the river in winter. 一位瓦納彭漁夫描述了冬天的河流。"
+      "The museum introduced the Wanapum people in one exhibit. 博物館在一個展區介紹瓦納普姆族。",
+      "A Wanapum elder spoke about the river. 一位瓦納普姆族長者談到那條河。"
     ],
     "audienceTags": [
       "general"
@@ -4994,11 +4994,11 @@
   },
   {
     "word": "wand",
-    "meaning": "魔術師（魔杖）、魔術師或占卜師使用的棍子或棒（占卜棒）。",
+    "meaning": "魔杖；細棒",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wand refers to a stick or rod used by a magician (a magic wand), conjurer or diviner (divining rod). 魔杖一詞是指魔術師（魔杖）、魔術師或占卜師（占卜棒）使用的棍子或棒子。",
-      "The lesson introduced wand as a useful term to understand. 本課程介紹了「魔杖」這個易於理解的有用術語。"
+      "The child waved a toy wand. 那個孩子揮著玩具魔杖。",
+      "The magician tapped the hat with his wand. 魔術師用魔杖輕敲帽子。"
     ],
     "audienceTags": [
       "general"
@@ -5039,11 +5039,11 @@
   },
   {
     "word": "wanderer",
-    "meaning": "漂泊信天翁 Diomedea exulans。",
+    "meaning": "流浪者；漂泊者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wanderer refers to The wandering albatross, Diomedea exulans. 流浪者一詞指的是流浪信天翁 Diomedea exulans。",
-      "We learned the meaning of wanderer during today's lesson. 在今天的課程中我們學習了流浪者的意義。"
+      "The wanderer slept beside the fire. 那名流浪者睡在火堆旁。",
+      "She felt like a wanderer in the new city. 她在新城市裡覺得自己像個漂泊者。"
     ],
     "audienceTags": [
       "general"
@@ -5051,11 +5051,11 @@
   },
   {
     "word": "wandering",
-    "meaning": "能夠異常地向某些方向移動。",
-    "partOfSpeech": "adjective",
+    "meaning": "漫遊；閒逛；走神的",
+    "partOfSpeech": "noun",
     "sentences": [
-      "a wandering kidney; a wandering liver 流浪的腎臟；流浪的肝臟",
-      "The report describes the result as wandering. 報告將結果描述為「徘徊」。"
+      "We spent the afternoon wandering through old streets. 我們花了一下午在老街上閒逛。",
+      "His wandering thoughts made it hard to study. 他思緒飄來飄去，很難讀書。"
     ],
     "audienceTags": [
       "general"
@@ -5492,11 +5492,11 @@
   },
   {
     "word": "waning",
-    "meaning": "變得更弱或更小。",
+    "meaning": "減弱；變小；月虧",
     "partOfSpeech": "adjective",
     "sentences": [
-      "my patience is waning 我的耐心正在減弱",
-      "The report describes the result as waning. 報告稱這一結果正在減弱。"
+      "Public interest in the topic is waning. 大眾對這個話題的興趣正在減弱。",
+      "A waning moon hung over the hills. 一輪虧月掛在山上。"
     ],
     "audienceTags": [
       "general"
@@ -6362,11 +6362,11 @@
   },
   {
     "word": "warcraft",
-    "meaning": "進行戰爭的藝術或技巧。",
+    "meaning": "戰爭技術；用兵之道",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term warcraft refers to the art or skill of conducting a war. 魔獸爭霸一詞指的是進行戰爭的藝術或技巧。",
-      "The lesson introduced warcraft as a useful term to understand. 本課介紹了魔獸爭霸這個術語，這是一個需要理解的有用術語。"
+      "The general studied warcraft for many years. 那位將軍研究用兵之道多年。",
+      "Old books on warcraft described how armies moved. 關於戰爭技術的舊書描述軍隊如何行動。"
     ],
     "audienceTags": [
       "general"
@@ -7318,11 +7318,11 @@
   },
   {
     "word": "warmer",
-    "meaning": "透過提供少量熱量來加熱（其他東西）的東西，例如熱水瓶或湯。",
+    "meaning": "保暖物；使人暖和的東西；更暖的",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term warmer refers to something that warms (something else) by providing some small amount of heat, such as a hot water bottle or a soup. 術語「溫暖器」是指透過提供少量熱量來加熱（其他東西）的東西，例如熱水瓶或湯。",
-      "The lesson introduced warmer as a useful term to understand. 本課介紹了「溫暖」這個術語，這是一個需要理解的有用術語。"
+      "She put a hand warmer in her pocket. 她把暖暖包放進口袋。",
+      "This jacket is warmer than my old one. 這件外套比我的舊外套更暖。"
     ],
     "audienceTags": [
       "general"
@@ -7417,11 +7417,11 @@
   },
   {
     "word": "warmly",
-    "meaning": "以保持溫暖溫度的方式。",
+    "meaning": "溫暖地；親切地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Be sure to dress warmly today! 今天一定要穿得暖和一點！",
-      "If someone acts warmly, they do so in a way that is in a manner that maintains warm temperature. 如果有人表現得很熱情，他們會以保持溫暖的方式這樣做。"
+      "She smiled warmly at the visitor. 她親切地對訪客微笑。",
+      "Dress warmly before you go outside. 出門前要穿暖一點。"
     ],
     "audienceTags": [
       "general"
@@ -7682,11 +7682,11 @@
   },
   {
     "word": "warped",
-    "meaning": "一個人的思想、態度等，是乖張的、奇怪的、反常的或離經叛道的。",
+    "meaning": "變形的；扭曲的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a warped sense of humour 扭曲的幽默感",
-      "The report describes the result as warped. 該報告將結果描述為扭曲的。"
+      "The wooden door became warped after the rain. 木門被雨淋後變形了。",
+      "His warped sense of humor made people uneasy. 他扭曲的幽默感讓人不舒服。"
     ],
     "audienceTags": [
       "general"
@@ -8038,11 +8038,11 @@
   },
   {
     "word": "warren",
-    "meaning": "迷宮般的地方，有通道和/或房間，很容易迷失方向；尤其是可能人滿為患的地方。",
+    "meaning": "兔穴群；迷宮般的地方",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term warren refers to a mazelike place of passages and/or rooms in which it's easy to lose oneself; especially one that may be overcrowded. 「沃倫」一詞指的是一個迷宮般的地方，裡面有通道和/或房間，很容易迷失方向。尤其是一個可能過於擁擠的地方。",
-      "The lesson introduced warren as a useful term to understand. 本課程介紹了 Warren 作為一個易於理解的有用術語。"
+      "Rabbits disappeared into the warren. 兔子消失在兔穴群裡。",
+      "The old market was a warren of narrow lanes. 老市場像迷宮一樣有許多窄巷。"
     ],
     "audienceTags": [
       "general"
@@ -8216,11 +8216,11 @@
   },
   {
     "word": "warrok",
-    "meaning": "a rare or obsolete word, used as a noun in old texts",
+    "meaning": "冷僻或已廢用的古詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary listed warrok as an old word. 詞彙表把這個詞列為古詞。",
-      "Only a few readers recognized the term warrok. 只有少數讀者認得這個詞。"
+      "The glossary listed warrok as an old word. 詞彙表把這個字列為古詞。",
+      "Only a few readers recognized warrok. 只有少數讀者認得這個冷僻字。"
     ],
     "audienceTags": [
       "general"
@@ -8228,11 +8228,11 @@
   },
   {
     "word": "warsaw",
-    "meaning": "石斑魚亞科石斑魚或石斑魚 (Epinephelus itajara) 中的任何一種。",
+    "meaning": "華沙石斑魚；華沙",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term warsaw refers to any of several species of grouper, subfamily Epinephelinae The jewfish or guasa (Epinephelus itajara). 華沙一詞是指石斑魚亞科石斑魚或石斑魚（Epinephelus itajara）中的任何一種。",
-      "The lesson introduced warsaw as a useful term to understand. 本課介紹了華沙這個術語，它是一個易於理解的有用術語。"
+      "The fisherman caught a large warsaw near the reef. 漁夫在礁石附近釣到一條大型華沙石斑。",
+      "Warsaw is the capital of Poland. 華沙是波蘭首都。"
     ],
     "audienceTags": [
       "general"
@@ -8279,11 +8279,11 @@
   },
   {
     "word": "warship",
-    "meaning": "任何為海戰而建造或武裝的船舶。",
+    "meaning": "軍艦",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term warship refers to any ship built or armed for naval combat. 軍艦一詞是指為海戰而建造或武裝的任何船舶。",
-      "The lesson introduced warship as a useful term to understand. 本課介紹了軍艦作為一個需要理解的有用術語。"
+      "A warship entered the harbor at dawn. 一艘軍艦在黎明時進入港口。",
+      "The museum has a model of an old warship. 博物館有一艘舊軍艦模型。"
     ],
     "audienceTags": [
       "general"
@@ -8387,11 +8387,11 @@
   },
   {
     "word": "wartime",
-    "meaning": "特定地點發生戰爭的時期。",
+    "meaning": "戰時；戰爭期間",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wartime refers to a period during which a war is in progress in a particular place. 戰時一詞是指在特定地點發生戰爭的時期。",
-      "The lesson introduced wartime as a useful term to understand. 本課介紹了戰時這個術語，這是一個需要理解的有用術語。"
+      "Food was scarce during wartime. 戰時食物很稀少。",
+      "Her grandfather kept wartime letters in a box. 她祖父把戰時書信收在盒子裡。"
     ],
     "audienceTags": [
       "general"
@@ -9868,11 +9868,11 @@
   },
   {
     "word": "wasteland",
-    "meaning": "沒有剩餘資源的地方；一片沙漠。",
+    "meaning": "荒地；廢墟般的地方",
     "partOfSpeech": "noun",
     "sentences": [
-      "Ten years of drought had left the area a wasteland. 十年的乾旱使該地區變成了一片荒地。",
-      "The term wasteland refers to a place with no remaining resources; a desert. 荒地是指沒有剩餘資源的地方；一片沙漠。"
+      "The abandoned factory became a wasteland. 廢棄工廠變成一片荒地。",
+      "The dry field looked like a wasteland. 乾枯的田地看起來像荒原。"
     ],
     "audienceTags": [
       "general"
@@ -10312,11 +10312,11 @@
   },
   {
     "word": "watcher",
-    "meaning": "一種被任命守護人類領域的天使，特別是那些成為墮落天使並生下拿非利人的天使之一。",
+    "meaning": "觀看者；守望者",
     "partOfSpeech": "noun",
     "sentences": [
-      "the Book of Watchers 守望者之書",
-      "The term watcher refers to a kind of angel appointed to watch over the human realm, in particular one of those who became fallen angels and begot the Nephilim. 守望者一詞指的是一種被任命看守人類領域的天使，特別是那些成為墮落天使並生下拿非利人的天使。"
+      "A bird watcher stood quietly by the lake. 一位賞鳥者安靜地站在湖邊。",
+      "The night watcher checked every door. 夜間守衛檢查了每一道門。"
     ],
     "audienceTags": [
       "general"
@@ -10336,11 +10336,11 @@
   },
   {
     "word": "watchful",
-    "meaning": "充分觀察、保持警覺或意識到。",
+    "meaning": "警覺的；留心的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The teacher kept a watchful eye on her pupils during the school trip. 在學校旅行期間，老師一直密切注意著她的學生。",
-      "Something described as watchful is fully observant, vigilant, or aware. 被描述為警覺的事物是完全觀察、警覺或意識到的。"
+      "The mother kept a watchful eye on her child. 母親留心看著孩子。",
+      "A watchful guard stood near the gate. 一名警覺的警衛站在門口附近。"
     ],
     "audienceTags": [
       "general"
@@ -10854,11 +10854,11 @@
   },
   {
     "word": "waterfront",
-    "meaning": "水體旁的土地。",
+    "meaning": "濱水區；水岸",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term waterfront refers to the land alongside a body of water. 濱水區一詞是指沿著水體的土地。",
-      "The lesson introduced waterfront as a useful term to understand. 本課介紹了濱水區這個術語，這是一個需要理解的有用術語。"
+      "We walked along the waterfront after dinner. 晚餐後，我們沿著水岸散步。",
+      "New cafes opened on the waterfront. 濱水區開了幾家新咖啡店。"
     ],
     "audienceTags": [
       "general"
@@ -11637,11 +11637,11 @@
   },
   {
     "word": "watery",
-    "meaning": "由於疾病等原因排放水或類似物質。",
+    "meaning": "水汪汪的；稀薄的；含水多的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "I took my cat to the vet because I was worried about his watery eyes. 我帶我的貓去看獸醫，因為我擔心他的眼睛會流淚。",
-      "The report describes the result as watery. 報告稱結果是水樣的。"
+      "Her eyes looked watery from the cold wind. 冷風讓她眼睛水汪汪的。",
+      "The soup was too watery. 這碗湯太稀了。"
     ],
     "audienceTags": [
       "general"
@@ -11685,11 +11685,11 @@
   },
   {
     "word": "watt",
-    "meaning": "在國際單位制中，功率的派生單位；每秒傳輸一焦耳能量的系統的功率。符號：W。",
+    "meaning": "瓦特；功率單位",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term watt refers to in the International System of Units, the derived unit of power; the power of a system in which one joule of energy is transferred per second. Symbol: W. 瓦特一詞在國際單位制中是指功率的衍生單位；每秒傳輸一焦耳能量的系統的功率。符號：W.",
-      "The lesson introduced watt as a useful term to understand. 本課程介紹了瓦特作為一個易於理解的有用術語。"
+      "This bulb uses only ten watts. 這顆燈泡只用十瓦。",
+      "The speaker has a power rating of fifty watts. 這個喇叭的功率標示為五十瓦。"
     ],
     "audienceTags": [
       "general"
@@ -12285,11 +12285,11 @@
   },
   {
     "word": "wavering",
-    "meaning": "波動的、不確定的、不確定的、不穩定的。",
+    "meaning": "搖擺；猶豫不決",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report describes the result as wavering. 報告稱這一結果搖擺不定。",
-      "Everyone noticed the wavering tone of the message. 每個人都注意到訊息中搖擺不定的語氣。"
+      "His wavering voice showed his fear. 他顫抖的聲音透露出害怕。",
+      "She was wavering between two choices. 她在兩個選擇之間猶豫。"
     ],
     "audienceTags": [
       "general"
@@ -12474,11 +12474,11 @@
   },
   {
     "word": "wavy",
-    "meaning": "滿滿的波浪。",
+    "meaning": "波浪狀的；捲曲的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "wavy swimming pool 波浪形泳池",
-      "Something described as wavy is full of waves. 形容為波浪狀的東西充滿了波浪。"
+      "She has long wavy hair. 她有一頭長長的波浪髮。",
+      "The road looked wavy in the heat. 路面在熱氣中看起來像波浪。"
     ],
     "audienceTags": [
       "general"
@@ -13307,11 +13307,11 @@
   },
   {
     "word": "wayside",
-    "meaning": "道路或小路的一側。",
+    "meaning": "路邊",
     "partOfSpeech": "noun",
     "sentences": [
-      "Many wild flowers grew on the wayside. 路邊長滿了許多野花。",
-      "The term wayside refers to The side of a road or path. 術語“路邊”是指道路或小路的一側。"
+      "Wildflowers grew by the wayside. 路邊長著野花。",
+      "They stopped at a wayside cafe. 他們在路邊咖啡店停下來。"
     ],
     "audienceTags": [
       "general"
@@ -13355,11 +13355,11 @@
   },
   {
     "word": "wayward",
-    "meaning": "故意、反常地偏離預期標準；傾向於迷失。",
+    "meaning": "任性的；難以管束的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as wayward is given to a wilful, perverse deviation from the expected norm; tending to stray. 被描述為任性的東西是指故意、反常地偏離預期的規範。傾向於迷失。",
-      "The word wayward is often used to describe a person, thing, or situation. 任性這個詞常用來形容人、事或情況。"
+      "The wayward dog ran into the street. 那隻不受管束的狗跑到街上。",
+      "He worried about his wayward teenage son. 他擔心自己任性的青少年兒子。"
     ],
     "audienceTags": [
       "general"
@@ -13723,11 +13723,11 @@
   },
   {
     "word": "weakly",
-    "meaning": "身體虛弱、多病或體質虛弱；。",
-    "partOfSpeech": "adjective",
+    "meaning": "虛弱地；微弱地",
+    "partOfSpeech": "adverb",
     "sentences": [
-      "Something described as weakly is frail, sickly or of a delicate constitution; weak. 形容虛弱的事物是指身體虛弱、體弱多病或體弱多病的事物；虛弱的。",
-      "The word weakly is often used to describe a person, thing, or situation. 弱這個詞常用來形容人、事或情況。"
+      "She smiled weakly after the fever. 發燒後，她虛弱地笑了笑。",
+      "The lamp glowed weakly in the dark room. 燈在黑暗房間裡發出微弱的光。"
     ],
     "audienceTags": [
       "general"
@@ -14167,11 +14167,11 @@
   },
   {
     "word": "weaponry",
-    "meaning": "武器集體。",
+    "meaning": "武器；武器裝備",
     "partOfSpeech": "noun",
     "sentences": [
-      "The army has a wide array of weaponry. 軍隊擁有多種武器裝備。",
-      "The term weaponry refers to weapons collectively. 武器一詞是指武器的統稱。"
+      "The museum displays ancient weaponry. 博物館展示古代武器。",
+      "Modern weaponry can be very complex. 現代武器裝備可能很複雜。"
     ],
     "audienceTags": [
       "general"
@@ -14269,11 +14269,11 @@
   },
   {
     "word": "wearable",
-    "meaning": "可以穿的。",
+    "meaning": "可穿戴的；適合穿的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a wearable device 穿戴式裝置",
-      "Something described as wearable is able to be worn. 被描述為可穿戴的東西是能夠被穿戴的。"
+      "This jacket is old but still wearable. 這件外套舊了，但還能穿。",
+      "Wearable devices can track your steps. 穿戴式裝置可以記錄你的步數。"
     ],
     "audienceTags": [
       "general"
@@ -14281,11 +14281,11 @@
   },
   {
     "word": "wearer",
-    "meaning": "一個穿著的人。",
+    "meaning": "穿戴者",
     "partOfSpeech": "noun",
     "sentences": [
-      "On Saint Patrick's day I put on my green shirt and join the wearers of the green. 在聖派翠克節，我穿上綠色襯衫，加入綠色穿著者的行列。",
-      "The term wearer refers to one who wears. 佩戴者一詞是指佩戴的人。"
+      "The helmet protects the wearer from injury. 安全帽保護穿戴者免於受傷。",
+      "A good shoe should fit the wearer well. 好鞋應該很合穿的人。"
     ],
     "audienceTags": [
       "general"
@@ -14452,11 +14452,11 @@
   },
   {
     "word": "wearing",
-    "meaning": "旨在佩戴。",
+    "meaning": "穿著；令人疲累的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Clothes used to be called wearing apparel. 衣服過去被稱為穿著服裝。",
-      "The report describes the result as wearing. 報告將結果描述為磨損。"
+      "She was wearing a blue coat. 她穿著藍色外套。",
+      "The long trip was wearing for everyone. 這趟長途旅行讓每個人都很疲累。"
     ],
     "audienceTags": [
       "general"
@@ -14622,11 +14622,11 @@
   },
   {
     "word": "weasel",
-    "meaning": "黃鼠狼 (Mustela nivalis)。",
+    "meaning": "鼬鼠；狡猾的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term weasel refers to a least weasel (Mustela nivalis). 黃鼠狼一詞是指最小的黃鼠狼（Mustela nivalis）。",
-      "The lesson introduced weasel as a useful term to understand. 本課介紹了黃鼠狼這個術語，它是一個值得理解的有用術語。"
+      "A weasel ran across the path. 一隻鼬鼠跑過小路。",
+      "Do not trust him; he can be a weasel. 不要太相信他，他可能很狡猾。"
     ],
     "audienceTags": [
       "general"
@@ -15185,11 +15185,11 @@
   },
   {
     "word": "weaver",
-    "meaning": "會編織的人；尤其是以織布為生的人。",
+    "meaning": "織布者；編織者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term weaver refers to a person who weaves; especially, one who weaves cloth for a living. 織工一詞指的是編織的人；尤其是以織布為生的人。",
-      "The lesson introduced weaver as a useful term to understand. 本課程介紹了 weaver 作為一個易於理解的有用術語。"
+      "The weaver made a colorful blanket. 織布者做了一條彩色毯子。",
+      "My grandmother was a skilled weaver. 我的祖母是熟練的編織者。"
     ],
     "audienceTags": [
       "general"
@@ -15298,11 +15298,11 @@
   },
   {
     "word": "webber",
-    "meaning": "使用網路的人；網站訪客。",
+    "meaning": "網路使用者；網站訪客；織網者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term webber refers to someone who uses the internet; a visitor of websites. 韋伯一詞指的是使用網路的人；網站的訪客。",
-      "The lesson introduced webber as a useful term to understand. 本課程介紹了韋伯這個術語，這是一個需要理解的有用術語。"
+      "The forum welcomed every new webber. 論壇歡迎每位新的網路使用者。",
+      "The old word can also describe someone who makes webs. 這個舊詞也可指織網的人。"
     ],
     "audienceTags": [
       "general"
@@ -15469,11 +15469,11 @@
   },
   {
     "word": "webster",
-    "meaning": "織布工（最初是女性）。",
+    "meaning": "織布工；韋伯斯特姓氏",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term webster refers to a weaver (originally, specifically female). 韋伯斯特一詞指的是織布工（原先特別指女性）。",
-      "The lesson introduced webster as a useful term to understand. 本課介紹了韋伯斯特作為一個易於理解的有用術語。"
+      "In old English, a webster could mean a weaver. 在古英語中，這個字可指織布工。",
+      "Webster signed his name at the bottom of the letter. 韋伯斯特在信件底部簽名。"
     ],
     "audienceTags": [
       "general"
@@ -15594,11 +15594,11 @@
   },
   {
     "word": "wedded",
-    "meaning": "就像結婚一樣加入。",
+    "meaning": "已婚的；緊密結合的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "She was too wedded to the first thought that came into her mind to see that her second idea was better. 她太執著於腦海中出現的第一個想法，以至於看不到她的第二個想法更好。",
-      "The report describes the result as wedded. 報告將結果描述為結婚。"
+      "The wedded couple thanked their guests. 這對新婚夫妻感謝賓客。",
+      "He is wedded to his old habits. 他深深依附自己的老習慣。"
     ],
     "audienceTags": [
       "general"
@@ -15722,11 +15722,11 @@
   },
   {
     "word": "wedged",
-    "meaning": "\";儘管沒有<a rel=\"mw:WikiLink\" href=\"/tle/tlecrash",
+    "meaning": "被楔住的；卡住的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The server seems to be wedged: it's not even responding to pings. 伺服器似乎 楔入 ： 它甚至沒有回應 ping。 伺服器似乎被卡住了：它甚至沒有響應 ping。 伺服器似乎被楔入：它甚至沒有響應 ping。",
-      "The report describes the result as wedged. 該報告將結果描述為楔形。 該報告將結果描述為楔形。 該報告將結果描述為楔形。"
+      "The coin was wedged under the seat. 硬幣卡在座位下。",
+      "A book was wedged between the boxes. 一本書被卡在箱子中間。"
     ],
     "audienceTags": [
       "general"
@@ -16391,11 +16391,11 @@
   },
   {
     "word": "weeping",
-    "meaning": "動詞對 weep 的動作。",
-    "partOfSpeech": "noun",
+    "meaning": "哭泣；流淚的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "Their constant weepings kept us awake. 他們不斷的 哭泣 讓我們徹夜難眠。 他們不斷的哭泣讓我們徹夜難眠。 他們不斷地哭泣，讓我們徹夜難眠。",
-      "The term weeping refers to Action of the verb to weep.. 哭泣一詞指的是 動詞對 哭泣 的動作。 。 哭泣一詞指的是動詞哭泣的動作。 哭泣指的是動詞對哭泣的動作。 。"
+      "The weeping child held her mother’s hand. 哭泣的孩子牽著媽媽的手。",
+      "A weeping willow grew beside the pond. 池塘旁長著一棵垂柳。"
     ],
     "audienceTags": [
       "general"
@@ -16924,11 +16924,11 @@
   },
   {
     "word": "weighing",
-    "meaning": "稱量某物的過程。",
+    "meaning": "稱重；權衡",
     "partOfSpeech": "noun",
     "sentences": [
-      "She took her baby to the clinic for regular weighings. 她帶著孩子到診所定期稱體重。",
-      "The term weighing refers to The process by which something is weighed. 稱重一詞是指稱量某物的過程。"
+      "The weighing of the luggage took only a minute. 行李稱重只花了一分鐘。",
+      "She is weighing the risks before deciding. 她在決定前權衡風險。"
     ],
     "audienceTags": [
       "general"
@@ -17001,11 +17001,11 @@
   },
   {
     "word": "weighted",
-    "meaning": "上面有重物。",
+    "meaning": "加重的；加權的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "She wore a weighted dress so it wouldn't blow in the wind. 她穿著一件厚重的裙子，這樣風就不會飄動。",
-      "The report describes the result as weighted. 該報告將結果描述為加權的。"
+      "She sleeps under a weighted blanket. 她蓋著加重毯睡覺。",
+      "The teacher used a weighted average for grades. 老師用加權平均計算成績。"
     ],
     "audienceTags": [
       "general"
@@ -17172,11 +17172,11 @@
   },
   {
     "word": "weir",
-    "meaning": "跨河放置的可調式水壩，用於調節下游水流。",
+    "meaning": "堰；攔河壩",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term weir refers to an adjustable dam placed across a river to regulate the flow of water downstream. 堰一詞是指跨河放置的可調式水壩，用於調節下游水流。",
-      "The lesson introduced weir as a useful term to understand. 本課程介紹了堰作為一個易於理解的有用術語。"
+      "Water flowed over the old weir. 水流過老堰。",
+      "The weir helps control the river level. 這座堰有助於控制河水高度。"
     ],
     "audienceTags": [
       "general"
@@ -17664,11 +17664,11 @@
   },
   {
     "word": "welder",
-    "meaning": "經理 ；一個實際的 佔用者 ；農民或中間人持有的土地佃戶。",
+    "meaning": "焊工；焊接機",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term welder refers to A manager; an actual occupant; a land-tenant holding under the farmer or middleman. 焊工一詞指的是 經理 ；一個實際的 佔用者 ；佃戶或中間人持有的土地中間人持有的土地。 焊工一詞指的是A經理；實際居住者；農民或中間人持有的土地佃戶。 焊工指的是經理；一個實際的佔用者；佃戶或中間人持有的土地中間人持有的土地。",
-      "The lesson introduced welder as a useful term to understand. 本課程介紹了焊工這個易於理解的有用術語。 本課程介紹了焊工這個易於理解的有用術語。 本課程介紹了焊工這個易於理解的有用術語。"
+      "The welder repaired the metal gate. 焊工修好了金屬大門。",
+      "A good welder needs steady hands. 好焊工需要穩定的手。"
     ],
     "examTags": [
       "toeic"
@@ -17925,11 +17925,11 @@
   },
   {
     "word": "wellington",
-    "meaning": "Wellington 的替代字母大小寫形式（靴子）。",
+    "meaning": "長筒雨靴；惠靈頓",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wellington refers to alternative letter-case form of Wellington (the boot). Wellington 一詞是指 Wellington（靴子）的替代字母大小寫形式。",
-      "The lesson introduced wellington as a useful term to understand. 本課介紹了惠靈頓這個易於理解的有用術語。"
+      "Wear wellingtons when the field is muddy. 田裡很泥濘時要穿長筒雨靴。",
+      "Wellington is the capital of New Zealand. 惠靈頓是紐西蘭首都。"
     ],
     "audienceTags": [
       "general"
@@ -18012,11 +18012,11 @@
   },
   {
     "word": "wellness",
-    "meaning": "了解並參與可能帶來最佳健康的行為的過程。",
+    "meaning": "健康；身心安適",
     "partOfSpeech": "noun",
     "sentences": [
-      "She made a fortune as a wellness guru. 她作為健康專家賺了一大筆錢。",
-      "The term wellness refers to The process of learning about and engaging in behaviors that are likely to result in optimal health. 健康一詞是指學習和參與可能帶來最佳健康的行為的過程。"
+      "The company started a wellness program. 公司推出了健康促進計畫。",
+      "Sleep is important for wellness. 睡眠對身心健康很重要。"
     ],
     "audienceTags": [
       "general"
@@ -18696,11 +18696,11 @@
   },
   {
     "word": "went",
-    "meaning": "一門課程；一條路，一條路；一段旅程。",
-    "partOfSpeech": "noun",
+    "meaning": "去；走（go 的過去式）；古語中的道路",
+    "partOfSpeech": "verb",
     "sentences": [
-      "The term went refers to a course; a way, a path; a journey. 「goed」一詞指的是一門課程；一條路，一條路；一次旅程。",
-      "The lesson introduced went as a useful term to understand. 所介紹的課程是一個值得理解的有用術語。"
+      "She went to the market after breakfast. 早餐後她去了市場。",
+      "The old poem uses went to mean a path. 那首古詩用這個字表示道路。"
     ],
     "audienceTags": [
       "general"
@@ -18888,11 +18888,11 @@
   },
   {
     "word": "werewolf",
-    "meaning": "轉變為或可以轉變為狼或類似狼的人的人，通常據說是在滿月期間這樣做的。",
+    "meaning": "狼人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term werewolf refers to a person who is transformed or can transform into a wolf or a wolflike human, often said to do so during a full moon. 狼人一詞指的是被轉變為或能夠轉變為狼或類狼人類的人，通常據說是在滿月期間這樣做。",
-      "The lesson introduced werewolf as a useful term to understand. 本課程介紹了狼人這個易於理解的有用術語。"
+      "The story says the werewolf appears at full moon. 故事說狼人會在滿月時出現。",
+      "The children wore werewolf masks for the party. 孩子們在派對上戴著狼人面具。"
     ],
     "audienceTags": [
       "general"
@@ -19287,11 +19287,11 @@
   },
   {
     "word": "westerly",
-    "meaning": "面朝西；指向西方。",
+    "meaning": "向西的；來自西方的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a westerly course or voyage 西風航線或航程",
-      "The report describes the result as westerly. 報告將結果描述為西風。"
+      "A westerly wind cooled the town. 西風讓小鎮涼了下來。",
+      "They drove in a westerly direction. 他們朝西方開車。"
     ],
     "audienceTags": [
       "general"
@@ -19544,11 +19544,11 @@
   },
   {
     "word": "westward",
-    "meaning": "向西。",
+    "meaning": "向西；往西的",
     "partOfSpeech": "adverb",
     "sentences": [
-      "ride westward. 向西騎行。",
-      "If someone acts westward, they do so in a way that is toward the west. 如果有人向西行事，他就會以向西的方式行事。"
+      "The birds flew westward at sunset. 日落時，鳥群往西飛。",
+      "The road turns westward after the bridge. 過橋後，道路轉向西方。"
     ],
     "audienceTags": [
       "general"
@@ -21473,11 +21473,11 @@
   },
   {
     "word": "wheeler",
-    "meaning": "操作輪子的人。",
+    "meaning": "車輪工；騎車者；精明交易者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wheeler refers to someone who operates a wheel. 術語“輪子”指的是操作輪子的人。",
-      "The lesson introduced wheeler as a useful term to understand. 本課程介紹了惠勒這個術語，這是一個需要理解的有用術語。"
+      "The old wheeler repaired wooden cart wheels. 那位老車輪工修理木製車輪。",
+      "He is a real wheeler in local politics. 他在地方政治裡很會運作。"
     ],
     "audienceTags": [
       "general"
@@ -21509,11 +21509,11 @@
   },
   {
     "word": "wheeling",
-    "meaning": "輪子的運動。",
+    "meaning": "推動；旋轉；用輪運送",
     "partOfSpeech": "noun",
     "sentences": [
-      "the wheelings of birds in the sky 天空中鳥兒的盤旋",
-      "The term wheeling refers to The motion of something that wheels. 術語「轉動」是指轉動物體的運動。"
+      "She was wheeling the stroller through the park. 她推著嬰兒車穿過公園。",
+      "The birds were wheeling above the field. 鳥群在田野上方盤旋。"
     ],
     "audienceTags": [
       "general"
@@ -22193,11 +22193,11 @@
   },
   {
     "word": "whence",
-    "meaning": "來自 哪裡 ；來自哪個 哪裡 ；來自哪個 ； rel=\"mw:WikiLink\" href=\"/wiki/source\" title=\"source\">來源 。",
+    "meaning": "從何處；由此；因此",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Whence came I? 我從哪裡來 ？ 我從哪裡來？ 我從哪裡來？",
-      "\"Pork\" comes from French, whence we get most of our modern cooking terms. 「豬肉」來自法語， 從這裡 我們得到了大部分現代烹飪術語。 「豬肉」來自法語，我們大部分現代烹飪術語都是從法語中獲得的。 「豬肉」來自現代，從這裡我們得到了大部分烹飪術語。"
+      "Whence came this strange smell? 這股奇怪的味道從哪裡來？",
+      "The word came from French, whence many cooking terms also came. 這個字來自法語，許多烹飪用語也由此而來。"
     ],
     "audienceTags": [
       "general"
@@ -22473,11 +22473,11 @@
   },
   {
     "word": "whereby",
-    "meaning": "透過什麼，向哪個方向；如何。",
+    "meaning": "藉以；憑此",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Whereby goest thou? 你要去哪裡？",
-      "If someone acts whereby, they do so in a way that is by what, in which direction; how. 如果某人採取行動，他們會以某種方式這樣做，即透過什麼，朝哪個方向；如何。"
+      "They made a rule whereby everyone takes turns cleaning. 他們訂了一條規則，藉此讓大家輪流打掃。",
+      "The app has a system whereby users can report problems. 這個應用程式有一套機制，讓使用者可以回報問題。"
     ],
     "audienceTags": [
       "general"
@@ -22533,11 +22533,11 @@
   },
   {
     "word": "wherein",
-    "meaning": "如何，或以什麼方式。",
+    "meaning": "在其中；在哪方面",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Wherein did I misspeak myself? 我自己哪裡說錯了？",
-      "If someone acts wherein, they do so in a way that is how, or in what way. 如果某人採取其中行動，他們會以何種方式或以什麼方式這樣做。"
+      "The contract explains wherein the duties differ. 合約說明職責在哪些方面不同。",
+      "She opened the box wherein the letters were kept. 她打開那個存放信件的盒子。"
     ],
     "audienceTags": [
       "general"
@@ -23043,11 +23043,11 @@
   },
   {
     "word": "whey",
-    "meaning": "在製作起司的過程中，牛奶凝結並過濾後剩餘的液體。",
+    "meaning": "乳清",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whey refers to the liquid remaining after milk has been curdled and strained in the process of making cheese. 乳清一詞是指在製作乳酪的過程中牛奶凝結和過濾後剩餘的液體。",
-      "The lesson introduced whey as a useful term to understand. 本課程介紹了乳清作為一個易於理解的有用術語。"
+      "Whey is left after milk is made into cheese. 牛奶做成起司後會留下乳清。",
+      "He drinks whey protein after exercise. 他運動後喝乳清蛋白。"
     ],
     "audienceTags": [
       "general"
@@ -23313,11 +23313,11 @@
   },
   {
     "word": "whiff",
-    "meaning": "一陣短暫而柔和的微風；一陣輕風；一陣風。",
+    "meaning": "一陣氣味；一點跡象",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whiff refers to a brief, gentle breeze; a light gust of air; a waft. 「wiff」一詞指的是一陣短暫、柔和的微風；一陣輕風；一陣風。",
-      "The lesson introduced whiff as a useful term to understand. 本課介紹了「whiff」這個術語，它是一個需要理解的有用術語。"
+      "I caught a whiff of coffee from the kitchen. 我聞到廚房飄來一陣咖啡香。",
+      "There was a whiff of trouble in his voice. 他的聲音裡帶著一點麻煩的跡象。"
     ],
     "audienceTags": [
       "general"
@@ -25205,11 +25205,11 @@
   },
   {
     "word": "whirling",
-    "meaning": "公轉、自轉、急速轉動。",
+    "meaning": "旋轉的；急速轉動",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a whirling carousel; whirling dancers 旋轉的旋轉木馬；旋轉舞者",
-      "The report describes the result as whirling. 報告稱這項結果令人震驚。"
+      "The whirling fan made a soft sound. 旋轉的風扇發出輕微聲音。",
+      "Leaves were whirling in the wind. 葉子在風中打轉。"
     ],
     "audienceTags": [
       "general"
@@ -25241,11 +25241,11 @@
   },
   {
     "word": "whirlpool",
-    "meaning": "旋轉的水體。",
+    "meaning": "漩渦",
     "partOfSpeech": "noun",
     "sentences": [
-      "A whirlpool is an instance of a vortex produced by ocean tides, or by a hole underneath where the water would drain out, such as in a bathtub. 漩渦是由海洋潮汐或下面的孔（例如浴缸中的水排出處）產生的渦流的一個例子。",
-      "The term whirlpool refers to A swirling body of water. 漩渦一詞指的是旋轉的水體。"
+      "A small whirlpool formed near the drain. 排水口附近形成一個小漩渦。",
+      "The boat avoided the dangerous whirlpool. 船避開了危險的漩渦。"
     ],
     "audienceTags": [
       "general"
@@ -25982,11 +25982,11 @@
   },
   {
     "word": "whistler",
-    "meaning": "吹口哨的人或物，或吹口哨作為樂器的人。",
+    "meaning": "吹口哨的人；口哨鳥；吹哨物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whistler refers to someone or something that whistles, or who plays a whistle as a musical instrument. 口哨者一詞指的是吹口哨的人或物，或將口哨作為樂器演奏的人。",
-      "The lesson introduced whistler as a useful term to understand. 本課介紹了口哨這個易於理解的有用術語。"
+      "The whistler walked down the street happily. 那個吹口哨的人開心地走在街上。",
+      "A whistler bird called from the tree. 一隻口哨鳥在樹上鳴叫。"
     ],
     "audienceTags": [
       "general"
@@ -26057,11 +26057,11 @@
   },
   {
     "word": "whistling",
-    "meaning": "尖銳的呼吸聲；一聲口哨。",
+    "meaning": "吹口哨；呼嘯聲",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whistling refers to A shrill, breathy sound; a whistle. 口哨一詞是指一種尖銳的呼吸聲；一聲口哨。",
-      "We learned the meaning of whistling during today's lesson. 在今天的課程中我們學習了吹口哨的意思。"
+      "His whistling woke the dog. 他的口哨聲吵醒了狗。",
+      "We heard the whistling of the wind at night. 夜裡我們聽見風的呼嘯聲。"
     ],
     "audienceTags": [
       "general"
@@ -26120,11 +26120,11 @@
   },
   {
     "word": "whit",
-    "meaning": "可以想像到的最小的部分或顆粒；一點點。",
+    "meaning": "一點點；絲毫",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whit refers to the smallest part or particle imaginable; an iota. 術語「惠特」是指可以想像的最小的部分或顆粒；一點點。",
-      "The lesson introduced whit as a useful term to understand. 本課介紹了「whit」作為一個需要理解的有用術語。"
+      "I do not care a whit about the rumor. 我一點也不在乎那個謠言。",
+      "There was not a whit of truth in his story. 他的故事裡沒有一絲真實。"
     ],
     "audienceTags": [
       "general"
@@ -26564,11 +26564,11 @@
   },
   {
     "word": "whitehead",
-    "meaning": "粉刺的一種，表現為皮膚出現白色小腫塊，這是由於皮脂和死皮細胞滯留在皮膚毛孔中，被一層薄薄的上皮細胞堵塞所致。",
+    "meaning": "白頭粉刺；白頭髮的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "Ruth knew that the whiteheads of her teenage acne were a temporary state of affairs, but that did nothing to quell her distress when an eruption hit just before prom. 露絲知道她十幾歲的痤瘡的白頭粉刺只是暫時的情況，但這並不能平息她在舞會前爆發的痛苦。",
-      "The term whitehead refers to a type of comedo, manifesting as a small whitish bump of the skin due to retention of sebum and dead skin cells in a skin pore blocked by a thin layer of epithelium. 白頭粉刺一詞指的是一種粉刺，表現為皮膚上出現一個白色的小腫塊，這是由於皮脂和死皮細胞滯留在皮膚毛孔中，被一層薄薄的上皮細胞堵塞。"
+      "She used a gentle cleanser for the whitehead. 她用溫和洗面乳處理白頭粉刺。",
+      "The old whitehead smiled at the children. 那位白髮老人對孩子們微笑。"
     ],
     "audienceTags": [
       "general"
@@ -27455,11 +27455,11 @@
   },
   {
     "word": "whiz",
-    "meaning": "在某方面 顯著 <a rel=\"mw:Wikied.",
+    "meaning": "高手；呼嘯聲；快速移動",
     "partOfSpeech": "noun",
     "sentences": [
-      "He's a whiz with the computers. 他是計算機方面的 高手 。 他是計算機高手。 他是計算機方面的高手。",
-      "The term whiz refers to Someone who is remarkably skilled at something. 「高手」這個字指的是 在某事上 出色 出色 >rel=\"m/Link=\"m/Link.com title=\"skilled\">熟練 的人。 「whiz」一詞指的是某件事上非常熟練的人。 「高手」這個字指的是某事上出色 >rel=\"m/Link=\"m/Link.com title=\"skilled\">熟練的人。"
+      "She is a whiz at math. 她是數學高手。",
+      "The ball went past with a whiz. 球呼的一聲飛過去。"
     ],
     "audienceTags": [
       "general"
@@ -27798,11 +27798,11 @@
   },
   {
     "word": "wholly",
-    "meaning": "完全地、完全地；最大限度地；非常;在很大程度上。",
+    "meaning": "完全地；全部地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Wholly, in my opinion, this is wrong. 總的來說，在我看來，這是錯誤的。",
-      "If someone acts wholly, they do so in a way that is completely and entirely; to the fullest extent; very; to a great extent. 如果有人全心全意地行事，那麼他們會以完全徹底的方式行事；最大限度地；非常;在很大程度上。"
+      "The story is wholly true. 這個故事完全是真的。",
+      "The project was wholly funded by donations. 這個專案完全由捐款資助。"
     ],
     "audienceTags": [
       "general"
@@ -27915,11 +27915,11 @@
   },
   {
     "word": "whoop",
-    "meaning": "赛道上的颠簸。",
+    "meaning": "歡呼聲；高喊；賽道凸起",
     "partOfSpeech": "noun",
     "sentences": [
-      "Synonym of whoop-de-doo. whoop-de-doo 的同義字。",
-      "The term whoop refers to a bump on a racetrack. 術語“whoop”指的是賽道上的顛簸。"
+      "The children gave a whoop of joy. 孩子們發出一聲歡呼。",
+      "The bike bounced over a whoop on the track. 腳踏車越過賽道上的一個凸起。"
     ],
     "audienceTags": [
       "general"
@@ -28035,11 +28035,11 @@
   },
   {
     "word": "whopping",
-    "meaning": "異常偉大或巨大。",
+    "meaning": "巨大的；非常大的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "It weighed a whopping 700 pounds when it was full. 裝滿後，它的重量高達 700 磅。",
-      "The report describes the result as whopping. 報告稱這一結果是驚人的。"
+      "They paid a whopping bill after dinner. 晚餐後他們付了一大筆帳單。",
+      "The store gave a whopping discount. 這家店給了超大的折扣。"
     ],
     "audienceTags": [
       "general"
@@ -28062,11 +28062,11 @@
   },
   {
     "word": "whore",
-    "meaning": "性亂的人；一個蕩婦。",
+    "meaning": "妓女；冒犯性用語，指被認為性關係混亂的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term whore refers to a person who is sexually promiscuous; a slut. 妓女一詞指的是性亂的人。一個蕩婦。",
-      "The lesson introduced whore as a useful term to understand. 本課介紹了妓女作為一個有用的術語來理解。"
+      "Do not use whore as an insult. 不要用這個冒犯性詞語罵人。",
+      "The novel shows how cruelly society treated a whore. 這部小說呈現社會曾如何殘酷對待妓女。"
     ],
     "audienceTags": [
       "general"
@@ -28817,11 +28817,11 @@
   },
   {
     "word": "wickedness",
-    "meaning": "邪惡的狀態；性情邪惡；不道德。",
+    "meaning": "邪惡；惡劣行為",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wickedness refers to The state of being wicked; evil disposition; immorality. 邪惡一詞指的是邪惡的狀態；性情邪惡；不道德。",
-      "We learned the meaning of wickedness during today's lesson. 在今天的課程中我們學習了邪惡的意義。"
+      "The story is about the wickedness of greed. 這個故事講的是貪婪的邪惡。",
+      "She could not ignore the wickedness of the crime. 她無法忽視那項罪行的惡劣。"
     ],
     "audienceTags": [
       "general"
@@ -28913,11 +28913,11 @@
   },
   {
     "word": "wicket",
-    "meaning": "解僱；擊球手出局的行為。",
+    "meaning": "板球三柱門；小門；出局",
     "partOfSpeech": "noun",
     "sentences": [
-      "He kept on taking wickets and bowled the opponents team out for 84. 他不斷取得三柱門，並以 84 分將對手淘汰出局。",
-      "The term wicket refers to a dismissal; the act of a batsman getting out. 術語“wicket”指的是解僱；擊球手出局的行為。"
+      "The ball hit the wicket. 球打中了三柱門。",
+      "A small wicket led into the garden. 一道小門通往花園。"
     ],
     "audienceTags": [
       "general"
@@ -29183,11 +29183,11 @@
   },
   {
     "word": "widely",
-    "meaning": "廣泛地；跨越廣闊的區域。",
+    "meaning": "廣泛地；大大地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I'm widely travelled. 我經常出差。",
-      "If someone acts widely, they do so in a way that is in a wide manner; across a wide area. 如果某人的行為廣泛，那麼他的行為方式就廣泛；跨越廣闊的區域。"
+      "The book is widely read by students. 這本書被學生廣泛閱讀。",
+      "Prices vary widely between stores. 各家店的價格差異很大。"
     ],
     "examTags": [
       "toeic"
@@ -29672,11 +29672,11 @@
   },
   {
     "word": "wiener",
-    "meaning": "一種由牛肉、雞肉或豬肉製成的香腸。",
+    "meaning": "維也納香腸；熱狗香腸",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wiener refers to a type of sausage made from beef, chicken or pork. 維也納一詞指的是一種由牛肉、雞肉或豬肉製成的香腸。",
-      "The lesson introduced wiener as a useful term to understand. 本課介紹了維納這個易於理解的有用術語。"
+      "He put a wiener in the hot dog bun. 他把香腸放進熱狗麵包裡。",
+      "The kids ate wieners at the picnic. 孩子們在野餐時吃了熱狗香腸。"
     ],
     "audienceTags": [
       "general"
@@ -29994,11 +29994,11 @@
   },
   {
     "word": "wigan",
-    "meaning": "類似帆布的棉織物，通常塗有乳膠橡膠，用於加固和保護褲子、連身裙等的下半部分。",
+    "meaning": "硬挺棉布；襯布",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wigan refers to a canvas-like cotton fabric, often coated with latex rubber, used to stiffen and protect the lower part of trousers, dresses, etc. 維根一詞指的是一種類似帆布的棉織物，通常塗有乳膠橡膠，用於加固和保護褲子、連身裙等的下半部。",
-      "The lesson introduced wigan as a useful term to understand. 本課程介紹了 wigan 作為一個易於理解的有用術語。"
+      "The tailor used wigan to stiffen the collar. 裁縫用硬挺襯布讓領子更挺。",
+      "Old dresses sometimes had wigan inside the hem. 舊式洋裝的下襬裡有時會用硬挺棉布。"
     ],
     "audienceTags": [
       "general"
@@ -30177,11 +30177,11 @@
   },
   {
     "word": "wight",
-    "meaning": "生物，尤其是人类。",
+    "meaning": "人；生物；鬼怪",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wight refers to a living creature, especially a human being. 「懷特」一詞指的是生物，尤其是人類。",
-      "The lesson introduced wight as a useful term to understand. 本課程介紹了「wight」作為一個需要理解的有用術語。"
+      "The old tale speaks of a lonely wight. 那個古老故事提到一個孤單的人。",
+      "In fantasy stories, a wight may be an undead creature. 在奇幻故事裡，這個字可指不死怪物。"
     ],
     "audienceTags": [
       "general"
@@ -30552,11 +30552,11 @@
   },
   {
     "word": "wildfire",
-    "meaning": "迅速蔓延的火災，尤其是發生在荒地地區的火災。",
+    "meaning": "野火；快速蔓延的事物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wildfire refers to a rapidly spreading fire, especially one occurring in a wildland area. 野火一詞是指迅速蔓延的火災，尤其是發生在荒地地區的火災。",
-      "The lesson introduced wildfire as a useful term to understand. 本課程介紹了野火作為一個需要理解的有用術語。"
+      "The wildfire spread across the dry hills. 野火蔓延過乾燥山坡。",
+      "The rumor spread like wildfire. 謠言像野火一樣迅速傳開。"
     ],
     "audienceTags": [
       "general"
@@ -30683,11 +30683,11 @@
   },
   {
     "word": "wildly",
-    "meaning": "達到荒謬或極端的程度；極為。",
+    "meaning": "瘋狂地；大幅地；狂野地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "wildly exagerrated 極度誇張",
-      "If someone acts wildly, they do so in a way that is to a ridiculous or extreme degree; extremely. 如果某人行為狂野，那麼他們的行為方式就達到了荒謬或極端的程度；極度。"
+      "The crowd cheered wildly. 群眾瘋狂歡呼。",
+      "Prices changed wildly during the week. 那一週價格大幅波動。"
     ],
     "audienceTags": [
       "general"
@@ -31071,11 +31071,11 @@
   },
   {
     "word": "willful",
-    "meaning": "故意的美國標準拼寫。",
+    "meaning": "故意的；任性的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as willful is american standard spelling of wilful. 被描述為“willful”的東西是“willful”的美國標準拼寫。",
-      "The word willful is often used to describe a person, thing, or situation. 任性這個詞常用來形容人、事或情況。"
+      "The damage was willful, not an accident. 這次損壞是故意的，不是意外。",
+      "The willful child refused to listen. 那個任性的孩子拒絕聽話。"
     ],
     "audienceTags": [
       "general"
@@ -31083,11 +31083,11 @@
   },
   {
     "word": "willfully",
-    "meaning": "willful 的美國標準拼寫。",
+    "meaning": "故意地；任性地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "If someone acts willfully, they do so in a way that is uS standard spelling of wilfully. 如果有人故意行事，他們會以美國標準拼寫“willously”的方式這樣做。",
-      "The speaker responded willfully during the discussion. 發言者在討論中隨意回應。"
+      "He willfully ignored the warning. 他故意忽視警告。",
+      "She willfully broke the rule. 她故意違反規則。"
     ],
     "audienceTags": [
       "general"
@@ -31251,11 +31251,11 @@
   },
   {
     "word": "willingly",
-    "meaning": "出於自己的自由意志；自由自發地。",
+    "meaning": "願意地；樂意地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "If someone acts willingly, they do so in a way that is of one’s own free will; freely and spontaneously. 如果某人自願行事，那麼他是出於自己的自由意志；自由地、自發地。",
-      "The speaker responded willingly during the discussion. 發言者在討論過程中樂意回應。"
+      "She willingly helped clean the room. 她樂意幫忙打掃房間。",
+      "He willingly shared his notes. 他很願意分享筆記。"
     ],
     "audienceTags": [
       "general"
@@ -31263,11 +31263,11 @@
   },
   {
     "word": "willingness",
-    "meaning": "願意的狀態",
+    "meaning": "意願；樂意",
     "partOfSpeech": "noun",
     "sentences": [
-      "All it takes is a willingness to learn. 所需要的只是學習的意願。",
-      "The term willingness refers to The state of being willing. 意願一詞是指願意的狀態。"
+      "Her willingness to learn impressed the teacher. 她的學習意願讓老師印象深刻。",
+      "We appreciate your willingness to help. 我們感謝你願意幫忙。"
     ],
     "audienceTags": [
       "general"
@@ -31335,11 +31335,11 @@
   },
   {
     "word": "willow",
-    "meaning": "用於打開和清潔棉頭的旋轉尖刺滾筒。",
+    "meaning": "柳樹；柳木",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term willow refers to a rotating spiked drum used to open and clean cotton heads. 術語「柳」是指用於打開和清潔棉頭的旋轉尖刺滾筒。",
-      "The lesson introduced willow as a useful term to understand. 本課程介紹了柳樹作為一個易於理解的有用術語。"
+      "A willow grew beside the river. 河邊長著一棵柳樹。",
+      "The basket was made from willow branches. 這個籃子是用柳枝編成的。"
     ],
     "audienceTags": [
       "general"
@@ -31686,11 +31686,11 @@
   },
   {
     "word": "wily",
-    "meaning": "狡猾、狡猾、詭計多端。",
+    "meaning": "狡猾的；有計謀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Horatio's new girlfriend is a wily coquette, and poor Horatio is too smitten to see it. 霍雷肖的新女友是個狡猾的風騷女子，而可憐的霍雷肖卻被迷住了，看不到這一點。",
-      "The report describes the result as wily. 報告稱這一結果是狡猾的。"
+      "The wily fox escaped the trap. 狡猾的狐狸逃過陷阱。",
+      "She is a wily negotiator. 她是個很有手腕的談判者。"
     ],
     "audienceTags": [
       "general"
@@ -31902,11 +31902,11 @@
   },
   {
     "word": "winch",
-    "meaning": "用於裝卸貨物或拉線的起重裝置。",
+    "meaning": "絞車；絞盤",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term winch refers to A hoisting device used for loading or unloading cargo, or for pulling in lines. 絞車一詞是指用於裝卸貨物或拉動繩索的起重裝置。",
-      "We learned the meaning of winch during today's lesson. 在今天的課程中我們學習了絞車的意思。"
+      "They used a winch to pull the boat onto land. 他們用絞車把船拉上岸。",
+      "The truck has a winch on the front. 卡車前方有一個絞盤。"
     ],
     "audienceTags": [
       "general"
@@ -32292,11 +32292,11 @@
   },
   {
     "word": "windfall",
-    "meaning": "自然從樹上落下的果實，就像從風中落下的一樣。",
+    "meaning": "意外之財；被風吹落的果實",
     "partOfSpeech": "noun",
     "sentences": [
-      "They couldn't reach the branches, so they ate the windfalls. 他們搆不到樹枝，就吃掉了意外之財。",
-      "The term windfall refers to A fruit that has fallen from a tree naturally, as from wind. 意外收穫一詞是指從樹上自然落下的果實，如風。"
+      "The bonus felt like a windfall. 那筆獎金像是一筆意外之財。",
+      "We collected windfall apples under the tree. 我們在樹下撿被風吹落的蘋果。"
     ],
     "audienceTags": [
       "general"
@@ -32460,11 +32460,11 @@
   },
   {
     "word": "winding",
-    "meaning": "使人喘不過氣或上氣不接下氣。",
+    "meaning": "彎曲的；纏繞；繞行",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report describes the result as winding. 報告將結果描述為「纏繞」。",
-      "Everyone noticed the winding tone of the message. 所有人都注意到了這則訊息的語氣。"
+      "A winding road led to the village. 一條彎曲道路通往村莊。",
+      "She was winding yarn into a ball. 她正在把毛線繞成一團。"
     ],
     "audienceTags": [
       "general"
@@ -32667,11 +32667,11 @@
   },
   {
     "word": "windmill",
-    "meaning": "假想的敵人，但呈現為真實的敵人。",
+    "meaning": "風車",
     "partOfSpeech": "noun",
     "sentences": [
-      "to fight windmills 去對抗風車",
-      "The term windmill refers to an imaginary enemy, but presented as real. 風車一詞指的是假想的敵人，但呈現為真實的敵人。"
+      "An old windmill stood on the hill. 山丘上有一座老風車。",
+      "The farm uses a windmill to pump water. 農場用風車抽水。"
     ],
     "audienceTags": [
       "general"
@@ -33142,11 +33142,11 @@
   },
   {
     "word": "windward",
-    "meaning": "朝向風，或風吹來的方向。",
+    "meaning": "迎風的；向風處",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The windward boat must give way to the leeward boat. 迎風船必須讓路給下風船。",
-      "The report describes the result as windward. 報告稱結果是順風。"
+      "We sat on the windward side of the boat. 我們坐在船的迎風側。",
+      "The windward hill gets more rain. 迎風山坡雨水較多。"
     ],
     "audienceTags": [
       "general"
@@ -33419,11 +33419,11 @@
   },
   {
     "word": "winehouse",
-    "meaning": "葡萄園 上的建築， winepress 位於其中。",
+    "meaning": "酒莊建築；設有壓酒設備的葡萄園房舍",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term winehouse refers to The building on a vineyard in which the winepress is located. 術語 Winehouse 是指 葡萄園 上的建築物， winepress 位於其中。 酒廠一詞是指釀酒廠所在的葡萄園上的建築物。 術語 Winehouse 是指葡萄園上的建築物， Winepress 位於其中。",
-      "The lesson introduced winehouse as a useful term to understand. 本課程介紹了 Winehouse 作為一個需要理解的有用術語。 本課程介紹了 Winehouse 作為一個需要理解的有用術語。 本課程介紹了 Winehouse 作為一個需要理解的有用術語。"
+      "The old winehouse stood beside the vineyard. 老酒莊建築立在葡萄園旁。",
+      "Visitors toured the winehouse after lunch. 遊客午餐後參觀了酒莊房舍。"
     ],
     "audienceTags": [
       "general"
@@ -33491,11 +33491,11 @@
   },
   {
     "word": "winery",
-    "meaning": "釀酒的地方，或是釀酒的公司。",
+    "meaning": "釀酒廠；酒莊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term winery refers to a place where wine is made, or a company that makes wine. 釀酒廠一詞是指釀酒的地方，或釀酒的公司。",
-      "The lesson introduced winery as a useful term to understand. 本課程介紹了釀酒廠這個術語，這是一個需要理解的有用術語。"
+      "We visited a small winery in the valley. 我們參觀了山谷裡的一間小酒莊。",
+      "The winery sells its own red wine. 這間釀酒廠販售自家的紅酒。"
     ],
     "examTags": [
       "toeic"
@@ -33670,11 +33670,11 @@
   },
   {
     "word": "winged",
-    "meaning": "具有指定數量的翅膀。",
+    "meaning": "有翅膀的；飛快的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The six- winged Seraphim are the angels closest to God. 六翼六翼天使是最接近神的天使。",
-      "The report describes the result as winged. 報告將這一結果描述為「有翼」。"
+      "A winged insect landed on the window. 一隻有翅膀的昆蟲停在窗上。",
+      "The logo shows a winged horse. 標誌上是一匹有翅膀的馬。"
     ],
     "audienceTags": [
       "general"
@@ -33706,11 +33706,11 @@
   },
   {
     "word": "winger",
-    "meaning": "其中一個木桶存放在船艙的兩翼，比存放在船中部的木桶小。",
+    "meaning": "邊鋒；側翼球員",
     "partOfSpeech": "noun",
     "sentences": [
-      "We hauled out a winger of grog. 我們拿出了一杯烈酒。",
-      "The term winger refers to one of the casks stowed in the wings of a vessel's hold, being smaller than such as are stowed more amidships. 「邊翼」一詞是指存放在船艙兩翼的木桶，其尺寸小於存放在船中部的木桶。"
+      "The winger crossed the ball into the box. 邊鋒把球傳進禁區。",
+      "She played as a winger on the school team. 她在校隊擔任邊鋒。"
     ],
     "audienceTags": [
       "general"
@@ -34167,11 +34167,11 @@
   },
   {
     "word": "winner",
-    "meaning": "曾經獲勝或經常獲勝的人。",
+    "meaning": "獲勝者；優勝者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term winner refers to one who has won or often wins. 獲勝者一詞是指已經獲勝或經常獲勝的人。",
-      "The lesson introduced winner as a useful term to understand. 本課程介紹了「獲勝者」作為一個易於理解的有用術語。"
+      "The winner received a small trophy. 獲勝者得到一座小獎盃。",
+      "She was the winner of the writing contest. 她是寫作比賽的優勝者。"
     ],
     "audienceTags": [
       "general"
@@ -34902,11 +34902,11 @@
   },
   {
     "word": "wintry",
-    "meaning": "有雨夾雪或雪。",
+    "meaning": "冬天般的；寒冷的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "It will be cloudy overnight, with outbreaks of heavy rain at times. The rain may turn wintry over higher ground. 夜間多雲，間有大雨。雨水可能會使地勢較高的地區變得寒冷。",
-      "The report describes the result as wintry. 報告將結果描述為寒冷。"
+      "A wintry wind blew through the street. 一陣寒冷的風穿過街道。",
+      "The sky had a gray, wintry look. 天空呈現灰冷的冬日樣貌。"
     ],
     "audienceTags": [
       "general"
@@ -35104,11 +35104,11 @@
   },
   {
     "word": "wired",
-    "meaning": "非常興奮，刺激過度；高度緊張。",
+    "meaning": "有線的；緊張興奮的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "After three cups of coffee she was too wired to sleep. 喝了三杯咖啡後，她興奮得睡不著。",
-      "The report describes the result as wired. 該報告將結果描述為有線的。"
+      "The room has wired internet. 這個房間有有線網路。",
+      "He felt wired after drinking too much coffee. 他喝太多咖啡後覺得很亢奮。"
     ],
     "audienceTags": [
       "general"
@@ -35937,11 +35937,11 @@
   },
   {
     "word": "wisely",
-    "meaning": "以明智的方式；運用良好的判斷力。",
+    "meaning": "明智地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "She wisely decided to re-check her homework before submitting it. 她明智地決定在提交作業之前重新檢查。",
-      "If someone acts wisely, they do so in a way that is in a wise manner; using good judgement. 如果某人的行為明智，那麼他們就會以明智的方式行事；運用良好的判斷力。"
+      "She wisely saved some money for later. 她明智地存了一些錢備用。",
+      "Choose wisely before you sign. 簽名前要明智選擇。"
     ],
     "audienceTags": [
       "general"
@@ -36009,11 +36009,11 @@
   },
   {
     "word": "wiser",
-    "meaning": "wise的比較級形式：morewise",
+    "meaning": "更明智的；更有智慧的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "It was stolen with nobody being any the wiser. 它被偷了，沒有人知道。",
-      "The report describes the result as wiser. 報告稱這項結果更為明智。"
+      "He became wiser after the mistake. 犯錯後，他變得更明智。",
+      "It is wiser to leave early. 早點離開比較明智。"
     ],
     "audienceTags": [
       "general"
@@ -36712,11 +36712,11 @@
   },
   {
     "word": "witchcraft",
-    "meaning": "女巫的做法；魔法、巫術或使用超自然力量來影響或預測事件。",
+    "meaning": "巫術；魔法",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wiccans believe in a modernised form of witchcraft. 巫術崇拜者相信一種現代化形式的巫術。",
-      "The term witchcraft refers to the practice of witches; magic, sorcery, or the use of supernatural powers to influence or predict events. 巫術一詞指的是女巫的活動。魔法、巫術或使用超自然力量來影響或預測事件。"
+      "The story is full of witchcraft and mystery. 這個故事充滿巫術和神祕感。",
+      "People once feared accusations of witchcraft. 過去人們害怕被指控使用巫術。"
     ],
     "audienceTags": [
       "general"
@@ -37364,11 +37364,11 @@
   },
   {
     "word": "withering",
-    "meaning": "傾向於破壞、破壞、壓倒或造成完全破壞。",
+    "meaning": "枯萎的；尖刻的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The D-Day troops came under withering fire. 諾曼地登陸部隊遭到了猛烈的砲火攻擊。",
-      "The report describes the result as withering. 報告將結果描述為“枯萎”。"
+      "The plant had withering leaves. 那株植物的葉子正在枯萎。",
+      "She gave him a withering look. 她給了他一個尖刻的眼神。"
     ],
     "audienceTags": [
       "general"
@@ -39846,11 +39846,11 @@
   },
   {
     "word": "wolverine",
-    "meaning": "古洛古洛 (Gulo gulo) 是鼬科的一種孤獨而兇猛的哺乳動物。",
+    "meaning": "狼獾",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wolverine refers to a solitary, fierce mammal of the Mustelidae family, Gulo gulo. 獾這個字指的是鼬科的一種孤獨、兇猛的哺乳動物，Gulo gulo。",
-      "The lesson introduced wolverine as a useful term to understand. 本課程介紹了「狼獾」這個易於理解的有用術語。"
+      "A wolverine can survive in cold northern forests. 狼獾能在寒冷的北方森林中生存。",
+      "The zoo has a wolverine in the wildlife area. 動物園的野生動物區有一隻狼獾。"
     ],
     "audienceTags": [
       "general"
@@ -40538,11 +40538,11 @@
   },
   {
     "word": "wonderland",
-    "meaning": "一個充滿奇蹟或奇蹟的地方。",
+    "meaning": "仙境；奇妙之地",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wonderland refers to a place full of wonder or marvels. 仙境一詞指的是充滿奇蹟或奇蹟的地方。",
-      "The lesson introduced wonderland as a useful term to understand. 本課介紹了仙境這個有助於理解的術語。"
+      "The snowy park looked like a wonderland. 下雪的公園看起來像仙境。",
+      "The toy store was a wonderland for children. 玩具店對孩子來說是奇妙之地。"
     ],
     "audienceTags": [
       "general"
@@ -40685,11 +40685,11 @@
   },
   {
     "word": "wondrous",
-    "meaning": "精彩的;令人驚嘆，令人敬畏；奇妙。",
+    "meaning": "奇妙的；令人驚嘆的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "We all stared open-mouthed at the wondrous sight. 我們都目瞪口呆地看著這奇妙的景象。",
-      "The report describes the result as wondrous. 報告稱這項結果令人驚訝。"
+      "They saw a wondrous sunset by the sea. 他們在海邊看見令人驚嘆的夕陽。",
+      "The child listened to the wondrous story. 那個孩子聽著奇妙的故事。"
     ],
     "audienceTags": [
       "general"
@@ -40748,11 +40748,11 @@
   },
   {
     "word": "wong",
-    "meaning": "一塊田地或其他土地。",
+    "meaning": "田地；土地；姓氏黃",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wong refers to a field or other piece of land. 黃一詞指的是田地或其他土地。",
-      "The lesson introduced wong as a useful term to understand. 本課程介紹了 Wong 作為一個易於理解的有用術語。"
+      "The old record used wong for a piece of land. 舊紀錄用這個字指一塊土地。",
+      "Mr. Wong opened a bakery near the station. 黃先生在車站附近開了一家麵包店。"
     ],
     "audienceTags": [
       "general"
@@ -41625,11 +41625,11 @@
   },
   {
     "word": "woodland",
-    "meaning": "指生物或物體：在林地中生長、生活或存在。",
-    "partOfSpeech": "adjective",
+    "meaning": "林地；樹林",
+    "partOfSpeech": "noun",
     "sentences": [
-      "The woodland creatures ran from the fire. 林地生物紛紛逃離火場。",
-      "Something described as woodland is of a creature or object: growing, living, or existing in a woodland. 被描述為林地的東西是一種生物或物體：在林地中生長、生活或存在。"
+      "We walked through the woodland in the morning. 我們早上走過那片林地。",
+      "Small animals live in the woodland. 小動物住在樹林裡。"
     ],
     "audienceTags": [
       "general"
@@ -42025,11 +42025,11 @@
   },
   {
     "word": "woodside",
-    "meaning": "木頭的一側；與樹林接壤的土地。",
+    "meaning": "林邊；樹林旁的土地",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term woodside refers to The side of a wood; the land that borders a wood. 術語“woodside”是指木材的側面；與樹林接壤的土地。",
-      "We learned the meaning of woodside during today's lesson. 在今天的課程中我們學習了woodside的意思。"
+      "They built a cottage by the woodside. 他們在林邊蓋了一間小屋。",
+      "Wild berries grew along the woodside. 林邊長著野莓。"
     ],
     "examTags": [
       "toeic"
@@ -42280,11 +42280,11 @@
   },
   {
     "word": "woody",
-    "meaning": "非草本。",
+    "meaning": "木質的；樹木多的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Subshrubs, shrubs, trees and lianas are all woody plants. 亞灌木、灌木、喬木和藤本植物都是木本植物。",
-      "Something described as woody is non-herbaceous. 被描述為木質的東西是非草本的。"
+      "The herb has a woody stem. 這種草本植物有木質莖。",
+      "The trail passes through a woody area. 小徑穿過樹木茂密的地區。"
     ],
     "audienceTags": [
       "general"
@@ -42328,11 +42328,11 @@
   },
   {
     "word": "woof",
-    "meaning": "織布機梭子攜帶的一組紗線，與經紗成直角並交織；緯紗。",
+    "meaning": "狗叫聲；緯紗",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term woof refers to the set of yarns carried by the shuttle of a loom which are placed crosswise at right angles to and interlaced with the warp; the weft. 緯紗一詞是指由織布機梭子攜帶的一組紗線，這些紗線與經紗呈直角交叉放置並交織；緯紗。",
-      "The lesson introduced woof as a useful term to understand. 本課程介紹了 woof 作為一個易於理解的有用術語。"
+      "The dog gave a loud woof. 那隻狗大聲汪了一聲。",
+      "In weaving, woof threads cross the warp. 在織布中，緯紗會穿過經紗。"
     ],
     "audienceTags": [
       "general"
@@ -42663,11 +42663,11 @@
   },
   {
     "word": "woolly",
-    "meaning": "質地厚實柔軟，如羊毛製成。",
+    "meaning": "羊毛似的；模糊的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "There was nothing left in the fruit bowl but a brown banana and a couple of woolly pears. 水果盤裡只剩下一根棕色香蕉和幾個毛茸茸的梨子。",
-      "Something described as woolly is having a thick, soft texture, as if made of wool. 羊毛狀的東西具有厚實、柔軟的質地，好像是由羊毛製成的。"
+      "The sheep had thick woolly coats. 羊身上有厚厚的羊毛。",
+      "His explanation was woolly and hard to follow. 他的解釋很模糊，難以理解。"
     ],
     "audienceTags": [
       "general"
@@ -43245,11 +43245,11 @@
   },
   {
     "word": "wordbuilding",
-    "meaning": "the process of creating or forming words",
+    "meaning": "構詞；組字",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wordbuilding helps students understand language. 造詞能幫助學生理解語言。",
-      "The lesson covered wordbuilding from roots and endings. 那堂課講解了如何用詞根和詞尾造詞。"
+      "The class practiced wordbuilding with prefixes. 課堂用字首練習構詞。",
+      "Wordbuilding helps learners guess new meanings. 構詞練習能幫助學習者猜新字意思。"
     ],
     "schoolLevels": [
       "college"
@@ -43561,11 +43561,11 @@
   },
   {
     "word": "wordplay",
-    "meaning": "幽默的文字遊戲；這種集體的文字遊戲。",
+    "meaning": "文字遊戲；雙關語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wordplay refers to A humorous play on words; such plays on words collectively. 雙關語一詞是指幽默的文字遊戲；這種集體的文字遊戲。",
-      "We learned the meaning of wordplay during today's lesson. 我們在今天的課程中學習了文字遊戲的含義。"
+      "The joke depends on wordplay. 這個笑話靠的是文字遊戲。",
+      "She enjoys clever wordplay in poems. 她喜歡詩裡巧妙的雙關。"
     ],
     "audienceTags": [
       "general"
@@ -43729,11 +43729,11 @@
   },
   {
     "word": "workable",
-    "meaning": "有能力發揮作用。",
+    "meaning": "可行的；能運作的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "They came up with a workable solution, until they could think of something better. 他們提出了一個可行的解決方案，直到他們能想到更好的方法。",
-      "Something described as workable is capable of functioning. 被描述為可行的事物能夠發揮作用。"
+      "We need a workable plan by Monday. 我們星期一前需要一個可行計畫。",
+      "The first idea was simple but workable. 第一個想法很簡單，但可行。"
     ],
     "audienceTags": [
       "general"
@@ -44221,11 +44221,11 @@
   },
   {
     "word": "workmanship",
-    "meaning": "工匠或工匠的技能。",
+    "meaning": "工藝；做工",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term workmanship refers to the skill of an artisan or craftsman. 「工藝」一詞是指工匠或工匠的技能。",
-      "The lesson introduced workmanship as a useful term to understand. 本課程介紹了「工藝」這個術語，這是一個需要理解的有用術語。"
+      "The table shows fine workmanship. 這張桌子展現了精細做工。",
+      "Poor workmanship caused the shelf to break. 做工不良導致架子壞掉。"
     ],
     "audienceTags": [
       "general"
@@ -44691,11 +44691,11 @@
   },
   {
     "word": "worldly",
-    "meaning": "複雜，尤其是因為過度；深諳人情世故。",
+    "meaning": "世俗的；老練的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as worldly is sophisticated, especially because of surfeit; versed in the ways of the world. 被描述為世俗的東西是複雜的，尤其是因為過度；通曉世事之道。",
-      "The word worldly is often used to describe a person, thing, or situation. 世俗這個字常用來形容一個人、一件事或一種情況。"
+      "He gave worldly advice about money. 他給了關於金錢的世故建議。",
+      "She is young but very worldly. 她很年輕，但很老練。"
     ],
     "audienceTags": [
       "general"
@@ -46202,11 +46202,11 @@
   },
   {
     "word": "woven",
-    "meaning": "透過編織製造。",
+    "meaning": "編織成的；交織的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Woven kevlar is tough enough to be bulletproof. 編織的凱夫拉纖維夠堅韌，可以防彈。",
-      "Something described as woven is fabricated by weaving. 所謂編織的東西是透過編織而製成的。"
+      "The basket is made of woven bamboo. 這個籃子是竹子編成的。",
+      "Family stories are woven into the novel. 家族故事交織在這本小說裡。"
     ],
     "audienceTags": [
       "general"
@@ -46214,11 +46214,11 @@
   },
   {
     "word": "Wovoka",
-    "meaning": "沃沃卡；北美原住民宗教領袖",
+    "meaning": "沃沃卡；美國原住民宗教領袖名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson mentioned Wovoka as a spiritual leader. 那堂課提到沃沃卡是一位宗教領袖。",
-      "Historians studied the teachings of Wovoka. 歷史學家研究了沃沃卡的教導。"
+      "Wovoka is remembered as a religious leader. 沃沃卡被記得是一位宗教領袖。",
+      "The history book included a chapter on Wovoka. 這本歷史書有一章介紹沃沃卡。"
     ],
     "schoolLevels": [
       "college"
@@ -47224,11 +47224,11 @@
   },
   {
     "word": "wreckage",
-    "meaning": "被破壞的東西，尤其是被嚴重損壞或毀壞的東西的殘骸或碎片。",
+    "meaning": "殘骸；毀壞物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wreckage refers to something wrecked, especially the remains or debris of something which has been severely damaged or destroyed. 殘骸一詞指的是失事的物體，尤其是被嚴重損壞或毀壞的物體的殘骸或碎片。",
-      "The lesson introduced wreckage as a useful term to understand. 本課程介紹了殘骸作為一個易於理解的有用術語。"
+      "Rescuers searched the wreckage after the crash. 墜毀後，救難人員搜索殘骸。",
+      "Pieces of wreckage washed onto the beach. 一些殘骸碎片被沖上海灘。"
     ],
     "audienceTags": [
       "general"
@@ -47775,11 +47775,11 @@
   },
   {
     "word": "wright",
-    "meaning": "某物的建造者或製造者。",
+    "meaning": "工匠；製作者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term wright refers to a builder or maker of something. 賴特一詞指的是某物的建造者或製造者。",
-      "The lesson introduced wright as a useful term to understand. 本課介紹了賴特作為一個易於理解的有用術語。"
+      "A wheelwright repaired the old cart. 車輪工匠修好了舊馬車。",
+      "The old word wright means a maker or craftsman. 這個古字指製作者或工匠。"
     ],
     "audienceTags": [
       "general"
@@ -48127,11 +48127,11 @@
   },
   {
     "word": "writ",
-    "meaning": "所寫的；寫作。",
+    "meaning": "令狀；書面命令",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term writ refers to that which is written; writing. 「令狀」一詞是指書面的；寫作。",
-      "The lesson introduced writ as a useful term to understand. 本課介紹了令狀這一易於理解的有用術語。"
+      "The court issued a writ. 法院發出令狀。",
+      "The lawyer read the writ carefully. 律師仔細閱讀那份書面命令。"
     ],
     "audienceTags": [
       "general"
@@ -48607,11 +48607,11 @@
   },
   {
     "word": "wrongdoing",
-    "meaning": "違反行為標準。",
+    "meaning": "不當行為；違法行為",
     "partOfSpeech": "noun",
     "sentences": [
-      "A Chinese proverb goes, \"He who commits wrongdoing repeatedly will come to no good end.\" 中國有句俗話：「多作惡，沒有好下場」。",
-      "The term wrongdoing refers to Violation of standards of behavior. 不當行為一詞是指違反行為標準。"
+      "The report found no evidence of wrongdoing. 報告沒有發現不當行為的證據。",
+      "She admitted her wrongdoing and apologized. 她承認自己的錯誤行為並道歉。"
     ],
     "audienceTags": [
       "general"
@@ -48805,11 +48805,11 @@
   },
   {
     "word": "wrongly",
-    "meaning": "不正確地，錯誤地；錯誤地。",
+    "meaning": "錯誤地；不公正地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I wrongly assumed that it would be an easy job. 我錯誤地認為這將是一項容易的工作。",
-      "If someone acts wrongly, they do so in a way that is incorrectly, mistakenly; by error. 如果某人的行為是錯誤的，那麼他們的行為方式就是錯誤的、錯誤的。由於錯誤。"
+      "He was wrongly blamed for the mistake. 他被錯誤地怪罪了。",
+      "The address was wrongly written on the envelope. 信封上的地址寫錯了。"
     ],
     "audienceTags": [
       "general"

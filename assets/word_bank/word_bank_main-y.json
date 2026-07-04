@@ -384,7 +384,7 @@
   },
   {
     "word": "yaghourt",
-    "meaning": "優格；酸奶",
+    "meaning": "優格；優格",
     "partOfSpeech": "noun",
     "sentences": [
       "He ate yaghourt with fruit for breakfast. 他早餐吃了加水果的優格。",
@@ -507,8 +507,8 @@
     "meaning": "雅根族；火地島原住民族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson described the Yahgan people of the south. 那堂課介紹了南方的雅根族人。",
-      "A Yahgan hunter once lived near the cold coast. 一位雅根族獵人曾住在寒冷的海岸附近。"
+      "The museum had photos of Yahgan families from Tierra del Fuego. 博物館裡有火地島雅根族家庭的照片。",
+      "A guide told us how Yahgan people lived by the cold sea. 導覽員告訴我們雅根族人如何在寒冷海邊生活。"
     ],
     "audienceTags": [
       "general"
@@ -528,11 +528,11 @@
   },
   {
     "word": "yahoo",
-    "meaning": "粗魯、粗魯、大聲或粗魯的人。",
+    "meaning": "粗魯吵鬧的人；野蠻人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term yahoo refers to a rough, coarse, loud or uncouth individual. 雅虎一詞指的是粗魯、粗俗、大聲或粗俗的人。",
-      "The lesson introduced yahoo as a useful term to understand. 本課介紹了雅虎這個易於理解的有用術語。"
+      "Do not act like a yahoo in the library. 在圖書館裡不要像個粗魯吵鬧的人。",
+      "The movie shows a group of yahoos causing trouble downtown. 電影裡有一群粗魯的人在市中心惹麻煩。"
     ],
     "audienceTags": [
       "general"
@@ -687,8 +687,8 @@
     "meaning": "祭祀；敬拜",
     "partOfSpeech": "verb",
     "sentences": [
-      "In the glossary, yaje is explained as an old ritual verb. 詞彙表裡把這個詞解釋成一個古老的祭祀動詞。",
-      "The poem uses yaje to suggest worship and offering. 那首詩用這個動詞來暗示敬拜和獻祭。"
+      "The villagers would yaje at the small shrine before harvest. 村民收成前會在小神龕前祭拜。",
+      "The poem says the people yaje with food and flowers. 詩裡寫人們用食物和花來敬拜。"
     ],
     "audienceTags": [
       "general"
@@ -855,8 +855,8 @@
     "meaning": "接近的；親近的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The word yakin means near or close in some languages. 在某些語言裡，這個詞表示接近或親近。",
-      "He felt yakin to the family after many visits. 經過多次拜訪後，他和那家人感到很親近。"
+      "She felt yakin to her grandmother after the long visit. 長住一段時間後，她覺得和祖母更親近。",
+      "The village was yakin to the river. 那座村莊離河很近。"
     ],
     "audienceTags": [
       "general"
@@ -987,7 +987,7 @@
   },
   {
     "word": "yali",
-    "meaning": "雅里；臨水宅邸",
+    "meaning": "雅裡；臨水宅邸",
     "partOfSpeech": "noun",
     "sentences": [
       "The yali stood right on the edge of the water. 那座臨水宅邸就蓋在水邊。",
@@ -1115,8 +1115,8 @@
     "meaning": "亞馬西族；族名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson discussed the Yamassee and their history. 那堂課談到了亞馬西族及其歷史。",
-      "A Yamassee leader negotiated with neighboring groups. 一位亞馬西族領袖與鄰近族群協商。"
+      "The history book mentioned the Yamassee in early America. 歷史書提到早期美洲的亞馬西族。",
+      "An old map marked a Yamassee village near the river. 一張舊地圖標出河邊的亞馬西族村落。"
     ],
     "audienceTags": [
       "general"
@@ -1271,8 +1271,8 @@
     "meaning": "陽；積極原理",
     "partOfSpeech": "noun",
     "sentences": [
-      "In some transliterations, yan refers to the active principle. 在某些音譯裡，這個音譯詞指的是積極的原理。",
-      "The lesson paired yan with yin as a contrast. 那堂課把陽與陰並列成對比。"
+      "In class, yan was explained together with yin. 課堂上，老師把陽和陰一起說明。",
+      "The chart used yan to show the active side. 圖表用陽表示主動的一面。"
     ],
     "audienceTags": [
       "general"
@@ -1304,11 +1304,11 @@
   },
   {
     "word": "yancopin",
-    "meaning": "罕見的松樹名；也指其木材",
+    "meaning": "罕見的鬆樹名；也指其木材",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guide pointed to a tall yancopin on the slope. 嚮導指著坡上的一棵高大松樹。",
-      "The carpenter used yancopin for the old cabinet. 那位木匠用這種松木做舊櫥櫃。"
+      "The guide pointed to a tall yancopin on the slope. 嚮導指著坡上的一棵高大鬆樹。",
+      "The carpenter used yancopin for the old cabinet. 那位木匠用這種鬆木做舊櫥櫃。"
     ],
     "audienceTags": [
       "general"
@@ -1328,11 +1328,11 @@
   },
   {
     "word": "yang",
-    "meaning": "大雁的叫聲；鳴喇叭。",
+    "meaning": "大雁的叫聲；鳴喇叭聲",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term yang refers to the cry of the wild goose; a honk. 陽，指大雁的叫聲；一聲喇叭。",
-      "The lesson introduced yang as a useful term to understand. 本課介紹了“陽”這個術語，它是一個值得理解的有用術語。"
+      "At the pond, we heard the yang of wild geese overhead. 在池塘邊，我們聽見頭頂上大雁的叫聲。",
+      "The hunter stopped when a loud yang came from the reeds. 蘆葦叢傳來一聲響亮的雁叫，獵人停下腳步。"
     ],
     "audienceTags": [
       "general"
@@ -1532,11 +1532,11 @@
   },
   {
     "word": "yaoort",
-    "meaning": "優格；酸奶",
+    "meaning": "優格；優格",
     "partOfSpeech": "noun",
     "sentences": [
       "She drank a cup of yaoort with breakfast. 她早餐時喝了一杯優格飲品。",
-      "The recipe called for fresh yaoort and honey. 那份食譜需要新鮮酸奶和蜂蜜。"
+      "The recipe called for fresh yaoort and honey. 那份食譜需要新鮮優格和蜂蜜。"
     ],
     "audienceTags": [
       "general"
@@ -1571,8 +1571,8 @@
     "meaning": "加碼贈品；附帶的小東西",
     "partOfSpeech": "noun",
     "sentences": [
-      "The shopkeeper added a yapa to the purchase. 店主在這筆買賣裡多送了一件小禮物。",
-      "In some places, yapa means a little extra. 在某些地方，這個詞指額外加送的小東西。"
+      "Vendors often add a yapa for regular customers. 攤販常會多送熟客一點小贈品。",
+      "She smiled when the baker put a yapa in the bag. 麵包師傅在袋子裡多放一份小贈品，她笑了。"
     ],
     "audienceTags": [
       "general"
@@ -1619,7 +1619,7 @@
     "meaning": "水負鼠",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yapok swam quietly across the stream. 那隻水負鼠安靜地游過小溪。",
+      "The yapok swam quietly across the stream. 那隻水負鼠安靜地遊過小溪。",
       "Scientists studied the yapok in wet habitats. 科學家研究生活在濕地裡的水負鼠。"
     ],
     "audienceTags": [
@@ -1760,11 +1760,11 @@
   },
   {
     "word": "yar",
-    "meaning": "年 (修正為 year)",
+    "meaning": "year 的古拼法或誤拼",
     "partOfSpeech": "noun",
     "sentences": [
-      "Happy New Yar! I hope you have a great one. 新年快樂（新「年」快樂）！希望你過得愉快。",
-      "She plans to travel to Europe later this yar. 她計畫今「年」晚些時候去歐洲旅行。"
+      "That old sign spelled year as yar. 那塊舊招牌把年份寫成古拼法。",
+      "Please correct yar to year in the greeting card. 請把賀卡上的年份拼法改正。"
     ],
     "examTags": [
       "toeic"
@@ -1790,8 +1790,8 @@
     "meaning": "罕見名稱；舊式詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old glossary listed yaray as a rare term. 那本舊詞彙表把這個詞列為罕見詞。",
-      "A scholar noted yaray in the margin. 一位學者在頁邊註記了這個詞。"
+      "The archivist found yaray in a handwritten list. 檔案員在手寫清單裡看到這個罕見詞。",
+      "A scholar marked yaray because the word was unusual. 一位學者把這個罕見詞標了出來。"
     ],
     "audienceTags": [
       "general"
@@ -1865,11 +1865,11 @@
   },
   {
     "word": "yardarm",
-    "meaning": "桅杆橫臂",
+    "meaning": "桅桿橫臂",
     "partOfSpeech": "noun",
     "sentences": [
-      "The sailor climbed the yardarm to fix the sail. 水手爬上桅杆橫臂修理帆布。",
-      "A flag fluttered from the yardarm all morning. 整個早上，旗子都在桅杆橫臂上飄動。"
+      "The sailor climbed the yardarm to fix the sail. 水手爬上桅桿橫臂修理帆布。",
+      "A flag fluttered from the yardarm all morning. 整個早上，旗子都在桅桿橫臂上飄動。"
     ],
     "audienceTags": [
       "general"
@@ -1928,8 +1928,8 @@
     "meaning": "古英國土地單位",
     "partOfSpeech": "noun",
     "sentences": [
-      "The history text defined a yardland as a land unit. 歷史課本把這個詞定義為一種土地單位。",
-      "Few people use the word yardland today. 今天已很少人使用這個古老詞語。"
+      "The farm once measured almost one yardland. 那座農場以前大約有一個古土地單位那麼大。",
+      "The deed described the field as a yardland. 契約把那塊田記成一個古英國土地單位。"
     ],
     "audienceTags": [
       "general"
@@ -1985,11 +1985,11 @@
   },
   {
     "word": "yardwand",
-    "meaning": "一碼長的量棒；測量杆",
+    "meaning": "一碼長的量棒；測量桿",
     "partOfSpeech": "noun",
     "sentences": [
       "He measured the cloth with a long yardwand. 他用一根長量棒量那塊布。",
-      "The old surveyor carried a wooden yardwand. 那位老測量員帶著一根木製測量杆。"
+      "The old surveyor carried a wooden yardwand. 那位老測量員帶著一根木製測量桿。"
     ],
     "audienceTags": [
       "general"
@@ -2000,7 +2000,7 @@
     "meaning": "敏捷的；靈巧的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The yare sailor climbed the mast with ease. 那位敏捷的水手輕鬆爬上桅杆。",
+      "The yare sailor climbed the mast with ease. 那位敏捷的水手輕鬆爬上桅桿。",
       "A yare fox darted across the field. 一隻靈巧的狐狸迅速穿過田野。"
     ],
     "audienceTags": [
@@ -3023,11 +3023,11 @@
   },
   {
     "word": "yearbook",
-    "meaning": "參考書，每年出版。",
+    "meaning": "年鑑；畢業紀念冊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term yearbook refers to a reference book, published annually. 年鑑一詞是指每年出版的參考書。",
-      "The lesson introduced yearbook as a useful term to understand. 本課程介紹了年鑑作為一個易於理解的有用術語。"
+      "She asked her friends to sign her yearbook. 她請朋友在畢業紀念冊上簽名。",
+      "The library keeps a yearbook of local statistics. 圖書館收藏地方統計年鑑。"
     ],
     "audienceTags": [
       "general"
@@ -3478,7 +3478,7 @@
     "meaning": "蛋黃",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yelk was bright and rich in color. 蛋黃的顏色鮮明而濃郁。",
+      "The yelk was bright and rich in color. 蛋黃的顏色鮮明而濃鬱。",
       "She separated the yelk from the white carefully. 她小心地把蛋黃和蛋白分開。"
     ],
     "audienceTags": [
@@ -3669,7 +3669,7 @@
     "meaning": "黃魚；黃色的魚",
     "partOfSpeech": "noun",
     "sentences": [
-      "A yellowfish swam close to the boat. 一條黃魚游到船邊。",
+      "A yellowfish swam close to the boat. 一條黃魚遊到船邊。",
       "The pond was full of small yellowfish. 池塘裡滿是小黃魚。"
     ],
     "audienceTags": [
@@ -3714,11 +3714,11 @@
   },
   {
     "word": "yellowish",
-    "meaning": "颜色有点黄。",
+    "meaning": "淡黃色的；有點偏黃的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as yellowish is somewhat yellow in colour. 被描述為黃色的東西的顏色有點黃色。",
-      "The word yellowish is often used to describe a person, thing, or situation. 黃色這個詞常用來形容人、事物或情況。"
+      "The old paper had a yellowish color. 舊紙張帶著淡黃色。",
+      "The soup looked slightly yellowish under the kitchen light. 在廚房燈光下，這碗湯看起來有點偏黃。"
     ],
     "audienceTags": [
       "general"
@@ -3921,7 +3921,7 @@
     "meaning": "黃釉陶器；淡黃色陶器",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum displayed a bowl of yellowware. 博物館展示了一只黃釉陶碗。",
+      "The museum displayed a bowl of yellowware. 博物館展示了一隻黃釉陶碗。",
       "She collected old yellowware from flea markets. 她在跳蚤市場收集舊的黃釉陶器。"
     ],
     "audienceTags": [
@@ -4002,11 +4002,11 @@
   },
   {
     "word": "yelp",
-    "meaning": "突然的、高亢的噪音或話語。",
+    "meaning": "短促尖叫聲；尖聲叫喊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The puppy let out a yelp when I stepped on her tail. 當我踩到小狗的尾巴時，小狗發出了一聲叫聲。",
-      "The term yelp refers to an abrupt, high-pitched noise or utterance. 術語「尖叫」指的是突然的、高音調的噪音或話語。"
+      "The puppy gave a yelp when the door closed. 門關上時，小狗尖叫了一聲。",
+      "She let out a yelp of surprise. 她驚訝地叫了一聲。"
     ],
     "audienceTags": [
       "general"
@@ -4616,11 +4616,11 @@
   },
   {
     "word": "yestereve",
-    "meaning": "昨晚；前夕",
+    "meaning": "昨晚；前一晚",
     "partOfSpeech": "noun",
     "sentences": [
-      "We met yestereve to plan the trip. 我們昨晚見面，討論了旅行計畫。",
-      "The yestereve was quiet and cool. 昨晚安靜而涼爽。"
+      "The family arrived yestereve, just before dinner. 那家人昨晚剛好在晚餐前抵達。",
+      "I finished the book yestereve and returned it today. 我昨晚看完那本書，今天把它還回去。"
     ],
     "audienceTags": [
       "general"
@@ -4631,8 +4631,8 @@
     "meaning": "昨天傍晚；昨夕",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yestereven as yesterday evening. 詞彙表把這個字解釋成昨天傍晚。",
-      "Writers use yestereven in old-fashioned prose. 作家有時會在古風散文裡使用這個字。"
+      "We packed the bags yestereven before bed. 我們昨晚睡前收好了行李。",
+      "She called me yestereven to confirm dinner. 她昨晚打電話來確認晚餐。"
     ],
     "audienceTags": [
       "general"
@@ -4643,8 +4643,8 @@
     "meaning": "昨天傍晚；昨夕",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yesterevening as the evening of yesterday. 詞彙表把這個字解釋成昨天的傍晚。",
-      "Writers use yesterevening in old-fashioned prose. 作家有時會在古風散文裡使用這個字。"
+      "The rain started yesterevening after sunset. 昨天傍晚日落後開始下雨。",
+      "He wrote the note yesterevening at the kitchen table. 他昨天傍晚在餐桌旁寫了那張便條。"
     ],
     "audienceTags": [
       "general"
@@ -4655,8 +4655,8 @@
     "meaning": "昨天早晨；昨晨",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yestermorn as yesterday morning. 詞彙表把這個字解釋成昨天早晨。",
-      "Writers use yestermorn in old-fashioned prose. 作家有時會在古風散文裡使用這個字。"
+      "I watered the plants yestermorn before school. 我昨天早晨上學前澆了植物。",
+      "The shop opened early yestermorn. 那家店昨天早晨很早就開門了。"
     ],
     "audienceTags": [
       "general"
@@ -4667,8 +4667,8 @@
     "meaning": "昨天早晨；昨晨",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yestermorning as the morning of yesterday. 詞彙表把這個字解釋成昨天的早晨。",
-      "Writers use yestermorning in old-fashioned prose. 作家有時會在古風散文裡使用這個字。"
+      "She missed the bus yestermorning. 她昨天早晨錯過了公車。",
+      "We met yestermorning for a quick breakfast. 我們昨天早晨見面吃了簡單早餐。"
     ],
     "audienceTags": [
       "general"
@@ -4679,8 +4679,8 @@
     "meaning": "昨日的；過去的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary marks yestern as an old adjective for something from yesterday. 詞彙表把這個字標為表示昨日事物的古老形容詞。",
-      "The yestern report was already outdated by noon. 那份昨日的報告到了中午就已經過時了。"
+      "The yestern news still worried everyone. 昨天的消息仍讓大家擔心。",
+      "He folded the yestern paper and put it away. 他把昨天的報紙折好收起來。"
     ],
     "audienceTags": [
       "general"
@@ -4691,8 +4691,8 @@
     "meaning": "昨夜；昨晚",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yesternight as last night. 詞彙表把這個字解釋成昨夜。",
-      "He arrived yesternight after a long journey. 他在長途旅行後於昨夜抵達。"
+      "He arrived yesternight after a long journey. 他昨夜長途跋涉後抵達。",
+      "The wind was strong yesternight. 昨夜的風很大。"
     ],
     "audienceTags": [
       "general"
@@ -4703,8 +4703,8 @@
     "meaning": "昨天下午；昨午",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yesternoon as yesterday noon. 詞彙表把這個字解釋成昨天中午。",
-      "She finished the task yesternoon and rested afterward. 她在昨天下午前後完成工作，之後就休息了。"
+      "She finished the task yesternoon and rested afterward. 她昨天下午完成工作，之後就休息了。",
+      "I saw him yesternoon near the post office. 我昨天下午在郵局附近看到他。"
     ],
     "audienceTags": [
       "general"
@@ -4715,8 +4715,8 @@
     "meaning": "上週；前一週",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yesterweek as last week. 詞彙表把這個字解釋成上週。",
-      "They met yesterweek to review the plan. 他們上週見面檢討了計畫。"
+      "They met yesterweek to review the plan. 他們上週見面檢討計畫。",
+      "I bought these shoes yesterweek. 我上週買了這雙鞋。"
     ],
     "audienceTags": [
       "general"
@@ -4727,8 +4727,8 @@
     "meaning": "去年；往昔",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yesteryear as last year or the past. 詞彙表把這個字解釋成去年或往昔。",
-      "Yesteryear fashions often return in new forms. 往昔的流行款式常會以新面貌回來。"
+      "Yesteryear fashions often return in new forms. 往昔的流行款式常會以新面貌回來。",
+      "Grandpa still talks about the music of yesteryear. 爺爺仍會談起往昔的音樂。"
     ],
     "audienceTags": [
       "general"
@@ -4739,8 +4739,8 @@
     "meaning": "昨晚；昨夕",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary marks yestreen as a Scots word for yesterday evening or night. 詞彙表把這個字標為蘇格蘭語的昨天傍晚或夜晚。",
-      "He reached the village yestreen before the rain started. 他在下雨前的昨晚抵達村子。"
+      "He reached the village yestreen before the rain started. 他昨晚在下雨前抵達村子。",
+      "She left the lamp on yestreen. 她昨晚讓燈一直亮著。"
     ],
     "audienceTags": [
       "general"
@@ -4751,8 +4751,8 @@
     "meaning": "泡沫多的；像酵母的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary defines yesty as frothy or yeasty. 詞彙表把這個字解釋成泡沫多的或像酵母的。",
-      "The yesty waves broke against the rocks. 那些充滿泡沫的浪花拍打著岩石。"
+      "The yesty waves broke against the rocks. 那些充滿泡沫的浪花拍打著岩石。",
+      "The baker liked the yesty smell of the dough. 麵包師傅喜歡麵團帶著酵母的味道。"
     ],
     "audienceTags": [
       "general"
@@ -4781,8 +4781,8 @@
     "meaning": "罕見的舊詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists yeta as a rare old term. 詞彙表把這個字列為罕見的舊詞。",
-      "This yeta appears only in historical notes. 這個罕見詞只出現在歷史筆記裡。"
+      "The diary had yeta written beside a date. 日記某個日期旁寫著這個罕見舊詞。",
+      "A historian noticed yeta in the old letter. 一位歷史學家在舊信裡注意到這個罕見詞。"
     ],
     "audienceTags": [
       "general"
@@ -4793,8 +4793,8 @@
     "meaning": "罕見的地名或專名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists yetapa as a rare place name or proper name. 詞彙表把這個字列為罕見的地名或專名。",
-      "That yetapa appears only in older local records. 那個名稱只出現在較舊的地方紀錄裡。"
+      "The old map marked yetapa near the river. 舊地圖在河邊標出了這個罕見地名。",
+      "Local records mention yetapa only once. 地方紀錄只提過這個罕見名稱一次。"
     ],
     "audienceTags": [
       "general"
@@ -4805,8 +4805,8 @@
     "meaning": "表示同意的舊式感嘆詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The glossary lists yeth as an old exclamation of assent. 詞彙表把這個字列為表示同意的舊式感嘆詞。",
-      "A yeth like this sounds very old-fashioned today. 這樣的感嘆詞在今天聽起來很古老。"
+      "Yeth, the old sailor answered with a nod. 「是啊，」那位老水手點頭回答。",
+      "The character says yeth in the old play. 那個角色在舊劇本裡用這個舊式感嘆詞回答。"
     ],
     "audienceTags": [
       "general"
@@ -4817,8 +4817,8 @@
     "meaning": "套繩；縛具",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yether as a tether or halter. 詞彙表把這個字解釋成套繩或縛具。",
-      "The farmer fastened the goat with a yether. 農夫用套繩把山羊綁住。"
+      "The farmer fastened the goat with a yether. 農夫用套繩把山羊綁住。",
+      "The old yether hung beside the barn door. 那條舊套繩掛在穀倉門旁。"
     ],
     "audienceTags": [
       "general"
@@ -4829,8 +4829,8 @@
     "meaning": "幼獸；小傢伙",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary marks yetlin as a dialect word for a small or young creature. 詞彙表把這個字標為表示小動物或幼獸的方言詞。",
-      "The yetlin followed its mother through the field. 那隻幼獸跟著母獸穿過田野。"
+      "The yetlin followed its mother through the field. 那隻幼獸跟著母獸穿過田野。",
+      "The child fed the hungry yetlin with warm milk. 孩子用溫牛奶餵那隻餓著的幼獸。"
     ],
     "audienceTags": [
       "general"
@@ -4841,8 +4841,8 @@
     "meaning": "發癢；癢感",
     "partOfSpeech": "verb",
     "sentences": [
-      "The glossary defines yeuk as to itch. 詞彙表把這個字解釋成發癢。",
-      "My arm began to yeuk after the walk in the grass. 我的手臂在草地裡走過後開始發癢。"
+      "My arm began to yeuk after the walk in the grass. 我的手臂在草地裡走過後開始發癢。",
+      "The wool sweater made her neck yeuk. 那件羊毛衣讓她脖子發癢。"
     ],
     "audienceTags": [
       "general"
@@ -4853,8 +4853,8 @@
     "meaning": "癢感；發癢的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists yeukieness as itchiness. 詞彙表把這個字列為癢感。",
-      "The yeukieness in his hands kept him awake. 他手上的癢感讓他睡不著。"
+      "The yeukieness in his hands kept him awake. 他手上的癢感讓他睡不著。",
+      "She rubbed lotion on the spot to calm the yeukieness. 她在那個地方擦乳液，好減輕癢感。"
     ],
     "audienceTags": [
       "general"
@@ -4865,8 +4865,8 @@
     "meaning": "發癢的；讓人癢的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary defines yeuky as itchy. 詞彙表把這個字解釋成發癢的。",
-      "The yeuky wool made her skin uncomfortable. 那件讓人發癢的羊毛衣讓她皮膚很不舒服。"
+      "The yeuky wool made her skin uncomfortable. 那件讓人發癢的羊毛衣讓她皮膚很不舒服。",
+      "He changed out of the yeuky shirt right away. 他立刻換掉那件讓人發癢的襯衫。"
     ],
     "audienceTags": [
       "general"
@@ -4877,8 +4877,8 @@
     "meaning": "平整的；齊整的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary lists yeven as an old word for even or level. 詞彙表把這個字列為表示平整或齊整的古詞。",
-      "He wanted the shelves to sit yeven on the wall. 他想讓架子在牆上擺得平整。"
+      "He wanted the shelves to sit yeven on the wall. 他想讓架子在牆上擺得平整。",
+      "The worker checked that the floor was yeven. 工人檢查地板是否平整。"
     ],
     "audienceTags": [
       "general"
@@ -4901,8 +4901,8 @@
     "meaning": "尖促的喘聲；乾咳聲",
     "partOfSpeech": "verb",
     "sentences": [
-      "The glossary defines yex as to gasp or give a sharp cry. 詞彙表把這個字解釋成喘一下或發出尖聲。",
-      "He yexed in surprise when the door opened suddenly. 門突然打開時，他驚訝地喘出一聲。"
+      "He yexed in surprise when the door opened suddenly. 門突然打開時，他驚訝地喘出一聲。",
+      "The boy began to yex after running up the hill. 男孩跑上山坡後開始急促喘氣。"
     ],
     "audienceTags": [
       "general"
@@ -4913,8 +4913,8 @@
     "meaning": "表示同意的舊式感嘆詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The glossary lists yez as a rare exclamation of assent. 詞彙表把這個字列為罕見的同意感嘆詞。",
-      "A yez like this appears mostly in very old writing. 這樣的感嘆詞多半只會出現在很舊的文字裡。"
+      "Yez, the old woman said, and smiled. 「是啊，」那位老婦人微笑著說。",
+      "The letter ended with a cheerful yez. 那封信最後用了開心的舊式同意感嘆詞。"
     ],
     "audienceTags": [
       "general"
@@ -4925,8 +4925,8 @@
     "meaning": "耶茲迪；專有名詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists Yezdi as a proper name. 詞彙表把這個字列為專有名詞。",
-      "Yezdi appears in older records and family notes. 這個名字出現在較舊的紀錄和家族筆記裡。"
+      "A Yezdi family ran the small tea shop. 一戶耶茲迪家庭經營那間小茶店。",
+      "The old record listed a man named Yezdi. 那份舊紀錄列出一位名叫耶茲迪的男子。"
     ],
     "audienceTags": [
       "general"
@@ -4949,8 +4949,8 @@
     "meaning": "罕見的口語名字或稱呼",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary marks yezzy as a rare informal name or nickname. 詞彙表把這個字標為罕見的口語名字或綽號。",
-      "His yezzy appeared only in the family letters. 他的這個稱呼只出現在家書裡。"
+      "His yezzy appeared only in the family letters. 他的這個稱呼只出現在家書裡。",
+      "Her brother used yezzy as a private nickname. 她哥哥把這個罕見詞當作私下暱稱。"
     ],
     "audienceTags": [
       "general"
@@ -4961,8 +4961,8 @@
     "meaning": "罕見的地方名稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists ygapo as a local place name. 詞彙表把這個字列為地方名稱。",
-      "The old map marked ygapo near the river. 舊地圖在河邊標出了這個地名。"
+      "The old map marked ygapo near the river. 舊地圖在河邊標出了這個地方名稱。",
+      "Travelers once stopped at ygapo before crossing the hills. 旅人以前越過山丘前會在這個地方停留。"
     ],
     "audienceTags": [
       "general"
@@ -4973,8 +4973,8 @@
     "meaning": "帶貶意的猶太人稱呼",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary warns that Yid is a slur and should be avoided. 詞彙表提醒這個稱呼帶有貶意，應該避免使用。",
-      "The article explained why Yid is offensive. 那篇文章說明了為什麼這個稱呼會冒犯人。"
+      "The teacher told students not to use Yid as an insult. 老師提醒學生不要用這個詞侮辱別人。",
+      "The article discussed why Yid can hurt people. 那篇文章討論這個稱呼為什麼會傷人。"
     ],
     "audienceTags": [
       "general"
@@ -5052,8 +5052,8 @@
     "meaning": "可讓步的；可屈服的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary defines yieldable as capable of yielding. 詞彙表把這個字解釋成能夠讓步的。",
-      "The yieldable part of the plan was changed first. 這個方案中可讓步的部分先被修改了。"
+      "The yieldable part of the plan was changed first. 這個方案中可讓步的部分先被修改了。",
+      "The soft metal was yieldable under steady pressure. 那塊軟金屬在穩定壓力下容易彎曲。"
     ],
     "audienceTags": [
       "general"
@@ -5064,8 +5064,8 @@
     "meaning": "可讓步性；可屈服性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists yieldableness as the quality of being yieldable. 詞彙表把這個字列為可讓步的性質。",
-      "The yieldableness of the policy surprised the group. 這項政策的可讓步性讓大家很驚訝。"
+      "The yieldableness of the policy surprised the group. 這項政策的可讓步性讓大家很驚訝。",
+      "They tested the yieldableness of the thin plastic sheet. 他們測試那片薄塑膠的可彎曲性。"
     ],
     "audienceTags": [
       "general"
@@ -5076,8 +5076,8 @@
     "meaning": "讓步；屈服",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yieldance as an act of yielding. 詞彙表把這個字解釋成讓步的行為。",
-      "His yieldance ended the long dispute. 他的讓步結束了那場長時間的爭論。"
+      "His yieldance ended the long dispute. 他的讓步結束了那場長時間的爭論。",
+      "The team saw her yieldance as a practical choice. 團隊把她的讓步視為務實選擇。"
     ],
     "audienceTags": [
       "general"
@@ -5088,8 +5088,8 @@
     "meaning": "屈服；讓步",
     "partOfSpeech": "verb",
     "sentences": [
-      "The glossary marks yielden as an archaic verb related to yielding. 詞彙表把這個字標為與讓步相關的古舊動詞。",
-      "The old hero would not yielden to fear. 那位老英雄不會向恐懼屈服。"
+      "The old hero would not yielden to fear. 那位老英雄不會向恐懼屈服。",
+      "She refused to yielden during the argument. 爭論時，她拒絕屈服。"
     ],
     "audienceTags": [
       "general"
@@ -5100,8 +5100,8 @@
     "meaning": "讓步者；產出者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yielder as one who yields or produces. 詞彙表把這個字解釋成讓步者或產出者。",
-      "Each yielder in the group shared a different reason. 團體裡的每位讓步者都說了不同的原因。"
+      "Each yielder in the group shared a different reason. 團體裡的每位讓步者都說了不同的原因。",
+      "The apple tree was a steady yielder every autumn. 那棵蘋果樹每年秋天都穩定結果。"
     ],
     "audienceTags": [
       "general"
@@ -5112,8 +5112,8 @@
     "meaning": "願意讓步的；柔順的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary defines yielding as willing to yield or flexible. 詞彙表把這個字解釋成願意讓步或柔軟的。",
-      "Her yielding attitude kept the meeting calm. 她那種願意讓步的態度讓會議保持平和。"
+      "Her yielding attitude kept the meeting calm. 她那種願意讓步的態度讓會議保持平和。",
+      "The yielding cushion made the chair comfortable. 那個柔軟有彈性的坐墊讓椅子很好坐。"
     ],
     "audienceTags": [
       "general"
@@ -5124,8 +5124,8 @@
     "meaning": "順從地；讓步地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The glossary lists yieldingly as the adverb of yielding. 詞彙表把這個字列為表示讓步的副詞。",
-      "He nodded yieldingly and accepted the change. 他順從地點頭，接受了這項變更。"
+      "He nodded yieldingly and accepted the change. 他順從地點頭，接受了這項變更。",
+      "She stepped aside yieldingly to let the nurse pass. 她順從地退到旁邊，讓護理師通過。"
     ],
     "audienceTags": [
       "general"
@@ -5136,8 +5136,8 @@
     "meaning": "柔順性；讓步的性質",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yieldingness as the quality of being yielding. 詞彙表把這個字解釋成柔順的性質。",
-      "Her yieldingness helped the team finish the project. 她的柔順讓團隊順利完成了專案。"
+      "Her yieldingness helped the team finish the project. 她的柔順讓團隊順利完成專案。",
+      "The yieldingness of the clay made it easy to shape. 黏土的柔軟性讓它很容易塑形。"
     ],
     "audienceTags": [
       "general"
@@ -5148,8 +5148,8 @@
     "meaning": "柔軟的；容易彎曲的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The glossary lists yieldy as flexible or pliant. 詞彙表把這個字列為柔軟或易彎曲的。",
-      "The yieldy fabric draped over the chair. 那塊柔軟的布料垂掛在椅子上。"
+      "The yieldy fabric draped over the chair. 那塊柔軟的布料垂掛在椅子上。",
+      "The mattress felt yieldy but still supportive. 那張床墊摸起來柔軟，但支撐力仍然足夠。"
     ],
     "audienceTags": [
       "general"
@@ -5160,8 +5160,8 @@
     "meaning": "表示驚懼或痛苦的感嘆詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The glossary marks yigh as an exclamation of fear or pain. 詞彙表把這個字標為表示驚懼或痛苦的感嘆詞。",
-      "Yigh, the old speaker cried when he heard the news. 當他聽到消息時，那位老人發出一聲驚呼。"
+      "Yigh, she cried when the plate slipped. 盤子滑落時，她驚叫了一聲。",
+      "The child gave a quick yigh at the loud noise. 聽到巨響時，那孩子短促驚叫了一聲。"
     ],
     "audienceTags": [
       "general"
@@ -5172,8 +5172,8 @@
     "meaning": "耶基爾高利特；專有名詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists Yikirgaulit as a proper name. 詞彙表把這個字列為專有名詞。",
-      "The article mentioned a Yikirgaulit family in the north. 那篇文章提到北方的一戶耶基爾高利特家族。"
+      "The article mentioned a Yikirgaulit family in the north. 那篇文章提到北方的一戶耶基爾高利特家族。",
+      "A Yikirgaulit name appeared on the old document. 舊文件上出現了一個耶基爾高利特姓氏。"
     ],
     "audienceTags": [
       "general"
@@ -5184,8 +5184,8 @@
     "meaning": "一顆恆星的名稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists Yildun as a star name. 詞彙表把這個字列為一顆恆星的名稱。",
-      "Yildun shines faintly near the pole. 這顆恆星在極區附近微微發亮。"
+      "Yildun shines faintly near the pole. 這顆恆星在極區附近微微發亮。",
+      "The student found Yildun on the star chart. 學生在星圖上找到了這顆恆星。"
     ],
     "audienceTags": [
       "general"
@@ -5196,8 +5196,8 @@
     "meaning": "大聲喊叫；尖叫",
     "partOfSpeech": "verb",
     "sentences": [
-      "The glossary defines yill as to cry out shrilly. 詞彙表把這個字解釋成尖聲喊叫。",
-      "The child would yill whenever the door slammed. 每當門砰然關上時，那孩子就會尖叫。"
+      "The child would yill whenever the door slammed. 每當門砰然關上時，那孩子就會尖叫。",
+      "She told the boys not to yill in the hallway. 她叫那些男孩不要在走廊尖叫。"
     ],
     "audienceTags": [
       "general"
@@ -5208,8 +5208,8 @@
     "meaning": "尖銳的叫聲；短促的喊叫",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary lists yilt as a shrill cry. 詞彙表把這個字列為尖銳的叫聲。",
-      "A sudden yilt broke the silence in the room. 一聲突如其來的尖叫打破了房間裡的沉默。"
+      "A sudden yilt broke the silence in the room. 一聲突如其來的尖叫打破了房間裡的沉默。",
+      "The yilt from the kitchen made everyone turn around. 廚房傳來一聲短促尖叫，大家都轉頭看。"
     ],
     "audienceTags": [
       "general"
@@ -5220,8 +5220,8 @@
     "meaning": "陰；陰性原理",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines Yin as the feminine or dark principle in Chinese philosophy. 詞彙表把這個字解釋成中國哲學中的陰性或黑暗原理。",
-      "Yin balances the other half of the system. 陰與系統中的另一半保持平衡。"
+      "Yin balances the other half of the system. 陰與系統中的另一半保持平衡。",
+      "The teacher used a dark circle to show Yin. 老師用深色圓圈表示陰。"
     ],
     "audienceTags": [
       "general"
@@ -5232,8 +5232,8 @@
     "meaning": "陰；陰性原理",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary defines yin as the feminine or dark principle in Chinese philosophy. 詞彙表把這個字解釋成中國哲學中的陰性或黑暗原理。",
-      "Yin and yang are often discussed together. 陰與陽常常一起被討論。"
+      "Yin and yang are often discussed together. 陰與陽常常一起被討論。",
+      "The design used yin to suggest stillness and shade. 那個設計用陰來表現安靜與陰影。"
     ],
     "audienceTags": [
       "general"
@@ -5244,8 +5244,8 @@
     "meaning": "一次；過去曾經",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The glossary lists yince as a Scots word meaning once. 詞彙表把這個字列為蘇格蘭語，意思是一次或曾經。",
-      "He yince lived in a small house by the river. 他曾經住在河邊的一間小屋裡。"
+      "He yince lived in a small house by the river. 他曾經住在河邊的一間小屋裡。",
+      "She yince worked at the village bakery. 她以前曾在村裡的麵包店工作。"
     ],
     "audienceTags": [
       "general"
@@ -5256,8 +5256,8 @@
     "meaning": "剛剛；從前",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The glossary lists yinst as a Scots word meaning just now or once. 詞彙表把這個字列為蘇格蘭語，意思是剛剛或曾經。",
-      "She was yinst a student at the village school. 她從前曾是村校的學生。"
+      "She was yinst a student at the village school. 她從前曾是村校的學生。",
+      "He yinst kept a small boat by the pier. 他從前在碼頭邊放著一艘小船。"
     ],
     "audienceTags": [
       "general"
@@ -5304,8 +5304,8 @@
     "meaning": "罕見的呼喊聲；古字",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old glossary described yirm as a strange cry. 舊詞典把這個詞說成一種奇怪的呼喊聲。",
-      "He heard a soft yirm from the back room. 他聽見後面房間傳來輕輕的呼喊聲。"
+      "The baby made a tiny yirm in her sleep. 嬰兒睡夢中發出很輕的叫聲。",
+      "We heard a yirm from the hallway. 我們聽見走廊傳來一聲細小的呼喊。"
     ],
     "audienceTags": [
       "general"
@@ -5433,11 +5433,11 @@
   },
   {
     "word": "yobi",
-    "meaning": "呼喚；招呼；預備的",
+    "meaning": "呼喚；招呼；提醒用語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The speaker used yobi as a quick call. 講話的人把這個詞當成快速的招呼。",
-      "She wrote yobi on the margin as a reminder. 她在頁邊寫下這個詞當作提醒。"
+      "The coach gave a quick yobi before the drill. 教練在訓練前快速喊了一聲。",
+      "She used yobi as a reminder on the schedule. 她把這個詞寫在行程表上提醒自己。"
     ],
     "audienceTags": [
       "general"
@@ -5448,8 +5448,8 @@
     "meaning": "罕見的植物名；地方用語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old field guide mentioned yocco as a plant. 舊野外指南把這個詞當作一種植物名。",
-      "A yocco grew beside the path in the garden. 花園裡的小徑旁長著一株這種植物。"
+      "The gardener planted yocco near the fence. 園丁把這種植物種在圍籬旁。",
+      "Old herbal books sometimes mention yocco. 舊草藥書有時會提到這種植物。"
     ],
     "audienceTags": [
       "general"
@@ -5532,8 +5532,8 @@
     "meaning": "希伯來字母表中的第十個字母",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson introduced yodh as a Hebrew letter. 這堂課把這個字母介紹為希伯來字母。",
-      "A yodh appears in many Hebrew words. 許多希伯來單字裡都會出現這個字母。"
+      "The teacher wrote yodh on the board during Hebrew class. 希伯來語課上，老師把第十個字母寫在黑板上。",
+      "She practiced the shape of yodh in her notebook. 她在筆記本裡練習這個希伯來字母的寫法。"
     ],
     "audienceTags": [
       "general"
@@ -5596,7 +5596,7 @@
   },
   {
     "word": "yoghurt",
-    "meaning": "優格；酸奶",
+    "meaning": "優格；優格",
     "partOfSpeech": "noun",
     "sentences": [
       "She ate yoghurt with fruit for breakfast. 她早餐吃了加水果的優格。",
@@ -5714,8 +5714,8 @@
     "meaning": "育亨賓鹼；一種生物鹼",
     "partOfSpeech": "noun",
     "sentences": [
-      "The pharmacist discussed yohimbine with the patient. 藥師和病人討論了育亨賓鹼。",
-      "Yohimbine is known as a plant alkaloid. 育亨賓鹼被認為是一種植物生物鹼。"
+      "The doctor warned him not to take yohimbine without advice. 醫師提醒他不要自行服用育亨賓鹼。",
+      "The lab tested a small amount of yohimbine. 實驗室測試了少量育亨賓鹼。"
     ],
     "audienceTags": [
       "general"
@@ -5726,8 +5726,8 @@
     "meaning": "育亨賓鹼化；使用育亨賓鹼的處理",
     "partOfSpeech": "noun",
     "sentences": [
-      "The report mentioned yohimbinization of the sample. 報告提到樣本經過育亨賓鹼化處理。",
-      "Yohimbinization was described as a laboratory step. 育亨賓鹼化被描述為一個實驗室步驟。"
+      "The sample changed after yohimbinization in the lab. 樣本在實驗室處理後出現變化。",
+      "The paper described yohimbinization as part of the test. 論文把育亨賓鹼化列為測試步驟之一。"
     ],
     "audienceTags": [
       "general"
@@ -5783,7 +5783,7 @@
   },
   {
     "word": "yojan",
-    "meaning": "印度古代長度單位；由若干里組成的距離",
+    "meaning": "印度古代長度單位；由若干裡組成的距離",
     "partOfSpeech": "noun",
     "sentences": [
       "The map marked the route as one yojan. 地圖把這段路標成一個古代長度單位。",
@@ -5831,11 +5831,11 @@
   },
   {
     "word": "yoke",
-    "meaning": "與役畜有關的大量工作，持續約半天；任何工作的數量或輪班。",
+    "meaning": "軛；束縛；使連結在一起的東西",
     "partOfSpeech": "noun",
     "sentences": [
-      "to work two yokes 工作兩個軛",
-      "The term yoke refers to an amount of work done with draught animals, lasting about half a day; an amount or shift of any work. 「軛」一詞是指對役畜所做的大量工作，持續約半天；任何工作的數量或班次。"
+      "The farmer placed a yoke on the oxen. 農夫把軛套在牛身上。",
+      "Debt can feel like a heavy yoke. 債務有時像沉重的束縛。"
     ],
     "audienceTags": [
       "general"
@@ -5858,8 +5858,8 @@
     "meaning": "可套軛性；可連結的特性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yokeableness of the pair made work easier. 這一對可套軛的特性讓工作變得更容易。",
-      "Engineers discussed the yokeableness of the design. 工程師討論了這個設計是否容易連結。"
+      "Farmers checked the yokeableness of the two oxen. 農夫檢查這兩頭牛是否適合一起套軛。",
+      "The design's yokeableness made the parts easy to join. 這個設計容易連結，讓零件更好組合。"
     ],
     "audienceTags": [
       "general"
@@ -5906,8 +5906,8 @@
     "meaning": "鄉巴佬的狀態；鄉氣",
     "partOfSpeech": "noun",
     "sentences": [
-      "He tried to hide his yokeldom at the party. 他在派對上努力掩飾自己的鄉氣。",
-      "The story played with the idea of yokeldom. 那個故事玩味了鄉巴佬氣質這個概念。"
+      "The comedy made fun of yokeldom in a playful way. 這部喜劇用輕鬆方式開鄉氣的玩笑。",
+      "He used yokeldom to describe his awkward first week in the city. 他用鄉氣來形容自己剛到城市第一週的笨拙樣子。"
     ],
     "audienceTags": [
       "general"
@@ -5927,11 +5927,11 @@
   },
   {
     "word": "yokelish",
-    "meaning": "像乡巴佬的；粗俗而笨拙的",
+    "meaning": "像鄉巴佬的；粗俗而笨拙的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "His yokelish manners embarrassed him at the dinner table. 他那种乡巴佬似的举止在餐桌上让他很难堪。",
-      "The actor gave the farmer a yokelish grin. 那位演员露出了一副乡巴佬似的傻笑。"
+      "His yokelish manners embarrassed him at the dinner table. 他那種鄉巴佬似的舉止在餐桌上讓他很難堪。",
+      "The actor gave the farmer a yokelish grin. 那位演員露出了一副鄉巴佬似的傻笑。"
     ],
     "audienceTags": [
       "general"
@@ -5939,11 +5939,11 @@
   },
   {
     "word": "yokelism",
-    "meaning": "乡巴佬气；粗鄙的态度",
+    "meaning": "鄉巴佬氣；粗鄙的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "The novel poked fun at small-town yokelism. 那部小说取笑了小镇上的乡巴佬气。",
-      "He disliked the yokelism of the loud crowd. 他不喜欢那群人大声喧哗的粗鄙气。"
+      "The novel poked fun at small-town yokelism. 那部小說取笑了小鎮上的鄉巴佬氣。",
+      "He disliked the yokelism of the loud crowd. 他不喜歡那群人大聲喧哗的粗鄙氣。"
     ],
     "audienceTags": [
       "general"
@@ -5951,11 +5951,11 @@
   },
   {
     "word": "yokelry",
-    "meaning": "乡巴佬群；乡下人的举止",
+    "meaning": "鄉巴佬群；鄉下人的舉止",
     "partOfSpeech": "noun",
     "sentences": [
-      "The satire mocked the yokelry in the village square. 那篇讽刺作品拿广场上的乡巴佬群开玩笑。",
-      "She laughed at the yokelry of the local dance hall. 她对当地舞厅里那股乡气笑了出来。"
+      "The satire mocked the yokelry in the village square. 那篇諷刺作品拿廣場上的鄉巴佬群開玩笑。",
+      "She laughed at the yokelry of the local dance hall. 她對當地舞廳裡那股鄉氣笑了出來。"
     ],
     "audienceTags": [
       "general"
@@ -5963,11 +5963,11 @@
   },
   {
     "word": "yokemate",
-    "meaning": "同伴；搭档",
+    "meaning": "同伴；搭檔",
     "partOfSpeech": "noun",
     "sentences": [
-      "The two farmers worked as yokemates all season. 那两位农夫整个季节都像搭档一样一起干活。",
-      "He trusted his yokemate with the heavy plow. 他把沉重的犁放心交给搭档。"
+      "The two farmers worked as yokemates all season. 那兩位農夫整個季節都像搭檔一樣一起幹活。",
+      "He trusted his yokemate with the heavy plow. 他把沉重的犁放心交給搭檔。"
     ],
     "audienceTags": [
       "general"
@@ -5975,11 +5975,11 @@
   },
   {
     "word": "yokemating",
-    "meaning": "结成搭档；配对",
+    "meaning": "結成搭檔；配對",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yokemating of the oxen took only a minute. 那两头牛配对套轭只花了一分钟。",
-      "The crew watched the yokemating before the fieldwork began. 开始田间工作前，队员们看着牲口完成配对。"
+      "The yokemating of the oxen took only a minute. 那兩頭牛配對套軛只花了一分鐘。",
+      "The crew watched the yokemating before the fieldwork began. 開始田間工作前，隊員們看著牲口完成配對。"
     ],
     "audienceTags": [
       "general"
@@ -5987,11 +5987,11 @@
   },
   {
     "word": "yoker",
-    "meaning": "套轭的人；给牲口套轭的人",
+    "meaning": "套軛的人；給牲口套軛的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yoker fastened the straps before sunrise. 套轭的人在日出前就把带子系好。",
-      "Every yoker in the barn knew the old routine. 畜棚里的每个套轭工都熟悉那套老流程。"
+      "The yoker fastened the straps before sunrise. 套軛的人在日出前就把帶子繫好。",
+      "Every yoker in the barn knew the old routine. 畜棚裡的每個套軛工都熟悉那套老流程。"
     ],
     "audienceTags": [
       "general"
@@ -5999,11 +5999,11 @@
   },
   {
     "word": "yokewise",
-    "meaning": "像乡巴佬那样地；笨拙地",
+    "meaning": "像鄉巴佬那樣地；笨拙地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He yokewise folded his arms and stared at the floor. 他笨笨地抱起双臂，盯着地板。",
-      "The child yokewise shuffled through the mud. 那孩子笨拙地在泥地里拖着步子。"
+      "He yokewise folded his arms and stared at the floor. 他笨笨地抱起雙臂，盯著地板。",
+      "The child yokewise shuffled through the mud. 那孩子笨拙地在泥地裡拖著步子。"
     ],
     "audienceTags": [
       "general"
@@ -6011,11 +6011,11 @@
   },
   {
     "word": "yokewood",
-    "meaning": "用来做轭的木头",
+    "meaning": "用來做軛的木頭",
     "partOfSpeech": "noun",
     "sentences": [
-      "The carpenter saved the best yokewood for the cart. 那位木匠把最好的轭木留给那辆车。",
-      "Old yokewood is hard and smooth from long use. 老轭木因为长期使用而又硬又光滑。"
+      "The carpenter saved the best yokewood for the cart. 那位木匠把最好的軛木留給那輛車。",
+      "Old yokewood is hard and smooth from long use. 老軛木因為長期使用而又硬又光滑。"
     ],
     "audienceTags": [
       "general"
@@ -6023,11 +6023,11 @@
   },
   {
     "word": "yoking",
-    "meaning": "套轭的动作；连接",
+    "meaning": "套軛的動作；連接",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yoking of the pair took some practice. 这对牲口的套轭动作练了好几次才熟。",
-      "He studied the yoking of the ropes and poles. 他研究绳索和木杆如何连接。"
+      "The yoking of the pair took some practice. 這對牲口的套軛動作練了好幾次才熟。",
+      "He studied the yoking of the ropes and poles. 他研究繩索和木桿如何連接。"
     ],
     "audienceTags": [
       "general"
@@ -6035,11 +6035,11 @@
   },
   {
     "word": "Yokuts",
-    "meaning": "约库茨族；加州原住民族",
+    "meaning": "約庫茨族；加州原住民族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum display introduced the Yokuts people. 博物馆展览介绍了约库茨族。",
-      "A Yokuts elder told a story beside the river. 一位约库茨族长者在河边讲了一个故事。"
+      "The museum display introduced the Yokuts people. 博物館展覽介紹了約庫茨族。",
+      "A Yokuts elder told a story beside the river. 一位約庫茨族長者在河邊講了一個故事。"
     ],
     "audienceTags": [
       "general"
@@ -6047,11 +6047,11 @@
   },
   {
     "word": "yoky",
-    "meaning": "乡巴佬似的；笨拙的",
+    "meaning": "鄉巴佬似的；笨拙的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "He gave a yoky nod and left the room. 他笨笨地点了个头就离开了房间。",
-      "The comic character walked with a yoky sway. 那个喜剧角色走路时带着笨拙的摇摆。"
+      "He gave a yoky nod and left the room. 他笨笨地点了個頭就离開了房間。",
+      "The comic character walked with a yoky sway. 那個喜剧角色走路時帶著笨拙的摇摆。"
     ],
     "audienceTags": [
       "general"
@@ -6062,8 +6062,8 @@
     "meaning": "金色的；像金子的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The painter used a yolden glow for the sunset. 那位画家用金色的光泽来描绘夕阳。",
-      "A yolden line ran along the old frame. 老旧的框边上有一道金色的线。"
+      "The painter used a yolden glow for the sunset. 那位畫家用金色的光泽來描绘夕陽。",
+      "A yolden line ran along the old frame. 老舊的框邊上有一道金色的線。"
     ],
     "audienceTags": [
       "general"
@@ -6071,11 +6071,11 @@
   },
   {
     "word": "Yoldia",
-    "meaning": "约尔迪亚；一种贝类属名",
+    "meaning": "約爾迪亞；一種貝類屬名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The shell cabinet included a specimen of Yoldia. 贝壳柜里有一件约尔迪亚样本。",
-      "Scientists cataloged the mollusk as Yoldia. 科学家把那种软体动物归入约尔迪亚属。"
+      "The shell cabinet included a specimen of Yoldia. 貝殼櫃裡有一件約爾迪亞樣本。",
+      "Scientists cataloged the mollusk as Yoldia. 科學家把那種軟體動物歸入約爾迪亞屬。"
     ],
     "audienceTags": [
       "general"
@@ -6083,11 +6083,11 @@
   },
   {
     "word": "yoldring",
-    "meaning": "黄鹀；旧称一种黄褐色小鸟",
+    "meaning": "黃鹀；舊稱一種黃褐色小鳥",
     "partOfSpeech": "noun",
     "sentences": [
-      "The bird guide listed the yoldring under an old name. 鸟类图鉴把这种旧名列为旧名称。",
-      "A yoldring flashed yellow in the hedgerow. 一只黄鹀在树篱间闪过一抹黄色。"
+      "The bird guide listed the yoldring under an old name. 鳥類圖鑑把這種舊名列為舊名稱。",
+      "A yoldring flashed yellow in the hedgerow. 一隻黃鹀在樹籬間閃過一抹黃色。"
     ],
     "audienceTags": [
       "general"
@@ -6099,7 +6099,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "She carefully separated the egg yolk from the white for the recipe. 她小心地將蛋黃與蛋白分開以備食譜之用。",
-      "The soft-boiled egg had a perfectly runny and rich yellow yolk. 這顆半熟蛋有著完美的、流動且濃郁的黃色蛋黃。"
+      "The soft-boiled egg had a perfectly runny and rich yellow yolk. 這顆半熟蛋有著完美的、流動且濃鬱的黃色蛋黃。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -6112,11 +6112,11 @@
   },
   {
     "word": "yolked",
-    "meaning": "带蛋黄的；含蛋黄的",
+    "meaning": "帶蛋黃的；含蛋黃的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "She baked a yolked custard for the guests. 她为客人烤了一份带蛋黄的蛋奶甜点。",
-      "The yolked sauce tasted rich and smooth. 那种含蛋黄的酱汁尝起来浓郁又顺口。"
+      "She baked a yolked custard for the guests. 她為客人烤了一份帶蛋黃的蛋奶甜点。",
+      "The yolked sauce tasted rich and smooth. 那種含蛋黃的酱汁尝起來濃鬱又顺口。"
     ],
     "audienceTags": [
       "general"
@@ -6124,11 +6124,11 @@
   },
   {
     "word": "yolkiness",
-    "meaning": "蛋黄色；蛋黄感",
+    "meaning": "蛋黃色；蛋黃感",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yolkiness of the sauce made it look golden. 那种酱汁的蛋黄色让它看起来很金黄。",
-      "He noticed the yolkiness of the custard at once. 他立刻注意到那份蛋奶甜点的蛋黄感。"
+      "The yolkiness of the sauce made it look golden. 那種酱汁的蛋黃色讓它看起來很金黃。",
+      "He noticed the yolkiness of the custard at once. 他立刻注意到那份蛋奶甜点的蛋黃感。"
     ],
     "audienceTags": [
       "general"
@@ -6136,11 +6136,11 @@
   },
   {
     "word": "yolkless",
-    "meaning": "无蛋黄的；去掉蛋黄的",
+    "meaning": "无蛋黃的；去掉蛋黃的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The chef made a yolkless dressing for the salad. 厨师为沙拉做了一种无蛋黄的调味酱。",
-      "She preferred the yolkless filling in her pastry. 她更喜欢酥皮点心里去掉蛋黄的馅料。"
+      "The chef made a yolkless dressing for the salad. 廚師為沙拉做了一種无蛋黃的調味酱。",
+      "She preferred the yolkless filling in her pastry. 她更喜歡酥皮点心裡去掉蛋黃的餡料。"
     ],
     "audienceTags": [
       "general"
@@ -6148,11 +6148,11 @@
   },
   {
     "word": "yolky",
-    "meaning": "蛋黄丰富的；蛋黄色的",
+    "meaning": "蛋黃豐富的；蛋黃色的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The yolky center of the egg was still soft. 那颗蛋中央蛋黄部分仍然柔软。",
-      "The soup had a yolky color after the butter was added. 加了奶油后，汤变成了蛋黄色。"
+      "The yolky center of the egg was still soft. 那顆蛋中央蛋黃部分仍然柔軟。",
+      "The soup had a yolky color after the butter was added. 加了奶油後，湯變成了蛋黃色。"
     ],
     "audienceTags": [
       "general"
@@ -6160,11 +6160,11 @@
   },
   {
     "word": "yom",
-    "meaning": "日子；一天；古语用法",
+    "meaning": "日子；一天；古語用法",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old poem used yom to mean a day. 那首古诗用这个词表示一天。",
-      "He copied the rare word yom from the glossary. 他从词汇表里抄下了这个罕见的词。"
+      "The old poem used yom to mean a day. 那首古詩用這個詞表示一天。",
+      "The calendar note marked one yom for rest. 行事曆註記留了一天休息。"
     ],
     "audienceTags": [
       "general"
@@ -6172,11 +6172,11 @@
   },
   {
     "word": "yomer",
-    "meaning": "古怪词；罕见词",
+    "meaning": "古怪詞；罕見詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lexicographer marked yomer as a rare term. 那位词典编纂者把它标为罕见词。",
-      "A yomer can survive only in old papers. 这种古怪词往往只会留在旧纸张里。"
+      "The lexicographer marked yomer as a rare term. 那位詞典編纂者把它標為罕見詞。",
+      "A yomer can survive only in old papers. 這種古怪詞往往只會留在舊紙張裡。"
     ],
     "audienceTags": [
       "general"
@@ -6184,11 +6184,11 @@
   },
   {
     "word": "Yomud",
-    "meaning": "尤穆德人；土库曼族群",
+    "meaning": "尤穆德人；土庫曼族群",
     "partOfSpeech": "noun",
     "sentences": [
-      "The documentary followed a Yomud family in the desert. 纪录片跟拍了一户尤穆德人家庭在沙漠里的生活。",
-      "A Yomud elder spoke about camel herding. 一位尤穆德族长者谈起了骆驼放牧。"
+      "The documentary followed a Yomud family in the desert. 紀錄片跟拍了一戶尤穆德人家庭在沙漠裡的生活。",
+      "A Yomud elder spoke about camel herding. 一位尤穆德族長者談起了駱駝放牧。"
     ],
     "audienceTags": [
       "general"
@@ -6196,11 +6196,11 @@
   },
   {
     "word": "yon",
-    "meaning": "在那边；在那处",
+    "meaning": "在那邊；在那處",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The cottage stands yon beside the hill. 小屋就在山坡那边。",
-      "She pointed yon and asked us to wait. 她指向那边，要我们等一等。"
+      "The cottage stands yon beside the hill. 小屋就在山坡那邊。",
+      "She pointed yon and asked us to wait. 她指向那邊，要我們等一等。"
     ],
     "audienceTags": [
       "general"
@@ -6208,11 +6208,11 @@
   },
   {
     "word": "yoncopin",
-    "meaning": "一种旧称的块茎植物；罕见植物名",
+    "meaning": "一種舊稱的塊茎植物；罕見植物名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The herbarium sheet was labeled yoncopin. 那张植物标本纸上写着这种旧植物名。",
-      "Botanists debated whether yoncopin was a real species name. 植物学家争论它是否真是一个物种名。"
+      "The herbarium sheet was labeled yoncopin. 那張植物標本紙上寫著這種舊植物名。",
+      "Botanists debated whether yoncopin was a real species name. 植物學家爭論它是否真是一個物種名。"
     ],
     "audienceTags": [
       "general"
@@ -6220,11 +6220,11 @@
   },
   {
     "word": "yond",
-    "meaning": "远处的；那边的；遥远的",
+    "meaning": "遠處的；那邊的；遥遠的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "They saw a yond light beyond the trees. 他们看见树林后方有一盏远处的灯。",
-      "The yond field looked silver in the moonlight. 那片远处的田野在月光下泛着银光。"
+      "They saw a yond light beyond the trees. 他們看見樹林後方有一盏遠處的燈。",
+      "The yond field looked silver in the moonlight. 那片遠處的田野在月光下泛著银光。"
     ],
     "audienceTags": [
       "general"
@@ -6244,11 +6244,11 @@
   },
   {
     "word": "Yonkalla",
-    "meaning": "约恩卡拉人；族名",
+    "meaning": "約恩卡拉人；族名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The report named the Yonkalla in the region. 报告提到了该地区的约恩卡拉人。",
-      "A Yonkalla leader greeted the visitors politely. 一位约恩卡拉族领袖礼貌地迎接了来客。"
+      "The report named the Yonkalla in the region. 報告提到了該地區的約恩卡拉人。",
+      "A Yonkalla leader greeted the visitors politely. 一位約恩卡拉族領袖禮貌地迎接了來客。"
     ],
     "audienceTags": [
       "general"
@@ -6256,11 +6256,11 @@
   },
   {
     "word": "yonner",
-    "meaning": "远方的人；外乡人",
+    "meaning": "遠方的人；外鄉人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The villagers treated the stranger as a yonner. 村民把那位陌生人当成外乡人。",
-      "He spoke like a yonner from the coast. 他说话的口音像个来自海边的外乡人。"
+      "The villagers treated the stranger as a yonner. 村民把那位陌生人當成外鄉人。",
+      "He spoke like a yonner from the coast. 他說話的口音像個來自海邊的外鄉人。"
     ],
     "audienceTags": [
       "general"
@@ -6268,11 +6268,11 @@
   },
   {
     "word": "yonside",
-    "meaning": "朝那边地；向远处地",
+    "meaning": "朝那邊地；向遠處地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The road bent yonside toward the marsh. 那条路朝那边弯向沼泽。",
-      "He walked yonside after the cart. 他跟着那辆车向远处走去。"
+      "The road bent yonside toward the marsh. 那條路朝那邊彎向沼泽。",
+      "He walked yonside after the cart. 他跟著那輛車向遠處走去。"
     ],
     "audienceTags": [
       "general"
@@ -6280,11 +6280,11 @@
   },
   {
     "word": "yont",
-    "meaning": "那边的；遥远的；偏远的",
+    "meaning": "那邊的；遥遠的；偏遠的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The yont village lay past the river bend. 那个偏远村子就在河湾后面。",
-      "They could barely see the yont hills. 他们几乎看不见那边遥远的山丘。"
+      "The yont village lay past the river bend. 那個偏遠村子就在河灣後面。",
+      "They could barely see the yont hills. 他們幾乎看不見那邊遥遠的山丘。"
     ],
     "audienceTags": [
       "general"
@@ -6292,11 +6292,11 @@
   },
   {
     "word": "yook",
-    "meaning": "轻轻推搡；慢慢挪动",
+    "meaning": "輕輕推搡；慢慢挪動",
     "partOfSpeech": "verb",
     "sentences": [
-      "He had to yook the cart through the mud. 他只好把车慢慢推过泥地。",
-      "The children yooked the bench closer to the fire. 孩子们把长凳轻轻挪近火堆。"
+      "He had to yook the cart through the mud. 他只好把車慢慢推過泥地。",
+      "The children yooked the bench closer to the fire. 孩子們把長凳輕輕挪近火堆。"
     ],
     "audienceTags": [
       "general"
@@ -6304,11 +6304,11 @@
   },
   {
     "word": "yoop",
-    "meaning": "发出呼喊；欢叫",
+    "meaning": "發出呼喊；歡叫",
     "partOfSpeech": "verb",
     "sentences": [
-      "The hikers yooped when they reached the summit. 徒步者登上山顶时欢呼起来。",
-      "He yooped across the field to get attention. 他朝田野另一头大声喊叫，想引人注意。"
+      "The hikers yooped when they reached the summit. 徒步者登上山頂時歡呼起來。",
+      "He yooped across the field to get attention. 他朝田野另一頭大聲喊叫，想引人注意。"
     ],
     "audienceTags": [
       "general"
@@ -6316,11 +6316,11 @@
   },
   {
     "word": "yor",
-    "meaning": "短促的呼喊；一声喊",
+    "meaning": "短促的呼喊；一聲喊",
     "partOfSpeech": "noun",
     "sentences": [
-      "A sharp yor broke the quiet room. 一声短促的呼喊打破了安静的房间。",
-      "The guard answered with a loud yor. 守卫用一声大喊作答。"
+      "A sharp yor broke the quiet room. 一聲短促的呼喊打破了安静的房間。",
+      "The guard answered with a loud yor. 守衛用一聲大喊作答。"
     ],
     "audienceTags": [
       "general"
@@ -6328,11 +6328,11 @@
   },
   {
     "word": "yore",
-    "meaning": "久远的过去；昔日",
+    "meaning": "久遠的過去；昔日",
     "partOfSpeech": "noun",
     "sentences": [
-      "Stories from yore still fascinated the children. 昔日的故事仍然让孩子们着迷。",
-      "He spoke of the yore of the old manor. 他谈起那座老庄园的往昔。"
+      "Stories from yore still fascinated the children. 昔日的故事仍然讓孩子們著迷。",
+      "He spoke of the yore of the old manor. 他談起那座老莊園的往昔。"
     ],
     "audienceTags": [
       "general"
@@ -6340,11 +6340,11 @@
   },
   {
     "word": "yoretime",
-    "meaning": "古老时期；很久以前",
+    "meaning": "古老時期；很久以前",
     "partOfSpeech": "noun",
     "sentences": [
-      "The legend came from yoretime in the valley. 那个传说来自山谷里的古老时期。",
-      "He wrote about the customs of yoretime. 他写下了很久以前的风俗。"
+      "The legend came from yoretime in the valley. 那個傳說來自山谷裡的古老時期。",
+      "He wrote about the customs of yoretime. 他寫下了很久以前的風俗。"
     ],
     "audienceTags": [
       "general"
@@ -6352,11 +6352,11 @@
   },
   {
     "word": "york",
-    "meaning": "约克；英格兰地名",
+    "meaning": "約克；英格蘭地名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The train stopped at york before noon. 火车在中午前停靠约克。",
-      "They spent a weekend exploring york. 他们花了一个周末探索约克。"
+      "The train stopped at york before noon. 火車在中午前停靠約克。",
+      "They spent a weekend exploring york. 他們花了一個周末探索約克。"
     ],
     "audienceTags": [
       "general"
@@ -6364,11 +6364,11 @@
   },
   {
     "word": "yorker",
-    "meaning": "球被投出，以便在擊球手的彈出摺痕處或附近彈跳。",
+    "meaning": "板球中的約克球；落在擊球手腳邊附近的投球",
     "partOfSpeech": "noun",
     "sentences": [
-      "He bowled forty-seven toe crushing yorkers that resulted in the wickets of 6 batsmen. 他擊中了 47 個約克郡球員的腳趾，導致 6 名擊球手擊中三柱門。",
-      "The term yorker refers to a ball bowled so as to bounce at or near the batsman's popping crease. 術語「約克」指的是擊球時在擊球手的彈出摺痕處或附近彈跳的球。"
+      "The bowler surprised him with a fast yorker. 投手用一記快速約克球讓他措手不及。",
+      "He practiced bowling a yorker at the end of every session. 每次練習結束前，他都會練投約克球。"
     ],
     "audienceTags": [
       "general"
@@ -6376,11 +6376,11 @@
   },
   {
     "word": "Yorker",
-    "meaning": "约克人；约克居民",
+    "meaning": "約克人；約克居民",
     "partOfSpeech": "noun",
     "sentences": [
-      "A Yorker recommended the best bakery in town. 一位约克人推荐了镇上最好的面包店。",
-      "The proud Yorker spoke warmly about the city. 那位自豪的约克人热情地谈起这座城市。"
+      "A Yorker recommended the best bakery in town. 一位約克人推薦了鎮上最好的麵包店。",
+      "The proud Yorker spoke warmly about the city. 那位自豪的約克人熱情地談起這座城市。"
     ],
     "audienceTags": [
       "general"
@@ -6388,11 +6388,11 @@
   },
   {
     "word": "Yorkish",
-    "meaning": "约克风格的；与约克有关的",
+    "meaning": "約克風格的；與約克有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The building had a Yorkish stone facade. 那栋建筑带着约克风格的石质外墙。",
-      "Her Yorkish accent sounded familiar. 她那种约克口音听起来很熟悉。"
+      "The building had a Yorkish stone facade. 那棟建筑帶著約克風格的石質外牆。",
+      "Her Yorkish accent sounded familiar. 她那種約克口音聽起來很熟悉。"
     ],
     "audienceTags": [
       "general"
@@ -6400,11 +6400,11 @@
   },
   {
     "word": "Yorkist",
-    "meaning": "约克党人；约克派支持者",
+    "meaning": "約克党人；約克派支持者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The historian wrote about a Yorkist king. 历史学家写到一位约克党国王。",
-      "The Yorkist camp gathered near the castle. 约克党阵营聚集在城堡附近。"
+      "The historian wrote about a Yorkist king. 歷史學家寫到一位約克党國王。",
+      "The Yorkist camp gathered near the castle. 約克党陣營聚集在城堡附近。"
     ],
     "audienceTags": [
       "general"
@@ -6412,11 +6412,11 @@
   },
   {
     "word": "Yorkshire",
-    "meaning": "约克郡；英格兰郡名",
+    "meaning": "約克郡；英格蘭郡名",
     "partOfSpeech": "noun",
     "sentences": [
-      "She visited Yorkshire in the spring. 她在春天去了约克郡。",
-      "Yorkshire has many old stone villages. 约克郡有许多古老的石头村庄。"
+      "She visited Yorkshire in the spring. 她在春天去了約克郡。",
+      "Yorkshire has many old stone villages. 約克郡有許多古老的石頭村莊。"
     ],
     "audienceTags": [
       "general"
@@ -6424,11 +6424,11 @@
   },
   {
     "word": "Yorkshireism",
-    "meaning": "约克郡特性；约克郡风格",
+    "meaning": "約克郡特性；約克郡風格",
     "partOfSpeech": "noun",
     "sentences": [
-      "The essay celebrated Yorkshireism in local speech. 那篇文章赞美了当地语言中的约克郡特性。",
-      "He admired the Yorkshireism of the old traditions. 他欣赏那些老传统里的约克郡风格。"
+      "The essay celebrated Yorkshireism in local speech. 那篇文章赞美了當地語言中的約克郡特性。",
+      "He admired the Yorkshireism of the old traditions. 他欣賞那些老傳統裡的約克郡風格。"
     ],
     "audienceTags": [
       "general"
@@ -6436,11 +6436,11 @@
   },
   {
     "word": "Yorkshireman",
-    "meaning": "约克郡人",
+    "meaning": "約克郡人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The Yorkshireman greeted us with a smile. 那位约克郡人带着笑容向我们打招呼。",
-      "Every Yorkshireman in the pub knew the song. 酒馆里的每个约克郡人都认识那首歌。"
+      "The Yorkshireman greeted us with a smile. 那位約克郡人帶著笑容向我們打招呼。",
+      "Every Yorkshireman in the pub knew the song. 酒館裡的每個約克郡人都認識那首歌。"
     ],
     "audienceTags": [
       "general"
@@ -6448,11 +6448,11 @@
   },
   {
     "word": "Yoruba",
-    "meaning": "约鲁巴人；约鲁巴语",
+    "meaning": "約魯巴人；約魯巴語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The class studied Yoruba history and language. 课堂上学习了约鲁巴人的历史和语言。",
-      "A Yoruba speaker translated the story aloud. 一位约鲁巴语使用者把这个故事当场译了出来。"
+      "The class studied Yoruba history and language. 課堂上學習了約魯巴人的歷史和語言。",
+      "A Yoruba speaker translated the story aloud. 一位約魯巴語使用者把這個故事當場譯了出來。"
     ],
     "audienceTags": [
       "general"
@@ -6460,11 +6460,11 @@
   },
   {
     "word": "Yoruban",
-    "meaning": "约鲁巴人的；约鲁巴语的",
+    "meaning": "約魯巴人的；約魯巴語的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The museum displayed Yoruban carvings. 博物馆展出了约鲁巴人的雕刻作品。",
-      "She wore a Yoruban cloth dress to the event. 她穿着约鲁巴风格的布裙参加活动。"
+      "The museum displayed Yoruban carvings. 博物館展出了約魯巴人的雕刻作品。",
+      "She wore a Yoruban cloth dress to the event. 她穿著約魯巴風格的布裙参加活動。"
     ],
     "audienceTags": [
       "general"
@@ -6472,11 +6472,11 @@
   },
   {
     "word": "yot",
-    "meaning": "小袋；小网囊",
+    "meaning": "小袋；小網囊",
     "partOfSpeech": "noun",
     "sentences": [
-      "He tucked the coins into a small yot. 他把硬币塞进一个小袋子里。",
-      "The child carried a yot of berries home. 那个孩子拎着一小网囊浆果回家。"
+      "He tucked the coins into a small yot. 他把硬幣塞進一個小袋子裡。",
+      "The child carried a yot of berries home. 那個孩子拎著一小網囊浆果回家。"
     ],
     "audienceTags": [
       "general"
@@ -6484,11 +6484,11 @@
   },
   {
     "word": "yotacism",
-    "meaning": "伊化音变；把音发成半元音的现象",
+    "meaning": "伊化音變；把音發成半元音的現象",
     "partOfSpeech": "noun",
     "sentences": [
-      "The linguist explained yotacism in the lecture. 语言学家在讲座里解释了伊化音变。",
-      "Some dialects show yotacism before vowels. 一些方言在元音前会出现伊化音变。"
+      "The linguist explained yotacism in the lecture. 語言學家在講座裡解釋了伊化音變。",
+      "Some dialects show yotacism before vowels. 一些方言在元音前會出現伊化音變。"
     ],
     "audienceTags": [
       "general"
@@ -6496,11 +6496,11 @@
   },
   {
     "word": "yotacize",
-    "meaning": "把音发成半元音；作伊化",
+    "meaning": "把音發成半元音；作伊化",
     "partOfSpeech": "verb",
     "sentences": [
-      "Children sometimes yotacize the sound at the start. 孩子们有时会把开头的音作伊化处理。",
-      "The teacher asked the class not to yotacize that word. 老师要求全班不要把那个词读成半元音。"
+      "Children sometimes yotacize the sound at the start. 孩子們有時會把開頭的音作伊化處理。",
+      "The teacher asked the class not to yotacize that word. 老師要求全班不要把那個詞讀成半元音。"
     ],
     "audienceTags": [
       "general"
@@ -6508,11 +6508,11 @@
   },
   {
     "word": "yote",
-    "meaning": "一跃而过；跳过去",
+    "meaning": "一跃而過；跳過去",
     "partOfSpeech": "verb",
     "sentences": [
-      "The cat yote over the fence in one motion. 那只猫一跃跳过了篱笆。",
-      "He yote across the stream to reach the path. 他跳过小溪，赶到那条小路上。"
+      "The cat yote over the fence in one motion. 那只猫一跃跳過了籬笆。",
+      "He yote across the stream to reach the path. 他跳過小溪，赶到那條小路上。"
     ],
     "audienceTags": [
       "general"
@@ -6547,11 +6547,11 @@
   },
   {
     "word": "youd",
-    "meaning": "古拼法；旧式的 would 形式",
+    "meaning": "古拼法；would 的舊式形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "The manuscript preserved youd in an old spelling. 那份手稿保留了这种旧拼法。",
-      "She underlined the word youd in the text. 她在文本里给这个旧拼法划了线。"
+      "The editor changed youd to would in the old letter. 編輯把舊信裡的古拼法改成現代拼法。",
+      "Students saw youd in a poem from long ago. 學生在一首古詩裡看到這種舊拼法。"
     ],
     "audienceTags": [
       "general"
@@ -6562,8 +6562,8 @@
     "meaning": "尤登；姓氏或人名",
     "partOfSpeech": "noun",
     "sentences": [
-      "Professor Youden gave the opening lecture. 尤登教授作了开场演讲。",
-      "The letter was addressed to Youden. 那封信是写给尤登的。"
+      "Professor Youden gave the opening lecture. 尤登教授作了開場演講。",
+      "The letter was addressed to Youden. 那封信是寫給尤登的。"
     ],
     "audienceTags": [
       "general"
@@ -6571,11 +6571,11 @@
   },
   {
     "word": "youdendrift",
-    "meaning": "古语中的漂移；缓慢移动",
+    "meaning": "古語中的漂移；緩慢移動",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old text described a youdendrift across the plain. 那本旧书描写了一种在平原上的缓慢漂移。",
-      "He watched the youdendrift of the smoke. 他看着烟雾慢慢飘移。"
+      "The old text described a youdendrift across the plain. 那本舊書描寫了一種在平原上的緩慢漂移。",
+      "He watched the youdendrift of the smoke. 他看著煙霧慢慢飄移。"
     ],
     "audienceTags": [
       "general"
@@ -6583,11 +6583,11 @@
   },
   {
     "word": "youdith",
-    "meaning": "罕见的旧词；含义不确定的词",
+    "meaning": "罕見的舊詞；含義不確定的詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary listed youdith as an obscure word. 词汇表把它列为生僻词。",
-      "She copied youdith into her research notes. 她把这个词记进了研究笔记。"
+      "She copied youdith into her research notes. 她把這個詞記進了研究筆記。",
+      "The old letter had youdith written in the margin. 那封舊信的頁邊寫著這個罕見舊詞。"
     ],
     "audienceTags": [
       "general"
@@ -6595,11 +6595,11 @@
   },
   {
     "word": "youff",
-    "meaning": "短促地吠叫；发出尖细叫声",
+    "meaning": "短促地吠叫；發出尖細叫聲",
     "partOfSpeech": "verb",
     "sentences": [
-      "The puppy would youff at the gate. 那只小狗会对着大门短促吠叫。",
-      "A small dog may youff when it is excited. 小狗兴奋时可能会尖细地叫。"
+      "The puppy would youff at the gate. 那只小狗會對著大門短促吠叫。",
+      "A small dog may youff when it is excited. 小狗興奮時可能會尖細地叫。"
     ],
     "audienceTags": [
       "general"
@@ -6607,11 +6607,11 @@
   },
   {
     "word": "youl",
-    "meaning": "嚎叫；长声呼喊",
+    "meaning": "嚎叫；長聲呼喊",
     "partOfSpeech": "verb",
     "sentences": [
-      "The child began to youl in the dark room. 那个孩子在黑暗的房间里开始嚎叫。",
-      "He could youl loudly when he was frightened. 他害怕时会大声呼喊。"
+      "The child began to youl in the dark room. 那個孩子在黑暗的房間裡開始嚎叫。",
+      "He could youl loudly when he was frightened. 他害怕時會大聲呼喊。"
     ],
     "audienceTags": [
       "general"
@@ -6637,11 +6637,11 @@
   },
   {
     "word": "youngberry",
-    "meaning": "杨莓；一种杂交莓果",
+    "meaning": "杨莓；一種杂交莓果",
     "partOfSpeech": "noun",
     "sentences": [
-      "She picked a basket of youngberry from the patch. 她从果园里摘了一篮杨莓。",
-      "The youngberry tasted sweet and a little tart. 这种杨莓吃起来又甜又带一点酸。"
+      "She picked a basket of youngberry from the patch. 她從果園裡摘了一籃杨莓。",
+      "The youngberry tasted sweet and a little tart. 這種杨莓吃起來又甜又帶一点酸。"
     ],
     "audienceTags": [
       "general"
@@ -6649,11 +6649,11 @@
   },
   {
     "word": "younger",
-    "meaning": "一個比另一個年輕。",
-    "partOfSpeech": "noun",
+    "meaning": "較年輕的；年紀較小的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The term younger refers to one who is younger than another. 「年輕」一詞是指一個人比另一個人年輕。",
-      "The lesson introduced younger as a useful term to understand. 本課程介紹了「年輕」這個術語，這是一個需要理解的有用術語。"
+      "My younger brother loves basketball. 我弟弟很愛籃球。",
+      "She looked younger after cutting her hair. 她剪完頭髮後看起來比較年輕。"
     ],
     "audienceTags": [
       "general"
@@ -6661,11 +6661,11 @@
   },
   {
     "word": "younghearted",
-    "meaning": "心态年轻的；充满朝气的",
+    "meaning": "心態年輕的；充滿朝氣的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Her younghearted smile made everyone relax. 她那种充满朝气的微笑让大家都放松下来。",
-      "He stayed younghearted even after many hard years. 经过许多艰难岁月后，他依然心态年轻。"
+      "Her younghearted smile made everyone relax. 她那種充滿朝氣的微笑讓大家都放鬆下來。",
+      "He stayed younghearted even after many hard years. 經過許多艱難歲月後，他依然心態年輕。"
     ],
     "audienceTags": [
       "general"
@@ -6673,11 +6673,11 @@
   },
   {
     "word": "youngish",
-    "meaning": "略年轻的；看起来还不大的",
+    "meaning": "略年輕的；看起來還不大的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The youngish teacher was popular with the class. 那位略年轻的老师很受班上欢迎。",
-      "He looked youngish for a man with gray hair. 对一个有白发的男人来说，他看起来还不算老。"
+      "The youngish teacher was popular with the class. 那位略年輕的老師很受班上歡迎。",
+      "He looked youngish for a man with gray hair. 對一個有白髮的男人來說，他看起來還不算老。"
     ],
     "audienceTags": [
       "general"
@@ -6688,8 +6688,8 @@
     "meaning": "小幼崽；小孩子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The younglet followed its mother closely. 那只小幼崽紧紧跟着母亲。",
-      "The village children treated the younglet kindly. 村里的孩子们对这个小家伙很友善。"
+      "The younglet followed its mother closely. 那只小幼崽紧紧跟著母亲。",
+      "The village children treated the younglet kindly. 村裡的孩子們對這個小傢伙很友善。"
     ],
     "audienceTags": [
       "general"
@@ -6697,11 +6697,11 @@
   },
   {
     "word": "youngling",
-    "meaning": "幼小的个体；年轻人",
+    "meaning": "幼小的個體；年輕人",
     "partOfSpeech": "noun",
     "sentences": [
-      "A youngling stood at the edge of the field. 一个年轻人站在田边。",
-      "The youngling listened quietly to the story. 那个小家伙安静地听着故事。"
+      "A youngling stood at the edge of the field. 一個年輕人站在田邊。",
+      "The youngling listened quietly to the story. 那個小傢伙安静地聽著故事。"
     ],
     "audienceTags": [
       "general"
@@ -6709,11 +6709,11 @@
   },
   {
     "word": "youngly",
-    "meaning": "年轻地；带着青春气息地",
+    "meaning": "年輕地；帶著青春氣息地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "She sang youngly with a bright voice. 她用明亮的嗓音唱得很有青春气息。",
-      "He still moved youngly despite his age. 尽管年纪不小，他走起路来仍很有朝气。"
+      "She sang youngly with a bright voice. 她用明亮的嗓音唱得很有青春氣息。",
+      "He still moved youngly despite his age. 尽管年紀不小，他走起路來仍很有朝氣。"
     ],
     "audienceTags": [
       "general"
@@ -6721,11 +6721,11 @@
   },
   {
     "word": "youngness",
-    "meaning": "年轻；青春状态",
+    "meaning": "年輕；青春狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The youngness of the cast gave the show energy. 演员阵容的年轻感让这场演出很有活力。",
-      "He admired the youngness of their ideas. 他欣赏他们想法中的青春气息。"
+      "The youngness of the cast gave the show energy. 演員陣容的年輕感讓這場演出很有活力。",
+      "He admired the youngness of their ideas. 他欣賞他們想法中的青春氣息。"
     ],
     "audienceTags": [
       "general"
@@ -6750,11 +6750,11 @@
   },
   {
     "word": "youngun",
-    "meaning": "孩子；小年轻",
+    "meaning": "孩子；小年輕",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old man waved to the youngun on the porch. 老人向门廊上的孩子挥手。",
-      "A youngun can learn a lot by watching others. 小年轻可以通过观察别人学到很多。"
+      "The old man waved to the youngun on the porch. 老人向門廊上的孩子挥手。",
+      "A youngun can learn a lot by watching others. 小年輕可以通過觀察別人學到很多。"
     ],
     "audienceTags": [
       "general"
@@ -6762,11 +6762,11 @@
   },
   {
     "word": "younker",
-    "meaning": "年轻人；小伙子",
+    "meaning": "年輕人；小伙子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The younker carried the bags up the hill. 那个小伙子把袋子扛上山坡。",
-      "A shy younker stood near the door. 一个害羞的年轻人站在门边。"
+      "The younker carried the bags up the hill. 那個小伙子把袋子扛上山坡。",
+      "A shy younker stood near the door. 一個害羞的年輕人站在門邊。"
     ],
     "audienceTags": [
       "general"
@@ -6774,11 +6774,11 @@
   },
   {
     "word": "youp",
-    "meaning": "呼喊；招呼声",
+    "meaning": "呼喊；招呼聲",
     "partOfSpeech": "noun",
     "sentences": [
-      "He gave a quick youp from across the yard. 他在院子对面发出一声短促的呼喊。",
-      "A youp brought the children running back. 一声招呼让孩子们跑了回来。"
+      "He gave a quick youp from across the yard. 他在院子對面發出一聲短促的呼喊。",
+      "A youp brought the children running back. 一聲招呼讓孩子們跑了回來。"
     ],
     "audienceTags": [
       "general"
@@ -6786,11 +6786,11 @@
   },
   {
     "word": "your",
-    "meaning": "你的；你们的",
+    "meaning": "你的；你們的",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Is this your coat on the chair? 椅子上的这件外套是你的吗？",
-      "Please bring your books to class. 请把你的书带到课堂上。"
+      "Is this your coat on the chair? 椅子上的這件外套是你的嗎？",
+      "Please bring your books to class. 請把你的書帶到課堂上。"
     ],
     "audienceTags": [
       "general"
@@ -6798,11 +6798,11 @@
   },
   {
     "word": "yourn",
-    "meaning": "你的那个；你的东西",
+    "meaning": "你的那個；你的東西",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "That cup is yourn, not mine. 那个杯子是你的，不是我的。",
-      "She kept yourn on the top shelf. 她把你的东西放在最上面的架子上。"
+      "That cup is yourn, not mine. 那個杯子是你的，不是我的。",
+      "She kept yourn on the top shelf. 她把你的東西放在最上面的架子上。"
     ],
     "audienceTags": [
       "general"
@@ -6810,11 +6810,11 @@
   },
   {
     "word": "yours",
-    "meaning": "你的；你们的",
+    "meaning": "你的；你們的",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "This seat is yours for the afternoon. 这个座位整个下午都归你。",
-      "The final decision is yours. 最后决定权在你。"
+      "This seat is yours for the afternoon. 這個座位整個下午都歸你。",
+      "The final decision is yours. 最後决定权在你。"
     ],
     "audienceTags": [
       "general"
@@ -6825,8 +6825,8 @@
     "meaning": "你自己；你本人",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Take care of yoursel and rest well. 照顾好你自己，好好休息。",
-      "Yoursel should decide what feels right. 你本人应该决定什么最合适。"
+      "Take care of yoursel and rest well. 照顧好你自己，好好休息。",
+      "Yoursel should decide what feels right. 你本人應該决定什么最合适。"
     ],
     "audienceTags": [
       "general"
@@ -6837,8 +6837,8 @@
     "meaning": "你自己；你本人",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Did you hurt yourself on the door? 你撞到门把自己弄伤了吗？",
-      "Please introduce yourself to the class. 请向全班介绍你自己。"
+      "Did you hurt yourself on the door? 你撞到門把自己弄傷了嗎？",
+      "Please introduce yourself to the class. 請向全班介紹你自己。"
     ],
     "audienceTags": [
       "general"
@@ -6846,11 +6846,11 @@
   },
   {
     "word": "yourselves",
-    "meaning": "你们自己；你们本人",
+    "meaning": "你們自己；你們本人",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "You must take care of yourselves first. 你们必须先照顾好自己。",
-      "Please seat yourselves near the window. 请你们自己坐到窗边。"
+      "You must take care of yourselves first. 你們必須先照顧好自己。",
+      "Please seat yourselves near the window. 請你們自己坐到窗邊。"
     ],
     "audienceTags": [
       "general"
@@ -6858,11 +6858,11 @@
   },
   {
     "word": "youse",
-    "meaning": "你们；口语复数形式",
+    "meaning": "你們；口語複數形式",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Youse can wait in the hall for a moment. 你们可以先在走廊里等一下。",
-      "I thought youse were already outside. 我还以为你们已经在外面了。"
+      "Youse can wait in the hall for a moment. 你們可以先在走廊裡等一下。",
+      "I thought youse were already outside. 我還以為你們已經在外面了。"
     ],
     "audienceTags": [
       "general"
@@ -6891,11 +6891,11 @@
   },
   {
     "word": "youthen",
-    "meaning": "使年轻；使显得更年轻",
+    "meaning": "使年輕；使顯得更年輕",
     "partOfSpeech": "verb",
     "sentences": [
-      "Good sleep can youthen the face a little. 好睡眠能让脸看起来年轻一点。",
-      "They tried to youthen the old song with a fresh tune. 他们试着用新曲调让老歌显得更有青春感。"
+      "Good sleep can youthen the face a little. 好睡眠能讓脸看起來年輕一点。",
+      "They tried to youthen the old song with a fresh tune. 他們試著用新曲調讓老歌顯得更有青春感。"
     ],
     "audienceTags": [
       "general"
@@ -6924,11 +6924,11 @@
   },
   {
     "word": "youthfullity",
-    "meaning": "青春感；年轻气质",
+    "meaning": "青春感；年輕氣質",
     "partOfSpeech": "noun",
     "sentences": [
-      "The youthfullity of the cast gave the film charm. 演员阵容的青春感让这部电影很有魅力。",
-      "He admired the youthfullity of her ideas. 他欣赏她想法中的年轻气质。"
+      "The youthfullity of the cast gave the film charm. 演員陣容的青春感讓這部電影很有魅力。",
+      "He admired the youthfullity of her ideas. 他欣賞她想法中的年輕氣質。"
     ],
     "audienceTags": [
       "general"
@@ -6936,11 +6936,11 @@
   },
   {
     "word": "youthfully",
-    "meaning": "年轻地；有青春感地",
+    "meaning": "年輕地；有青春感地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "She laughed youthfully at the joke. 她听到笑话后笑得很有青春气息。",
-      "He dressed youthfully for the party. 他为了派对穿得很显年轻。"
+      "She laughed youthfully at the joke. 她聽到笑話後笑得很有青春氣息。",
+      "He dressed youthfully for the party. 他為了派對穿得很顯年輕。"
     ],
     "audienceTags": [
       "general"
@@ -6948,11 +6948,11 @@
   },
   {
     "word": "youthfulness",
-    "meaning": "年轻；青春",
+    "meaning": "年輕；青春",
     "partOfSpeech": "noun",
     "sentences": [
-      "Her voice still had a lot of youthfulness. 她的声音里仍然带着很多青春气息。",
-      "The painting captured the youthfulness of spring. 那幅画捕捉到了春天的青春感。"
+      "Her voice still had a lot of youthfulness. 她的聲音裡仍然帶著很多青春氣息。",
+      "The painting captured the youthfulness of spring. 那幅畫捕捉到了春天的青春感。"
     ],
     "audienceTags": [
       "general"
@@ -6960,11 +6960,11 @@
   },
   {
     "word": "youthhead",
-    "meaning": "青春期；青年时代",
+    "meaning": "青春期；青年時代",
     "partOfSpeech": "noun",
     "sentences": [
-      "He remembered the wild energy of his youthhead. 他记得自己青年时代那股旺盛的活力。",
-      "The book describes the youthhead of the hero. 这本书描写了英雄的青年时代。"
+      "He remembered the wild energy of his youthhead. 他記得自己青年時代那股旺盛的活力。",
+      "The book describes the youthhead of the hero. 這本書描寫了英雄的青年時代。"
     ],
     "audienceTags": [
       "general"
@@ -6972,11 +6972,11 @@
   },
   {
     "word": "youthheid",
-    "meaning": "青年状态；青春阶段",
+    "meaning": "青年狀態；青春階段",
     "partOfSpeech": "noun",
     "sentences": [
-      "The story focuses on the youthheid of the villagers. 故事聚焦于村民们的青春阶段。",
-      "In his youthheid, he loved music and travel. 在青年时期，他热爱音乐和旅行。"
+      "The story focuses on the youthheid of the villagers. 故事聚焦于村民們的青春階段。",
+      "In his youthheid, he loved music and travel. 在青年時期，他熱愛音樂和旅行。"
     ],
     "audienceTags": [
       "general"
@@ -6984,11 +6984,11 @@
   },
   {
     "word": "youthhood",
-    "meaning": "青年时期；青春年华",
+    "meaning": "青年時期；青春年华",
     "partOfSpeech": "noun",
     "sentences": [
-      "She spent her youthhood near the sea. 她在海边度过了青春年华。",
-      "The memory came back from his youthhood. 那段回忆从他的青年时期浮现出来。"
+      "She spent her youthhood near the sea. 她在海邊度過了青春年华。",
+      "The memory came back from his youthhood. 那段回憶從他的青年時期浮現出來。"
     ],
     "audienceTags": [
       "general"
@@ -6996,11 +6996,11 @@
   },
   {
     "word": "youthily",
-    "meaning": "年轻地；带着青春活力地",
+    "meaning": "年輕地；帶著青春活力地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He youthily climbed the long staircase. 他带着青春活力地爬上长楼梯。",
-      "The dog bounded youthily across the yard. 那只狗充满活力地跳过院子。"
+      "He youthily climbed the long staircase. 他帶著青春活力地爬上長楼梯。",
+      "The dog bounded youthily across the yard. 那只狗充滿活力地跳過院子。"
     ],
     "audienceTags": [
       "general"
@@ -7008,11 +7008,11 @@
   },
   {
     "word": "youthless",
-    "meaning": "不年轻的；缺少青春感的",
+    "meaning": "不年輕的；缺少青春感的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The youthless room felt dull and still. 那个缺少朝气的房间显得沉闷安静。",
-      "He disliked the youthless tone of the speech. 他不喜欢那场演讲里缺少青春感的语气。"
+      "The youthless room felt dull and still. 那個缺少朝氣的房間顯得沉闷安静。",
+      "He disliked the youthless tone of the speech. 他不喜歡那場演講裡缺少青春感的語氣。"
     ],
     "audienceTags": [
       "general"
@@ -7020,11 +7020,11 @@
   },
   {
     "word": "youthlessness",
-    "meaning": "缺少青春；显老的状态",
+    "meaning": "缺少青春；顯老的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The youthlessness of the town worried the mayor. 这座小镇缺少青春气息的状态让市长很担心。",
-      "She felt the youthlessness of the old house. 她感受到那栋老房子里缺少青春感。"
+      "The youthlessness of the town worried the mayor. 這座小鎮缺少青春氣息的狀態讓市長很擔心。",
+      "She felt the youthlessness of the old house. 她感受到那棟老房子裡缺少青春感。"
     ],
     "audienceTags": [
       "general"
@@ -7032,11 +7032,11 @@
   },
   {
     "word": "youthlike",
-    "meaning": "像年轻人的；有青春感的",
+    "meaning": "像年輕人的；有青春感的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "His youthlike energy surprised everyone. 他那像年轻人的活力让所有人都很惊讶。",
-      "The design had a youthlike brightness. 这款设计带着青春感的明亮气息。"
+      "His youthlike energy surprised everyone. 他那像年輕人的活力讓所有人都很驚訝。",
+      "The design had a youthlike brightness. 這款設计帶著青春感的明亮氣息。"
     ],
     "audienceTags": [
       "general"
@@ -7044,11 +7044,11 @@
   },
   {
     "word": "youthlikeness",
-    "meaning": "青春感；像年轻人的样子",
+    "meaning": "青春感；像年輕人的樣子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The youthlikeness of her walk was charming. 她走路时那种青春感很迷人。",
-      "He admired the youthlikeness of the model's face. 他欣赏模特脸上的年轻气息。"
+      "The youthlikeness of her walk was charming. 她走路時那種青春感很迷人。",
+      "He admired the youthlikeness of the model's face. 他欣賞模特脸上的年輕氣息。"
     ],
     "audienceTags": [
       "general"
@@ -7056,11 +7056,11 @@
   },
   {
     "word": "youthsome",
-    "meaning": "充满青春的；年轻气息浓的",
+    "meaning": "充滿青春的；年輕氣息濃的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The youthsome choir sang with bright voices. 那个充满青春气息的合唱团唱得声音很亮。",
-      "She wore a youthsome dress to the festival. 她穿了一条很显青春的裙子去参加节庆。"
+      "The youthsome choir sang with bright voices. 那個充滿青春氣息的合唱团唱得聲音很亮。",
+      "She wore a youthsome dress to the festival. 她穿了一條很顯青春的裙子去参加節慶。"
     ],
     "audienceTags": [
       "general"
@@ -7068,11 +7068,11 @@
   },
   {
     "word": "youthtide",
-    "meaning": "青春时期；青春潮流",
+    "meaning": "青春時期；青春潮流",
     "partOfSpeech": "noun",
     "sentences": [
-      "The novel recalls the youthtide of the country. 那部小说回忆了这个国家的青春时期。",
-      "He felt the youthtide of the 1960s in the music. 他从那音乐中感受到六十年代的青春潮流。"
+      "The novel recalls the youthtide of the country. 那部小說回憶了這個國家的青春時期。",
+      "He felt the youthtide of the 1960s in the music. 他從那音樂中感受到六十年代的青春潮流。"
     ],
     "audienceTags": [
       "general"
@@ -7080,11 +7080,11 @@
   },
   {
     "word": "youthwort",
-    "meaning": "青春草；旧式草名",
+    "meaning": "青春草；舊式草名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The herb book listed youthwort among rare plants. 那本草本书把青春草列为罕见植物之一。",
-      "A tiny youthwort grew beside the wall. 墙边长着一小株青春草。"
+      "The herb book listed youthwort among rare plants. 那本草本書把青春草列為罕見植物之一。",
+      "A tiny youthwort grew beside the wall. 牆邊長著一小株青春草。"
     ],
     "audienceTags": [
       "general"
@@ -7092,11 +7092,11 @@
   },
   {
     "word": "youthy",
-    "meaning": "年轻的；青春洋溢的",
+    "meaning": "年輕的；青春洋溢的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Her youthy laugh filled the kitchen. 她那青春洋溢的笑声充满了厨房。",
-      "The actor looked youthy in the new film. 那位演员在新片里显得很年轻。"
+      "Her youthy laugh filled the kitchen. 她那青春洋溢的笑聲充滿了廚房。",
+      "The actor looked youthy in the new film. 那位演員在新片裡顯得很年輕。"
     ],
     "audienceTags": [
       "general"
@@ -7104,11 +7104,11 @@
   },
   {
     "word": "youve",
-    "meaning": "你已经；口语缩略形式",
+    "meaning": "你已經；口語縮略形式",
     "partOfSpeech": "verb",
     "sentences": [
-      "Youve got the answer right this time. 这一次你答对了。",
-      "I think youve already seen this note. 我想你已经看过这张便条了。"
+      "Youve got the answer right this time. 這一次你答對了。",
+      "I think youve already seen this note. 我想你已經看過這張便條了。"
     ],
     "audienceTags": [
       "general"
@@ -7116,11 +7116,11 @@
   },
   {
     "word": "youward",
-    "meaning": "朝你；向你这边",
+    "meaning": "朝你；向你這邊",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He stepped youward to hear better. 他朝你这边走近，好听得更清楚。",
-      "The wind blew youward across the field. 风从田野那头朝你这边吹来。"
+      "He stepped youward to hear better. 他朝你這邊走近，好聽得更清楚。",
+      "The wind blew youward across the field. 風從田野那頭朝你這邊吹來。"
     ],
     "audienceTags": [
       "general"
@@ -7128,11 +7128,11 @@
   },
   {
     "word": "youwards",
-    "meaning": "向你那边；朝你这边",
+    "meaning": "向你那邊；朝你這邊",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The child ran youwards with a smile. 那个孩子笑着朝你这边跑来。",
-      "A bird darted youwards from the tree. 一只鸟从树上朝你这边飞来。"
+      "The child ran youwards with a smile. 那個孩子笑著朝你這邊跑來。",
+      "A bird darted youwards from the tree. 一隻鳥從樹上朝你這邊飛來。"
     ],
     "audienceTags": [
       "general"
@@ -7140,11 +7140,11 @@
   },
   {
     "word": "youze",
-    "meaning": "你们；口语复数形式",
+    "meaning": "你們；口語複數形式",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Youze can come in when the bell rings. 铃响后你们就可以进来。",
-      "He thought youze were waiting outside. 他以为你们正等在外面。"
+      "Youze can come in when the bell rings. 铃響後你們就可以進來。",
+      "He thought youze were waiting outside. 他以為你們正等在外面。"
     ],
     "audienceTags": [
       "general"
@@ -7152,11 +7152,11 @@
   },
   {
     "word": "yoven",
-    "meaning": "青春的；年轻的",
+    "meaning": "青春的；年輕的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The yoven singer drew a big crowd. 那位年轻的歌手吸引了很多观众。",
-      "Her yoven face still showed curiosity. 她那张年轻的脸上仍带着好奇。"
+      "The yoven singer drew a big crowd. 那位年輕的歌手吸引了很多觀众。",
+      "Her yoven face still showed curiosity. 她那張年輕的脸上仍帶著好奇。"
     ],
     "audienceTags": [
       "general"
@@ -7164,11 +7164,11 @@
   },
   {
     "word": "yow",
-    "meaning": "哎哟；呼喊声",
+    "meaning": "哎哟；呼喊聲",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "Yow, that wind is cold today. 哎哟，今天的风真冷。",
-      "He shouted yow when he dropped the box. 他把箱子掉下来时大喊了一声哎哟。"
+      "Yow, that wind is cold today. 哎哟，今天的風真冷。",
+      "He shouted yow when he dropped the box. 他把箱子掉下來時大喊了一聲哎哟。"
     ],
     "audienceTags": [
       "general"
@@ -7176,11 +7176,11 @@
   },
   {
     "word": "yowie",
-    "meaning": "妖怪；传说中的怪物",
+    "meaning": "妖怪；傳說中的怪物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The children whispered about a yowie in the bush. 孩子们低声谈论灌木丛里的妖怪。",
-      "A yowie story made the campfire feel spooky. 妖怪故事让营火旁的气氛变得阴森。"
+      "The children whispered about a yowie in the bush. 孩子們低聲談論灌木叢裡的妖怪。",
+      "A yowie story made the campfire feel spooky. 妖怪故事讓營火旁的氣氛變得陰森。"
     ],
     "audienceTags": [
       "general"
@@ -7188,11 +7188,11 @@
   },
   {
     "word": "yowl",
-    "meaning": "长声嚎叫；尖叫",
+    "meaning": "長聲嚎叫；尖叫",
     "partOfSpeech": "verb",
     "sentences": [
-      "The cat began to yowl outside the window. 那只猫开始在窗外长声嚎叫。",
-      "He could yowl in pain after the fall. 他摔倒后会痛得尖叫。"
+      "The cat began to yowl outside the window. 那只猫開始在窗外長聲嚎叫。",
+      "He could yowl in pain after the fall. 他摔倒後會痛得尖叫。"
     ],
     "audienceTags": [
       "general"
@@ -7200,11 +7200,11 @@
   },
   {
     "word": "yowler",
-    "meaning": "嚎叫者；长声叫的人或动物",
+    "meaning": "嚎叫者；長聲叫的人或動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yowler kept the whole block awake. 那个嚎叫者把整条街都吵醒了。",
-      "Every yowler in the yard answered at once. 院子里的每一只嚎叫者都立刻回应。"
+      "The yowler kept the whole block awake. 那個嚎叫者把整條街都吵醒了。",
+      "Every yowler in the yard answered at once. 院子裡的每一隻嚎叫者都立刻回應。"
     ],
     "audienceTags": [
       "general"
@@ -7212,11 +7212,11 @@
   },
   {
     "word": "yowley",
-    "meaning": "发出嚎叫的；叫声尖长的",
+    "meaning": "發出嚎叫的；叫聲尖長的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The yowley cat paced under the fence. 那只发出尖长叫声的猫在栅栏下走来走去。",
-      "A yowley cry came from the alley. 小巷里传来一阵尖长的叫声。"
+      "The yowley cat paced under the fence. 那只發出尖長叫聲的猫在栅栏下走來走去。",
+      "A yowley cry came from the alley. 小巷裡傳來一陣尖長的叫聲。"
     ],
     "audienceTags": [
       "general"
@@ -7224,11 +7224,11 @@
   },
   {
     "word": "yowlring",
-    "meaning": "嚎叫；长声哭喊",
+    "meaning": "嚎叫；長聲哭喊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yowlring woke the baby in the next room. 那阵嚎叫把隔壁房间的婴儿吵醒了。",
-      "He heard yowlring from the street at midnight. 午夜时他听见街上传来嚎叫声。"
+      "The yowlring woke the baby in the next room. 那陣嚎叫把隔壁房間的婴儿吵醒了。",
+      "He heard yowlring from the street at midnight. 午夜時他聽見街上傳來嚎叫聲。"
     ],
     "audienceTags": [
       "general"
@@ -7236,11 +7236,11 @@
   },
   {
     "word": "yowt",
-    "meaning": "大声喊出；猛然叫出",
+    "meaning": "大聲喊出；猛然叫出",
     "partOfSpeech": "verb",
     "sentences": [
-      "He would yowt the warning across the yard. 他会在院子里大声喊出警告。",
-      "The worker had to yowt over the noise. 工人不得不在噪声中大声喊叫。"
+      "He would yowt the warning across the yard. 他會在院子裡大聲喊出警告。",
+      "The worker had to yowt over the noise. 工人不得不在噪聲中大聲喊叫。"
     ],
     "audienceTags": [
       "general"
@@ -7248,11 +7248,11 @@
   },
   {
     "word": "yox",
-    "meaning": "玩笑；逗趣的话",
+    "meaning": "玩笑；逗趣的話",
     "partOfSpeech": "noun",
     "sentences": [
-      "The joke was only a yox between friends. 那只是朋友之间开的一个玩笑。",
-      "He answered with a yox and a grin. 他带着玩笑和咧嘴一笑作答。"
+      "The joke was only a yox between friends. 那只是朋友之間開的一個玩笑。",
+      "He answered with a yox and a grin. 他帶著玩笑和咧嘴一笑作答。"
     ],
     "audienceTags": [
       "general"
@@ -7260,11 +7260,11 @@
   },
   {
     "word": "yoy",
-    "meaning": "细绳；小带子",
+    "meaning": "細繩；小帶子",
     "partOfSpeech": "noun",
     "sentences": [
-      "She tied the package with a yoy of twine. 她用一根细绳把包裹系好。",
-      "A tiny yoy held the label in place. 一根小带子把标签固定住了。"
+      "She tied the package with a yoy of twine. 她用一根細繩把包裹繫好。",
+      "A tiny yoy held the label in place. 一根小帶子把標签固定住了。"
     ],
     "audienceTags": [
       "general"
@@ -7272,11 +7272,11 @@
   },
   {
     "word": "yperite",
-    "meaning": "芥子气；一种有毒化学战剂",
+    "meaning": "芥子氣；一種有毒化學戰劑",
     "partOfSpeech": "noun",
     "sentences": [
-      "The history book explained the use of yperite in war. 历史书解释了芥子气在战争中的使用。",
-      "Soldiers feared yperite because it burned the skin. 士兵害怕芥子气，因为它会灼伤皮肤。"
+      "The history book explained the use of yperite in war. 歷史書解釋了芥子氣在戰爭中的使用。",
+      "Soldiers feared yperite because it burned the skin. 士兵害怕芥子氣，因為它會灼傷皮膚。"
     ],
     "audienceTags": [
       "general"
@@ -7284,11 +7284,11 @@
   },
   {
     "word": "Yponomeuta",
-    "meaning": "天蚕蛾属；一类小型蛾类",
+    "meaning": "天蠶蛾屬；一類小型蛾類",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guide listed Yponomeuta as an ermine moth genus. 指南把它列为天蚕蛾属。",
-      "A Yponomeuta larva can spin a silky web. 天蚕蛾属的幼虫会吐出丝网。"
+      "The guide listed Yponomeuta as an ermine moth genus. 指南把它列為天蠶蛾屬。",
+      "A Yponomeuta larva can spin a silky web. 天蠶蛾屬的幼蟲會吐出絲網。"
     ],
     "audienceTags": [
       "general"
@@ -7296,11 +7296,11 @@
   },
   {
     "word": "Yponomeutid",
-    "meaning": "天蚕蛾科的成员；天蚕蛾类昆虫",
+    "meaning": "天蠶蛾科的成員；天蠶蛾類昆蟲",
     "partOfSpeech": "noun",
     "sentences": [
-      "The collector labeled the insect a Yponomeutid. 收藏者把这只昆虫标成天蚕蛾科成员。",
-      "A Yponomeutid often has a delicate white pattern. 天蚕蛾类昆虫常带有细白的花纹。"
+      "The collector labeled the insect a Yponomeutid. 收藏者把這只昆蟲標成天蠶蛾科成員。",
+      "A Yponomeutid often has a delicate white pattern. 天蠶蛾類昆蟲常帶有細白的花紋。"
     ],
     "audienceTags": [
       "general"
@@ -7308,11 +7308,11 @@
   },
   {
     "word": "Yponomeutidae",
-    "meaning": "天蚕蛾科；一类鳞翅目昆虫科",
+    "meaning": "天蠶蛾科；一類鳞翅目昆蟲科",
     "partOfSpeech": "noun",
     "sentences": [
-      "Yponomeutidae includes many small web-making moths. 天蚕蛾科包含许多会结网的小蛾子。",
-      "The entomologist sorted the specimen into Yponomeutidae. 昆虫学家把那件标本归入天蚕蛾科。"
+      "Yponomeutidae includes many small web-making moths. 天蠶蛾科包含許多會結網的小蛾子。",
+      "The entomologist sorted the specimen into Yponomeutidae. 昆蟲學家把那件標本歸入天蠶蛾科。"
     ],
     "audienceTags": [
       "general"
@@ -7320,11 +7320,11 @@
   },
   {
     "word": "ypsiliform",
-    "meaning": "呈希腊字母Y形的；呈叉状的",
+    "meaning": "叉狀的；呈希臘字母形狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The branch split into a ypsiliform shape. 那根树枝分叉成一个像叉字的形状。",
-      "She drew a ypsiliform mark beside the note. 她在笔记旁画了一个叉形记号。"
+      "The path had a ypsiliform split near the hill. 小路在山坡附近分成叉狀。",
+      "The doctor drew a ypsiliform line on the chart. 醫生在圖表上畫了一條叉狀線。"
     ],
     "audienceTags": [
       "general"
@@ -7332,11 +7332,11 @@
   },
   {
     "word": "ypsiloid",
-    "meaning": "像Y形的；呈叉状的",
+    "meaning": "近似叉狀的；像希臘字母形狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The road had a ypsiloid fork near the hill. 那条路在山边分出一个叉形岔口。",
-      "He noticed a ypsiloid pattern in the veins. 他注意到脉络呈现叉形图样。"
+      "The river made a ypsiloid bend around the island. 河流繞著小島形成近似叉狀的彎道。",
+      "The crack looked ypsiloid from above. 從上方看，那道裂痕像叉狀。"
     ],
     "audienceTags": [
       "general"
@@ -7344,11 +7344,11 @@
   },
   {
     "word": "Ypurinan",
-    "meaning": "尤普里纳人；尤普里纳族的成员",
+    "meaning": "尤普裡纳人；尤普裡纳族的成員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The record named a Ypurinan as the village guide. 记录里把一位尤普里纳人写成村里的向导。",
-      "An old song was said to belong to the Ypurinan people. 据说一首古老的歌属于尤普里纳族。"
+      "The record named a Ypurinan as the village guide. 記錄裡把一位尤普裡纳人寫成村裡的向導。",
+      "An old song was said to belong to the Ypurinan people. 据說一首古老的歌屬于尤普裡纳族。"
     ],
     "audienceTags": [
       "general"
@@ -7359,7 +7359,7 @@
     "meaning": "伊肯酒；指伊肯城堡出产的甜白葡萄酒",
     "partOfSpeech": "noun",
     "sentences": [
-      "The host served a glass of Yquem after dinner. 晚饭后主人端上了一杯伊肯酒。",
+      "The host served a glass of Yquem after dinner. 晚飯後主人端上了一杯伊肯酒。",
       "A bottle of Yquem can be expensive and rare. 一瓶伊肯酒往往昂贵而稀有。"
     ],
     "audienceTags": [
@@ -7368,11 +7368,11 @@
   },
   {
     "word": "yr",
-    "meaning": "年；旧式写法",
+    "meaning": "年；舊式寫法",
     "partOfSpeech": "noun",
     "sentences": [
-      "The manuscript used yr to mean year. 那份手稿用这个旧式写法表示年份。",
-      "He wrote the date in the old form yr. 他用旧式写法写下了年份。"
+      "The manuscript used yr to mean year. 那份手稿用這個舊式寫法表示年份。",
+      "He wrote the date in the old form yr. 他用舊式寫法寫下了年份。"
     ],
     "audienceTags": [
       "general"
@@ -7380,11 +7380,11 @@
   },
   {
     "word": "ytterbia",
-    "meaning": "氧化镱；镱的旧称氧化物",
+    "meaning": "氧化鐿；鐿的舊稱氧化物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The label identified the powder as ytterbia. 标签把那种粉末标为氧化镱。",
-      "Chemists once used ytterbia for an oxide of ytterbium. 化学家过去用这种旧称指镱的氧化物。"
+      "The label identified the powder as ytterbia. 標签把那種粉末標為氧化鐿。",
+      "Chemists once used ytterbia for an oxide of ytterbium. 化學家過去用這種舊稱指鐿的氧化物。"
     ],
     "audienceTags": [
       "general"
@@ -7392,11 +7392,11 @@
   },
   {
     "word": "ytterbic",
-    "meaning": "含镱的；与镱有关的",
+    "meaning": "含鐿的；與鐿有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report described an ytterbic compound. 报告描述了一种含镱化合物。",
-      "Researchers studied the ytterbic residue in the sample. 研究人员研究了样本里的含镱残留物。"
+      "The report described an ytterbic compound. 報告描述了一種含鐿化合物。",
+      "Researchers studied the ytterbic residue in the sample. 研究人員研究了樣本裡的含鐿殘留物。"
     ],
     "audienceTags": [
       "general"
@@ -7404,11 +7404,11 @@
   },
   {
     "word": "ytterbium",
-    "meaning": "镱；一种化学元素",
+    "meaning": "鐿；一種化學元素",
     "partOfSpeech": "noun",
     "sentences": [
-      "Ytterbium is a rare earth element. 镱是一种稀土元素。",
-      "The alloy contained a trace of ytterbium. 那种合金里含有少量镱。"
+      "Ytterbium is a rare earth element. 鐿是一種稀土元素。",
+      "The alloy contained a trace of ytterbium. 那種合金裡含有少量鐿。"
     ],
     "audienceTags": [
       "general"
@@ -7416,11 +7416,11 @@
   },
   {
     "word": "yttria",
-    "meaning": "氧化钇；钇的氧化物",
+    "meaning": "氧化釔；釔的氧化物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The sample contained yttria in fine powder form. 那个样品含有粉末状的氧化钇。",
-      "Scientists used yttria in a ceramic mix. 科学家把氧化钇用于陶瓷配料。"
+      "The sample contained yttria in fine powder form. 那個樣品含有粉末狀的氧化釔。",
+      "Scientists used yttria in a ceramic mix. 科學家把氧化釔用于陶瓷配料。"
     ],
     "audienceTags": [
       "general"
@@ -7428,11 +7428,11 @@
   },
   {
     "word": "yttrialite",
-    "meaning": "铋钇矿；一种含钇矿物",
+    "meaning": "铋釔礦；一種含釔礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The mineral tray held a piece of yttrialite. 矿物盘里放着一块铋钇矿。",
-      "Geologists noted yttrialite in the old granite. 地质学家在那块老花岗岩里发现了铋钇矿。"
+      "The mineral tray held a piece of yttrialite. 礦物盤裡放著一塊铋釔礦。",
+      "Geologists noted yttrialite in the old granite. 地質學家在那塊老花岗岩裡發現了铋釔礦。"
     ],
     "audienceTags": [
       "general"
@@ -7440,11 +7440,11 @@
   },
   {
     "word": "yttric",
-    "meaning": "含钇的；与钇有关的",
+    "meaning": "含釔的；與釔有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The chemist studied an yttric salt. 那位化学家研究了一种含钇盐。",
-      "The yttric deposit gave the stone a pale glow. 那层含钇沉积物让石头泛出淡淡光泽。"
+      "The chemist studied an yttric salt. 那位化學家研究了一種含釔鹽。",
+      "The yttric deposit gave the stone a pale glow. 那層含釔沉积物讓石頭泛出淡淡光泽。"
     ],
     "audienceTags": [
       "general"
@@ -7452,11 +7452,11 @@
   },
   {
     "word": "yttriferous",
-    "meaning": "含钇的；带钇的",
+    "meaning": "含釔的；帶釔的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The note described the ore as yttriferous. 笔记把那块矿石描述为含钇的。",
-      "An yttriferous layer ran through the rock. 那块岩石中间有一层带钇的矿脉。"
+      "The note described the ore as yttriferous. 筆記把那塊礦石描述為含釔的。",
+      "An yttriferous layer ran through the rock. 那塊岩石中間有一層帶釔的礦脈。"
     ],
     "audienceTags": [
       "general"
@@ -7464,11 +7464,11 @@
   },
   {
     "word": "yttrious",
-    "meaning": "含钇的；钇质的",
+    "meaning": "含釔的；釔質的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The old catalog used yttrious for a yttrium-rich mineral. 旧目录用这个旧式说法形容一种富钇矿物。",
-      "The yttrious fragment came from a deep vein. 那块钇质碎片来自深层矿脉。"
+      "The old catalog used yttrious for a yttrium-rich mineral. 舊目錄用這個舊式說法形容一種富釔礦物。",
+      "The yttrious fragment came from a deep vein. 那塊釔質碎片來自深層礦脈。"
     ],
     "audienceTags": [
       "general"
@@ -7476,11 +7476,11 @@
   },
   {
     "word": "yttrium",
-    "meaning": "钇；一种化学元素",
+    "meaning": "釔；一種化學元素",
     "partOfSpeech": "noun",
     "sentences": [
-      "Yttrium is used in several special alloys. 钇被用于几种特殊合金。",
-      "The scientist measured the yttrium in the sample. 科学家测量了样本中的钇含量。"
+      "Yttrium is used in several special alloys. 釔被用于幾種特殊合金。",
+      "The scientist measured the yttrium in the sample. 科學家測量了樣本中的釔含量。"
     ],
     "audienceTags": [
       "general"
@@ -7488,11 +7488,11 @@
   },
   {
     "word": "yttrocerite",
-    "meaning": "钇铈矿；一种含钇和铈的矿物",
+    "meaning": "釔铈礦；一種含釔和铈的礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum displayed a crystal of yttrocerite. 博物馆展出了一块钇铈矿晶体。",
-      "Miners found yttrocerite in the old quarry. 矿工在旧采石场里发现了钇铈矿。"
+      "The museum displayed a crystal of yttrocerite. 博物館展出了一塊釔铈礦晶體。",
+      "Miners found yttrocerite in the old quarry. 礦工在舊採石場裡發現了釔铈礦。"
     ],
     "audienceTags": [
       "general"
@@ -7500,11 +7500,11 @@
   },
   {
     "word": "yttrocolumbite",
-    "meaning": "钇铌矿；一种含钇和铌的矿物",
+    "meaning": "釔鈮礦；一種含釔和鈮的礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The specimen was tagged as yttrocolumbite. 那件标本被标为钇铌矿。",
-      "A geologist explained that yttrocolumbite can be dark and heavy. 地质学家解释说钇铌矿通常又黑又重。"
+      "The specimen was tagged as yttrocolumbite. 那件標本被標為釔鈮礦。",
+      "A geologist explained that yttrocolumbite can be dark and heavy. 地質學家解釋說釔鈮礦通常又黑又重。"
     ],
     "audienceTags": [
       "general"
@@ -7512,11 +7512,11 @@
   },
   {
     "word": "yttrocrasite",
-    "meaning": "钇铌钽矿；一种稀有含钇矿物",
+    "meaning": "釔鈮鉭礦；一種稀有含釔礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The collector kept a small piece of yttrocrasite. 收藏者保存了一小块钇铌钽矿。",
-      "Yttrocrasite is prized by mineral collectors. 钇铌钽矿很受矿物收藏者重视。"
+      "The collector kept a small piece of yttrocrasite. 收藏者保存了一小塊釔鈮鉭礦。",
+      "Yttrocrasite is prized by mineral collectors. 釔鈮鉭礦很受礦物收藏者重视。"
     ],
     "audienceTags": [
       "general"
@@ -7524,11 +7524,11 @@
   },
   {
     "word": "yttrofluorite",
-    "meaning": "钇萤石；含钇的萤石",
+    "meaning": "釔萤石；含釔的萤石",
     "partOfSpeech": "noun",
     "sentences": [
-      "The label identified the crystal as yttrofluorite. 标签把那块晶体标为钇萤石。",
-      "The stone showed a faint green tint like yttrofluorite. 那块石头带着一点像钇萤石的淡绿色。"
+      "The label identified the crystal as yttrofluorite. 標签把那塊晶體標為釔萤石。",
+      "The stone showed a faint green tint like yttrofluorite. 那塊石頭帶著一点像釔萤石的淡綠色。"
     ],
     "audienceTags": [
       "general"
@@ -7536,11 +7536,11 @@
   },
   {
     "word": "yttrogummite",
-    "meaning": "钇橡沥青矿；一种含钇的变质矿物",
+    "meaning": "釔橡瀝青礦；一種含釔的變質礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old cabinet held a sample of yttrogummite. 老柜子里放着一块钇橡沥青矿样本。",
-      "Geologists described yttrogummite as an altered mineral. 地质学家把钇橡沥青矿描述为一种变质矿物。"
+      "The old cabinet held a sample of yttrogummite. 老櫃子裡放著一塊釔橡瀝青礦樣本。",
+      "Geologists described yttrogummite as an altered mineral. 地質學家把釔橡瀝青礦描述為一種變質礦物。"
     ],
     "audienceTags": [
       "general"
@@ -7548,11 +7548,11 @@
   },
   {
     "word": "yttrotantalite",
-    "meaning": "钇钽矿；一种含钇和钽的矿物",
+    "meaning": "釔鉭礦；一種含釔和鉭的礦物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The mineral list included yttrotantalite. 那份矿物清单里列有钇钽矿。",
-      "A thin slice of yttrotantalite glinted in the light. 一薄片钇钽矿在灯光下闪了一下。"
+      "The mineral list included yttrotantalite. 那份礦物清單裡列有釔鉭礦。",
+      "A thin slice of yttrotantalite glinted in the light. 一薄片釔鉭礦在燈光下閃了一下。"
     ],
     "audienceTags": [
       "general"
@@ -7560,11 +7560,11 @@
   },
   {
     "word": "yuan",
-    "meaning": "中國貨幣的基本單位。",
+    "meaning": "元；人民幣的基本單位",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term yuan refers to the basic unit of money in China. 人民幣一詞是指中國的基本貨幣單位。",
-      "The lesson introduced yuan as a useful term to understand. 本課介紹了元這個術語，這是一個需要理解的有用術語。"
+      "The meal cost thirty yuan. 這餐花了三十元人民幣。",
+      "He exchanged dollars for yuan before the trip. 旅行前，他把美元換成人民幣。"
     ],
     "audienceTags": [
       "general"
@@ -7572,11 +7572,11 @@
   },
   {
     "word": "Yuan",
-    "meaning": "元；中国的货币单位，也可指元朝",
+    "meaning": "元；中國的貨幣單位，也可指元朝",
     "partOfSpeech": "noun",
     "sentences": [
-      "The price was quoted in Yuan. 价格是按元来标的。",
-      "Historians also use Yuan for the Mongol dynasty. 历史学家也用这个词指元朝。"
+      "The price was quoted in Yuan. 價格是按元來標的。",
+      "Historians also use Yuan for the Mongol dynasty. 歷史學家也用這個詞指元朝。"
     ],
     "audienceTags": [
       "general"
@@ -7584,11 +7584,11 @@
   },
   {
     "word": "Yuapin",
-    "meaning": "尤阿平；一个人名或族名",
+    "meaning": "尤阿平；一個人名或族名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old record named Yuapin as a local chief. 旧记录把尤阿平写成当地首领。",
-      "A legend said Yuapin guided travelers across the plain. 传说说尤阿平曾带领旅人穿过平原。"
+      "The old record named Yuapin as a local chief. 舊記錄把尤阿平寫成當地首領。",
+      "A legend said Yuapin guided travelers across the plain. 傳說說尤阿平曾帶領旅人穿過平原。"
     ],
     "audienceTags": [
       "general"
@@ -7596,10 +7596,10 @@
   },
   {
     "word": "yuca",
-    "meaning": "木薯；一种可食用根茎植物",
+    "meaning": "木薯；一種可食用根茎植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "She bought fresh yuca at the market. 她在市场买了新鲜木薯。",
+      "She bought fresh yuca at the market. 她在市場買了新鲜木薯。",
       "Yuca can be boiled, fried, or mashed. 木薯可以煮、炸或捣成泥。"
     ],
     "audienceTags": [
@@ -7608,11 +7608,11 @@
   },
   {
     "word": "Yucatec",
-    "meaning": "尤卡坦玛雅语；尤卡坦地区的玛雅语言",
+    "meaning": "尤卡坦瑪雅語；尤卡坦地區的瑪雅語言",
     "partOfSpeech": "noun",
     "sentences": [
-      "The linguist recorded a sentence in Yucatec. 那位语言学家记录了一句尤卡坦玛雅语。",
-      "Yucatec is spoken in parts of the Yucatán Peninsula. 尤卡坦玛雅语在尤卡坦半岛部分地区使用。"
+      "The linguist recorded a sentence in Yucatec. 那位語言學家記錄了一句尤卡坦瑪雅語。",
+      "Yucatec is spoken in parts of the Yucatán Peninsula. 尤卡坦瑪雅語在尤卡坦半岛部分地區使用。"
     ],
     "audienceTags": [
       "general"
@@ -7620,11 +7620,11 @@
   },
   {
     "word": "Yucatecan",
-    "meaning": "尤卡坦人；尤卡坦地区的人",
+    "meaning": "尤卡坦人；尤卡坦地區的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The festival welcomed every Yucatecan in town. 节庆欢迎城里每一位尤卡坦人。",
-      "A Yucatecan artist painted the bright mural. 一位尤卡坦艺术家画了那幅明亮的壁画。"
+      "The festival welcomed every Yucatecan in town. 節慶歡迎城裡每一位尤卡坦人。",
+      "A Yucatecan artist painted the bright mural. 一位尤卡坦藝術家畫了那幅明亮的壁畫。"
     ],
     "audienceTags": [
       "general"
@@ -7632,11 +7632,11 @@
   },
   {
     "word": "Yucateco",
-    "meaning": "尤卡坦人；尤卡坦地区的居民",
+    "meaning": "尤卡坦人；尤卡坦地區的居民",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guide introduced himself as a Yucateco. 导游介绍自己是尤卡坦人。",
-      "A Yucateco family shared food with the guests. 一户尤卡坦家庭和客人分享了食物。"
+      "The guide introduced himself as a Yucateco. 導遊介紹自己是尤卡坦人。",
+      "A Yucateco family shared food with the guests. 一戶尤卡坦家庭和客人分享了食物。"
     ],
     "audienceTags": [
       "general"
@@ -7644,11 +7644,11 @@
   },
   {
     "word": "Yucca",
-    "meaning": "丝兰属植物；一种耐旱植物",
+    "meaning": "絲蘭屬植物；一種耐旱植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "Yucca grows well in dry desert soil. 丝兰在干燥的沙漠土壤里长得很好。",
-      "The gardener trimmed the Yucca leaves carefully. 园丁仔细修剪了丝兰的叶子。"
+      "Yucca grows well in dry desert soil. 絲蘭在乾燥的沙漠土壤裡長得很好。",
+      "The gardener trimmed the Yucca leaves carefully. 園丁仔細修剪了絲蘭的葉子。"
     ],
     "audienceTags": [
       "general"
@@ -7656,11 +7656,11 @@
   },
   {
     "word": "yucca",
-    "meaning": "丝兰；一种观赏和耐旱植物",
+    "meaning": "絲蘭；一種觀賞和耐旱植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "A yucca stood by the front steps. 门前台阶旁立着一株丝兰。",
-      "The yucca looked sharp and green in the sun. 那株丝兰在阳光下显得挺拔而翠绿。"
+      "A yucca stood by the front steps. 門前台階旁立著一株絲蘭。",
+      "The yucca looked sharp and green in the sun. 那株絲蘭在陽光下顯得挺拔而翠綠。"
     ],
     "audienceTags": [
       "general"
@@ -7668,11 +7668,11 @@
   },
   {
     "word": "Yuchi",
-    "meaning": "尤奇族；美国原住民族之一",
+    "meaning": "尤奇族；美國原住民族之一",
     "partOfSpeech": "noun",
     "sentences": [
-      "The exhibit told the history of the Yuchi people. 展览讲述了尤奇族的历史。",
-      "A Yuchi speaker shared an old story with the class. 一位尤奇语使用者给全班讲了一个古老故事。"
+      "The exhibit told the history of the Yuchi people. 展覽講述了尤奇族的歷史。",
+      "A Yuchi speaker shared an old story with the class. 一位尤奇語使用者給全班講了一個古老故事。"
     ],
     "audienceTags": [
       "general"
@@ -7680,11 +7680,11 @@
   },
   {
     "word": "yuck",
-    "meaning": "說「噁心」；來表達厭惡。",
+    "meaning": "表示噁心或厭惡",
     "partOfSpeech": "verb",
     "sentences": [
-      "To yuck means to say \"yuck\"; to express disgust. To yuck 的意思是說「yuck」；來表達厭惡。",
-      "People may yuck in different situations depending on the context. 根據具體情況，人們可能會在不同的情況下感到噁心。"
+      "The child yucked at the bitter medicine. 那個孩子聞到苦藥時露出厭惡的反應。",
+      "I tried not to yuck when I saw the moldy bread. 看到發霉的麵包時，我努力忍住不表現出厭惡。"
     ],
     "audienceTags": [
       "general"
@@ -7695,8 +7695,8 @@
     "meaning": "笨拙的人；邋遢的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The novel turned the yuckel into a comic figure. 小说把那个邋遢家伙写成了一个滑稽角色。",
-      "No yuckel could keep the house tidy for long. 没有哪个笨拙的人能把房子长期收拾得整齐。"
+      "The novel turned the yuckel into a comic figure. 小說把那個邋遢傢伙寫成了一個滑稽角色。",
+      "No yuckel could keep the house tidy for long. 沒有哪個笨拙的人能把房子長期收拾得整齊。"
     ],
     "audienceTags": [
       "general"
@@ -7707,8 +7707,8 @@
     "meaning": "作呕的人；讨厌鬼",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yucker needed fresh air after the smell. 那个作呕的人闻到气味后需要透气。",
-      "She laughed and called him a yucker in jest. 她笑着开玩笑叫他讨厌鬼。"
+      "The yucker needed fresh air after the smell. 那個作呕的人聞到氣味後需要透氣。",
+      "She laughed and called him a yucker in jest. 她笑著開玩笑叫他讨厌鬼。"
     ],
     "audienceTags": [
       "general"
@@ -7719,8 +7719,8 @@
     "meaning": "作呕；干呕",
     "partOfSpeech": "verb",
     "sentences": [
-      "The child began to yuckle at the medicine. 孩子吃药时开始干呕。",
-      "He had to yuckle quietly behind the shed. 他只好躲到棚子后面悄悄干呕。"
+      "The child began to yuckle at the medicine. 孩子吃藥時開始干呕。",
+      "He had to yuckle quietly behind the shed. 他只好躲到棚子後面悄悄干呕。"
     ],
     "audienceTags": [
       "general"
@@ -7728,11 +7728,11 @@
   },
   {
     "word": "yucky",
-    "meaning": "恶心的；令人不快的",
+    "meaning": "噁心的；令人不快的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The soup smelled yucky after standing all day. 汤放了一整天后闻起来很恶心。",
-      "She made a yucky face at the sour milk. 她对那杯酸奶做了个嫌恶的表情。"
+      "The soup smelled yucky after standing all day. 湯放了一整天後聞起來很噁心。",
+      "She made a yucky face at the sour milk. 她對那杯優格做了個嫌惡的表情。"
     ],
     "audienceTags": [
       "general"
@@ -7740,11 +7740,11 @@
   },
   {
     "word": "Yuechi",
-    "meaning": "月氏；古代中亚民族",
+    "meaning": "月氏；古代中亞民族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The textbook described the Yuechi migration westward. 教科书描述了月氏向西迁徙的过程。",
-      "Historians linked the Yuechi to ancient Central Asia. 历史学家把月氏与古代中亚联系起来。"
+      "The textbook described the Yuechi migration westward. 教科書描述了月氏向西遷徙的過程。",
+      "Historians linked the Yuechi to ancient Central Asia. 歷史學家把月氏與古代中亞聯繫起來。"
     ],
     "audienceTags": [
       "general"
@@ -7752,11 +7752,11 @@
   },
   {
     "word": "yuft",
-    "meaning": "俄国软革；一种鞣制皮革",
+    "meaning": "俄國軟革；一種鞣制皮革",
     "partOfSpeech": "noun",
     "sentences": [
-      "The boots were made from yuft. 那双靴子是用俄国软革做的。",
-      "Old yuft can smell rich and earthy. 旧的俄国软革会带着浓厚的土味。"
+      "The boots were made from yuft. 那雙靴子是用俄國軟革做的。",
+      "Old yuft can smell rich and earthy. 舊的俄國軟革會帶著濃厚的土味。"
     ],
     "audienceTags": [
       "general"
@@ -7764,11 +7764,11 @@
   },
   {
     "word": "Yuga",
-    "meaning": "瑜伽时代；印度教中的一个宇宙时代",
+    "meaning": "瑜伽時代；印度教中的一個宇宙時代",
     "partOfSpeech": "noun",
     "sentences": [
-      "The myth spoke of a long Yuga. 神话讲到一个漫长的瑜伽时代。",
-      "Each Yuga is said to last for ages. 据说每一个瑜伽时代都持续很久。"
+      "The myth spoke of a long Yuga. 神話講到一個漫長的瑜伽時代。",
+      "Each Yuga is said to last for ages. 据說每一個瑜伽時代都持续很久。"
     ],
     "audienceTags": [
       "general"
@@ -7776,11 +7776,11 @@
   },
   {
     "word": "yugada",
-    "meaning": "轭架；与轭有关的木架",
+    "meaning": "軛架；與軛有關的木架",
     "partOfSpeech": "noun",
     "sentences": [
-      "The cart needed a new yugada. 那辆车需要一个新的轭架。",
-      "He fitted the yugada before harnessing the oxen. 他先装好轭架，再去套牛。"
+      "The cart needed a new yugada. 那輛車需要一個新的軛架。",
+      "He fitted the yugada before harnessing the oxen. 他先裝好軛架，再去套牛。"
     ],
     "audienceTags": [
       "general"
@@ -7788,11 +7788,11 @@
   },
   {
     "word": "Yugoslav",
-    "meaning": "南斯拉夫人；与南斯拉夫有关的",
+    "meaning": "南斯拉夫人；與南斯拉夫有關的",
     "partOfSpeech": "noun",
     "sentences": [
-      "The interview featured a Yugoslav from Belgrade. 采访中出现了一位来自贝尔格莱德的南斯拉夫人。",
-      "A Yugoslav tradition was shared at the table. 桌上分享了一种南斯拉夫传统。"
+      "The interview featured a Yugoslav from Belgrade. 採訪中出現了一位來自貝爾格勒的南斯拉夫人。",
+      "A Yugoslav tradition was shared at the table. 桌上分享了一種南斯拉夫傳統。"
     ],
     "audienceTags": [
       "general"
@@ -7800,11 +7800,11 @@
   },
   {
     "word": "Yugoslavian",
-    "meaning": "南斯拉夫人；与南斯拉夫有关的",
+    "meaning": "南斯拉夫人；與南斯拉夫有關的",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum labeled the jacket as Yugoslavian. 博物馆把那件夹克标为南斯拉夫式的。",
-      "A Yugoslavian singer performed the last song. 一位南斯拉夫歌手演唱了最后一首歌。"
+      "The museum labeled the jacket as Yugoslavian. 博物館把那件夹克標為南斯拉夫式的。",
+      "A Yugoslavian singer performed the last song. 一位南斯拉夫歌手演唱了最後一首歌。"
     ],
     "audienceTags": [
       "general"
@@ -7815,7 +7815,7 @@
     "meaning": "南斯拉夫的；南斯拉夫式的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The pattern had a Yugoslavic flavor. 那种图案带有南斯拉夫风格。",
+      "The pattern had a Yugoslavic flavor. 那種圖案帶有南斯拉夫風格。",
       "He collected Yugoslavic folk songs. 他收集南斯拉夫民歌。"
     ],
     "audienceTags": [
@@ -7824,11 +7824,11 @@
   },
   {
     "word": "yuh",
-    "meaning": "啊；表示惊讶或呼唤的感叹词",
+    "meaning": "啊；表示驚訝或呼唤的感嘆詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "Yuh, I did not expect to see you here. 啊，我没想到会在这里见到你。",
-      "Yuh, that was a sudden turn in the story. 啊，那故事的转折真突然。"
+      "Yuh, I did not expect to see you here. 啊，我沒想到會在這裡見到你。",
+      "Yuh, that was a sudden turn in the story. 啊，那故事的轉折真突然。"
     ],
     "audienceTags": [
       "general"
@@ -7836,11 +7836,11 @@
   },
   {
     "word": "Yuit",
-    "meaning": "尤皮克人；阿拉斯加和西伯利亚的原住民",
+    "meaning": "尤皮克人；阿拉斯加和西伯利亞的原住民",
     "partOfSpeech": "noun",
     "sentences": [
-      "The article described a Yuit village on the coast. 文章描述了海岸边的一个尤皮克村落。",
-      "A Yuit elder taught the children a song. 一位尤皮克长者教孩子们唱了一首歌。"
+      "The article described a Yuit village on the coast. 文章描述了海岸邊的一個尤皮克村落。",
+      "A Yuit elder taught the children a song. 一位尤皮克長者教孩子們唱了一首歌。"
     ],
     "audienceTags": [
       "general"
@@ -7848,11 +7848,11 @@
   },
   {
     "word": "Yukaghir",
-    "meaning": "尤卡吉尔人；西伯利亚原住民族",
+    "meaning": "尤卡吉爾人；西伯利亞原住民族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The film followed a Yukaghir family in winter. 影片记录了一户尤卡吉尔家庭的冬天生活。",
-      "A Yukaghir hunter spoke about the tundra. 一位尤卡吉尔猎人谈起了苔原。"
+      "The film followed a Yukaghir family in winter. 影片記錄了一戶尤卡吉爾家庭的冬天生活。",
+      "A Yukaghir hunter spoke about the tundra. 一位尤卡吉爾猎人談起了苔原。"
     ],
     "audienceTags": [
       "general"
@@ -7860,11 +7860,11 @@
   },
   {
     "word": "Yuki",
-    "meaning": "尤基族；加利福尼亚原住民族",
+    "meaning": "尤基族；加利福尼亞原住民族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The exhibit focused on the Yuki people. 展览重点介绍了尤基族。",
-      "A Yuki basket was shown beside the map. 地图旁边展示了一只尤基族篮子。"
+      "The exhibit focused on the Yuki people. 展覽重点介紹了尤基族。",
+      "A Yuki basket was shown beside the map. 地圖旁邊展示了一隻尤基族籃子。"
     ],
     "audienceTags": [
       "general"
@@ -7872,11 +7872,11 @@
   },
   {
     "word": "Yukian",
-    "meaning": "尤基的；与尤基族或其语言有关的",
+    "meaning": "尤基的；與尤基族或其語言有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The scholar studied Yukian languages. 那位学者研究尤基语系语言。",
-      "A Yukian tale was read aloud in class. 课堂上朗读了一个尤基族故事。"
+      "The scholar studied Yukian languages. 那位學者研究尤基語系語言。",
+      "A Yukian tale was read aloud in class. 課堂上朗讀了一個尤基族故事。"
     ],
     "audienceTags": [
       "general"
@@ -7887,8 +7887,8 @@
     "meaning": "干呕；作呕",
     "partOfSpeech": "verb",
     "sentences": [
-      "The smell made him yukkel behind the door. 那股气味让他在门后干呕。",
-      "She started to yukkel after the long ride. 长途颠簸后，她开始作呕。"
+      "The smell made him yukkel behind the door. 那股氣味讓他在門後干呕。",
+      "She started to yukkel after the long ride. 長途颠簸後，她開始作呕。"
     ],
     "audienceTags": [
       "general"
@@ -7896,11 +7896,11 @@
   },
   {
     "word": "yulan",
-    "meaning": "玉兰；白玉兰树",
+    "meaning": "玉蘭；白玉蘭樹",
     "partOfSpeech": "noun",
     "sentences": [
-      "The yulan opened its white blossoms in spring. 玉兰在春天开出白花。",
-      "A yulan tree scented the courtyard. 一棵玉兰树让院子里飘着香气。"
+      "The yulan opened its white blossoms in spring. 玉蘭在春天開出白花。",
+      "A yulan tree scented the courtyard. 一棵玉蘭樹讓院子裡飄著香氣。"
     ],
     "audienceTags": [
       "general"
@@ -8160,11 +8160,11 @@
   },
   {
     "word": "Yurupary",
-    "meaning": "亞馬遜神話中的尤魯帕里",
+    "meaning": "亞馬遜神話中的尤魯帕裡",
     "partOfSpeech": "noun",
     "sentences": [
-      "The legend of Yurupary was passed down orally. 尤魯帕里的傳說以口述方式流傳。",
-      "The storyteller named Yurupary as a sacred figure. 說故事的人把尤魯帕里稱為神聖人物。"
+      "The legend of Yurupary was passed down orally. 尤魯帕裡的傳說以口述方式流傳。",
+      "The storyteller named Yurupary as a sacred figure. 說故事的人把尤魯帕裡稱為神聖人物。"
     ],
     "audienceTags": [
       "general"
@@ -8175,8 +8175,8 @@
     "meaning": "古式的 yes；是的",
     "partOfSpeech": "noun",
     "sentences": [
-      "The note used yus as an old spelling of yes. 那張便條把它當作舊式的肯定詞。",
-      "He answered with a quick yus and smiled. 他迅速回了一句「是的」，還笑了。"
+      "The character says yus instead of yes in the old dialogue. 舊對白裡，那個角色用古式說法回答「是」。",
+      "The dialect note lists yus as an old form of agreement. 方言註記把這個詞列為舊式肯定說法。"
     ],
     "audienceTags": [
       "general"

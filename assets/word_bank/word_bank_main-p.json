@@ -438,11 +438,11 @@
   },
   {
     "word": "pachisi",
-    "meaning": "一種古老的印度棋盤遊戲，玩家透過投擲骰子、貝殼等來確定每次移動的距離，並嘗試成為第一個拿走棋盤周圍所有籌碼的人。",
+    "meaning": "帕奇西；印度傳統棋盤遊戲",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used pachisi rested on the table beside the other equipment. 桌上放著一台用過的帕奇西，旁邊還有其他設備。",
-      "The technician reached for the pachisi before starting the task. 技術人員在開始任務之前伸手去拿帕奇西。"
+      "We played pachisi on the living room floor after dinner. 晚餐後，我們在客廳地板上玩帕奇西。",
+      "Pachisi uses pieces that move around a cross-shaped board. 帕奇西使用棋子在十字形棋盤上移動。"
     ],
     "audienceTags": [
       "general"
@@ -846,11 +846,11 @@
   },
   {
     "word": "pachydermoid",
-    "meaning": "類似厚皮症。",
+    "meaning": "類似厚皮症的；皮膚增厚樣的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "From a distance, the shape looked pachydermoid. 從遠處看，這個形狀看起來像厚皮動物。",
-      "The shell had a distinctly pachydermoid curve. 殼具有明顯的厚皮樣曲線。"
+      "The doctor described the rough patch as pachydermoid. 醫生把那塊粗厚皮膚描述為厚皮樣變化。",
+      "A pachydermoid texture appeared on the old scar. 舊疤上出現了皮膚增厚樣的質地。"
     ],
     "audienceTags": [
       "general"
@@ -1110,11 +1110,11 @@
   },
   {
     "word": "pachymeter",
-    "meaning": "用於測量某物厚度的多種儀器中的任何一種。",
+    "meaning": "測厚儀",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used pachymeter rested on the table beside the other equipment. 桌子上其他設備旁邊放著一台用過的測厚儀。",
-      "The technician reached for the pachymeter before starting the task. 在開始任務之前，技術人員伸手去拿測厚儀。"
+      "The eye doctor used a pachymeter to measure the cornea. 眼科醫師用測厚儀測量角膜厚度。",
+      "Please calibrate the pachymeter before the next exam. 下一次檢查前，請先校正測厚儀。"
     ],
     "audienceTags": [
       "general"
@@ -1242,11 +1242,11 @@
   },
   {
     "word": "pachypod",
-    "meaning": "任何具有粗足的動物群。",
+    "meaning": "厚足動物；足部粗大的動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a pachypod near the edge of the field at dawn. 研究人員在黎明時分在田野邊緣附近觀察到一隻厚足動物。",
-      "The illustration showed the pachypod in its natural setting. 插圖展示了自然環境中的厚足類動物。"
+      "The fossil was described as a pachypod because of its heavy feet. 那件化石因腳部粗壯而被描述為厚足動物。",
+      "A pachypod track is wider than the marks around it. 厚足動物的足跡比周圍痕跡更寬。"
     ],
     "audienceTags": [
       "general"
@@ -1386,11 +1386,11 @@
   },
   {
     "word": "pachytene",
-    "meaning": "減數分裂第一前期的第三階段，在此期間染色體縮短並分裂成四個染色單體。",
+    "meaning": "粗線期；減數分裂前期的一個階段",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used pachytene rested on the table beside the other equipment. 桌子上其他設備旁邊放著一台用過的粗線期。",
-      "The technician reached for the pachytene before starting the task. 在開始任務之前，技術人員伸手去夠粗線期。"
+      "The students identified pachytene in the cell division diagram. 學生在細胞分裂圖中辨認出粗線期。",
+      "During pachytene, paired chromosomes become easier to observe. 在粗線期，成對染色體變得較容易觀察。"
     ],
     "audienceTags": [
       "general"
@@ -1446,11 +1446,11 @@
   },
   {
     "word": "pacific",
-    "meaning": "生性愛好和平；避免暴力。",
+    "meaning": "愛好和平的；避免暴力的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as pacific is preferring peace by nature; avoiding violence. 被描述為和平的東西本質上更喜歡和平；避免暴力。",
-      "The word pacific is often used to describe a person, thing, or situation. 太平洋這個詞常用來形容人、事或情況。"
+      "Her pacific manner helped calm the argument. 她溫和平和的態度讓爭吵緩和下來。",
+      "The group chose a pacific response instead of fighting back. 這個團體選擇和平回應，而不是反擊。"
     ],
     "audienceTags": [
       "general"
@@ -1887,11 +1887,11 @@
   },
   {
     "word": "packsaddle",
-    "meaning": "設計用於支撐馱畜背上負荷的馬鞍",
+    "meaning": "馱鞍；馱畜背負貨物用的鞍",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a packsaddle near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一個馱鞍。",
-      "The illustration showed the packsaddle in its natural setting. 插圖展示了自然環境中的馱鞍。"
+      "The guide tightened the packsaddle before loading the mule. 嚮導裝貨前先把馱鞍繫緊。",
+      "A good packsaddle spreads the weight across the animal’s back. 好的馱鞍能把重量分散在動物背上。"
     ],
     "audienceTags": [
       "general"
@@ -1959,11 +1959,11 @@
   },
   {
     "word": "packway",
-    "meaning": "一條小路，就像翻山越嶺一樣，後面有馱畜。",
+    "meaning": "馱道；馱畜行走的小路",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a packway near the edge of the field at dawn. 研究人員在黎明時觀察到田地邊緣附近的一條包裝道。",
-      "The illustration showed the packway in its natural setting. 插圖顯示了自然環境中的包裝道。"
+      "The old packway crossed the hills behind the village. 舊馱道穿過村後的山丘。",
+      "Traders once used this packway to carry salt inland. 商人過去沿著這條馱道把鹽運往內陸。"
     ],
     "audienceTags": [
       "general"
@@ -2108,11 +2108,11 @@
   },
   {
     "word": "Padda",
-    "meaning": "由爪哇麻雀組成的鳥類屬",
+    "meaning": "禾雀屬；包括爪哇禾雀的一類鳥",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Padda near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一隻帕達。",
-      "The illustration showed the Padda in its natural setting. 插圖展示了帕達的自然環境。"
+      "Padda birds are popular in some aviaries. 禾雀屬鳥類在一些鳥舍中很受歡迎。",
+      "The keeper separated the Padda pair during cleaning. 管理員打掃時把那對禾雀分開。"
     ],
     "audienceTags": [
       "general"
@@ -2283,11 +2283,11 @@
   },
   {
     "word": "paddockstool",
-    "meaning": "傘菌",
+    "meaning": "傘菌；蘑菇的一類舊稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used paddockstool rested on the table beside the other equipment. 桌子上其他設備旁邊放著一張用過的圍場凳。",
-      "The technician reached for the paddockstool before starting the task. 在開始任務之前，技術人員伸手去拿圍場凳。"
+      "A paddockstool appeared near the fence after the rain. 雨後，圍欄旁冒出一朵傘菌。",
+      "Do not eat a wild paddockstool unless an expert identifies it. 除非專家確認，否則不要吃野生傘菌。"
     ],
     "audienceTags": [
       "general"
@@ -2547,11 +2547,11 @@
   },
   {
     "word": "Padraic",
-    "meaning": "罕見或專門的英語術語，記錄為 Padraic。",
+    "meaning": "男子名；Patrick 的愛爾蘭形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Padraic on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Padraic to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Padraic sent a postcard from Dublin. 帕德里克從都柏林寄來一張明信片。",
+      "I met Padraic at a music festival last summer. 去年夏天我在音樂節認識了帕德里克。"
     ],
     "audienceTags": [
       "general"
@@ -2619,11 +2619,11 @@
   },
   {
     "word": "padstone",
-    "meaning": "用於分散牆上點荷載重量的墊子。",
+    "meaning": "墊石；分散牆上集中荷重的石塊",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used padstone rested on the table beside the other equipment. 桌子上其他設備旁邊放著一塊用過的墊石。",
-      "The technician reached for the padstone before starting the task. 技術人員在開始任務之前伸手去拿墊石。"
+      "The builder placed a padstone under the steel beam. 建築工人在鋼樑下放了一塊墊石。",
+      "A cracked padstone can weaken the wall above it. 裂開的墊石可能削弱上方牆體。"
     ],
     "audienceTags": [
       "general"
@@ -2775,11 +2775,11 @@
   },
   {
     "word": "paedogenesis",
-    "meaning": "幼小或幼蟲動物的繁殖：幼態持續期",
+    "meaning": "幼態生殖；幼體或幼蟲階段的繁殖",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a paedogenesis near the edge of the field at dawn. 黎明時分，研究人員在田地邊緣附近觀察到了幼體發育。",
-      "The illustration showed the paedogenesis in its natural setting. 該插圖顯示了自然環境中的幼崽發生。"
+      "The biology lecture mentioned paedogenesis in certain insects. 生物課提到某些昆蟲會出現幼態生殖。",
+      "Paedogenesis lets some animals reproduce before full maturity. 幼態生殖讓某些動物在完全成熟前就能繁殖。"
     ],
     "audienceTags": [
       "general"
@@ -3195,11 +3195,11 @@
   },
   {
     "word": "paganistic",
-    "meaning": "涉及或類似異教。",
+    "meaning": "異教風格的；類似異教的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "From a distance, the shape looked paganistic. 從遠處看，這個形狀看起來很異教。",
-      "The shell had a distinctly paganistic curve. 外殼有明顯的異教曲線。"
+      "The festival had a paganistic atmosphere with fire dances and masks. 這場節慶有火舞和面具，帶著異教風格。",
+      "The novel uses paganistic symbols in several dream scenes. 這本小說在幾個夢境場景中使用異教象徵。"
     ],
     "audienceTags": [
       "general"
@@ -3586,11 +3586,11 @@
   },
   {
     "word": "pagoscope",
-    "meaning": "一種一目了然地顯示目前露點是否低於冰點的裝置：hygrodeik",
+    "meaning": "露點冰點指示器；判斷露點是否低於冰點的裝置",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used pagoscope rested on the table beside the other equipment. 桌子上其他設備旁邊放著一台用過的探戈儀。",
-      "The technician reached for the pagoscope before starting the task. 在開始任務之前，技術人員伸手去拿探氣鏡。"
+      "The weather station used a pagoscope on cold nights. 氣象站在寒冷夜晚使用露點冰點指示器。",
+      "A pagoscope helps warn farmers about possible frost. 露點冰點指示器能幫農民預警霜害。"
     ],
     "audienceTags": [
       "general"
@@ -5011,11 +5011,11 @@
   },
   {
     "word": "palacelike",
-    "meaning": "類似或具有宮殿的特徵。",
+    "meaning": "宮殿般的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "From a distance, the shape looked palacelike. 從遠處看，它的形狀就像宮殿一樣。",
-      "The shell had a distinctly palacelike curve. 貝殼有明顯的宮殿般的曲線。"
+      "The hotel lobby felt palacelike with its high ceiling. 飯店大廳挑高天花板讓人覺得像宮殿。",
+      "They moved into a palacelike house near the river. 他們搬進河邊一棟宮殿般的房子。"
     ],
     "audienceTags": [
       "general"
@@ -5239,11 +5239,11 @@
   },
   {
     "word": "Palaeichthyes",
-    "meaning": "魚類的一個亞綱，由軟骨魚類、硬魚、雙鰭魚和十字鰭魚組成",
+    "meaning": "古魚類；舊分類中的原始魚類群",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeichthyes near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一條古魚。",
-      "The illustration showed the Palaeichthyes in its natural setting. 插圖展示了自然環境中的古魚。"
+      "Older textbooks grouped several ancient fishes under Palaeichthyes. 較早的教科書把幾類古代魚歸為古魚類。",
+      "The chart presents Palaeichthyes as a historical fish classification. 圖表把古魚類列為歷史上的魚類分類。"
     ],
     "audienceTags": [
       "general"
@@ -5251,11 +5251,11 @@
   },
   {
     "word": "palaeichthyic",
-    "meaning": "魚類的一個亞綱，由軟骨魚類、硬魚、雙鰭魚和十字鰭魚組成",
-    "partOfSpeech": "noun",
+    "meaning": "古魚類的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "Researchers observed a palaeichthyic near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一條古魚。",
-      "The illustration showed the palaeichthyic in its natural setting. 插圖展示了自然環境中的古魚。"
+      "The fossil had palaeichthyic features in its fins and scales. 那件化石的鰭和鱗片帶有古魚類特徵。",
+      "The professor compared the specimen with other palaeichthyic forms. 教授把標本與其他古魚類形態比較。"
     ],
     "audienceTags": [
       "general"
@@ -5731,11 +5731,11 @@
   },
   {
     "word": "Palaeodictyoptera",
-    "meaning": "一種非常原始的已滅絕昆蟲，僅在石炭紀上部和二疊紀時期才被發現，其特徵是胸部和腹部的同向分割以及具有交叉靜脈網絡的簡單翼脈",
+    "meaning": "古網翅目；已滅絕原始昆蟲類群",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeodictyoptera near the edge of the field at dawn. 研究人員在黎明時分在田野邊緣附近觀察到了古網翅目動物。",
-      "The illustration showed the Palaeodictyoptera in its natural setting. 插圖展示了古網翅目的自然環境。"
+      "Palaeodictyoptera fossils show delicate wing veins. 古網翅目化石顯示出細緻的翅脈。",
+      "The museum displayed a Palaeodictyoptera specimen from the Carboniferous period. 博物館展示了一件石炭紀古網翅目標本。"
     ],
     "audienceTags": [
       "general"
@@ -5743,11 +5743,11 @@
   },
   {
     "word": "palaeodictyopteran",
-    "meaning": "一種非常原始的已滅絕昆蟲，僅在石炭紀上部和二疊紀時期才被發現，其特徵是胸部和腹部的同向分割以及具有交叉靜脈網絡的簡單翼脈",
+    "meaning": "古網翅目昆蟲",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palaeodictyopteran near the edge of the field at dawn. 研究人員在黎明時分在田野邊緣附近觀察到了一種古網翅目動物。",
-      "The illustration showed the palaeodictyopteran in its natural setting. 插圖展示了自然環境中的古網翅目動物。"
+      "A palaeodictyopteran fossil was found in the shale layer. 頁岩層中發現了一件古網翅目昆蟲化石。",
+      "The palaeodictyopteran wing pattern helped date the rock. 古網翅目昆蟲的翅脈圖案幫助判定岩層年代。"
     ],
     "audienceTags": [
       "general"
@@ -5758,8 +5758,8 @@
     "meaning": "古網翅目昆蟲或化石",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palaeodictyopteron near the edge of the field at dawn. 研究人員在黎明時分在田野邊緣附近觀察到了古網翅目昆蟲。",
-      "The illustration showed the palaeodictyopteron in its natural setting. 插圖展示了自然環境中的古網翅目。"
+      "The palaeodictyopteron was preserved with both wings spread. 那件古網翅目昆蟲化石保存了張開的雙翅。",
+      "Researchers compared the palaeodictyopteron with related fossils. 研究人員把這件古網翅目化石與相關化石比較。"
     ],
     "audienceTags": [
       "general"
@@ -6331,11 +6331,11 @@
   },
   {
     "word": "Palaeonemertea",
-    "meaning": "紐蟲類蠕蟲（Anopla 綱）的一種，具有兩層體壁肌肉組織、沒有探針的長鼻和不分為葉的大腦",
+    "meaning": "古紐蟲類；紐形動物的一類",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeonemertea near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了古龍魚。",
-      "The illustration showed the Palaeonemertea in its natural setting. 插圖展示了自然環境下的古奧內梅泰亞。"
+      "Palaeonemertea are discussed in the chapter on ribbon worms. 古紐蟲類出現在紐形動物章節中。",
+      "The class compared Palaeonemertea with more modern nemertean groups. 課堂上比較了古紐蟲類與較新的紐蟲類群。"
     ],
     "audienceTags": [
       "general"
@@ -6343,11 +6343,11 @@
   },
   {
     "word": "palaeonemertean",
-    "meaning": "紐蟲類蠕蟲（Anopla 綱）的一種，具有兩層體壁肌肉組織、沒有探針的長鼻和不分為葉的大腦",
+    "meaning": "古紐蟲類動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palaeonemertean near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一條古生物。",
-      "The illustration showed the palaeonemertean in its natural setting. 插圖展示了自然環境中的古生物。"
+      "The palaeonemertean has a simple body wall structure. 古紐蟲類動物有較簡單的體壁結構。",
+      "A palaeonemertean specimen was shown in the marine biology lab. 海洋生物實驗室展示了一件古紐蟲類標本。"
     ],
     "audienceTags": [
       "general"
@@ -6391,11 +6391,11 @@
   },
   {
     "word": "palaeoniscid",
-    "meaning": "任何已滅絕的古魚科魚類",
+    "meaning": "古鱗魚類；已滅絕原始魚類",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palaeoniscid near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一條古魚。",
-      "The illustration showed the palaeoniscid in its natural setting. 插圖展示了自然環境中的古魚。"
+      "A palaeoniscid fossil lay flat inside the stone slab. 一件古鱗魚類化石平躺在石板中。",
+      "The palaeoniscid had a long body covered with hard scales. 古鱗魚類身體細長，覆蓋硬鱗。"
     ],
     "audienceTags": [
       "general"
@@ -6403,11 +6403,11 @@
   },
   {
     "word": "Palaeoniscidae",
-    "meaning": "一種已滅絕的原始類魚類，生活於從泥盆紀到利亞斯紀，具有細長的身體，通常覆蓋有菱形板、小胸鰭和腹鰭、單背鰭和臀鰭、異尾尾、覆蓋著骨板的頭骨和長有小牙齒的頜",
+    "meaning": "古鱗魚科；已滅絕原始魚類家族",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeoniscidae near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了古龍科動物。",
-      "The illustration showed the Palaeoniscidae in its natural setting. 插圖展示了自然環境下的古猿科動物。"
+      "Palaeoniscidae fossils are common in some Permian rocks. 一些二疊紀岩石中常見古鱗魚科化石。",
+      "The display explains how Palaeoniscidae fish swam with heterocercal tails. 展示說明古鱗魚科魚類如何用歪形尾游動。"
     ],
     "audienceTags": [
       "general"
@@ -6427,11 +6427,11 @@
   },
   {
     "word": "Palaeoniscum",
-    "meaning": "古魚科的一個分類屬，是二疊紀時期某些已滅絕的鰭魚。",
+    "meaning": "古鱗魚屬",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeoniscum near the edge of the field at dawn. 研究人員在黎明時分在田野邊緣附近觀察到了古尼藻。",
-      "The illustration showed the Palaeoniscum in its natural setting. 插圖展示了自然環境下的古尼斯庫姆。"
+      "Palaeoniscum is often used as an example of early ray-finned fish. 古鱗魚屬常被用作早期輻鰭魚的例子。",
+      "The fossil label identified the fish as Palaeoniscum. 化石標籤把這條魚鑑定為古鱗魚屬。"
     ],
     "audienceTags": [
       "general"
@@ -6751,11 +6751,11 @@
   },
   {
     "word": "palaeosaur",
-    "meaning": "任何一種被命名為古龍的史前動物。",
+    "meaning": "古代爬行動物；古龍類動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palaeosaur near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一隻古龍。",
-      "The illustration showed the palaeosaur in its natural setting. 插圖展示了自然環境中的古龍。"
+      "The children drew a palaeosaur after visiting the fossil hall. 孩子們參觀化石館後畫了一隻古代爬行動物。",
+      "The name palaeosaur appears in early books about prehistoric animals. 古龍類這個名稱出現在早期史前動物書中。"
     ],
     "audienceTags": [
       "general"
@@ -6787,11 +6787,11 @@
   },
   {
     "word": "Palaeospondylus",
-    "meaning": "脊椎動物亞門的一個分類屬－一種類似魚的脊椎動物化石。",
+    "meaning": "古椎魚屬；一種魚形脊椎動物化石",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a Palaeospondylus near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一條古椎龍。",
-      "The illustration showed the Palaeospondylus in its natural setting. 插圖展示了自然環境中的古椎龍。"
+      "Palaeospondylus is known from small fishlike fossils. 古椎魚屬以小型魚形化石聞名。",
+      "The researcher studied the skull of Palaeospondylus under magnification. 研究人員在放大下研究古椎魚屬的頭骨。"
     ],
     "audienceTags": [
       "general"
@@ -7339,11 +7339,11 @@
   },
   {
     "word": "palama",
-    "meaning": "水鳥腳上的蹼",
+    "meaning": "蹼；水鳥腳上的蹼膜",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers observed a palama near the edge of the field at dawn. 黎明時分，研究人員在田野邊緣附近觀察到了一隻帕拉馬。",
-      "The illustration showed the palama in its natural setting. 插圖展示了自然環境中的帕拉馬。"
+      "The duck’s palama helps it paddle through the pond. 鴨子的蹼幫助牠在池塘中划水。",
+      "The drawing labels the palama between the bird’s toes. 圖中標出鳥趾間的蹼膜。"
     ],
     "audienceTags": [
       "general"
@@ -7723,11 +7723,11 @@
   },
   {
     "word": "palatelike",
-    "meaning": "與味覺相似或具有味覺特徵。",
+    "meaning": "像上顎的；腭狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "From a distance, the shape looked palatelike. 從遠處看，形狀就像上顎。",
-      "The shell had a distinctly palatelike curve. 貝殼有明顯的腭狀曲線。"
+      "The shell had a palatelike ridge along the inside. 貝殼內側有一道像上顎的脊。",
+      "The dentist pointed to a palatelike curve in the model. 牙醫指出模型中一段腭狀曲線。"
     ],
     "audienceTags": [
       "general"
@@ -8014,11 +8014,11 @@
   },
   {
     "word": "palatograph",
-    "meaning": "上顎肌動描記器；用於記錄言語或呼吸期間軟顎運動的儀器。",
+    "meaning": "腭動描記器；記錄軟腭運動的儀器",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used palatograph rested on the table beside the other equipment. 桌子上其他設備旁邊放著一台用過的胃鏡。",
-      "The technician reached for the palatograph before starting the task. 在開始任務之前，技術人員伸手去拿胃鏡。"
+      "The speech lab used a palatograph to study pronunciation. 語音實驗室用腭動描記器研究發音。",
+      "A palatograph can record how the soft palate moves during speech. 腭動描記器能記錄說話時軟腭如何移動。"
     ],
     "audienceTags": [
       "general"
@@ -8050,11 +8050,11 @@
   },
   {
     "word": "palatometer",
-    "meaning": "罕見或專門的英語術語，記錄為 palatometer。",
+    "meaning": "腭測量器；測量上顎的儀器",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote palatometer on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added palatometer to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The dentist used a palatometer to measure the shape of the palate. 牙醫用腭測量器測量上顎形狀。",
+      "A palatometer helps compare mouth structures in speech research. 腭測量器有助於語音研究中比較口腔結構。"
     ],
     "audienceTags": [
       "general"
@@ -8086,11 +8086,11 @@
   },
   {
     "word": "palatopharyngeus",
-    "meaning": "長而肉質的縱向肌肉，中間比兩端窄，起自軟齶，與覆蓋其表面的粘膜一起構成腭咽弓的結構，並插入甲狀軟骨和咽壁；它的作用是收縮水龍頭並將喉部和咽部向上拉。",
+    "meaning": "腭咽肌",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used palatopharyngeus rested on the table beside the other equipment. 桌子上其他設備旁邊放著一個用過的腭咽器。",
-      "The technician reached for the palatopharyngeus before starting the task. 在開始任務之前，技術人員伸手觸摸腭咽肌。"
+      "The diagram shows the palatopharyngeus behind the soft palate. 圖中顯示軟腭後方的腭咽肌。",
+      "The palatopharyngeus helps lift the throat during swallowing. 腭咽肌有助於吞嚥時提升咽喉。"
     ],
     "audienceTags": [
       "general"
@@ -11903,11 +11903,11 @@
   },
   {
     "word": "Pallu",
-    "meaning": "罕見或專門的英語術語，記錄為 Pallu。",
+    "meaning": "紗麗末端披在肩上的部分",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Pallu on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Pallu to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "She draped the pallu of her sari over her shoulder. 她把紗麗末端披在肩上。",
+      "The pallu was embroidered with gold thread. 那段紗麗披肩繡著金線。"
     ],
     "audienceTags": [
       "general"
@@ -12064,11 +12064,11 @@
   },
   {
     "word": "palmary",
-    "meaning": "值得掌上明珠；卓越的；優越的。",
+    "meaning": "卓越的；優秀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report called the design palmary. 報告把這個設計稱為值得掌上明珠。",
-      "She chose a palmary option for the project. 她為專案選了一個值得掌上明珠選項。"
+      "Her palmary achievement was finishing the bridge ahead of schedule. 她最卓越的成就是提前完成那座橋。",
+      "The chef’s palmary dish was a simple soup with deep flavor. 那位主廚的代表佳作是一道風味深厚的簡單湯品。"
     ],
     "audienceTags": [
       "general"
@@ -12352,11 +12352,11 @@
   },
   {
     "word": "palmette",
-    "meaning": "讓人聯想到棕櫚樹的裝飾圖案。",
+    "meaning": "棕櫚葉形裝飾圖案",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gardener planted a palmette near the sunny wall. 園丁把一株讓人聯想到棕櫚樹的裝飾圖案種在陽光充足的牆邊。",
-      "We saw a palmette during our walk through the garden. 我們散步穿過花園時，看見了一株讓人聯想到棕櫚樹的裝飾圖案。"
+      "The old vase has a blue palmette around the rim. 舊花瓶口緣有一圈藍色棕櫚葉形圖案。",
+      "She copied the palmette pattern onto the tile. 她把棕櫚葉形圖案描到磁磚上。"
     ],
     "audienceTags": [
       "general"
@@ -14734,11 +14734,11 @@
   },
   {
     "word": "Panaka",
-    "meaning": "罕見或專門的英語術語，記錄為 Panaka。",
+    "meaning": "帕納卡；印度傳統甜飲",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Panaka on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Panaka to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "They served cool panaka during the spring festival. 春季節慶時，他們供應冰涼的帕納卡甜飲。",
+      "Panaka is often flavored with jaggery and spices. 帕納卡常用棕櫚糖和香料調味。"
     ],
     "audienceTags": [
       "general"
@@ -14806,11 +14806,11 @@
   },
   {
     "word": "Panamic",
-    "meaning": "罕見或專門的英語術語，記錄為 Panamic。",
-    "partOfSpeech": "noun",
+    "meaning": "巴拿馬的；中美洲太平洋沿岸生物區的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The teacher wrote Panamic on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Panamic to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The report compared Panamic fish with species from farther south. 報告比較了巴拿馬一帶魚類與更南方的物種。",
+      "Several Panamic shells were displayed in the marine collection. 海洋收藏中展示了幾件中美洲太平洋沿岸貝類標本。"
     ],
     "audienceTags": [
       "general"
@@ -15034,11 +15034,11 @@
   },
   {
     "word": "Panayano",
-    "meaning": "罕見或專門的英語術語，記錄為 Panayano。",
-    "partOfSpeech": "noun",
+    "meaning": "班乃島人的；與菲律賓班乃島有關的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The teacher wrote Panayano on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Panayano to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The museum featured Panayano textiles from the central Philippines. 博物館展出菲律賓中部班乃島的織品。",
+      "She learned a Panayano folk song from her grandmother. 她從祖母那裡學了一首班乃島民謠。"
     ],
     "audienceTags": [
       "general"
@@ -16329,11 +16329,11 @@
   },
   {
     "word": "Pandionidae",
-    "meaning": "罕見或專門的英語術語，記錄為 Pandionidae。",
+    "meaning": "鶚科；魚鷹科",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Pandionidae on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Pandionidae to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Pandionidae includes the fish-eating osprey. 鶚科包含以魚為食的魚鷹。",
+      "The bird guide places ospreys in Pandionidae. 鳥類圖鑑把魚鷹歸在鶚科。"
     ],
     "audienceTags": [
       "general"
@@ -17248,11 +17248,11 @@
   },
   {
     "word": "pangolin",
-    "meaning": "亞洲和非洲無牙哺乳動物的一個科（馬尼達科），其身體背部覆蓋著大片瓦狀角質鱗片——也稱為有鱗食蟻獸。",
+    "meaning": "穿山甲",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guide pointed out a pangolin near the river. 導覽員指給我們看河邊的一隻亞洲和非洲無牙哺乳動物的一個科（馬尼達科）。",
-      "The children drew a pangolin after seeing it in the nature book. 孩子們在自然書上看到亞洲和非洲無牙哺乳動物的一個科（馬尼達科）後，把牠畫了下來。"
+      "A pangolin rolls into a ball when it feels threatened. 穿山甲感到受威脅時會捲成一團。",
+      "The wildlife center rescued an injured pangolin. 野生動物中心救了一隻受傷的穿山甲。"
     ],
     "audienceTags": [
       "general"
@@ -17577,11 +17577,11 @@
   },
   {
     "word": "panicle",
-    "meaning": "複總狀花序。",
+    "meaning": "圓錐花序；複總狀花序",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gardener planted a panicle near the sunny wall. 園丁把一株複總狀花序種在陽光充足的牆邊。",
-      "We saw a panicle during our walk through the garden. 我們散步穿過花園時，看見了一株複總狀花序。"
+      "The grass has a loose panicle at the top of each stem. 這種草每根莖頂端都有鬆散的圓錐花序。",
+      "Tiny flowers opened along the rice panicle. 稻穗的圓錐花序上開出細小花朵。"
     ],
     "audienceTags": [
       "general"
@@ -18669,11 +18669,11 @@
   },
   {
     "word": "panorama",
-    "meaning": "整個週邊地區的一覽無遺的景色。",
+    "meaning": "全景；一覽無遺的景色",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed panorama during the morning meeting. 團隊在早會中討論整個週邊地區的一覽無遺的景色。",
-      "The editor added panorama to the project notes. 編輯把整個週邊地區的一覽無遺的景色加入專案筆記。"
+      "The hilltop gives a wide panorama of the city. 山頂可以看到城市全景。",
+      "She took a panorama of the harbor at sunset. 她在日落時拍了一張港口全景照。"
     ],
     "audienceTags": [
       "general"
@@ -20685,11 +20685,11 @@
   },
   {
     "word": "Pantodontidae",
-    "meaning": "罕見或專門的英語術語，記錄為 Pantodontidae。",
+    "meaning": "全齒獸科；已滅絕哺乳動物家族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Pantodontidae on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Pantodontidae to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Pantodontidae fossils help scientists study early mammals. 全齒獸科化石幫助科學家研究早期哺乳動物。",
+      "Our class looked at Pantodontidae while learning about extinct mammals. 我們班在學已滅絕哺乳動物時，看到了全齒獸科。"
     ],
     "audienceTags": [
       "general"
@@ -20781,11 +20781,11 @@
   },
   {
     "word": "pantograph",
-    "meaning": "用於以預定比例複製某物（例如地圖）的工具，由四個以平行四邊形形式連接的輕型剛性桿組成；另外：任何類似結構的各種可延伸裝置（如用作支架或門）",
+    "meaning": "縮放繪圖儀；集電弓；伸縮支架",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used pantograph rested on the table beside the other equipment. 桌子上其他設備旁邊放著一台用過的受電弓。",
-      "The technician reached for the pantograph before starting the task. 在開始任務之前，技術人員伸手去夠受電弓。"
+      "The old draftsman used a pantograph to copy the map at a smaller size. 老製圖員用縮放繪圖儀把地圖縮小複製。",
+      "The train’s pantograph touched the overhead wire. 火車的集電弓接觸到上方電線。"
     ],
     "audienceTags": [
       "general"
@@ -22431,11 +22431,11 @@
   },
   {
     "word": "paperweight",
-    "meaning": "通常用於固定鬆散文件的小而重的物體（例如在桌子上）。",
+    "meaning": "紙鎮",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed paperweight during the morning meeting. 團隊在早會中討論紙鎮。",
-      "The editor added paperweight to the project notes. 編輯把紙鎮加入專案筆記。"
+      "She placed a glass paperweight on the stack of letters. 她把玻璃紙鎮放在一疊信上。",
+      "The paperweight kept the receipts from blowing off the desk. 紙鎮讓收據不會從桌上被吹走。"
     ],
     "audienceTags": [
       "general"
@@ -28237,11 +28237,11 @@
   },
   {
     "word": "Paramecidae",
-    "meaning": "罕見或專門的英語術語，記錄為Paramecidae。",
+    "meaning": "草履蟲科",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Paramecidae on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Paramecidae to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Paramecidae are often studied in beginner biology labs. 草履蟲科常出現在初階生物實驗中。",
+      "The microscope slide contained several members of Paramecidae. 顯微鏡玻片裡有幾個草履蟲科個體。"
     ],
     "audienceTags": [
       "general"
@@ -30556,11 +30556,11 @@
   },
   {
     "word": "parasite",
-    "meaning": "隔離式（FSDU）（獨立式顯示單元）。",
+    "meaning": "寄生蟲；依附他人而生的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "parasite display 寄生虫展示",
-      "parasite stand 寄生虫站"
+      "A parasite can live inside another animal and take nutrients from it. 寄生蟲可以住在另一隻動物體內並吸取養分。",
+      "He called the corrupt adviser a parasite on the company. 他把那個貪腐顧問稱為公司的寄生蟲。"
     ],
     "audienceTags": [
       "general"
@@ -32473,11 +32473,11 @@
   },
   {
     "word": "parchment",
-    "meaning": "由小牛、綿羊、山羊或其他動物的拋光皮製成的材料，用作書寫用紙。",
+    "meaning": "羊皮紙；仿羊皮紙",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guide pointed out a parchment near the river. 導覽員指給我們看河邊的一隻由小牛、綿羊、山羊或其他動物的拋光皮製成的材料。",
-      "The children drew a parchment after seeing it in the nature book. 孩子們在自然書上看到由小牛、綿羊、山羊或其他動物的拋光皮製成的材料後，把牠畫了下來。"
+      "The old letter was written on thin parchment. 那封舊信寫在薄薄的羊皮紙上。",
+      "She lined the baking tray with parchment. 她在烤盤上鋪了烘焙紙。"
     ],
     "audienceTags": [
       "general"
@@ -34252,11 +34252,11 @@
   },
   {
     "word": "Parilia",
-    "meaning": "罕見或專門的英語術語，記錄為 Parilia。",
+    "meaning": "帕里利亞節；古羅馬牧羊與牲畜節日",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Parilia on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Parilia to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Parilia was celebrated in ancient Rome in April. 帕里利亞節在古羅馬於四月慶祝。",
+      "The class discussed Parilia while studying Roman rural festivals. 課堂研究羅馬鄉村節日時討論了帕里利亞節。"
     ],
     "audienceTags": [
       "general"
@@ -34528,11 +34528,11 @@
   },
   {
     "word": "Parisii",
-    "meaning": "罕見或專門的英語術語，記錄為 Parisii。",
+    "meaning": "巴黎西人；古代高盧部族",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Parisii on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Parisii to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The Parisii lived near the area that later became Paris. 巴黎西人住在後來成為巴黎的地區附近。",
+      "A map in the book shows the territory of the Parisii. 書中的地圖標出巴黎西人的領地。"
     ],
     "audienceTags": [
       "general"
@@ -37454,11 +37454,11 @@
   },
   {
     "word": "parsnip",
-    "meaning": "歐洲蘿蔔",
+    "meaning": "歐防風；歐洲蘿蔔",
     "partOfSpeech": "noun",
     "sentences": [
-      "She noticed the parsnip during the lesson. 她上課時注意到歐洲蘿蔔。",
-      "The class talked about the parsnip after reading the note. 全班讀完筆記後討論歐洲蘿蔔。"
+      "She roasted parsnip with carrots for dinner. 她晚餐烤了歐防風和胡蘿蔔。",
+      "Parsnip tastes sweeter after a frost. 霜降後的歐防風吃起來更甜。"
     ],
     "audienceTags": [
       "general"
@@ -38996,11 +38996,11 @@
   },
   {
     "word": "partition",
-    "meaning": "將一事物分成部分或將一事物與另一事物分開的動作。",
+    "meaning": "分割；隔板；隔間",
     "partOfSpeech": "noun",
     "sentences": [
-      "the partitions of Poland 波蘭的瓜分",
-      "The term partition refers to an action which divides a thing into parts, or separates one thing from another. 術語「分割」是指將事物分成部分或將一個事物與另一個事物分開的動作。"
+      "They built a wooden partition to divide the room. 他們做了一道木隔板把房間分開。",
+      "The partition of the land caused years of argument. 土地分割引發了多年的爭議。"
     ],
     "audienceTags": [
       "general"
@@ -51023,11 +51023,11 @@
   },
   {
     "word": "pecan",
-    "meaning": "一種大型山核桃（Carya illinoinensis 同義詞 C. oliviformis），具有粗糙的樹皮和堅硬但易碎的木材，廣泛種植在美國溫暖的地區和墨西哥，因其堅果可食用。",
+    "meaning": "美洲山核桃；碧根果",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gardener pointed out the pecan near the path. 園丁指出小路旁的具有粗糙的樹皮和堅硬但易碎的。",
-      "The children looked closely at the pecan in the garden. 孩子們仔細觀察花園裡的具有粗糙的樹皮和堅硬但易碎的。"
+      "She baked a pecan pie for Thanksgiving. 她為感恩節烤了一個碧根果派。",
+      "A pecan tree grows beside the old farmhouse. 舊農舍旁長著一棵美洲山核桃樹。"
     ],
     "audienceTags": [
       "general"
@@ -53282,11 +53282,11 @@
   },
   {
     "word": "pedestal",
-    "meaning": "受人尊敬或尊敬的地方。",
+    "meaning": "基座；受尊崇的位置",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote pedestal on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added pedestal to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The statue stands on a marble pedestal. 雕像立在大理石基座上。",
+      "Do not put celebrities on a pedestal too quickly. 不要太快把名人捧上神壇。"
     ],
     "audienceTags": [
       "general"
@@ -65169,11 +65169,11 @@
   },
   {
     "word": "peppermint",
-    "meaning": "任何含有薄荷草萃取物的各種糖果；薄荷糖果。",
+    "meaning": "薄荷；薄荷糖",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gardener planted a peppermint near the sunny wall. 園丁把一株任何含有薄荷草萃取物的各種糖果種在陽光充足的牆邊。",
-      "We saw a peppermint during our walk through the garden. 我們散步穿過花園時，看見了一株任何含有薄荷草萃取物的各種糖果。"
+      "She drank peppermint tea after dinner. 晚餐後她喝了薄荷茶。",
+      "He kept a peppermint in his pocket for the bus ride. 他口袋裡放了一顆薄荷糖，準備搭公車時吃。"
     ],
     "audienceTags": [
       "general"
@@ -67342,11 +67342,11 @@
   },
   {
     "word": "percussion",
-    "meaning": "兩個物體碰撞產生聲音。",
+    "meaning": "打擊樂；敲擊；叩診",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed percussion during the morning meeting. 團隊在早會中討論兩個物體碰撞產生聲音。",
-      "The editor added percussion to the project notes. 編輯把兩個物體碰撞產生聲音加入專案筆記。"
+      "The band needs someone to play percussion. 樂團需要有人演奏打擊樂。",
+      "The doctor used percussion to check his chest. 醫生用叩診檢查他的胸部。"
     ],
     "examTags": [
       "toeic"
@@ -69362,11 +69362,11 @@
   },
   {
     "word": "pergola",
-    "meaning": "喬木，格子。",
+    "meaning": "棚架；藤架",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed pergola during the morning meeting. 團隊在早會中討論喬木。",
-      "The editor added pergola to the project notes. 編輯把喬木加入專案筆記。"
+      "Grapes grew over the wooden pergola. 葡萄藤爬滿了木製棚架。",
+      "We sat under the pergola to avoid the afternoon sun. 我們坐在棚架下躲午後陽光。"
     ],
     "audienceTags": [
       "general"
@@ -72572,11 +72572,11 @@
   },
   {
     "word": "perimeter",
-    "meaning": "物體所有邊長的距離總和。",
+    "meaning": "周長；外圍邊界",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed perimeter during the morning meeting. 團隊在早會中討論物體所有邊長的距離總和。",
-      "The editor added perimeter to the project notes. 編輯把物體所有邊長的距離總和加入專案筆記。"
+      "The students measured the perimeter of the playground. 學生測量操場的周長。",
+      "Security guards walked around the perimeter of the building. 保全沿著建築物外圍巡邏。"
     ],
     "audienceTags": [
       "general"
@@ -75100,11 +75100,11 @@
   },
   {
     "word": "periscope",
-    "meaning": "一種包含透鏡和鏡子的管狀光學儀器，觀察者可以透過它獲得被遮蔽的視野",
+    "meaning": "潛望鏡",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used periscope rested on the table beside the other equipment. 桌子上其他設備旁邊放著一個用過的潛望鏡。",
-      "The technician reached for the periscope before starting the task. 技術人員在開始任務前伸手去拿潛望鏡。"
+      "The submarine raised its periscope above the water. 潛艇把潛望鏡升出水面。",
+      "The children made a simple periscope from mirrors and cardboard. 孩子們用鏡子和紙板做了一個簡易潛望鏡。"
     ],
     "audienceTags": [
       "general"
@@ -81438,11 +81438,11 @@
   },
   {
     "word": "perspective",
-    "meaning": "觀點、看法",
+    "meaning": "觀點；透視法",
     "partOfSpeech": "noun",
     "sentences": [
-      "She noticed the perspective during the lesson. 她上課時注意到觀點、看法。",
-      "The class talked about the perspective after reading the note. 全班讀完筆記後討論觀點、看法。"
+      "Try to see the problem from her perspective. 試著從她的觀點看這個問題。",
+      "The art teacher explained perspective with a drawing of a road. 美術老師用道路圖說明透視法。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -82880,11 +82880,11 @@
   },
   {
     "word": "Perun",
-    "meaning": "罕見或專門的英語術語，記錄為 Perun。",
+    "meaning": "佩倫；斯拉夫神話中的雷神",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Perun on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Perun to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Perun is often described as a thunder god in Slavic mythology. 佩倫常被描述為斯拉夫神話中的雷神。",
+      "The old tale says Perun struck the tree with lightning. 古老故事說佩倫用閃電擊中那棵樹。"
     ],
     "audienceTags": [
       "general"
@@ -86273,11 +86273,11 @@
   },
   {
     "word": "Petromyzon",
-    "meaning": "環口目的一個屬（Petromyzontidae科的類型），由典型的七鰓鰻組成。",
+    "meaning": "七鰓鰻屬",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed Petromyzon during the morning meeting. 團隊在早會中討論環口目的一個屬（Petromyzontidae科的類型）。",
-      "The editor added Petromyzon to the project notes. 編輯把環口目的一個屬（Petromyzontidae科的類型）加入專案筆記。"
+      "Petromyzon includes the well-known sea lamprey. 七鰓鰻屬包含常見的海七鰓鰻。",
+      "The biology lab kept a preserved Petromyzon specimen. 生物實驗室保存了一件七鰓鰻屬標本。"
     ],
     "audienceTags": [
       "general"
@@ -87384,11 +87384,11 @@
   },
   {
     "word": "Peziza",
-    "meaning": "Pezizaceae 的模式屬，由杯狀真菌組成，具有無柄的子囊殼，通常為暗褐色或棕色，缺乏外部毛髮或剛毛",
+    "meaning": "盤菌屬；杯狀真菌的一屬",
     "partOfSpeech": "noun",
     "sentences": [
-      "The doctor explained the Peziza in simple language. 醫生用簡單的話解釋Pezizaceae的模式。",
-      "She asked whether the Peziza would affect daily life. 她詢問Pezizaceae的模式是否會影響日常生活。"
+      "Peziza fungi often look like small cups on damp soil. 盤菌屬真菌常像小杯子一樣長在潮濕土壤上。",
+      "The student photographed a brown Peziza near the trail. 學生在步道旁拍到一朵棕色盤菌。"
     ],
     "audienceTags": [
       "general"
@@ -94244,8 +94244,8 @@
     "meaning": "現象",
     "partOfSpeech": "noun",
     "sentences": [
-      "The Northern Lights managing to be a magnificent natural phenomenon. 北極光竟然（能）是一幕壯麗的自然現象。",
-      "Climate change managed to become a major global phenomenon lately. 氣候變化最近竟然成了一個重大的全球現象。"
+      "The northern lights are a beautiful natural phenomenon. 北極光是一種美麗的自然現象。",
+      "Online shopping has become a global phenomenon. 網路購物已成為全球現象。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -95038,11 +95038,11 @@
   },
   {
     "word": "Phil",
-    "meaning": "罕見或專門的英語術語，記錄為 Phil。",
+    "meaning": "男子名；Philip 的暱稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Phil on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Phil to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Phil brought coffee for the whole team. 菲爾幫全隊帶了咖啡。",
+      "I asked Phil to check the printer before lunch. 我請菲爾午餐前檢查印表機。"
     ],
     "audienceTags": [
       "general"
@@ -95674,11 +95674,11 @@
   },
   {
     "word": "Philippa",
-    "meaning": "罕見或專門的英語術語，記錄為 Philippa。",
+    "meaning": "女子名",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Philippa on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Philippa to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Philippa teaches history at the community college. 菲莉帕在社區大學教歷史。",
+      "We invited Philippa to join the weekend hike. 我們邀請菲莉帕參加週末健行。"
     ],
     "audienceTags": [
       "general"
@@ -97678,11 +97678,11 @@
   },
   {
     "word": "philosophy",
-    "meaning": "哲學",
+    "meaning": "哲學；人生觀",
     "partOfSpeech": "noun",
     "sentences": [
-      "She decided to study western philosophy and history at university. 她決定在大學攻讀西方哲學與歷史。",
-      "His personal philosophy manages to be based on kindness and honesty. 他的個人哲學竟然是基於善良與誠實。"
+      "She studied philosophy because she liked asking deep questions. 她讀哲學，因為喜歡思考深層問題。",
+      "His business philosophy is simple: treat customers honestly. 他的經營理念很簡單：誠實對待顧客。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -99593,11 +99593,11 @@
   },
   {
     "word": "Phocidae",
-    "meaning": "罕見或專門的英語術語，記錄為 Phocidae。",
+    "meaning": "海豹科；真海豹科",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Phocidae on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Phocidae to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Phocidae includes true seals without external ear flaps. 海豹科包含沒有外耳廓的真海豹。",
+      "The zoo sign explains how Phocidae differ from sea lions. 動物園標示說明海豹科和海獅有何不同。"
     ],
     "audienceTags": [
       "general"
@@ -100964,11 +100964,11 @@
   },
   {
     "word": "phonograph",
-    "meaning": "一種透過觸針或針沿著旋轉圓盤或圓柱體上的螺旋槽振動來再現聲音的樂器",
+    "meaning": "留聲機",
     "partOfSpeech": "noun",
     "sentences": [
-      "A well-used phonograph rested on the table beside the other equipment. 桌上的其他設備旁邊放著一台用過的留聲機。",
-      "The technician reached for the phonograph before starting the task. 在開始任務之前，技術人員伸手去拿留聲機。"
+      "Grandpa played an old jazz record on the phonograph. 爺爺用留聲機播放一張老爵士唱片。",
+      "The phonograph in the museum still works. 博物館裡的留聲機仍能運作。"
     ],
     "audienceTags": [
       "general"
@@ -109807,11 +109807,11 @@
   },
   {
     "word": "Phylactolaema",
-    "meaning": "phylactolaemata 的分類學同義詞。",
+    "meaning": "被唇綱苔蘚動物；淡水苔蘚動物類群",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lab measured the Phylactolaema before the next test. 實驗室在下一次測試前測量phylactolaemat。",
-      "Students observed the Phylactolaema under bright light. 學生在強光下觀察phylactolaemat。"
+      "Phylactolaema colonies can grow on submerged branches. 被唇綱苔蘚動物群體會長在水下樹枝上。",
+      "The students observed Phylactolaema under bright light. 學生在強光下觀察被唇綱苔蘚動物。"
     ],
     "audienceTags": [
       "general"
@@ -122962,11 +122962,11 @@
   },
   {
     "word": "pilot",
-    "meaning": "飛行員",
+    "meaning": "飛行員；領航員；試播集",
     "partOfSpeech": "noun",
     "sentences": [
-      "The experienced pilot managed to navigate the plane safely. 經驗豐富的飛行員設法駕駛飛機安全降落。",
-      "He dreamed of becoming a professional pilot and flying world. 他夢想成為一名專業飛行員並飛遍世界。"
+      "The pilot announced that the plane would land soon. 飛行員宣布飛機即將降落。",
+      "The studio filmed a pilot for the new comedy series. 製片公司為新喜劇影集拍了試播集。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -127162,11 +127162,11 @@
   },
   {
     "word": "pioneer",
-    "meaning": "先鋒",
+    "meaning": "先驅；開拓者",
     "partOfSpeech": "noun",
     "sentences": [
-      "He was a pioneer in the field of artificial intelligence research. 他是人工智慧研究領域的先驅（先鋒）。",
-      "The company is a pioneer in the development of renewable energy now. 該公司是現今可再生能源開發領域的先驅。"
+      "She was a pioneer in computer science education. 她是電腦科學教育的先驅。",
+      "The pioneers built homes near the river. 開拓者在河邊建起家園。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -129960,11 +129960,11 @@
   },
   {
     "word": "pistol",
-    "meaning": "彈膛與槍管一體的手槍類型。",
+    "meaning": "手槍",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed pistol during the morning meeting. 團隊在早會中討論彈膛與槍管一體的手槍類型。",
-      "The editor added pistol to the project notes. 編輯把彈膛與槍管一體的手槍類型加入專案筆記。"
+      "The officer locked the pistol in a safe. 警官把手槍鎖進保險箱。",
+      "The museum displayed a pistol from the old frontier town. 博物館展示了一把來自舊邊境城鎮的手槍。"
     ],
     "audienceTags": [
       "general"
@@ -138089,11 +138089,11 @@
   },
   {
     "word": "plateau",
-    "meaning": "高海拔、大面積平坦的土地；台地。",
+    "meaning": "高原；停滯期",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed plateau during the morning meeting. 團隊在早會中討論高海拔、大面積平坦的土地。",
-      "The editor added plateau to the project notes. 編輯把高海拔、大面積平坦的土地加入專案筆記。"
+      "The village sits on a dry plateau above the valley. 村莊位在山谷上方乾燥的高原上。",
+      "Her progress reached a plateau after three months of training. 訓練三個月後，她的進步進入停滯期。"
     ],
     "audienceTags": [
       "general"
@@ -138755,11 +138755,11 @@
   },
   {
     "word": "platinum",
-    "meaning": "非常昂貴，或者品質非常高。",
+    "meaning": "白金級的；極高品質的；鉑金的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "We can offer the platinum service for fifty dollars extra. 我們可以額外支付五十美元提供白金服務。",
-      "Something described as platinum is very expensive, or of very high quality. 被描述為鉑金的東西非常昂貴，或者質量非常高。"
+      "The hotel offers platinum service for frequent guests. 飯店為常客提供白金級服務。",
+      "Her album went platinum within a year. 她的專輯在一年內達到白金銷量。"
     ],
     "audienceTags": [
       "general"
@@ -143351,11 +143351,11 @@
   },
   {
     "word": "Plenipotentiary",
-    "meaning": "罕見或專門的英語術語，記錄為全權代表。",
+    "meaning": "全權代表；被授予完整權力的外交代表",
     "partOfSpeech": "noun",
     "sentences": [
-      "She kept the Plenipotentiary in a labeled box. 她把全權代表放在有標籤的盒子裡。",
-      "The Plenipotentiary was useful during the afternoon task. 全權代表在下午的工作中很有用。"
+      "The plenipotentiary signed the treaty on behalf of his country. 全權代表代表他的國家簽署條約。",
+      "She was appointed plenipotentiary for the peace talks. 她被任命為和平談判的全權代表。"
     ],
     "audienceTags": [
       "general"
@@ -153315,11 +153315,11 @@
   },
   {
     "word": "Po",
-    "meaning": "罕見或專門的英語術語，記錄為 Po。",
+    "meaning": "波河；義大利北部主要河流",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Po on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Po to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "The Po flows across northern Italy. 波河流經義大利北部。",
+      "Many farms depend on water from the Po. 許多農場仰賴波河的水源。"
     ],
     "audienceTags": [
       "general"
@@ -166234,11 +166234,11 @@
   },
   {
     "word": "Polynoe",
-    "meaning": "罕見或專門的英語術語，記錄為 Polynoe。",
+    "meaning": "多鱗蟲屬；多毛類環節動物的一屬",
     "partOfSpeech": "noun",
     "sentences": [
-      "The teacher wrote Polynoe on the board during class. 老師上課時把這個詞寫在黑板上。",
-      "She added Polynoe to her notebook after class. 她下課後把這個詞寫進筆記本。"
+      "Polynoe worms have overlapping scales on their backs. 多鱗蟲屬蠕蟲背上有重疊的鱗片。",
+      "The marine lab identified the specimen as Polynoe. 海洋實驗室把這件標本鑑定為多鱗蟲屬。"
     ],
     "audienceTags": [
       "general"
@@ -190536,11 +190536,11 @@
   },
   {
     "word": "prairie",
-    "meaning": "廣闊的相對平坦的草原，樹木很少（如果有的話），特別是在北美洲。",
+    "meaning": "草原；北美大草原",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gardener planted a prairie near the sunny wall. 園丁把一株廣闊的相對平坦的草原種在陽光充足的牆邊。",
-      "We saw a prairie during our walk through the garden. 我們散步穿過花園時，看見了一株廣闊的相對平坦的草原。"
+      "Tall grass covered the prairie for miles. 高草覆蓋著綿延數英里的草原。",
+      "The family drove across the prairie at sunset. 那家人在日落時開車穿越大草原。"
     ],
     "audienceTags": [
       "general"
@@ -206266,11 +206266,11 @@
   },
   {
     "word": "preface",
-    "meaning": "之前介紹或發表評論（要點）；前提。",
+    "meaning": "作為開場白；以……作序",
     "partOfSpeech": "verb",
     "sentences": [
-      "Let me preface this by saying that I don't know him that well. 首先我要說的是我不太了解他。",
-      "To preface means to introduce or make a comment before (the main point); to premise. 前言是指在（要點）之前介紹或發表評論；以前提。"
+      "Let me preface my answer with a short apology. 回答前，請讓我先簡短道歉。",
+      "She prefaced the report with a note about the data source. 她在報告前加了一段關於資料來源的說明。"
     ],
     "audienceTags": [
       "general"
@@ -232648,11 +232648,11 @@
   },
   {
     "word": "prism",
-    "meaning": "具有幾何棱柱形狀的物體（意義1）。",
+    "meaning": "稜鏡；棱柱",
     "partOfSpeech": "noun",
     "sentences": [
-      "The team discussed prism during the morning meeting. 團隊在早會中討論具有幾何棱柱形狀的物體（意義1）。",
-      "The editor added prism to the project notes. 編輯把具有幾何棱柱形狀的物體（意義1）加入專案筆記。"
+      "The prism split the sunlight into rainbow colors. 稜鏡把陽光分成彩虹般的顏色。",
+      "The math teacher drew a triangular prism on the board. 數學老師在黑板上畫了一個三角柱。"
     ],
     "audienceTags": [
       "general"
@@ -235887,11 +235887,11 @@
   },
   {
     "word": "procedure",
-    "meaning": "程式",
+    "meaning": "程序；步驟；手術",
     "partOfSpeech": "noun",
     "sentences": [
-      "Please follow the safety procedures carefully to avoid accidents now. 妳現在請仔細遵守安全程序（程式）以避免意外。",
-      "The legal procedure managing to be very complex and time-consuming. 法律程序（程式）竟然非常複雜且耗時。"
+      "Please follow the safety procedure before using the machine. 使用機器前請遵守安全程序。",
+      "The dentist explained the procedure before starting. 牙醫開始前先說明治療步驟。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -243742,11 +243742,11 @@
   },
   {
     "word": "projector",
-    "meaning": "投影机",
+    "meaning": "投影機",
     "partOfSpeech": "noun",
     "sentences": [
-      "The projector stayed after the meeting to answer questions. 那位投影机會後留下來回答問題。",
-      "A patient projector explained the work in simple words. 一位有耐心的投影机用簡單的話說明工作。"
+      "The teacher connected her laptop to the projector. 老師把筆電接上投影機。",
+      "The projector was too dim, so we closed the curtains. 投影機太暗了，所以我們把窗簾拉上。"
     ],
     "examTags": [
       "toeic"
@@ -247135,8 +247135,8 @@
     "meaning": "代名詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "She noticed the pronoun during the lesson. 她上課時注意到代名詞。",
-      "The class talked about the pronoun after reading the note. 全班讀完筆記後討論代名詞。"
+      "In the sentence, she is a pronoun. 在這個句子中，「她」是代名詞。",
+      "The teacher asked us to replace the name with a pronoun. 老師要我們用代名詞替換名字。"
     ],
     "audienceTags": [
       "general"

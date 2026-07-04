@@ -1,11 +1,11 @@
 [
   {
     "word": "X",
-    "meaning": "英文字母表中的第二十四個字母，大寫 X",
+    "meaning": "英文字母表中的第二十四個字母，大寫形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "Write a large X on the paper. 在紙上寫一個大寫字母。",
-      "The teacher pointed to the letter X. 老師指著那個字母。"
+      "Write a large X on the paper. 在紙上寫一個大的交叉字母。",
+      "The teacher pointed to the letter X. 老師指著那個大寫字母。"
     ],
     "audienceTags": [
       "general"
@@ -13,11 +13,11 @@
   },
   {
     "word": "x",
-    "meaning": "英文字母表中的第二十四個字母，小寫 x",
+    "meaning": "英文字母表中的第二十四個字母，小寫形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lowercase x is easy to recognize. 小寫字母很容易辨認。",
-      "She drew an x beside the answer. 她在答案旁邊畫了一個記號。"
+      "The lowercase x is easy to recognize. 這個小寫字母很容易辨認。",
+      "She drew an x beside the answer. 她在答案旁邊畫了一個交叉記號。"
     ],
     "audienceTags": [
       "general"
@@ -649,7 +649,7 @@
   },
   {
     "word": "xanthomata",
-    "meaning": "plural of xanthoma",
+    "meaning": "黃瘤；xanthoma 的複數形式",
     "partOfSpeech": "noun",
     "sentences": [
       "Several xanthomata appeared around the patient's eyes. 病人的眼周出現了幾處黃瘤。",
@@ -913,11 +913,11 @@
   },
   {
     "word": "xanthoproteinic",
-    "meaning": "relating to xanthoprotein",
+    "meaning": "與黃蛋白有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The article discussed xanthoproteinic compounds. 那篇文章討論了與黃蛋白有關的化合物。",
-      "Xanthoproteinic changes are used in analysis. 與黃蛋白相關的變化可用於分析。"
+      "The lab found xanthoproteinic compounds in the sample. 實驗室在樣本中發現與黃蛋白有關的化合物。",
+      "Xanthoproteinic changes are used in analysis. 這類與黃蛋白相關的變化可用於分析。"
     ],
     "audienceTags": [
       "general"
@@ -949,11 +949,11 @@
   },
   {
     "word": "xanthopsydracia",
-    "meaning": "a rare term for yellow-tinted vision or perception",
+    "meaning": "黃視症；視覺偏黃的罕見狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The medical glossary listed xanthopsydracia as a rare term. 醫學詞彙表把這個詞列為罕見術語。",
-      "It refers to a yellow-tinted way of seeing. 它指的是一種偏黃色的視覺感受。"
+      "The medical glossary listed xanthopsydracia as a rare condition. 醫學詞彙表把黃視症列為罕見狀態。",
+      "The patient described xanthopsydracia after taking the medicine. 病人描述服藥後出現視覺偏黃的情況。"
     ],
     "audienceTags": [
       "general"
@@ -1153,11 +1153,11 @@
   },
   {
     "word": "xanthuria",
-    "meaning": "the presence of yellow pigments in the urine",
+    "meaning": "尿液中出現黃色素的狀態",
     "partOfSpeech": "noun",
     "sentences": [
       "The doctor recorded xanthuria in the notes. 醫師在紀錄中寫下尿液帶黃色素。",
-      "Xanthuria is a rare medical term. 尿黃素症是一個罕見的醫學術語。"
+      "Xanthuria can appear in specialized medical records. 這種尿液帶黃色素的狀態可能出現在專門醫療紀錄中。"
     ],
     "audienceTags": [
       "general"
@@ -1429,11 +1429,11 @@
   },
   {
     "word": "xenobiosis",
-    "meaning": "a form of living together between different species or organisms",
+    "meaning": "不同生物共同生活；異種共生",
     "partOfSpeech": "noun",
     "sentences": [
-      "The biologist used xenobiosis to describe the partnership. 生物學家用這個詞描述不同生物的共居關係。",
-      "The class discussed xenobiosis in a simple example. 課堂用一個簡單例子討論了不同生物的共居。"
+      "The biologist used xenobiosis to describe the partnership. 生物學家用異種共生描述這種合作關係。",
+      "The class discussed xenobiosis with a simple example. 課堂用簡單例子討論不同生物的共居。"
     ],
     "audienceTags": [
       "general"
@@ -1513,11 +1513,11 @@
   },
   {
     "word": "xenogamy",
-    "meaning": "cross-fertilization between different flowers or plants",
+    "meaning": "異花授粉；異株受精",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson explained xenogamy in simple terms. 這堂課用簡單說法解釋了異花授粉。",
-      "Xenogamy helps many plants stay healthy. 異花授粉有助於許多植物保持健康。"
+      "Xenogamy helps many plants stay healthy. 異花授粉有助於許多植物保持健康。",
+      "The farmer learned how xenogamy improves seed quality. 農夫學到異花授粉如何改善種子品質。"
     ],
     "audienceTags": [
       "general"
@@ -1525,11 +1525,11 @@
   },
   {
     "word": "xenogenesis",
-    "meaning": "the supposed production of offspring unlike the parent",
+    "meaning": "異生；產生與親代不同後代的舊理論",
     "partOfSpeech": "noun",
     "sentences": [
       "The old theory of xenogenesis is no longer accepted. 關於異生的舊理論如今已不被接受。",
-      "The article traced xenogenesis in nineteenth-century science. 文章追溯了十九世紀科學中的異生概念。"
+      "The article traced xenogenesis in nineteenth-century science. 文章追溯了十九世紀科學中的異生觀念。"
     ],
     "audienceTags": [
       "general"
@@ -1717,11 +1717,11 @@
   },
   {
     "word": "xenoparasitism",
-    "meaning": "parasitism involving a different species as host",
+    "meaning": "異宿寄生；以不同物種為宿主的寄生",
     "partOfSpeech": "noun",
     "sentences": [
-      "The paper discussed xenoparasitism in insects. 那篇論文討論了昆蟲中的異宿寄生現象。",
-      "Xenoparasitism can damage the host population. 異宿寄生現象可能傷害宿主族群。"
+      "The insect showed signs of xenoparasitism. 這種昆蟲出現異宿寄生的跡象。",
+      "Xenoparasitism can damage the host population. 異宿寄生可能傷害宿主族群。"
     ],
     "audienceTags": [
       "general"
@@ -1801,11 +1801,11 @@
   },
   {
     "word": "xenophobia",
-    "meaning": "對陌生人或外國人的恐懼、反感或仇恨。",
+    "meaning": "仇外心理；對外國人或陌生人的恐懼、反感或仇恨",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term xenophobia refers to a fear, antipathy, or hatred of strangers or foreigners. 仇外心理一詞是指對陌生人或外國人的恐懼、反感或仇恨。",
-      "The lesson introduced xenophobia as a useful term to understand. 本課介紹了仇外心理是一個需要理解的有用術語。"
+      "The speech warned against xenophobia. 那場演說提醒大家反對仇外心理。",
+      "Xenophobia can make newcomers feel unsafe. 仇外心理可能讓新來的人感到不安全。"
     ],
     "audienceTags": [
       "general"
@@ -2356,8 +2356,8 @@
     "meaning": "與乾皮症有關的；造成皮膚乾燥的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The doctor discussed xerodermatic symptoms with the family. 醫生和家屬討論了與乾皮症有關的症狀。",
-      "The lotion eased the xerodermatic irritation. 那種乳液緩解了造成皮膚乾燥的不適。"
+      "The doctor discussed xerodermatic symptoms with the family. 醫師和家屬討論乾皮症相關症狀。",
+      "The lotion eased the xerodermatic irritation. 那種乳液緩解了皮膚乾燥造成的不適。"
     ],
     "audienceTags": [
       "general"
@@ -2857,11 +2857,11 @@
   },
   {
     "word": "xi",
-    "meaning": "希臘字母 xi",
+    "meaning": "希臘字母 ξ",
     "partOfSpeech": "noun",
     "sentences": [
       "Xi is a Greek letter. 這是希臘字母之一。",
-      "Students practiced writing xi on the worksheet. 學生在練習單上書寫這個字母。"
+      "Students practiced writing xi on the worksheet. 學生在練習單上書寫這個希臘字母。"
     ],
     "audienceTags": [
       "general"
@@ -3484,7 +3484,7 @@
     "meaning": "科薩族；科薩語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson introduced the Xosa language. 這堂課介紹了科薩語。",
+      "The class introduced the Xosa language. 課堂介紹了科薩語。",
       "A Xosa speaker helped translate the story. 一位科薩語使用者幫忙翻譯這個故事。"
     ],
     "audienceTags": [
@@ -3779,7 +3779,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "The article mentioned xylogen in plant growth. 那篇文章提到植物生長中的木質形成物。",
-      "Xylogen is a rare term in botany. 木質形成物是植物學裡的罕見術語。"
+      "Xylogen is a rare term in botany. 木質形成物是植物學裡的罕見用語。"
     ]
   },
   {
@@ -3940,7 +3940,7 @@
     "meaning": "木腈；一種有機化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The paper discussed xylonitrile as a compound. 那篇論文把木腈當作一種化合物來討論。",
+      "The bottle contained a small amount of xylonitrile. 瓶中裝有少量木腈。",
       "Xylonitrile appears in specialized chemistry texts. 木腈出現在專門的化學文本裡。"
     ]
   },
@@ -4111,11 +4111,11 @@
   },
   {
     "word": "xylose",
-    "meaning": "木糖；一種常見於木質纖維中的單糖。",
+    "meaning": "木糖；常見於植物纖維中的單糖",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term xylose refers to a wood sugar. 木糖是一種來源於木材的糖。",
-      "Scientists measured the amount of xylose in the sample. 科學家測量樣本中的木糖含量。"
+      "Scientists measured the amount of xylose in the sample. 科學家測量樣本中的木糖含量。",
+      "Xylose is a sugar found in plant material. 木糖是一種存在於植物材料中的糖。"
     ],
     "audienceTags": [
       "general"

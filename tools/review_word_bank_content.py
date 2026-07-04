@@ -43,6 +43,26 @@ TEMPLATE_SENTENCE_PATTERNS = [
         3,
     ),
     (
+        re.compile(r"^In the discussion, the researcher mentioned .+ as a key term\.", re.IGNORECASE),
+        "template_discussion_key_term_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^The team recorded .+ in the summary for later reference\.", re.IGNORECASE),
+        "template_recorded_for_reference_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^They chose .+ approach to match the goal of the experiment\.", re.IGNORECASE),
+        "template_generic_adjective_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^The .+ surface felt noticeably different to the touch\.", re.IGNORECASE),
+        "template_generic_surface_sentence",
+        4,
+    ),
+    (
         re.compile(r"^How to use .+ in a sentence\.", re.IGNORECASE),
         "sentence_prompt_pollution",
         4,
@@ -62,6 +82,26 @@ TEMPLATE_SENTENCE_PATTERNS = [
         "generic_adverb_sentence",
         3,
     ),
+    (
+        re.compile(r"^The device moved .+ across the table during the test\.", re.IGNORECASE),
+        "template_generic_adverb_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^She answered .+ to show her attitude clearly\.", re.IGNORECASE),
+        "template_generic_adverb_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^Before shipping, we .+ each box to avoid confusion\.", re.IGNORECASE),
+        "template_generic_verb_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^Please .+ the file so it is easier to find tomorrow\.", re.IGNORECASE),
+        "template_generic_verb_sentence",
+        4,
+    ),
 ]
 
 MEANING_PATTERNS = [
@@ -71,12 +111,34 @@ MEANING_PATTERNS = [
     (re.compile(r"\b(surname|given name|proper noun)\b", re.IGNORECASE), "lexicography_name_gloss", 3),
     (re.compile(r"^罕見或專門用語。?$"), "placeholder_meaning", 4),
     (re.compile(r"^罕見或專門的英語術語", re.IGNORECASE), "placeholder_meaning", 4),
+    (re.compile(r"多見於特定語境"), "placeholder_context_meaning", 5),
+    (re.compile(r"^英文名詞（多見於特定語境）$"), "placeholder_context_noun_meaning", 5),
+    (
+        re.compile(r"^描述某種特性或狀態的英文形容詞（多見於特定語境）$"),
+        "placeholder_context_adjective_meaning",
+        5,
+    ),
+    (
+        re.compile(r"^表示方式或程度的英文副詞（多見於特定語境）$"),
+        "placeholder_context_adverb_meaning",
+        5,
+    ),
+    (
+        re.compile(r"^表示某種動作或處理方式的英文動詞（多見於特定語境）$"),
+        "placeholder_context_verb_meaning",
+        5,
+    ),
     (re.compile(r"如何(?:用|使用).{0,30}造句"), "meaning_prompt_pollution", 5),
     (re.compile(r"How to use .+ in a sentence", re.IGNORECASE), "meaning_prompt_pollution", 5),
 ]
 
 BAD_TRANSLATION_MARKERS = [
     ("用上了這個副詞", "meta_adverb_translation", 3),
+    ("具有特定特徵", "generic_adjective_translation", 3),
+    ("某種方式", "generic_adverb_translation", 3),
+    ("當作關鍵名詞提到", "generic_noun_translation", 3),
+    ("方便之後回頭查閱", "generic_noun_translation", 3),
+    ("做好標記以免混淆", "generic_verb_translation", 3),
 ]
 
 

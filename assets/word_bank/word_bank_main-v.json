@@ -525,11 +525,11 @@
   },
   {
     "word": "vaccination",
-    "meaning": "接種疫苗，以預防特定疾病或疾病株。",
+    "meaning": "疫苗接種",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vaccination refers to inoculation with a vaccine, in order to protect from a particular disease or strain of disease. 術語「疫苗接種」是指接種疫苗，以預防特定疾病或疾病株。",
-      "The lesson introduced vaccination as a useful term to understand. 本課程介紹了疫苗接種這個易於理解的有用術語。"
+      "The clinic offers free flu vaccination every winter. 這間診所每年冬天提供免費流感疫苗接種。",
+      "Vaccination can help protect people from serious illness. 接種疫苗可以幫助人們預防重症。"
     ],
     "examTags": [
       "toeic"
@@ -2100,11 +2100,11 @@
   },
   {
     "word": "vagina",
-    "meaning": "膽小鬼；一個弱者；一隻貓。",
+    "meaning": "陰道",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vagina refers to a coward; a weakling; a pussy. 陰道這個字指的是膽小鬼；一個弱者；一隻小貓。",
-      "The lesson introduced vagina as a useful term to understand. 本課程介紹了陰道這個術語，這是一個需要理解的有用術語。"
+      "The doctor explained how to care for the vagina after surgery. 醫師說明手術後如何照護陰道。",
+      "Pain in the vagina should be discussed with a doctor. 陰道疼痛應該和醫師討論。"
     ],
     "audienceTags": [
       "general"
@@ -2112,11 +2112,11 @@
   },
   {
     "word": "vaginal",
-    "meaning": "屬於陰道、與陰道有關或影響陰道的。",
+    "meaning": "陰道的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "You may have a vaginal birth, C-section or surrogacy; it's up to you. 您可能進行陰道分娩、剖腹產或代孕；由您決定。",
-      "Something described as vaginal is of, relating to, or affecting the vagina. 被描述為陰道的事物屬於陰道、與陰道有關或影響陰道。"
+      "She asked the doctor about vaginal pain. 她向醫師詢問陰道疼痛的問題。",
+      "Vaginal health is part of regular medical care. 陰道健康是日常醫療照護的一部分。"
     ],
     "audienceTags": [
       "general"
@@ -2793,11 +2793,11 @@
   },
   {
     "word": "vagoglossopharyngeal",
-    "meaning": "與迷走神經和舌咽神經有關的。",
+    "meaning": "與迷走神經和舌咽神經有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report discussed a vagoglossopharyngeal nerve pattern in the throat. 報告討論了喉嚨區域的 vagoglossopharyngeal 神經型態。",
-      "The diagram showed how vagoglossopharyngeal structures share nearby pathways. 圖解顯示 vagoglossopharyngeal 結構如何共享鄰近通路。"
+      "The doctor checked a vagoglossopharyngeal nerve pattern. 醫師檢查了與迷走神經和舌咽神經有關的神經型態。",
+      "The chart marked the vagoglossopharyngeal area near the throat. 圖表標出喉嚨附近的相關神經區域。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -2981,11 +2981,11 @@
   },
   {
     "word": "vagrancy",
-    "meaning": "流浪；無固定住處的狀態；也可指流浪罪。",
+    "meaning": "流浪；無固定住處的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The report discussed homelessness and vagrancy in the city center. 報告討論了市中心的無家可歸與流浪問題。",
-      "Old laws sometimes punished vagrancy more harshly than poverty itself. 舊法有時對 vagrancy 的懲罰甚至比貧困本身還嚴苛。"
+      "The city opened a shelter to reduce vagrancy. 市府開設收容所，希望減少流浪問題。",
+      "Old laws treated vagrancy as a crime. 舊法律曾把流浪視為犯罪。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -3156,11 +3156,11 @@
   },
   {
     "word": "vaguely",
-    "meaning": "以一種模糊的方式。",
+    "meaning": "模糊地；隱約地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He looked vaguely around the room, as if lost. 他茫然地環顧房間四周，彷彿迷失了方向。",
-      "If someone acts vaguely, they do so in a way that is in a vague manner. 如果某人的行為含糊不清，他們就會以含糊的方式這樣做。"
+      "I vaguely remember meeting her before. 我隱約記得以前見過她。",
+      "He answered vaguely and changed the subject. 他含糊地回答，然後換了話題。"
     ],
     "audienceTags": [
       "general"
@@ -3308,11 +3308,11 @@
   },
   {
     "word": "vail",
-    "meaning": "訪客給僕人的錢；小費；還有淡水河谷。",
+    "meaning": "小費；賞錢；山谷的舊拼法",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vail refers to money given to servants by visitors; a gratuity; also vale. “vail”一词指的是访客给仆人的钱；小费；还有淡水河谷。",
-      "The lesson introduced vail as a useful term to understand. 本课介绍了 vail 作为一个易于理解的有用术语。"
+      "The traveler left a small vail for the servant. 旅人留了一點賞錢給僕人。",
+      "In old books, vail can appear as another spelling of vale. 在舊書中，這個字可作為「山谷」的另一種拼法。"
     ],
     "audienceTags": [
       "general"
@@ -3788,11 +3788,11 @@
   },
   {
     "word": "vale",
-    "meaning": "告別。",
-    "partOfSpeech": "exclamation",
+    "meaning": "山谷；告別",
+    "partOfSpeech": "noun",
     "sentences": [
-      "The lesson introduced vale as a useful term to understand. 本課程介紹了 vale 作為一個易於理解的有用術語。",
-      "Students practiced using vale in class. 學生在課堂上練習使用 vale。"
+      "A quiet vale lay between the hills. 群山之間有一座安靜的山谷。",
+      "The old poem ends with a sad vale. 那首古詩以哀傷的告別結尾。"
     ],
     "schoolLevels": [
       "college"
@@ -4033,11 +4033,11 @@
   },
   {
     "word": "valentine",
-    "meaning": "收到情人節禮物或收到情人節禮物的人，尤其是在 2 月 14 日。",
+    "meaning": "情人節卡片；情人節對象",
     "partOfSpeech": "noun",
     "sentences": [
-      "Won't you be my valentine? 你願意當我的情人嗎？",
-      "The term valentine refers to a person to whom a valentine is given or from whom it is received, especially on February 14th. 情人節一詞指的是收到情人節禮物或收到情人節禮物的人，尤其是在 2 月 14 日。"
+      "She made a paper valentine for her classmate. 她做了一張紙情人節卡片送給同學。",
+      "He asked her to be his valentine. 他請她當自己的情人節對象。"
     ],
     "audienceTags": [
       "general"
@@ -4459,11 +4459,11 @@
   },
   {
     "word": "valet",
-    "meaning": "男人的貼身男侍從，負責男人的衣著儀表。",
+    "meaning": "貼身男僕；代客泊車員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term valet refers to a man's personal male attendant, responsible for his clothes and appearance. 貼身男僕一詞是指男士的貼身男侍從，負責男士的衣著和儀表。",
-      "The lesson introduced valet as a useful term to understand. 本課程介紹了代客泊車這個術語，這是一個需要理解的有用術語。"
+      "The valet parked the car near the hotel. 代客泊車員把車停在飯店附近。",
+      "The gentleman asked his valet to prepare his coat. 那位男士請貼身男僕準備外套。"
     ],
     "audienceTags": [
       "general"
@@ -4933,11 +4933,11 @@
   },
   {
     "word": "validation",
-    "meaning": "驗證某事物的東西，例如證書；證明、認證、確認、證據或驗證。",
+    "meaning": "驗證；確認；認可",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term validation refers to something, such as a certificate, that validates something; attestation, authentication, confirmation, proof or verification. 術語「驗證」是指驗證某些內容的事物，例如證書；證明、認證、確認、證據或驗證。",
-      "The lesson introduced validation as a useful term to understand. 本課程介紹了驗證作為一個需要理解的有用術語。"
+      "The form needs validation before it can be submitted. 表單送出前需要驗證。",
+      "She wanted validation from her coach after months of practice. 練習幾個月後，她希望得到教練的認可。"
     ],
     "audienceTags": [
       "general"
@@ -4980,11 +4980,11 @@
   },
   {
     "word": "validity",
-    "meaning": "有效、真實或真實的狀態。",
+    "meaning": "有效性；正當性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term validity refers to the state of being valid, authentic or genuine. 術語「有效性」是指有效、真實或真實的狀態。",
-      "The lesson introduced validity as a useful term to understand. 本課介紹了效度這個術語，它是一個需要理解的有用術語。"
+      "The ticket has a validity of thirty days. 這張票的有效期是三十天。",
+      "The lawyer questioned the validity of the contract. 律師質疑合約的有效性。"
     ],
     "audienceTags": [
       "general"
@@ -5746,11 +5746,11 @@
   },
   {
     "word": "valor",
-    "meaning": "valor 的美國標準拼寫。",
+    "meaning": "英勇；勇氣",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term valor refers to uS standard spelling of valour. 術語 valor 是指美國標準拼法的 valour。",
-      "The lesson introduced valor as a useful term to understand. 本課介紹了「勇氣」這個術語，它是一個需要理解的有用術語。"
+      "The soldier received a medal for valor. 那名士兵因英勇表現獲得勳章。",
+      "Her valor during the rescue inspired everyone. 她在救援中的勇氣鼓舞了所有人。"
     ],
     "audienceTags": [
       "general"
@@ -6007,11 +6007,11 @@
   },
   {
     "word": "valuation",
-    "meaning": "某物價值的估計。",
+    "meaning": "估價；估值",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term valuation refers to an estimation of something's worth. 估值一詞是指某物的價值的估計。",
-      "The lesson introduced valuation as a useful term to understand. 本課程介紹了估值作為一個需要理解的有用術語。"
+      "The bank asked for a valuation of the house. 銀行要求對房子進行估價。",
+      "The company valuation rose after the new product launched. 新產品上市後，公司估值上升了。"
     ],
     "audienceTags": [
       "general"
@@ -6072,11 +6072,11 @@
   },
   {
     "word": "valued",
-    "meaning": "擁有 價值 ， 受人尊敬 。",
+    "meaning": "受重視的；有價值的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "She is a highly valued member of the team. 她是團隊中一位 有價值 的成員。 她是團隊中非常有價值的成員。 她是團隊中一位有價值的成員。",
-      "The report describes the result as valued. 該報告將結果描述為有價值的。 該報告將結果描述為有價值的。 該報告將結果描述為有價值的。"
+      "She is a valued member of the team. 她是團隊中很受重視的成員。",
+      "Your feedback is valued by our staff. 我們的工作人員很重視你的意見。"
     ],
     "audienceTags": [
       "general"
@@ -6701,11 +6701,11 @@
   },
   {
     "word": "vampire",
-    "meaning": "具有傳統上被認為是吸血鬼的習慣的人，例如恐日症、夜貓子、皮膚蒼白等等。",
+    "meaning": "吸血鬼；剝削他人的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "Somehow I doubt that Kelly will want to go surfing with us — she's such a vampire that she might recoil from the sun, lol! 不知怎的，我懷疑凱莉會想和我們一起去衝浪——她是個吸血鬼，可能會害怕陽光，哈哈！",
-      "The term vampire refers to a person with habits traditionally ascribed to (literal) vampires, such as heliophobia, being a night owl, having pale skin, and so on. 吸血鬼一詞指的是具有傳統上被認為是吸血鬼的習慣的人，例如恐日症、夜貓子、皮膚蒼白等等。"
+      "The movie is about a lonely vampire. 這部電影講的是一個孤單的吸血鬼。",
+      "He called the greedy landlord a vampire. 他把貪婪的房東稱作吸血鬼。"
     ],
     "audienceTags": [
       "general"
@@ -7237,11 +7237,11 @@
   },
   {
     "word": "vandalism",
-    "meaning": "故意損壞或毀壞任何財產，例如塗鴉或污損。",
+    "meaning": "蓄意破壞公物或他人財物",
     "partOfSpeech": "noun",
     "sentences": [
-      "As we turned down the street I was appalled by the vandalism: spray paint and smashed windows that were everywhere. 當我們沿著街道拐進時，我對破壞行為感到震驚：到處都是噴漆和破碎的窗戶。",
-      "The term vandalism refers to willful damage to or destruction of any property, such as graffiti or defacement. 故意破壞一詞是指故意損壞或破壞任何財產，例如塗鴉或污損。"
+      "The school repaired the damage caused by vandalism. 學校修復了蓄意破壞造成的損害。",
+      "Spray paint on the wall was reported as vandalism. 牆上的噴漆被通報為破壞行為。"
     ],
     "audienceTags": [
       "general"
@@ -7590,11 +7590,11 @@
   },
   {
     "word": "vanguard",
-    "meaning": "陸軍或艦隊前線的領導部隊。",
+    "meaning": "先鋒；前衛",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vanguard refers to the leading units at the front of an army or fleet. 先鋒隊一詞是指陸軍或艦隊前線的先導部隊。",
-      "The lesson introduced vanguard as a useful term to understand. 本課介紹了「先鋒」這個術語，這是一個需要理解的有用術語。"
+      "Young artists were at the vanguard of the movement. 年輕藝術家站在這場運動的前衛。",
+      "The scouts rode at the vanguard of the army. 偵察兵走在軍隊前方擔任先鋒。"
     ],
     "audienceTags": [
       "general"
@@ -8284,11 +8284,11 @@
   },
   {
     "word": "vantage",
-    "meaning": "視野良好的地方或位置；一個有利的位置。",
+    "meaning": "有利位置；觀景點",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vantage refers to a place or position affording a good view; a vantage point. 有利一詞是指提供良好視野的地方或位置；一個有利的位置。",
-      "The lesson introduced vantage as a useful term to understand. 本課介紹了「優勢」這個術語，它是一個易於理解的有用術語。"
+      "From this vantage, we can see the whole harbor. 從這個觀景點，我們可以看到整個港口。",
+      "Her job gave her a good vantage on the market. 她的工作讓她能從有利角度觀察市場。"
     ],
     "audienceTags": [
       "general"
@@ -9537,11 +9537,11 @@
   },
   {
     "word": "variability",
-    "meaning": "可變的狀態或特徵。",
+    "meaning": "變異性；可變程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term variability refers to the state or characteristic of being variable. 術語“可變性”是指可變的狀態或特徵。",
-      "The lesson introduced variability as a useful term to understand. 本課程介紹了可變性作為一個需要理解的有用術語。"
+      "Weather variability makes planning harder. 天氣變化大，讓規劃更困難。",
+      "The test showed high variability in the results. 測試結果顯示很高的變異性。"
     ],
     "audienceTags": [
       "general"
@@ -9621,11 +9621,11 @@
   },
   {
     "word": "variance",
-    "meaning": "一般而言，協變和逆變。",
+    "meaning": "差異；變異數；不一致",
     "partOfSpeech": "noun",
     "sentences": [
-      "Depending on the variance of the type constructor, the subtyping relation of the simple types may be either preserved, reversed, or ignored for the respective complex types. 根據類型建構函數的變化，對於對應的複雜類型，簡單類型的子類型關係可以被保留、反轉或忽略。",
-      "The term variance refers to covariance and contravariance generally. 術語“方差”通常指協方差和逆變。"
+      "There is a large variance in rent across the city. 城市各區租金差異很大。",
+      "The teacher explained variance with a simple chart. 老師用簡單圖表解釋變異數。"
     ],
     "audienceTags": [
       "general"
@@ -9651,11 +9651,11 @@
   },
   {
     "word": "variant",
-    "meaning": "與類型或規格略有不同的東西。",
+    "meaning": "變體；不同版本",
     "partOfSpeech": "noun",
     "sentences": [
-      "All breeds of dog are variants of the species “Canis lupus familiaris”. 所有品種的狗都是「犬狼瘡」物種的變種。",
-      "The term variant refers to something that is slightly different from a type or norm. 術語變體是指與類型或規範略有不同的事物。"
+      "This phone comes in a cheaper variant. 這支手機有較便宜的版本。",
+      "Scientists tracked a new virus variant. 科學家追蹤一種新的病毒變體。"
     ],
     "audienceTags": [
       "general"
@@ -11327,11 +11327,11 @@
   },
   {
     "word": "varsity",
-    "meaning": "代表某個機構（通常是高中、學院或大學）的主要運動隊伍。",
+    "meaning": "校隊；大學代表隊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term varsity refers to the principal sports team representing an institution (usually a high school, college, or university.). 校隊一詞是指代表某個機構（通常是高中、學院或大學）的主要運動隊伍。",
-      "The lesson introduced varsity as a useful term to understand. 本課介紹了大學作為一個易於理解的有用術語。"
+      "He plays basketball for the varsity team. 他是籃球校隊成員。",
+      "The varsity game starts at seven. 校隊比賽七點開始。"
     ],
     "schoolLevels": [
       "college"
@@ -12907,11 +12907,11 @@
   },
   {
     "word": "vassal",
-    "meaning": "任何直接下屬都受到對上級的這種誓言的約束。",
+    "meaning": "封臣；附庸",
     "partOfSpeech": "noun",
     "sentences": [
-      "The king ordered his vassals to join him on the crusade unless they had a written note signed by the archbishop or pope. 國王命令他的封臣加入他的十字軍東徵，除非他們有大主教或教宗簽署的書面照會。",
-      "The term vassal refers to Any direct subordinate bound by such vows to a superior. 附庸一詞是指受上級誓言約束的任何直接下屬。"
+      "The vassal promised loyalty to the lord. 封臣向領主承諾效忠。",
+      "The small state became a vassal of a larger kingdom. 那個小國成了大王國的附庸。"
     ],
     "examTags": [
       "toeic"
@@ -13257,11 +13257,11 @@
   },
   {
     "word": "vastly",
-    "meaning": "極大，以極大的方式。",
+    "meaning": "大幅地；非常",
     "partOfSpeech": "adverb",
     "sentences": [
-      "If someone acts vastly, they do so in a way that is greatly, in a vast manner. 如果某人行動巨大，那麼他們會以一種偉大的方式、以一種巨大的方式這樣做。",
-      "The speaker responded vastly during the discussion. 演講者在討論中做出了廣泛的回應。"
+      "The new road vastly improved travel time. 新道路大幅縮短了交通時間。",
+      "Her second book is vastly better than the first. 她的第二本書比第一本好非常多。"
     ],
     "audienceTags": [
       "general"
@@ -14027,11 +14027,11 @@
   },
   {
     "word": "vault",
-    "meaning": "銀行內或下方用於存放貨幣和其他貴重物品的安全房間；其他設置中的類似房間。",
+    "meaning": "金庫；拱頂；跳躍",
     "partOfSpeech": "noun",
     "sentences": [
-      "The bank kept their money safe in a large vault. 銀行將他們的錢安全地存放在一個大金庫中。",
-      "The term vault refers to the secure room or rooms in or below a bank used to store currency and other valuables; similar rooms in other settings. 金庫一詞是指銀行內或銀行下方用於存放貨幣和其他貴重物品的安全房間；其他設置中的類似房間。"
+      "The bank keeps gold in a secure vault. 銀行把黃金放在安全金庫裡。",
+      "The old church has a stone vault. 那座老教堂有石造拱頂。"
     ],
     "audienceTags": [
       "general"
@@ -15517,11 +15517,11 @@
   },
   {
     "word": "vegetation",
-    "meaning": "植物，統稱。",
+    "meaning": "植物群；植被",
     "partOfSpeech": "noun",
     "sentences": [
-      "There were large amounts of vegetation in the forest. 森林裡有大量的植被。",
-      "The term vegetation refers to plants, taken collectively. 植被一詞是指植物的統稱。"
+      "Thick vegetation covered the hillside. 茂密植被覆蓋了山坡。",
+      "The fire destroyed much of the local vegetation. 火災燒毀了當地許多植物。"
     ],
     "audienceTags": [
       "general"
@@ -15877,11 +15877,11 @@
   },
   {
     "word": "vehemently",
-    "meaning": "以激烈的方式；以強烈或有力的態度表達。",
+    "meaning": "激烈地；強烈地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "vehemently opposed 強烈反對",
-      "If someone acts vehemently, they do so in a way that is in a vehement manner; expressing with a strong or forceful attitude. 如果某人行為激烈，他們就會以激烈的方式這樣做；以強烈或有力的態度表達。"
+      "She vehemently denied the rumor. 她強烈否認那個謠言。",
+      "The neighbors objected vehemently to the plan. 鄰居們激烈反對這項計畫。"
     ],
     "audienceTags": [
       "general"
@@ -17572,8 +17572,8 @@
     "meaning": "早期腳踏車；人力驅動的兩輪車",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum displayed an old velocipede with wooden wheels. 博物館展示了一輛木輪的古老腳踏車。",
-      "In the discussion, the researcher mentioned velocipede as a key term. 在討論中，研究人員把 velocipede 當作關鍵名詞提到。"
+      "The museum displayed an old velocipede with wooden wheels. 博物館展示了一輛木輪的早期腳踏車。",
+      "Children stared at the strange velocipede in the parade. 孩子們盯著遊行中那輛奇特的早期腳踏車。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -17638,11 +17638,11 @@
   },
   {
     "word": "velocity",
-    "meaning": "表示位置相對於時間的變化率的向量，將速度與方向分量結合。",
+    "meaning": "速度；速率與方向",
     "partOfSpeech": "noun",
     "sentences": [
-      "A car racing in a circle may retain the same speed while continually changing its velocity. 繞圈比賽的汽車可能會保持相同的速度，同時不斷改變其速度。",
-      "The term velocity refers to a vector quantity that denotes the rate of change of position with respect to time, combining speed with a directional component. 術語「速度」是指表示位置相對於時間的變化率的向量，將速度與方向分量結合。"
+      "The ball gained velocity as it rolled downhill. 球往下坡滾時速度變快。",
+      "The scientist measured the velocity of the object. 科學家測量了物體的速度。"
     ],
     "audienceTags": [
       "general"
@@ -18529,11 +18529,11 @@
   },
   {
     "word": "vendetta",
-    "meaning": "一種痛苦的、破壞性的世仇，通常發生在兩個家庭、氏族或派系之間，每次傷害或殺戮都會受到報復：血仇。",
+    "meaning": "長期仇恨；世仇",
     "partOfSpeech": "noun",
     "sentences": [
-      "The families had been locked in a bitter vendetta for generations. 這些家庭世世代代都深陷苦毒的仇殺之中。",
-      "The term vendetta refers to a bitter, destructive feud, normally between two families, clans, or factions, in which each injury or slaying is revenged: a blood feud. 「仇殺」一詞指的是一種痛苦的、破壞性的世仇，通常發生在兩個家庭、氏族或派系之間，每次傷害或殺戮都會被報復：血仇。"
+      "The two families were trapped in a vendetta. 這兩個家族陷入長期仇恨。",
+      "He seemed to have a personal vendetta against his old boss. 他似乎對前老闆懷有私人恩怨。"
     ],
     "audienceTags": [
       "general"
@@ -18960,8 +18960,8 @@
     "meaning": "中毒；毒害",
     "partOfSpeech": "noun",
     "sentences": [
-      "The doctor recognized signs of venenation immediately. 醫生立刻認出中毒的徵兆。",
-      "The report discussed accidental venenation from wild berries. 報告討論了野莓造成的意外中毒。"
+      "The doctor recognized signs of venenation immediately. 醫師立刻認出中毒的徵兆。",
+      "The report described accidental venenation from wild berries. 報告描述了野莓造成的意外中毒。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19112,11 +19112,11 @@
   },
   {
     "word": "venerable",
-    "meaning": "由於年齡、尊嚴、性格或地位而受到尊重。",
+    "meaning": "值得尊敬的；歷史悠久的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as venerable is commanding respect because of age, dignity, character or position. 被描述為令人尊敬的東西是因為年齡、尊嚴、性格或地位而受到尊重。",
-      "The word venerable is often used to describe a person, thing, or situation. 尊敬這個詞常用來形容一個人、一件事或一種情況。"
+      "The venerable teacher still visits the school. 那位受人尊敬的老師仍會回學校看看。",
+      "They restored a venerable old temple. 他們修復了一座歷史悠久的老廟。"
     ],
     "audienceTags": [
       "general"
@@ -19366,11 +19366,11 @@
   },
   {
     "word": "venerativeness",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "敬重；崇敬的傾向",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venerativeness as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venerativeness in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "Her venerativeness showed in the way she spoke about her teacher. 她談起老師時，語氣裡帶著敬重。",
+      "The ceremony encouraged venerativeness toward older community members. 典禮鼓勵大家敬重社區長輩。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19383,11 +19383,11 @@
   },
   {
     "word": "venerator",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "崇敬者；敬仰者",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venerator as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venerator in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "He was a venerator of ancient art. 他是古代藝術的崇敬者。",
+      "The old poet still has many venerators. 那位老詩人仍有許多敬仰者。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19469,11 +19469,11 @@
   },
   {
     "word": "venerer",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "崇敬者；敬仰者",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venerer as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venerer in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The venerer placed flowers near the memorial. 那位敬仰者在紀念碑旁放了花。",
+      "A true venerer respects the work, not just the fame. 真正的崇敬者尊重作品，而不只是名聲。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19538,11 +19538,11 @@
   },
   {
     "word": "veneriform",
-    "meaning": "英文名詞，通常多見於特定語境。",
-    "partOfSpeech": "noun",
+    "meaning": "似維納斯貝形的；貝殼狀的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "In the discussion, the researcher mentioned veneriform as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded veneriform in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The shell had a veneriform outline. 那個貝殼有類似維納斯貝的外形。",
+      "The museum label described the fossil as veneriform. 博物館標籤把那塊化石描述為貝殼狀。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19555,11 +19555,11 @@
   },
   {
     "word": "venery",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "狩獵；性慾",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venery as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venery in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "Old books on venery described the rules of hunting. 關於狩獵的舊書描述了打獵規則。",
+      "The word can also refer to sexual desire in older writing. 在較舊的文章裡，這個字也可指性慾。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19763,11 +19763,11 @@
   },
   {
     "word": "vengeable",
-    "meaning": "英文形容詞，通常用來描述某種特性或狀態。",
+    "meaning": "可報復的；可復仇的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "They chose a vengeable approach to match the goal of the experiment. 他們選了一種具有特定特徵的方法來符合實驗目標。",
-      "The vengeable surface felt noticeably different to the touch. 那個表面摸起來明顯有不同的質感。"
+      "The insult seemed vengeable to the angry knight. 對憤怒的騎士來說，這個侮辱似乎值得報復。",
+      "She decided the slight was not vengeable. 她認為這點冒犯不值得報復。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19781,11 +19781,11 @@
   },
   {
     "word": "vengeance",
-    "meaning": "對侮辱、傷害或其他錯誤進行報復。",
+    "meaning": "復仇；報復",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vengeance refers to revenge taken for an insult, injury, or other wrong. 復仇一詞是指因侮辱、傷害或其他錯誤而進行的報復。",
-      "The lesson introduced vengeance as a useful term to understand. 本課介紹了復仇這個有用的術語，需要理解。"
+      "He wanted justice, not vengeance. 他想要的是正義，不是復仇。",
+      "The story is driven by a search for vengeance. 這個故事由復仇的追尋推動。"
     ],
     "audienceTags": [
       "general"
@@ -19793,11 +19793,11 @@
   },
   {
     "word": "vengeant",
-    "meaning": "英文名詞，通常多見於特定語境。",
-    "partOfSpeech": "noun",
+    "meaning": "報復的；懷有復仇心的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "In the discussion, the researcher mentioned vengeant as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded vengeant in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The play gives the hero a vengeant mood. 這齣戲讓主角帶著復仇心情。",
+      "His vengeant words made the argument worse. 他充滿報復意味的話讓爭吵更嚴重。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19810,11 +19810,11 @@
   },
   {
     "word": "vengeful",
-    "meaning": "有報復心或想要報復。",
+    "meaning": "想報復的；懷恨的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "His chains now broken, the prisoner turned a vengeful eye toward his former captors. 現在，他的鎖鏈掙脫了，囚犯將復仇的目光投向了以前的俘虜。",
-      "The report describes the result as vengeful. 報告稱這項結果是報復性的。"
+      "He sent a vengeful message after the argument. 爭吵後，他傳了一封帶著報復心的訊息。",
+      "A vengeful attitude will not solve the problem. 懷恨的態度無法解決問題。"
     ],
     "audienceTags": [
       "general"
@@ -19840,11 +19840,11 @@
   },
   {
     "word": "vengefulness",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "報復心；復仇傾向",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned vengefulness as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded vengefulness in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "His vengefulness made it hard to forgive. 他的報復心讓和解變得困難。",
+      "The story shows how vengefulness can destroy a family. 這個故事呈現報復心如何毀掉一個家庭。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19857,11 +19857,11 @@
   },
   {
     "word": "vengeously",
-    "meaning": "英文副詞，通常用來表示方式或程度。",
+    "meaning": "帶著報復心地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The device moved vengeously across the table during the test. 測試時，裝置以某種方式在桌面上移動。",
-      "She answered vengeously to show her attitude clearly. 她用一種方式回答，讓態度更清楚。"
+      "He spoke vengeously after losing the case. 敗訴後，他說話帶著報復心。",
+      "The character acts vengeously in the final scene. 這個角色在最後一幕帶著復仇心行動。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -19875,11 +19875,11 @@
   },
   {
     "word": "venger",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "報復者；復仇者",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venger as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venger in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The venger waited for a chance to strike back. 復仇者等待反擊的機會。",
+      "In the tale, the venger finally chose mercy. 在故事裡，復仇者最後選擇了寬恕。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19909,11 +19909,11 @@
   },
   {
     "word": "veniality",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "可原諒性；小過失的性質",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned veniality as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded veniality in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The judge considered the veniality of the mistake. 法官考量了這個錯誤是否屬於小過失。",
+      "The story treats the lie with some veniality. 故事把這個謊言視為較可原諒的小錯。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -19926,11 +19926,11 @@
   },
   {
     "word": "venially",
-    "meaning": "英文副詞，通常用來表示方式或程度。",
+    "meaning": "可原諒地；輕微地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The device moved venially across the table during the test. 測試時，裝置以某種方式在桌面上移動。",
-      "She answered venially to show her attitude clearly. 她用一種方式回答，讓態度更清楚。"
+      "He erred venially and quickly corrected himself. 他犯的是小錯，很快就改正了。",
+      "The rule was broken venially, not with harmful intent. 規則只是輕微違反，並沒有惡意。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -19944,11 +19944,11 @@
   },
   {
     "word": "venialness",
-    "meaning": "英文名詞，通常多見於特定語境。",
+    "meaning": "可原諒性；輕微性",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venialness as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venialness in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The venialness of the error made the apology enough. 這個錯誤較輕微，道歉就足夠了。",
+      "They debated the venialness of the broken rule. 他們討論違規行為是否輕微可原諒。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -20098,8 +20098,8 @@
     "meaning": "像鹿肉的；有鹿肉風味的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "In the discussion, the researcher mentioned venisonlike as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venisonlike in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The stew had a venisonlike flavor. 這道燉菜有點像鹿肉的風味。",
+      "The chef described the meat as venisonlike. 廚師形容這種肉有鹿肉風味。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -20115,8 +20115,8 @@
     "meaning": "靜脈縫合；靜脈接合",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the discussion, the researcher mentioned venisuture as a key term. 在討論中，研究人員把它當作關鍵名詞提到。",
-      "The team recorded venisuture in the summary for later reference. 團隊在摘要裡做了記錄，方便之後回頭查閱。"
+      "The surgeon explained the venisuture before the operation. 手術前，外科醫師說明了靜脈縫合。",
+      "The textbook shows a basic venisuture technique. 這本教科書展示基本的靜脈接合技術。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -20249,11 +20249,11 @@
   },
   {
     "word": "venom",
-    "meaning": "帶有怨恨或惡意的情緒或言語；硫酸。",
+    "meaning": "毒液；惡毒言語",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term venom refers to feeling or speech marked by spite or malice; vitriol. 「毒液」一詞指的是帶有怨恨或惡意的感情或言語。礬。",
-      "The lesson introduced venom as a useful term to understand. 本課介紹了毒液作為一個易於理解的有用術語。"
+      "The snake injected venom into its prey. 那條蛇把毒液注入獵物體內。",
+      "Her words were full of venom. 她的話充滿惡意。"
     ],
     "audienceTags": [
       "general"
@@ -20381,11 +20381,11 @@
   },
   {
     "word": "venomous",
-    "meaning": "構成威脅；危險的，有威脅的。可惡;惡性；惡意的。",
+    "meaning": "有毒的；惡毒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "His attitude toward me is utterly venomous. 他對我的態度非常惡毒。",
-      "The report describes the result as venomous. 報告稱這一結果是有毒的。"
+      "A venomous spider was found in the shed. 棚子裡發現一隻有毒蜘蛛。",
+      "His venomous comment hurt her feelings. 他惡毒的評論傷了她的心。"
     ],
     "audienceTags": [
       "general"
@@ -20501,8 +20501,8 @@
     "meaning": "靜脈硬化",
     "partOfSpeech": "noun",
     "sentences": [
-      "The report discussed venosclerosis as a circulatory problem. 報告把 venosclerosis 視為一種循環系統問題。",
-      "Age and poor circulation can increase the risk of venosclerosis. 年齡和循環不良都可能增加靜脈硬化的風險。"
+      "The doctor explained the risk of venosclerosis. 醫師說明靜脈硬化的風險。",
+      "Poor circulation can make venosclerosis worse. 循環不良可能讓靜脈硬化惡化。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -20584,11 +20584,11 @@
   },
   {
     "word": "venous",
-    "meaning": "屬於或關於靜脈的。",
+    "meaning": "靜脈的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Her venous circulation was poor, leading to varicose veins. 她的靜脈循環不好，導致靜脈曲張。",
-      "The report describes the result as venous. 報告將結果描述為靜脈。"
+      "The nurse checked the venous line. 護士檢查了靜脈管路。",
+      "Poor venous flow can cause swelling. 靜脈血流不佳可能造成腫脹。"
     ],
     "audienceTags": [
       "general"
@@ -20852,11 +20852,11 @@
   },
   {
     "word": "ventilation",
-    "meaning": "身體呼吸的過程；吸入空氣提供氧氣，呼出廢氣去除二氧化碳。",
+    "meaning": "通風；換氣",
     "partOfSpeech": "noun",
     "sentences": [
-      "This toxin impairs ventilation by causing inflammation in the bronchioles. 這種毒素會引起細支氣管炎症，進而損害通氣。",
-      "The term ventilation refers to the bodily process of breathing; the inhalation of air to provide oxygen, and the exhalation of spent air to remove carbon dioxide. 通氣一詞是指身體的呼吸過程。吸入空氣以提供氧氣，呼出廢氣以去除二氧化碳。"
+      "Good ventilation keeps the room fresh. 良好通風能讓房間空氣清新。",
+      "The kitchen needs better ventilation. 廚房需要更好的換氣。"
     ],
     "audienceTags": [
       "general"
@@ -21038,11 +21038,11 @@
   },
   {
     "word": "ventral",
-    "meaning": "與腹部或胃有關。",
+    "meaning": "腹側的；腹部的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as ventral is related to the abdomen or stomach. 被描述为腹侧的东西与腹部或胃有关。",
-      "The word ventral is often used to describe a person, thing, or situation. 腹侧这个词经常用来描述人、事物或情况。"
+      "The diagram shows the ventral side of the fish. 圖中顯示魚的腹側。",
+      "The doctor checked the ventral area for pain. 醫師檢查腹部區域是否疼痛。"
     ],
     "audienceTags": [
       "general"
@@ -22729,11 +22729,11 @@
   },
   {
     "word": "vera",
-    "meaning": "A皮（捲菸用捲紙）。",
+    "meaning": "捲菸用紙；薄紙",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vera refers to a skin (rolling paper for cigarettes). 維拉一詞指的是皮膚（香菸的捲紙）。",
-      "The lesson introduced vera as a useful term to understand. 本課介紹了維拉作為一個易於理解的有用術語。"
+      "The old shop sold vera for hand-rolled cigarettes. 那間老店販售手捲菸用的薄紙。",
+      "He found a packet of vera in the drawer. 他在抽屜裡找到一包捲菸用紙。"
     ],
     "audienceTags": [
       "general"
@@ -23273,11 +23273,11 @@
   },
   {
     "word": "verbally",
-    "meaning": "以口頭方式；用言語；透過說話。",
+    "meaning": "口頭地；用言語地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Dumbstruck with joy, she was unable to express herself verbally, but the gratitude in her face was evident to all. 她高興得目瞪口呆，無法用言語表達，但臉上的感激之情卻是有目共睹。",
-      "If someone acts verbally, they do so in a way that is in a verbal manner; with words; by speaking. 如果某人以口頭方式行事，那麼他們就是以口頭方式這樣做的；用言語；透過說話。"
+      "She agreed verbally but did not sign the paper. 她口頭同意了，但沒有簽文件。",
+      "Please explain the rule verbally before the game. 比賽前請用口頭方式說明規則。"
     ],
     "audienceTags": [
       "general"
@@ -24044,11 +24044,11 @@
   },
   {
     "word": "verdant",
-    "meaning": "顏色為綠色。",
+    "meaning": "翠綠的；草木茂盛的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report describes the result as verdant. 報告將結果描述為翠綠。",
-      "Everyone noticed the verdant tone of the message. 每個人都注意到了這則訊息的青翠語氣。"
+      "The valley looked verdant after the rain. 雨後的山谷一片翠綠。",
+      "They walked through a verdant park. 他們走過草木茂盛的公園。"
     ],
     "audienceTags": [
       "general"
@@ -24977,11 +24977,11 @@
   },
   {
     "word": "verifiable",
-    "meaning": "能夠被驗證或確認。",
+    "meaning": "可驗證的；可確認的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Do you have verifiable evidence to support that claim? 您有可驗證的證據來支持這項說法嗎？",
-      "The report describes the result as verifiable. 報告稱該結果是可驗證的。"
+      "We need verifiable facts before making a claim. 提出主張前，我們需要可驗證的事實。",
+      "The receipt provides verifiable proof of payment. 收據提供了可確認的付款證明。"
     ],
     "audienceTags": [
       "general"
@@ -25042,11 +25042,11 @@
   },
   {
     "word": "verification",
-    "meaning": "確認；認證。",
+    "meaning": "驗證；確認",
     "partOfSpeech": "noun",
     "sentences": [
-      "The detective needs verification of your whereabouts last night. 偵探需要核實你昨晚的行蹤。",
-      "The term verification refers to confirmation; authentication. 驗證一詞是指確認；驗證。"
+      "The website sent a verification code to my phone. 網站把驗證碼傳到我的手機。",
+      "The bank requires identity verification. 銀行要求身分驗證。"
     ],
     "audienceTags": [
       "general"
@@ -26169,11 +26169,11 @@
   },
   {
     "word": "vermin",
-    "meaning": "造成傷害和煩惱的各種常見類型的小昆蟲或其他動物。",
+    "meaning": "害蟲；有害小動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The area was crawling with all sorts of vermin: fleas, lice, mice, and rats to name a few. Thus, we felt as if vermin were crawling over us. 該地區爬滿了各種害蟲：跳蚤、蝨子、老鼠等等。因此，我們感覺好像害蟲在我們身上爬行。",
-      "The term vermin refers to Any of various common types of small insects or other animals which cause harm and annoyance. 害蟲一詞是指造成傷害和煩惱的各種常見類型的小昆蟲或其他動物。"
+      "The old warehouse had a vermin problem. 那座舊倉庫有害蟲問題。",
+      "Keep food sealed to avoid vermin. 把食物密封好，避免招來害蟲。"
     ],
     "audienceTags": [
       "general"
@@ -26670,11 +26670,11 @@
   },
   {
     "word": "vernacular",
-    "meaning": "屬於出生國；與生俱來或天生的。",
-    "partOfSpeech": "adjective",
+    "meaning": "本地話；日常語言；通俗的",
+    "partOfSpeech": "noun",
     "sentences": [
-      "a vernacular disease 鄉土病",
-      "Something described as vernacular is belonging to the country of one's birth; one's own by birth or by nature. 被描述為白話文的東西屬於一個人的出生國；一個人天生或天生的。"
+      "The poem uses the local vernacular. 這首詩使用當地日常語言。",
+      "He explained the idea in plain vernacular. 他用通俗語言解釋這個想法。"
     ],
     "audienceTags": [
       "general"
@@ -27804,11 +27804,11 @@
   },
   {
     "word": "versatility",
-    "meaning": "多才多藝或具有多種不同能力的屬性。",
+    "meaning": "多才多藝；多用途性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term versatility refers to the property of being versatile or having many different abilities. 術語“多功能性”是指多才多藝或具有多種不同能力的屬性。",
-      "The lesson introduced versatility as a useful term to understand. 本課程介紹了多功能性作為一個需要理解的有用術語。"
+      "Her versatility makes her valuable at work. 她的多才多藝讓她在工作上很有價值。",
+      "This jacket is popular because of its versatility. 這件外套因為用途多而受歡迎。"
     ],
     "audienceTags": [
       "general"
@@ -28347,11 +28347,11 @@
   },
   {
     "word": "versification",
-    "meaning": "the making of verse or the structure of verse",
+    "meaning": "作詩法；詩的格律結構",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson on versification covered meter and rhyme. 那堂關於作詩法的課涵蓋了格律和押韻。",
-      "His versification became smoother after much practice. 經過多次練習，他的作詩技巧變得更流暢。"
+      "In class, versification covered meter and rhyme. 課堂上，作詩法包含格律和押韻。",
+      "His versification became smoother after practice. 練習後，他的作詩技巧變得更流暢。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -29273,11 +29273,11 @@
   },
   {
     "word": "vertically",
-    "meaning": "在垂直方向或位置。",
+    "meaning": "垂直地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "This story needs to be read vertically to be understood correctly. 這個故事需要垂直閱讀才能正確理解。",
-      "If someone acts vertically, they do so in a way that is in a vertical direction or position. 如果某人垂直行動，他們會以垂直方向或垂直位置的方式這樣做。"
+      "Hang the picture vertically on the wall. 把照片垂直掛在牆上。",
+      "The text is written vertically on the sign. 招牌上的文字是直著寫的。"
     ],
     "audienceTags": [
       "general"
@@ -29630,11 +29630,11 @@
   },
   {
     "word": "vertigo",
-    "meaning": "精神失調或不平衡的狀態或類似身體眩暈的情況；精神頭暈或頭暈。",
+    "meaning": "眩暈；頭暈感",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vertigo refers to a disordered or imbalanced state of mind or things analogous to physical vertigo; mental giddiness or dizziness. 眩暈一詞是指精神失調或不平衡的狀態或類似身體眩暈的事物；精神頭暈或頭暈。",
-      "The lesson introduced vertigo as a useful term to understand. 本課程介紹了眩暈這個易於理解的有用術語。"
+      "He felt vertigo when he looked down from the roof. 他從屋頂往下看時感到眩暈。",
+      "The medicine helped reduce her vertigo. 這種藥幫助減輕她的眩暈。"
     ],
     "examTags": [
       "toeic"
@@ -31650,11 +31650,11 @@
   },
   {
     "word": "vestibule",
-    "meaning": "左側 心室 位於 主動脈 <a rel=\"mw:WikiLink\" href=\"/wiki=\"eificp\" href=\"/wiki 的部分。",
+    "meaning": "入口廳；前庭",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vestibule refers to The part of the left ventricle below the aortic orifice. 前庭一詞是指 心室 位於 主動脈 主動脈 <a rel=\"mw:WikiLink\" href=\"/tle/wikiorificor 的部分。 術語前庭是指主動脈口下方的左心室部分。 前庭是指心室位於主動脈主動脈<a rel=\"mw:WikiLink\" href=\"/tle/wikiorificor 的部位。",
-      "The lesson introduced vestibule as a useful term to understand. 本課介紹了前庭這個術語，這是一個需要理解的有用術語。 本課介紹了前庭這個術語，這是一個需要理解的有用術語。 本課介紹了前庭這個術語，這是一個需要理解的有用術語。"
+      "Please leave your wet umbrella in the vestibule. 請把濕傘放在入口廳。",
+      "The inner ear has a vestibule that helps with balance. 內耳有一個幫助平衡的前庭。"
     ],
     "audienceTags": [
       "general"
@@ -32658,11 +32658,11 @@
   },
   {
     "word": "veterinary",
-    "meaning": "屬於或涉及非人類動物（尤其是家養動物和農場動物）的醫療或手術治療。",
+    "meaning": "獸醫的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Max used all his veterinary knowledge to save the goose stuck in the fence. 馬克斯運用他所有的獸醫知識來拯救被困在柵欄裡的鵝。",
-      "Something described as veterinary is of or relating to the medical or surgical treatment of non-human animals, especially domestic and farm animals. Something described as veterinary is of 或 relating to the medical or surgical treatment of non-human animals, especially domestic and farm animals."
+      "The dog needs veterinary care. 這隻狗需要獸醫照護。",
+      "She studies veterinary medicine. 她讀獸醫學。"
     ],
     "audienceTags": [
       "general"
@@ -33387,11 +33387,11 @@
   },
   {
     "word": "viability",
-    "meaning": "具有生存能力的屬性；生存或成功的能力。",
+    "meaning": "可行性；生存能力",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term viability refers to the property of being viable; the ability to live or to succeed. 術語生存力是指能夠生存的屬性；生活或成功的能力。",
-      "The lesson introduced viability as a useful term to understand. 本課程介紹了生存力這個術語，它是一個需要理解的有用術語。"
+      "We need to test the viability of the plan. 我們需要測試這項計畫的可行性。",
+      "The seeds lost viability after years in storage. 這些種子存放多年後失去發芽能力。"
     ],
     "audienceTags": [
       "general"
@@ -33952,11 +33952,11 @@
   },
   {
     "word": "vibrant",
-    "meaning": "充滿能量或活動的脈動。",
+    "meaning": "充滿活力的；鮮明的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "He has a vibrant personality. 他個性充滿活力。",
-      "Something described as vibrant is pulsing with energy or activity. 所謂充滿活力的事物是指充滿能量或活動的脈動。"
+      "The market was vibrant on Saturday morning. 週六早上的市場充滿活力。",
+      "She wore a vibrant red dress. 她穿了一件鮮明的紅色洋裝。"
     ],
     "audienceTags": [
       "general"
@@ -34209,11 +34209,11 @@
   },
   {
     "word": "vibrator",
-    "meaning": "振動或引起振動的裝置。用於按摩或性刺激的振動裝置。",
+    "meaning": "振動器；使物體振動的裝置",
     "partOfSpeech": "noun",
     "sentences": [
-      "They recommend a vibrator because it's a safe alternative to sex. 他們推薦使用振動器，因為它是性行為的安全替代品。",
-      "The term vibrator refers to a device that vibrates or causes vibration. A vibrating device used for massage or sexual stimulation. 術語振動器是指振動或引起振動的裝置。用於按摩或性刺激的振動裝置。"
+      "The phone vibrator was too weak to notice. 手機振動器太弱，幾乎感覺不到。",
+      "The technician checked the small vibrator inside the device. 技師檢查了裝置裡的小型振動器。"
     ],
     "audienceTags": [
       "general"
@@ -34581,11 +34581,11 @@
   },
   {
     "word": "vicar",
-    "meaning": "在英格蘭教會中，教區的牧師領取薪水或津貼，但不領取什一稅。",
+    "meaning": "教區牧師",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vicar refers to in the Church of England, the priest of a parish, receiving a salary or stipend but not tithes. 在英國教會中，牧師一詞指的是教區的牧師，領取薪水或津貼，但不領取什一稅。",
-      "The lesson introduced vicar as a useful term to understand. 本課介紹了 vicar，這是一個需要理解的有用術語。"
+      "The vicar welcomed everyone to the church. 教區牧師歡迎大家來到教堂。",
+      "She asked the vicar to visit her grandmother. 她請教區牧師去探望祖母。"
     ],
     "audienceTags": [
       "general"
@@ -35077,11 +35077,11 @@
   },
   {
     "word": "viceroy",
-    "meaning": "作為君主代表統治一個國家、省份或殖民地的人。",
+    "meaning": "總督；君主代表",
     "partOfSpeech": "noun",
     "sentences": [
-      "Ireland was governed by a Viceroy representing the English King/Queen when it was part of the United Kingdom of Great Britain and Ireland. 當愛爾蘭是大不列顛及愛爾蘭聯合王國的一部分時，愛爾蘭由代表英國國王/女王的總督統治。",
-      "The term viceroy refers to one who governs a country, province, or colony as the representative of a monarch. 總督一詞是指作為君主代表統治一個國家、省份或殖民地的人。"
+      "The viceroy governed the colony for the king. 總督代表國王治理殖民地。",
+      "The museum displayed a letter from the former viceroy. 博物館展示了一封前總督的信。"
     ],
     "audienceTags": [
       "general"
@@ -35953,11 +35953,11 @@
   },
   {
     "word": "victorious",
-    "meaning": "屬於或表達勝利或勝利的感覺。",
+    "meaning": "勝利的；獲勝的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The team were met with a victorious cheer. 球隊迎來了勝利的歡呼聲。",
-      "The report describes the result as victorious. 報告稱這一結果是勝利的。"
+      "The victorious team lifted the trophy. 獲勝隊伍舉起了獎盃。",
+      "She returned home victorious after the race. 比賽後，她帶著勝利回家。"
     ],
     "audienceTags": [
       "general"
@@ -37163,11 +37163,11 @@
   },
   {
     "word": "vigil",
-    "meaning": "任何時間的觀察或監視期。",
+    "meaning": "守夜；守候",
     "partOfSpeech": "noun",
     "sentences": [
-      "His dog kept vigil outside the hospital for eight days while he was recovering from an accident. 在他從事故中恢復期間，他的狗在醫院外守夜了八天。",
-      "The term vigil refers to a period of observation or surveillance at any hour. 「守夜」一詞是指在任何時間進行觀察或監視的一段時間。"
+      "Friends held a candlelight vigil outside the hospital. 朋友們在醫院外舉行燭光守夜。",
+      "He kept vigil by his father’s bed. 他在父親床邊守候。"
     ],
     "audienceTags": [
       "general"
@@ -37175,11 +37175,11 @@
   },
   {
     "word": "vigilance",
-    "meaning": "一名警衛；一個準備觀看的人。",
+    "meaning": "警覺；警戒",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vigilance refers to a guard; a person set to watch. 「警惕」這個字是指守衛；一個準備觀看的人。",
-      "The lesson introduced vigilance as a useful term to understand. 本課介紹了「警惕」這個易於理解的有用術語。"
+      "Constant vigilance is needed near the water. 在水邊需要保持警覺。",
+      "Her vigilance helped prevent a mistake. 她的警覺幫助避免了一個錯誤。"
     ],
     "audienceTags": [
       "general"
@@ -37205,11 +37205,11 @@
   },
   {
     "word": "vigilant",
-    "meaning": "保持警惕，尤其是對於危險或混亂；警報;警惕的。",
+    "meaning": "警覺的；警戒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Be vigilant for signs of disease in your garden. 警惕花園中的疾病跡象。",
-      "Something described as vigilant is watchful, especially for danger or disorder; alert; wary. 被描述為警惕的事物是指警惕，特別是對危險或混亂；警報;警惕。"
+      "Be vigilant when crossing the busy road. 過繁忙馬路時要保持警覺。",
+      "The guard stayed vigilant all night. 警衛整晚保持警戒。"
     ],
     "examTags": [
       "toeic"
@@ -37220,11 +37220,11 @@
   },
   {
     "word": "vigilante",
-    "meaning": "警戒委員會成員。",
+    "meaning": "自發執法者；治安維持者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vigilante refers to a member of a vigilance committee. 治安維持者一詞指的是治安委員會的成員。",
-      "The lesson introduced vigilante as a useful term to understand. 本課介紹了治安維持者這個術語，這是一個需要理解的有用術語。"
+      "The movie follows a masked vigilante. 這部電影描述一名蒙面自發執法者。",
+      "The police warned people not to act like vigilantes. 警方提醒民眾不要自行執法。"
     ],
     "audienceTags": [
       "general"
@@ -38313,11 +38313,11 @@
   },
   {
     "word": "villainage",
-    "meaning": "the condition or class of medieval serfs",
+    "meaning": "農奴身分；農奴階層",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson explained villainage in medieval society. 課堂上解釋了中世紀社會中的農奴階層。",
-      "Villainage placed heavy duties on the peasant class. 農奴身分讓農民階層背負沉重義務。"
+      "The class learned about villainage in medieval society. 課堂上學到中世紀社會的農奴身分。",
+      "Villainage placed heavy duties on peasants. 農奴階層讓農民背負沉重義務。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -39179,11 +39179,11 @@
   },
   {
     "word": "vinaconic",
-    "meaning": "與 vinaconic 酸有關的；相關的",
+    "meaning": "與乙烯二羧酸有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report discussed a vinaconic compound in the sample. 報告討論了樣本中的一種 vinaconic 化合物。",
-      "Chemists compared the vinaconic structure with similar acids. 化學家把 vinaconic 結構和相似酸類作比較。"
+      "The chemist studied a vinaconic compound. 化學家研究了一種相關酸類化合物。",
+      "The sample showed a vinaconic reaction in the test. 樣本在測試中出現相關酸類反應。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -39387,11 +39387,11 @@
   },
   {
     "word": "vincent",
-    "meaning": "賭博遊戲（尤其是滾球遊戲）中的受害者或受騙者。",
+    "meaning": "賭局中的受騙者；受害者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vincent refers to the victim or dupe in a betting game, especially bowls. 文森特一詞指的是博彩遊戲中的受害者或受騙者，尤其是保齡球遊戲。",
-      "The lesson introduced vincent as a useful term to understand. 本課介紹了 vincent 作為一個易於理解的有用術語。"
+      "In the old game, the vincent lost money quickly. 在那種舊賭局裡，受騙者很快就輸了錢。",
+      "The story uses vincent for a person tricked in a bet. 這個故事用此字指在賭局中受騙的人。"
     ],
     "audienceTags": [
       "general"
@@ -39847,11 +39847,11 @@
   },
   {
     "word": "vindication",
-    "meaning": "辯護的行為或被辯護的狀態。",
+    "meaning": "證明無辜；平反；辯護",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vindication refers to The act of vindicating or the state of being vindicated. 辯護一詞是指辯護的行為或被辯護的狀態。",
-      "We learned the meaning of vindication during today's lesson. 在今天的課程中，我們學習了辯護的含義。"
+      "The new evidence brought her vindication. 新證據讓她獲得平反。",
+      "He felt vindication when the truth came out. 真相出現時，他覺得自己終於被證明清白。"
     ],
     "audienceTags": [
       "general"
@@ -41116,11 +41116,11 @@
   },
   {
     "word": "vintage",
-    "meaning": "具有持久的吸引力；高品質。",
+    "meaning": "復古的；佳釀年份；某時期的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something described as vintage is having an enduring appeal; high-quality. 所謂復古的東西就是具有持久的吸引力。高品質。",
-      "The word vintage is often used to describe a person, thing, or situation. 復古這個詞經常被用來描述一個人、一件事或一種情況。"
+      "She bought a vintage jacket at the market. 她在市場買了一件復古外套。",
+      "The restaurant serves vintage wine from France. 這家餐廳供應法國年份酒。"
     ],
     "audienceTags": [
       "general"
@@ -41337,11 +41337,11 @@
   },
   {
     "word": "vinyl",
-    "meaning": "留聲機唱片作為媒介。",
+    "meaning": "黑膠唱片；乙烯基塑膠",
     "partOfSpeech": "noun",
     "sentences": [
-      "Many DJs prefer vinyl to CDs. 許多 DJ 喜歡黑膠唱片而不是 CD。",
-      "The term vinyl refers to phonograph records as a medium. 黑膠唱片一詞是指作為媒介的留聲機唱片。"
+      "My father still listens to music on vinyl. 我父親仍然聽黑膠唱片。",
+      "The floor is covered with vinyl tiles. 地板鋪著乙烯基地磚。"
     ],
     "audienceTags": [
       "general"
@@ -41435,11 +41435,11 @@
   },
   {
     "word": "viola",
-    "meaning": "紫羅蘭屬的幾種開花植物的任何一種，包括紫羅蘭和三色堇。",
+    "meaning": "中提琴；堇菜屬植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term viola refers to any of several flowering plants, of the genus Viola, including the violets and pansies. 術語“堇菜”是指堇菜屬的幾種開花植物中的任何一種，包括紫羅蘭和三色堇。",
-      "The lesson introduced viola as a useful term to understand. 本課程介紹了中提琴作為一個需要理解的有用術語。"
+      "She plays viola in the school orchestra. 她在學校管弦樂團拉中提琴。",
+      "A small viola bloomed near the garden path. 花園小路旁開了一朵小堇菜。"
     ],
     "audienceTags": [
       "general"
@@ -41831,11 +41831,11 @@
   },
   {
     "word": "violently",
-    "meaning": "達到強烈的程度；極度;強烈地；強烈地。",
+    "meaning": "猛烈地；暴力地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I found myself violently disagreeing with him. 我發現自己強烈反對他的觀點。",
-      "If someone acts violently, they do so in a way that is to an intense degree; extremely; strongly; intensely. 如果某人有暴力行為，那麼他們的行為方式就達到了強烈的程度；極其;強烈地；強烈地。"
+      "The door shook violently in the wind. 門在風中猛烈搖晃。",
+      "He reacted violently and scared everyone. 他反應激烈，把大家嚇到了。"
     ],
     "audienceTags": [
       "general"
@@ -42362,11 +42362,11 @@
   },
   {
     "word": "viper",
-    "meaning": "蝰蛇科的一種毒蛇。",
+    "meaning": "蝰蛇；惡毒的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term viper refers to a venomous snake in the family Viperidae. 毒蛇一詞指的是蝰蛇科的毒蛇。",
-      "The lesson introduced viper as a useful term to understand. 本課程介紹了 viper，這是一個易於理解的有用術語。"
+      "A viper hid under the warm rock. 一條蝰蛇躲在溫暖的石頭下。",
+      "The novel describes him as a viper in the court. 小說把他描寫成宮廷裡惡毒的人。"
     ],
     "audienceTags": [
       "general"
@@ -42948,11 +42948,11 @@
   },
   {
     "word": "viral",
-    "meaning": "由病毒引起。",
+    "meaning": "病毒性的；爆紅的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "viral infection 病毒感染",
-      "Something described as viral is caused by a virus. 被描述為病毒性的東西是由病毒引起的。"
+      "The doctor said it was a viral infection. 醫師說那是病毒感染。",
+      "Her video went viral overnight. 她的影片一夜之間爆紅。"
     ],
     "audienceTags": [
       "general"
@@ -43503,11 +43503,11 @@
   },
   {
     "word": "virginity",
-    "meaning": "處女的狀態或特徵。",
+    "meaning": "童貞；未有性經驗的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "to lose one's virginity 失去童貞",
-      "The term virginity refers to the state or characteristic of being a virgin. 童貞一詞是指作為處女的狀態或特徵。"
+      "The book discusses virginity in a historical context. 這本書從歷史角度討論童貞。",
+      "Different cultures have different ideas about virginity. 不同文化對童貞有不同看法。"
     ],
     "audienceTags": [
       "general"
@@ -43532,11 +43532,11 @@
   },
   {
     "word": "virginium",
-    "meaning": "an obscure or obsolete chemical or mineral name",
+    "meaning": "冷僻或已廢用的化學、礦物名稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old catalog mentioned virginium in a short note. 舊目錄在一則短註中提到了 virginium。",
-      "Virginium appears only in a few historical references. virginium 只出現在少數歷史資料裡。"
+      "The old catalog mentioned virginium in a short note. 舊目錄在一則短註中提到這個冷僻名稱。",
+      "Virginium appears only in a few historical references. 這個名稱只出現在少數歷史資料裡。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -44855,11 +44855,11 @@
   },
   {
     "word": "virulency",
-    "meaning": "the quality of being virulent",
+    "meaning": "毒性；猛烈程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "The report discussed the virulency of the strain. 報告討論了這個菌株的毒性。",
-      "Doctors were surprised by the virulency of the symptoms. 醫生對症狀的猛烈程度感到驚訝。"
+      "Doctors studied the virulency of the new strain. 醫師研究新菌株的毒性。",
+      "The virulency of the disease surprised the team. 這種疾病的猛烈程度讓團隊驚訝。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -45236,11 +45236,11 @@
   },
   {
     "word": "visceral",
-    "meaning": "屬於內臟或與內臟相關、由內臟組成或位於內臟之中或之內（「身體的內臟器官，特別是腹腔和胸腔內的內臟器官」）。",
+    "meaning": "內臟的；出自本能的；強烈情緒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "visceral remains 內臟遺骸",
-      "Something described as visceral is of or relating to, made up of, or positioned among or within, the viscera (“internal organs of the body, especially those contained within the abdominal and thoracic cavities”). 被描述為內臟的東西是屬於內臟的，或者與內臟相關，由內臟組成，或者位於內臟之中或之內（「身體的內部器官，特別是那些包含在腹腔和胸腔內的器官」）。"
+      "The film gave me a visceral sense of fear. 這部電影讓我有一種本能的恐懼感。",
+      "The doctor checked for visceral pain. 醫師檢查是否有內臟疼痛。"
     ],
     "audienceTags": [
       "general"
@@ -45918,11 +45918,11 @@
   },
   {
     "word": "viscosity",
-    "meaning": "黏稠狀態。",
+    "meaning": "黏度；黏稠度",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term viscosity refers to the state of being viscous. 術語黏度是指黏稠的狀態。",
-      "The lesson introduced viscosity as a useful term to understand. 本課程介紹了黏度這個易於理解的有用術語。"
+      "Honey has a higher viscosity than water. 蜂蜜的黏度比水高。",
+      "The engineer measured the viscosity of the oil. 工程師測量了油的黏稠度。"
     ],
     "audienceTags": [
       "general"
@@ -46239,11 +46239,11 @@
   },
   {
     "word": "visibility",
-    "meaning": "事物可見的程度。",
+    "meaning": "能見度；可見性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The visibility from that angle was good. 那個角度的能見度很好。",
-      "The term visibility refers to the degree to which things may be seen. 術語「可見性」是指事物可以被看到的程度。"
+      "Fog reduced visibility on the road. 霧降低了道路能見度。",
+      "The new sign improves store visibility. 新招牌提高了店面的可見性。"
     ],
     "audienceTags": [
       "general"
@@ -46304,11 +46304,11 @@
   },
   {
     "word": "visibly",
-    "meaning": "以可見的方式；公開地。",
+    "meaning": "明顯地；看得出來地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He was visibly upset while reading the news live on air about the school shooting. 當他在直播中看到有關學校槍擊事件的新聞時，他明顯感到不安。",
-      "If someone acts visibly, they do so in a way that is in a visible manner; openly. 如果某人的行為是可見的，那麼他們就是以可見的方式這樣做的；公然。"
+      "She was visibly tired after work. 下班後，她明顯很累。",
+      "The child was visibly excited about the trip. 那個孩子明顯對旅行很興奮。"
     ],
     "audienceTags": [
       "general"
@@ -46476,11 +46476,11 @@
   },
   {
     "word": "visionary",
-    "meaning": "理想主義或烏托邦。",
+    "meaning": "有遠見的；空想的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a visionary scheme or project 有遠見的計劃或項目",
-      "Something described as visionary is idealistic or utopian. 被描述為有遠見的東西是理想主義的或烏托邦的。"
+      "She is a visionary leader in education. 她是教育界有遠見的領導者。",
+      "The plan sounded visionary but hard to fund. 這項計畫聽起來很有遠見，但難以籌資。"
     ],
     "examTags": [
       "toeic"
@@ -47400,11 +47400,11 @@
   },
   {
     "word": "visually",
-    "meaning": "透過視覺的方式。",
+    "meaning": "視覺上；用視覺方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The radar's detection was confirmed visually, because seeing is believing. 雷達的探測是透過視覺確認的，因為眼見為憑。",
-      "If someone acts visually, they do so in a way that is by means of sight. 如果有人以視覺方式行事，他們就是透過視覺來這樣做的。"
+      "The chart explains the data visually. 這張圖表用視覺方式說明資料。",
+      "The room is visually warm and simple. 這個房間在視覺上溫暖又簡潔。"
     ],
     "audienceTags": [
       "general"
@@ -47412,11 +47412,11 @@
   },
   {
     "word": "visuoauditory",
-    "meaning": "同時涉及視覺與聽覺的",
+    "meaning": "視聽的；同時涉及視覺與聽覺的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The lesson used visuoauditory cues to help students remember. 那堂課使用視聽線索幫助學生記憶。",
-      "Visuoauditory materials can make a presentation easier to follow. 視聽材料能讓簡報更容易理解。"
+      "The teacher used visuoauditory materials in class. 老師在課堂上使用視聽教材。",
+      "Visuoauditory cues helped students remember the story. 視聽線索幫助學生記住故事。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -47497,11 +47497,11 @@
   },
   {
     "word": "vita",
-    "meaning": "傳記；聖人傳記。",
+    "meaning": "傳記；簡歷；聖人傳",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vita refers to a hagiography; a biography of a saint. vita一詞指的是聖徒傳記；一位聖人的傳記。",
-      "The lesson introduced vita as a useful term to understand. 本課介紹了 vita，這是一個需要理解的有用術語。"
+      "The scholar added a short vita to the article. 學者在文章後附上簡短傳記。",
+      "The old book contains the vita of a saint. 那本舊書收錄了一位聖人的傳記。"
     ],
     "audienceTags": [
       "general"
@@ -49787,11 +49787,11 @@
   },
   {
     "word": "viva",
-    "meaning": "萬歲...！ （用於表達讚揚或支持）。",
+    "meaning": "萬歲；口試",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The word viva is used in English writing and speech. viva 這個字用於英文寫作和演講。",
-      "The lesson explained how to use viva in context. 本課程解釋瞭如何在上下文中使用 viva。"
+      "The crowd shouted viva after the speech. 演說後，群眾高喊萬歲。",
+      "She passed her viva and finished the degree. 她通過口試，完成了學位。"
     ],
     "audienceTags": [
       "general"
@@ -50441,8 +50441,8 @@
     "meaning": "胎生的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Mammals are viviparous animals. 哺乳類是胎生動物。",
-      "The lesson contrasted viviparous species with egg-laying ones. 課程把胎生物種和卵生物種作了對比。"
+      "Most mammals are viviparous. 大多數哺乳類是胎生的。",
+      "The class compared viviparous animals with egg-laying animals. 課堂比較了胎生動物和卵生動物。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -50476,8 +50476,8 @@
     "meaning": "胎生性；胎生狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "Viviparousness is one trait that biologists compare in animals. 胎生性是生物學家比較動物時的一項特徵。",
-      "The report discussed the viviparousness of several fish species. 報告討論了幾種魚類的胎生性。"
+      "Viviparousness is common in mammals. 胎生性在哺乳類中很常見。",
+      "The report compares viviparousness in several fish species. 報告比較了幾種魚類的胎生性。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -52116,11 +52116,11 @@
   },
   {
     "word": "vogue",
-    "meaning": "流行的時尚或風格。",
+    "meaning": "流行；時尚",
     "partOfSpeech": "noun",
     "sentences": [
-      "Miniskirts were the vogue in the '60s. 迷你裙是 60 年代的時尚。",
-      "The term vogue refers to the prevailing fashion or style. 時尚一詞指的是流行的時尚或風格。"
+      "Short jackets are in vogue this winter. 今年冬天短外套很流行。",
+      "The hairstyle went out of vogue years ago. 這種髮型多年前就不流行了。"
     ],
     "audienceTags": [
       "general"
@@ -52199,11 +52199,11 @@
   },
   {
     "word": "voiced",
-    "meaning": "具有特定類型的聲音。",
+    "meaning": "有聲的；發出聲音的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a shrill- voiced little boy 一個聲音尖銳的小男孩",
-      "The report describes the result as voiced. 該報告將結果描述為有聲的。"
+      "The teacher explained the difference between voiced and voiceless sounds. 老師解釋了有聲音和無聲音的差別。",
+      "He voiced his concern during the meeting. 他在會議中表達了自己的擔憂。"
     ],
     "audienceTags": [
       "general"
@@ -52367,11 +52367,11 @@
   },
   {
     "word": "void",
-    "meaning": "不包含任何內容；空的;未佔用或已滿。",
+    "meaning": "空的；無效的；空隙",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Today's youth's brains are sucked void of common sense. 現在的年輕人的大腦已經被吸走了，缺乏常識。",
-      "Something described as void is containing nothing; empty; not occupied or filled. 被描述為空的東西是指什麼都沒有；空的;未被佔用或填充。"
+      "The contract became void after the deadline. 截止日期過後，合約變成無效。",
+      "She felt a void after moving away from home. 搬離家後，她感到一陣空虛。"
     ],
     "audienceTags": [
       "general"
@@ -52846,11 +52846,11 @@
   },
   {
     "word": "volatile",
-    "meaning": "指一個人，很快就會生氣或暴力。",
+    "meaning": "不穩定的；易揮發的；易怒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a volatile man 一個反覆無常的人",
-      "Something described as volatile is of a person, quick to become angry or violent. 被描述為不穩定的事物是指一個人很快就會變得憤怒或暴力。"
+      "Gasoline is volatile and catches fire easily. 汽油容易揮發，也很容易著火。",
+      "The market was volatile after the news. 消息發布後，市場很不穩定。"
     ],
     "audienceTags": [
       "general"
@@ -52893,11 +52893,11 @@
   },
   {
     "word": "volatility",
-    "meaning": "不穩定的狀態。",
+    "meaning": "波動性；不穩定性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term volatility refers to the state of being volatile. 波動性一詞是指波動的狀態。",
-      "The lesson introduced volatility as a useful term to understand. 本課程介紹了波動性作為一個易於理解的有用術語。"
+      "Stock market volatility made investors nervous. 股市波動讓投資人緊張。",
+      "The chemical has high volatility. 這種化學物質揮發性很高。"
     ],
     "audienceTags": [
       "general"
@@ -53644,11 +53644,11 @@
   },
   {
     "word": "volition",
-    "meaning": "選擇的精神力量或能力；意志。",
+    "meaning": "意志；自願選擇",
     "partOfSpeech": "noun",
     "sentences": [
-      "Out of all the factors that can influence a person’s decision, none can match the power of his or her own volition. 在所有能夠影響一個人決定的因素中，沒有一個因素能夠與他或她自己的意志的力量相提並論。",
-      "The term volition refers to The mental power or ability of choosing; the will. 意誌一詞是指選擇的精神力量或能力；意志。"
+      "She left the job of her own volition. 她是自願離開那份工作的。",
+      "The decision must come from your own volition. 這個決定必須出於你自己的意志。"
     ],
     "audienceTags": [
       "general"
@@ -54066,11 +54066,11 @@
   },
   {
     "word": "volt",
-    "meaning": "突然移動以避免推力；招架。",
+    "meaning": "伏特；電壓單位",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term volt refers to a sudden movement to avoid a thrust; a parry. 伏特一詞指的是為了避免推力而突然移動；招架。",
-      "The lesson introduced volt as a useful term to understand. 本課介紹了伏特作為一個易於理解的有用術語。"
+      "The battery is rated at twelve volts. 這顆電池標示為十二伏特。",
+      "The electrician checked the volt reading. 電工檢查了電壓讀數。"
     ],
     "audienceTags": [
       "general"
@@ -54113,11 +54113,11 @@
   },
   {
     "word": "voltaelectricity",
-    "meaning": "electricity generated by chemical action in a voltaic cell",
+    "meaning": "伏打電；由化學作用產生的電",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson explained how voltaelectricity could be produced in a cell. 課程說明了如何在電池中產生 voltaelectricity。",
-      "Early scientists studied voltaelectricity as a new source of power. 早期科學家把 voltaelectricity 當作一種新的能量來源來研究。"
+      "Early scientists studied voltaelectricity in simple cells. 早期科學家在簡單電池中研究伏打電。",
+      "The teacher showed how voltaelectricity can be produced. 老師展示了伏打電如何產生。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -54818,11 +54818,11 @@
   },
   {
     "word": "voluminous",
-    "meaning": "屬於或關於一個或多個卷。",
+    "meaning": "大量的；篇幅很長的；寬鬆的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report describes the result as voluminous. 該報告將結果描述為大量的。",
-      "Everyone noticed the voluminous tone of the message. 每個人都注意到了這則訊息的冗長語氣。"
+      "She carried voluminous notes into the meeting. 她帶著大量筆記進會議室。",
+      "The coat was warm and voluminous. 那件外套溫暖又寬鬆。"
     ],
     "audienceTags": [
       "general"
@@ -55320,11 +55320,11 @@
   },
   {
     "word": "voluptuous",
-    "meaning": "以飽滿、慷慨、愉悅的感覺為特徵或標誌。",
+    "meaning": "豐滿的；令人愉悅的；感官享受的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The plentiful blankets and the voluptuous pillows of the bed called out to my tired body. 床上豐富的毛毯和舒適的枕頭呼喚著我疲憊的身體。",
-      "The report describes the result as voluptuous. 報告將這一結果描述為令人愉悅的。"
+      "The sofa had voluptuous cushions. 那張沙發有厚實柔軟的靠墊。",
+      "The painting uses voluptuous curves and warm colors. 這幅畫使用豐潤曲線和溫暖色彩。"
     ],
     "audienceTags": [
       "general"
@@ -56095,11 +56095,11 @@
   },
   {
     "word": "voodoo",
-    "meaning": "任何一種神奇的或非理性的解決問題的方法。",
+    "meaning": "伏都教；難懂或不理性的做法",
     "partOfSpeech": "noun",
     "sentences": [
-      "I want a real explanation, not this statistical voodoo. 我想要一個真正的解釋，而不是這種統計巫術。",
-      "The term voodoo refers to any sort of magical or irrational approach to a problem. 伏都教一詞指的是任何一種解決問題的神奇或非理性的方法。"
+      "The museum exhibit explained voodoo traditions. 博物館展覽介紹了伏都教傳統。",
+      "I want a clear reason, not financial voodoo. 我想要清楚理由，不要難懂的財務說法。"
     ],
     "audienceTags": [
       "general"
@@ -56107,11 +56107,11 @@
   },
   {
     "word": "voodooism",
-    "meaning": "伏都教的信仰或做法",
+    "meaning": "伏都教信仰或做法",
     "partOfSpeech": "noun",
     "sentences": [
-      "The article explained voodooism as a set of voodoo beliefs and practices. 那篇文章把 voodooism 解釋成一套伏都信仰與儀式。",
-      "Some people misunderstood voodooism because of old stories. 有些人因為舊故事而誤解了 voodooism。"
+      "The article explained voodooism in simple historical terms. 那篇文章用簡單的歷史角度解釋伏都教信仰。",
+      "Some people misunderstand voodooism because of old stories. 有些人因為舊故事而誤解伏都教。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -56365,11 +56365,11 @@
   },
   {
     "word": "vortex",
-    "meaning": "旋風、漩渦或類似的螺旋或柱狀運動物質。",
+    "meaning": "漩渦；旋風",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term vortex refers to a whirlwind, whirlpool, or similarly moving matter in the form of a spiral or column. 術語「渦旋」是指旋風、漩渦或類似的螺旋或柱狀運動物質。",
-      "The lesson introduced vortex as a useful term to understand. 本課程介紹了渦旋這個易於理解的有用術語。"
+      "Water formed a small vortex in the drain. 水在排水口形成小漩渦。",
+      "Dust rose in a spinning vortex. 灰塵在旋轉的氣流中升起。"
     ],
     "audienceTags": [
       "general"
@@ -56929,11 +56929,11 @@
   },
   {
     "word": "voting",
-    "meaning": "持有者擁有作為企業所有者投票的相關權利。",
-    "partOfSpeech": "adjective",
+    "meaning": "投票的；投票行為",
+    "partOfSpeech": "noun",
     "sentences": [
-      "The cumulative voting preferred stock remains voting until all cumulative dividends are paid. 累積 投票權 優先股仍維持 投票權 ，直至支付所有累積股利。 累積投票權優先股仍維持投票權，直到支付所有累積股利。 累積投票權優先股仍維持投票權，約定支付所有累積股利。",
-      "The report describes the result as voting. 報告將結果描述為投票。 報告將結果描述為投票。 報告將結果描述為投票。"
+      "Voting starts at eight in the morning. 投票早上八點開始。",
+      "Only voting members can choose the chair. 只有有投票權的會員可以選主席。"
     ],
     "audienceTags": [
       "general"
@@ -57560,11 +57560,11 @@
   },
   {
     "word": "voyage",
-    "meaning": "航程",
+    "meaning": "航行；旅程",
     "partOfSpeech": "noun",
     "sentences": [
-      "The professor discussed the concept of 'voyage' in great detail. 教授非常詳細地討論了「voyage」的概念。",
-      "Does the definition of 'voyage' change depending on the context? 「voyage」的定義會根據語境而改變嗎？"
+      "The ship began its voyage at dawn. 船在黎明時開始航行。",
+      "Her first voyage across the sea was unforgettable. 她第一次跨海旅程令人難忘。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -57733,11 +57733,11 @@
   },
   {
     "word": "vriddhi",
-    "meaning": "increase; in Sanskrit grammar, a lengthened form",
+    "meaning": "增長；梵語文法中的長化形式",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lesson explained vriddhi as a type of increase in Sanskrit grammar. 那堂課把 vriddhi 解釋為梵語文法中的一種增長形式。",
-      "Linguists discussed vriddhi in the phonology seminar. 語言學家在音韻學研討會上討論 vriddhi。"
+      "The teacher explained vriddhi in Sanskrit grammar. 老師解釋了梵語文法中的長化形式。",
+      "Vriddhi changes the sound of a word in a regular way. 這種長化形式會有規則地改變字音。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -58947,11 +58947,11 @@
   },
   {
     "word": "vulture",
-    "meaning": "從他人的 苦難 protlem=\"proti\";",
+    "meaning": "禿鷹；趁人之危牟利者",
     "partOfSpeech": "noun",
     "sentences": [
-      "Within ten minutes of the accident, the vultures appeared and were organizing lawsuits. 事故發生後不到十分鐘， 禿鷹 就出現了，並正在組織訴訟。 事故發生後不到十分鐘，禿鷹就出現了，並且正在組織訴訟。 事故發生後不到十分鐘，禿鷹就出現了，正在進行組織訴訟。",
-      "The term vulture refers to A person who profits from the suffering of others. 禿鷹一詞是指 從他人的 苦難>>中 獲利 的人。 禿鷹一詞指的是從他人的痛苦中獲利的人。 禿鷹活動是指從他人的交易>>中獲利的人。"
+      "A vulture circled high above the field. 一隻禿鷹在田野上空盤旋。",
+      "He called the dishonest buyer a vulture. 他把那個不誠實的買家稱作趁人之危牟利者。"
     ],
     "audienceTags": [
       "general"

@@ -716,11 +716,11 @@
   },
   {
     "word": "nach",
-    "meaning": "nach-的分離形式",
+    "meaning": "nach- 的分離形式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nach during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nach to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "In the old grammar note, nach appears apart from the main verb. 在那則舊文法註記中，這個分離形式和主要動詞分開出現。",
+      "The teacher marked nach as a separable form in the sentence. 老師把它標為句中的分離形式。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -1141,11 +1141,11 @@
   },
   {
     "word": "Naemorhedinae",
-    "meaning": "罕見或專門用語。",
+    "meaning": "斑羚亞科",
     "partOfSpeech": "noun",
     "sentences": [
-      "The researchers observed a member of the Naemorhedinae subfamily grazing on the steep cliff. 研究人員觀察到一隻斑羚亞科的動物在陡峭的懸崖上吃草。",
-      "We learned about the Naemorhedinae group during our zoology class. 我們在動物學課上學習了斑羚亞科這個類群。"
+      "A member of Naemorhedinae climbed easily along the steep cliff. 一隻斑羚亞科動物輕鬆爬上陡峭山壁。",
+      "The zoo sign explains where Naemorhedinae animals live in the wild. 動物園標示說明斑羚亞科動物在野外的棲地。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -1158,7 +1158,7 @@
   },
   {
     "word": "naemorhedine",
-    "meaning": "罕見或專門用語。",
+    "meaning": "斑羚亞科動物",
     "partOfSpeech": "noun",
     "sentences": [
       "The naemorhedine species is well adapted to rocky mountain environments. 這種斑羚亞科物種非常適應岩石密布的山地環境。",
@@ -1925,7 +1925,7 @@
   },
   {
     "word": "Nahuatlecan",
-    "meaning": "罕見或專門用語。",
+    "meaning": "納瓦特爾語族的；納瓦特爾語族",
     "partOfSpeech": "noun",
     "sentences": [
       "Scientists are studying the history of the Nahuatlecan language family. 科學家正在研究納瓦特爾語系的歷史。",
@@ -2248,11 +2248,11 @@
   },
   {
     "word": "nailbin",
-    "meaning": "罕見或專門用語。",
+    "meaning": "釘子箱；裝釘子的容器",
     "partOfSpeech": "noun",
     "sentences": [
-      "He reached into the nailbin to find the right size for the project. 他伸手進釘子箱裡，尋找適合這項工程的尺寸。",
-      "Please organize the different types of fasteners into each nailbin. 請將不同種類的緊固件分類放入各個釘子箱中。"
+      "Dad kept extra screws and nails in a small nailbin. 爸爸把多餘螺絲和釘子放在小釘子箱裡。",
+      "Please put the loose nails back into the nailbin. 請把散落的釘子放回釘子箱。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3048,7 +3048,7 @@
   },
   {
     "word": "nakhod",
-    "meaning": "罕見或專門用語。",
+    "meaning": "船長；船主",
     "partOfSpeech": "noun",
     "sentences": [
       "The nakhod guided the ship safely through the narrow channel. 船長引導船隻安全通過狹窄的水道。",
@@ -3341,7 +3341,7 @@
   },
   {
     "word": "Namaquan",
-    "meaning": "罕見或專門用語。",
+    "meaning": "納馬誇人的；納馬誇地區的",
     "partOfSpeech": "noun",
     "sentences": [
       "Geologists are interested in the age of the Namaquan rock formations. 地質學家對納馬誇岩層的年代很感興趣。",
@@ -3443,7 +3443,7 @@
   },
   {
     "word": "namda",
-    "meaning": "罕見或專門用語。",
+    "meaning": "氈製地毯",
     "partOfSpeech": "noun",
     "sentences": [
       "The living room was decorated with a colorful namda from India. 客廳裝飾著一張來自印度的彩色氈製地毯。",
@@ -3666,7 +3666,7 @@
   },
   {
     "word": "nammad",
-    "meaning": "罕見或專門用語。",
+    "meaning": "氈毯",
     "partOfSpeech": "noun",
     "sentences": [
       "The traveler bought a handmade nammad while visiting the market. 旅行者在參觀市場時買了一張手工氈毯。",
@@ -4149,7 +4149,7 @@
   },
   {
     "word": "nannander",
-    "meaning": "罕見或專門用語。",
+    "meaning": "矮雄個體；特別小的雄性個體",
     "partOfSpeech": "noun",
     "sentences": [
       "The scientist studied a nannander male in the specific type of algae. 科學家研究了那種特定藻類中的矮雄個體。",
@@ -4336,7 +4336,7 @@
   },
   {
     "word": "nanocephalism",
-    "meaning": "罕見或專門用語。",
+    "meaning": "小頭畸形",
     "partOfSpeech": "noun",
     "sentences": [
       "The clinic specializes in treating cases of nanocephalism. 這間診所專門治療小頭畸形的病例。",
@@ -4438,7 +4438,7 @@
   },
   {
     "word": "nanomelous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "肢體異常短小的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The researcher observed nanomelous features in several animals from the study group. 研究人員在研究小組的幾隻動物身上觀察到肢體異常短小的特徵。",
@@ -4455,7 +4455,7 @@
   },
   {
     "word": "nanomelus",
-    "meaning": "罕見或專門用語。",
+    "meaning": "肢體極度短小者",
     "partOfSpeech": "noun",
     "sentences": [
       "The textbook provides a detailed description of a nanomelus in the genetics chapter. 這本教科書在遺傳學章節中詳細描述了肢體極度短小的發育異常個體。",
@@ -4472,7 +4472,7 @@
   },
   {
     "word": "nanosoma",
-    "meaning": "罕見或專門用語。",
+    "meaning": "身體微小；身體矮小的個體",
     "partOfSpeech": "noun",
     "sentences": [
       "The biologist used the term nanosoma to describe the tiny body of the insect. 生物學家使用這個術語來描述這種昆蟲細小的身體。",
@@ -4506,7 +4506,7 @@
   },
   {
     "word": "nanosomus",
-    "meaning": "罕見或專門用語。",
+    "meaning": "矮小症患者；身體矮小者",
     "partOfSpeech": "noun",
     "sentences": [
       "The medical report documented the health progress of the nanosomus. 醫療報告記錄了這位矮小患者的健康進展。",
@@ -4897,7 +4897,7 @@
   },
   {
     "word": "napecrest",
-    "meaning": "罕見或專門用語。",
+    "meaning": "頸冠；頸背上的羽冠",
     "partOfSpeech": "noun",
     "sentences": [
       "The bird has a distinctive napecrest that stands out during the mating season. 這隻鳥長著獨特的頸冠，在繁殖季節特別明顯。",
@@ -5084,7 +5084,7 @@
   },
   {
     "word": "naphthalenoid",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘類的；具有萘樣結構的",
     "partOfSpeech": "noun",
     "sentences": [
       "Chemists identified several naphthalenoid structures during the experiment. 化學家在實驗中鑑定出幾種萘類結構。",
@@ -5220,7 +5220,7 @@
   },
   {
     "word": "naphthamine",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘胺",
     "partOfSpeech": "noun",
     "sentences": [
       "The textile factory used naphthamine dyes to create vibrant blue fabrics. 紡織廠使用萘胺染料來製造鮮艷的藍色布料。",
@@ -5237,7 +5237,7 @@
   },
   {
     "word": "naphthanthracene",
-    "meaning": "罕見或專門用語。",
+    "meaning": "苯並蒽類化合物",
     "partOfSpeech": "noun",
     "sentences": [
       "Scientists studied the structure of naphthanthracene to understand its properties. 科學家研究了苯駢蔥的結構以了解其特性。",
@@ -5305,7 +5305,7 @@
   },
   {
     "word": "naphthionate",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘胺磺酸鹽的；萘胺磺酸鹽",
     "partOfSpeech": "adjective",
     "sentences": [
       "The laboratory requires a fresh supply of sodium naphthionate for the test. 實驗室需要供應新鮮的萘胺磺酸鈉來進行測試。",
@@ -5322,11 +5322,11 @@
   },
   {
     "word": "naphtho",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘基；與萘有關的化學構詞成分",
     "partOfSpeech": "noun",
     "sentences": [
-      "The lab technician used a naphtho derivative for the chemical experiment. 實驗室技術員在化學實驗中使用了一種萘基衍生物。",
-      "Several naphtho compounds are essential in the production of high-quality dyes. 幾種萘基化合物在高品質染料的生產中是必不可少的。"
+      "The chemistry note uses naphtho- to show a link with naphthalene. 化學筆記用這個構詞成分表示與萘有關。",
+      "Several dye names begin with a naphtho- element. 好幾種染料名稱都以萘基相關成分開頭。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -5424,7 +5424,7 @@
   },
   {
     "word": "naphtholsulphonic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘酚磺酸的",
     "partOfSpeech": "noun",
     "sentences": [
       "The worker carefully mixed the naphtholsulphonic acid in the factory tank. 工人在工廠儲罐中小心地混合萘酚磺酸。",
@@ -5475,7 +5475,7 @@
   },
   {
     "word": "naphthosalol",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘酚薩羅；一種化學物質",
     "partOfSpeech": "noun",
     "sentences": [
       "The chemist analyzed the molecular structure of naphthosalol in the laboratory. 化學家在實驗室分析了萘酚薩羅的分子結構。",
@@ -5492,7 +5492,7 @@
   },
   {
     "word": "naphthous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "石腦油樣的；含石腦油的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The soil samples had a distinct naphthous smell near the old oil well. 舊油井附近的土壤樣本有一股明顯的石腦油味。",
@@ -5509,7 +5509,7 @@
   },
   {
     "word": "naphthoxide",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘氧化物",
     "partOfSpeech": "noun",
     "sentences": [
       "The researcher synthesized a new type of naphthoxide for the chemical test. 研究人員為化學測試合成了一種新型的萘氧化物。",
@@ -5560,7 +5560,7 @@
   },
   {
     "word": "naphthylaminesulphonic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘胺磺酸的",
     "partOfSpeech": "noun",
     "sentences": [
       "The dye industry relies on naphthylaminesulphonic acids for various products. 染料工業的多種產品都依賴於萘胺磺酸。",
@@ -5594,7 +5594,7 @@
   },
   {
     "word": "naphthylic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘基的",
     "partOfSpeech": "noun",
     "sentences": [
       "The scientist identified a naphthylic group within the complex molecule. 科學家在複雜分子中識別出了一個萘基基團。",
@@ -6087,7 +6087,7 @@
   },
   {
     "word": "napthionic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "萘胺磺酸的",
     "partOfSpeech": "noun",
     "sentences": [
       "The chemist added napthionic acid to the mixture to start the reaction. 化學家在混合物中加入萘胺磺酸以引發反應。",
@@ -6138,7 +6138,7 @@
   },
   {
     "word": "Narcaciontes",
-    "meaning": "罕見或專門用語。",
+    "meaning": "電鰩類",
     "partOfSpeech": "noun",
     "sentences": [
       "The marine biologist observed the behavior of Narcaciontes in the shallow bay. 海洋生物學家在淺水灣觀察了電鰩類的行為。",
@@ -6371,11 +6371,11 @@
   },
   {
     "word": "narcistic",
-    "meaning": "自戀的過時形式。",
+    "meaning": "自戀的；narcissistic 的舊式形式",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses narcistic to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter narcistic in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The critic called the character narcistic because he admired only himself. 評論家說那個角色很自戀，因為他只欣賞自己。",
+      "Her narcistic speech made the audience uncomfortable. 她自戀的演說讓觀眾感到不舒服。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -6405,11 +6405,11 @@
   },
   {
     "word": "narcoanesthesia",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉藥誘導的麻醉狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The surgeon discussed the use of narcoanesthesia for the long operation. 外科醫生討論了在長時間手術中使用麻醉藥劑誘導麻醉的方法。",
-      "Narcoanesthesia helps patients remain unconscious and pain-free during surgery. 麻醉藥誘導的麻醉狀態能讓病人在手術過程中保持昏迷且無痛。"
+      "The surgeon discussed narcoanesthesia before the long operation. 長時間手術前，外科醫師討論了麻醉藥誘導麻醉。",
+      "Narcoanesthesia keeps the patient unconscious and pain-free during surgery. 麻醉藥誘導麻醉能讓病人在手術中保持無意識且不疼痛。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -6456,7 +6456,7 @@
   },
   {
     "word": "Narcobatus",
-    "meaning": "罕見或專門用語。",
+    "meaning": "電鰩屬",
     "partOfSpeech": "noun",
     "sentences": [
       "The marine biologist studied how Narcobatus species generate electricity. 海洋生物學家研究了電鰩屬物種如何產生電力。",
@@ -6609,7 +6609,7 @@
   },
   {
     "word": "narcomatous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉昏睡狀態的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The patient remained in a narcomatous state for several hours after the surgery. 手術後，病人保持麻醉昏睡狀態長達數小時。",
@@ -6694,7 +6694,7 @@
   },
   {
     "word": "narcostimulant",
-    "meaning": "罕見或專門用語。",
+    "meaning": "兼具麻醉與興奮作用的物質",
     "partOfSpeech": "noun",
     "sentences": [
       "The scientist tested the new narcostimulant on a small group of volunteers. 科學家在一小群志願者身上測試了這種兼具麻醉與興奮作用的新藥。",
@@ -6745,7 +6745,7 @@
   },
   {
     "word": "narcotia",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉昏迷狀態",
     "partOfSpeech": "noun",
     "sentences": [
       "The patient entered a state of narcotia shortly after the procedure began. 手術開始後不久，病人就進入了昏迷狀態。",
@@ -6813,7 +6813,7 @@
   },
   {
     "word": "narcoticalness",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉性；麻醉效力",
     "partOfSpeech": "noun",
     "sentences": [
       "The scientist measured the narcoticalness of the new herbal medicine. 科學家測量了這種新草藥的麻醉效力。",
@@ -6847,7 +6847,7 @@
   },
   {
     "word": "narcoticness",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉性",
     "partOfSpeech": "noun",
     "sentences": [
       "The study discussed the varying levels of narcoticness in different plants. 該研究討論了不同植物中麻醉特性的不同程度。",
@@ -6983,7 +6983,7 @@
   },
   {
     "word": "narcous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "麻醉性的；令人昏睡的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The flower emitted a heavy, narcous scent that made the gardener sleepy. 這種花散發出一股濃郁的麻醉香氣，讓園丁感到昏昏欲睡。",
@@ -7653,11 +7653,11 @@
   },
   {
     "word": "narrowhearted",
-    "meaning": "罕見或專門用語。",
+    "meaning": "心胸狹窄的；小氣的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The narrowhearted man refused to share his food with the hungry child. 那個小心眼的人拒絕與飢餓的孩子分享他的食物。",
-      "Her narrowhearted attitude made it very difficult for her to cooperate with others. 她狹隘的心胸讓她很難與他人合作。"
+      "His narrowhearted response made the argument worse. 他心胸狹窄的回應讓爭執更嚴重。",
+      "Do not be narrowhearted when a friend needs help. 朋友需要幫忙時，不要太小氣。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -7670,7 +7670,7 @@
   },
   {
     "word": "narrowheartedness",
-    "meaning": "罕見或專門用語。",
+    "meaning": "心胸狹窄；小氣",
     "partOfSpeech": "noun",
     "sentences": [
       "His narrowheartedness made it difficult for him to accept new ideas. 他的心胸狹隘使他難以接受新想法。",
@@ -8242,7 +8242,7 @@
   },
   {
     "word": "nasethmoid",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻篩骨區域",
     "partOfSpeech": "noun",
     "sentences": [
       "The doctor examined the patient's nasethmoid region for signs of injury. 醫生檢查了患者的鼻篩骨區域是否有受傷跡象。",
@@ -8293,7 +8293,7 @@
   },
   {
     "word": "nashgob",
-    "meaning": "罕見或專門用語。",
+    "meaning": "多嘴的人；愛嘮叨的人",
     "partOfSpeech": "noun",
     "sentences": [
       "The neighbors called him a nashgob because he talked so much. 鄰居們稱他為多嘴的人，因為他話實在太多了。",
@@ -8412,7 +8412,7 @@
   },
   {
     "word": "Nasicornia",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻角類；犀牛類動物",
     "partOfSpeech": "noun",
     "sentences": [
       "Nasicornia includes various species of rhinoceros found in Africa and Asia. 鼻角類包括在非洲和亞洲發現的多種犀牛。",
@@ -8480,7 +8480,7 @@
   },
   {
     "word": "nasilabial",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻唇的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The doctor examined the nasilabial folds on the patient's face. 醫生檢查了病人臉上的鼻唇溝。",
@@ -8497,7 +8497,7 @@
   },
   {
     "word": "nasillate",
-    "meaning": "罕見或專門用語。",
+    "meaning": "帶鼻音說話",
     "partOfSpeech": "adjective",
     "sentences": [
       "A heavy cold can cause a person to nasillate when they talk. 重感冒會導致一個人在說話時帶有鼻音。",
@@ -8514,7 +8514,7 @@
   },
   {
     "word": "nasillation",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻音；帶鼻音說話",
     "partOfSpeech": "noun",
     "sentences": [
       "The patient's nasillation became more noticeable after the surgery. 病人的鼻音在手術後變得更加明顯。",
@@ -8616,7 +8616,7 @@
   },
   {
     "word": "nasitis",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻炎",
     "partOfSpeech": "noun",
     "sentences": [
       "Chronic nasitis can cause persistent sneezing and congestion. 慢性鼻炎會導致持續的打噴嚏和鼻塞。",
@@ -8667,7 +8667,7 @@
   },
   {
     "word": "nasoantral",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻竇的；鼻腔與上頜竇之間的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The surgeon performed a nasoantral irrigation to clear the sinus. 外科醫生進行了鼻竇沖洗以清理竇部。",
@@ -8684,7 +8684,7 @@
   },
   {
     "word": "nasobasilar",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻底的；鼻根至顱底的",
     "partOfSpeech": "noun",
     "sentences": [
       "The anthropologist calculated the nasobasilar index of the fossil. 人類學家計算了該化石的鼻底指數。",
@@ -8735,7 +8735,7 @@
   },
   {
     "word": "nasoccipital",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻枕的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The doctor measured the nasoccipital diameter of the infant's head. 醫生測量了嬰兒頭部的鼻枕徑。",
@@ -8888,7 +8888,7 @@
   },
   {
     "word": "nasomalar",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻顴部的",
     "partOfSpeech": "noun",
     "sentences": [
       "The surgeon repaired the nasomalar fracture after the car accident. 車禍發生後，外科醫生修復了病患鼻顴骨處的骨折。",
@@ -8939,7 +8939,7 @@
   },
   {
     "word": "nasoorbital",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻眶的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The patient required surgery to repair a nasoorbital injury. 患者需要接受手術來修復鼻眶損傷。",
@@ -9036,7 +9036,7 @@
   },
   {
     "word": "nasoprognathic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻部前突的",
     "partOfSpeech": "noun",
     "sentences": [
       "The researcher measured the nasoprognathic angle of the skull. 研究人員測量了頭骨的鼻突角度。",
@@ -9053,7 +9053,7 @@
   },
   {
     "word": "nasoprognathism",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻部前突",
     "partOfSpeech": "noun",
     "sentences": [
       "Nasoprognathism is a characteristic often analyzed by physical anthropologists. 鼻部前突是體質人類學家經常分析的一種特徵。",
@@ -9121,7 +9121,7 @@
   },
   {
     "word": "nasosinuitis",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻竇炎",
     "partOfSpeech": "noun",
     "sentences": [
       "The patient was diagnosed with nasosinuitis after complaining of facial pain. 患者在抱怨面部疼痛後被診斷出患有鼻竇炎。",
@@ -9155,7 +9155,7 @@
   },
   {
     "word": "nasosubnasal",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鼻下區域的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The nurse applied ointment to the nasosubnasal area to treat the rash. 護士在鼻下區域塗抹藥膏以治療皮疹。",
@@ -9291,7 +9291,7 @@
   },
   {
     "word": "nassology",
-    "meaning": "罕見或專門用語。",
+    "meaning": "標本製作學",
     "partOfSpeech": "noun",
     "sentences": [
       "He developed an interest in nassology while working at a biology lab. 他在生物實驗室工作時，對標本製作學產生了興趣。",
@@ -9934,7 +9934,7 @@
   },
   {
     "word": "natchbone",
-    "meaning": "罕見或專門用語。",
+    "meaning": "臀骨；臀部帶骨肉",
     "partOfSpeech": "noun",
     "sentences": [
       "The butcher recommended the natchbone for a slow-cooked roast. 屠夫推薦使用臀骨部位的肉來進行慢火烤製。",
@@ -9968,7 +9968,7 @@
   },
   {
     "word": "Natchezan",
-    "meaning": "罕見或專門用語。",
+    "meaning": "納切茲人的；納切茲文化的",
     "partOfSpeech": "noun",
     "sentences": [
       "The team found several Natchezan tools at the archaeological site. 團隊在考古遺址發現了幾件納切茲文化的工具。",
@@ -10222,7 +10222,7 @@
   },
   {
     "word": "naticine",
-    "meaning": "罕見或專門用語。",
+    "meaning": "玉螺科的；玉螺科貝類",
     "partOfSpeech": "noun",
     "sentences": [
       "We found a beautiful naticine shell while walking on the beach. 我們在海邊散步時發現了一個漂亮的玉螺科貝殼。",
@@ -10344,7 +10344,7 @@
   },
   {
     "word": "national gallery",
-    "meaning": "罕見或專門用語。",
+    "meaning": "國家美術館",
     "partOfSpeech": "noun",
     "sentences": [
       "We saw many famous paintings at the National Gallery today. 我們今天在國家美術館看到了許多著名的畫作。",
@@ -10527,7 +10527,7 @@
   },
   {
     "word": "nationalty",
-    "meaning": "罕見或專門用語。",
+    "meaning": "國籍；nationality 的錯拼形式",
     "partOfSpeech": "noun",
     "sentences": [
       "The clerk asked him to write down his nationalty on the form. 辦事員要求他在表格上寫下他的國籍。",
@@ -10777,11 +10777,11 @@
   },
   {
     "word": "natrium",
-    "meaning": "鈉的同義詞。",
+    "meaning": "鈉",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that natrium means Synonym of sodium. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter natrium in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "Natrium is the source of the chemical symbol Na. 鈉的化學符號來自這個拉丁名稱。",
+      "The old label used natrium instead of the modern word sodium. 舊標籤使用這個拉丁名稱，而不是現代常用的鈉。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -10947,7 +10947,7 @@
   },
   {
     "word": "natteredness",
-    "meaning": "罕見或專門用語。",
+    "meaning": "嘮叨；碎碎念",
     "partOfSpeech": "noun",
     "sentences": [
       "Her constant natteredness made it hard for me to concentrate. 她不斷的碎碎念讓我難以集中注意力。",
@@ -11015,7 +11015,7 @@
   },
   {
     "word": "nattle",
-    "meaning": "罕見或專門用語。",
+    "meaning": "發出格格聲；嘎嘎作響",
     "partOfSpeech": "noun",
     "sentences": [
       "The small stones would nattle inside the empty tin can. 小石子在空罐頭盒裡發出格格聲。",
@@ -11049,7 +11049,7 @@
   },
   {
     "word": "natuary",
-    "meaning": "罕見或專門用語。",
+    "meaning": "助產所",
     "partOfSpeech": "noun",
     "sentences": [
       "The village used the small cottage as a natuary for many years. 村子多年來一直將那間小木屋用作助產所。",
@@ -11134,11 +11134,11 @@
   },
   {
     "word": "naturalist",
-    "meaning": "自然主義的同義詞。",
+    "meaning": "自然主義的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses naturalist to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter naturalist in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The novel has a naturalist style and shows life without decoration. 這本小說有自然主義風格，直接呈現生活原貌。",
+      "Her naturalist paintings focus on ordinary workers and real places. 她的自然主義畫作聚焦於普通勞工和真實場所。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -11398,11 +11398,11 @@
   },
   {
     "word": "naturistically",
-    "meaning": "以自然主義的方式。",
+    "meaning": "以自然主義的方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened naturistically during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample naturistically to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The painter treated the scene naturistically, with little idealization. 畫家以自然主義方式處理這個場景，幾乎不加理想化。",
+      "She wrote naturistically about village life and daily labor. 她以自然主義方式描寫村莊生活與日常勞動。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -11955,7 +11955,7 @@
   },
   {
     "word": "nauseaproof",
-    "meaning": "罕見或專門用語。",
+    "meaning": "防暈防吐的",
     "partOfSpeech": "noun",
     "sentences": [
       "The pilot recommended taking some nauseaproof pills before the long flight. 飛行員建議在長途飛行前服用一些防嘔吐的藥丸。",
@@ -12241,7 +12241,7 @@
   },
   {
     "word": "Nautilacea",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鸚鵡螺超科",
     "partOfSpeech": "noun",
     "sentences": [
       "Scientists study Nautilacea to understand how ancient sea creatures lived. 科學家研究鸚鵡螺超科以瞭解古代海洋生物如何生活。",
@@ -12258,7 +12258,7 @@
   },
   {
     "word": "nautilacean",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鸚鵡螺類生物",
     "partOfSpeech": "noun",
     "sentences": [
       "Every nautilacean has a unique shell pattern that protects it. 每隻鸚鵡螺類生物都有獨特的殼紋來保護自己。",
@@ -12360,7 +12360,7 @@
   },
   {
     "word": "nautiloidean",
-    "meaning": "罕見或專門用語。",
+    "meaning": "鸚鵡螺類的；鸚鵡螺類生物",
     "partOfSpeech": "noun",
     "sentences": [
       "The deep-sea probe captured images of a living nautiloidean. 深海探測器捕捉到了活生生的鸚鵡螺類生物影像。",
@@ -12508,7 +12508,7 @@
   },
   {
     "word": "navalistically",
-    "meaning": "罕見或專門用語。",
+    "meaning": "以海軍方式；從海軍角度",
     "partOfSpeech": "adverb",
     "sentences": [
       "The harbor's defenses were navalistically structured to protect the coastline from intruders. 港口的防禦體系以海軍特有的結構建立，用以保護海岸線免受入侵者侵害。",
@@ -12830,7 +12830,7 @@
   },
   {
     "word": "naviculaeform",
-    "meaning": "罕見或專門用語。",
+    "meaning": "船形的",
     "partOfSpeech": "noun",
     "sentences": [
       "The botanist described the seeds as having a distinct naviculaeform shape. 植物學家將這些種子描述為具有明顯的船形外觀。",
@@ -12864,7 +12864,7 @@
   },
   {
     "word": "naviculare",
-    "meaning": "罕見或專門用語。",
+    "meaning": "舟骨",
     "partOfSpeech": "noun",
     "sentences": [
       "The X-ray showed a small crack in the patient's naviculare. X光片顯示病人的舟骨有一條微小的裂痕。",
@@ -13069,7 +13069,7 @@
   },
   {
     "word": "navigerous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "可通航的；適合船隻通行的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The deep, navigerous harbor can accommodate the largest tankers. 這個深邃且可通行船隻的港口可以容納最大的油輪。",
@@ -13086,7 +13086,7 @@
   },
   {
     "word": "navipendular",
-    "meaning": "罕見或專門用語。",
+    "meaning": "船隻擺動測量的",
     "partOfSpeech": "noun",
     "sentences": [
       "The engineer reviewed the navipendular readings after the storm. 工程師在風暴過後審查了船隻擺動儀的讀數。",
@@ -13103,7 +13103,7 @@
   },
   {
     "word": "navipendulum",
-    "meaning": "罕見或專門用語。",
+    "meaning": "船隻擺錘；測量船身擺動的裝置",
     "partOfSpeech": "noun",
     "sentences": [
       "The navipendulum is an essential tool for monitoring the ship's balance. 船隻擺錘是監控船隻平衡的重要工具。",
@@ -13175,11 +13175,11 @@
   },
   {
     "word": "naw",
-    "meaning": "not的發音拼寫。",
+    "meaning": "不；不是的口語拼寫",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for naw explains that it means Pronunciation spelling of not. 條目說明這個字表示「not的發音拼寫」。",
-      "Readers can still meet naw in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "Naw, I do not want another cup of coffee. 不，我不想再喝一杯咖啡。",
+      "He laughed and said, “Naw, that was not my idea.” 他笑著說：「不，那不是我的主意。」"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -13226,7 +13226,7 @@
   },
   {
     "word": "nawt",
-    "meaning": "罕見或專門用語。",
+    "meaning": "什麼也沒有；nothing 的方言形式",
     "partOfSpeech": "noun",
     "sentences": [
       "The old man complained that he had nawt to eat for dinner. 老人抱怨說他晚餐什麼都沒得吃。",
@@ -13396,7 +13396,7 @@
   },
   {
     "word": "Nazarate",
-    "meaning": "罕見或專門用語。",
+    "meaning": "拿細耳人的；拿細耳誓願的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The historical text discusses the rules of the Nazarate vow. 歷史文本討論了拿細耳人誓願的規則。",
@@ -13667,7 +13667,7 @@
   },
   {
     "word": "Nazirate",
-    "meaning": "罕見或專門用語。",
+    "meaning": "拿細耳人的；拿細耳傳統的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The priest explained the requirements for entering the Nazirate. 祭司解釋了加入拿細耳人行列的要求。",
@@ -13701,7 +13701,7 @@
   },
   {
     "word": "Naziritic",
-    "meaning": "罕見或專門用語。",
+    "meaning": "拿細耳人的；與拿細耳人有關的",
     "partOfSpeech": "noun",
     "sentences": [
       "The community followed strict Naziritic laws for many years. 該社區多年來一直遵循嚴格的拿細耳人法律。",
@@ -13718,11 +13718,11 @@
   },
   {
     "word": "Nazism",
-    "meaning": "支持大部分或全部意識形態的派生、模仿或其他新納粹團體的意識形態。",
+    "meaning": "納粹主義",
     "partOfSpeech": "noun",
     "sentences": [
-      "Many people protested against the rise of Nazism in the neighborhood. 許多人抗議鄰里間納粹主義的興起。",
-      "Students learned about the history of Nazism and its impact on the world. 學生們學習了納粹主義的歷史及其對世界的影響。"
+      "The class discussed how Nazism rose in Germany before World War II. 課堂討論第二次世界大戰前納粹主義如何在德國興起。",
+      "The museum explains the harm caused by Nazism and racial hatred. 博物館說明納粹主義與種族仇恨造成的傷害。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -14008,11 +14008,11 @@
   },
   {
     "word": "nearabouts",
-    "meaning": "近乎的同義詞。",
+    "meaning": "在附近；大約",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nearabouts during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nearabouts to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The old road should be nearabouts, just past the bridge. 舊路應該就在附近，過橋後不遠。",
+      "He said the cost was fifty dollars or nearabouts. 他說費用大約是五十美元。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -14304,11 +14304,11 @@
   },
   {
     "word": "neath",
-    "meaning": "下面。",
+    "meaning": "在下面；beneath 的縮略或詩體形式",
     "partOfSpeech": "preposition",
     "sentences": [
-      "The entry for neath explains that it means Beneath. 條目說明這個字表示「下面」。",
-      "Readers can still meet neath in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The cat slept neath the old wooden chair. 貓睡在舊木椅下面。",
+      "They rested neath the trees after the long walk. 長途步行後，他們在樹下休息。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -15213,11 +15213,11 @@
   },
   {
     "word": "necessitarian",
-    "meaning": "屬於或關於必然性或必然主義：反對自由主義。阿米念派與加爾文主義者糾纏在一起，加爾文主義者又使阿民念派陷入矛盾的迷宮。自由意志的倡議者訴諸良心和本能──訴諸對公平應有的先驗意識。必然主義者依賴事實的經驗現實。弗勞德，加爾文主義。（《世紀字典》，世紀公司，紐約，1911年）。",
+    "meaning": "必然論的；相信一切皆由必然性決定的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses necessitarian to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter necessitarian in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "His necessitarian view left little room for free will. 他的必然論觀點幾乎沒有給自由意志留下空間。",
+      "The debate compared necessitarian ideas with belief in personal choice. 這場辯論比較了必然論思想與個人選擇信念。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -15673,11 +15673,11 @@
   },
   {
     "word": "necklaceweed",
-    "meaning": "斑莓的同義詞。",
+    "meaning": "斑莓；一種植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that necklaceweed means Synonym of baneberry. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter necklaceweed in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "The hikers saw necklaceweed growing beside the shaded trail. 健行者看到斑莓長在陰涼步道旁。",
+      "Do not eat necklaceweed berries unless an expert says they are safe. 除非專家確認安全，否則不要吃斑莓的果實。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -16382,11 +16382,11 @@
   },
   {
     "word": "necrophilia",
-    "meaning": "對屍體的病態吸引力。",
+    "meaning": "戀屍癖；對屍體的病態吸引",
     "partOfSpeech": "noun",
     "sentences": [
-      "The thriller movie explores the dark and disturbing theme of necrophilia. 這部驚悚電影探討了戀屍癖這個黑暗且令人不安的主題。",
-      "Medical students learned about the psychological roots of necrophilia. 醫學生學習了關於戀屍癖的心理根源。"
+      "The psychology textbook treats necrophilia as a rare and serious disorder. 心理學教科書把戀屍癖視為罕見且嚴重的障礙。",
+      "The article mentioned necrophilia only in a forensic context. 那篇文章只在法醫脈絡中提到戀屍癖。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -17113,11 +17113,11 @@
   },
   {
     "word": "nectarium",
-    "meaning": "蜜腺的同義詞。",
+    "meaning": "蜜腺",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that nectarium means Synonym of nectary. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter nectarium in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "The flower’s nectarium attracts bees with sweet nectar. 花的蜜腺用甜蜜花蜜吸引蜜蜂。",
+      "Under the lens, the nectarium looked like a tiny cup. 在放大鏡下，蜜腺看起來像小杯子。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -18896,11 +18896,11 @@
   },
   {
     "word": "negatron",
-    "meaning": "電子的同義詞。",
+    "meaning": "電子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that negatron means Synonym of electron. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter negatron in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "Older physics books sometimes used negatron for an electron. 較早的物理書有時用這個舊稱表示電子。",
+      "The diagram labels the negative particle as a negatron. 圖中把帶負電的粒子標為電子。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -20379,11 +20379,11 @@
   },
   {
     "word": "neighbourlike",
-    "meaning": "鄰裡的同義詞。",
+    "meaning": "像鄰居般友善的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses neighbourlike to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter neighbourlike in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "Her neighbourlike kindness made the new family feel welcome. 她像鄰居般的友善讓新搬來的一家人感到受歡迎。",
+      "He gave a neighbourlike wave as we passed his garden. 我們經過他的花園時，他友善地像鄰居般揮手。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -21059,11 +21059,11 @@
   },
   {
     "word": "Nemathelminthes",
-    "meaning": "罕見或專門用語。",
+    "meaning": "線形動物；舊分類中的線蟲等類群",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that Nemathelminthes means rare or specialized English term. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter Nemathelminthes in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "Older textbooks grouped roundworms under Nemathelminthes. 較早的教科書把線蟲等歸在線形動物類群下。",
+      "The teacher said Nemathelminthes is mostly a historical classification. 老師說線形動物多半是舊式分類名稱。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -21178,11 +21178,11 @@
   },
   {
     "word": "nematocide",
-    "meaning": "nematocida的陰性複數形式",
-    "partOfSpeech": "adjective",
+    "meaning": "殺線蟲劑",
+    "partOfSpeech": "noun",
     "sentences": [
-      "The report uses nematocide to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nematocide in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The farmer used a nematocide to protect the tomato roots. 農夫使用殺線蟲劑保護番茄根部。",
+      "A strong nematocide should be handled with care. 強效殺線蟲劑應小心使用。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -21314,11 +21314,11 @@
   },
   {
     "word": "nematogenous",
-    "meaning": "罕見或專門用語。",
+    "meaning": "產生線蟲的；由線蟲形成的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nematogenous to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nematogenous in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The lab report described a nematogenous stage in the sample. 實驗報告描述樣本中的產線蟲階段。",
+      "Nematogenous tissue was visible under the microscope. 顯微鏡下可以看到產生線蟲的組織。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -21671,11 +21671,11 @@
   },
   {
     "word": "Nemertinea",
-    "meaning": "Nemertea的同義詞",
+    "meaning": "紐形動物門；帶形蟲類",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that Nemertinea means Synonym of Nemertea. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter Nemertinea in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "Nemertinea are often called ribbon worms. 紐形動物常被稱為帶形蟲。",
+      "The aquarium guide showed a long marine worm from Nemertinea. 水族館導覽展示了一種紐形動物的長形海生蠕蟲。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -21705,11 +21705,11 @@
   },
   {
     "word": "Nemertini",
-    "meaning": "Nemertea的同義詞",
+    "meaning": "紐形動物；帶形蟲類",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that Nemertini means Synonym of Nemertea. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter Nemertini in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "Nemertini have long, soft bodies like ribbons. 紐形動物身體細長柔軟，像帶子一樣。",
+      "The student chose Nemertini for her marine biology report. 那名學生選擇紐形動物作為海洋生物報告主題。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -23094,11 +23094,11 @@
   },
   {
     "word": "neologically",
-    "meaning": "以一種新的方式。",
+    "meaning": "以新詞或新用法的方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened neologically during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample neologically to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The poet wrote neologically and invented several playful words. 詩人以新詞方式寫作，創造了幾個有趣的字。",
+      "Teenagers often speak neologically when a new trend appears online. 網路新潮流出現時，青少年常會使用新詞說話。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -29457,11 +29457,11 @@
   },
   {
     "word": "netherwards",
-    "meaning": "下界的同義詞。",
+    "meaning": "向下方；往下界",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened netherwards during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample netherwards to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The tunnel sloped netherwards into the dark cellar. 隧道向下延伸到昏暗的地窖。",
+      "Water ran netherwards along the stone steps. 水沿著石階往下流。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -41698,11 +41698,11 @@
   },
   {
     "word": "nil",
-    "meaning": "不，沒有。",
+    "meaning": "沒有；零",
     "partOfSpeech": "determiner",
     "sentences": [
-      "The entry for nil explains that it means No, not any. 條目說明這個字表示「不，沒有」。",
-      "Readers can still meet nil in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The home team won the match two nil. 主隊以二比零贏得比賽。",
+      "After the repair, the error count dropped to nil. 修復後，錯誤數降為零。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -43974,11 +43974,11 @@
   },
   {
     "word": "nitchevo",
-    "meaning": "沒關係;不管",
+    "meaning": "沒關係；不要緊",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for nitchevo explains that it means never mind; no matter. 條目說明這個字表示「沒關係」。",
-      "Readers can still meet nitchevo in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "“Nitchevo,” she said, and waved away the small mistake. 她說「沒關係」，揮手表示那個小錯不重要。",
+      "He used nitchevo to calm his friend after the delay. 延誤後，他用「不要緊」安慰朋友。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -46043,11 +46043,11 @@
   },
   {
     "word": "nix",
-    "meaning": "不！一點也不！",
+    "meaning": "不；一點也不",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for nix explains that it means No! Not at all!. 條目說明這個字表示「不！一點也不！」。",
-      "Readers can still meet nix in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "Nix, I am not paying that much for a used bike. 不，我不會花那麼多錢買二手腳踏車。",
+      "When asked if he wanted more soup, he said, “Nix.” 被問到要不要再來點湯時，他說：「不用。」"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -46995,11 +46995,11 @@
   },
   {
     "word": "nock",
-    "meaning": "將箭頭安裝到弓弦上。",
+    "meaning": "把箭扣到弓弦上",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for nock explains that it means Fit the arrow to your bowstring. 條目說明這個字表示「將箭頭安裝到弓弦上」。",
-      "Readers can still meet nock in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The coach called “nock” before the archers raised their bows. 教練喊「扣箭」後，弓箭手才舉弓。",
+      "At the command to nock, she set the arrow on the string. 聽到扣箭指令時，她把箭搭上弓弦。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -48461,11 +48461,11 @@
   },
   {
     "word": "noel",
-    "meaning": "紀念聖誕節的願望或表達。",
+    "meaning": "聖誕頌歌；聖誕祝詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for noel explains that it means wish or expression of commemoration of Christmas. 條目說明這個字表示「紀念聖誕節的願望或表達」。",
-      "Readers can still meet noel in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The choir sang “noel” softly at the end of the service. 唱詩班在禮拜結束時輕聲唱出聖誕頌歌。",
+      "The card was decorated with the word noel and a small star. 卡片上裝飾著聖誕祝詞和一顆小星星。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -48478,11 +48478,11 @@
   },
   {
     "word": "Noel",
-    "meaning": "紀念聖誕節的願望或表達。",
+    "meaning": "聖誕頌歌；聖誕祝詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for Noel explains that it means wish or expression of commemoration of Christmas. 條目說明這個字表示「紀念聖誕節的願望或表達」。",
-      "Readers can still meet Noel in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The children shouted “Noel” during the Christmas play. 孩子們在聖誕劇中喊出聖誕祝詞。",
+      "A bright Noel sign hung above the church door. 教堂門上掛著明亮的聖誕祝詞標誌。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -50716,11 +50716,11 @@
   },
   {
     "word": "non",
-    "meaning": "無的過時形式。",
+    "meaning": "否定詞；無的舊式形式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened non during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample non to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "In old text, non may appear where modern English uses not. 在舊文本中，這個舊式否定詞可能出現在現代英語表示否定的位置。",
+      "The editor added a note explaining the old negative form. 編輯加上註解，說明這個舊式否定形式。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -53773,11 +53773,11 @@
   },
   {
     "word": "nonarmigerous",
-    "meaning": "不貪婪。",
+    "meaning": "無紋章的；沒有佩帶武器資格的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nonarmigerous to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nonarmigerous in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The family was listed as nonarmigerous in the old record. 舊紀錄中，這個家族被列為無紋章家族。",
+      "A nonarmigerous person had no recognized coat of arms. 無紋章者沒有被承認的家族紋章。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -54759,11 +54759,11 @@
   },
   {
     "word": "nonauthoritative",
-    "meaning": "不權威。",
+    "meaning": "非權威的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nonauthoritative to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nonauthoritative in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "Use this page as a quick guide, not as an authoritative source. 這頁只能當快速參考，不是權威來源。",
+      "The article is nonauthoritative and should be checked against official data. 這篇文章並非權威資料，應與官方資料比對。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -58728,11 +58728,11 @@
   },
   {
     "word": "noncompetitively",
-    "meaning": "以非競爭的方式。",
+    "meaning": "以非競爭方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened noncompetitively during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample noncompetitively to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The children played noncompetitively so everyone could enjoy the game. 孩子們以非競爭方式玩遊戲，讓每個人都能享受其中。",
+      "The grant was awarded noncompetitively to the public clinic. 這筆補助以非競爭方式撥給公立診所。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -59867,11 +59867,11 @@
   },
   {
     "word": "nonconformistically",
-    "meaning": "以一種不墨守成規的方式。",
+    "meaning": "以不墨守成規的方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nonconformistically during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nonconformistically to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "She dressed nonconformistically and ignored fashion rules. 她穿著不墨守成規，完全不理會流行規則。",
+      "The artist worked nonconformistically throughout his career. 那位藝術家一生都以不從眾的方式創作。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -64858,11 +64858,11 @@
   },
   {
     "word": "nondictionary",
-    "meaning": "不屬於、不屬於或不存在於字典中。",
+    "meaning": "非字典收錄的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nondictionary to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nondictionary in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The game allows some nondictionary words as names. 這個遊戲允許把某些非字典詞當作名字。",
+      "She marked every nondictionary spelling in the student essay. 她標出學生作文中每個非字典收錄的拼法。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -68197,11 +68197,11 @@
   },
   {
     "word": "nonequilateral",
-    "meaning": "不等邊。",
+    "meaning": "不等邊的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The carpenter had to cut a nonequilateral triangle for the roof design. 木工必須為屋頂設計裁切一個不等邊三角形。",
-      "Students learned how to calculate the area of a nonequilateral shape. 學生們學習了如何計算不等邊形狀的面積。"
+      "The tile was cut into a nonequilateral triangle. 那片磁磚被切成不等邊三角形。",
+      "A nonequilateral shape can still look balanced in a design. 不等邊圖形在設計中仍可能看起來平衡。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -72652,11 +72652,11 @@
   },
   {
     "word": "nongraphitic",
-    "meaning": "不是圖形。",
+    "meaning": "非石墨質的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nongraphitic to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nongraphitic in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The sample was nongraphitic even though it contained carbon. 樣本雖含碳，但並非石墨質。",
+      "The lab separated graphitic and nongraphitic material before testing. 實驗室在測試前先分開石墨質與非石墨質材料。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -74556,11 +74556,11 @@
   },
   {
     "word": "noninductively",
-    "meaning": "以非感應方式。",
+    "meaning": "以非歸納方式；非感應地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened noninductively during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample noninductively to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The argument was built noninductively, starting from a fixed rule. 這個論證以非歸納方式建立，從固定規則出發。",
+      "The device transfers power noninductively through a direct connection. 這個裝置透過直接連接，以非感應方式傳輸電力。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -82441,11 +82441,11 @@
   },
   {
     "word": "nonplane",
-    "meaning": "不是躺在一架飛機上。",
+    "meaning": "非平面的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nonplane to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nonplane in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The designer used a nonplane surface for the sculpture. 設計師為雕塑使用了非平面表面。",
+      "A nonplane curve can be difficult to draw on flat paper. 非平面曲線很難畫在平紙上。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -84121,11 +84121,11 @@
   },
   {
     "word": "nonprojectively",
-    "meaning": "以非投影的方式。",
+    "meaning": "以非投影方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nonprojectively during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nonprojectively to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The diagram was drawn nonprojectively to keep the local angles clear. 這張圖以非投影方式繪製，以保留局部角度。",
+      "The model treats the surface nonprojectively in this section. 這個模型在本節以非投影方式處理表面。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -93774,11 +93774,11 @@
   },
   {
     "word": "nonsymbiotically",
-    "meaning": "以一種非共生的方式。",
+    "meaning": "以非共生方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nonsymbiotically during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nonsymbiotically to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The two organisms lived nonsymbiotically in the same tank. 這兩種生物在同一水槽中以非共生方式生活。",
+      "The bacteria grew nonsymbiotically rather than relying on a host. 這些細菌以非共生方式生長，而不是依賴宿主。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -101908,11 +101908,11 @@
   },
   {
     "word": "nosographically",
-    "meaning": "在呼吸學方面。",
+    "meaning": "按疾病分類地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nosographically during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nosographically to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The cases were arranged nosographically in the medical report. 醫療報告按疾病分類整理病例。",
+      "The researcher described the symptoms nosographically before discussing treatment. 研究者先按疾病分類描述症狀，再討論治療。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -102317,11 +102317,11 @@
   },
   {
     "word": "nostocaceous",
-    "meaning": "屬於藍細菌科念珠菌科。",
+    "meaning": "念珠藻科的；屬於藍綠菌一類的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The biologist identified a nostocaceous alga in the sample from the lake. 生物學家在湖水樣本中鑑定出一種念珠藻科的藻類。",
-      "Students learned about the nitrogen-fixing abilities of nostocaceous organisms. 學生們學習了念珠藻科生物的固氮能力。"
+      "The biologist found nostocaceous colonies in the wet soil. 生物學家在潮濕土壤中發現念珠藻科群落。",
+      "Nostocaceous organisms can help fix nitrogen in some environments. 念珠藻科生物在某些環境中能幫助固氮。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -105928,11 +105928,11 @@
   },
   {
     "word": "nouther",
-    "meaning": "既不，也不",
+    "meaning": "既不，也不；neither nor 的舊式形式",
     "partOfSpeech": "conjunction",
     "sentences": [
-      "The entry for nouther explains that it means neither, nor. 條目說明這個字表示「既不，也不」。",
-      "Readers can still meet nouther in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "The poem uses nouther where modern English would use neither. 這首詩用舊式說法表示「既不」。",
+      "He chose nouther bread nor cake in the old tale. 在那則老故事裡，他麵包和蛋糕都沒有選。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -106392,11 +106392,11 @@
   },
   {
     "word": "novelettist",
-    "meaning": "中篇小說作家。",
+    "meaning": "中篇小說作家",
     "partOfSpeech": "noun",
     "sentences": [
-      "The glossary explains that novelettist means writer of novelettes. 詞彙表會說明這個詞的意思。",
-      "Readers may encounter novelettist in specialist books or historical writing. 讀者可能會在專業書籍或較早的文獻中看到這個詞。"
+      "The novelettist published short romantic stories in magazines. 那位中篇小說寫手在雜誌上發表短篇愛情故事。",
+      "A good novelettist can build a full plot in limited space. 好的中篇小說寫手能在有限篇幅中建立完整情節。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -106598,11 +106598,11 @@
   },
   {
     "word": "novelly",
-    "meaning": "以一種新穎的方式。",
+    "meaning": "以新穎方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened novelly during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample novelly to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The app uses location data novelly to guide visitors through the museum. 這款應用程式以新穎方式使用定位資料，引導訪客參觀博物館。",
+      "She solved the storage problem novelly with hanging shelves. 她用吊掛層架新穎地解決了收納問題。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -107478,11 +107478,11 @@
   },
   {
     "word": "nowheres",
-    "meaning": "無所不在",
+    "meaning": "哪裡都不；無處",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nowheres during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nowheres to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "That road goes nowheres after the old mill. 那條路過了舊磨坊後哪裡都到不了。",
+      "I looked all morning and found the missing key nowheres. 我找了一整個早上，哪裡都找不到遺失的鑰匙。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -107830,11 +107830,11 @@
   },
   {
     "word": "nu",
-    "meaning": "表示驚訝、強調、懷疑等的感嘆詞。",
+    "meaning": "表示驚訝、強調或懷疑的感嘆詞",
     "partOfSpeech": "exclamation",
     "sentences": [
-      "The entry for nu explains that it means exclamation of surprise, emphasis, doubt, etc. 條目說明這個字表示「表示驚訝、強調、懷疑等的感嘆詞」。",
-      "Readers can still meet nu in dictionaries and specialized texts. 讀者仍可能在字典或專業文本中看到這個字。"
+      "Nu, are you really leaving so soon? 咦，你真的這麼快就要走了嗎？",
+      "She said “nu” with a doubtful look. 她帶著懷疑的表情說了一聲「咦」。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -108340,11 +108340,11 @@
   },
   {
     "word": "nuciferous",
-    "meaning": "軸承或生產螺帽。",
+    "meaning": "結果仁或堅果的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses nuciferous to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter nuciferous in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The old botany book described the tree as nuciferous. 舊植物學書把這種樹描述為結果仁的植物。",
+      "Nuciferous palms were planted along the warm coast. 溫暖海岸旁種著會結果仁的棕櫚。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -110586,11 +110586,11 @@
   },
   {
     "word": "numberous",
-    "meaning": "無數的過時形式。",
+    "meaning": "眾多的；numerous 的舊式形式",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses numberous to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter numberous in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The archive holds numberous letters from that period. 檔案館保存著那個時期的眾多信件。",
+      "She found numberous small errors in the old manuscript. 她在舊手稿中發現許多小錯。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -110841,11 +110841,11 @@
   },
   {
     "word": "numerably",
-    "meaning": "以允許編號的方式；可數地。",
+    "meaning": "可數地；能被編號地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened numerably during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample numerably to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "The samples were arranged numerably from left to right. 樣本從左到右按可編號方式排列。",
+      "The errors appeared numerably in the final table. 錯誤在最後表格中能一項項數出來。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -111074,11 +111074,11 @@
   },
   {
     "word": "numerose",
-    "meaning": "無數的過時形式。",
+    "meaning": "眾多的；numerous 的舊式形式",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The report uses numerose to describe a related feature. 報告用這個詞來描述某種相關特徵。",
-      "Readers may encounter numerose in descriptive or specialist writing. 讀者可能會在描述性或專業文本中看到這個詞。"
+      "The garden had numerose paths leading to the fountain. 花園裡有許多小路通往噴泉。",
+      "Numerose witnesses described the same bright flash. 許多目擊者都描述了同一道亮光。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -112096,11 +112096,11 @@
   },
   {
     "word": "nuncupatively",
-    "meaning": "以口述的方式。",
+    "meaning": "以口述方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The report says the movement happened nuncupatively during the test. 報告表示，這個動作是以這種方式發生的。",
-      "She adjusted the sample nuncupatively to match the description in the manual. 她依照手冊描述調整樣本時，用上了這個副詞。"
+      "He made the promise nuncupatively before any paper was signed. 在簽署任何文件前，他先以口述方式作了承諾。",
+      "The old will was declared nuncupatively in front of two witnesses. 那份舊遺囑是在兩名見證人面前以口述方式宣布的。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -115081,11 +115081,11 @@
   },
   {
     "word": "nymphical",
-    "meaning": "屬於或關於一個或多個若蟲的",
+    "meaning": "若蟲的；與若蟲有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Students learned how to identify the nymphical structure under a microscope. 學生們學習了如何在顯微鏡下辨識若蟲的構造。",
-      "The local agricultural department issued a warning about the nymphical population of locusts. 當地農業部門發布了關於蝗蟲若蟲數量的警告。"
+      "The farmer checked the leaves for nymphical insects. 農夫檢查葉片上是否有若蟲。",
+      "The nymphical stage appears before the insect becomes an adult. 若蟲階段出現在昆蟲成蟲之前。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
