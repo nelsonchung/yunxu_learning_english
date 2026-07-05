@@ -18340,11 +18340,11 @@
   },
   {
     "word": "acier",
-    "meaning": "鋼（法語詞，有時用於英語背景）",
+    "meaning": "鋼；法語名詞 acier，英語語境中偶見於法文標籤、專名或借詞背景。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term acier refers to steel in various industrial contexts. (acier 一詞在各種工業背景下指的是鋼。)",
-      "He examined the properties of the acier alloy. (他檢查了這種鋼合金的特性。)"
+      "The museum label described the blade as acier because the note was written in French. 博物館標籤把那把刀寫成法語的「鋼」，因為說明文字是法文。",
+      "On the parts list, acier indicated steel rather than iron. 在零件清單上，這個詞表示鋼，而不是鐵。"
     ],
     "audienceTags": [
       "general"
@@ -25270,11 +25270,11 @@
   },
   {
     "word": "activator",
-    "meaning": "一種提高酵素介導反應速率的效應器。",
+    "meaning": "活化劑；能啟動某個過程或提高反應速率的人或物。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term activator refers to A type of effector that increases the rate of enzyme - mediated reactions. 術語「激活劑」是指增加酶介導反應速率的一類效應物。",
-      "We learned the meaning of activator during today's lesson. 今天的課程我們學習了激活劑的意思。"
+      "The enzyme needs an activator before the reaction can proceed quickly. 這種酵素需要活化劑，反應才會快速進行。",
+      "In the campaign, she acted as an activator who brought people together. 在那場活動中，她扮演推動者，把大家凝聚起來。"
     ],
     "audienceTags": [
       "general"
@@ -38820,8 +38820,8 @@
     "meaning": "具有減少空氣移動時阻力的形狀。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "aerodynamic plane 气动飞机",
-      "aerodynamic vehicle 空气动力学车辆"
+      "The new bicycle helmet has a more aerodynamic shape. 新款自行車安全帽的外形更符合空氣力學。",
+      "Engineers tested the aerodynamic design in a wind tunnel. 工程師在風洞中測試這項空氣力學設計。"
     ],
     "audienceTags": [
       "general"
@@ -54927,10 +54927,10 @@
   {
     "word": "al",
     "meaning": "（阿拉伯語定冠詞）這；那",
-    "partOfSpeech": "det.",
+    "partOfSpeech": "determiner",
     "sentences": [
-      "The prefix 'al-' in Arabic often corresponds to the English 'the'. (阿拉伯語中的字首 'al-' 通常對應英語的 'the'。)",
-      "Many Arabic names begin with the article al. (許多阿拉伯名字以定冠詞 al 開頭。)"
+      "The prefix al in Arabic often corresponds to the English word the. 阿拉伯語中的這個字首通常相當於英文的定冠詞 the。",
+      "Many Arabic names begin with the article al. 許多阿拉伯名字都以這個定冠詞開頭。"
     ],
     "audienceTags": [
       "general"
@@ -56729,11 +56729,11 @@
   },
   {
     "word": "albicans",
-    "meaning": "白色念珠菌 (生物名稱的一部分)；白色的",
+    "meaning": "白色念珠菌學名中的種小名；拉丁語中有「發白的、帶白色的」意思。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Candida albicans is a common fungus in humans. (白色念珠菌是人體常見的真菌。)",
-      "The term albicans refers to the white appearance of the organism. (albicans 一詞指的是該生物的白色外觀。)"
+      "Candida albicans is a common fungus in humans. 白色念珠菌是人體常見的真菌。",
+      "In biological names, albicans often suggests a whitish appearance. 在生物命名中，這個詞常暗示外觀帶白色。"
     ],
     "audienceTags": [
       "general"
@@ -61546,8 +61546,8 @@
     "meaning": "藻類；水藻",
     "partOfSpeech": "noun",
     "sentences": [
-      "Alga is the singular form of algae. Alga 是 algae 的單數形式。",
-      "The microscopic alga was observed floating on the pond. 在池塘上觀察到了漂浮的微型藻類。"
+      "Alga is the singular form used for one simple aquatic plant. 這個字是指單一個簡單水生植物個體。",
+      "The microscopic alga was observed floating on the pond. 研究人員觀察到那個微小藻類漂浮在池塘上。"
     ],
     "audienceTags": [
       "general"
@@ -61555,11 +61555,11 @@
   },
   {
     "word": "algae",
-    "meaning": "藻類生物被視為集體或整體；藻類生長。",
+    "meaning": "藻類；可指一群藻類生物，或水面、岩石等處的藻類生長。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term algae refers to algal organisms viewed collectively or as a mass; algal growth. 藻類一詞是指集體或作為整體的藻類生物體；藻類生長。",
-      "The lesson introduced algae as a useful term to understand. 本課程介紹了藻類作為一個易於理解的有用術語。"
+      "Too much algae can turn a clear pond green. 藻類過度生長會讓清澈的池塘變綠。",
+      "Marine biologists collected algae from the rocks at low tide. 海洋生物學家在退潮時從岩石上採集藻類。"
     ],
     "audienceTags": [
       "general"
@@ -63378,11 +63378,11 @@
   },
   {
     "word": "alignment",
-    "meaning": "相對於人類道德標準所考慮的人工智慧的目標和價值觀。",
+    "meaning": "對齊；在人工智慧語境中，指讓 AI 系統的目標與人類意圖、價值或安全需求一致。",
     "partOfSpeech": "noun",
     "sentences": [
-      "the alignment problem 對齊問題",
-      "the alignment tax 調整稅"
+      "AI alignment asks whether a model will follow human intentions safely. AI 對齊關注模型是否能安全地遵循人類意圖。",
+      "The team treated alignment as a safety problem, not just a performance goal. 團隊把對齊視為安全問題，而不只是效能目標。"
     ],
     "audienceTags": [
       "general"
@@ -65658,8 +65658,8 @@
     "meaning": "使安靜或休息；安撫或安撫；平靜；冷靜。",
     "partOfSpeech": "verb",
     "sentences": [
-      "to allay popular excitement 以平息民眾的興奮情緒",
-      "to allay the tumult of the passions 平息激情的騷動"
+      "The nurse spoke calmly to allay the child's fear. 護理師平靜地說話，以安撫孩子的恐懼。",
+      "The announcement helped allay public concern. 這項公告有助於緩和大眾的擔憂。"
     ],
     "audienceTags": [
       "general"
@@ -69169,11 +69169,11 @@
   },
   {
     "word": "allure",
-    "meaning": "吸引、引誘的力量；引起吸引力的品質。",
+    "meaning": "吸引力；誘惑力；使人想接近或擁有的魅力。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term allure refers to the power to attract, entice; the quality causing attraction. 魅力這個詞是指吸引、引誘的力量；引起吸引力的品質。",
-      "The lesson introduced allure as a useful term to understand. 本課程介紹了「誘惑」這個術語，它是一個需要理解的有用術語。"
+      "The old city still has a quiet allure for artists. 這座老城對藝術家仍有一種安靜的吸引力。",
+      "The allure of quick profit made the offer hard to refuse. 快速獲利的誘惑讓人很難拒絕這個提議。"
     ],
     "audienceTags": [
       "general"
@@ -72610,11 +72610,11 @@
   },
   {
     "word": "alteration",
-    "meaning": "被改變的狀態；事物的形式或性質所發生的改變；條件改變。",
+    "meaning": "改變；變更；對形式、內容、狀態或衣物尺寸所做的修改。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term alteration refers to the state of being altered; a change made in the form or nature of a thing; a changed condition. 術語「改變」是指被改變的狀態；事物的形式或性質發生的變化；條件改變了。",
-      "The lesson introduced alteration as a useful term to understand. 本課程介紹了「變更」這個術語，這是一個需要理解的有用術語。"
+      "The contract cannot take effect until both sides approve the alteration. 這份合約必須等雙方同意變更後才會生效。",
+      "The tailor made a small alteration to the jacket sleeves. 裁縫稍微修改了外套袖子的尺寸。"
     ],
     "audienceTags": [
       "general"
@@ -73455,11 +73455,11 @@
   },
   {
     "word": "alto",
-    "meaning": "演奏中音部分的人或樂器。",
+    "meaning": "女低音；中音聲部；演唱或演奏中音聲部的人或樂器。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term alto refers to a person or musical instrument that performs the alto part. 術語“中音”是指演奏中音部分的人或樂器。",
-      "The lesson introduced alto as a useful term to understand. 本課介紹了中音作為一個易於理解的有用術語。"
+      "She sings alto in the school choir. 她在學校合唱團唱女低音聲部。",
+      "The arrangement gives the alto line a warm melody. 這份編曲讓中音聲部有一段溫暖的旋律。"
     ],
     "audienceTags": [
       "general"
@@ -74204,11 +74204,11 @@
   },
   {
     "word": "alumni",
-    "meaning": "個人校友或校友。",
+    "meaning": "校友；畢業生，通常作為 alumnus 或 alumna 的複數使用。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term alumni refers to an individual alumnus or alumna. 校友一詞是指個別校友或校友。",
-      "The lesson introduced alumni as a useful term to understand. 本課介紹了校友這個易於理解的有用術語。"
+      "The university invited alumni back for the anniversary dinner. 大學邀請校友回來參加週年晚宴。",
+      "Several alumni donated books to the new library. 幾位校友捐書給新圖書館。"
     ],
     "audienceTags": [
       "general"
@@ -75385,11 +75385,11 @@
   },
   {
     "word": "amalgamation",
-    "meaning": "合併的過程；混合、合併或合併。",
+    "meaning": "合併；融合；把不同組織、事物或元素結合成一體的過程。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amalgamation refers to the process of amalgamating; a mixture, merger or consolidation. 合併一詞是指合併的過程；混合、合併或合併。",
-      "The lesson introduced amalgamation as a useful term to understand. 本課程介紹了合併作為一個需要理解的有用術語。"
+      "The amalgamation of the two clubs created a stronger local team. 兩個俱樂部合併後，形成了更強的地方隊伍。",
+      "Her cooking is an amalgamation of family recipes and street food. 她的料理融合了家傳食譜和街頭小吃。"
     ],
     "audienceTags": [
       "general"
@@ -78746,11 +78746,11 @@
   },
   {
     "word": "ambush",
-    "meaning": "部隊部署在隱蔽處，以進行突襲；那些埋伏等待的人。",
+    "meaning": "伏擊；埋伏；躲在隱蔽處等待突襲的行動。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term ambush refers to the troops posted in a concealed place, for attacking by surprise; those who lie in wait. 伏擊，是指將部隊佈置在隱蔽處，進行突然襲擊；那些埋伏等待的人。",
-      "The lesson introduced ambush as a useful term to understand. 本課介紹了伏擊作為一個需要理解的有用術語。"
+      "The patrol avoided the narrow road because it was perfect for an ambush. 巡邏隊避開那條狹窄道路，因為那裡很適合伏擊。",
+      "The rebels planned an ambush before dawn. 叛軍計畫在黎明前發動埋伏突襲。"
     ],
     "audienceTags": [
       "general"
@@ -78938,11 +78938,11 @@
   },
   {
     "word": "amelia",
-    "meaning": "先天性缺失一個或多個肢體。",
+    "meaning": "先天性缺肢症；出生時缺少一個或多個四肢的情況。",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amelia refers to the congenital absence of one or more limbs. 「阿米莉亞」一詞是指先天性缺乏一個或多個肢體。",
-      "The lesson introduced amelia as a useful term to understand. 本課介紹了阿米莉亞這個術語，這是一個需要理解的有用術語。"
+      "The doctor explained that amelia is a rare congenital condition. 醫師說明，先天性缺肢症是一種罕見的先天狀況。",
+      "The case report described amelia affecting both arms. 病例報告描述了影響雙臂的先天性缺肢症。"
     ],
     "audienceTags": [
       "general"
@@ -83004,8 +83004,8 @@
     "meaning": "軍用物資，或用於進攻或防禦的各種物資。",
     "partOfSpeech": "noun",
     "sentences": [
-      "ammunition bread 彈藥麵包",
-      "ammunition shoes 彈藥鞋"
+      "The soldiers counted their ammunition before leaving the camp. 士兵離開營地前清點了彈藥。",
+      "The debate gave her more ammunition for her argument. 這場辯論給了她更多可用來支持論點的材料。"
     ],
     "audienceTags": [
       "general"
@@ -125512,11 +125512,11 @@
   },
   {
     "word": "antinial",
-    "meaning": "反枕骨的",
-    "partOfSpeech": "adj.",
+    "meaning": "反枕點的；與枕外隆凸相對位置有關的。",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The researcher measured the antinial distance in the skull samples. 研究人員測量了頭骨樣本中的反枕骨距離。",
-      "The term antinial refers to the point opposite the inion. antinial 一詞是指與枕外隆凸相對的點。"
+      "The researcher measured the antinial distance in the skull samples. 研究人員測量了頭骨樣本中的反枕點距離。",
+      "The diagram marked the antinial point opposite the inion. 圖表標出與枕外隆凸相對的反枕點。"
     ],
     "audienceTags": [
       "general"
@@ -133165,10 +133165,10 @@
   {
     "word": "Ao",
     "meaning": "Ao（紐西蘭毛利神話中的神）",
-    "partOfSpeech": "n.",
+    "partOfSpeech": "noun",
     "sentences": [
-      "In Maori mythology, Ao is a personification of light. 在毛利神話中，Ao 是光的化身。",
-      "Ao is often associated with the world of the living. Ao 通常與生者的世界聯繫在一起。"
+      "In Maori mythology, Ao is a personification of light. 在毛利神話中，這位神祇是光的化身。",
+      "Ao is often associated with the world of the living. 這個神話名稱常與生者的世界聯繫在一起。"
     ],
     "audienceTags": [
       "general"
@@ -147164,8 +147164,8 @@
     "meaning": "（化學符號）氬（Argon，現常用 Ar）；（單位）公畝（Are）",
     "partOfSpeech": "noun",
     "sentences": [
-      "In older texts, 'ar' was sometimes used for Argon. 在舊文本中，'ar' 有時被用於代表氬氣。",
-      "The land area was measured in ar. 土地面積是以公畝為單位測量的。"
+      "In older texts, ar was sometimes used for argon. 在舊文獻中，這個縮寫有時用來表示氬氣。",
+      "The land area was measured in ar. 那塊土地的面積以公畝計算。"
     ],
     "audienceTags": [
       "general"
@@ -162104,8 +162104,8 @@
     "meaning": "香或辣。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "aromatic herbs 香草",
-      "aromatic taste 芳香味"
+      "The kitchen was filled with aromatic herbs and spices. 廚房裡充滿香草和香料的香氣。",
+      "This tea has an aromatic flavor that stays in the mouth. 這款茶有一種會在口中停留的芳香風味。"
     ],
     "audienceTags": [
       "general"
@@ -169000,8 +169000,8 @@
     "meaning": "細辛腦；（同 asarone）。",
     "partOfSpeech": "noun",
     "sentences": [
-      "Asaron is another name for the compound asarone. Asaron 是化合物 asarone 的另一個名字。",
-      "The concentration of asaron varies between different plant species. 不同植物物種中細辛腦的濃度各不相同。"
+      "Asaron is another name for the compound asarone. 這個名稱是化合物細辛腦的另一種稱呼。",
+      "The concentration of asaron varies between different plant species. 不同植物物種中的這種化合物濃度各不相同。"
     ],
     "audienceTags": [
       "general"
@@ -181343,8 +181343,8 @@
     "meaning": "在",
     "partOfSpeech": "preposition",
     "sentences": [
-      "The meaning of 'at' is '在' in Traditional Chinese. 「at」在繁體中文裡的意思是「在」。",
-      "I found that using 'at' correctly makes your English sound more natural. 我發現正確使用「at」會讓你的英文聽起來更自然。"
+      "Meet me at the front gate after class. 下課後在前門和我碰面。",
+      "She looked at the clock and hurried out. 她看了一下時鐘，就匆忙出門了。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -195953,9 +195953,10 @@
   {
     "word": "autoicous",
     "meaning": "同株異苞的（指苔蘚類植物）",
-    "partOfSpeech": "adj.",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The autoicous moss has male and female reproductive organs on the same plant but in separate branches. 這種同株異苞苔蘚的雌雄生殖器官在同一植株上，但位於不同的分枝。"
+      "The autoicous moss has male and female reproductive organs on the same plant but in separate branches. 這種同株異苞苔蘚的雌雄生殖器官在同一植株上，但位於不同的分枝。",
+      "Botanists identified the sample as autoicous after checking its reproductive structures. 植物學家檢查生殖構造後，判定這個樣本是同株異苞的。"
     ],
     "audienceTags": [
       "general"
@@ -201626,8 +201627,8 @@
     "meaning": "熱情；敏銳的;渴望的;對某事表現出極大的興趣或想做某事的願望。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "an avid fan of 1960s sci-fi movies 20 世紀 60 年代科幻電影的狂熱粉絲",
-      "an avid learner of history 歷史的狂熱學習者"
+      "She is an avid reader of historical novels. 她是歷史小說的熱情讀者。",
+      "An avid learner often asks thoughtful questions. 熱愛學習的人常會提出有深度的問題。"
     ],
     "audienceTags": [
       "general"
@@ -203919,8 +203920,8 @@
     "meaning": "屬於身體的軸，或任何附屬器或器官的軸。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "the axial skeleton 中軸骨架",
-      "the axial bones 軸骨"
+      "The axial skeleton includes the skull and spine. 中軸骨骼包括頭骨和脊椎。",
+      "The diagram shows axial movement along the center line. 這張圖顯示沿著中心線的軸向移動。"
     ],
     "audienceTags": [
       "general"
@@ -206859,11 +206860,11 @@
   },
   {
     "word": "azure",
-    "meaning": "徽章上的藍色，以水平平行線雕刻表示。",
+    "meaning": "蔚藍色；天藍色；在紋章學中也指以水平線表示的藍色。",
     "partOfSpeech": "noun",
     "sentences": [
-      "azure (heraldry): 天藍色（紋章）：",
-      "The term azure refers to a blue colour on a coat of arms, represented in engraving by horizontal parallel lines. 天藍色一詞指的是紋章上的藍色，在雕刻中以水平平行線表示。"
+      "The sea turned azure under the clear afternoon sky. 午後晴空下，海面變成蔚藍色。",
+      "In heraldry, azure is the blue color shown with horizontal lines. 在紋章學中，這個藍色常用水平線表示。"
     ],
     "audienceTags": [
       "general"
