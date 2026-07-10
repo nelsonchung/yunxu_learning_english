@@ -84380,10 +84380,10 @@
   },
   {
     "word": "nonproprietary",
-    "meaning": "非專有藥物。",
-    "partOfSpeech": "noun",
+    "meaning": "非專有的；非專利的；通用名的。",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The pharmacist suggested a nonproprietary version of the medicine to save money. 藥劑師建議使用該藥物的通用名版本以節省費用。",
+      "The pharmacist suggested a nonproprietary version of the medicine to save money. 藥劑師建議使用該藥物的通用版本以節省費用。",
       "Many hospitals prefer to use nonproprietary drugs whenever they are available. 許多醫院只要有非專利藥物可用，就會優先選擇使用。"
     ],
     "difficultyLevel": 6,
