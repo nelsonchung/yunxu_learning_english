@@ -23,7 +23,7 @@ class RecordsPage extends StatelessWidget {
           children: [
             SectionCard(
               title: '雲端同步紀錄',
-              subtitle: 'iCloud 備份與還原狀態',
+              subtitle: syncSupported ? 'iCloud 備份與還原狀態' : '目前版本未啟用 iCloud 同步',
               trailing: Icon(
                 canSync ? Icons.cloud_done_outlined : Icons.cloud_off_outlined,
                 color: const Color(0xFF0B6E99),
@@ -35,7 +35,7 @@ class RecordsPage extends StatelessWidget {
                     label: '同步功能',
                     value: syncSupported
                         ? (syncEnabled ? '可用（iOS/macOS）' : '已停用（可在設定開啟）')
-                        : '目前平台不支援',
+                        : '此版本未啟用',
                   ),
                   const SizedBox(height: 8),
                   _InfoRow(label: '目前狀態', value: isSyncing ? '同步中' : '待命'),

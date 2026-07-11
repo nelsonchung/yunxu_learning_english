@@ -529,7 +529,9 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 16),
             SectionCard(
               title: '雲端同步',
-              subtitle: '開啟後自動同步與手動同步才會生效',
+              subtitle: cloudSupported
+                  ? '開啟後自動同步與手動同步才會生效'
+                  : '目前版本未啟用 iCloud 同步',
               trailing: const Icon(Icons.cloud_sync, color: Color(0xFF0B6E99)),
               child: Column(
                 children: [
@@ -537,13 +539,17 @@ class _SettingsPageState extends State<SettingsPage> {
                     children: [
                       const Expanded(child: Text('啟用同步功能')),
                       Switch(
-                        value: notifier.syncEnabled,
-                        onChanged: (value) async {
-                          await notifier.setSyncEnabled(value);
-                          if (context.mounted) {
-                            context.read<WordsNotifier>().setSyncEnabled(value);
-                          }
-                        },
+                        value: cloudSupported && notifier.syncEnabled,
+                        onChanged: cloudSupported
+                            ? (value) async {
+                                await notifier.setSyncEnabled(value);
+                                if (context.mounted) {
+                                  context.read<WordsNotifier>().setSyncEnabled(
+                                    value,
+                                  );
+                                }
+                              }
+                            : null,
                       ),
                     ],
                   ),
@@ -565,7 +571,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                             )
                             .toList(),
-                        onChanged: notifier.syncEnabled
+                        onChanged: cloudSupported && notifier.syncEnabled
                             ? (value) async {
                                 if (value == null) {
                                   return;
@@ -581,7 +587,15 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                     ],
                   ),
-                  if (!notifier.syncEnabled) ...[
+                  if (!cloudSupported) ...[
+                    const SizedBox(height: 10),
+                    Text(
+                      '此 iOS Personal Team 版本未啟用 CloudKit；如需 iCloud 同步，需改用支援 iCloud capability 的 Apple Developer 帳號。',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                    ),
+                  ] else if (!notifier.syncEnabled) ...[
                     const SizedBox(height: 10),
                     Text(
                       '同步已停用：不會自動同步，也無法手動同步。',
@@ -596,7 +610,9 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 16),
             SectionCard(
               title: '雲端備份與還原',
-              subtitle: '手動備份本機資料，或立即從雲端還原',
+              subtitle: cloudSupported
+                  ? '手動備份本機資料，或立即從雲端還原'
+                  : '目前版本未啟用 iCloud 同步',
               trailing: const Icon(
                 Icons.cloud_upload_outlined,
                 color: Color(0xFF0B6E99),
@@ -698,7 +714,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   if (!cloudSupported) ...[
                     const SizedBox(height: 10),
                     Text(
-                      '目前平台不支援 CloudKit，無法使用手動備份/還原。',
+                      '此版本未啟用 CloudKit，無法使用手動備份/還原。',
                       style: Theme.of(
                         context,
                       ).textTheme.bodySmall?.copyWith(color: Colors.black54),

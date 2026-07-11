@@ -29,6 +29,8 @@ import 'presentation/pages/word_detail_page.dart';
 import 'presentation/state/settings_notifier.dart';
 import 'presentation/state/words_notifier.dart';
 
+const bool _enableIOSCloudSync = bool.fromEnvironment('ENABLE_IOS_CLOUD_SYNC');
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   PaintingBinding.instance.imageCache.maximumSize = 80;
@@ -63,7 +65,9 @@ Future<void> main() async {
         .shouldAutoRestoreOnEmptyData();
   }
   CloudSyncService? cloudSyncService;
-  if (Platform.isIOS || Platform.isMacOS) {
+  final cloudSyncAvailable =
+      Platform.isMacOS || (Platform.isIOS && _enableIOSCloudSync);
+  if (cloudSyncAvailable) {
     cloudSyncService = CloudSyncService(
       wordRepository: repository,
       settingsRepository: settingsRepository,
