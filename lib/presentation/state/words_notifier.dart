@@ -547,6 +547,44 @@ class WordsNotifier extends ChangeNotifier {
     }
   }
 
+  Future<int> removeCustomTag(String tag) async {
+    final targetTag = tag.trim();
+    if (targetTag.isEmpty) {
+      return 0;
+    }
+
+    final now = DateTime.now();
+    final affectedCards = _words
+        .where((card) => card.customTags.contains(targetTag))
+        .toList(growable: false);
+
+    if (affectedCards.isEmpty) {
+      return 0;
+    }
+
+    for (final card in affectedCards) {
+      final updated = card.copyWith(
+        customTags: card.customTags
+            .where((item) => item != targetTag)
+            .toList(growable: false),
+        updatedAt: now,
+      );
+      await _repository.update(updated);
+
+      final index = _words.indexWhere((item) => item.id == card.id);
+      if (index != -1) {
+        _words[index] = updated;
+      }
+    }
+
+    notifyListeners();
+    if (canSync) {
+      unawaited(syncNow());
+    }
+
+    return affectedCards.length;
+  }
+
   Future<void> markReviewed(WordCard card) async {
     final updated = _scheduleService
         .advanceReview(card, DateTime.now())

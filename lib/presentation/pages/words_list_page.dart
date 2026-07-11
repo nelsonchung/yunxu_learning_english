@@ -76,6 +76,53 @@ class _WordsListPageState extends State<WordsListPage> {
     });
   }
 
+  Future<void> _confirmRemoveCustomTag(
+    BuildContext context,
+    WordsNotifier notifier, {
+    required String tag,
+    required int count,
+  }) async {
+    final shouldRemove = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('刪除標籤'),
+          content: Text('要刪除「$tag」嗎？這會從 $count 個單字移除此標籤，不會刪除單字。'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext, false),
+              child: const Text('取消'),
+            ),
+            FilledButton.tonalIcon(
+              onPressed: () => Navigator.pop(dialogContext, true),
+              icon: const Icon(Icons.delete_outline),
+              label: const Text('刪除標籤'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (shouldRemove != true) {
+      return;
+    }
+
+    final removedCount = await notifier.removeCustomTag(tag);
+    if (!context.mounted) {
+      return;
+    }
+
+    if (_selectedTagFilter == tag) {
+      setState(() {
+        _selectedTagFilter = null;
+      });
+    }
+
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text('已從 $removedCount 個單字移除「$tag」標籤')));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<WordsNotifier>(
@@ -247,7 +294,7 @@ class _WordsListPageState extends State<WordsListPage> {
                               },
                             ),
                           ...tagCounts.entries.map(
-                            (entry) => ChoiceChip(
+                            (entry) => InputChip(
                               label: Text('${entry.key} ${entry.value}'),
                               selected: _selectedTagFilter == entry.key,
                               onSelected: (selected) {
@@ -258,6 +305,14 @@ class _WordsListPageState extends State<WordsListPage> {
                                   _selectedTagFilter = entry.key;
                                 });
                               },
+                              deleteIcon: const Icon(Icons.close),
+                              deleteButtonTooltipMessage: '刪除標籤 ${entry.key}',
+                              onDeleted: () => _confirmRemoveCustomTag(
+                                context,
+                                notifier,
+                                tag: entry.key,
+                                count: entry.value,
+                              ),
                             ),
                           ),
                         ],

@@ -116,9 +116,75 @@ void main() {
     expect(find.text('application'), findsNothing);
     expect(find.text('bread'), findsNothing);
   });
+
+  testWidgets('點選自訂標籤可以篩選單字', (tester) async {
+    await _pumpWordsListPage(
+      tester,
+      initialCards: [
+        _wordCard(
+          id: '1',
+          word: 'apple',
+          meaning: '蘋果',
+          customTags: const ['水果'],
+        ),
+        _wordCard(
+          id: '2',
+          word: 'bread',
+          meaning: '麵包',
+          customTags: const ['早餐'],
+        ),
+      ],
+    );
+
+    await tester.tap(find.text('水果 1'));
+    await tester.pump();
+
+    expect(find.text('apple'), findsOneWidget);
+    expect(find.text('bread'), findsNothing);
+  });
+
+  testWidgets('可以從所有單字刪除自訂標籤', (tester) async {
+    final wordsNotifier = await _pumpWordsListPage(
+      tester,
+      initialCards: [
+        _wordCard(
+          id: '1',
+          word: 'apple',
+          meaning: '蘋果',
+          customTags: const ['期中考', '課本A'],
+        ),
+        _wordCard(
+          id: '2',
+          word: 'bread',
+          meaning: '麵包',
+          customTags: const ['期中考'],
+        ),
+      ],
+    );
+
+    expect(find.text('期中考 2'), findsOneWidget);
+    expect(find.text('課本A 1'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('刪除標籤 期中考'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('刪除標籤'), findsWidgets);
+    expect(find.textContaining('這會從 2 個單字移除此標籤'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(FilledButton, '刪除標籤'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('期中考 2'), findsNothing);
+    expect(find.text('課本A 1'), findsOneWidget);
+    expect(
+      wordsNotifier.words.any((card) => card.customTags.contains('期中考')),
+      isFalse,
+    );
+    expect(wordsNotifier.findById('1')?.customTags, contains('課本A'));
+  });
 }
 
-Future<void> _pumpWordsListPage(
+Future<WordsNotifier> _pumpWordsListPage(
   WidgetTester tester, {
   required List<WordCard> initialCards,
 }) async {
@@ -138,6 +204,7 @@ Future<void> _pumpWordsListPage(
     ),
   );
   await tester.pumpAndSettle();
+  return wordsNotifier;
 }
 
 WordsNotifier _buildWordsNotifier({required List<WordCard> initialCards}) {
@@ -169,6 +236,7 @@ WordCard _wordCard({
   required String word,
   required String meaning,
   List<String> sentences = const ['This is a sample sentence.'],
+  List<String> customTags = const [],
 }) {
   final now = DateTime.fromMillisecondsSinceEpoch(1_700_000_000_000);
   return WordCard(
@@ -185,6 +253,7 @@ WordCard _wordCard({
     nextReviewDate: now,
     history: const [],
     isDeleted: false,
+    customTags: customTags,
   );
 }
 
