@@ -21,8 +21,19 @@ class WordsListPage extends StatefulWidget {
 class _WordsListPageState extends State<WordsListPage> {
   static const String _untaggedFilterValue = '__untagged__';
 
+  final _searchController = TextEditingController();
+  final _searchFocusNode = FocusNode();
+
   bool _showOnlyPending = false;
   String? _selectedTagFilter;
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchFocusNode.dispose();
+    _searchController.dispose();
+    super.dispose();
+  }
 
   String _meaningAndPartText(WordCard card) {
     final meaning = card.meaning.trim();
@@ -43,6 +54,28 @@ class _WordsListPageState extends State<WordsListPage> {
     return card.customTags.contains(selectedTagFilter);
   }
 
+  bool _matchesSearchQuery(WordCard card) {
+    final query = _normalizeSearchText(_searchQuery);
+    if (query.isEmpty) {
+      return true;
+    }
+
+    return _normalizeSearchText(card.word).contains(query) ||
+        _normalizeSearchText(card.meaning).contains(query);
+  }
+
+  String _normalizeSearchText(String value) {
+    return value.trim().toLowerCase();
+  }
+
+  void _clearSearchQuery() {
+    _searchController.clear();
+    _searchFocusNode.requestFocus();
+    setState(() {
+      _searchQuery = '';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<WordsNotifier>(
@@ -60,17 +93,22 @@ class _WordsListPageState extends State<WordsListPage> {
         final visibleWords = words
             .where((card) => !_showOnlyPending || card.needsCompletion)
             .where(_matchesSelectedTag)
+            .where(_matchesSearchQuery)
             .toList(growable: false);
         final canSync = notifier.canSync;
         final isSyncing = notifier.isSyncing;
         final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
         final hasTagFilters = tagCounts.isNotEmpty || untaggedCount > 0;
+        final hasSearchQuery = _searchQuery.trim().isNotEmpty;
         final hasActiveTagFilter = _selectedTagFilter != null;
-        final hasAnyFilter = _showOnlyPending || hasActiveTagFilter;
+        final hasAnyFilter =
+            _showOnlyPending || hasActiveTagFilter || hasSearchQuery;
+        final hasFilterWithoutSearch = _showOnlyPending || hasActiveTagFilter;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             SectionCard(
               title: '單字列表',
@@ -113,6 +151,27 @@ class _WordsListPageState extends State<WordsListPage> {
                     child: SortSelector(
                       mode: notifier.sortMode,
                       onChanged: notifier.setSortMode,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: _searchController,
+                    focusNode: _searchFocusNode,
+                    onChanged: (value) {
+                      setState(() {
+                        _searchQuery = value;
+                      });
+                    },
+                    decoration: InputDecoration(
+                      hintText: '搜尋英文單字或中文意思',
+                      prefixIcon: const Icon(Icons.search),
+                      suffixIcon: hasSearchQuery
+                          ? IconButton(
+                              tooltip: '清除搜尋',
+                              onPressed: _clearSearchQuery,
+                              icon: const Icon(Icons.close),
+                            )
+                          : null,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -213,14 +272,26 @@ class _WordsListPageState extends State<WordsListPage> {
               const _EmptyList()
             else if (visibleWords.isEmpty)
               _EmptyFilteredList(
-                message: _showOnlyPending && hasActiveTagFilter
+                message: hasSearchQuery && hasFilterWithoutSearch
+                    ? '目前篩選條件下找不到符合搜尋的單字'
+                    : hasSearchQuery
+                    ? '找不到符合搜尋的單字'
+                    : _showOnlyPending && hasActiveTagFilter
                     ? '這個標籤目前沒有待補資料的單字'
                     : _showOnlyPending
                     ? '目前沒有待補資料的單字'
                     : '這個標籤目前沒有單字',
-                actionLabel: hasAnyFilter ? '清除篩選' : '查看全部單字',
+                actionLabel: hasSearchQuery && hasFilterWithoutSearch
+                    ? '清除搜尋與篩選'
+                    : hasSearchQuery
+                    ? '清除搜尋'
+                    : hasAnyFilter
+                    ? '清除篩選'
+                    : '查看全部單字',
                 onReset: () {
+                  _searchController.clear();
                   setState(() {
+                    _searchQuery = '';
                     _showOnlyPending = false;
                     _selectedTagFilter = null;
                   });

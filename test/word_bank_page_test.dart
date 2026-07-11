@@ -4,15 +4,20 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
 import 'package:yunxu_learning_english/data/repositories/builtin_word_bank_repository.dart';
+import 'package:yunxu_learning_english/data/repositories/settings_repository.dart';
 import 'package:yunxu_learning_english/data/repositories/word_repository.dart';
 import 'package:yunxu_learning_english/data/storage/image_storage.dart';
+import 'package:yunxu_learning_english/domain/models/app_settings.dart';
 import 'package:yunxu_learning_english/domain/models/builtin_word_entry.dart';
 import 'package:yunxu_learning_english/domain/models/word_card.dart';
+import 'package:yunxu_learning_english/domain/services/notification_service.dart';
+import 'package:yunxu_learning_english/domain/services/pronunciation_service.dart';
 import 'package:yunxu_learning_english/domain/services/review_schedule_service.dart';
 import 'package:yunxu_learning_english/domain/services/sort_service.dart';
 import 'package:yunxu_learning_english/domain/services/word_bank_search_service.dart';
 import 'package:yunxu_learning_english/domain/services/word_contribution_import_service.dart';
 import 'package:yunxu_learning_english/presentation/pages/word_bank_page.dart';
+import 'package:yunxu_learning_english/presentation/state/settings_notifier.dart';
 import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 
 void main() {
@@ -20,6 +25,8 @@ void main() {
 
   testWidgets('搜尋框在有輸入時顯示清除按鈕並可清空文字', (tester) async {
     final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    final pronunciationService = PronunciationService();
 
     await tester.pumpWidget(
       MultiProvider(
@@ -27,7 +34,11 @@ void main() {
           Provider<BuiltinWordBankRepository>.value(
             value: _FakeBuiltinWordBankRepository(),
           ),
+          Provider<PronunciationService>.value(value: pronunciationService),
           ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
         ],
         child: const MaterialApp(home: Scaffold(body: WordBankPage())),
       ),
@@ -54,6 +65,8 @@ void main() {
 
   testWidgets('搜尋結果會在 debounce 後才更新', (tester) async {
     final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    final pronunciationService = PronunciationService();
 
     await tester.pumpWidget(
       MultiProvider(
@@ -61,7 +74,11 @@ void main() {
           Provider<BuiltinWordBankRepository>.value(
             value: _FakeBuiltinWordBankRepository(),
           ),
+          Provider<PronunciationService>.value(value: pronunciationService),
           ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
         ],
         child: const MaterialApp(home: Scaffold(body: WordBankPage())),
       ),
@@ -88,6 +105,8 @@ void main() {
 
   testWidgets('加入字庫單字提示會在兩秒後自動消失', (tester) async {
     final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+    final pronunciationService = PronunciationService();
 
     await tester.pumpWidget(
       MultiProvider(
@@ -95,7 +114,11 @@ void main() {
           Provider<BuiltinWordBankRepository>.value(
             value: _FakeBuiltinWordBankRepository(),
           ),
+          Provider<PronunciationService>.value(value: pronunciationService),
           ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
         ],
         child: const MaterialApp(home: Scaffold(body: WordBankPage())),
       ),
@@ -133,6 +156,16 @@ WordsNotifier _buildWordsNotifier() {
       scheduleService: scheduleService,
     ),
     initialSyncEnabled: false,
+  );
+}
+
+SettingsNotifier _buildSettingsNotifier() {
+  return SettingsNotifier(
+    repository: _FakeSettingsRepository(
+      initialSettings: AppSettings.defaults(),
+    ),
+    notificationService: NotificationService(),
+    pronunciationService: PronunciationService(),
   );
 }
 
@@ -282,5 +315,23 @@ class _FakeWordRepository implements WordRepository {
       return;
     }
     _cards[index] = card;
+  }
+}
+
+class _FakeSettingsRepository implements SettingsRepository {
+  _FakeSettingsRepository({required AppSettings initialSettings})
+    : _settings = initialSettings;
+
+  AppSettings _settings;
+
+  @override
+  Future<AppSettings> fetch() async => _settings;
+
+  @override
+  Future<bool> hasSavedSettings() async => true;
+
+  @override
+  Future<void> save(AppSettings settings) async {
+    _settings = settings;
   }
 }
