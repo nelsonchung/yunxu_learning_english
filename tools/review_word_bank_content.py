@@ -12,6 +12,26 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PATH = ROOT / "assets" / "word_bank" / "word_bank_main.json"
 
 TEMPLATE_SENTENCE_PATTERNS = [
+    (
+        re.compile(r"^The specialist discussed .+ during the consultation\.", re.IGNORECASE),
+        "template_consultation_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^The report included a note about .+\.", re.IGNORECASE),
+        "template_report_note_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^The sample was considered .+ by the team\.", re.IGNORECASE),
+        "template_sample_sentence",
+        4,
+    ),
+    (
+        re.compile(r"^They compared the .+ results carefully\.", re.IGNORECASE),
+        "template_comparison_sentence",
+        4,
+    ),
     (re.compile(r"^The term .+ refers to ", re.IGNORECASE), "template_definition_sentence", 2),
     (re.compile(r"^The lesson introduced ", re.IGNORECASE), "template_lesson_sentence", 2),
     (re.compile(r"^We learned the meaning of ", re.IGNORECASE), "template_lesson_sentence", 2),
