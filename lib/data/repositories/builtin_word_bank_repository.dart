@@ -163,25 +163,50 @@ class BuiltinWordBankRepository {
         ((desiredCount <= 0 ? 3 : desiredCount) * 300 < 900
             ? 900
             : (desiredCount <= 0 ? 3 : desiredCount) * 300);
-    final rotatedShardPaths = _rotatedAssetPathsForDay(now);
+    final effectiveMinimumShardCount = minimumShardCount < 1
+        ? 1
+        : minimumShardCount > _assetPaths.length
+        ? _assetPaths.length
+        : minimumShardCount;
+    final perShardCandidateLimit =
+        (effectiveCandidateLimit + effectiveMinimumShardCount - 1) ~/
+        effectiveMinimumShardCount;
+    final shuffledShardPaths = _shuffledAssetPathsForDay(now);
+    final recommendationDayKey = '${now.year}-${now.month}-${now.day}';
     final candidates = <BuiltinWordEntry>[];
     var visitedShardCount = 0;
 
-    for (final shardPath in rotatedShardPaths) {
+    for (final shardPath in shuffledShardPaths) {
       final shardEntries = await _loadShard(shardPath, primeForSearch: false);
       visitedShardCount += 1;
 
-      for (final entry in shardEntries) {
-        if (_isRecommendationCandidate(
-          entry,
-          existingKeys: existingKeys,
-          existingRoots: existingRoots,
-        )) {
-          candidates.add(entry);
-        }
-      }
+      final shardCandidates =
+          shardEntries
+              .where(
+                (entry) => _isRecommendationCandidate(
+                  entry,
+                  existingKeys: existingKeys,
+                  existingRoots: existingRoots,
+                ),
+              )
+              .toList(growable: false)
+            ..sort((a, b) {
+              final byRotation =
+                  _stableHash(
+                    '$recommendationDayKey:${a.word.toLowerCase()}',
+                  ).compareTo(
+                    _stableHash(
+                      '$recommendationDayKey:${b.word.toLowerCase()}',
+                    ),
+                  );
+              if (byRotation != 0) {
+                return byRotation;
+              }
+              return a.word.compareTo(b.word);
+            });
+      candidates.addAll(shardCandidates.take(perShardCandidateLimit));
 
-      if (visitedShardCount >= minimumShardCount &&
+      if (visitedShardCount >= effectiveMinimumShardCount &&
           candidates.length >= effectiveCandidateLimit) {
         break;
       }
@@ -384,15 +409,18 @@ class BuiltinWordBankRepository {
     return 'assets/word_bank/word_bank_main-${normalized[0]}.json';
   }
 
-  List<String> _rotatedAssetPathsForDay(DateTime now) {
+  List<String> _shuffledAssetPathsForDay(DateTime now) {
     final dayKey = '${now.year}-${now.month}-${now.day}';
-    final offset = _stableHash(dayKey) % _assetPaths.length;
-
-    return List<String>.generate(
-      _assetPaths.length,
-      (index) => _assetPaths[(offset + index) % _assetPaths.length],
-      growable: false,
-    );
+    final shuffled = List<String>.from(_assetPaths);
+    var state = _stableHash(dayKey);
+    for (var index = shuffled.length - 1; index > 0; index -= 1) {
+      state = (state * 1103515245 + 12345) & 0x7fffffff;
+      final swapIndex = state % (index + 1);
+      final current = shuffled[index];
+      shuffled[index] = shuffled[swapIndex];
+      shuffled[swapIndex] = current;
+    }
+    return shuffled;
   }
 
   bool _isRecommendationCandidate(

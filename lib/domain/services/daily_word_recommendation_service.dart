@@ -10,6 +10,7 @@ class DailyWordRecommendationService {
     required int dueTodayCount,
     required DateTime now,
     Set<String> excludedWords = const <String>{},
+    int batchIndex = 0,
   }) {
     if (!settings.dailyNewWordsEnabled) {
       return const [];
@@ -52,7 +53,9 @@ class DailyWordRecommendationService {
                   entry: entry,
                   targetDifficulty: targetDifficulty,
                 ),
-                rotationKey: _stableHash('$dayKey:${entry.word.toLowerCase()}'),
+                rotationKey: _stableHash(
+                  '$dayKey:$batchIndex:${entry.word.toLowerCase()}',
+                ),
               ),
             )
             .toList(growable: false)
@@ -70,6 +73,7 @@ class DailyWordRecommendationService {
 
     final selected = <BuiltinWordEntry>[];
     final selectedRoots = <String>{};
+    final selectedInitials = <String>{};
     final selectedParts = <PartOfSpeech, int>{};
 
     for (final item in scored) {
@@ -82,6 +86,11 @@ class DailyWordRecommendationService {
         continue;
       }
 
+      final initial = _leadingLetter(item.entry.word);
+      if (selectedInitials.contains(initial)) {
+        continue;
+      }
+
       final partCount = selectedParts[item.entry.partOfSpeech] ?? 0;
       if (partCount >= 1) {
         continue;
@@ -91,7 +100,37 @@ class DailyWordRecommendationService {
       if (root.length >= 4) {
         selectedRoots.add(root);
       }
+      selectedInitials.add(initial);
       selectedParts[item.entry.partOfSpeech] = partCount + 1;
+    }
+
+    if (selected.length >= settings.dailyNewWordsCount) {
+      return selected;
+    }
+
+    for (final item in scored) {
+      if (selected.length >= settings.dailyNewWordsCount) {
+        break;
+      }
+      if (selected.any((entry) => entry.word == item.entry.word)) {
+        continue;
+      }
+
+      final root = _stemWord(item.entry.word);
+      if (root.length >= 4 && selectedRoots.contains(root)) {
+        continue;
+      }
+
+      final initial = _leadingLetter(item.entry.word);
+      if (selectedInitials.contains(initial)) {
+        continue;
+      }
+
+      selected.add(item.entry);
+      if (root.length >= 4) {
+        selectedRoots.add(root);
+      }
+      selectedInitials.add(initial);
     }
 
     if (selected.length >= settings.dailyNewWordsCount) {
@@ -279,6 +318,10 @@ class DailyWordRecommendationService {
 
   String _normalizeKey(String word) {
     return word.trim().toLowerCase();
+  }
+
+  String _leadingLetter(String word) {
+    return _normalizeKey(word)[0];
   }
 
   String _stemWord(String word) {

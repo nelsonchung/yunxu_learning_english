@@ -64,6 +64,49 @@ void main() {
     expect(find.textContaining('已略過'), findsNothing);
   });
 
+  testWidgets('換一批會排除目前推薦並顯示下一批', (tester) async {
+    final wordsNotifier = _buildWordsNotifier();
+    final settingsNotifier = _buildSettingsNotifier();
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    const candidateWords = ['anchor', 'balance', 'curious', 'daily'];
+    final firstBatch = candidateWords
+        .where((word) => find.text(word).evaluate().isNotEmpty)
+        .toList(growable: false);
+    expect(firstBatch, hasLength(3));
+
+    await tester.tap(find.widgetWithText(TextButton, '換一批'));
+    await tester.pump();
+
+    for (final word in firstBatch) {
+      expect(find.text(word), findsNothing);
+    }
+    expect(find.textContaining('已換一批推薦字'), findsOneWidget);
+    expect(
+      candidateWords.where((word) => find.text(word).evaluate().isNotEmpty),
+      hasLength(1),
+    );
+  });
+
   testWidgets('推薦會在背景準備完成後才顯示，不會先出現 loading spinner', (tester) async {
     final wordsNotifier = _buildWordsNotifier();
     final settingsNotifier = _buildSettingsNotifier();

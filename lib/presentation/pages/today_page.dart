@@ -278,6 +278,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   String? _errorMessage;
   String? _loadedCandidateCacheKey;
   String? _recommendationCacheKey;
+  int _recommendationBatchIndex = 0;
   int _loadRequestVersion = 0;
 
   @override
@@ -336,6 +337,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
         _errorMessage = null;
         _recommendations = const [];
         _recommendationCacheKey = null;
+        _recommendationBatchIndex = 0;
       });
       if (requestVersion != _loadRequestVersion) {
         return;
@@ -399,14 +401,17 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
         settingsNotifier: settingsNotifier,
         wordsNotifier: wordsNotifier,
         entries: entries,
+        batchIndex: 0,
       );
       setState(() {
         _entries = entries;
         _recommendations = recommendations;
         _loadedCandidateCacheKey = candidateCacheKey;
+        _recommendationBatchIndex = 0;
         _recommendationCacheKey = _buildRecommendationCacheKey(
           settingsNotifier: settingsNotifier,
           wordsNotifier: wordsNotifier,
+          batchIndex: 0,
         );
       });
     } catch (error) {
@@ -454,6 +459,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
   String _buildRecommendationCacheKey({
     required SettingsNotifier settingsNotifier,
     required WordsNotifier wordsNotifier,
+    int? batchIndex,
   }) {
     return [
       DateTime.now().year,
@@ -465,6 +471,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       settingsNotifier.dailyNewWordsReviewThreshold,
       _hashWords(wordsNotifier.words),
       _hashKeys(_dismissedWords),
+      batchIndex ?? _recommendationBatchIndex,
     ].join(':');
   }
 
@@ -502,6 +509,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     required WordsNotifier wordsNotifier,
     List<BuiltinWordEntry>? entries,
     Set<String>? excludedWords,
+    int? batchIndex,
   }) {
     return context.read<DailyWordRecommendationService>().recommend(
       entries: entries ?? _entries,
@@ -510,6 +518,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
       dueTodayCount: widget.dueCount,
       now: DateTime.now(),
       excludedWords: excludedWords ?? _dismissedWords,
+      batchIndex: batchIndex ?? _recommendationBatchIndex,
     );
   }
 
@@ -643,14 +652,17 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
     }
 
     final nextDismissed = <String>{..._dismissedWords, ...keys};
+    final nextBatchIndex = _recommendationBatchIndex + 1;
     final nextRecommendations = _buildRecommendations(
       settingsNotifier: settingsNotifier,
       wordsNotifier: wordsNotifier,
       excludedWords: nextDismissed,
+      batchIndex: nextBatchIndex,
     );
 
     setState(() {
       _dismissedWords.addAll(keys);
+      _recommendationBatchIndex = nextBatchIndex;
       _recommendations = nextRecommendations;
       _recommendationCacheKey = _buildRecommendationCacheKey(
         settingsNotifier: settingsNotifier,

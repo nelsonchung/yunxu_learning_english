@@ -126,6 +126,95 @@ void main() {
       );
     });
 
+    test('uses different leading letters when enough candidates exist', () {
+      final entries = [
+        _entry(
+          word: 'anchor',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+        _entry(
+          word: 'apple',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+        _entry(
+          word: 'balance',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+        _entry(
+          word: 'curious',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+        _entry(
+          word: 'delight',
+          difficultyLevel: 2,
+          partOfSpeech: PartOfSpeech.noun,
+        ),
+      ];
+
+      final recommendations = service.recommend(
+        entries: entries,
+        existingWords: const [],
+        settings: settings,
+        dueTodayCount: 2,
+        now: now,
+      );
+
+      expect(recommendations, hasLength(settings.dailyNewWordsCount));
+      expect(
+        recommendations.map((entry) => entry.word[0]).toSet(),
+        hasLength(settings.dailyNewWordsCount),
+      );
+    });
+
+    test(
+      'batch index changes the seeded order without changing eligibility',
+      () {
+        final entries = [
+          for (final word in [
+            'anchor',
+            'balance',
+            'curious',
+            'delight',
+            'eager',
+            'famous',
+            'gentle',
+            'honest',
+          ])
+            _entry(
+              word: word,
+              difficultyLevel: 2,
+              partOfSpeech: PartOfSpeech.noun,
+            ),
+        ];
+
+        final firstBatch = service.recommend(
+          entries: entries,
+          existingWords: const [],
+          settings: settings,
+          dueTodayCount: 2,
+          now: now,
+        );
+        final secondBatch = service.recommend(
+          entries: entries,
+          existingWords: const [],
+          settings: settings,
+          dueTodayCount: 2,
+          now: now,
+          batchIndex: 1,
+        );
+
+        expect(
+          secondBatch.map((entry) => entry.word),
+          isNot(orderedEquals(firstBatch.map((entry) => entry.word))),
+        );
+        expect(secondBatch, hasLength(firstBatch.length));
+      },
+    );
+
     test(
       'prefers words close to the learner difficulty and mixes parts of speech',
       () {

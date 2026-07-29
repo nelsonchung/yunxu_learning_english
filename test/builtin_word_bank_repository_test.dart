@@ -85,6 +85,53 @@ void main() {
     expect(second, first);
     expect(bundle.loadCount, loadedAfterFirstFetch);
   });
+
+  test(
+    'recommendation candidates are balanced across shuffled shards',
+    () async {
+      final entriesByKey = <String, List<Map<String, Object?>>>{};
+      for (var letterCode = 97; letterCode <= 122; letterCode += 1) {
+        final letter = String.fromCharCode(letterCode);
+        entriesByKey['assets/word_bank/word_bank_main-$letter.json'] = [
+          for (var index = 0; index < 5; index += 1)
+            _entryMap(
+              word: '$letter${_alphaSuffix(index)}',
+              meaning: '$letter recommendation $index',
+            ),
+        ];
+      }
+      final bundle = _TrackingWordBankAssetBundle(entriesByKey);
+      final repository = BuiltinWordBankRepository(assetBundle: bundle);
+
+      final candidates = await repository.fetchRecommendationCandidates(
+        existingWords: const [],
+        now: DateTime(2026, 7, 29),
+        desiredCount: 3,
+        minimumShardCount: 3,
+        candidateLimit: 9,
+      );
+
+      final countsByInitial = <String, int>{};
+      for (final entry in candidates) {
+        final initial = entry.word[0];
+        countsByInitial[initial] = (countsByInitial[initial] ?? 0) + 1;
+      }
+
+      expect(candidates, hasLength(9));
+      expect(countsByInitial, hasLength(3));
+      expect(countsByInitial.values, everyElement(3));
+      expect(bundle.loadedKeys, hasLength(3));
+      expect(bundle.loadedKeys, [
+        'assets/word_bank/word_bank_main-g.json',
+        'assets/word_bank/word_bank_main-y.json',
+        'assets/word_bank/word_bank_main-a.json',
+      ]);
+    },
+  );
+}
+
+String _alphaSuffix(int index) {
+  return String.fromCharCodes([97 + (index ~/ 26), 97 + (index % 26), 97]);
 }
 
 class _TrackingWordBankAssetBundle extends CachingAssetBundle {
