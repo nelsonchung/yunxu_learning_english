@@ -9,6 +9,7 @@ import '../../data/repositories/word_repository.dart';
 import '../models/app_settings.dart';
 import '../models/sync_state.dart';
 import '../models/word_card.dart';
+import 'review_schedule_service.dart';
 
 class CloudSyncService {
   CloudSyncService({
@@ -520,6 +521,9 @@ class CloudSyncService {
         'history': card.history
             .map((item) => item.millisecondsSinceEpoch)
             .toList(),
+        'reviewRatings': card.alignedReviewRatings
+            .map((rating) => rating.name)
+            .toList(),
         'isDeleted': card.isDeleted,
         'reviewState': card.reviewState.name,
         'masteredAt': card.masteredAt?.millisecondsSinceEpoch,
@@ -558,6 +562,9 @@ class CloudSyncService {
       'nextReviewDate': card.nextReviewDate.millisecondsSinceEpoch,
       'history': card.history
           .map((item) => item.millisecondsSinceEpoch)
+          .toList(),
+      'reviewRatings': card.alignedReviewRatings
+          .map((rating) => rating.name)
           .toList(),
       'isDeleted': card.isDeleted,
       'reviewState': card.reviewState.name,
@@ -630,10 +637,30 @@ class CloudSyncService {
               .toList()
         : <DateTime>[];
 
+    final reviewRatingsRaw = data['reviewRatings'];
+    final parsedReviewRatings = reviewRatingsRaw is List
+        ? reviewRatingsRaw
+              .whereType<String>()
+              .map((raw) {
+                return ReviewRating.values.firstWhere(
+                  (rating) => rating.name == raw,
+                  orElse: () => ReviewRating.unrated,
+                );
+              })
+              .toList(growable: false)
+        : const <ReviewRating>[];
+    final reviewRatings = WordCard.normalizeReviewRatings(
+      history.length,
+      parsedReviewRatings,
+    );
+
     final reviewRaw = data['reviewSchedule'];
-    final reviewSchedule = reviewRaw is List
+    final parsedReviewSchedule = reviewRaw is List
         ? reviewRaw.whereType<int>().toList()
-        : const <int>[1, 2, 3, 5, 8, 13, 21, 39];
+        : const <int>[];
+    final reviewSchedule = parsedReviewSchedule.isEmpty
+        ? ReviewScheduleService.defaultSchedule
+        : parsedReviewSchedule;
     final customTagsRaw = data['customTags'];
     final customTags = customTagsRaw is List
         ? WordCard.normalizeCustomTags(customTagsRaw.whereType<String>())
@@ -670,6 +697,7 @@ class CloudSyncService {
       nextReviewIndex: (data['nextReviewIndex'] as int?) ?? 0,
       nextReviewDate: nextReviewDate,
       history: history,
+      reviewRatings: reviewRatings,
       isDeleted: isDeleted,
       customTags: customTags,
       reviewState: reviewState,

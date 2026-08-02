@@ -30,6 +30,7 @@ class _TodayPageState extends State<TodayPage> {
 
   int _reviewTarget = _quickReviewCount;
   DateTime? _sessionDay;
+  final Set<String> _submittingWordIds = <String>{};
 
   void _resetSessionForNewDay(DateTime now) {
     final today = DateTime(now.year, now.month, now.day);
@@ -119,9 +120,16 @@ class _TodayPageState extends State<TodayPage> {
                   padding: const EdgeInsets.only(bottom: 14),
                   child: _ReviewCard(
                     card: card,
-                    onReview: () async {
+                    isSubmitting: _submittingWordIds.contains(card.id),
+                    onReview: (rating) async {
+                      if (_submittingWordIds.contains(card.id)) {
+                        return;
+                      }
+                      setState(() {
+                        _submittingWordIds.add(card.id);
+                      });
                       try {
-                        await notifier.markReviewed(card);
+                        await notifier.markReviewed(card, rating: rating);
                         imageCache.clear();
                         imageCache.clearLiveImages();
                       } catch (error, stackTrace) {
@@ -133,34 +141,46 @@ class _TodayPageState extends State<TodayPage> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('完成複習失敗，請稍後再試')),
                         );
+                      } finally {
+                        if (mounted) {
+                          setState(() {
+                            _submittingWordIds.remove(card.id);
+                          });
+                        } else {
+                          _submittingWordIds.remove(card.id);
+                        }
                       }
                     },
                     onMarkMastered: () async {
-                      final confirmed = await showDialog<bool>(
-                        context: context,
-                        builder: (dialogContext) => AlertDialog(
-                          title: const Text('標記為已掌握'),
-                          content: Text('「${card.word}」將提前結束複習，之後不再出現在今日複習。'),
-                          actions: [
-                            TextButton(
-                              onPressed: () =>
-                                  Navigator.pop(dialogContext, false),
-                              child: const Text('取消'),
-                            ),
-                            FilledButton(
-                              onPressed: () =>
-                                  Navigator.pop(dialogContext, true),
-                              child: const Text('確認'),
-                            ),
-                          ],
-                        ),
-                      );
-
-                      if (confirmed != true) {
+                      if (_submittingWordIds.contains(card.id)) {
                         return;
                       }
-
+                      setState(() {
+                        _submittingWordIds.add(card.id);
+                      });
                       try {
+                        final confirmed = await showDialog<bool>(
+                          context: context,
+                          builder: (dialogContext) => AlertDialog(
+                            title: const Text('標記為已掌握'),
+                            content: Text('「${card.word}」將提前結束複習，之後不再出現在今日複習。'),
+                            actions: [
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(dialogContext, false),
+                                child: const Text('取消'),
+                              ),
+                              FilledButton(
+                                onPressed: () =>
+                                    Navigator.pop(dialogContext, true),
+                                child: const Text('確認'),
+                              ),
+                            ],
+                          ),
+                        );
+                        if (confirmed != true) {
+                          return;
+                        }
                         await notifier.markMastered(card);
                       } catch (error, stackTrace) {
                         debugPrint('markMastered failed: $error');
@@ -171,6 +191,14 @@ class _TodayPageState extends State<TodayPage> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('標記已掌握失敗，請稍後再試')),
                         );
+                      } finally {
+                        if (mounted) {
+                          setState(() {
+                            _submittingWordIds.remove(card.id);
+                          });
+                        } else {
+                          _submittingWordIds.remove(card.id);
+                        }
                       }
                     },
                     onTap: () => Navigator.pushNamed(
@@ -1108,6 +1136,7 @@ class _RecommendedWordTile extends StatelessWidget {
 class _ReviewCard extends StatelessWidget {
   const _ReviewCard({
     required this.card,
+    required this.isSubmitting,
     required this.onReview,
     required this.onMarkMastered,
     required this.onTap,
@@ -1115,7 +1144,8 @@ class _ReviewCard extends StatelessWidget {
   });
 
   final WordCard card;
-  final Future<void> Function() onReview;
+  final bool isSubmitting;
+  final Future<void> Function(ReviewRating rating) onReview;
   final Future<void> Function() onMarkMastered;
   final VoidCallback onTap;
   final bool showImage;
@@ -1205,21 +1235,102 @@ class _ReviewCard extends StatelessWidget {
                     TextButton(onPressed: onTap, child: const Text('查看詳情')),
                     const Spacer(),
                     TextButton(
-                      onPressed: () => unawaited(onMarkMastered()),
+                      onPressed: isSubmitting
+                          ? null
+                          : () => unawaited(onMarkMastered()),
                       child: const Text('已掌握'),
                     ),
-                    const SizedBox(width: 8),
-                    ElevatedButton(
-                      onPressed: () => unawaited(onReview()),
-                      child: const Text('完成複習'),
-                    ),
                   ],
+                ),
+                const SizedBox(height: 8),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    const spacing = 8.0;
+                    final buttonWidth = (constraints.maxWidth - spacing) / 2;
+                    return Wrap(
+                      spacing: spacing,
+                      runSpacing: spacing,
+                      children: [
+                        _ReviewRatingButton(
+                          width: buttonWidth,
+                          rating: ReviewRating.forgot,
+                          icon: Icons.replay_rounded,
+                          onPressed: onReview,
+                          enabled: !isSubmitting,
+                        ),
+                        _ReviewRatingButton(
+                          width: buttonWidth,
+                          rating: ReviewRating.hard,
+                          icon: Icons.psychology_alt_outlined,
+                          onPressed: onReview,
+                          enabled: !isSubmitting,
+                        ),
+                        _ReviewRatingButton(
+                          width: buttonWidth,
+                          rating: ReviewRating.good,
+                          icon: Icons.check_rounded,
+                          onPressed: onReview,
+                          emphasized: true,
+                          enabled: !isSubmitting,
+                        ),
+                        _ReviewRatingButton(
+                          width: buttonWidth,
+                          rating: ReviewRating.easy,
+                          icon: Icons.fast_forward_rounded,
+                          onPressed: onReview,
+                          enabled: !isSubmitting,
+                        ),
+                      ],
+                    );
+                  },
                 ),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+}
+
+class _ReviewRatingButton extends StatelessWidget {
+  const _ReviewRatingButton({
+    required this.width,
+    required this.rating,
+    required this.icon,
+    required this.onPressed,
+    required this.enabled,
+    this.emphasized = false,
+  });
+
+  final double width;
+  final ReviewRating rating;
+  final IconData icon;
+  final Future<void> Function(ReviewRating rating) onPressed;
+  final bool enabled;
+  final bool emphasized;
+
+  @override
+  Widget build(BuildContext context) {
+    final child = Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(icon, size: 18),
+        const SizedBox(width: 6),
+        Flexible(child: Text(rating.label)),
+      ],
+    );
+    return SizedBox(
+      width: width,
+      child: emphasized
+          ? FilledButton(
+              onPressed: enabled ? () => unawaited(onPressed(rating)) : null,
+              child: child,
+            )
+          : OutlinedButton(
+              onPressed: enabled ? () => unawaited(onPressed(rating)) : null,
+              child: child,
+            ),
     );
   }
 }

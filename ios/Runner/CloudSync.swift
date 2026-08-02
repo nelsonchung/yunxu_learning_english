@@ -44,10 +44,13 @@ final class CloudSyncHandler {
       ckRecord["meaning"] = record["meaning"] as? NSString ?? ""
       ckRecord["memoryHint"] = record["memoryHint"] as? NSString ?? ""
       ckRecord["partOfSpeech"] = record["partOfSpeech"] as? NSString ?? ""
+      ckRecord["origin"] = record["origin"] as? NSString ?? "unknown"
+      ckRecord["reviewState"] = record["reviewState"] as? NSString ?? "active"
 
       if let sentences = record["sentences"] as? [String] {
         ckRecord["sentences"] = sentences as NSArray
       }
+      ckRecord["customTags"] = (record["customTags"] as? [String] ?? []) as NSArray
 
       if let schedule = record["reviewSchedule"] as? [Int] {
         ckRecord["reviewSchedule"] = schedule.map { NSNumber(value: $0) } as NSArray
@@ -70,6 +73,12 @@ final class CloudSyncHandler {
       if let history = record["history"] as? [Int] {
         let dates = history.map { Date(timeIntervalSince1970: Double($0) / 1000.0) }
         ckRecord["history"] = dates as NSArray
+      }
+      ckRecord["reviewRatings"] = (record["reviewRatings"] as? [String] ?? []) as NSArray
+      if let masteredAt = Self.dateFromMillis(record["masteredAt"]) {
+        ckRecord["masteredAt"] = masteredAt as NSDate
+      } else {
+        ckRecord["masteredAt"] = nil
       }
 
       let isDeleted = record["isDeleted"] as? Bool ?? false
@@ -261,8 +270,12 @@ final class CloudSyncHandler {
       "meaning": record["meaning"] as? String ?? "",
       "memoryHint": record["memoryHint"] as? String ?? "",
       "partOfSpeech": record["partOfSpeech"] as? String ?? "",
+      "origin": record["origin"] as? String ?? "unknown",
+      "reviewState": record["reviewState"] as? String ?? "active",
       "sentences": record["sentences"] as? [String] ?? [],
+      "customTags": record["customTags"] as? [String] ?? [],
       "reviewSchedule": (record["reviewSchedule"] as? [NSNumber])?.map { $0.intValue } ?? [],
+      "reviewRatings": record["reviewRatings"] as? [String] ?? [],
       "nextReviewIndex": (record["nextReviewIndex"] as? NSNumber)?.intValue ?? 0,
       "isDeleted": (record["isDeleted"] as? NSNumber)?.boolValue ?? false,
     ]
@@ -278,6 +291,9 @@ final class CloudSyncHandler {
     }
     if let history = record["history"] as? [Date] {
       map["history"] = history.map { Int($0.timeIntervalSince1970 * 1000.0) }
+    }
+    if let masteredAt = record["masteredAt"] as? Date {
+      map["masteredAt"] = Int(masteredAt.timeIntervalSince1970 * 1000.0)
     }
 
     if let asset = record["image"] as? CKAsset,

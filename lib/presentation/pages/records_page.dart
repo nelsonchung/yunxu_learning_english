@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../domain/models/sync_state.dart';
+import '../../domain/models/word_card.dart';
 import '../../domain/services/learning_progress_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
@@ -53,6 +54,12 @@ class RecordsPage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 16),
+            _ReviewPerformanceCard(progress: progress),
+            if (progress.difficultWords.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              _DifficultWordsCard(words: progress.difficultWords),
+            ],
             const SizedBox(height: 16),
             SectionCard(
               title: '雲端同步紀錄',
@@ -181,6 +188,122 @@ class RecordsPage extends StatelessWidget {
     final minute = value.minute.toString().padLeft(2, '0');
     final second = value.second.toString().padLeft(2, '0');
     return '$year-$month-$day $hour:$minute:$second';
+  }
+}
+
+class _ReviewPerformanceCard extends StatelessWidget {
+  const _ReviewPerformanceCard({required this.progress});
+
+  final LearningProgressSummary progress;
+
+  @override
+  Widget build(BuildContext context) {
+    final recallRate = progress.recentRecallRate;
+    return SectionCard(
+      title: '最近 7 天記憶回饋',
+      subtitle: progress.recentRatedReviews == 0
+          ? '完成四級記憶回饋後，這裡會開始統計'
+          : '共記錄 ${progress.recentRatedReviews} 次有效回饋',
+      trailing: CircleAvatar(
+        backgroundColor: const Color(0xFF0B6E99).withValues(alpha: 0.1),
+        child: Text(
+          recallRate == null ? '—' : '$recallRate%',
+          style: const TextStyle(
+            color: Color(0xFF0B6E99),
+            fontWeight: FontWeight.w700,
+            fontSize: 12,
+          ),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            recallRate == null ? '尚無可計算的記憶回饋' : '回想穩定率 $recallRate%',
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              _RatingCountChip(
+                rating: ReviewRating.forgot,
+                count: progress.recentForgotReviews,
+              ),
+              _RatingCountChip(
+                rating: ReviewRating.hard,
+                count: progress.recentHardReviews,
+              ),
+              _RatingCountChip(
+                rating: ReviewRating.good,
+                count: progress.recentGoodReviews,
+              ),
+              _RatingCountChip(
+                rating: ReviewRating.easy,
+                count: progress.recentEasyReviews,
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _RatingCountChip extends StatelessWidget {
+  const _RatingCountChip({required this.rating, required this.count});
+
+  final ReviewRating rating;
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    return Chip(
+      avatar: CircleAvatar(
+        backgroundColor: const Color(0xFF0B6E99).withValues(alpha: 0.12),
+        child: Text('$count', style: Theme.of(context).textTheme.labelSmall),
+      ),
+      label: Text(rating.label),
+      side: BorderSide.none,
+      backgroundColor: const Color(0xFFF2F7F8),
+    );
+  }
+}
+
+class _DifficultWordsCard extends StatelessWidget {
+  const _DifficultWordsCard({required this.words});
+
+  final List<WordCard> words;
+
+  @override
+  Widget build(BuildContext context) {
+    final visibleWords = words.take(5).toList(growable: false);
+    return SectionCard(
+      title: '需要加強的單字',
+      subtitle: '最近三次回饋中，至少兩次感到困難',
+      trailing: Text(
+        '${words.length}',
+        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+          color: const Color(0xFF0B6E99),
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+      child: Column(
+        children: visibleWords
+            .map((word) {
+              return ListTile(
+                contentPadding: EdgeInsets.zero,
+                title: Text(word.word),
+                subtitle: Text(word.meaning),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () =>
+                    Navigator.pushNamed(context, '/detail', arguments: word.id),
+              );
+            })
+            .toList(growable: false),
+      ),
+    );
   }
 }
 

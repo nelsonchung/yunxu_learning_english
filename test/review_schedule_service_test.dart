@@ -29,12 +29,83 @@ void main() {
     expect(resumed.masteredAt, isNull);
     expect(service.isDueOnOrBefore(resumed, now), isTrue);
   });
+
+  test('forgot resets progress and schedules tomorrow', () {
+    final now = DateTime(2026, 4, 12, 10);
+    final reviewed = service.recordReview(
+      _card(
+        nextReviewDate: now.subtract(const Duration(days: 5)),
+        nextReviewIndex: 2,
+      ),
+      ReviewRating.forgot,
+      now,
+    );
+
+    expect(reviewed.nextReviewIndex, 0);
+    expect(reviewed.nextReviewDate, now.add(const Duration(days: 1)));
+    expect(reviewed.history, [now]);
+    expect(reviewed.reviewRatings, [ReviewRating.forgot]);
+  });
+
+  test('hard keeps the stage and shortens its interval', () {
+    final now = DateTime(2026, 4, 12, 10);
+    final reviewed = service.recordReview(
+      _card(nextReviewDate: now, nextReviewIndex: 2),
+      ReviewRating.hard,
+      now,
+    );
+
+    expect(reviewed.nextReviewIndex, 2);
+    expect(reviewed.nextReviewDate, now.add(const Duration(days: 1)));
+    expect(reviewed.reviewRatings, [ReviewRating.hard]);
+  });
+
+  test('good advances one stage from the actual review time', () {
+    final now = DateTime(2026, 4, 12, 10);
+    final reviewed = service.recordReview(
+      _card(nextReviewDate: now.subtract(const Duration(days: 20))),
+      ReviewRating.good,
+      now,
+    );
+
+    expect(reviewed.nextReviewIndex, 1);
+    expect(reviewed.nextReviewDate, now.add(const Duration(days: 1)));
+    expect(reviewed.reviewRatings, [ReviewRating.good]);
+  });
+
+  test('easy skips one stage without marking the card mastered', () {
+    final now = DateTime(2026, 4, 12, 10);
+    final reviewed = service.recordReview(
+      _card(nextReviewDate: now),
+      ReviewRating.easy,
+      now,
+    );
+
+    expect(reviewed.nextReviewIndex, 2);
+    expect(reviewed.nextReviewDate, now.add(const Duration(days: 2)));
+    expect(reviewed.reviewRatings, [ReviewRating.easy]);
+    expect(reviewed.isMastered, isFalse);
+  });
+
+  test('good at the last stage completes the schedule', () {
+    final now = DateTime(2026, 4, 12, 10);
+    final reviewed = service.recordReview(
+      _card(nextReviewDate: now, nextReviewIndex: 2),
+      ReviewRating.good,
+      now,
+    );
+
+    expect(reviewed.nextReviewIndex, 3);
+    expect(reviewed.hasCompletedReviewSchedule, isTrue);
+    expect(reviewed.reviewRatings, [ReviewRating.good]);
+  });
 }
 
 WordCard _card({
   required DateTime nextReviewDate,
   WordReviewState reviewState = WordReviewState.active,
   DateTime? masteredAt,
+  int nextReviewIndex = 0,
 }) {
   final createdAt = DateTime(2026, 4, 1);
   return WordCard(
@@ -47,7 +118,7 @@ WordCard _card({
     createdAt: createdAt,
     updatedAt: createdAt,
     reviewSchedule: const [1, 2, 3],
-    nextReviewIndex: 0,
+    nextReviewIndex: nextReviewIndex,
     nextReviewDate: nextReviewDate,
     history: const [],
     isDeleted: false,

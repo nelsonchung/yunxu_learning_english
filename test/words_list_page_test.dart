@@ -182,6 +182,46 @@ void main() {
     );
     expect(wordsNotifier.findById('1')?.customTags, contains('課本A'));
   });
+
+  testWidgets('困難單字篩選只顯示最近反覆卡住的單字', (tester) async {
+    final now = DateTime(2026, 8, 2, 10);
+    await _pumpWordsListPage(
+      tester,
+      initialCards: [
+        _wordCard(
+          id: '1',
+          word: 'subtle',
+          meaning: '細微的',
+          history: [
+            now.subtract(const Duration(days: 2)),
+            now.subtract(const Duration(days: 1)),
+            now,
+          ],
+          reviewRatings: const [
+            ReviewRating.forgot,
+            ReviewRating.hard,
+            ReviewRating.good,
+          ],
+        ),
+        _wordCard(
+          id: '2',
+          word: 'steady',
+          meaning: '穩定的',
+          history: [now],
+          reviewRatings: const [ReviewRating.good],
+        ),
+      ],
+    );
+
+    expect(find.text('困難單字 1'), findsOneWidget);
+    expect(find.text('需要加強'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(ChoiceChip, '困難單字 1'));
+    await tester.pump();
+
+    expect(find.text('subtle'), findsOneWidget);
+    expect(find.text('steady'), findsNothing);
+  });
 }
 
 Future<WordsNotifier> _pumpWordsListPage(
@@ -237,6 +277,8 @@ WordCard _wordCard({
   required String meaning,
   List<String> sentences = const ['This is a sample sentence.'],
   List<String> customTags = const [],
+  List<DateTime> history = const [],
+  List<ReviewRating> reviewRatings = const [],
 }) {
   final now = DateTime.fromMillisecondsSinceEpoch(1_700_000_000_000);
   return WordCard(
@@ -251,7 +293,8 @@ WordCard _wordCard({
     reviewSchedule: const [1, 2, 3],
     nextReviewIndex: 0,
     nextReviewDate: now,
-    history: const [],
+    history: history,
+    reviewRatings: reviewRatings,
     isDeleted: false,
     customTags: customTags,
   );

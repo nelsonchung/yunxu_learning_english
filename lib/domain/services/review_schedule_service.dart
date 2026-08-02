@@ -8,28 +8,78 @@ class ReviewScheduleService {
   }
 
   WordCard advanceReview(WordCard card, DateTime now) {
-    final updatedHistory = List<DateTime>.from(card.history)..add(now);
-    final nextIndex = card.nextReviewIndex + 1;
+    return recordReview(card, ReviewRating.good, now);
+  }
 
-    if (nextIndex >= card.reviewSchedule.length) {
+  WordCard recordReview(WordCard card, ReviewRating rating, DateTime now) {
+    final updatedHistory = List<DateTime>.from(card.history)..add(now);
+    final updatedRatings = List<ReviewRating>.from(card.alignedReviewRatings)
+      ..add(rating);
+    final schedule = card.reviewSchedule.isEmpty
+        ? defaultSchedule
+        : card.reviewSchedule;
+    final currentIndex = card.nextReviewIndex
+        .clamp(0, schedule.length - 1)
+        .toInt();
+
+    late final int nextIndex;
+    late final int daysToAdd;
+    switch (rating) {
+      case ReviewRating.unrated:
+      case ReviewRating.good:
+        nextIndex = currentIndex + 1;
+        daysToAdd = _daysBetweenStages(schedule, currentIndex, nextIndex);
+      case ReviewRating.forgot:
+        nextIndex = 0;
+        daysToAdd = 1;
+      case ReviewRating.hard:
+        nextIndex = currentIndex;
+        final nearbyInterval = currentIndex + 1 < schedule.length
+            ? schedule[currentIndex + 1] - schedule[currentIndex]
+            : currentIndex > 0
+            ? schedule[currentIndex] - schedule[currentIndex - 1]
+            : schedule[currentIndex];
+        daysToAdd = (nearbyInterval / 2).ceil().clamp(1, 3650).toInt();
+      case ReviewRating.easy:
+        nextIndex = currentIndex + 2;
+        daysToAdd = _daysBetweenStages(schedule, currentIndex, nextIndex);
+    }
+
+    if (nextIndex >= schedule.length) {
       return card.copyWith(
+        reviewSchedule: schedule,
         nextReviewIndex: nextIndex,
         history: updatedHistory,
+        reviewRatings: updatedRatings,
         reviewState: WordReviewState.active,
         masteredAt: null,
       );
     }
 
-    final daysToAdd = card.reviewSchedule[nextIndex];
-    final nextDate = card.createdAt.add(Duration(days: daysToAdd));
+    final nextDate = now.add(Duration(days: daysToAdd));
 
     return card.copyWith(
+      reviewSchedule: schedule,
       nextReviewIndex: nextIndex,
       nextReviewDate: nextDate,
       history: updatedHistory,
+      reviewRatings: updatedRatings,
       reviewState: WordReviewState.active,
       masteredAt: null,
     );
+  }
+
+  int _daysBetweenStages(
+    List<int> schedule,
+    int currentIndex,
+    int targetIndex,
+  ) {
+    if (targetIndex >= schedule.length) {
+      return 0;
+    }
+    return (schedule[targetIndex] - schedule[currentIndex])
+        .clamp(1, 3650)
+        .toInt();
   }
 
   WordCard markMastered(WordCard card, DateTime now) {

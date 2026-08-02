@@ -35,13 +35,18 @@
 - `meaning` (String)
 - `memoryHint` (String)
 - `partOfSpeech` (String)
+- `origin` (String)
 - `sentences` (String, List)
+- `customTags` (String, List)
 - `reviewSchedule` (Int64, List)
+- `reviewRatings` (String, List)
 - `nextReviewIndex` (Int64)
 - `createdAt` (Date/Time)
 - `updatedAt` (Date/Time)
 - `nextReviewDate` (Date/Time)
 - `history` (Date/Time, List)
+- `reviewState` (String)
+- `masteredAt` (Date/Time)
 - `isDeleted` (Int64)
 - `image` (Asset)
 
@@ -55,6 +60,18 @@
 ### 4. Deploy 到 Production
 - 左下 `Deploy Schema Changes...`
 - 切換到 Production 環境確認 `WordCard` 與 Index 存在
+
+新增記憶程度回饋功能後，必須先確認以下五個欄位全部部署到 Production，
+再發布使用 Production CloudKit 的 TestFlight 或正式版本：
+
+- `origin`
+- `customTags`
+- `reviewState`
+- `masteredAt`
+- `reviewRatings`
+
+原生橋接會在每次單字同步時寫入這些欄位；只要 Production 缺少其中一個，
+該批次就可能因 CloudKit schema 錯誤而整批失敗。
 
 ## 如何驗證資料是否上傳
 1) Data → Records
@@ -95,6 +112,7 @@
 ## TestFlight 上線前 CloudKit 檢查清單
 - [ ] Apple Developer → CloudKit Dashboard 已切到 `Production`
 - [ ] `WordCard` 與必要欄位都存在於 `Production`
+- [ ] `origin`、`customTags`、`reviewState`、`masteredAt`、`reviewRatings` 已部署
 - [ ] `updatedAt` 的 Queryable/Sortable index 已存在於 `Production`
 - [ ] iOS/macOS 版本都使用同一個 container：`iCloud.com.yunxu.yunxulearn`
 - [ ] iOS `Runner.entitlements` 含 iCloud/CloudKit capability

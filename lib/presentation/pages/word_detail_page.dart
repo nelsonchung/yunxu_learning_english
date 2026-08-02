@@ -186,6 +186,11 @@ class WordDetailPage extends StatelessWidget {
                                   label:
                                       '待補：${card.missingFieldLabels.join('、')}',
                                 ),
+                              if (card.isDifficult)
+                                const _InfoChip(
+                                  icon: Icons.psychology_alt_outlined,
+                                  label: '需要加強',
+                                ),
                             ],
                           ),
                           if (card.isMastered ||
@@ -315,9 +320,18 @@ class WordDetailPage extends StatelessWidget {
                         ? const Text('尚未完成任何複習')
                         : Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: card.history
-                                .map((date) => Text('• ${formatDate(date)}'))
-                                .toList(),
+                            children: List.generate(card.history.length, (
+                              index,
+                            ) {
+                              final date = card.history[index];
+                              final rating = card.alignedReviewRatings[index];
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 4),
+                                child: Text(
+                                  '• ${formatDate(date)} · ${rating.label}',
+                                ),
+                              );
+                            }, growable: false),
                           ),
                   ),
                 ],

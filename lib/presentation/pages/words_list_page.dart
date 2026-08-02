@@ -11,6 +11,8 @@ import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
 import '../widgets/sort_selector.dart';
 
+enum _WordListFilter { all, pending, difficult }
+
 class WordsListPage extends StatefulWidget {
   const WordsListPage({super.key});
 
@@ -24,7 +26,7 @@ class _WordsListPageState extends State<WordsListPage> {
   final _searchController = TextEditingController();
   final _searchFocusNode = FocusNode();
 
-  bool _showOnlyPending = false;
+  _WordListFilter _listFilter = _WordListFilter.all;
   String? _selectedTagFilter;
   String _searchQuery = '';
 
@@ -62,6 +64,14 @@ class _WordsListPageState extends State<WordsListPage> {
 
     return _normalizeSearchText(card.word).contains(query) ||
         _normalizeSearchText(card.meaning).contains(query);
+  }
+
+  bool _matchesListFilter(WordCard card) {
+    return switch (_listFilter) {
+      _WordListFilter.all => true,
+      _WordListFilter.pending => card.needsCompletion,
+      _WordListFilter.difficult => card.isDifficult,
+    };
   }
 
   String _normalizeSearchText(String value) {
@@ -137,8 +147,11 @@ class _WordsListPageState extends State<WordsListPage> {
             .where((card) => card.customTags.isEmpty)
             .length;
         final pendingWordsCount = notifier.pendingWordsCount;
+        final difficultWordsCount = words
+            .where((card) => card.isDifficult)
+            .length;
         final visibleWords = words
-            .where((card) => !_showOnlyPending || card.needsCompletion)
+            .where(_matchesListFilter)
             .where(_matchesSelectedTag)
             .where(_matchesSearchQuery)
             .toList(growable: false);
@@ -150,8 +163,11 @@ class _WordsListPageState extends State<WordsListPage> {
         final hasSearchQuery = _searchQuery.trim().isNotEmpty;
         final hasActiveTagFilter = _selectedTagFilter != null;
         final hasAnyFilter =
-            _showOnlyPending || hasActiveTagFilter || hasSearchQuery;
-        final hasFilterWithoutSearch = _showOnlyPending || hasActiveTagFilter;
+            _listFilter != _WordListFilter.all ||
+            hasActiveTagFilter ||
+            hasSearchQuery;
+        final hasFilterWithoutSearch =
+            _listFilter != _WordListFilter.all || hasActiveTagFilter;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
@@ -228,25 +244,37 @@ class _WordsListPageState extends State<WordsListPage> {
                     children: [
                       ChoiceChip(
                         label: Text('全部 ${words.length}'),
-                        selected: !_showOnlyPending,
+                        selected: _listFilter == _WordListFilter.all,
                         onSelected: (selected) {
                           if (!selected) {
                             return;
                           }
                           setState(() {
-                            _showOnlyPending = false;
+                            _listFilter = _WordListFilter.all;
                           });
                         },
                       ),
                       ChoiceChip(
                         label: Text('只看待補 $pendingWordsCount'),
-                        selected: _showOnlyPending,
+                        selected: _listFilter == _WordListFilter.pending,
                         onSelected: (selected) {
                           if (!selected) {
                             return;
                           }
                           setState(() {
-                            _showOnlyPending = true;
+                            _listFilter = _WordListFilter.pending;
+                          });
+                        },
+                      ),
+                      ChoiceChip(
+                        label: Text('困難單字 $difficultWordsCount'),
+                        selected: _listFilter == _WordListFilter.difficult,
+                        onSelected: (selected) {
+                          if (!selected) {
+                            return;
+                          }
+                          setState(() {
+                            _listFilter = _WordListFilter.difficult;
                           });
                         },
                       ),
@@ -331,10 +359,13 @@ class _WordsListPageState extends State<WordsListPage> {
                     ? '目前篩選條件下找不到符合搜尋的單字'
                     : hasSearchQuery
                     ? '找不到符合搜尋的單字'
-                    : _showOnlyPending && hasActiveTagFilter
+                    : _listFilter == _WordListFilter.pending &&
+                          hasActiveTagFilter
                     ? '這個標籤目前沒有待補資料的單字'
-                    : _showOnlyPending
+                    : _listFilter == _WordListFilter.pending
                     ? '目前沒有待補資料的單字'
+                    : _listFilter == _WordListFilter.difficult
+                    ? '目前沒有需要加強的困難單字'
                     : '這個標籤目前沒有單字',
                 actionLabel: hasSearchQuery && hasFilterWithoutSearch
                     ? '清除搜尋與篩選'
@@ -347,7 +378,7 @@ class _WordsListPageState extends State<WordsListPage> {
                   _searchController.clear();
                   setState(() {
                     _searchQuery = '';
-                    _showOnlyPending = false;
+                    _listFilter = _WordListFilter.all;
                     _selectedTagFilter = null;
                   });
                 },
@@ -457,6 +488,10 @@ class _WordsListPageState extends State<WordsListPage> {
                                               ),
                                         ),
                                       ),
+                                    ],
+                                    if (card.isDifficult) ...[
+                                      const SizedBox(height: 8),
+                                      const _DifficultWordBadge(),
                                     ],
                                     const SizedBox(height: 8),
                                     Text(
@@ -633,6 +668,28 @@ class _WordTagChip extends StatelessWidget {
         label,
         style: Theme.of(context).textTheme.bodySmall?.copyWith(
           color: const Color(0xFF0B6E99),
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
+}
+
+class _DifficultWordBadge extends StatelessWidget {
+  const _DifficultWordBadge();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF2A65A).withValues(alpha: 0.18),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        '需要加強',
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+          color: const Color(0xFF8C4A06),
           fontWeight: FontWeight.w600,
         ),
       ),

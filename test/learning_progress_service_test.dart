@@ -55,11 +55,54 @@ void main() {
     expect(summary.activeDaysThisWeek, 0);
     expect(summary.latestActivityAt, isNull);
   });
+
+  test('summarizes recent ratings and difficult words', () {
+    final now = DateTime(2026, 8, 2, 20);
+    final summary = service.summarize([
+      _card(
+        id: 'difficult',
+        history: [
+          DateTime(2026, 7, 31, 8),
+          DateTime(2026, 8, 1, 8),
+          DateTime(2026, 8, 2, 8),
+        ],
+        reviewRatings: const [
+          ReviewRating.forgot,
+          ReviewRating.hard,
+          ReviewRating.good,
+        ],
+      ),
+      _card(
+        id: 'steady',
+        history: [DateTime(2026, 8, 2, 12)],
+        reviewRatings: const [ReviewRating.easy],
+      ),
+    ], now: now);
+
+    expect(summary.recentForgotReviews, 1);
+    expect(summary.recentHardReviews, 1);
+    expect(summary.recentGoodReviews, 1);
+    expect(summary.recentEasyReviews, 1);
+    expect(summary.recentRecallRate, 50);
+    expect(summary.difficultWords.map((card) => card.word), ['difficult']);
+  });
+
+  test('legacy unrated history is excluded from recall rate', () {
+    final now = DateTime(2026, 8, 2, 20);
+    final summary = service.summarize([
+      _card(id: 'legacy', history: [DateTime(2026, 8, 2, 8)]),
+    ], now: now);
+
+    expect(summary.recentRatedReviews, 0);
+    expect(summary.recentRecallRate, isNull);
+    expect(summary.difficultWords, isEmpty);
+  });
 }
 
 WordCard _card({
   required String id,
   List<DateTime> history = const [],
+  List<ReviewRating> reviewRatings = const [],
   WordReviewState reviewState = WordReviewState.active,
   DateTime? masteredAt,
 }) {
@@ -77,6 +120,7 @@ WordCard _card({
     nextReviewIndex: 0,
     nextReviewDate: createdAt,
     history: history,
+    reviewRatings: reviewRatings,
     isDeleted: false,
     reviewState: reviewState,
     masteredAt: masteredAt,

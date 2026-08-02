@@ -34,6 +34,88 @@ void main() {
     expect(restored.masteredAt, now);
   });
 
+  test('WordCard preserves aligned review ratings through toMap/fromMap', () {
+    final first = DateTime(2026, 8, 1, 10);
+    final second = DateTime(2026, 8, 2, 10);
+    final card = WordCard(
+      id: 'rated-word',
+      word: 'resilient',
+      meaning: '有韌性的',
+      partOfSpeech: PartOfSpeech.adjective,
+      sentences: const ['She remained resilient.'],
+      origin: WordOrigin.manual,
+      createdAt: first,
+      updatedAt: second,
+      reviewSchedule: const [1, 2, 3],
+      nextReviewIndex: 1,
+      nextReviewDate: second,
+      history: [first, second],
+      reviewRatings: const [ReviewRating.hard, ReviewRating.good],
+      isDeleted: false,
+    );
+
+    final restored = WordCard.fromMap(card.toMap());
+
+    expect(restored.reviewRatings, [ReviewRating.hard, ReviewRating.good]);
+    expect(restored.alignedReviewRatings, [
+      ReviewRating.hard,
+      ReviewRating.good,
+    ]);
+  });
+
+  test('legacy and unknown review ratings become unrated', () {
+    final restored = WordCard.fromMap({
+      'id': 'legacy-word',
+      'word': 'legacy',
+      'history': [1_700_000_000_000, 1_700_086_400_000],
+      'reviewRatings': ['unknown-value'],
+      'reviewSchedule': const [],
+    });
+
+    expect(restored.alignedReviewRatings, [
+      ReviewRating.unrated,
+      ReviewRating.unrated,
+    ]);
+    expect(restored.reviewSchedule, [1, 2, 3, 5, 8, 13, 21, 39]);
+  });
+
+  test('older clients append unrated history after existing ratings', () {
+    final restored = WordCard.fromMap({
+      'id': 'mixed-version-word',
+      'word': 'compatibility',
+      'history': [1_700_000_000_000, 1_700_086_400_000, 1_700_172_800_000],
+      'reviewRatings': ['good'],
+      'reviewSchedule': [1, 2, 3],
+    });
+
+    expect(restored.alignedReviewRatings, [
+      ReviewRating.good,
+      ReviewRating.unrated,
+      ReviewRating.unrated,
+    ]);
+  });
+
+  test('mastered and completed cards are not marked difficult', () {
+    final baseMap = <String, Object?>{
+      'id': 'finished-word',
+      'word': 'finished',
+      'history': [1_700_000_000_000, 1_700_086_400_000],
+      'reviewRatings': ['forgot', 'hard'],
+      'reviewSchedule': [1, 2, 3],
+      'nextReviewIndex': 0,
+    };
+
+    final mastered = WordCard.fromMap({
+      ...baseMap,
+      'reviewState': 'mastered',
+      'masteredAt': 1_700_086_400_000,
+    });
+    final completed = WordCard.fromMap({...baseMap, 'nextReviewIndex': 3});
+
+    expect(mastered.isDifficult, isFalse);
+    expect(completed.isDifficult, isFalse);
+  });
+
   test('WordCard defaults missing origin to unknown', () {
     final restored = WordCard.fromMap({
       'id': 'word-2',
@@ -55,5 +137,6 @@ void main() {
     expect(restored.customTags, isEmpty);
     expect(restored.reviewState, WordReviewState.active);
     expect(restored.masteredAt, isNull);
+    expect(restored.reviewRatings, isEmpty);
   });
 }

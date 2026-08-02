@@ -14,6 +14,11 @@ class LearningProgressSummary {
     required this.activeDaysThisWeek,
     required this.activeDaysLast30,
     required this.lastSevenDays,
+    required this.recentForgotReviews,
+    required this.recentHardReviews,
+    required this.recentGoodReviews,
+    required this.recentEasyReviews,
+    required this.difficultWords,
     this.latestActivityAt,
   });
 
@@ -23,6 +28,24 @@ class LearningProgressSummary {
   final int activeDaysLast30;
   final DateTime? latestActivityAt;
   final List<DailyLearningActivity> lastSevenDays;
+  final int recentForgotReviews;
+  final int recentHardReviews;
+  final int recentGoodReviews;
+  final int recentEasyReviews;
+  final List<WordCard> difficultWords;
+
+  int get recentRatedReviews =>
+      recentForgotReviews +
+      recentHardReviews +
+      recentGoodReviews +
+      recentEasyReviews;
+  int? get recentRecallRate {
+    if (recentRatedReviews == 0) {
+      return null;
+    }
+    return ((recentGoodReviews + recentEasyReviews) / recentRatedReviews * 100)
+        .round();
+  }
 }
 
 class LearningProgressService {
@@ -43,10 +66,35 @@ class LearningProgressService {
     final activityTimes = <DateTime>[];
     var totalReviews = 0;
     var masteredWords = 0;
+    var recentForgotReviews = 0;
+    var recentHardReviews = 0;
+    var recentGoodReviews = 0;
+    var recentEasyReviews = 0;
 
     for (final card in activeCards) {
       totalReviews += card.history.length;
       activityTimes.addAll(card.history.map((item) => item.toLocal()));
+      final ratings = card.alignedReviewRatings;
+      for (var index = 0; index < card.history.length; index++) {
+        final reviewedAt = card.history[index].toLocal();
+        if (reviewedAt.isBefore(sevenDayStart) ||
+            !reviewedAt.isBefore(tomorrow) ||
+            reviewedAt.isAfter(localNow)) {
+          continue;
+        }
+        switch (ratings[index]) {
+          case ReviewRating.unrated:
+            break;
+          case ReviewRating.forgot:
+            recentForgotReviews++;
+          case ReviewRating.hard:
+            recentHardReviews++;
+          case ReviewRating.good:
+            recentGoodReviews++;
+          case ReviewRating.easy:
+            recentEasyReviews++;
+        }
+      }
       if (card.isMastered) {
         masteredWords++;
         final masteredAt = card.masteredAt;
@@ -74,6 +122,19 @@ class LearningProgressService {
       }).length;
       return DailyLearningActivity(day: day, count: count);
     }, growable: false);
+    final difficultWords =
+        activeCards.where((card) => card.isDifficult).toList(growable: false)
+          ..sort((first, second) {
+            final firstScore = _difficultyScore(first);
+            final secondScore = _difficultyScore(second);
+            final scoreCompare = secondScore.compareTo(firstScore);
+            if (scoreCompare != 0) {
+              return scoreCompare;
+            }
+            return first.word.toLowerCase().compareTo(
+              second.word.toLowerCase(),
+            );
+          });
 
     return LearningProgressSummary(
       masteredWords: masteredWords,
@@ -88,7 +149,28 @@ class LearningProgressService {
           .length,
       latestActivityAt: latestActivityAt,
       lastSevenDays: lastSevenDays,
+      recentForgotReviews: recentForgotReviews,
+      recentHardReviews: recentHardReviews,
+      recentGoodReviews: recentGoodReviews,
+      recentEasyReviews: recentEasyReviews,
+      difficultWords: List<WordCard>.unmodifiable(difficultWords),
     );
+  }
+
+  int _difficultyScore(WordCard card) {
+    return card.alignedReviewRatings
+        .where((rating) => rating != ReviewRating.unrated)
+        .toList(growable: false)
+        .reversed
+        .take(3)
+        .fold(0, (score, rating) {
+          return score +
+              switch (rating) {
+                ReviewRating.forgot => 2,
+                ReviewRating.hard => 1,
+                _ => 0,
+              };
+        });
   }
 
   DateTime _startOfDay(DateTime value) {

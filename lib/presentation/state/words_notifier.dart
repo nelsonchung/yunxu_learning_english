@@ -621,10 +621,14 @@ class WordsNotifier extends ChangeNotifier {
     return affectedCards.length;
   }
 
-  Future<void> markReviewed(WordCard card) async {
+  Future<void> markReviewed(
+    WordCard card, {
+    ReviewRating rating = ReviewRating.good,
+  }) async {
+    final now = DateTime.now();
     final updated = _scheduleService
-        .advanceReview(card, DateTime.now())
-        .copyWith(updatedAt: DateTime.now());
+        .recordReview(card, rating, now)
+        .copyWith(updatedAt: now);
     await _repository.update(updated);
 
     final index = _words.indexWhere((item) => item.id == card.id);

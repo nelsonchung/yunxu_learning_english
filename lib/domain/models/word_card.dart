@@ -32,6 +32,30 @@ enum WordOrigin { unknown, manual, builtinWordBank }
 
 enum WordReviewState { active, mastered }
 
+enum ReviewRating { unrated, forgot, hard, good, easy }
+
+extension ReviewRatingLabel on ReviewRating {
+  String get label {
+    switch (this) {
+      case ReviewRating.unrated:
+        return '未評級';
+      case ReviewRating.forgot:
+        return '忘記了';
+      case ReviewRating.hard:
+        return '有點困難';
+      case ReviewRating.good:
+        return '記得';
+      case ReviewRating.easy:
+        return '太簡單';
+    }
+  }
+
+  bool get isStruggling =>
+      this == ReviewRating.forgot || this == ReviewRating.hard;
+  bool get isRemembered =>
+      this == ReviewRating.good || this == ReviewRating.easy;
+}
+
 extension PartOfSpeechLabel on PartOfSpeech {
   String get label {
     switch (this) {
@@ -100,6 +124,7 @@ class WordCard {
     required this.nextReviewDate,
     required this.history,
     required this.isDeleted,
+    this.reviewRatings = const [],
     this.customTags = const [],
     this.imageCleared = false,
     this.reviewState = WordReviewState.active,
@@ -124,6 +149,7 @@ class WordCard {
   final int nextReviewIndex;
   final DateTime nextReviewDate;
   final List<DateTime> history;
+  final List<ReviewRating> reviewRatings;
   final bool isDeleted;
   final List<String> customTags;
   final bool imageCleared;
@@ -150,6 +176,26 @@ class WordCard {
     return List<String>.unmodifiable(normalized);
   }
 
+  static List<ReviewRating> normalizeReviewRatings(
+    int historyLength,
+    Iterable<ReviewRating> rawRatings,
+  ) {
+    if (historyLength <= 0) {
+      return const [];
+    }
+    final ratings = rawRatings.toList(growable: false);
+    if (ratings.length >= historyLength) {
+      return List<ReviewRating>.unmodifiable(ratings.take(historyLength));
+    }
+    return List<ReviewRating>.unmodifiable([
+      ...ratings,
+      ...List<ReviewRating>.filled(
+        historyLength - ratings.length,
+        ReviewRating.unrated,
+      ),
+    ]);
+  }
+
   List<MissingWordField> get missingFields {
     final missing = <MissingWordField>[];
     if (meaning.trim().isEmpty) {
@@ -172,6 +218,20 @@ class WordCard {
   bool get hasCompletedReviewSchedule =>
       nextReviewIndex >= reviewSchedule.length;
   bool get isReviewFinished => isMastered || hasCompletedReviewSchedule;
+  List<ReviewRating> get alignedReviewRatings =>
+      normalizeReviewRatings(history.length, reviewRatings);
+
+  bool get isDifficult {
+    if (isReviewFinished) {
+      return false;
+    }
+    final recentRatings = alignedReviewRatings
+        .where((rating) => rating != ReviewRating.unrated)
+        .toList(growable: false)
+        .reversed
+        .take(3);
+    return recentRatings.where((rating) => rating.isStruggling).length >= 2;
+  }
 
   WordCard copyWith({
     String? id,
@@ -189,6 +249,7 @@ class WordCard {
     int? nextReviewIndex,
     DateTime? nextReviewDate,
     List<DateTime>? history,
+    List<ReviewRating>? reviewRatings,
     bool? isDeleted,
     List<String>? customTags,
     bool? imageCleared,
@@ -215,6 +276,7 @@ class WordCard {
       nextReviewIndex: nextReviewIndex ?? this.nextReviewIndex,
       nextReviewDate: nextReviewDate ?? this.nextReviewDate,
       history: history ?? this.history,
+      reviewRatings: reviewRatings ?? this.reviewRatings,
       isDeleted: isDeleted ?? this.isDeleted,
       customTags: customTags ?? this.customTags,
       imageCleared: imageCleared ?? this.imageCleared,
@@ -251,6 +313,9 @@ class WordCard {
       'nextReviewIndex': nextReviewIndex,
       'nextReviewDate': nextReviewDate.millisecondsSinceEpoch,
       'history': history.map((item) => item.millisecondsSinceEpoch).toList(),
+      'reviewRatings': alignedReviewRatings
+          .map((rating) => rating.name)
+          .toList(growable: false),
       'isDeleted': isDeleted,
       'customTags': normalizeCustomTags(customTags),
       'imageCleared': imageCleared,
@@ -309,9 +374,12 @@ class WordCard {
         : <String>[];
 
     final reviewRaw = data['reviewSchedule'];
-    final reviewSchedule = reviewRaw is List
+    final parsedReviewSchedule = reviewRaw is List
         ? reviewRaw.whereType<int>().toList()
-        : const <int>[1, 2, 3, 5, 8, 13, 21, 39];
+        : const <int>[];
+    final reviewSchedule = parsedReviewSchedule.isEmpty
+        ? const <int>[1, 2, 3, 5, 8, 13, 21, 39]
+        : parsedReviewSchedule;
 
     final nextReviewIndexRaw = data['nextReviewIndex'];
     final nextReviewIndex = nextReviewIndexRaw is int ? nextReviewIndexRaw : 0;
@@ -328,6 +396,22 @@ class WordCard {
               .map((item) => DateTime.fromMillisecondsSinceEpoch(item))
               .toList()
         : <DateTime>[];
+    final reviewRatingsRaw = data['reviewRatings'];
+    final parsedReviewRatings = reviewRatingsRaw is List
+        ? reviewRatingsRaw
+              .whereType<String>()
+              .map((raw) {
+                return ReviewRating.values.firstWhere(
+                  (rating) => rating.name == raw,
+                  orElse: () => ReviewRating.unrated,
+                );
+              })
+              .toList(growable: false)
+        : const <ReviewRating>[];
+    final reviewRatings = normalizeReviewRatings(
+      history.length,
+      parsedReviewRatings,
+    );
     final customTagsRaw = data['customTags'];
     final customTags = customTagsRaw is List
         ? normalizeCustomTags(customTagsRaw.whereType<String>())
@@ -365,6 +449,7 @@ class WordCard {
       nextReviewIndex: nextReviewIndex,
       nextReviewDate: nextReviewDate,
       history: history,
+      reviewRatings: reviewRatings,
       isDeleted: isDeleted,
       customTags: customTags,
       imageCleared: imageCleared,
