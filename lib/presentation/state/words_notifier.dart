@@ -120,12 +120,48 @@ class WordsNotifier extends ChangeNotifier {
   }
 
   List<WordCard> dueToday() {
-    final now = DateTime.now();
+    return dueOnOrBefore(DateTime.now());
+  }
+
+  List<WordCard> dueOnOrBefore(DateTime day) {
     final due = _words
-        .where((card) => _scheduleService.isDueOnOrBefore(card, now))
+        .where((card) => _scheduleService.isDueOnOrBefore(card, day))
         .toList();
     due.sort((a, b) => a.nextReviewDate.compareTo(b.nextReviewDate));
     return due;
+  }
+
+  List<WordCard> reviewQueueFor(DateTime day) {
+    return dueOnOrBefore(
+      day,
+    ).where((card) => !_wasHandledOn(card, day)).toList(growable: false);
+  }
+
+  int handledReviewCountOn(DateTime day) {
+    return _words.where((card) => _wasHandledOn(card, day)).length;
+  }
+
+  bool _wasHandledOn(WordCard card, DateTime day) {
+    if (card.history.any((reviewedAt) => _isSameLocalDay(reviewedAt, day))) {
+      return true;
+    }
+
+    final masteredAt = card.masteredAt;
+    return card.isMastered &&
+        masteredAt != null &&
+        _isSameLocalDay(masteredAt, day) &&
+        _scheduleService.isDueOnOrBefore(
+          card.copyWith(reviewState: WordReviewState.active),
+          day,
+        );
+  }
+
+  bool _isSameLocalDay(DateTime first, DateTime second) {
+    final firstLocal = first.toLocal();
+    final secondLocal = second.toLocal();
+    return firstLocal.year == secondLocal.year &&
+        firstLocal.month == secondLocal.month &&
+        firstLocal.day == secondLocal.day;
   }
 
   List<WordCard> developerContributionWords({bool includeUnknown = false}) {

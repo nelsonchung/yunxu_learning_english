@@ -270,6 +270,135 @@ void main() {
     expect(find.text('今天沒有需要複習的單字，做得很好！'), findsOneWidget);
     expect(wordsNotifier.findById('word-mastered')?.isMastered, isTrue);
   });
+
+  testWidgets('先只顯示三個快速複習，完成後可再繼續五個', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 3000));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: List.generate(
+        8,
+        (index) => _reviewWordCard(
+          id: 'quick-$index',
+          word: 'quickword$index',
+          nextReviewDate: now.subtract(Duration(days: 8 - index)),
+        ),
+      ),
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('先完成兩分鐘任務'), findsOneWidget);
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNWidgets(3));
+
+    for (var index = 0; index < 3; index++) {
+      await tester.tap(find.widgetWithText(ElevatedButton, '完成複習').first);
+      await tester.pumpAndSettle();
+    }
+
+    expect(find.text('兩分鐘任務完成'), findsOneWidget);
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNothing);
+    expect(find.widgetWithText(FilledButton, '再複習 5 個'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(FilledButton, '再複習 5 個'));
+    await tester.pumpAndSettle();
+
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNWidgets(5));
+  });
+
+  testWidgets('待複習內容過多時提供建議量並允許繼續學習', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 3000));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: List.generate(
+        13,
+        (index) => _reviewWordCard(
+          id: 'comeback-$index',
+          word: 'comebackword$index',
+          nextReviewDate: now.subtract(Duration(days: 13 - index)),
+        ),
+      ),
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('歡迎回來'), findsOneWidget);
+    expect(find.textContaining('今天先安排 8 個'), findsOneWidget);
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNWidgets(3));
+
+    for (var index = 0; index < 3; index++) {
+      await tester.tap(find.widgetWithText(ElevatedButton, '完成複習').first);
+      await tester.pumpAndSettle();
+    }
+    await tester.tap(find.widgetWithText(FilledButton, '再複習 5 個'));
+    await tester.pumpAndSettle();
+
+    for (var index = 0; index < 5; index++) {
+      await tester.tap(find.widgetWithText(ElevatedButton, '完成複習').first);
+      await tester.pumpAndSettle();
+    }
+
+    expect(find.text('今天的建議任務完成了'), findsOneWidget);
+    expect(find.textContaining('如果還有時間，也可以繼續'), findsOneWidget);
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNothing);
+    expect(find.widgetWithText(FilledButton, '我還有時間，再複習 5 個'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(FilledButton, '我還有時間，再複習 5 個'));
+    await tester.pumpAndSettle();
+
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNWidgets(5));
+    expect(find.textContaining('我還有時間'), findsNothing);
+
+    for (var index = 0; index < 5; index++) {
+      await tester.tap(find.widgetWithText(ElevatedButton, '完成複習').first);
+      await tester.pumpAndSettle();
+    }
+
+    expect(find.text('今天的任務完成了'), findsOneWidget);
+    expect(find.widgetWithText(ElevatedButton, '完成複習'), findsNothing);
+    expect(find.textContaining('我還有時間'), findsNothing);
+  });
 }
 
 WordsNotifier _buildWordsNotifier({List<WordCard> initialCards = const []}) {

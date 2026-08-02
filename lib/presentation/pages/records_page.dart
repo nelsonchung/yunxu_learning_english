@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../domain/models/sync_state.dart';
+import '../../domain/services/learning_progress_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
@@ -12,6 +13,10 @@ class RecordsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<WordsNotifier>(
       builder: (context, notifier, _) {
+        final progress = const LearningProgressService().summarize(
+          notifier.words,
+          now: DateTime.now(),
+        );
         final syncSupported = notifier.syncSupported;
         final syncEnabled = notifier.syncEnabled;
         final canSync = notifier.canSync;
@@ -21,6 +26,34 @@ class RecordsPage extends StatelessWidget {
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
+            SectionCard(
+              title: '你的學習累積',
+              subtitle: '看見持續使用留下來的成果',
+              trailing: const Icon(
+                Icons.insights_outlined,
+                color: Color(0xFF0B6E99),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _ProgressGrid(progress: progress),
+                  const SizedBox(height: 18),
+                  Text('最近 7 天', style: Theme.of(context).textTheme.titleSmall),
+                  const SizedBox(height: 10),
+                  _ActivityWeek(days: progress.lastSevenDays),
+                  const SizedBox(height: 12),
+                  Text(
+                    progress.latestActivityAt == null
+                        ? '完成第一次複習後，這裡會開始記錄你的累積。'
+                        : '最近學習活動：${_formatDateTime(progress.latestActivityAt)}',
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
             SectionCard(
               title: '雲端同步紀錄',
               subtitle: syncSupported ? 'iCloud 備份與還原狀態' : '目前版本未啟用 iCloud 同步',
@@ -148,6 +181,162 @@ class RecordsPage extends StatelessWidget {
     final minute = value.minute.toString().padLeft(2, '0');
     final second = value.second.toString().padLeft(2, '0');
     return '$year-$month-$day $hour:$minute:$second';
+  }
+}
+
+class _ProgressGrid extends StatelessWidget {
+  const _ProgressGrid({required this.progress});
+
+  final LearningProgressSummary progress;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        const spacing = 10.0;
+        final width = (constraints.maxWidth - spacing) / 2;
+        return Wrap(
+          spacing: spacing,
+          runSpacing: spacing,
+          children: [
+            _ProgressTile(
+              width: width,
+              label: '已掌握',
+              value: '${progress.masteredWords}',
+              unit: '個單字',
+            ),
+            _ProgressTile(
+              width: width,
+              label: '累計複習',
+              value: '${progress.totalReviews}',
+              unit: '次',
+            ),
+            _ProgressTile(
+              width: width,
+              label: '本週活躍',
+              value: '${progress.activeDaysThisWeek}',
+              unit: '天',
+            ),
+            _ProgressTile(
+              width: width,
+              label: '近 30 天活躍',
+              value: '${progress.activeDaysLast30}',
+              unit: '天',
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _ProgressTile extends StatelessWidget {
+  const _ProgressTile({
+    required this.width,
+    required this.label,
+    required this.value,
+    required this.unit,
+  });
+
+  final double width;
+  final String label;
+  final String value;
+  final String unit;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: width,
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: const Color(0xFF0B6E99).withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            label,
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+          ),
+          const SizedBox(height: 6),
+          Text.rich(
+            TextSpan(
+              text: value,
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                color: const Color(0xFF0B6E99),
+                fontWeight: FontWeight.w700,
+              ),
+              children: [
+                TextSpan(
+                  text: ' $unit',
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.black54,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ActivityWeek extends StatelessWidget {
+  const _ActivityWeek({required this.days});
+
+  final List<DailyLearningActivity> days;
+
+  static const _weekdayLabels = ['一', '二', '三', '四', '五', '六', '日'];
+
+  @override
+  Widget build(BuildContext context) {
+    final maxCount = days.fold<int>(
+      0,
+      (current, day) => day.count > current ? day.count : current,
+    );
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: days
+          .map((activity) {
+            final intensity = maxCount == 0 ? 0.0 : activity.count / maxCount;
+            final background = Color.lerp(
+              const Color(0xFFE6EEF1),
+              const Color(0xFF0B6E99),
+              intensity,
+            );
+            return Column(
+              children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: background,
+                    borderRadius: BorderRadius.circular(11),
+                  ),
+                  child: Text(
+                    '${activity.count}',
+                    style: TextStyle(
+                      color: intensity > 0.55 ? Colors.white : Colors.black54,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  _weekdayLabels[activity.day.weekday - 1],
+                  style: Theme.of(context).textTheme.labelSmall,
+                ),
+              ],
+            );
+          })
+          .toList(growable: false),
+    );
   }
 }
 

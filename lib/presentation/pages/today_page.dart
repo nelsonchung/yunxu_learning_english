@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math' as math;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
@@ -14,8 +15,30 @@ import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/section_card.dart';
 
-class TodayPage extends StatelessWidget {
+class TodayPage extends StatefulWidget {
   const TodayPage({super.key});
+
+  @override
+  State<TodayPage> createState() => _TodayPageState();
+}
+
+class _TodayPageState extends State<TodayPage> {
+  static const int _quickReviewCount = 3;
+  static const int _reviewBatchSize = 5;
+  static const int _comebackThreshold = 12;
+  static const int _comebackDailyLimit = 8;
+
+  int _reviewTarget = _quickReviewCount;
+  DateTime? _sessionDay;
+
+  void _resetSessionForNewDay(DateTime now) {
+    final today = DateTime(now.year, now.month, now.day);
+    if (_sessionDay == today) {
+      return;
+    }
+    _sessionDay = today;
+    _reviewTarget = _quickReviewCount;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,21 +48,73 @@ class TodayPage extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         }
 
-        final dueList = notifier.dueToday();
+        final now = DateTime.now();
+        _resetSessionForNewDay(now);
+        final dueList = notifier.dueOnOrBefore(now);
+        final reviewQueue = notifier.reviewQueueFor(now);
+        final handledToday = notifier.handledReviewCountOn(now);
+        final availableToday = handledToday + reviewQueue.length;
+        final isComebackMode = availableToday > _comebackThreshold;
+        final dailyLimit = isComebackMode
+            ? math.min(_comebackDailyLimit, availableToday)
+            : availableToday;
+        final effectiveTarget = math.min(_reviewTarget, availableToday);
+        final visibleCount = math.max(0, effectiveTarget - handledToday);
+        final visibleReviews = reviewQueue
+            .take(visibleCount)
+            .toList(growable: false);
+        final quickGoal = math.min(_quickReviewCount, dailyLimit);
+        final quickGoalComplete = quickGoal > 0 && handledToday >= quickGoal;
+        final dailyGoalComplete = dailyLimit > 0 && handledToday >= dailyLimit;
+        final canContinue =
+            quickGoalComplete &&
+            reviewQueue.isNotEmpty &&
+            visibleReviews.isEmpty;
         final showImages = context.watch<SettingsNotifier>().showImages;
         final bottomPadding = MediaQuery.of(context).padding.bottom + 120.0;
 
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
-            _HeroHeader(total: dueList.length),
+            _HeroHeader(total: reviewQueue.length),
             const SizedBox(height: 16),
-            _DailyNewWordsSection(dueCount: dueList.length),
+            _DailyNewWordsSection(dueCount: availableToday),
             const SizedBox(height: 16),
-            if (dueList.isEmpty)
+            if (isComebackMode) ...[
+              _ComebackNotice(total: availableToday, dailyLimit: dailyLimit),
+              const SizedBox(height: 16),
+            ],
+            if (availableToday == 0)
               const _EmptyState()
-            else
-              ...dueList.map(
+            else ...[
+              if (!quickGoalComplete) ...[
+                _QuickStartNotice(count: math.max(0, quickGoal - handledToday)),
+                const SizedBox(height: 16),
+              ],
+              if (quickGoalComplete) ...[
+                _QuickGoalCompleteCard(
+                  handledToday: handledToday,
+                  remainingToday: math.max(0, dailyLimit - handledToday),
+                  remainingBacklog: reviewQueue.length,
+                  suggestedGoal: dailyLimit,
+                  dailyGoalComplete: dailyGoalComplete,
+                  isComebackMode: isComebackMode,
+                  continueCount: math.min(_reviewBatchSize, reviewQueue.length),
+                  onContinue: canContinue
+                      ? () {
+                          setState(() {
+                            _reviewTarget = math.min(
+                              availableToday,
+                              math.max(_reviewTarget, handledToday) +
+                                  _reviewBatchSize,
+                            );
+                          });
+                        }
+                      : null,
+                ),
+                if (visibleReviews.isNotEmpty) const SizedBox(height: 16),
+              ],
+              ...visibleReviews.map(
                 (card) => Padding(
                   padding: const EdgeInsets.only(bottom: 14),
                   child: _ReviewCard(
@@ -107,9 +182,108 @@ class TodayPage extends StatelessWidget {
                   ),
                 ),
               ),
+              if (dueList.isEmpty) const _EmptyState(),
+            ],
           ],
         );
       },
+    );
+  }
+}
+
+class _QuickStartNotice extends StatelessWidget {
+  const _QuickStartNotice({required this.count});
+
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    return SectionCard(
+      title: '先完成兩分鐘任務',
+      subtitle: '今天只要先接觸幾個單字，就算成功開始',
+      trailing: const Icon(Icons.timer_outlined, color: Color(0xFF0B6E99)),
+      child: Text('再複習 $count 個，就完成今天的最低任務。'),
+    );
+  }
+}
+
+class _ComebackNotice extends StatelessWidget {
+  const _ComebackNotice({required this.total, required this.dailyLimit});
+
+  final int total;
+  final int dailyLimit;
+
+  @override
+  Widget build(BuildContext context) {
+    return SectionCard(
+      title: '歡迎回來',
+      subtitle: '待複習內容較多，先從最需要加強的單字開始',
+      trailing: const Icon(
+        Icons.waving_hand_outlined,
+        color: Color(0xFF0B6E99),
+      ),
+      child: Text('目前有 $total 個待處理項目，今天先安排 $dailyLimit 個。完成後可以放心休息，也可以選擇繼續學習。'),
+    );
+  }
+}
+
+class _QuickGoalCompleteCard extends StatelessWidget {
+  const _QuickGoalCompleteCard({
+    required this.handledToday,
+    required this.remainingToday,
+    required this.remainingBacklog,
+    required this.suggestedGoal,
+    required this.dailyGoalComplete,
+    required this.isComebackMode,
+    required this.continueCount,
+    this.onContinue,
+  });
+
+  final int handledToday;
+  final int remainingToday;
+  final int remainingBacklog;
+  final int suggestedGoal;
+  final bool dailyGoalComplete;
+  final bool isComebackMode;
+  final int continueCount;
+  final VoidCallback? onContinue;
+
+  @override
+  Widget build(BuildContext context) {
+    final reachedSuggestedStop =
+        dailyGoalComplete && isComebackMode && remainingBacklog > 0;
+    final title = reachedSuggestedStop
+        ? '今天的建議任務完成了'
+        : dailyGoalComplete
+        ? '今天的任務完成了'
+        : '兩分鐘任務完成';
+    final message = dailyGoalComplete && isComebackMode && remainingBacklog > 0
+        ? '今天建議的 $suggestedGoal 個已完成，目前累積完成 $handledToday 個。可以放心休息；如果還有時間，也可以繼續。'
+        : dailyGoalComplete
+        ? '今天已完成 $handledToday 個複習，做得很好！'
+        : '最低任務已完成。還有 $remainingToday 個今天可以繼續處理。';
+
+    return SectionCard(
+      title: title,
+      subtitle: message,
+      trailing: const Icon(
+        Icons.celebration_outlined,
+        color: Color(0xFF0B6E99),
+      ),
+      child: onContinue == null
+          ? const Text('休息也算完成；想多學一點時再回來。')
+          : SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                onPressed: onContinue,
+                icon: const Icon(Icons.play_arrow_rounded),
+                label: Text(
+                  reachedSuggestedStop
+                      ? '我還有時間，再複習 $continueCount 個'
+                      : '再複習 $continueCount 個',
+                ),
+              ),
+            ),
     );
   }
 }
