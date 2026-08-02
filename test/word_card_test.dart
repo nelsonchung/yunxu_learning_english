@@ -116,6 +116,26 @@ void main() {
     expect(completed.isDifficult, isFalse);
   });
 
+  test('困難單字連續記得兩次後會退出困難清單', () {
+    final now = DateTime(2026, 8, 2);
+    final card = WordCard.fromMap({
+      'id': 'improving-word',
+      'word': 'improving',
+      'history': [
+        now.subtract(const Duration(days: 4)).millisecondsSinceEpoch,
+        now.subtract(const Duration(days: 3)).millisecondsSinceEpoch,
+        now.subtract(const Duration(days: 2)).millisecondsSinceEpoch,
+        now.subtract(const Duration(days: 1)).millisecondsSinceEpoch,
+      ],
+      'reviewRatings': ['forgot', 'hard', 'good', 'good'],
+      'reviewSchedule': [1, 2, 3, 5, 8],
+      'nextReviewIndex': 2,
+      'nextReviewDate': now.millisecondsSinceEpoch,
+    });
+
+    expect(card.isDifficult, isFalse);
+  });
+
   test('WordCard defaults missing origin to unknown', () {
     final restored = WordCard.fromMap({
       'id': 'word-2',

@@ -77,6 +77,8 @@ class WordsNotifier extends ChangeNotifier {
   int get pendingWordsCount =>
       _words.where((card) => card.needsCompletion).length;
   int get dueWordsCount => dueToday().length;
+  int get difficultWordsCount =>
+      _words.where((card) => !card.isDeleted && card.isDifficult).length;
   int get manualWordsCount =>
       _words.where((card) => card.origin == WordOrigin.manual).length;
   int get unknownWordsCount =>
@@ -137,6 +139,33 @@ class WordsNotifier extends ChangeNotifier {
     ).where((card) => !_wasHandledOn(card, day)).toList(growable: false);
   }
 
+  List<WordCard> difficultPracticeQueueFor(DateTime day) {
+    final difficult = _words
+        .where(
+          (card) =>
+              !card.isDeleted && card.isDifficult && !_wasHandledOn(card, day),
+        )
+        .toList();
+    difficult.sort((first, second) {
+      final recencyCompare = _latestStrugglingReviewAt(
+        second,
+      ).compareTo(_latestStrugglingReviewAt(first));
+      if (recencyCompare != 0) {
+        return recencyCompare;
+      }
+
+      final severityCompare = _latestStrugglingSeverity(
+        second,
+      ).compareTo(_latestStrugglingSeverity(first));
+      if (severityCompare != 0) {
+        return severityCompare;
+      }
+
+      return first.word.toLowerCase().compareTo(second.word.toLowerCase());
+    });
+    return List<WordCard>.unmodifiable(difficult);
+  }
+
   int handledReviewCountOn(DateTime day) {
     return _words.where((card) => _wasHandledOn(card, day)).length;
   }
@@ -162,6 +191,28 @@ class WordsNotifier extends ChangeNotifier {
     return firstLocal.year == secondLocal.year &&
         firstLocal.month == secondLocal.month &&
         firstLocal.day == secondLocal.day;
+  }
+
+  DateTime _latestStrugglingReviewAt(WordCard card) {
+    final ratings = card.alignedReviewRatings;
+    for (var index = ratings.length - 1; index >= 0; index--) {
+      if (ratings[index].isStruggling) {
+        return card.history[index];
+      }
+    }
+    return DateTime.fromMillisecondsSinceEpoch(0);
+  }
+
+  int _latestStrugglingSeverity(WordCard card) {
+    for (final rating in card.alignedReviewRatings.reversed) {
+      if (rating == ReviewRating.forgot) {
+        return 2;
+      }
+      if (rating == ReviewRating.hard) {
+        return 1;
+      }
+    }
+    return 0;
   }
 
   List<WordCard> developerContributionWords({bool includeUnknown = false}) {

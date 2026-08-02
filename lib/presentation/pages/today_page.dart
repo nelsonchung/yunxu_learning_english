@@ -30,6 +30,7 @@ class _TodayPageState extends State<TodayPage> {
 
   int _reviewTarget = _quickReviewCount;
   DateTime? _sessionDay;
+  List<String>? _difficultPracticeWordIds;
   final Set<String> _submittingWordIds = <String>{};
 
   void _resetSessionForNewDay(DateTime now) {
@@ -39,6 +40,22 @@ class _TodayPageState extends State<TodayPage> {
     }
     _sessionDay = today;
     _reviewTarget = _quickReviewCount;
+    _difficultPracticeWordIds = null;
+  }
+
+  void _startDifficultPractice(List<WordCard> queue, int requestedCount) {
+    setState(() {
+      _difficultPracticeWordIds = queue
+          .take(requestedCount)
+          .map((card) => card.id)
+          .toList(growable: false);
+    });
+  }
+
+  void _finishDifficultPractice() {
+    setState(() {
+      _difficultPracticeWordIds = null;
+    });
   }
 
   @override
@@ -53,6 +70,19 @@ class _TodayPageState extends State<TodayPage> {
         _resetSessionForNewDay(now);
         final dueList = notifier.dueOnOrBefore(now);
         final reviewQueue = notifier.reviewQueueFor(now);
+        final difficultPracticeQueue = notifier.difficultPracticeQueueFor(now);
+        final difficultPracticeQueueIds = difficultPracticeQueue
+            .map((card) => card.id)
+            .toSet();
+        final difficultPracticeWordIds = _difficultPracticeWordIds;
+        final isDifficultPractice = difficultPracticeWordIds != null;
+        final difficultPracticeReviews = isDifficultPractice
+            ? difficultPracticeWordIds
+                  .map(notifier.findById)
+                  .whereType<WordCard>()
+                  .where((card) => difficultPracticeQueueIds.contains(card.id))
+                  .toList(growable: false)
+            : const <WordCard>[];
         final handledToday = notifier.handledReviewCountOn(now);
         final availableToday = handledToday + reviewQueue.length;
         final isComebackMode = availableToday > _comebackThreshold;
@@ -61,9 +91,9 @@ class _TodayPageState extends State<TodayPage> {
             : availableToday;
         final effectiveTarget = math.min(_reviewTarget, availableToday);
         final visibleCount = math.max(0, effectiveTarget - handledToday);
-        final visibleReviews = reviewQueue
-            .take(visibleCount)
-            .toList(growable: false);
+        final visibleReviews = isDifficultPractice
+            ? difficultPracticeReviews
+            : reviewQueue.take(visibleCount).toList(growable: false);
         final quickGoal = math.min(_quickReviewCount, dailyLimit);
         final quickGoalComplete = quickGoal > 0 && handledToday >= quickGoal;
         final dailyGoalComplete = dailyLimit > 0 && handledToday >= dailyLimit;
@@ -77,22 +107,56 @@ class _TodayPageState extends State<TodayPage> {
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
-            _HeroHeader(total: reviewQueue.length),
+            _HeroHeader(
+              total: isDifficultPractice
+                  ? difficultPracticeReviews.length
+                  : reviewQueue.length,
+            ),
             const SizedBox(height: 16),
-            _DailyNewWordsSection(dueCount: availableToday),
-            const SizedBox(height: 16),
-            if (isComebackMode) ...[
+            if (isDifficultPractice) ...[
+              _DifficultPracticeSessionCard(
+                total: difficultPracticeWordIds.length,
+                remaining: difficultPracticeReviews.length,
+                onExit: _finishDifficultPractice,
+              ),
+              const SizedBox(height: 16),
+            ] else ...[
+              if (notifier.difficultWordsCount > 0) ...[
+                _DifficultPracticeEntryCard(
+                  total: notifier.difficultWordsCount,
+                  availableToday: difficultPracticeQueue.length,
+                  onQuickStart: difficultPracticeQueue.isEmpty
+                      ? null
+                      : () => _startDifficultPractice(
+                          difficultPracticeQueue,
+                          _quickReviewCount,
+                        ),
+                  onFiveStart: difficultPracticeQueue.isEmpty
+                      ? null
+                      : () => _startDifficultPractice(
+                          difficultPracticeQueue,
+                          _reviewBatchSize,
+                        ),
+                ),
+                const SizedBox(height: 16),
+              ],
+              _DailyNewWordsSection(dueCount: availableToday),
+              const SizedBox(height: 16),
+            ],
+            if (!isDifficultPractice && isComebackMode) ...[
               _ComebackNotice(total: availableToday, dailyLimit: dailyLimit),
               const SizedBox(height: 16),
             ],
-            if (availableToday == 0)
+            if (isDifficultPractice && visibleReviews.isEmpty)
+              _DifficultPracticeCompleteCard(onDone: _finishDifficultPractice)
+            else if (!isDifficultPractice && availableToday == 0)
               const _EmptyState()
             else ...[
-              if (!quickGoalComplete) ...[
+              if (!isDifficultPractice && !quickGoalComplete) ...[
                 _QuickStartNotice(count: math.max(0, quickGoal - handledToday)),
                 const SizedBox(height: 16),
               ],
-              if (quickGoalComplete) ...[
+              if (!isDifficultPractice && quickGoalComplete) ...[
                 _QuickGoalCompleteCard(
                   handledToday: handledToday,
                   remainingToday: math.max(0, dailyLimit - handledToday),
@@ -210,11 +274,117 @@ class _TodayPageState extends State<TodayPage> {
                   ),
                 ),
               ),
-              if (dueList.isEmpty) const _EmptyState(),
+              if (!isDifficultPractice && dueList.isEmpty) const _EmptyState(),
             ],
           ],
         );
       },
+    );
+  }
+}
+
+class _DifficultPracticeEntryCard extends StatelessWidget {
+  const _DifficultPracticeEntryCard({
+    required this.total,
+    required this.availableToday,
+    this.onQuickStart,
+    this.onFiveStart,
+  });
+
+  final int total;
+  final int availableToday;
+  final VoidCallback? onQuickStart;
+  final VoidCallback? onFiveStart;
+
+  @override
+  Widget build(BuildContext context) {
+    final subtitle = availableToday == 0
+        ? '今天已練過需要加強的單字，明天再繼續'
+        : '有 $total 個單字需要加強，先從最近卡住的開始';
+    return SectionCard(
+      title: '困難單字專項練習',
+      subtitle: subtitle,
+      trailing: const Icon(
+        Icons.fitness_center_outlined,
+        color: Color(0xFFB85C38),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: OutlinedButton.icon(
+              onPressed: onQuickStart,
+              icon: const Icon(Icons.timer_outlined),
+              label: Text(
+                '2 分鐘（${math.min(_TodayPageState._quickReviewCount, availableToday)} 個）',
+              ),
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: FilledButton.icon(
+              onPressed: onFiveStart,
+              icon: const Icon(Icons.play_arrow_rounded),
+              label: Text(
+                '練 ${math.min(_TodayPageState._reviewBatchSize, availableToday)} 個',
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _DifficultPracticeSessionCard extends StatelessWidget {
+  const _DifficultPracticeSessionCard({
+    required this.total,
+    required this.remaining,
+    required this.onExit,
+  });
+
+  final int total;
+  final int remaining;
+  final VoidCallback onExit;
+
+  @override
+  Widget build(BuildContext context) {
+    final completed = total - remaining;
+    return SectionCard(
+      title: '正在加強困難單字',
+      subtitle: '已完成 $completed／$total 個；答對後會依記憶狀態逐步退出困難清單',
+      trailing: IconButton(
+        tooltip: '結束專項練習',
+        onPressed: onExit,
+        icon: const Icon(Icons.close),
+      ),
+      child: LinearProgressIndicator(
+        value: total == 0 ? 1 : completed / total,
+        minHeight: 8,
+        borderRadius: BorderRadius.circular(8),
+      ),
+    );
+  }
+}
+
+class _DifficultPracticeCompleteCard extends StatelessWidget {
+  const _DifficultPracticeCompleteCard({required this.onDone});
+
+  final VoidCallback onDone;
+
+  @override
+  Widget build(BuildContext context) {
+    return SectionCard(
+      title: '專項練習完成',
+      subtitle: '這一輪需要加強的單字都處理完了',
+      trailing: const Icon(Icons.verified_outlined, color: Color(0xFF0B6E99)),
+      child: SizedBox(
+        width: double.infinity,
+        child: FilledButton.icon(
+          onPressed: onDone,
+          icon: const Icon(Icons.arrow_back_rounded),
+          label: const Text('回到今日複習'),
+        ),
+      ),
     );
   }
 }

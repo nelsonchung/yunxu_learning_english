@@ -513,6 +513,122 @@ void main() {
     expect(find.widgetWithText(FilledButton, '記得'), findsNothing);
     expect(find.textContaining('我還有時間'), findsNothing);
   });
+
+  testWidgets('可從首頁開始兩分鐘困難單字專項練習', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 3000));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: List.generate(4, (index) {
+        final reviewedAt = now.subtract(Duration(days: index + 1));
+        return _reviewWordCard(
+          id: 'difficult-$index',
+          word: 'difficultword$index',
+          nextReviewDate: now.add(const Duration(days: 7)),
+          history: [reviewedAt.subtract(const Duration(days: 1)), reviewedAt],
+          reviewRatings: const [ReviewRating.hard, ReviewRating.forgot],
+        );
+      }),
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('困難單字專項練習'), findsOneWidget);
+    expect(find.textContaining('有 4 個單字需要加強'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(OutlinedButton, '2 分鐘（3 個）'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('正在加強困難單字'), findsOneWidget);
+    expect(find.text('difficultword0'), findsOneWidget);
+    expect(find.text('difficultword1'), findsOneWidget);
+    expect(find.text('difficultword2'), findsOneWidget);
+    expect(find.text('difficultword3'), findsNothing);
+    expect(find.widgetWithText(FilledButton, '記得'), findsNWidgets(3));
+
+    await tester.tap(find.widgetWithText(FilledButton, '記得').first);
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('已完成 1／3 個'), findsOneWidget);
+    expect(
+      wordsNotifier.findById('difficult-0')?.reviewRatings.last,
+      ReviewRating.good,
+    );
+  });
+
+  testWidgets('困難單字專項練習完成後可回到今日複習', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 1800));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: [
+        _reviewWordCard(
+          id: 'only-difficult',
+          word: 'tenacious',
+          nextReviewDate: now.add(const Duration(days: 5)),
+          history: [
+            now.subtract(const Duration(days: 2)),
+            now.subtract(const Duration(days: 1)),
+          ],
+          reviewRatings: const [ReviewRating.forgot, ReviewRating.hard],
+        ),
+      ],
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.widgetWithText(FilledButton, '練 1 個'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.widgetWithText(FilledButton, '記得'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('專項練習完成'), findsOneWidget);
+    await tester.tap(find.widgetWithText(FilledButton, '回到今日複習'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('正在加強困難單字'), findsNothing);
+    expect(find.text('今日複習'), findsOneWidget);
+  });
 }
 
 WordsNotifier _buildWordsNotifier({
@@ -539,6 +655,8 @@ WordCard _reviewWordCard({
   required String id,
   required String word,
   required DateTime nextReviewDate,
+  List<DateTime> history = const [],
+  List<ReviewRating> reviewRatings = const [],
 }) {
   final createdAt = nextReviewDate.subtract(const Duration(days: 2));
   return WordCard(
@@ -553,7 +671,8 @@ WordCard _reviewWordCard({
     reviewSchedule: const [1, 2, 3],
     nextReviewIndex: 0,
     nextReviewDate: nextReviewDate,
-    history: const [],
+    history: history,
+    reviewRatings: reviewRatings,
     isDeleted: false,
   );
 }
