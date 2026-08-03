@@ -97,6 +97,39 @@ void main() {
     expect(summary.recentRecallRate, isNull);
     expect(summary.difficultWords, isEmpty);
   });
+
+  test('returns activity for an earlier seven-day range', () {
+    final activities = service.activityForSevenDays([
+      _card(
+        id: 'earlier',
+        history: [
+          DateTime(2026, 7, 20, 8),
+          DateTime(2026, 7, 20, 18),
+          DateTime(2026, 7, 26, 9),
+          DateTime(2026, 7, 27, 9),
+        ],
+      ),
+    ], endDay: DateTime(2026, 7, 26));
+
+    expect(activities.first.day, DateTime(2026, 7, 20));
+    expect(activities.last.day, DateTime(2026, 7, 26));
+    expect(activities.map((day) => day.count), [2, 0, 0, 0, 0, 0, 1]);
+  });
+
+  test('excludes future activity from the current seven-day range', () {
+    final activities = service.activityForSevenDays(
+      [
+        _card(
+          id: 'today',
+          history: [DateTime(2026, 8, 2, 8), DateTime(2026, 8, 2, 21)],
+        ),
+      ],
+      endDay: DateTime(2026, 8, 2),
+      latestAllowedAt: DateTime(2026, 8, 2, 20),
+    );
+
+    expect(activities.last.count, 1);
+  });
 }
 
 WordCard _card({

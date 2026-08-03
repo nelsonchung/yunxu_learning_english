@@ -7,16 +7,32 @@ import '../../domain/services/learning_progress_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
-class RecordsPage extends StatelessWidget {
+class RecordsPage extends StatefulWidget {
   const RecordsPage({super.key});
+
+  @override
+  State<RecordsPage> createState() => _RecordsPageState();
+}
+
+class _RecordsPageState extends State<RecordsPage> {
+  int _weekOffset = 0;
 
   @override
   Widget build(BuildContext context) {
     return Consumer<WordsNotifier>(
       builder: (context, notifier, _) {
-        final progress = const LearningProgressService().summarize(
+        final now = DateTime.now();
+        const progressService = LearningProgressService();
+        final progress = progressService.summarize(notifier.words, now: now);
+        final selectedEndDay = DateTime(
+          now.year,
+          now.month,
+          now.day,
+        ).subtract(Duration(days: _weekOffset * 7));
+        final selectedDays = progressService.activityForSevenDays(
           notifier.words,
-          now: DateTime.now(),
+          endDay: selectedEndDay,
+          latestAllowedAt: now,
         );
         final syncSupported = notifier.syncSupported;
         final syncEnabled = notifier.syncEnabled;
@@ -39,9 +55,24 @@ class RecordsPage extends StatelessWidget {
                 children: [
                   _ProgressGrid(progress: progress),
                   const SizedBox(height: 18),
-                  Text('最近 7 天', style: Theme.of(context).textTheme.titleSmall),
+                  _ActivityWeekHeader(
+                    days: selectedDays,
+                    isCurrentWeek: _weekOffset == 0,
+                    onPrevious: () {
+                      setState(() {
+                        _weekOffset++;
+                      });
+                    },
+                    onNext: _weekOffset == 0
+                        ? null
+                        : () {
+                            setState(() {
+                              _weekOffset--;
+                            });
+                          },
+                  ),
                   const SizedBox(height: 10),
-                  _ActivityWeek(days: progress.lastSevenDays),
+                  _ActivityWeek(days: selectedDays),
                   const SizedBox(height: 12),
                   Text(
                     progress.latestActivityAt == null
@@ -188,6 +219,67 @@ class RecordsPage extends StatelessWidget {
     final minute = value.minute.toString().padLeft(2, '0');
     final second = value.second.toString().padLeft(2, '0');
     return '$year-$month-$day $hour:$minute:$second';
+  }
+}
+
+class _ActivityWeekHeader extends StatelessWidget {
+  const _ActivityWeekHeader({
+    required this.days,
+    required this.isCurrentWeek,
+    required this.onPrevious,
+    required this.onNext,
+  });
+
+  final List<DailyLearningActivity> days;
+  final bool isCurrentWeek;
+  final VoidCallback onPrevious;
+  final VoidCallback? onNext;
+
+  @override
+  Widget build(BuildContext context) {
+    final start = days.first.day;
+    final end = days.last.day;
+    return Row(
+      children: [
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                isCurrentWeek ? '最近 7 天' : '先前 7 天',
+                style: Theme.of(context).textTheme.titleSmall,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '${_formatDate(start)} ～ ${_formatDate(end)}',
+                style: Theme.of(
+                  context,
+                ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+              ),
+            ],
+          ),
+        ),
+        IconButton(
+          key: const ValueKey('previousActivityWeek'),
+          onPressed: onPrevious,
+          tooltip: '查看前 7 天',
+          icon: const Icon(Icons.chevron_left),
+        ),
+        IconButton(
+          key: const ValueKey('nextActivityWeek'),
+          onPressed: onNext,
+          tooltip: '查看後 7 天',
+          icon: const Icon(Icons.chevron_right),
+        ),
+      ],
+    );
+  }
+
+  static String _formatDate(DateTime value) {
+    final year = value.year.toString().padLeft(4, '0');
+    final month = value.month.toString().padLeft(2, '0');
+    final day = value.day.toString().padLeft(2, '0');
+    return '$year/$month/$day';
   }
 }
 

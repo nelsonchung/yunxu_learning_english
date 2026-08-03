@@ -51,6 +51,43 @@ class LearningProgressSummary {
 class LearningProgressService {
   const LearningProgressService();
 
+  List<DailyLearningActivity> activityForSevenDays(
+    Iterable<WordCard> cards, {
+    required DateTime endDay,
+    DateTime? latestAllowedAt,
+  }) {
+    final localEndDay = _startOfDay(endDay.toLocal());
+    final startDay = localEndDay.subtract(const Duration(days: 6));
+    final rangeEnd = localEndDay.add(const Duration(days: 1));
+    final localLatestAllowedAt = latestAllowedAt?.toLocal();
+    final activityTimes = <DateTime>[];
+
+    for (final card in cards.where((card) => !card.isDeleted)) {
+      activityTimes.addAll(card.history.map((item) => item.toLocal()));
+      if (card.isMastered && card.masteredAt != null) {
+        activityTimes.add(card.masteredAt!.toLocal());
+      }
+    }
+
+    final activitiesInRange = activityTimes
+        .where((item) {
+          return !item.isBefore(startDay) &&
+              item.isBefore(rangeEnd) &&
+              (localLatestAllowedAt == null ||
+                  !item.isAfter(localLatestAllowedAt));
+        })
+        .toList(growable: false);
+
+    return List<DailyLearningActivity>.generate(7, (index) {
+      final day = startDay.add(Duration(days: index));
+      final nextDay = day.add(const Duration(days: 1));
+      final count = activitiesInRange.where((item) {
+        return !item.isBefore(day) && item.isBefore(nextDay);
+      }).length;
+      return DailyLearningActivity(day: day, count: count);
+    }, growable: false);
+  }
+
   LearningProgressSummary summarize(
     Iterable<WordCard> cards, {
     required DateTime now,
@@ -114,14 +151,11 @@ class LearningProgressService {
             return item.isAfter(latest) ? item : latest;
           });
 
-    final lastSevenDays = List<DailyLearningActivity>.generate(7, (index) {
-      final day = sevenDayStart.add(Duration(days: index));
-      final count = validActivityTimes.where((item) {
-        return !item.isBefore(day) &&
-            item.isBefore(day.add(const Duration(days: 1)));
-      }).length;
-      return DailyLearningActivity(day: day, count: count);
-    }, growable: false);
+    final lastSevenDays = activityForSevenDays(
+      activeCards,
+      endDay: today,
+      latestAllowedAt: localNow,
+    );
     final difficultWords =
         activeCards.where((card) => card.isDifficult).toList(growable: false)
           ..sort((first, second) {
