@@ -212,6 +212,62 @@ void main() {
     expect(builtinRepository.recommendationRequestCount, 0);
   });
 
+  testWidgets('待複習超過門檻時會在完成後顯示推薦新字', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 2600));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: List.generate(
+        6,
+        (index) => _reviewWordCard(
+          id: 'recommend-after-review-$index',
+          word: 'reviewword$index',
+          nextReviewDate: now.subtract(Duration(days: 6 - index)),
+        ),
+      ),
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsReviewThreshold(5);
+    final builtinRepository = _FakeBuiltinWordBankRepository();
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(value: builtinRepository),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('今天待複習 6 個'), findsOneWidget);
+    expect(builtinRepository.recommendationRequestCount, 0);
+
+    for (var index = 0; index < 3; index++) {
+      await tester.tap(find.widgetWithText(FilledButton, '記得').first);
+      await tester.pumpAndSettle();
+    }
+    await tester.tap(find.widgetWithText(FilledButton, '再複習 3 個'));
+    await tester.pumpAndSettle();
+    for (var index = 0; index < 3; index++) {
+      await tester.tap(find.widgetWithText(FilledButton, '記得').first);
+      await tester.pumpAndSettle();
+    }
+
+    expect(wordsNotifier.reviewQueueFor(DateTime.now()), isEmpty);
+    expect(builtinRepository.recommendationRequestCount, 1);
+    expect(find.byIcon(Icons.add_circle_outline), findsWidgets);
+    expect(find.textContaining('今天待複習 0 個'), findsOneWidget);
+  });
+
   testWidgets('可將今日複習單字標記為已掌握', (tester) async {
     final now = DateTime.now();
     final wordsNotifier = _buildWordsNotifier(

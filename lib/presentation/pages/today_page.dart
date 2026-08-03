@@ -140,7 +140,7 @@ class _TodayPageState extends State<TodayPage> {
                 ),
                 const SizedBox(height: 16),
               ],
-              _DailyNewWordsSection(dueCount: availableToday),
+              _DailyNewWordsSection(dueCount: reviewQueue.length),
               const SizedBox(height: 16),
             ],
             if (!isDifficultPractice && isComebackMode) ...[
