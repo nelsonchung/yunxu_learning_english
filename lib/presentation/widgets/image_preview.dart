@@ -182,7 +182,7 @@ class _ImageZoomDialogState extends State<_ImageZoomDialog>
     _controller.addListener(_syncScale);
     _zoomAnimationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 220),
+      duration: const Duration(milliseconds: 320),
     )..addListener(_syncZoomAnimation);
   }
 

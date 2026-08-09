@@ -1334,7 +1334,15 @@ def main() -> int:
     blocked: list[dict[str, Any]] = []
     for index, entry, reasons in selected:
         word = str(entry.get("word", "")).strip().lower()
-        if "forbidden_text" in reasons and word not in SAFE_SPECIAL_WORDS:
+        # A template marker in an example sentence is precisely the case this
+        # refiner can repair when the meaning is still usable.  Keep blocking
+        # entries whose meaning is itself noisy, because generating examples
+        # from an unreliable gloss would only hide the data problem.
+        if (
+            "forbidden_text" in reasons
+            and "weak_or_noisy_meaning" in reasons
+            and word not in SAFE_SPECIAL_WORDS
+        ):
             blocked.append(
                 {
                     "index": index,
