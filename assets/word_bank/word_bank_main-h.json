@@ -2827,10 +2827,10 @@
   },
   {
     "word": "hail",
-    "meaning": "冰雹、歡呼",
+    "meaning": "冰雹；向……歡呼／致敬",
     "partOfSpeech": "noun",
     "sentences": [
-      "The sudden storm brought heavy rain and large flakes of hail yesterday. 突然的風暴昨天帶來了大雨和大塊的冰雹。",
+      "The sudden storm brought heavy rain and large hail yesterday. 昨天的暴風雨帶來大雨和大顆冰雹。",
       "The crowd gathered to hail the team's victory with loud cheers and applause. 人群聚集在一起，以響亮的歡呼和掌聲來慶賀（歡呼）球隊的勝利。"
     ],
     "difficultyLevel": 6,
@@ -2982,7 +2982,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "She has long, curly dark hair and beautiful eyes. 她留著長長的深色捲髮，有一雙漂亮的眼睛。",
-      "I need to go to the barber's to get a hair cut. 我需要去理髮店剪頭髮。"
+      "I need to go to the barber's to get a haircut. 我需要去理髮店剪頭髮。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -3964,7 +3964,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "I'll meet you in half an hour at the cinema entrance. 我半小時後在電影院門口等妳。",
-      "She cut the apple into two halves and gave one to me. 她把蘋果切成兩半，給了我一半。"
+      "She cut the apple in half and gave one piece to me. 她把蘋果切成兩半，並分了一塊給我。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -5913,11 +5913,11 @@
   },
   {
     "word": "hamburger/burger",
-    "meaning": "漢堡/漢堡",
+    "meaning": "漢堡；burger 是較口語的簡稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "I'd like a double cheese hamburger and some fries, please. 我想要一個雙層起司漢堡和一些薯條。",
-      "The restaurant is famous for its delicious homemade beef burgers. 這家餐廳以其美味的手作牛肉漢堡聞名。"
+      "The menu uses hamburger/burger for the same kind of sandwich. 菜單用兩種說法表示同一種漢堡。",
+      "She ordered a hamburger/burger with cheese and no onions. 她點了一個加起司、不加洋蔥的漢堡。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -7546,7 +7546,7 @@
     "partOfSpeech": "verb",
     "sentences": [
       "Please try to stay calm and handle the situation carefully. 請試著保持冷靜並謹慎處理這種局面。",
-      "The manager handled the difficult customer complaint very well. 經理處理那位困難顧客的投訴處理得非常好。"
+      "The manager handled the difficult customer complaint very well. 經理妥善處理了那位難纏顧客的抱怨。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -9751,8 +9751,8 @@
     "meaning": "騷擾、煩擾",
     "partOfSpeech": "verb",
     "sentences": [
-      "The company has a strict policy against any form of workplace harassment. 公司對任何形式的職場騷擾都有嚴格的政策。",
-      "He was accused of trying to harass his neighbor following a series of disputes. 在一連串爭執後，他被指控試圖騷擾他的鄰居。"
+      "The form lists harass(ment) as both an action and a related noun. 表格用這個標示同時代表騷擾的動作與名詞。",
+      "The lesson explains how harass(ment) can happen at work or online. 這堂課說明職場或網路上可能出現的騷擾行為。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -10003,7 +10003,7 @@
   },
   {
     "word": "hard",
-    "meaning": "難的",
+    "meaning": "困難的；堅硬的；努力地",
     "partOfSpeech": "adjective",
     "sentences": [
       "He worked very hard to support his family. 他非常努力工作以扶養家人。",
@@ -11173,7 +11173,7 @@
   },
   {
     "word": "harm",
-    "meaning": "傷害",
+    "meaning": "傷害；損害",
     "partOfSpeech": "noun",
     "sentences": [
       "I'm sorry, I didn't mean any harm by my earlier comments. 對不起，我剛才的話並沒有惡意（傷害）。",
@@ -16900,8 +16900,8 @@
     "meaning": "耳機",
     "partOfSpeech": "noun",
     "sentences": [
-      "He put on his noise-canceling headphones to listen to music on the plane. 他戴上降噪耳機在飛機上聽音樂。",
-      "Please make sure you turn down the volume while using your headphones. 使用耳機時請務必調低音量。"
+      "The label headphone(s) means that either the singular or plural form may appear. 這個標示表示單數或複數形式都可能出現。",
+      "Please bring your headphone(s) if you want to listen privately. 如果想自己聽，請帶耳機。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -17580,7 +17580,7 @@
   },
   {
     "word": "health",
-    "meaning": "健康",
+    "meaning": "健康的；有益健康的",
     "partOfSpeech": "noun",
     "sentences": [
       "Regular exercise and a balanced diet are essential for good health. 定期運動和均衡飲食對健康至關重要。",
@@ -17802,7 +17802,7 @@
     "partOfSpeech": "adjective",
     "sentences": [
       "Eating lots of vegetables and fruits is part of a healthy diet. 吃大量的蔬菜和水果是健康飲食的一部分。",
-      "You look much healthier than the last time I saw you. 你看起來比上次見到你時健康多了。"
+      "A healthy breakfast can help you stay focused all morning. 健康的早餐能幫助你整個上午保持專注。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -37013,11 +37013,11 @@
   },
   {
     "word": "hero/heroine",
-    "meaning": "英雄/女主角",
+    "meaning": "男英雄／女英雄；故事主角",
     "partOfSpeech": "noun",
     "sentences": [
-      "The brave soldier was hailed as a national hero after the war. 那位勇敢的士兵戰後被讚譽為國家英雄。",
-      "The novel tells the story of a courageous heroine fighting for justice. 這部小說講述了一位為正義而戰的勇敢女主角的故事。"
+      "The glossary writes hero/heroine to include both male and female forms. 詞彙表用這個標示同時列出男性與女性形式。",
+      "A hero/heroine in a story often helps others despite the danger. 故事中的英雄人物即使面臨危險也常會幫助別人。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -46562,7 +46562,7 @@
   },
   {
     "word": "hill",
-    "meaning": "爬坡道",
+    "meaning": "小山；山丘",
     "partOfSpeech": "noun",
     "sentences": [
       "They took a pleasant walk up the grassy hill. 他們在長滿草的小山上愉快地散步。",
@@ -48570,8 +48570,8 @@
     "meaning": "河馬",
     "partOfSpeech": "noun",
     "sentences": [
-      "Does the definition of 'hippopotamus/hippo' change depending on the context? 「hippopotamus/hippo」的定義會根據語境而改變嗎？",
-      "She wrote a fascinating article about the 'hippopotamus/hippo' of the future. 她寫了一篇關於未來「hippopotamus/hippo」的引人入勝的文章。"
+      "Hippopotamus/hippo shows the full name and its common short form. 這個標示列出河馬的完整名稱與常用簡稱。",
+      "The child called the hippopotamus/hippo the biggest animal in the pool. 那個孩子說河馬是水池裡最大的動物。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -62356,7 +62356,7 @@
     "partOfSpeech": "verb",
     "sentences": [
       "I hope that you will achieve all your dreams in the future. 我希望你未來能實現所有的夢想。",
-      "We are hoping for good weather for our outdoor wedding. 我們希望戶外婚禮那天會有好天氣。"
+      "We hope the weather stays dry for our outdoor wedding. 我們希望戶外婚禮當天天氣晴朗無雨。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -64550,11 +64550,11 @@
   },
   {
     "word": "horrify",
-    "meaning": "驚嚇",
+    "meaning": "使震驚；使恐懼",
     "partOfSpeech": "verb",
     "sentences": [
-      "The news of the sudden crisis managed to horrify everyone now. 突然危機的消息現在竟然（能）驚嚇了每個人。",
-      "The movie was criticized for its extremely violent and cruel. 這部電影因其極其暴力殘忍的場景而令人恐懼（驚嚇）。"
+      "The cruelty in the video may horrify some viewers. 影片中的殘酷畫面可能會使部分觀眾感到震驚。",
+      "It would horrify her to see animals treated that way. 看到動物受到那樣的對待會讓她非常難受。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -64731,7 +64731,7 @@
     "meaning": "馬",
     "partOfSpeech": "noun",
     "sentences": [
-      "He is learning how to ride a horse this summer. 他正在學習這個夏天如何騎馬。",
+      "He is learning how to ride a horse this summer. 他今年夏天正在學騎馬。",
       "The horses were galloping across the vast green fields. 馬群正在廣闊的綠色原野上奔馳。"
     ],
     "difficultyLevel": 1,
@@ -66136,8 +66136,8 @@
     "meaning": "男主人/女主人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The host greeted everyone with a warm and friendly smile. 男主人帶著溫暖友善的笑容向每個人打招呼。",
-      "The hostess ensured that all the guests were comfortable and well-fed. 女主人確保所有的客人都感到舒適且吃得飽。"
+      "The invitation uses host/hostess for the person welcoming the guests. 邀請函用這個標示代表接待賓客的主人。",
+      "A good host/hostess makes every guest feel welcome. 好的主人會讓每位客人都感到賓至如歸。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -66323,7 +66323,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "There is a history of hostility between the two neighboring countries over the border. 這兩個鄰國在邊界問題上存在著一段敵對的歷史。",
-      "The international community called for an immediate end to all hostilities. 國際社會呼籲立即停止一切戰爭行為。"
+      "Both sides agreed to end the hostilities at midnight. 雙方同意在午夜停止敵對行動。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -70088,7 +70088,7 @@
   },
   {
     "word": "human",
-    "meaning": "人類",
+    "meaning": "人類的；人的",
     "partOfSpeech": "adjective",
     "sentences": [
       "Human beings are social creatures who need companionship. 人類是需要陪伴的社交生物。",
@@ -72524,7 +72524,7 @@
     "meaning": "打獵",
     "partOfSpeech": "verb",
     "sentences": [
-      "The lion was hunting for its prey in the vast savannah. 獅子正廣闊的熱帶草原上獵捕獵物。",
+      "The lion was hunting for prey across the vast savannah. 獅子正在廣闊的草原上獵捕獵物。",
       "We spent the afternoon hunting for shells on the beach. 我們下午在海灘上尋找貝殼。"
     ],
     "difficultyLevel": 2,
@@ -73426,7 +73426,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "Her husband is a talented architect who designed their house. 她的丈夫是一位有才華的建築師，設計了他們的房子。",
-      "They have been happily married for over twenty years. 他們已經幸福地結婚超過二十年了。"
+      "Her husband cooks dinner when she works late. 她加班時，丈夫會準備晚餐。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -89988,11 +89988,11 @@
   },
   {
     "word": "hypnotherapy",
-    "meaning": "催眠術療法",
+    "meaning": "催眠治療；運用催眠協助治療的方法",
     "partOfSpeech": "noun",
     "sentences": [
-      "Researchers are studying how to prevent hypnotherapy. 研究人員正在研究如何預防hypnotherapy。",
-      "The hospital provides counseling for patients facing hypnotherapy. 醫院為面對hypnotherapy的病人提供諮詢服務。"
+      "She tried hypnotherapy to reduce her fear of flying. 她嘗試用催眠治療減輕搭飛機的恐懼。",
+      "Ask a qualified professional whether hypnotherapy is suitable for you. 請詢問合格專業人員，確認催眠治療是否適合你。"
     ],
     "schoolLevels": [
       "college"
