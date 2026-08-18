@@ -3104,11 +3104,12 @@
   },
   {
     "word": "radical",
-    "meaning": "激進的、根本的",
+    "meaning": "根本的；徹底的；激進的",
+    "memoryHint": "radical 源自表示「根」的拉丁文 radix，因此可聯想到「從根本改變」。注意拼作 radical，不是 redical。作名詞時也可指激進分子、數學的根號或化學的自由基。",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The company needs a radical restructuring to improve its financial situation. 公司需要一次根本性的（激進的）重組來改善其財務狀況。",
-      "He introduced several radical ideas that challenged the traditional way of thinking. 他提出了一些挑戰傳統思維模式的激進想法。"
+      "The company made radical changes to its business model to avoid bankruptcy. 公司對商業模式進行了根本性的改革，以避免破產。",
+      "Her proposal seemed radical at first, but it eventually transformed the entire industry. 她的提案起初看似激進，最後卻改變了整個產業。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
