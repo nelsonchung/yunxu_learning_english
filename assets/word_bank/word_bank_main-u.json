@@ -174,6 +174,18 @@
     ]
   },
   {
+    "word": "umbrage",
+    "meaning": "不悅；憤怒（尤指因受冒犯而生氣）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "She took umbrage at his rude remark. 她因他無禮的言論而感到不悅。",
+      "He seemed to take umbrage when his work was criticized. 他的工作受到批評時，他似乎很生氣。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
     "word": "umbrella",
     "meaning": "傘；保護傘；總稱",
     "partOfSpeech": "noun",
@@ -1961,8 +1973,8 @@
     "meaning": "統一、使聯合",
     "partOfSpeech": "verb",
     "sentences": [
-      "The leader tried to unify the different factions within the party.",
-      "The program aims to unify the diverse groups through culture and art."
+      "The leader tried to unify the different factions within the party. 領袖試圖團結黨內不同的派系。",
+      "The program aims to unify the diverse groups through culture and art. 這項計畫旨在透過文化與藝術團結不同的群體。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
