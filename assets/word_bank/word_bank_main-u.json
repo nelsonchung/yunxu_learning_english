@@ -260,11 +260,11 @@
   },
   {
     "word": "unanimous",
-    "meaning": "全體一致的",
+    "meaning": "全體一致的；一致同意的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The committee reached a unanimous decision to approve the new project.",
-      "There was unanimous agreement among the board members on the policy."
+      "We made a unanimous choice to order pizza. 我們一致決定點披薩。",
+      "The family reached a unanimous decision about the holiday. 全家人對假期安排達成一致決定。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -629,11 +629,11 @@
   },
   {
     "word": "unconditional",
-    "meaning": "無條件的",
+    "meaning": "無條件的；不附帶條件的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The two countries signed an unconditional peace treaty to end the war.",
-      "She showed her daughter unconditional love and support throughout her life."
+      "Her parents gave her unconditional support. 她的父母無條件地支持她。",
+      "The shelter offers unconditional help to families in need. 這間收容所無條件協助有需要的家庭。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -724,7 +724,7 @@
     "partOfSpeech": "verb",
     "sentences": [
       "The investigation managed to uncover evidence of corruption within the government. 調查成功揭露了政府內部的腐敗證據。",
-      "Archaeologists uncovered several ancient artifacts during the excavation. 考古學家在挖掘過程中發現（揭露）了幾件古代文物。"
+      "Archaeologists began to uncover ancient objects at the site. 考古學家開始在遺址中發現古代物品。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -926,11 +926,11 @@
   },
   {
     "word": "underestimate",
-    "meaning": "低估",
+    "meaning": "低估；小看",
     "partOfSpeech": "verb",
     "sentences": [
-      "We should never underestimate the importance of environmental protection.",
-      "The manager underestimated the amount of time needed to finish the work."
+      "I tend to underestimate how long the bus ride will take. 我常低估公車車程所需的時間。",
+      "Don't underestimate the time needed to cook dinner. 別低估煮晚餐所需的時間。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -952,7 +952,7 @@
     "meaning": "經歷、接受",
     "partOfSpeech": "verb",
     "sentences": [
-      "The company is currently undergoing a major organizational restructuring. 公司目前正經歷一場重大的組織重組。",
+      "The company will undergo a major reorganization this year. 公司今年將經歷一次重大重組。",
       "The patient needs to undergo several tests before the final diagnosis. 病人需要接受（經歷）幾項測試才能做出最後診斷。"
     ],
     "difficultyLevel": 5,
@@ -1063,11 +1063,11 @@
   },
   {
     "word": "underneath",
-    "meaning": "在...下面",
+    "meaning": "在……下面；在……底下",
     "partOfSpeech": "preposition",
     "sentences": [
-      "He found his missing keys underneath the sofa in the living room.",
-      "The cat likes to hide underneath the table during the heavy storm."
+      "I found my phone underneath the sofa. 我在沙發底下找到手機。",
+      "The dog sleeps underneath the kitchen table. 那隻狗睡在餐桌底下。"
     ],
     "sourceTags": [
       "pdfExamBook"
@@ -1090,11 +1090,11 @@
   },
   {
     "word": "underpass",
-    "meaning": "地下道",
+    "meaning": "地下道；地下通道",
     "partOfSpeech": "noun",
     "sentences": [
-      "The new underpass allows pedestrians to cross the busy street safely.",
-      "We walked through the dark underpass to reach the train station."
+      "We used the underpass to cross the busy road. 我們走地下道穿越繁忙的馬路。",
+      "The underpass leads straight to the train station. 這條地下道直接通往火車站。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -1121,11 +1121,11 @@
   },
   {
     "word": "underscore",
-    "meaning": "強調或引起注意。",
+    "meaning": "強調；凸顯",
     "partOfSpeech": "verb",
     "sentences": [
-      "I wish to underscore the importance of proper formatting. 我想強調正確格式的重要性。",
-      "People often underscore when the situation calls for it. 人們經常在情況需要時強調。"
+      "The coach used this rule to underscore the need to arrive on time. 教練用這條規則強調準時到場的重要性。",
+      "Her smile seemed to underscore how happy she was. 她的笑容似乎更凸顯了她有多開心。"
     ],
     "audienceTags": [
       "general"
@@ -1215,11 +1215,11 @@
   },
   {
     "word": "undertake",
-    "meaning": "承擔、進行",
+    "meaning": "承擔；著手進行",
     "partOfSpeech": "verb",
     "sentences": [
-      "The company decided to undertake a major research project next year. 公司決定進行（承擔）一項重大的研究專案。",
-      "He undertook to finish the work by the end of the week, but he failed. 他答應（承諾）在本週末前完成工作，但沒能做到。"
+      "I agreed to undertake the grocery shopping this week. 我答應這週負責採買日用品。",
+      "She will undertake the task of planning our family trip. 她將承擔規劃家庭旅行的工作。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -1262,11 +1262,11 @@
   },
   {
     "word": "underway",
-    "meaning": "正在進行中",
+    "meaning": "正在進行中的；已經開始的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The project is currently underway and is expected to finish soon.",
-      "Preparations for the annual festival are already well underway."
+      "Repairs are underway at the train station. 火車站正在進行整修。",
+      "Our family trip is already underway. 我們的家庭旅行已經開始了。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -1687,7 +1687,7 @@
     "partOfSpeech": "verb",
     "sentences": [
       "The story began to unfold as the main character traveled through Europe. 隨著主角在歐洲旅行，故事開始展開（發展）。",
-      "She carefully unfolded the letter and started to read it with excitement. 她小心翼翼地展開信件，興奮地讀了起來。"
+      "She watched the folded letter unfold in her hands. 她看著摺好的信在手中展開。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -1706,11 +1706,11 @@
   },
   {
     "word": "unforeseen",
-    "meaning": "未預見到。",
+    "meaning": "未預料到的；意料之外的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "unforeseen catastrophe 不可預見的災難",
-      "unforeseen consequences 不可預見的後果"
+      "An unforeseen delay kept us at the airport. 一場意料之外的延誤讓我們困在機場。",
+      "We saved extra money for unforeseen expenses. 我們另外存了一筆錢，以應付意料之外的開支。"
     ],
     "audienceTags": [
       "general"
@@ -1898,11 +1898,11 @@
   },
   {
     "word": "unification",
-    "meaning": "統一、聯合",
+    "meaning": "統一；合併為一體",
     "partOfSpeech": "noun",
     "sentences": [
-      "The unification of the two small states led to increased stability.",
-      "The project aims to promote the unification of the local community."
+      "The unification of the two teams created one larger team. 兩支隊伍合而為一，組成了一支更大的隊伍。",
+      "The unification of the towns changed how local services were run. 這些城鎮統一後，地方服務的運作方式也改變了。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -1924,7 +1924,7 @@
     "meaning": "制服",
     "partOfSpeech": "noun",
     "sentences": [
-      "The students are required to wear their school uniforms every day. 學生被要求每天穿校服。",
+      "Each student must wear a school uniform every day. 每位學生每天都必須穿校服。",
       "The police officer was wearing a neat and professional uniform. 警察穿著整潔專業的制服。"
     ],
     "difficultyLevel": 1,
@@ -2119,11 +2119,11 @@
   },
   {
     "word": "uniquely",
-    "meaning": "以獨特的方式。",
+    "meaning": "獨特地；以獨有的方式",
     "partOfSpeech": "adverb",
     "sentences": [
-      "a uniquely gifted musician 一位具有獨特天賦的音樂家",
-      "components that are uniquely numbered for identification 具有唯一編號以便識別的組件"
+      "This café is uniquely decorated with old bicycles. 這間咖啡館以老舊腳踏車作裝飾，風格獨特。",
+      "The twins each have a uniquely shaped backpack. 這對雙胞胎各自有一個形狀獨特的背包。"
     ],
     "audienceTags": [
       "general"
@@ -2147,7 +2147,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "Each unit in the book has two short lessons. 這本書每個單元有兩篇短課文。",
-      "The apartment building has twenty units. 這棟公寓大樓有二十戶。"
+      "Each unit in the apartment building has a balcony. 這棟公寓的每一戶都有陽台。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -2172,11 +2172,11 @@
   },
   {
     "word": "unitary",
-    "meaning": "將權力集中在一個機構，而不是與更多地方機構分享。",
+    "meaning": "單一制的；權力主要集中於中央政府的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "a unitary authority 單一權力機構",
-      "a unitary state 單一制國家"
+      "Our civics class compared a unitary system with a federal one. 我們的公民課比較了單一制與聯邦制。",
+      "In a unitary country, local councils get power from the central government. 在單一制國家，地方議會的權力來自中央政府。"
     ],
     "audienceTags": [
       "general"
@@ -2374,7 +2374,7 @@
     "meaning": "擺脫皮帶，或像皮帶一樣。",
     "partOfSpeech": "verb",
     "sentences": [
-      "He unleashed his dog in the park. 他在公園裡放出了他的狗。",
+      "He decided to unleash his dog in the empty field. 他決定在空曠的田野放開狗繩。",
       "To unleash means to free from a leash, or as from a leash. 釋放意味著擺脫束縛，或擺脫束縛。"
     ],
     "audienceTags": [
@@ -2424,11 +2424,11 @@
   },
   {
     "word": "unload",
-    "meaning": "發洩或表達；卸下自己的負擔。",
+    "meaning": "卸下；向人傾訴",
     "partOfSpeech": "verb",
     "sentences": [
-      "to unload on someone 向某人傾訴",
-      "To unload means to give vent to or express; to unburden oneself of. 卸是指發洩或表達；卸下自己的負擔。"
+      "I need to unload the groceries from the car. 我得把車上的雜貨搬下來。",
+      "She called her sister to unload after a stressful day. 忙了一整天後，她打電話向姊姊傾訴。"
     ],
     "audienceTags": [
       "general"
@@ -2642,11 +2642,11 @@
   },
   {
     "word": "unplug",
-    "meaning": "斷開電源，尤其是電源插座。",
+    "meaning": "拔掉插頭；切斷電源",
     "partOfSpeech": "verb",
     "sentences": [
-      "To save electricity, I unplug my computer when I am not at home. 為了省電費，我不在家時會拔掉電腦電源。",
-      "People often unplug when the situation calls for it. 當情況需要時，人們常常會拔掉插頭。"
+      "Please unplug the toaster before cleaning it. 清潔烤麵包機前，請先拔掉插頭。",
+      "I unplug my phone charger when I leave home. 我出門時會拔掉手機充電器的插頭。"
     ],
     "audienceTags": [
       "general"
@@ -3003,11 +3003,11 @@
   },
   {
     "word": "unstable",
-    "meaning": "波動；不恆定。",
+    "meaning": "不穩定的；不牢固的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "politically unstable 政治不穩定",
-      "The political situation remains unstable. 政治局勢仍然不穩定。"
+      "The chair feels unstable on this uneven floor. 這張椅子放在不平的地板上感覺不穩。",
+      "Our internet connection is unstable during storms. 暴風雨期間，我們的網路連線不穩定。"
     ],
     "audienceTags": [
       "general"
@@ -3170,11 +3170,11 @@
   },
   {
     "word": "unto",
-    "meaning": "直至達到以下程度或時間；直到。",
-    "partOfSpeech": "conjunction",
+    "meaning": "（古）向；給；直到",
+    "partOfSpeech": "preposition",
     "sentences": [
-      "Unto This Last (John Ruskin) 到最後（約翰·羅斯金）",
-      "The word unto is used to connect ideas in a sentence. to 這個字用來連結句子中的想法。"
+      "The old prayer asks that peace be unto all families. 這篇古老的祈禱文祈求所有家庭都能平安。",
+      "The story says the gift was given unto the youngest child. 故事裡說，禮物被交給最小的孩子。"
     ],
     "audienceTags": [
       "general"
@@ -3266,11 +3266,11 @@
   },
   {
     "word": "unveil",
-    "meaning": "揭幕、公佈",
+    "meaning": "揭開；首次公開（計畫、產品等）",
     "partOfSpeech": "verb",
     "sentences": [
-      "The famous architect is planning to unveil his new building design soon.",
-      "The government decided to unveil the new economic policy early today."
+      "The school will unveil its new logo on Friday. 學校將在星期五公開新的校徽。",
+      "The shop plans to unveil its holiday window display today. 店家計畫今天揭曉節慶櫥窗布置。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3321,11 +3321,11 @@
   },
   {
     "word": "unwise",
-    "meaning": "不聰明；缺乏智慧。",
+    "meaning": "不明智的；欠考慮的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "unwise kings 不明智的國王",
-      "unwise measures 不明智的措施"
+      "It was unwise to leave the front door unlocked. 沒鎖前門是不明智的。",
+      "Buying a phone you cannot afford is unwise. 買一支自己負擔不起的手機並不明智。"
     ],
     "audienceTags": [
       "general"
@@ -3590,11 +3590,11 @@
   },
   {
     "word": "upright",
-    "meaning": "直立的、正直的",
+    "meaning": "直立的；正直的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The old grandfather clock stood upright against the wooden wall.",
-      "He is a very upright man who always does the right and honest thing."
+      "Keep the bottle upright in your bag. 把瓶子直立放在包包裡。",
+      "Everyone trusts Maya because she is upright and honest. 大家都信任瑪雅，因為她正直誠實。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3609,11 +3609,11 @@
   },
   {
     "word": "uprising",
-    "meaning": "起義、反抗",
+    "meaning": "起義；暴動",
     "partOfSpeech": "noun",
     "sentences": [
-      "The government managed to put down the violent military uprising quickly.",
-      "The book explores the causes of the popular uprising in the city center."
+      "The uprising began after the king raised taxes. 國王提高稅收後，起義爆發了。",
+      "The family left town when an uprising reached their neighborhood. 起義蔓延到他們的街區時，那家人離開了城鎮。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3758,11 +3758,11 @@
   },
   {
     "word": "upward",
-    "meaning": "向上的",
+    "meaning": "向上的；上升的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "There has been a steady upward trend in the price of fuel recently.",
-      "The hikers followed the steep upward path to reach the mountain top."
+      "The price showed an upward trend this week. 這週價格呈現上升趨勢。",
+      "We followed the upward path to the cabin. 我們沿著往上的小徑走到小木屋。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3777,11 +3777,11 @@
   },
   {
     "word": "upward/upwards",
-    "meaning": "向上地",
+    "meaning": "向上地；朝較高處",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The hot air balloon began to rise upward into the clear blue sky.",
-      "Please make sure you look upwards when you are climbing the ladder."
+      "The arrow pointed upward/upwards toward the roof garden. 箭頭指向上方的空中花園。",
+      "The balloon drifted upward/upwards above the park. 氣球飄到公園上方。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3840,7 +3840,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "I had a sudden urge to call my old friend and see how she was doing. 我突然有一種強烈渴望（衝動），想打電話給我的老朋友看看她過得怎麼樣。",
-      "The government urged people to stay at home during the heavy snowstorm. 政府敦促人們在暴風雪期間留在室內。"
+      "Officials urge everyone to stay home during the snowstorm. 官員敦促大家在暴風雪期間留在家中。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -3853,11 +3853,11 @@
   },
   {
     "word": "urgency",
-    "meaning": "緊急、迫切",
+    "meaning": "緊急；迫切",
     "partOfSpeech": "noun",
     "sentences": [
-      "The doctor spoke with a sense of urgency regarding the patient's condition.",
-      "There is a growing sense of urgency about addressing climate change."
+      "The nurse heard urgency in his voice. 護理師聽出他語氣中的急迫。",
+      "There was urgency in her call when her child went missing. 孩子走失時，她的求助電話聽來十分急切。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -3916,7 +3916,7 @@
     "meaning": "將尿液排出體外。",
     "partOfSpeech": "verb",
     "sentences": [
-      "Our new puppy still urinates on the carpet, but we're housebreaking her. 我們的新小狗仍然在地毯上撒尿，但我們正在對她進行入室盜竊。",
+      "Our new puppy may urinate on the carpet during training. 我們的新小狗在訓練期間可能會尿在地毯上。",
       "Boys on their campsite should avoid urinating within 200 feet of the lake. The word urinate is central here. 露營地的男孩應避免在距離湖 200 英尺的範圍內小便。排尿這個字是這裡的中心。"
     ],
     "audienceTags": [
@@ -3985,7 +3985,7 @@
     "partOfSpeech": "verb",
     "sentences": [
       "Can I use your pen for a moment? Mine just ran out of ink. 我可以借用一下你的筆嗎？我的剛好沒水了。",
-      "The Internet is a powerful tool used for gathering information. 互聯網是用於蒐集資訊的強大工具。"
+      "Many students use the internet to gather information. 許多學生使用網路蒐集資訊。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -4064,7 +4064,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "The new software was designed to provide a better user experience. 這款新軟體旨在提供更好的使用者體驗。",
-      "Users are required to enter their password to access the system. 使用者被要求輸入密碼以造訪系統。"
+      "Each user must enter a password to access the system. 每位使用者都必須輸入密碼才能進入系統。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -4077,11 +4077,11 @@
   },
   {
     "word": "usher",
-    "meaning": "引導、帶位員",
+    "meaning": "引座員；帶位人員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The usher showed us to our seats in the large movie theater.",
-      "The new discovery helped to usher in a new era of scientific research."
+      "The usher showed us to our seats at the movie theater. 電影院的引座員帶我們到座位上。",
+      "An usher handed out programs at the wedding. 婚禮上的帶位人員分發了節目單。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -4132,11 +4132,11 @@
   },
   {
     "word": "usurp",
-    "meaning": "通常透過非法手段從他人手中奪取權力。",
+    "meaning": "篡奪（權力、地位）",
     "partOfSpeech": "verb",
     "sentences": [
-      "People often usurp when the situation calls for it. 當情勢需要時，人們常常會篡奪權力。",
-      "Learning when to usurp helps you communicate more clearly. 了解何時篡奪可以幫助您更清晰地溝通。"
+      "The prince tried to usurp the throne from his father. 王子企圖從父親手中篡奪王位。",
+      "He tried to usurp my place as team captain without asking. 他沒問過我就試圖搶走我的隊長位置。"
     ],
     "audienceTags": [
       "general"
@@ -4144,11 +4144,11 @@
   },
   {
     "word": "utensil",
-    "meaning": "器具、用具",
+    "meaning": "器具；（尤指）廚房用具",
     "partOfSpeech": "noun",
     "sentences": [
-      "The kitchen was equipped with all the necessary utensils for cooking.",
-      "Ancient stone utensils were found during the archaeological excavation."
+      "I used a wooden utensil to stir the soup. 我用木製廚具攪拌湯。",
+      "Put each clean utensil in this drawer. 把每件乾淨的餐具放進這個抽屜。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -4241,11 +4241,11 @@
   },
   {
     "word": "utmost",
-    "meaning": "最極端的；最偉大的、終極的。",
+    "meaning": "最大的；極度的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "the utmost assiduity 最大的勤奮",
-      "the utmost harmony 最大的和諧"
+      "Please handle the baby with the utmost care. 請極其小心地抱嬰兒。",
+      "He treated every guest with utmost respect. 他以最大的尊重對待每位客人。"
     ],
     "audienceTags": [
       "general"
@@ -4280,11 +4280,11 @@
   },
   {
     "word": "utter",
-    "meaning": "完全的、發出聲音",
+    "meaning": "完全的；十足的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The whole project turned out to be an utter failure and lost millions.",
-      "She couldn't utter a word after hearing the shocking news yesterday."
+      "The room fell into utter silence. 房間裡頓時一片寂靜。",
+      "It was an utter surprise to see snow in April. 四月竟然下雪，真是完全出乎意料。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
