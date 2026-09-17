@@ -6630,11 +6630,11 @@
   },
   {
     "word": "guide",
-    "meaning": "引導",
+    "meaning": "嚮導、導遊；引導、帶領",
     "partOfSpeech": "noun/verb",
     "sentences": [
-      "I saw the guide nearby. 我在附近看到引導。",
-      "I noticed the guide nearby. 我注意到附近有個引導。"
+      "Our local guide showed us the oldest part of the city. 當地導遊帶我們參觀這座城市最古老的區域。",
+      "This map will guide you to the nearest train station. 這張地圖會引導你前往最近的火車站。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -52085,16 +52085,6 @@
       "I noticed the guidance nearby. 我注意到附近有個指導。"
     ],
     "difficultyLevel": 3
-  },
-  {
-    "word": "guide",
-    "meaning": "引導",
-    "partOfSpeech": "noun/verb",
-    "sentences": [
-      "I saw the guide nearby. 我在附近看到引導。",
-      "I noticed the guide nearby. 我注意到附近有個引導。"
-    ],
-    "difficultyLevel": 2
   },
   {
     "word": "guidebook",
