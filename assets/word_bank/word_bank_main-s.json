@@ -37,11 +37,11 @@
   },
   {
     "word": "sack",
-    "meaning": "解僱",
+    "meaning": "大袋；（the sack）解僱",
     "partOfSpeech": "noun",
     "sentences": [
       "The farmer carried a heavy sack of potatoes across the field. 農夫扛著一袋沉重的馬鈴薯穿過田野。",
-      "He received the sack (was fired) after his poor performance. 業績不佳後，他被解僱了（裝進麻袋）。"
+      "He got the sack because of his poor performance. 他因表現不佳而被解僱。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -4328,11 +4328,11 @@
   },
   {
     "word": "sectarian",
-    "meaning": "屬於某個教派、與某個教派有關或部分屬於某個教派。",
+    "meaning": "宗派的；偏袒某一教派的",
     "partOfSpeech": "adjective",
     "sentences": [
       "We were discussing solutions to the sectarian violence between Sunnis and Shias. 我們正在討論遜尼派和什葉派之間宗派暴力的解決方案。",
-      "Something described as sectarian is of, relating to, or partial to a sect. 被描述為宗派的事物屬於某個教派、與某個教派有關或部分屬於某個教派。"
+      "The community leaders called for an end to sectarian hatred. 社區領袖呼籲終止宗派仇恨。"
     ],
     "audienceTags": [
       "general"
@@ -7019,11 +7019,11 @@
   },
   {
     "word": "shanghai",
-    "meaning": "徵用、劫持或以其他方式（通常是錯誤地）侵占某個地方或事物。",
+    "meaning": "強迫或誘使某人做某事",
     "partOfSpeech": "verb",
     "sentences": [
-      "Let's see if we can shanghai a room for a couple of hours. 我們看看能否在上海租房間幾個小時。",
-      "To shanghai means to commandeer, hijack, or otherwise (usually wrongfully) appropriate a place or thing. 到上海意味著徵用、劫持或以其他方式（通常是錯誤地）侵占某個地方或事物。"
+      "My friends shanghaied me into helping them move. 朋友們硬拉著我幫他們搬家。",
+      "She was shanghaied into organizing the school fair. 她被硬拉去籌辦學校園遊會。"
     ],
     "audienceTags": [
       "general"

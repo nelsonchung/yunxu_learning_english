@@ -13,7 +13,7 @@
   },
   {
     "word": "k",
-    "meaning": "幾千或幾千。",
+    "meaning": "千（thousand 的非正式縮寫，常用於金額或數量）",
     "partOfSpeech": "noun",
     "sentences": [
       "The car cost him over fifty k. 那輛車花了他超過五萬。",
@@ -10833,7 +10833,7 @@
   },
   {
     "word": "keynoter",
-    "meaning": "設定基調的一個；特別是：發表主題演講的人。如何在句子中使用主題演講者",
+    "meaning": "設定基調的一個；特別是：發表主題演講的人",
     "partOfSpeech": "noun",
     "sentences": [
       "The conference organizers are looking for an influential keynoter for the event. 會議籌辦者正在為活動尋找一位有影響力的主講嘉賓。",
@@ -18873,11 +18873,11 @@
   },
   {
     "word": "kneading",
-    "meaning": "用手或好像用手一樣工作並壓成一團。如何用揉捏造句",
+    "meaning": "揉捏；揉麵團（knead 的現在分詞）",
     "partOfSpeech": "verb",
     "sentences": [
-      "We should kneading before the guests arrive. 客人抵達前，我們應該這個動作（凱恩伊阿德伊恩格）。",
-      "He learned to kneading from his older brother. 他向哥哥學會了這個動作（凱恩伊阿德伊恩格）。"
+      "She is kneading the dough for the bread. 她正在揉麵團做麵包。",
+      "Kneading the clay made it soft and flexible. 揉捏黏土使它變得柔軟有彈性。"
     ],
     "audienceTags": [
       "general"
@@ -18885,11 +18885,11 @@
   },
   {
     "word": "kneadingly",
-    "meaning": "以揉捏的方式：用揉捏的動作。如何用 揉捏造句",
+    "meaning": "以揉捏方式；像揉捏般地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The speaker acted kneadingly in the debate. 辯論時，說話者表現得這種特質（凱恩伊阿德伊恩格爾伊）。",
-      "Her answer sounded kneadingly. 她的回答聽起來這種特質（凱恩伊阿德伊恩格爾伊）。"
+      "The machine pressed the dough kneadingly. 機器像揉捏般地擠壓麵團。",
+      "The massage therapist moved her hands kneadingly over the muscles. 按摩師以揉捏般的動作在肌肉上移動雙手。"
     ],
     "audienceTags": [
       "general"
@@ -19029,11 +19029,11 @@
   },
   {
     "word": "kneeling",
-    "meaning": "調整身體位置，使一個或兩個膝蓋放在地板上：倒下或放在膝蓋上。如何用跪造句",
+    "meaning": "跪下；跪著（kneel 的現在分詞）",
     "partOfSpeech": "verb",
     "sentences": [
-      "kneeling matters during a careful examination. 仔細檢查時，「凱恩伊伊爾伊恩格」這個詞很重要。",
-      "kneeling appeared in the doctor's explanation. 「凱恩伊伊爾伊恩格」這個詞出現在醫師的說明中。"
+      "She was kneeling beside the garden bed. 她正跪在花圃旁。",
+      "He hurt his knees after kneeling on the hard floor. 他跪在硬地板上後膝蓋受傷。"
     ],
     "audienceTags": [
       "general"
@@ -19137,11 +19137,11 @@
   },
   {
     "word": "knelt",
-    "meaning": "調整身體位置，使一個或兩個膝蓋放在地板上：倒下或放在膝蓋上。如何用跪造句",
+    "meaning": "跪下（kneel 的過去式）",
     "partOfSpeech": "verb",
     "sentences": [
-      "knelt can affect the patient's treatment. 「凱恩伊爾特」這個詞可能影響病人的治療。",
-      "knelt matters during a careful examination. 仔細檢查時，「凱恩伊爾特」這個詞很重要。"
+      "She knelt to tie her child’s shoelaces. 她跪下來替孩子綁鞋帶。",
+      "He knelt beside the injured hiker. 他跪在受傷的健行者旁邊。"
     ],
     "audienceTags": [
       "general"
@@ -20265,11 +20265,11 @@
   },
   {
     "word": "knolly",
-    "meaning": "以小丘為標誌。如何使用 knolly 造句",
+    "meaning": "多小丘的；丘陵起伏的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Her answer sounded knolly. 她的回答聽起來這種特質（凱恩歐爾爾伊）。",
-      "His manner seemed knolly at dinner. 晚餐時，他的態度顯得這種特質（凱恩歐爾爾伊）。"
+      "Sheep grazed on the knolly ground beyond the village. 羊群在村外丘陵起伏的土地上吃草。",
+      "The old path crossed a knolly stretch of countryside. 那條古老小徑穿過一片多小丘的鄉間地帶。"
     ],
     "audienceTags": [
       "general"
@@ -20558,7 +20558,7 @@
   },
   {
     "word": "knotting",
-    "meaning": "一個或多個柔性體的各部分的交錯，形成一團或一團（如緊固或綁在一起）。如何在句子中使用結",
+    "meaning": "一個或多個柔性體的各部分的交錯，形成一團或一團（如緊固或綁在一起）",
     "partOfSpeech": "adjective",
     "sentences": [
       "The girl enjoyed knotting colorful strings into bracelets. 那個女孩喜歡把彩色的繩子編成手鍊。",
@@ -21083,7 +21083,7 @@
   },
   {
     "word": "knurled",
-    "meaning": "粗糙的。如何在句子中使用滾花",
+    "meaning": "粗糙的",
     "partOfSpeech": "adjective",
     "sentences": [
       "He grabbed the knurled handle of the tool to prevent it from slipping. 他握住工具粗糙的把手，以免它滑落。",

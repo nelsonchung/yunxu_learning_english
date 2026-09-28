@@ -20829,7 +20829,7 @@
   },
   {
     "word": "pantographically",
-    "meaning": "受電弓的、關於受電弓的或經由受電弓的。使用 pantography 造句。",
+    "meaning": "受電弓的、關於受電弓的或經由受電弓的。使用 pantography",
     "partOfSpeech": "adverb",
     "sentences": [
       "She answered pantographically after taking a breath. 她深呼吸後受電弓式地回答。",
@@ -57319,11 +57319,11 @@
   },
   {
     "word": "pellucent",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "半透明的；透光的",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the pellucent beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the pellucent while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The insect had pellucent wings that glowed in the light. 這隻昆蟲有在光線下發亮的半透明翅膀。",
+      "A pellucent curtain softened the sunlight. 一道透光的窗簾柔化了陽光。"
     ],
     "audienceTags": [
       "general"
@@ -57331,11 +57331,11 @@
   },
   {
     "word": "pellucid",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "清澈透明的；易懂的",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the pellucid beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the pellucid while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The stream was pellucid after the rain stopped. 雨停後，溪水清澈透明。",
+      "Her pellucid explanation made the difficult idea easy to understand. 她清楚易懂的解釋讓這個難題變得容易理解。"
     ],
     "audienceTags": [
       "general"
@@ -59008,11 +59008,11 @@
   },
   {
     "word": "penciliform",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "鉛筆狀的；細長尖削的",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the penciliform beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the penciliform while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The scientist observed a penciliform structure under the microscope. 科學家在顯微鏡下觀察到鉛筆狀結構。",
+      "The penciliform leaves tapered to fine points. 那些鉛筆狀的葉子尖端逐漸變細。"
     ],
     "audienceTags": [
       "general"
@@ -69074,7 +69074,7 @@
   },
   {
     "word": "perfumed",
-    "meaning": "某種甜甜的氣味。如何在一句話中使用香水。香水的同義詞討論",
+    "meaning": "帶香味的；散發香氣的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The room smelled perfumed after she lit the candle. 她點上蠟燭後，房間聞起來香香的。",
@@ -79165,7 +79165,7 @@
   },
   {
     "word": "perorative",
-    "meaning": "屬於、關於或適合於結束語。如何在造句中使用謂語。",
+    "meaning": "結語的；適合用作演說結尾的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The note sounded perorative, so the editor rewrote it. 這段文字聽起來很適合於結束語相關，所以編輯把它改寫了。",
@@ -179496,8 +179496,8 @@
   },
   {
     "word": "possessory",
-    "meaning": "屬於、源自或具有佔有性質的。如何運用擁有者造句。",
-    "partOfSpeech": "noun",
+    "meaning": "所有權的；占有的",
+    "partOfSpeech": "adjective",
     "sentences": [
       "The possessory helped answer questions after the meeting. 那位、源自或具有佔有性質相關在會後協助回答問題。",
       "A patient possessory explained the work in simple words. 一位有耐心的、源自或具有佔有性質相關用簡單的話說明工作。"
@@ -186587,7 +186587,7 @@
   },
   {
     "word": "potentiality",
-    "meaning": "發展或形成的能力。如何利用潛力造句",
+    "meaning": "潛能；發展或形成的可能性",
     "partOfSpeech": "noun",
     "sentences": [
       "A museum displayed potentiality beside a glass case. 博物館把發展或形成的能力展示在玻璃櫃旁。",
@@ -212169,7 +212169,7 @@
   },
   {
     "word": "prelaunch",
-    "meaning": "準備或準備發射太空船、飛彈、衛星等。 How to use prelaunch造句",
+    "meaning": "準備或準備發射太空船、飛彈、衛星等",
     "partOfSpeech": "noun",
     "sentences": [
       "The team finished the prelaunch checklist before sunrise. 團隊在日出前完成發射前檢查表。",
@@ -240033,7 +240033,7 @@
   },
   {
     "word": "productively",
-    "meaning": "以富有成效的方式。如何有效使用造句。",
+    "meaning": "有效地；有成果地",
     "partOfSpeech": "adverb",
     "sentences": [
       "She answered productively after taking a breath. 她深呼吸後富有成效地回答。",
@@ -240308,11 +240308,11 @@
   },
   {
     "word": "proemium",
-    "meaning": "一種實物。",
+    "meaning": "序言；前言；作品開頭的引言",
     "partOfSpeech": "noun",
     "sentences": [
-      "The local collection includes proemium from the hillside. 地方收藏中有一份來自山坡的資料。",
-      "A label identified the container as proemium. 標籤確認容器裡的是樣本。"
+      "The proemium introduces the book’s central argument. 序言介紹了這本書的核心論點。",
+      "I read the proemium before starting the first chapter. 我在開始第一章前讀了前言。"
     ],
     "audienceTags": [
       "general"
@@ -241398,7 +241398,7 @@
   },
   {
     "word": "proficiently",
-    "meaning": "以熟練的方式。如何熟練地使用造句。",
+    "meaning": "熟練地；有能力地",
     "partOfSpeech": "adverb",
     "sentences": [
       "She answered proficiently after taking a breath. 她深呼吸後熟練地回答。",
@@ -243038,11 +243038,11 @@
   },
   {
     "word": "progressivism",
-    "meaning": "一種實物。",
+    "meaning": "進步主義；主張透過改革促進社會進步的思想",
     "partOfSpeech": "noun",
     "sentences": [
-      "The local collection includes progressivism from the hillside. 地方收藏中有一份來自山坡的資料。",
-      "A label identified the container as progressivism. 標籤確認容器裡的是樣本。"
+      "The course examines the influence of progressivism on education. 這門課探討進步主義對教育的影響。",
+      "Her support for social reform reflects her belief in progressivism. 她支持社會改革，反映出她對進步主義的認同。"
     ],
     "audienceTags": [
       "general"
@@ -243635,7 +243635,7 @@
   },
   {
     "word": "projecting",
-    "meaning": "具體的計劃或設計：方案。如何在一句話中使用項目。項目同義詞討論",
+    "meaning": "投射的；向前伸出的；推測未來的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The projecting shelf made the narrow hallway harder to pass. 突出的架子讓狹窄走廊更難通行。",
@@ -287161,11 +287161,11 @@
   },
   {
     "word": "purgative",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "瀉藥；促進排便的",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the purgative beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the purgative while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The doctor prescribed a mild purgative. 醫生開了一種溫和的瀉藥。",
+      "The label warns that the purgative may cause stomach cramps. 標籤警告這種瀉藥可能引起胃痙攣。"
     ],
     "audienceTags": [
       "general"
@@ -287715,11 +287715,11 @@
   },
   {
     "word": "purlieu",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "郊外；附近地區（古語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the purlieu beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the purlieu while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "They walked through the purlieu beyond the old town. 他們走過老城外的郊區。",
+      "The manor once owned much of the surrounding purlieu. 那座莊園過去擁有周邊大部分地區。"
     ],
     "audienceTags": [
       "general"
@@ -287973,11 +287973,11 @@
   },
   {
     "word": "purport",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "聲稱；意旨；大意",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the purport beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the purport while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The document purports to explain the new policy. 這份文件聲稱要解釋新政策。",
+      "I understood the general purport of his speech. 我明白了他演講的大意。"
     ],
     "audienceTags": [
       "general"
@@ -289117,11 +289117,11 @@
   },
   {
     "word": "purview",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "範圍；職權範圍；視野",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the purview beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the purview while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The issue falls within the committee’s purview. 這個問題屬於委員會的職權範圍。",
+      "The report gives us a broad purview of the industry. 這份報告讓我們全面了解這個產業。"
     ],
     "audienceTags": [
       "general"
@@ -289460,11 +289460,11 @@
   },
   {
     "word": "pusscat",
-    "meaning": "一種與相關相關的生物、物質或結構",
+    "meaning": "貓；貓咪（非正式）",
     "partOfSpeech": "noun",
     "sentences": [
-      "She placed the pusscat beside the window. 她把一種與相關相關的生物、物質或結構放在窗邊。",
-      "He noticed the pusscat while cleaning the room. 他打掃房間時注意到一種與相關相關的生物、物質或結構。"
+      "The child cuddled the gentle pusscat on the sofa. 孩子在沙發上抱著那隻溫順的貓咪。",
+      "Our pusscat waits by the door every evening. 我們家的貓咪每天傍晚都在門邊等著。"
     ],
     "audienceTags": [
       "general"

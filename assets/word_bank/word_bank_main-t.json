@@ -31752,11 +31752,11 @@
   },
   {
     "word": "tempest",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "暴風雨；風暴",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked tempest as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tempest in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "The ship struggled through the tempest. 那艘船在暴風雨中艱難前進。",
+      "We took shelter in a cabin until the tempest passed. 我們躲在小屋裡，直到暴風雨過去。"
     ],
     "audienceTags": [
       "general"
@@ -42398,13 +42398,13 @@
       "general"
     ]
   },
-  {
-    "word": "testimony",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "testimony",
+      "meaning": "證詞；證言",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked testimony as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using testimony in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "Her testimony helped explain what happened that night. 她的證詞有助於釐清那晚發生的事。",
+        "The witness gave testimony during the trial. 證人在審判期間作證。"
     ],
     "audienceTags": [
       "general"
@@ -50942,13 +50942,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "thanksgiving",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "thanksgiving",
+      "meaning": "感謝；感恩；（Thanksgiving）感恩節",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked thanksgiving as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thanksgiving in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The family gathered for Thanksgiving dinner. 全家人聚在一起吃感恩節晚餐。",
+        "She offered thanksgiving for the safe return of her friend. 她為朋友平安歸來表達感謝。"
     ],
     "audienceTags": [
       "general"
@@ -55598,13 +55598,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "theologian",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "theologian",
+      "meaning": "神學家",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked theologian as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using theologian in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The theologian wrote a book about faith. 那位神學家寫了一本關於信仰的書。",
+        "A theologian spoke to the students about religious history. 一位神學家向學生談論宗教史。"
     ],
     "schoolLevels": [
       "college"
@@ -68281,11 +68281,11 @@
   },
   {
     "word": "thong",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "丁字褲；細帶；皮帶",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked thong as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thong in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "She wore a thong under the dress. 她在洋裝底下穿了一件丁字褲。",
+      "The sandal was held in place by a leather thong. 這雙涼鞋靠一條皮帶固定。"
     ],
     "audienceTags": [
       "general"
@@ -70130,11 +70130,11 @@
   },
   {
     "word": "thoughtfulness",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "體貼；周到；深思熟慮",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked thoughtfulness as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thoughtfulness in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "Her thoughtfulness made the new student feel welcome. 她的體貼讓新同學感到受到歡迎。",
+      "I appreciated his thoughtfulness in remembering my birthday. 他記得我的生日，讓我很感激他的周到。"
     ],
     "schoolLevels": [
       "college"
@@ -72009,13 +72009,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "thrice",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
-    "partOfSpeech": "noun",
+    {
+      "word": "thrice",
+      "meaning": "三次；三倍（較正式或文學用語）",
+      "partOfSpeech": "adverb",
     "sentences": [
-      "The editor marked thrice as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thrice in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "She knocked thrice before opening the door. 她敲了三下才開門。",
+        "The warning was repeated thrice in the announcement. 公告中把這項警告重複了三次。"
     ],
     "schoolLevels": [
       "college"
@@ -72567,11 +72567,11 @@
   },
   {
     "word": "thriving",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "興盛的；蓬勃發展的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The editor marked thriving as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thriving in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "The small business is thriving after the renovation. 這家小企業翻修後蓬勃發展。",
+      "The plants are thriving in the warm sunlight. 這些植物在溫暖的陽光下生長茂盛。"
     ],
     "schoolLevels": [
       "college"
@@ -72862,11 +72862,11 @@
   },
   {
     "word": "throb",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "抽痛；搏動；悸動",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked throb as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using throb in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "A dull pain began to throb behind his eye. 他的眼睛後方開始陣陣抽痛。",
+      "The music made the speakers throb with deep bass. 音樂讓喇叭隨著低沉的低音震動。"
     ],
     "schoolLevels": [
       "college"
@@ -73234,11 +73234,11 @@
   },
   {
     "word": "thrombosis",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    "meaning": "血栓形成；血栓症",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked thrombosis as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using thrombosis in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+      "The doctor explained that the scan showed a deep-vein thrombosis. 醫生說明掃描顯示有深部靜脈血栓。",
+      "Early treatment can reduce the risks associated with thrombosis. 及早治療可以降低血栓症帶來的風險。"
     ],
     "schoolLevels": [
       "college"
@@ -80934,25 +80934,25 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "tidily",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "tidily",
+      "meaning": "整齊地；整潔地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The editor marked tidily as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tidily in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "He folded his clothes tidily and put them in a drawer. 他把衣服摺整齊，放進抽屜裡。",
+        "The books were arranged tidily on the shelf. 書本整整齊齊地排在架上。"
     ],
     "audienceTags": [
       "general"
     ]
   },
-  {
-    "word": "tidiness",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "tidiness",
+      "meaning": "整潔；整齊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked tidiness as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tidiness in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The tidiness of her desk made it easy to find things. 她的書桌很整齊，所以找東西很方便。",
+        "His tidiness impressed everyone in the shared office. 他整潔有條理的習慣令共用辦公室的每個人印象深刻。"
     ],
     "schoolLevels": [
       "college"
@@ -95670,13 +95670,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "tollbooth",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "tollbooth",
+      "meaning": "收費亭；收費站的亭子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked tollbooth as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tollbooth in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The driver stopped at the tollbooth to pay. 司機在收費亭前停車繳費。",
+        "A new tollbooth opened on the highway last month. 高速公路上個月啟用了一座新的收費亭。"
     ],
     "schoolLevels": [
       "college"
@@ -154226,13 +154226,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "trombone",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "trombone",
+      "meaning": "長號；伸縮喇叭",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked trombone as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using trombone in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "She plays the trombone in the school band. 她在學校樂隊裡吹長號。",
+        "The trombone gave the song a deep, warm sound. 長號讓這首歌增添了低沉溫暖的聲音。"
     ],
     "schoolLevels": [
       "college"
@@ -162147,13 +162147,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "tsunami",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "tsunami",
+      "meaning": "海嘯",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked tsunami as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tsunami in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The tsunami damaged several coastal villages. 海嘯破壞了幾座沿海村莊。",
+        "Residents moved to higher ground after the tsunami warning. 海嘯警報發布後，居民移往較高的地方。"
     ],
     "audienceTags": [
       "general"
@@ -174618,13 +174618,13 @@
       "collegeSignals"
     ]
   },
-  {
-    "word": "tusk",
-    "meaning": "疑似非標準或極罕見拼寫；正式使用前應再查證",
+    {
+      "word": "tusk",
+      "meaning": "（象、海象等的）長牙",
     "partOfSpeech": "noun",
     "sentences": [
-      "The editor marked tusk as a spelling that needed verification. 編輯把這個拼法標記為需要查證。",
-      "Before using tusk in the report, she checked a reliable dictionary. 把這個拼法寫進報告前，她先查了可靠的辭典。"
+        "The elephant had a broken tusk. 那頭大象有一根斷裂的長牙。",
+        "The walrus used its tusks to pull itself onto the ice. 海象用長牙把自己拉到冰面上。"
     ],
     "schoolLevels": [
       "college"

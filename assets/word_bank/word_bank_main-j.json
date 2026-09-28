@@ -2712,8 +2712,8 @@
     "meaning": "果醬瓶",
     "partOfSpeech": "noun",
     "sentences": [
-      "jam jar needs damp soil to grow. 這種植物（傑阿姆 傑阿爾）需要濕潤土壤才能生長。",
-      "jam jar adds color to the yard. 這種植物（傑阿姆 傑阿爾）為庭院增添色彩。"
+      "She reused an empty jam jar to store buttons. 她把空果醬瓶重新拿來存放鈕扣。",
+      "The child decorated the jam jar with a colorful ribbon. 孩子用彩色絲帶裝飾果醬瓶。"
     ],
     "audienceTags": [
       "general"
@@ -3285,7 +3285,7 @@
   },
   {
     "word": "Janiform",
-    "meaning": "兩側各有一張臉。如何在句子中使用 janiform",
+    "meaning": "兩側各有一張臉",
     "partOfSpeech": "noun",
     "sentences": [
       "The ancient statue is Janiform, looking both forward and backward. 這座古老的雕像是兩面神形狀，同時看著前方和後方。",
@@ -12289,7 +12289,7 @@
   },
   {
     "word": "joinder",
-    "meaning": "連接詞。如何在句子中使用連接",
+    "meaning": "連接詞",
     "partOfSpeech": "noun",
     "sentences": [
       "The joinder of the two companies created a powerful new business. 兩家公司的合併創造了一個強大的新企業。",
@@ -18595,11 +18595,11 @@
   },
   {
     "word": "juridic",
-    "meaning": "屬於司法行政或法官職位的或與之相關的。如何使用司法造句",
-    "partOfSpeech": "noun",
+    "meaning": "法律的；司法的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "juridic grows beside the garden wall. 這種植物（傑烏爾伊德伊克）長在花園牆邊。",
-      "juridic thrives after the spring rain. 春雨過後，這種植物（傑烏爾伊德伊克）長得很茂盛。"
+      "The scholar examined the juridic basis of the agreement. 那位學者檢視了這份協議的法律依據。",
+      "The dispute raised both moral and juridic questions. 這場爭議同時涉及道德與法律問題。"
     ],
     "audienceTags": [
       "general"
@@ -18658,8 +18658,8 @@
     "meaning": "司法管轄權；依法審理案件的權限",
     "partOfSpeech": "noun",
     "sentences": [
-      "jurisdiction appeared in the old legal record. 「傑烏爾伊斯德伊克特伊歐恩」這個詞出現在古老的法律記錄中。",
-      "jurisdiction helped explain the custom clearly. 「傑烏爾伊斯德伊克特伊歐恩」這個詞有助於清楚解釋這項習俗。"
+      "The case falls under the jurisdiction of the local court. 這起案件屬於地方法院的管轄權範圍。",
+      "The agency has no jurisdiction over private international disputes. 該機構無權審理私人國際爭端。"
     ],
     "audienceTags": [
       "general"
@@ -19299,7 +19299,7 @@
   },
   {
     "word": "justification",
-    "meaning": "為某事辯護的行為或實例：辯護。如何在句子中使用理由",
+    "meaning": "為某事辯護的行為或實例：辯護",
     "partOfSpeech": "noun",
     "sentences": [
       "He could not provide a good justification for his absence. 他無法為自己的缺席提供一個好理由。",
@@ -19968,7 +19968,7 @@
   },
   {
     "word": "juxtapositional",
-    "meaning": "經常將兩個或多個事物並排放置以進行比較或對比或產生有趣效果的行為或實例；又：被如此安置的狀態。如何在句子中使用並置",
+    "meaning": "經常將兩個或多個事物並排放置以進行比較或對比或產生有趣效果的行為或實例；又：被如此安置的狀態",
     "partOfSpeech": "adjective",
     "sentences": [
       "The designer used juxtapositional elements to create a unique living room. 設計師使用並列的元素來打造一個獨特的客廳。",
