@@ -1648,11 +1648,11 @@
   },
   {
     "word": "easter",
-    "meaning": "東風（從東邊吹來的風）；尤其是，一個堅強的人；一場風暴。",
+    "meaning": "東風；強勁的東風（罕見用法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term easter refers to an easterly wind (a wind blowing from the east); especially, a strong one; a storm of such winds. 復活節一詞指的是東風（從東方吹來的風）；尤其是，一個堅強的人；一場這樣的風暴。",
-      "The lesson introduced easter as a useful term to understand. 本課介紹了復活節作為一個易於理解的有用術語。"
+      "A strong easter blew across the harbor. 一陣強勁的東風吹過港口。",
+      "The easter kept the fishing boats ashore. 東風使漁船留在岸上。"
     ],
     "audienceTags": [
       "general"
@@ -1762,11 +1762,11 @@
   },
   {
     "word": "eastward",
-    "meaning": "向東的方向或區域。",
+    "meaning": "東方；向東的方向",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term eastward refers to the direction or area lying to the east. 術語“向東”是指位於東方的方向或區域。",
-      "The lesson introduced eastward as a useful term to understand. 本課程介紹了「向東」這個術語，這是一個值得理解的有用術語。"
+      "Clouds gathered in the eastward. 雲朵聚集在東方。",
+      "The ship headed toward the eastward. 船朝東方前進。"
     ],
     "audienceTags": [
       "general"
@@ -1920,11 +1920,11 @@
   },
   {
     "word": "eater",
-    "meaning": "吃東西的人或動物。",
+    "meaning": "吃東西的人或動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "a very fussy eater 非常挑食",
-      "The term eater refers to a person or animal who eats. 食者一詞是指吃東西的人或動物。"
+      "My brother is a picky eater. 我弟弟是個挑食的人。",
+      "The restaurant offers small portions for light eaters. 這家餐廳為食量小的人提供小份餐點。"
     ],
     "audienceTags": [
       "general"
@@ -4817,11 +4817,11 @@
   },
   {
     "word": "ecstasy",
-    "meaning": "一種如此強烈的情緒狀態，以至於一個人無法理性思考和自我控制。",
+    "meaning": "狂喜；極度興奮",
     "partOfSpeech": "noun",
     "sentences": [
-      "an ecstasy of remorse 悔恨的狂喜",
-      "The term ecstasy refers to a state of emotion so intense that a person is carried beyond rational thought and self-control. 狂喜一詞指的是一種強烈到超越理性思維和自我控制的情緒狀態。"
+      "She was in ecstasy after winning the prize. 她得獎後欣喜若狂。",
+      "The crowd shouted in ecstasy when the team scored. 球隊得分時，群眾興奮地歡呼。"
     ],
     "audienceTags": [
       "general"
@@ -6987,11 +6987,11 @@
   },
   {
     "word": "edging",
-    "meaning": "任何形成、定義或標記某物邊緣的東西。",
+    "meaning": "邊飾；邊緣材料",
     "partOfSpeech": "noun",
     "sentences": [
-      "The decorative edging around the door makes it easier to find in the dark. 門周圍的裝飾性邊緣使其在黑暗中更容易找到。",
-      "The term edging refers to Anything that forms, defines, or marks the edge of something. 術語「邊緣」是指形成、定義或標記某物邊緣的任何事物。"
+      "The curtains have a lace edging. 窗簾帶有蕾絲邊飾。",
+      "Stone edging separates the lawn from the path. 石頭邊條將草坪與小徑隔開。"
     ],
     "audienceTags": [
       "general"
@@ -7090,11 +7090,11 @@
   },
   {
     "word": "edict",
-    "meaning": "法律公告或其他權威命令。",
+    "meaning": "法令；命令",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term edict refers to a proclamation of law or other authoritative command. 法令一詞是指法律的公告或其他權威命令。",
-      "The lesson introduced edict as a useful term to understand. 本課介紹了「法令」這個術語，它是一個需要理解的有用術語。"
+      "The ruler issued an edict banning the practice. 統治者頒布法令禁止這項做法。",
+      "The edict was read aloud in the square. 這道法令在廣場上被宣讀。"
     ],
     "audienceTags": [
       "general"
@@ -7687,11 +7687,11 @@
   },
   {
     "word": "educator",
-    "meaning": "因教育工作而傑出的人，教師。",
+    "meaning": "教育工作者；教師",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term educator refers to a person distinguished for their educational work, a teacher. 教育者一詞指的是教育工作中傑出的人，即教師。",
-      "The lesson introduced educator as a useful term to understand. 本課介紹了「教育者」這個易於理解的有用術語。"
+      "The educator designed lessons for young children. 這位教育工作者為幼兒設計課程。",
+      "She is an educator with years of classroom experience. 她是一位擁有多年教學經驗的教師。"
     ],
     "audienceTags": [
       "general"
@@ -8059,11 +8059,11 @@
   },
   {
     "word": "eelskin",
-    "meaning": "罕見或專門的英語術語，記錄為 eelskin。",
+    "meaning": "鰻魚皮",
     "partOfSpeech": "noun",
     "sentences": [
-      "The wallet was made from smooth eelskin. 這個皮夾是用光滑的鰻魚皮做的。",
-      "Rain left dark spots on the old eelskin bag. 雨水在舊鰻魚皮包上留下深色斑點。"
+      "The wallet is made of eelskin. 這個皮夾以鰻魚皮製成。",
+      "The craftsperson cut the eelskin into narrow strips. 工匠把鰻魚皮切成窄條。"
     ],
     "audienceTags": [
       "general"
@@ -8323,11 +8323,11 @@
   },
   {
     "word": "effectiveness",
-    "meaning": "有效 ，即取得成果的屬性。",
+    "meaning": "有效性；成效",
     "partOfSpeech": "noun",
     "sentences": [
-      "The effectiveness of the drug was well established. 該藥物的 有效性 已被充分證實。 該藥物的有效性已得到充分證實。 該藥物的有效性已得到充分證實。",
-      "The term effectiveness refers to The property of being effective, of achieving results. 有效性一詞是指取得成果的 有效 屬性。 有效性一詞是指有效、有成果的特性。 完成工作是指取得成果的有效屬性。"
+      "The study measured the effectiveness of the training. 這項研究測量訓練的成效。",
+      "The new filter's effectiveness was tested in the laboratory. 新濾網的有效性在實驗室接受測試。"
     ],
     "audienceTags": [
       "general"
@@ -8755,11 +8755,11 @@
   },
   {
     "word": "efficacy",
-    "meaning": "產生預期效果的能力程度；有效性。",
+    "meaning": "功效；效力",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term efficacy refers to a degree of ability to produce a desired effect; effectiveness. 功效一詞是指產生所需效果的能力程度；效力。",
-      "The lesson introduced efficacy as a useful term to understand. 本課程介紹了功效作為一個易於理解的有用術語。"
+      "Researchers assessed the treatment's efficacy. 研究人員評估這項治療的功效。",
+      "The trial provided evidence of the drug's efficacy. 試驗提供了藥物有效的證據。"
     ],
     "audienceTags": [
       "general"
@@ -8889,11 +8889,11 @@
   },
   {
     "word": "effigy",
-    "meaning": "令人憎恨的人、團體或物體的虛擬或其他粗略表現。",
+    "meaning": "肖像；人像；用於抗議或儀式的人偶",
     "partOfSpeech": "noun",
     "sentences": [
-      "In England on Bonfire Night, an effigy is often burned. 在英國，篝火之夜經常會焚燒雕像。",
-      "The term effigy refers to A dummy or other crude representation of a person, group or object that is hated. 肖像一詞是指被憎恨的人、團體或物體的假人或其他粗略的代表。"
+      "Protesters burned an effigy of the leader. 抗議者燒毀了領袖的人偶。",
+      "The tomb bears a stone effigy of the king. 墓上有國王的石雕像。"
     ],
     "audienceTags": [
       "general"
@@ -9379,11 +9379,11 @@
   },
   {
     "word": "effusive",
-    "meaning": "罕見或專門的英語術語，被記錄為熱情洋溢的。",
-    "partOfSpeech": "noun",
+    "meaning": "熱情洋溢的；過度流露感情的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "He gave an effusive welcome to every guest. 他熱情洋溢地歡迎每位客人。",
-      "Her effusive praise made the young singer blush. 她熱情的稱讚讓年輕歌手臉紅。"
+      "She gave us an effusive welcome. 她熱情洋溢地歡迎我們。",
+      "His effusive praise made her blush. 他熱情的讚美讓她臉紅。"
     ],
     "audienceTags": [
       "general"
@@ -10800,11 +10800,11 @@
   },
   {
     "word": "eighth",
-    "meaning": "整體的八個相等部分之一。",
+    "meaning": "八分之一",
     "partOfSpeech": "noun",
     "sentences": [
-      "Two bits equals two eighths of a dollar. 兩位等於一美元的八分之二。",
-      "The term eighth refers to one of eight equal parts of a whole. 術語“第八”指的是整體的八個相等部分之一。"
+      "An eighth of the cake was left. 蛋糕剩下八分之一。",
+      "Each child received an eighth of the total. 每個孩子各得到總量的八分之一。"
     ],
     "audienceTags": [
       "general"
@@ -12070,11 +12070,11 @@
   },
   {
     "word": "elasticity",
-    "meaning": "一個量的變化相對於另一個量的變化的敏感度。",
+    "meaning": "彈性；敏感程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "If the sales of an item drop by 5 % when the price increases by 10 %, its price elasticity is −0.5. 如果某種商品的價格上漲 10% 時銷量下降 5%，則其價格彈性為 -0.5。",
-      "The term elasticity refers to The sensitivity of changes in a quantity with respect to changes in another quantity. 彈性一詞是指一個量的變化相對於另一個量的變化的敏感度。"
+      "Rubber has considerable elasticity. 橡膠具有很大的彈性。",
+      "The study measured the price elasticity of demand. 這項研究測量需求的價格彈性。"
     ],
     "audienceTags": [
       "general"
@@ -13034,11 +13034,11 @@
   },
   {
     "word": "electorate",
-    "meaning": "由一名或多名民選官員代表的地理區域；一個選區，一個選區。",
+    "meaning": "全體選民；選區",
     "partOfSpeech": "noun",
     "sentences": [
-      "The electorate of Finchley borders on the electorate of Much-Binding-in-the-Marsh, splitting the new housing estate of Royal Cupolas. 芬奇利選區與沼澤地結合選區接壤，將皇家圓頂的新住宅區分開。",
-      "The term electorate refers to a geographical area represented by one or more elected officials; a constituency, an electoral district. 選民一詞是指由一名或多名民選官員代表的地理區域；一個選區，一個選區。"
+      "The candidates addressed the electorate. 候選人向全體選民發表談話。",
+      "She represents a rural electorate. 她代表一個鄉村選區。"
     ],
     "examTags": [
       "toeic"
@@ -13413,11 +13413,11 @@
   },
   {
     "word": "electro",
-    "meaning": "電子風格的嘻哈音樂；電子放克。",
+    "meaning": "電子放克；一種電子音樂風格",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term electro refers to an electronic style of hip hop; electrofunk. 「電子」一詞指的是嘻哈的電子風格；電子放克。",
-      "The lesson introduced electro as a useful term to understand. 本課介紹了電作為一個易於理解的有用術語。"
+      "The DJ played electro late into the night. DJ 播放電子放克直到深夜。",
+      "The album mixes electro with hip-hop. 這張專輯混合電子放克與嘻哈音樂。"
     ],
     "audienceTags": [
       "general"
@@ -14013,11 +14013,11 @@
   },
   {
     "word": "electrode",
-    "meaning": "電流在電路的金屬和非金屬部分之間通過的端子。",
+    "meaning": "電極",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term electrode refers to the terminal through which electric current passes between metallic and nonmetallic parts of an electric circuit. 術語“電極”是指電流在電路的金屬部分和非金屬部分之間通過的端子。",
-      "The lesson introduced electrode as a useful term to understand. 本課程介紹了電極這個易於理解的有用術語。"
+      "The technician attached an electrode to the device. 技師把電極裝到裝置上。",
+      "Current passes through the electrodes. 電流通過電極。"
     ],
     "audienceTags": [
       "general"
@@ -14853,11 +14853,11 @@
   },
   {
     "word": "electrolyte",
-    "meaning": "含有此類物質的 溶液 ，因此也可以導電。",
+    "meaning": "電解質；電解液",
     "partOfSpeech": "noun",
     "sentences": [
-      "Some modern lead-acid batteries are sealed because they never need to have any electrolyte added during their service life. 一些現代鉛酸電池是密封的，因為它們在使用壽命期間不需要添加任何 電解質 。 一些現代鉛酸電池是密封的，因為它們在使用壽命期間不需要添加任何電解質。 一些現代鉛酸電池是密封的，因為它們在使用期間不需要添加任何碳水化合物。",
-      "The term electrolyte refers to A solution containing such substances, which therefore also conducts electricity. 電解質一詞是指 含有此類物質的 溶液 ，因此也可以導電。 電解質一詞是指含有此類物質的溶液，因此也可以導電。 電解質是指含有此類物質的溶液，因此也可以導電。"
+      "The battery contains a liquid electrolyte. 電池含有液態電解液。",
+      "The test measured electrolytes in the blood. 檢驗測量血液中的電解質。"
     ],
     "audienceTags": [
       "general"
@@ -15333,11 +15333,11 @@
   },
   {
     "word": "electron",
-    "meaning": "帶負電荷並繞著原子核運行的亞原子粒子；電子在導體中的流動就形成了電。",
+    "meaning": "電子；帶負電的亞原子粒子",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term electron refers to the subatomic particle having a negative charge and orbiting the nucleus; the flow of electrons in a conductor constitutes electricity. 電子一詞是指帶負電荷並繞著原子核運行的亞原子粒子；電子在導體中的流動就形成了電。",
-      "The lesson introduced electron as a useful term to understand. 本課介紹了電子這個易於理解的有用術語。"
+      "An electron carries a negative charge. 電子帶負電荷。",
+      "The detector recorded the movement of electrons. 偵測器記錄電子的移動。"
     ],
     "audienceTags": [
       "general"
@@ -17862,11 +17862,11 @@
   },
   {
     "word": "elevation",
-    "meaning": "從較低的地方、條件或品質提升到較高的行為；指物質、人、心、聲音等。",
+    "meaning": "高度；提升；海拔",
     "partOfSpeech": "noun",
     "sentences": [
-      "elevation to a throne 登上王位",
-      "elevation to sainthood 晉升為聖人"
+      "The village lies at a high elevation. 村莊位於高海拔地區。",
+      "Her elevation to the board was announced today. 她晉升董事會的消息今天公布。"
     ],
     "audienceTags": [
       "general"
@@ -17919,11 +17919,11 @@
   },
   {
     "word": "eleven",
-    "meaning": "一支由 11 名球員組成的足球隊；先發陣容。",
+    "meaning": "十一；十一人的球隊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term eleven refers to a football team of eleven players; the starting lineup. 十一人一詞指的是由十一名球員組成的足球隊；先發陣容。",
-      "The lesson introduced eleven as a useful term to understand. 本課介紹了「十一」這個術語，這是一個需要理解的有用術語。"
+      "The number eleven comes after ten. 十一這個數字在十之後。",
+      "The coach selected the starting eleven. 教練選出了十一人的先發陣容。"
     ],
     "audienceTags": [
       "general"
@@ -18294,11 +18294,11 @@
   },
   {
     "word": "eligibility",
-    "meaning": "符合條件的狀態、品質或事實。",
+    "meaning": "資格；符合條件的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "determine eligibility 確定資格",
-      "meet eligibility 符合資格"
+      "The office checked her eligibility for the scholarship. 辦公室核對她是否符合獎學金資格。",
+      "Age is one factor in determining eligibility. 年齡是判定資格的一項因素。"
     ],
     "audienceTags": [
       "general"
@@ -18402,11 +18402,11 @@
   },
   {
     "word": "elimination",
-    "meaning": "將失敗的參賽者排除在比賽、錦標賽或其他比賽之外的行為。",
+    "meaning": "消除；淘汰",
     "partOfSpeech": "noun",
     "sentences": [
-      "Everton require at least 3 goals in the second leg to avoid elimination from the FA Cup. 埃弗頓需要在次回合至少進3球才能避免被淘汰出足總盃。",
-      "The term elimination refers to the act of excluding a losing contestant from a match, tournament, or other competition. 淘汰一詞是指將失敗的參賽者排除在比賽、錦標賽或其他比賽之外的行為。"
+      "The elimination of waste reduced costs. 消除浪費降低了成本。",
+      "The team faced elimination after losing the match. 這支隊伍輸掉比賽後面臨淘汰。"
     ],
     "audienceTags": [
       "general"
@@ -18498,11 +18498,11 @@
   },
   {
     "word": "elite",
-    "meaning": "具有優越社會或經濟地位以及隨之而來的社會權力、優勢或特權的特殊群體或社會階層；此類團體的成員。",
+    "meaning": "菁英；精英群體",
     "partOfSpeech": "noun",
     "sentences": [
-      "constituting an elite 構成精英",
-      "the hubris of the elites 精英的傲慢"
+      "The school attracts the country's academic elite. 這所學校吸引了國內的學術菁英。",
+      "The political elite met behind closed doors. 政治菁英舉行閉門會議。"
     ],
     "audienceTags": [
       "general"
@@ -19170,11 +19170,11 @@
   },
   {
     "word": "eloquence",
-    "meaning": "演講或寫作的藝術性和說服力。",
+    "meaning": "雄辯；流暢有力的表達",
     "partOfSpeech": "noun",
     "sentences": [
-      "express oneself with eloquence 用口才表達自己",
-      "The term eloquence refers to The quality of artistry and persuasiveness in speech or writing. 口才一詞是指言語或寫作的藝術性和說服力。"
+      "Her eloquence impressed the audience. 她雄辯的口才令觀眾印象深刻。",
+      "He spoke with eloquence about the need for peace. 他流暢有力地談論和平的必要性。"
     ],
     "audienceTags": [
       "general"
@@ -20356,11 +20356,11 @@
   },
   {
     "word": "emancipation",
-    "meaning": "從而獲得自由的狀態；解放（例如，用於使奴隸擺脫束縛，使一個人擺脫偏見，使思想擺脫迷信，使一個國家擺脫暴政或征服）。",
+    "meaning": "解放；擺脫束縛",
     "partOfSpeech": "noun",
     "sentences": [
-      "US President Abraham Lincoln was called the Great Emancipator after issuing the Emancipation Proclamation in 1863. 美國總統亞伯拉罕·林肯於1863年發布《解放黑奴宣言》後被稱為「偉大的解放者」。",
-      "The term emancipation refers to the state of being thus set free; liberation (used, for example, of slaves from bondage, of a person from prejudices, of the mind from superstition, of a nation from tyranny or subjugation). 解脫一詞是指由此獲得解脫的狀態。解放（例如，用於使奴隸擺脫束縛，使一個人擺脫偏見，使思想擺脫迷信，使一個國家擺脫暴政或征服）。"
+      "The movement demanded the emancipation of enslaved people. 這場運動要求解放被奴役的人。",
+      "The law marked a step toward women's emancipation. 這項法律象徵女性解放向前邁進一步。"
     ],
     "audienceTags": [
       "general"
@@ -21328,11 +21328,11 @@
   },
   {
     "word": "emblem",
-    "meaning": "代表性符號，例如商標、徽章或標誌。",
+    "meaning": "徽章；標誌；象徵",
     "partOfSpeech": "noun",
     "sentences": [
-      "The medical trucks were emblazoned with the emblem of the Red Cross. 醫療卡車上印有紅十字會的標誌。",
-      "The term emblem refers to a representative symbol, such as a trademark, a badge or logo. 術語標誌是指代表性符號，例如商標、徽章或標誌。"
+      "The jacket bears the school's emblem. 外套上有校徽。",
+      "The dove is an emblem of peace. 鴿子是和平的象徵。"
     ],
     "audienceTags": [
       "general"
@@ -22427,11 +22427,11 @@
   },
   {
     "word": "embroidery",
-    "meaning": "使用針線工藝對織物進行裝飾。",
+    "meaning": "刺繡；刺繡作品",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term embroidery refers to the ornamentation of fabric using needlework. 刺繡一詞是指使用針線工藝對織物進行裝飾。",
-      "The lesson introduced embroidery as a useful term to understand. 本課程介紹了刺繡作為一個需要理解的有用術語。"
+      "She learned embroidery from her grandmother. 她向祖母學習刺繡。",
+      "The cushion is decorated with floral embroidery. 靠墊以花卉刺繡裝飾。"
     ],
     "audienceTags": [
       "general"
@@ -22511,11 +22511,11 @@
   },
   {
     "word": "embryo",
-    "meaning": "开始；任何事情的第一阶段。",
+    "meaning": "胚胎；事物的初期形態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term embryo refers to the beginning; the first stage of anything. 胚胎這個字是指開始；任何事情的第一階段。",
-      "The lesson introduced embryo as a useful term to understand. 本課介紹了胚胎這個術語，這是一個需要理解的有用術語。"
+      "The scientist observed the embryo under a microscope. 科學家用顯微鏡觀察胚胎。",
+      "The project is still in embryo. 這個專案仍處於初期階段。"
     ],
     "audienceTags": [
       "general"
@@ -23282,11 +23282,11 @@
   },
   {
     "word": "emerald",
-    "meaning": "Chlorostilbon 和 Elvira 屬的任何蜂鳥；還有一些屬於阿瑪齊利亞屬。",
+    "meaning": "祖母綠；綠寶石",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term emerald refers to any hummingbird in the genera Chlorostilbon and Elvira; and some in the genus Amazilia. 祖母綠一詞指的是 Chlorostilbon 和 Elvira 屬的任何蜂鳥；還有一些屬於阿瑪齊利亞屬。",
-      "The lesson introduced emerald as a useful term to understand. 本課程介紹了祖母綠這個術語，這是一個需要理解的有用術語。"
+      "The ring contains an emerald. 戒指鑲有一顆祖母綠。",
+      "The jeweler examined the emerald for flaws. 珠寶師檢查祖母綠有無瑕疵。"
     ],
     "audienceTags": [
       "general"
@@ -23335,11 +23335,11 @@
   },
   {
     "word": "emergence",
-    "meaning": "複雜系統中湧現結構的出現。",
+    "meaning": "出現；浮現；湧現",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term emergence refers to the arising of emergent structure in complex systems. 湧現一詞是指複雜系統中湧現結構的出現。",
-      "The lesson introduced emergence as a useful term to understand. 本課介紹了湧現作為一個有用的術語來理解。"
+      "The emergence of new technology changed the industry. 新技術的出現改變了這個產業。",
+      "We watched the butterfly's emergence from its chrysalis. 我們觀看蝴蝶從蛹中羽化。"
     ],
     "audienceTags": [
       "general"
@@ -23475,11 +23475,11 @@
   },
   {
     "word": "emery",
-    "meaning": "一種不純的剛玉，通常用於打磨或拋光。",
+    "meaning": "金剛砂；用於研磨的不純剛玉",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term emery refers to an impure type of corundum, often used for sanding or polishing. 金剛砂一詞是指一種不純的剛玉，通常用於打磨或拋光。",
-      "The lesson introduced emery as a useful term to understand. 本課程介紹了金剛砂作為一個易於理解的有用術語。"
+      "He polished the metal with emery. 他用金剛砂磨亮金屬。",
+      "The workshop uses emery for finishing tools. 工坊用金剛砂修磨工具。"
     ],
     "audienceTags": [
       "general"
@@ -23760,11 +23760,11 @@
   },
   {
     "word": "eminence",
-    "meaning": "在特定順序或累積中突出；尊重。",
+    "meaning": "卓越；顯赫地位",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term eminence refers to prominence in a particular order or accumulation; esteem. 「卓越」一詞是指在特定順序或累積中的突出地位；尊重。",
-      "The lesson introduced eminence as a useful term to understand. 本課介紹了「傑出」是一個需要理解的有用術語。"
+      "Her research brought her eminence in the field. 她的研究使她在這個領域取得顯赫地位。",
+      "The award recognized his scientific eminence. 這個獎項肯定了他在科學上的卓越地位。"
     ],
     "examTags": [
       "toeic"
@@ -23814,11 +23814,11 @@
   },
   {
     "word": "emir",
-    "meaning": "伊斯蘭國的王子、指揮官或其他領導人或統治者。",
+    "meaning": "埃米爾；伊斯蘭地區的統治者或貴族頭銜",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term emir refers to a prince, commander or other leader or ruler in an Islamic nation. 埃米爾一詞是指伊斯蘭國家的王子、指揮官或其他領導人或統治者。",
-      "The lesson introduced emir as a useful term to understand. 本課介紹了埃米爾這個易於理解的有用術語。"
+      "The emir welcomed the visiting delegation. 埃米爾歡迎來訪的代表團。",
+      "The palace was built for an emir. 這座宮殿為一位埃米爾建造。"
     ],
     "audienceTags": [
       "general"
@@ -25504,11 +25504,11 @@
   },
   {
     "word": "empowerment",
-    "meaning": "個人或團體獲得政治、社會或經濟權力。",
+    "meaning": "賦權；增強自主能力",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term empowerment refers to the achievement of political, social or economic power by an individual or group. 賦權一詞是指個人或團體獲得政治、社會或經濟權力。",
-      "The lesson introduced empowerment as a useful term to understand. 本課程介紹了賦權作為一個需要理解的有用術語。"
+      "The program promotes the empowerment of young people. 這項計畫促進年輕人的自主能力。",
+      "Education can support economic empowerment. 教育有助於提升經濟自主能力。"
     ],
     "audienceTags": [
       "general"
@@ -25918,11 +25918,11 @@
   },
   {
     "word": "emulation",
-    "meaning": "在品質或行為上與他人平等或超越他人的努力或慾望。",
+    "meaning": "效法；模擬",
     "partOfSpeech": "noun",
     "sentences": [
-      "a great figure who is worthy of respect and emulation 值得尊敬與效法的偉大人物",
-      "The term emulation refers to The endeavor or desire to equal or excel someone else in qualities or actions. 模仿一詞是指在品質或行為上達到等於或超越他人的努力或慾望。"
+      "His success inspired emulation among his students. 他的成功激勵學生效法。",
+      "The software uses emulation to run older programs. 這套軟體用模擬方式執行舊程式。"
     ],
     "audienceTags": [
       "general"
@@ -29629,11 +29629,11 @@
   },
   {
     "word": "encryption",
-    "meaning": "模糊資訊的過程，使其在沒有特殊知識、密鑰檔案或密碼的情況下無法讀取。",
+    "meaning": "加密",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term encryption refers to the process of obscuring information to make it unreadable without special knowledge, key files, or passwords. 術語「加密」是指模糊資訊的過程，使其在沒有特殊知識、金鑰檔案或密碼的情況下無法讀取。",
-      "The lesson introduced encryption as a useful term to understand. 本課程介紹了加密作為一個需要理解的有用術語。"
+      "Encryption protects the contents of the message. 加密保護訊息的內容。",
+      "The app uses encryption when transferring files. 這個應用程式傳輸檔案時會使用加密。"
     ],
     "audienceTags": [
       "general"
@@ -32999,11 +32999,11 @@
   },
   {
     "word": "endorsement",
-    "meaning": "保險合約或其他官方文件（例如駕駛執照）的修訂或註釋。",
+    "meaning": "支持；背書；附加條款",
     "partOfSpeech": "noun",
     "sentences": [
-      "Mr. Jones paid extra for the flood damage endorsement on his house insurance. 瓊斯先生為他的房屋保險的洪水損失擔保支付了額外費用。",
-      "The term endorsement refers to an amendment or annotation to an insurance contract or other official document (such as a driving licence). 背書一詞是指保險合約或其他官方文件（例如駕駛執照）的修改或註釋。"
+      "The candidate received the union's endorsement. 這位候選人獲得工會支持。",
+      "The policy includes an endorsement covering flood damage. 保單包含承保洪水損害的附加條款。"
     ],
     "examTags": [
       "toeic"
@@ -35146,11 +35146,11 @@
   },
   {
     "word": "enforcement",
-    "meaning": "強制執行的行為；強迫性。",
+    "meaning": "執行；強制實施",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term enforcement refers to the act of enforcing; compulsion. 執行一詞是指執行的行為；強迫。",
-      "The lesson introduced enforcement as a useful term to understand. 本課程介紹了「強制執行」這個術語，這是一個需要理解的有用術語。"
+      "Strict enforcement of the rules reduced accidents. 嚴格執行規則減少了事故。",
+      "The agency is responsible for law enforcement. 這個機關負責執法。"
     ],
     "audienceTags": [
       "general"
@@ -37487,11 +37487,11 @@
   },
   {
     "word": "enjoyment",
-    "meaning": "享受任何事物的條件。",
+    "meaning": "享受；樂趣",
     "partOfSpeech": "noun",
     "sentences": [
-      "Few activities better the enjoyment of a hearty meal eaten in good company. 沒有什麼活動比在良好的陪伴下享用豐盛的大餐更好的了。",
-      "The term enjoyment refers to the condition of enjoying anything. 享受一詞指的是享受任何事物的狀態。"
+      "Reading gives her great enjoyment. 閱讀帶給她很大的樂趣。",
+      "We shared in the enjoyment of a good meal. 我們一起享用了一頓美餐。"
     ],
     "examTags": [
       "toeic"
@@ -37690,11 +37690,11 @@
   },
   {
     "word": "enlargement",
-    "meaning": "使某事物變得更大的行為或實例。",
+    "meaning": "擴大；放大；放大照片",
     "partOfSpeech": "noun",
     "sentences": [
-      "Rick was ashamed about the size of his penis, so he had a penis enlargement. 瑞克對自己陰莖的大小感到羞恥，所以他做了陰莖增大手術。",
-      "The term enlargement refers to an act or instance of making something larger. 擴大一詞是指使某物變得更大的行為或實例。"
+      "The enlargement of the park created more space for children. 公園擴建為孩子創造更多空間。",
+      "She ordered an enlargement of her favorite photograph. 她訂製了最喜歡的照片的放大版。"
     ],
     "audienceTags": [
       "general"
@@ -39349,11 +39349,11 @@
   },
   {
     "word": "enrichment",
-    "meaning": "在用于酿酒的葡萄汁中添加糖；加糖化。",
+    "meaning": "充實；增添；濃縮",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term enrichment refers to the addition of sugar to grape juice used to make wine; chaptalization. 「濃縮」一詞是指在用於釀酒的葡萄汁中添加糖；加糖。",
-      "The lesson introduced enrichment as a useful term to understand. 本課程介紹了豐富性作為一個需要理解的有用術語。"
+      "The course offers cultural enrichment through museum visits. 這門課透過參觀博物館充實文化素養。",
+      "Soil enrichment helped the plants grow. 土壤養分的增添有助於植物生長。"
     ],
     "audienceTags": [
       "general"
@@ -39511,11 +39511,11 @@
   },
   {
     "word": "enrollment",
-    "meaning": "此類註冊的記錄；登記。",
+    "meaning": "註冊；入學人數",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term enrollment refers to the record of such enrolling; registration. 術語「註冊」是指此類註冊的記錄；登記。",
-      "The lesson introduced enrollment as a useful term to understand. 本課程介紹了註冊這個術語，這是一個需要理解的有用術語。"
+      "Enrollment for the course opens tomorrow. 這門課明天開放註冊。",
+      "School enrollment increased this year. 學校今年的入學人數增加了。"
     ],
     "audienceTags": [
       "general"
@@ -39787,11 +39787,11 @@
   },
   {
     "word": "ensemble",
-    "meaning": "一群一起表演的音樂家、舞者、演員等；例如芭蕾舞團的合唱團。",
+    "meaning": "合奏團；表演團體；整套服裝",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term ensemble refers to a group of musicians, dancers, actors, etc who perform together; e.g. the chorus of a ballet company. 合奏團一詞是指一群一起表演的音樂家、舞者、演員等；例如芭蕾舞團的合唱團",
-      "The lesson introduced ensemble as a useful term to understand. 本課程介紹了整合這個易於理解的有用術語。"
+      "The ensemble rehearsed before the concert. 合奏團在音樂會前排練。",
+      "She chose a matching ensemble for the ceremony. 她為典禮選了一套搭配好的服裝。"
     ],
     "examTags": [
       "toeic"
@@ -42399,11 +42399,11 @@
   },
   {
     "word": "entertainer",
-    "meaning": "娛樂他人的人，尤其是。作為職業，作為歌手、演員、主持人、舞者、音樂家、魔術師、喜劇演員等。",
+    "meaning": "藝人；表演者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term entertainer refers to a person who entertains others, esp. as a profession, as a singer, actor, presenter, dancer, musician, magician, comedian, etc. 藝人一詞指的是娛樂他人的人，尤其是娛樂者。作為職業，作為歌手、演員、主持人、舞者、音樂家、魔術師、喜劇演員等。",
-      "The lesson introduced entertainer as a useful term to understand. 本課程介紹了藝人作為一個需要理解的有用術語。"
+      "The entertainer made the children laugh. 表演者逗得孩子們大笑。",
+      "He worked as an entertainer on a cruise ship. 他在郵輪上擔任表演者。"
     ],
     "audienceTags": [
       "general"
@@ -42734,11 +42734,11 @@
   },
   {
     "word": "enthusiast",
-    "meaning": "充滿熱情或受熱情引導的人。",
+    "meaning": "愛好者；熱衷者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term enthusiast refers to a person filled with or guided by enthusiasm. 狂熱者一詞是指充滿熱情或受熱情引導的人。",
-      "The lesson introduced enthusiast as a useful term to understand. 本課程介紹了「愛好者」這個術語，這是一個需要理解的有用術語。"
+      "She is a photography enthusiast. 她是攝影愛好者。",
+      "Cycling enthusiasts gathered for the race. 自行車愛好者聚集參加比賽。"
     ],
     "audienceTags": [
       "general"
@@ -43119,11 +43119,11 @@
   },
   {
     "word": "entitlement",
-    "meaning": "擁有某物的權利，無論是實際的還是感知的。",
+    "meaning": "應有的權利；享有資格",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term entitlement refers to the right to have something, whether actual or perceived. 權利一詞是指擁有某物的權利，無論是實際的還是感知的。",
-      "The lesson introduced entitlement as a useful term to understand. 本課程介紹了權利作為一個需要理解的有用術語。"
+      "The law protects workers' entitlement to paid leave. 法律保障員工享有有薪假的權利。",
+      "The office checked his entitlement to benefits. 辦公室核對他領取福利的資格。"
     ],
     "audienceTags": [
       "general"
@@ -44321,11 +44321,11 @@
   },
   {
     "word": "entourage",
-    "meaning": "侍從、同事或追隨者的隨從。",
+    "meaning": "隨行人員；隨從",
     "partOfSpeech": "noun",
     "sentences": [
-      "large entourage 大隨從",
-      "royal entourage 皇家隨從"
+      "The singer arrived with a large entourage. 歌手帶著大批隨行人員抵達。",
+      "His entourage waited outside the meeting room. 他的隨從在會議室外等待。"
     ],
     "audienceTags": [
       "general"
@@ -44643,11 +44643,11 @@
   },
   {
     "word": "entrapment",
-    "meaning": "被困住的狀態。",
+    "meaning": "受困；誘捕；設局誘使犯罪",
     "partOfSpeech": "noun",
     "sentences": [
-      "The entrapment of the victims in the wreckage made rescue difficult. 罹難者被困在殘骸中，為救援帶來了困難。",
-      "The term entrapment refers to The state of being entrapped. 術語「困住」是指被困住的狀態。"
+      "The rescue team dealt with the entrapment of passengers. 救援隊處理乘客受困的情況。",
+      "The lawyer argued that the case involved entrapment. 律師主張此案涉及設局誘使犯罪。"
     ],
     "audienceTags": [
       "general"
@@ -44945,11 +44945,11 @@
   },
   {
     "word": "entropy",
-    "meaning": "能量的分散；在特定溫度下，一個過程中有多少能量散佈，或散佈的範圍有多大。",
+    "meaning": "熵；衡量能量分散或狀態無序程度的量",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term entropy refers to the dispersal of energy; how much energy is spread out in a process, or how widely spread out it becomes, at a specific temperature. 術語「熵」是指能量的分散；在特定溫度下，一個過程中有多少能量散佈，或能量散佈的範圍有多大。",
-      "The lesson introduced entropy as a useful term to understand. 本課介紹了熵這個易於理解的有用術語。"
+      "The lecture explains entropy in thermodynamics. 這場演講介紹熱力學中的熵。",
+      "The experiment measured the change in entropy. 這項實驗測量熵的變化。"
     ],
     "audienceTags": [
       "general"
@@ -45803,11 +45803,11 @@
   },
   {
     "word": "envoy",
-    "meaning": "代表。",
+    "meaning": "使節；特使",
     "partOfSpeech": "noun",
     "sentences": [
-      "special envoy to the United Nations 駐聯合國特使",
-      "The term envoy refers to a representative. 特使一詞指的是代表。"
+      "The envoy delivered a message to the president. 特使向總統傳達訊息。",
+      "A peace envoy met with both sides. 和平特使與雙方會面。"
     ],
     "audienceTags": [
       "general"
@@ -46096,11 +46096,11 @@
   },
   {
     "word": "enzyme",
-    "meaning": "發酵麵包，而不是酶。",
+    "meaning": "酵素；酶",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term enzyme refers to leavened bread, as opposed to azyme. 酵素一詞是指發酵麵包，而不是酵素。",
-      "The lesson introduced enzyme as a useful term to understand. 本課介紹了酵素這個有助於理解的術語。"
+      "An enzyme helps break down food during digestion. 酵素在消化過程中幫助分解食物。",
+      "Heat can affect an enzyme's activity. 熱可能影響酵素的活性。"
     ],
     "audienceTags": [
       "general"
@@ -49370,11 +49370,11 @@
   },
   {
     "word": "epidemiology",
-    "meaning": "涉及疾病、病毒、概念等在人群或系統中傳播和控制的科學分支。",
+    "meaning": "流行病學",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term epidemiology refers to the branch of science dealing with the spread and control of diseases, viruses, concepts etc. throughout populations or systems. 流行病學一詞是指研究疾病、病毒、概念等在人群或系統中傳播和控制的科學分支。",
-      "The lesson introduced epidemiology as a useful term to understand. 本課介紹了流行病學作為一個易於理解的有用術語。"
+      "She studies epidemiology to understand disease patterns. 她研究流行病學，以了解疾病的分布規律。",
+      "Epidemiology helps researchers track outbreaks. 流行病學幫助研究人員追蹤疫情爆發。"
     ],
     "schoolLevels": [
       "college"
@@ -52980,11 +52980,11 @@
   },
   {
     "word": "epistemology",
-    "meaning": "特定實例、版本或其流派；特定的知識理論。",
+    "meaning": "知識論；認識論",
     "partOfSpeech": "noun",
     "sentences": [
-      "In his epistemology, Plato maintains that our knowledge of universal concepts is a kind of recollection. 在他的知識論中，柏拉圖認為我們對普遍概念的認識是一種回憶。",
-      "The term epistemology refers to A particular instance, version, or school thereof; a particular theory of knowledge. 知識論一詞是指其特定實例、版本或流派；特定的知識理論。"
+      "Epistemology asks how we can know something. 知識論探問我們如何能夠知道某件事。",
+      "The philosophy course includes epistemology. 這門哲學課包含知識論。"
     ],
     "audienceTags": [
       "general"
@@ -54312,11 +54312,11 @@
   },
   {
     "word": "epitome",
-    "meaning": "高度；最好的;最生動的。",
+    "meaning": "典型；縮影",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term epitome refers to the height; the best; the most vivid. 縮影一詞指的是高度；最好的;最生動。",
-      "The lesson introduced epitome as a useful term to understand. 本課介紹了縮影這個有助於理解的術語。"
+      "The small hotel is the epitome of comfort. 這家小旅館是舒適的典型。",
+      "Her behavior was the epitome of kindness. 她的行為是善良的典範。"
     ],
     "audienceTags": [
       "general"
@@ -55542,11 +55542,11 @@
   },
   {
     "word": "equalizer",
-    "meaning": "使人平等的人；一個平衡器。",
+    "meaning": "使差距縮小的事物；均衡器；追平比分的進球",
     "partOfSpeech": "noun",
     "sentences": [
-      "Death is the great equalizer. 死亡是偉大的均衡器。",
-      "The term equalizer refers to One who makes equal; a balancer. 均衡器一詞指的是使平等的人；一個平衡器。"
+      "Education can be a social equalizer. 教育可以縮小社會差距。",
+      "He scored the equalizer just before halftime. 他在中場休息前攻進追平比分的一球。"
     ],
     "audienceTags": [
       "general"
@@ -55772,11 +55772,11 @@
   },
   {
     "word": "equator",
-    "meaning": "任何具有可識別極點的大致球形物體（例如水果或蔬菜）的中線。",
+    "meaning": "赤道；球形物體的中線",
     "partOfSpeech": "noun",
     "sentences": [
-      "Slice the onion through the equator. 將洋蔥穿過赤道切片。",
-      "The term equator refers to the midline of any generally spherical object, such as a fruit or vegetable, that has identifiable poles. 術語“赤道”是指任何具有可識別極點的大致球形物體（例如水果或蔬菜）的中線。"
+      "The equator divides Earth into two hemispheres. 赤道將地球分成兩個半球。",
+      "The ship crossed the equator yesterday. 船昨天越過赤道。"
     ],
     "audienceTags": [
       "general"
@@ -56636,11 +56636,11 @@
   },
   {
     "word": "equilibrium",
-    "meaning": "相互競爭的影響達到平衡，不會導致淨變化的系統狀況。",
+    "meaning": "平衡；均衡狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term equilibrium refers to the condition of a system in which competing influences are balanced, resulting in no net change. 均衡一詞是指系統中相互競爭的影響達到平衡、不產生淨變化的狀態。",
-      "The lesson introduced equilibrium as a useful term to understand. 本課介紹了平衡這個有助於理解的術語。"
+      "The system eventually reached equilibrium. 這個系統最終達到平衡。",
+      "A small disturbance upset the equilibrium. 一個小干擾打破了平衡。"
     ],
     "audienceTags": [
       "general"
@@ -56780,11 +56780,11 @@
   },
   {
     "word": "equine",
-    "meaning": "任何馬或類似馬的 動物 ，特別是 馬屬 屬之一。",
+    "meaning": "馬；馬科動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term equine refers to Any horse or horse-like animal, especially one of the genus Equus. 馬一詞指任何馬或類似馬的 動物 ，特別是 馬屬 屬之一。 術語“馬”是指任何馬或類似馬的動物，尤其是馬屬之一。 馬是指任何馬或類似馬的動物，特別是馬屬屬之一。",
-      "The lesson introduced equine as a useful term to understand. 本課介紹了馬作為一個易於理解的有用術語。 本課介紹了馬作為一個易於理解的有用術語。 本課介紹了馬作為一個易於理解的有用術語。"
+      "The veterinarian treated an injured equine. 獸醫治療一匹受傷的馬。",
+      "The shelter cares for neglected equines. 收容中心照顧遭疏於照料的馬科動物。"
     ],
     "audienceTags": [
       "general"
@@ -56876,11 +56876,11 @@
   },
   {
     "word": "equinox",
-    "meaning": "二十四小時內晝夜等長的情況。",
+    "meaning": "春分或秋分；晝夜長度接近相等的時節",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term equinox refers to the circumstance of a twenty-four hour time period having the day and night of equal length. 春分這個名詞是指二十四小時內白天和黑夜長度相等的情況。",
-      "The lesson introduced equinox as a useful term to understand. 本課程介紹了春分作為一個易於理解的有用術語。"
+      "The spring equinox marks a seasonal turning point. 春分標誌著季節的轉折點。",
+      "Day and night are nearly equal in length around the equinox. 春分或秋分前後，晝夜長度大致相等。"
     ],
     "audienceTags": [
       "general"
@@ -57748,11 +57748,11 @@
   },
   {
     "word": "equivalence",
-    "meaning": "等價關係； ==; 〜。",
+    "meaning": "等值；等價；相當",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term equivalence refers to an equivalence relation; ≡; ~. 術語「等價」是指等價關係； ==; ～。",
-      "The lesson introduced equivalence as a useful term to understand. 本課程介紹了等效性作為一個需要理解的有用術語。"
+      "The test establishes equivalence between the two qualifications. 這項測試確立兩種資格的相當性。",
+      "The proof demonstrates the equivalence of the expressions. 這項證明展示了兩個式子的等價性。"
     ],
     "audienceTags": [
       "general"
@@ -58547,11 +58547,11 @@
   },
   {
     "word": "erection",
-    "meaning": "勃起的陰莖或陰蒂。",
+    "meaning": "豎立；建造；勃起",
     "partOfSpeech": "noun",
     "sentences": [
-      "He placed his newspaper on his lap to hide his erection. 他把報紙放在腿上，以隱藏他的勃起。",
-      "The term erection refers to a penis or clitoris that is erect. 術語“勃起”是指勃起的陰莖或陰蒂。"
+      "The erection of the tower took two years. 建造這座塔花了兩年。",
+      "The doctor explained that an erection involves increased blood flow. 醫師說明勃起涉及血流增加。"
     ],
     "audienceTags": [
       "general"
@@ -60362,11 +60362,11 @@
   },
   {
     "word": "erosion",
-    "meaning": "由於持續的過程而逐漸失去某物。",
+    "meaning": "侵蝕；逐漸削弱",
     "partOfSpeech": "noun",
     "sentences": [
-      "the erosion of a person's trust 一個人的信任受到侵蝕",
-      "trademark erosion, caused by everyday use of the trademarked term 日常使用商標術語所造成的商標侵蝕"
+      "Wind erosion changed the shape of the cliff. 風的侵蝕改變了懸崖形狀。",
+      "The scandal caused an erosion of public trust. 醜聞逐漸削弱公眾的信任。"
     ],
     "audienceTags": [
       "general"
@@ -60470,11 +60470,11 @@
   },
   {
     "word": "erotica",
-    "meaning": "色情文學、藝術、裝飾或其他此類作品。",
+    "meaning": "情色文學或藝術作品",
     "partOfSpeech": "noun",
     "sentences": [
-      "There's a fine line between erotica and pornography. 色情作品和色情作品只有一線之隔。",
-      "The term erotica refers to erotic literature, art, decoration, or other such work. 情色一詞是指情色文學、藝術、裝飾或其他此類作品。"
+      "The library has a collection of historical erotica. 圖書館收藏了一批歷史情色作品。",
+      "The exhibition explores erotica in ancient art. 展覽探討古代藝術中的情色作品。"
     ],
     "audienceTags": [
       "general"
@@ -61471,11 +61471,11 @@
   },
   {
     "word": "eruption",
-    "meaning": "劇烈噴射，例如火山噴出熔岩。",
+    "meaning": "噴發；爆發",
     "partOfSpeech": "noun",
     "sentences": [
-      "a volcanic eruption 火山爆發",
-      "The term eruption refers to a violent ejection, such as the spurting out of lava from a volcano. 噴發一詞是指劇烈的噴射，例如火山噴出熔岩。"
+      "The volcanic eruption covered the town in ash. 火山噴發使城鎮覆蓋火山灰。",
+      "The news caused an eruption of anger. 這個消息引發了憤怒的爆發。"
     ],
     "audienceTags": [
       "general"
@@ -64702,11 +64702,11 @@
   },
   {
     "word": "espionage",
-    "meaning": "透過秘密手段得知秘密訊息的行為或過程。",
+    "meaning": "間諜活動；諜報活動",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term espionage refers to the act or process of learning secret information through clandestine means. 間諜活動是指透過秘密手段了解秘密訊息的行為或過程。",
-      "The lesson introduced espionage as a useful term to understand. 本課程介紹了間諜活動作為一個需要理解的有用術語。"
+      "The officer was accused of espionage. 這名軍官被指控從事間諜活動。",
+      "The novel follows a secret espionage operation. 這部小說描寫一場祕密諜報行動。"
     ],
     "audienceTags": [
       "general"
@@ -64714,11 +64714,11 @@
   },
   {
     "word": "esplanade",
-    "meaning": "城堡 和城鎮最近的房屋之間的清晰空間。",
+    "meaning": "寬闊的散步道；海濱步道；城堡旁的空地",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term esplanade refers to A clear space between a citadel and the nearest houses of the town. 濱海藝術中心一詞是指 城堡 與城鎮最近的房屋之間的空地。 濱海藝術中心一詞是指城堡和城鎮最近的房屋之間的空白空間。 濱海藝術中心是指城堡與城鎮最近的房屋之間的空地。",
-      "The lesson introduced esplanade as a useful term to understand. 本課程介紹了「濱海藝術中心」這個易於理解的有用術語。 本課程介紹了「濱海藝術中心」這個易於理解的有用術語。 本課程介紹了“濱海藝術中心”這個易於理解的有用術語。"
+      "We walked along the esplanade at sunset. 我們在日落時沿著海濱步道散步。",
+      "Benches line the esplanade beside the sea. 海邊的散步道沿線設有長椅。"
     ],
     "audienceTags": [
       "general"
@@ -66541,11 +66541,11 @@
   },
   {
     "word": "estrogen",
-    "meaning": "由卵巢分泌並充當女性性激素的一組類固醇中的任何一種。",
+    "meaning": "雌激素",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term estrogen refers to any of a group of steroids that are secreted by the ovaries and function as female sex hormones. 雌激素一詞是指由卵巢分泌並起到女性性激素作用的任何類固醇。",
-      "The lesson introduced estrogen as a useful term to understand. 本課程介紹了雌激素這個易於理解的有用術語。"
+      "The laboratory measured estrogen levels. 實驗室測量雌激素濃度。",
+      "Estrogen influences several processes in the body. 雌激素影響身體的數種生理過程。"
     ],
     "audienceTags": [
       "general"
@@ -66649,11 +66649,11 @@
   },
   {
     "word": "estuary",
-    "meaning": "海洋潮汐和河水合併形成的鹹水區的沿海水體。",
+    "meaning": "河口；河口灣",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term estuary refers to a coastal water body where ocean tides and river water merge, resulting in a brackish water zone. 河口一詞是指海洋潮汐和河水匯合形成的鹹水區的沿海水體。",
-      "The lesson introduced estuary as a useful term to understand. 本課介紹了河口作為一個易於理解的有用術語。"
+      "The river flows into a broad estuary. 河流注入寬闊的河口灣。",
+      "Migratory birds rest in the estuary. 候鳥在河口休息。"
     ],
     "audienceTags": [
       "general"
@@ -67119,11 +67119,11 @@
   },
   {
     "word": "ethanol",
-    "meaning": "一種簡單的脂肪醇，形式上由乙烷以羥基取代一個氫原子衍生而來：CH3-CH2-OH。",
+    "meaning": "乙醇；酒精",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term ethanol refers to a simple aliphatic alcohol formally derived from ethane by replacing one hydrogen atom with a hydroxyl group: CH3-CH2-OH. 乙醇一詞是指一種簡單的脂肪醇，形式上由乙烷以羥基取代一個氫原子而衍生：CH3-CH2-OH。",
-      "The lesson introduced ethanol as a useful term to understand. 本課介紹了乙醇作為一個易於理解的有用術語。"
+      "The laboratory uses ethanol as a solvent. 實驗室用乙醇作為溶劑。",
+      "Ethanol is present in alcoholic drinks. 酒精飲料含有乙醇。"
     ],
     "audienceTags": [
       "general"
@@ -67287,11 +67287,11 @@
   },
   {
     "word": "ethereal",
-    "meaning": "與一種看不見的類似空氣的元素滲透到整個空間或地球以外或大氣層之外的更高區域的假設有關。",
+    "meaning": "空靈的；飄逸的；超凡的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "ethereal space 空靈的空間",
-      "ethereal regions 空靈的區域"
+      "Her ethereal voice filled the hall. 她空靈的歌聲充滿大廳。",
+      "Mist gave the landscape an ethereal beauty. 霧氣賦予風景空靈的美感。"
     ],
     "audienceTags": [
       "general"
@@ -69464,11 +69464,11 @@
   },
   {
     "word": "etymology",
-    "meaning": "一個單字、語素或符號在其整個歷史中所攜帶的全部意義。",
+    "meaning": "語源；詞源研究",
     "partOfSpeech": "noun",
     "sentences": [
-      "Although written the same, the words lead (the metal) and lead (the verb) have totally different etymologies. 儘管寫法相同，但「鉛」（金屬）和「鉛」（動詞）這兩個字的字源卻完全不同。",
-      "The term etymology refers to The entire catalogue of meanings that a word, morpheme, or sign has carried throughout its history. 詞源學一詞是指一個詞、語素或符號在其整個歷史中所攜帶的全部意義。"
+      "The dictionary explains the etymology of the word. 字典說明了這個詞的語源。",
+      "She studies etymology to learn how words develop. 她研究詞源，以了解詞語如何演變。"
     ],
     "audienceTags": [
       "general"
@@ -70964,11 +70964,11 @@
   },
   {
     "word": "eulogy",
-    "meaning": "高度評價某人或某事；讚揚或讚揚某人或某事的行為。",
+    "meaning": "悼詞；頌詞",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term eulogy refers to speaking highly of someone or something; the act of praising or commending someone or something. 悼詞一詞指的是高度評價某人或某事；讚揚或讚揚某人或某事的行為。",
-      "The lesson introduced eulogy as a useful term to understand. 本課程介紹了悼詞作為一個易於理解的有用術語。"
+      "His daughter delivered a eulogy at the funeral. 他的女兒在葬禮上致悼詞。",
+      "The eulogy recalled her kindness and humor. 悼詞回顧了她的善良與幽默。"
     ],
     "audienceTags": [
       "general"
@@ -72872,11 +72872,11 @@
   },
   {
     "word": "euthanasia",
-    "meaning": "以人道方式故意殺害人類或動物的做法，特別是為了終結痛苦。",
+    "meaning": "安樂死",
     "partOfSpeech": "noun",
     "sentences": [
-      "Euthanasia is the most difficult part of a veterinarian's job. 安樂死是獸醫工作中最困難的部分。",
-      "The term euthanasia refers to the practice of intentionally killing a human being or animal in a humane way, especially in order to end suffering. 安樂死一詞是指以人道方式故意殺死人類或動物的做法，特別是為了結束痛苦。"
+      "The veterinarian discussed euthanasia with the animal's owner. 獸醫與動物的主人討論安樂死。",
+      "The debate raised ethical questions about euthanasia. 這場辯論提出關於安樂死的倫理問題。"
     ],
     "examTags": [
       "toeic"
@@ -73170,11 +73170,11 @@
   },
   {
     "word": "evacuation",
-    "meaning": "疏散行為；以有序的方式離開一個地方，特別是為了安全。",
+    "meaning": "疏散；撤離",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term evacuation refers to the act of evacuating; leaving a place in an orderly fashion, especially for safety. 疏散一詞是指疏散的行為；有秩序地離開一個地方，尤其是為了安全。",
-      "The lesson introduced evacuation as a useful term to understand. 本課介紹了疏散這個易於理解的有用術語。"
+      "The fire alarm triggered an evacuation. 火災警報啟動了疏散。",
+      "The evacuation of the village began before dawn. 村莊的撤離在黎明前開始。"
     ],
     "examTags": [
       "toeic"
@@ -73887,11 +73887,11 @@
   },
   {
     "word": "evaporation",
-    "meaning": "蒸發的東西；汽。",
+    "meaning": "蒸發",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term evaporation refers to that which is evaporated; vapor. 術語「蒸發」是指被蒸發的物質；汽。",
-      "The lesson introduced evaporation as a useful term to understand. 本課介紹了蒸發這個易於理解的有用術語。"
+      "Heat speeds up evaporation. 熱加速蒸發。",
+      "Evaporation left salt crystals in the dish. 蒸發後，皿中留下鹽晶體。"
     ],
     "audienceTags": [
       "general"
@@ -73995,11 +73995,11 @@
   },
   {
     "word": "evasion",
-    "meaning": "逃避、規避或避免的行為，特別是爭論、指控、指控或審訊的壓力；巧妙的躲避手段。",
+    "meaning": "逃避；規避",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term evasion refers to the act of eluding or evading or avoiding, particularly the pressure of an argument, accusation, charge, or interrogation; artful means of eluding. 「逃避」一詞是指逃避或避免的行為，特別指爭論、指控、指控或審訊的壓力；巧妙的躲避手段。",
-      "The lesson introduced evasion as a useful term to understand. 本課程介紹了逃避作為一個需要理解的有用術語。"
+      "His answer was an evasion of the question. 他的回答迴避了問題。",
+      "The company was investigated for tax evasion. 這家公司因逃稅接受調查。"
     ],
     "audienceTags": [
       "general"
@@ -74678,7 +74678,7 @@
     "partOfSpeech": "adverb",
     "sentences": [
       "Have you ever traveled to a foreign country alone? 你曾經獨自去外國旅行過嗎？",
-      "This is the best movie that I have ever seen. 這是過我看過最棒的電影。"
+      "This is the best movie that I have ever seen. 這是我看過最棒的電影。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -75052,11 +75052,11 @@
   },
   {
     "word": "everyday",
-    "meaning": "普通或常規的一天或場合。",
-    "partOfSpeech": "noun",
+    "meaning": "日常的；平常的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "Putting away the tableware for everyday, a chore which is part of the everyday. 收拾日常餐具，是日常瑣事。",
-      "The term everyday refers to the ordinary or routine day or occasion. 術語「日常」是指普通或常規的一天或場合。"
+      "These shoes are suitable for everyday use. 這雙鞋適合日常使用。",
+      "The story finds beauty in everyday life. 這個故事從日常生活中發現美。"
     ],
     "audienceTags": [
       "general"
@@ -75100,11 +75100,11 @@
   },
   {
     "word": "everyman",
-    "meaning": "在小說、戲劇或寓言中，典型的普通人，通常是某種寓言中的主角。",
+    "meaning": "普通人；代表一般人的典型角色",
     "partOfSpeech": "noun",
     "sentences": [
-      "In the novels of John Updike, sometimes Rabbit is his own man, and sometimes he is everyman. 在約翰·厄普代克的小說中，兔子有時是他自己的人，有時他是普通人。",
-      "The term everyman refers to In fiction, drama, or allegory, the archetypical ordinary individual, frequently the protagonist in a parable of some sort. 「普通人」一詞指的是小說、戲劇或寓言中典型的普通人，通常是某種寓言中的主角。"
+      "The hero is an everyman facing an unusual challenge. 主角是面對特殊挑戰的普通人。",
+      "The writer created an everyman whom readers could identify with. 作者創造了一個讓讀者能產生共鳴的普通人角色。"
     ],
     "audienceTags": [
       "general"
@@ -75290,11 +75290,11 @@
   },
   {
     "word": "eviction",
-    "meaning": "驅逐行為。",
+    "meaning": "驅逐；逐出房屋",
     "partOfSpeech": "noun",
     "sentences": [
-      "order of eviction 驅逐令",
-      "face eviction 面临被驱逐"
+      "The family faced eviction from their apartment. 這家人面臨被逐出公寓。",
+      "The tenant received an eviction notice. 房客收到驅逐通知。"
     ],
     "examTags": [
       "toeic"
@@ -77725,11 +77725,11 @@
   },
   {
     "word": "excavate",
-    "meaning": "如何用挖掘造句",
+    "meaning": "挖掘；發掘",
     "partOfSpeech": "verb",
     "sentences": [
-      "They tried to excavate the problem before lunch. 他們試著在午餐前挖掘這個問題。",
-      "Please excavate the details before you send the report. 送出報告前，請先挖掘細節。"
+      "Workers will excavate the site before construction begins. 工人會在施工前開挖工地。",
+      "Archaeologists excavated the ruins of an ancient temple. 考古學家發掘了一座古代寺廟的遺跡。"
     ],
     "audienceTags": [
       "general"
@@ -77737,11 +77737,11 @@
   },
   {
     "word": "excavation",
-    "meaning": "透過切割、舀取或挖出固體物質的一部分來挖掘或挖空的行為。",
+    "meaning": "挖掘；開挖；考古發掘",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term excavation refers to the act of excavating, or of making hollow, by cutting, scooping, or digging out a part of a solid mass. 挖掘一詞是指透過切割、舀取或挖出固體物質的一部分來挖掘或挖空的行為。",
-      "The lesson introduced excavation as a useful term to understand. 本課程介紹了挖掘作為一個需要理解的有用術語。"
+      "Excavation of the site revealed ancient pottery. 遺址發掘出古代陶器。",
+      "The excavation took several months to complete. 這項開挖工程花了數月完成。"
     ],
     "audienceTags": [
       "general"
@@ -78576,11 +78576,11 @@
   },
   {
     "word": "exchequer",
-    "meaning": "收入稅務辦公室；一個金庫。",
+    "meaning": "國庫；財政部門",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term exchequer refers to an office of revenue taxation; a treasury. 國庫一詞是指稅務辦公室；一個金庫。",
-      "The lesson introduced exchequer as a useful term to understand. 本課介紹了「財政」這個術語，這是一個需要理解的有用術語。"
+      "The tax provided revenue for the exchequer. 這項稅收為國庫提供收入。",
+      "The project placed a burden on the exchequer. 這個專案增加了國庫的負擔。"
     ],
     "examTags": [
       "toeic"
@@ -78699,11 +78699,11 @@
   },
   {
     "word": "excise",
-    "meaning": "對國內生產的商品徵收的稅（與對國外商品徵收的關稅相反）。",
+    "meaning": "貨物稅；國內消費稅",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term excise refers to a tax charged on goods produced within the country (as opposed to customs duties, charged on goods from outside the country). 消費稅一詞是指對國內生產的商品徵收的稅（與對國外商品徵收的關稅相反）。",
-      "The lesson introduced excise as a useful term to understand. 本課介紹了消費稅作為一個需要理解的有用術語。"
+      "The government raised the excise on tobacco. 政府提高了菸草的貨物稅。",
+      "The price includes excise and other taxes. 價格包含貨物稅及其他稅金。"
     ],
     "audienceTags": [
       "general"
@@ -78819,11 +78819,11 @@
   },
   {
     "word": "excitation",
-    "meaning": "令人興奮或啟動的行為；喚醒或覺醒的行為。",
+    "meaning": "激發；興奮",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term excitation refers to the act of exciting or putting in motion; the act of rousing up or awakening. 激發一詞是指激發或啟動的行為；喚醒或覺醒的行為。",
-      "The lesson introduced excitation as a useful term to understand. 本課介紹了激勵作為一個需要理解的有用術語。"
+      "The experiment measured electrical excitation of the nerve. 實驗測量神經的電刺激激發。",
+      "Light caused excitation of the molecules. 光使分子受到激發。"
     ],
     "audienceTags": [
       "general"
@@ -79342,11 +79342,11 @@
   },
   {
     "word": "excluding",
-    "meaning": "排除；不包括",
+    "meaning": "不包括；除……以外",
     "partOfSpeech": "preposition",
     "sentences": [
-      "Our lucky free draw winner will be treated to dinner, bed and breakfast, but the holiday must be taken before December, 1991 (subject to availability and excluding bank holidays). 我們的幸運免費抽獎得獎者將享有晚餐、住宿和早餐，但假期必須在 1991 年 12 月之前進行（視供應情況而定，銀行假期除外）。",
-      "The lesson introduced excluding as a useful term to understand. 本課介紹了排除作為一個有用的術語來理解。"
+      "The price is fifty dollars, excluding tax. 價格是五十美元，不含稅。",
+      "The trip lasts five days, excluding travel time. 這趟旅程為期五天，不包括交通時間。"
     ],
     "audienceTags": [
       "general"
@@ -79504,11 +79504,11 @@
   },
   {
     "word": "exclusivity",
-    "meaning": "獨一無二的品質。",
+    "meaning": "專屬性；排他性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term exclusivity refers to the quality of being exclusive. 術語「排他性」是指排他性的品質。",
-      "The lesson introduced exclusivity as a useful term to understand. 本課程介紹了排他性作為一個需要理解的有用術語。"
+      "The contract guarantees exclusivity to one distributor. 合約保證一家經銷商的專屬權。",
+      "The club's exclusivity made membership difficult to obtain. 這家俱樂部的排他性使入會資格難以取得。"
     ],
     "audienceTags": [
       "general"
@@ -79864,11 +79864,11 @@
   },
   {
     "word": "excrescence",
-    "meaning": "罕見或專門的英語術語，記錄為贅生物。",
+    "meaning": "贅生物；多餘的突起",
     "partOfSpeech": "noun",
     "sentences": [
-      "Her excrescence became clear during the conversation. 談話中，她的excrescenc變得很明顯。",
-      "The team discussed the excrescence before making a decision. 團隊在做決定前討論了excrescenc。"
+      "A small excrescence appeared on the tree trunk. 樹幹上出現了一個小贅生物。",
+      "The doctor examined the excrescence on his skin. 醫師檢查他皮膚上的贅生物。"
     ],
     "audienceTags": [
       "general"
@@ -80239,11 +80239,11 @@
   },
   {
     "word": "excursion",
-    "meaning": "短暫的休閒旅行；不尋常的旅程。",
+    "meaning": "短途旅行；遊覽",
     "partOfSpeech": "noun",
     "sentences": [
-      "While driving home I took an excursion and saw some deer. 在開車回家的路上，我進行了一次短途旅行，看到了一些鹿。",
-      "The term excursion refers to a brief recreational trip; a journey out of the usual way. 遊覽一詞是指短暫的休閒旅行；一次不尋常的旅程。"
+      "We took an excursion to the nearby island. 我們到附近的小島短途旅行。",
+      "The school organized an excursion to the museum. 學校安排了一次博物館參訪。"
     ],
     "audienceTags": [
       "general"
@@ -81517,11 +81517,11 @@
   },
   {
     "word": "exemption",
-    "meaning": "豁免狀態；免疫力。",
+    "meaning": "豁免；免除",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term exemption refers to the state of being exempt; immunity. 豁免一詞是指被豁免的狀態；免疫。",
-      "The lesson introduced exemption as a useful term to understand. 本課程介紹了豁免作為一個易於理解的有用術語。"
+      "She applied for an exemption from the fee. 她申請免繳這項費用。",
+      "The law grants an exemption to certain charities. 法律對某些慈善團體給予豁免。"
     ],
     "audienceTags": [
       "general"
@@ -85457,11 +85457,11 @@
   },
   {
     "word": "expanse",
-    "meaning": "廣闊的區域，通常是海洋、天空或陸地。",
+    "meaning": "廣闊的區域",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term expanse refers to a wide stretch, usually of sea, sky, or land. 「廣闊」一詞指的是廣闊的範圍，通常是海洋、天空或陸地。",
-      "The lesson introduced expanse as a useful term to understand. 本課程介紹了「廣闊」這個術語，這是一個需要理解的有用術語。"
+      "A wide expanse of water lay before us. 一片廣闊的水域展現在我們眼前。",
+      "The desert is an expanse of sand and rock. 沙漠是一片廣闊的沙石地帶。"
     ],
     "audienceTags": [
       "general"
@@ -85828,11 +85828,11 @@
   },
   {
     "word": "expectancy",
-    "meaning": "期望或預料；期待某事的狀態。",
+    "meaning": "期待；預期",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term expectancy refers to expectation or anticipation; the state of expecting something. 術語「期望」是指期望或預期；期待某事的狀態。",
-      "The lesson introduced expectancy as a useful term to understand. 本課程介紹了期望作為一個需要理解的有用術語。"
+      "The children waited in eager expectancy. 孩子們滿懷期待地等待。",
+      "Life expectancy has increased in many countries. 許多國家的預期壽命已提高。"
     ],
     "audienceTags": [
       "general"
@@ -87939,11 +87939,11 @@
   },
   {
     "word": "exploitation",
-    "meaning": "利用某物的行為；行業。",
+    "meaning": "開發；利用；剝削",
     "partOfSpeech": "noun",
     "sentences": [
-      "the exploitation of natural resources 自然資源的開發",
-      "The term exploitation refers to the act of utilizing something; industry. 「利用」一詞是指利用某物的行為；產業。"
+      "The report warned against the exploitation of workers. 報告警告不可剝削勞工。",
+      "The exploitation of natural resources changed the region. 自然資源的開發改變了這個地區。"
     ],
     "audienceTags": [
       "general"
@@ -88146,11 +88146,11 @@
   },
   {
     "word": "explorer",
-    "meaning": "透過旅行（尤其是探險）尋找新資訊的人。",
+    "meaning": "探險家；探索者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term explorer refers to a person who by means of travel (notably an expedition) searches out new information. 探索者一詞是指透過旅行（尤其是探險）尋找新資訊的人。",
-      "The lesson introduced explorer as a useful term to understand. 本課程介紹了「資源管理器」這個易於理解的有用術語。"
+      "The explorer traveled through the rainforest. 探險家穿越雨林。",
+      "An explorer mapped the previously unknown coast. 探險家繪製了先前未知海岸的地圖。"
     ],
     "examTags": [
       "toeic"
@@ -88436,11 +88436,11 @@
   },
   {
     "word": "exporter",
-    "meaning": "出口者或出口者：尤其是出口或銷售在一個國家製造的貨物以運往另一個國家的個人或組織。",
+    "meaning": "出口商；出口國",
     "partOfSpeech": "noun",
     "sentences": [
-      "India is the leading exporter of guar gum, making up nearly 85 per cent of the global production. 印度是瓜爾膠的主要出口國，佔全球產量的近85%。",
-      "The term exporter refers to one who, or that which, exports: especially a person who or organization that exports or sells goods made in one country for delivery in another country. 出口商一詞是指出口者或出口者：尤其是出口或銷售在一個國家製造的貨物以在另一個國家交貨的個人或組織。"
+      "The exporter ships tea to overseas markets. 這家出口商把茶運往海外市場。",
+      "The country is a major exporter of coffee. 這個國家是主要的咖啡出口國。"
     ],
     "examTags": [
       "toeic"
@@ -88528,11 +88528,11 @@
   },
   {
     "word": "exposition",
-    "meaning": "展覽，特指向公眾展示商品、藝術品或文化的展覽。",
+    "meaning": "展覽；闡述",
     "partOfSpeech": "noun",
     "sentences": [
-      "The first prototype was unveiled at an exposition. 第一個原型在博覽會上亮相。",
-      "The term exposition refers to an exhibition, especially of goods, artwork or cultural displays to the public. 博覽會一詞指的是展覽，尤​​其是向公眾展示商品、藝術品或文化的展覽。"
+      "The museum hosted an exposition of local crafts. 博物館舉辦了地方工藝展覽。",
+      "The book offers a clear exposition of the theory. 這本書清楚闡述了這項理論。"
     ],
     "audienceTags": [
       "general"
@@ -89169,11 +89169,11 @@
   },
   {
     "word": "expressway",
-    "meaning": "一條分開的高速公路，特別是其交叉路口和直接通往鄰近房產的通道已被消除的高速公路。",
+    "meaning": "快速道路；高速公路",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term expressway refers to a divided highway, especially one whose intersections and direct access to adjacent properties have been eliminated. 高速公路一詞是指一條分開的高速公路，特別是其交叉路口和直接通往鄰近物業的通道已被消除的高速公路。",
-      "The lesson introduced expressway as a useful term to understand. 本課介紹了高速公路作為一個需要理解的有用術語。"
+      "The expressway connects the city with the airport. 快速道路連接市區與機場。",
+      "Traffic on the expressway was heavy this morning. 今天早上快速道路的車流很大。"
     ],
     "audienceTags": [
       "general"
@@ -91385,11 +91385,11 @@
   },
   {
     "word": "extinction",
-    "meaning": "導致滅絕或滅絕的行為；殲滅。",
+    "meaning": "滅絕；消失",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term extinction refers to the action of making or becoming extinct; annihilation. 滅絕一詞是指造成或變成滅絕的行為；殲滅。",
-      "The lesson introduced extinction as a useful term to understand. 本課介紹了「滅絕」這個術語，它是一個值得理解的有用術語。"
+      "Habitat loss can lead to extinction. 棲地喪失可能導致滅絕。",
+      "The museum explains the extinction of several species. 博物館說明了數種物種的滅絕。"
     ],
     "audienceTags": [
       "general"
@@ -91793,11 +91793,11 @@
   },
   {
     "word": "extortion",
-    "meaning": "透過使用武力或威脅手段勒索金錢或其他財產的行為。",
+    "meaning": "勒索",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term extortion refers to the practice of extorting money or other property by the use of force or threats. 勒索一詞是指使用武力或威脅手段勒索金錢或其他財產的行為。",
-      "The lesson introduced extortion as a useful term to understand. 本課程介紹了敲詐勒索這個術語，這是一個需要理解的有用術語。"
+      "The business owner reported the extortion to police. 業主向警方報案，說明遭到勒索。",
+      "The suspect faced charges of extortion. 嫌疑人面臨勒索指控。"
     ],
     "audienceTags": [
       "general"
@@ -92374,11 +92374,11 @@
   },
   {
     "word": "extraction",
-    "meaning": "提取行為或被提取的條件。",
+    "meaning": "提取；拔除；萃取",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term extraction refers to the act of extracting or the condition of being extracted. 術語提取是指提取的行為或被提取的條件。",
-      "The lesson introduced extraction as a useful term to understand. 本課程介紹了提取作為一個需要理解的有用術語。"
+      "The dentist recommended extraction of the damaged tooth. 牙醫建議拔除受損的牙齒。",
+      "Oil extraction changed the local economy. 石油開採改變了當地經濟。"
     ],
     "audienceTags": [
       "general"
@@ -94428,11 +94428,11 @@
   },
   {
     "word": "extravagant",
-    "meaning": "開支大；浪子；浪費的。",
+    "meaning": "奢侈的；鋪張的；過度的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "an extravagant man 奢侈的男人",
-      "extravagant expense 奢侈的開支"
+      "They held an extravagant wedding. 他們舉辦了一場鋪張的婚禮。",
+      "Her extravagant spending worried her family. 她奢侈的消費讓家人擔心。"
     ],
     "audienceTags": [
       "general"
@@ -94464,11 +94464,11 @@
   },
   {
     "word": "extravaganza",
-    "meaning": "幻想、無拘無束、奢侈或混亂的行為或舉止的例子。",
+    "meaning": "盛大華麗的表演或活動",
     "partOfSpeech": "noun",
     "sentences": [
-      "The bride had her heart set on a simple wedding, but her parents insisted on a three-hundred-guest extravaganza. 新娘想舉辦一場簡單的婚禮，但她的父母堅持要舉辦一場三百位賓客的盛大盛宴。",
-      "The term extravaganza refers to An instance of fantastical, unrestrained, lavish, or chaotic behaviour or conduct. 奢華一詞指的是幻想、無拘無束、奢華或混亂的行為或舉止。"
+      "The festival ended with a musical extravaganza. 節慶以盛大的音樂表演作結。",
+      "The wedding became a lavish extravaganza. 婚禮變成了一場奢華盛會。"
     ],
     "audienceTags": [
       "general"
@@ -94673,11 +94673,11 @@
   },
   {
     "word": "extremism",
-    "meaning": "極端的想法或行為，主要是在政治或宗教領域。",
+    "meaning": "極端主義",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term extremism refers to extreme ideas or actions, primarily in politics or religion. 極端主義一詞指的是極端思想或行為，主要是在政治或宗教領域。",
-      "The lesson introduced extremism as a useful term to understand. 本課程介紹了極端主義作為一個需要理解的有用術語。"
+      "The article examines political extremism. 這篇文章探討政治極端主義。",
+      "The group spoke out against religious extremism. 這個團體公開反對宗教極端主義。"
     ],
     "audienceTags": [
       "general"
@@ -94685,11 +94685,11 @@
   },
   {
     "word": "extremist",
-    "meaning": "持有極端觀點的人，尤其是主張這種觀點的人；激進或狂熱分子。",
+    "meaning": "極端主義者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term extremist refers to a person who holds extreme views, especially one who advocates such views; a radical or fanatic. 極端主義者是指持有極端觀點的人，尤其是主張這種觀點的人；激進分子或狂熱分子。",
-      "The lesson introduced extremist as a useful term to understand. 本課介紹了極端主義作為一個有用的術語來理解。"
+      "The extremist rejected any compromise. 這位極端主義者拒絕任何妥協。",
+      "The report describes how extremists recruit followers. 報告描述極端主義者如何招募追隨者。"
     ],
     "audienceTags": [
       "general"
@@ -94721,11 +94721,11 @@
   },
   {
     "word": "extremity",
-    "meaning": "一隻手或一隻腳。",
+    "meaning": "手足末端；肢端；極端程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "Guillain–Barré syndrome causes one to not be able to move one’s extremities. The word extremity is central here. 格林-巴利症候群會導致四肢無法活動。極端這個字是這裡的中心。",
-      "The term extremity refers to A hand or foot. 術語“肢體”是指手或腳。"
+      "Cold weather can numb the extremities. 寒冷天氣可能使手足末端麻木。",
+      "The doctor checked circulation in each extremity. 醫師檢查每個肢端的血液循環。"
     ],
     "audienceTags": [
       "general"

@@ -2494,7 +2494,7 @@
     "partOfSpeech": "noun",
     "sentences": [
       "The zendikite refused to follow the crowd. 那名異端分子拒絕跟隨群眾。",
-      "A zendikite was mentioned in the old хроicle. 舊編年史裡提到一名異端分子。"
+      "A zendikite was mentioned in the old chronicle. 舊編年史裡提到一名異端分子。"
     ],
     "audienceTags": [
       "general"
@@ -4530,8 +4530,8 @@
     "meaning": "拉鍊",
     "partOfSpeech": "noun",
     "sentences": [
-      "The zipper on my new jacket managing to get stuck earlier. 我新夾克上的拉鍊剛才竟然卡住了。",
-      "Please remember to pull up the zipper of your school bag. 請記得拉上妳書包的拉鍊。"
+      "The zipper on my new jacket got stuck. 我新夾克上的拉鍊卡住了。",
+      "Please close the zipper on your school bag. 請拉上書包的拉鍊。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -5941,11 +5941,11 @@
   },
   {
     "word": "zone",
-    "meaning": "區",
+    "meaning": "區域；地帶",
     "partOfSpeech": "noun",
     "sentences": [
-      "The city center is a designated pedestrian-only zone during day. 市中心在白天是指定的行人專用區。",
-      "The researchers are studying the diverse life in the coastal zone. 研究人員正研究沿海區域多樣化的生命。"
+      "The city center is a pedestrian-only zone during the day. 市中心在白天是行人專用區。",
+      "The school is in a quiet residential zone. 那所學校位於安靜的住宅區。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [

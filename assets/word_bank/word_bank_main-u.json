@@ -835,11 +835,11 @@
   },
   {
     "word": "under",
-    "meaning": "在下面",
+    "meaning": "在……下面；低於；受……控制",
     "partOfSpeech": "preposition",
     "sentences": [
-      "The keys are under the book on the coffee table. 鑰匙在咖啡桌上的書下面。",
-      "The temperature dropped significantly under zero last night. 昨晚氣溫降到了零度以下。"
+      "The keys are under the book. 鑰匙在書下面。",
+      "Children under five can enter for free. 五歲以下的兒童可以免費入場。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -3836,11 +3836,11 @@
   },
   {
     "word": "urge",
-    "meaning": "敦促、催促、強烈渴望",
+    "meaning": "衝動；強烈的欲望",
     "partOfSpeech": "noun",
     "sentences": [
-      "I had a sudden urge to call my old friend and see how she was doing. 我突然有一種強烈渴望（衝動），想打電話給我的老朋友看看她過得怎麼樣。",
-      "Officials urge everyone to stay home during the snowstorm. 官員敦促大家在暴風雪期間留在家中。"
+      "I felt an urge to call my old friend. 我突然很想打電話給老朋友。",
+      "She resisted the urge to check her phone during class. 她忍住了上課時查看手機的衝動。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -4096,11 +4096,11 @@
   },
   {
     "word": "usual",
-    "meaning": "通常",
+    "meaning": "通常的；慣常的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "I'll meet you at our usual spot near the park entrance at noon. 我們中午在公園門口的老地方碰面吧。",
-      "The commute to work took longer than usual due to the heavy rain. 由於大雨，上班通勤時間比平時長。"
+      "We met at our usual spot near the park. 我們在公園附近的老地方碰面。",
+      "The journey took longer than usual. 這趟路程花的時間比平常久。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [

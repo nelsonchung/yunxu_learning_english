@@ -380,11 +380,11 @@
   },
   {
     "word": "sail",
-    "meaning": "帆",
+    "meaning": "航行；駕駛帆船",
     "partOfSpeech": "verb",
     "sentences": [
-      "The small boat sailed across the ocean in search of new lands. 小船橫越大洋尋找新土地。",
-      "We are going to sail around the island during our summer vacation. 我們打算在暑假期間環島航行。"
+      "We sailed around the island yesterday. 我們昨天繞著島嶼航行。",
+      "She learned to sail on a small lake. 她在一座小湖上學會駕駛帆船。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -475,11 +475,11 @@
   },
   {
     "word": "sake",
-    "meaning": "清酒",
+    "meaning": "目的；利益；（for the sake of）為了……；清酒",
     "partOfSpeech": "noun",
     "sentences": [
-      "I decided to stop smoking for the sake of my overall health. 為了我的整體健康，我決定戒菸。",
-      "Let's avoid an argument for the sake of our friendship. 為了我們的友誼，讓我們避免爭論吧。"
+      "He quit smoking for the sake of his health. 他為了健康戒菸。",
+      "For the sake of the children, please lower your voice. 為了孩子們，請放低音量。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -594,11 +594,11 @@
   },
   {
     "word": "salient",
-    "meaning": "值得注意的是；相關的或相關的。",
+    "meaning": "顯著的；突出的；重要的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The article is not exhaustive, but it covers the salient points pretty well. 這篇文章並不詳盡，但很好地涵蓋了要點。",
-      "Something described as salient is worthy of note; pertinent or relevant. 被描述為顯著的東西值得注意；相關的或相關的。"
+      "She summarized the salient features of the plan. 她概述了這項計畫的重要特點。",
+      "The report highlights the salient points of the discussion. 報告強調了討論中的要點。"
     ],
     "audienceTags": [
       "general"
@@ -2474,11 +2474,11 @@
   },
   {
     "word": "scholarship",
-    "meaning": "獎學金",
+    "meaning": "獎學金；學術研究",
     "partOfSpeech": "noun",
     "sentences": [
-      "She was awarded a full scholarship to study at a top university. 她獲頒全額獎學金，在一所頂尖大學學習。",
-      "Academic scholarship requires a lot of dedication and research. 學術獎學金（研究）需要大量的奉獻與研究。"
+      "She won a scholarship to study abroad. 她獲得出國留學的獎學金。",
+      "His scholarship on ancient history is widely respected. 他對古代歷史的學術研究廣受尊重。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -2688,8 +2688,8 @@
     "meaning": "科學的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The scientific method is based on careful observation and proof. 科學方法是基於細心的觀察與證明的。",
-      "Scientists are conducting various scientific experiments in lab. 科學家正實驗室裡進行各項科學實驗。"
+      "The team used scientific methods to test the claim. 團隊用科學方法檢驗這項說法。",
+      "The students carried out a scientific experiment in the laboratory. 學生們在實驗室裡進行一項科學實驗。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -2812,11 +2812,11 @@
   },
   {
     "word": "scoop",
-    "meaning": "舀",
+    "meaning": "勺子；一勺的量；獨家新聞",
     "partOfSpeech": "noun",
     "sentences": [
       "Use a scoop to serve the ice cream. 用勺子舀冰淇淋。",
-      "He took a scoop of rice from the pot. 他從鍋裡舀了一勺飯。"
+      "She added a scoop of rice to his bowl. 她往他的碗裡添了一勺飯。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -3026,11 +3026,11 @@
   },
   {
     "word": "scout",
-    "meaning": "偵察",
+    "meaning": "偵察員；童子軍；球探",
     "partOfSpeech": "noun",
     "sentences": [
-      "He was a dedicated Boy Scout and learned various outdoor skills. 他曾是一名盡責的童子軍並學習了各項戶外技能。",
-      "The team sent a talent scout to watch the young football player. 團隊派了一名球探（偵察員）去觀察那位年輕足球員。"
+      "The scout reported that the bridge was safe. 偵察員回報那座橋是安全的。",
+      "A talent scout watched the young player train. 一位球探觀看那名年輕球員訓練。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -3838,11 +3838,11 @@
   },
   {
     "word": "search",
-    "meaning": "搜尋",
+    "meaning": "搜尋；搜查",
     "partOfSpeech": "noun",
     "sentences": [
-      "I'm searching for my keys anywhere; have you seen them? 我正到處找我的鑰匙；你看到了嗎？",
-      "The police conducted a thorough search of the suspect's house. 警察對嫌疑人的房屋進行了徹底的搜查。"
+      "The search for the missing child continued all night. 搜尋失蹤孩子的行動持續了一整夜。",
+      "The police conducted a thorough search of the house. 警方徹底搜查了那棟房子。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -4141,11 +4141,11 @@
   },
   {
     "word": "secondary",
-    "meaning": "中學",
+    "meaning": "次要的；中等教育的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "He is currently studying at a local secondary school in Taipei. 他目前就讀於台北的一所當地中學。",
-      "Improving public health is our secondary goal after education. 提升公共衛生是我們繼教育之後的第二目標。"
+      "Safety is our main concern; cost is secondary. 安全是我們最關心的事，費用是次要的。",
+      "She teaches at a secondary school. 她在一所中學教書。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -5337,11 +5337,11 @@
   },
   {
     "word": "senior",
-    "meaning": "進階的",
+    "meaning": "資深的；年長的；高階的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "He is a senior software engineer with over ten years of work experience. 他是一位擁有超過十年工作經驗的資深軟體工程師。",
-      "The hotel offers special discounts for senior citizens on weekdays. 飯店在平日為年長者提供特別折扣。"
+      "He is a senior engineer at the company. 他是那家公司的資深工程師。",
+      "The museum offers discounts to senior citizens. 博物館提供年長者優惠。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -8163,11 +8163,11 @@
   },
   {
     "word": "shore",
-    "meaning": "支撐",
+    "meaning": "岸；海岸；湖岸",
     "partOfSpeech": "noun",
     "sentences": [
-      "We took a pleasant walk along the rocky shore at low tide. 我們在退潮時沿著岩石海岸愉快地散步。",
-      "The waves were gently lapping against the sandy shore. 海浪輕輕拍打著沙灘。"
+      "We walked along the rocky shore. 我們沿著岩石海岸散步。",
+      "The boat was tied up near the shore. 那艘船繫泊在岸邊。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -10646,11 +10646,11 @@
   },
   {
     "word": "sink",
-    "meaning": "下沉",
+    "meaning": "水槽；洗手台",
     "partOfSpeech": "noun",
     "sentences": [
-      "The ship hit an iceberg and began to sink in the cold ocean. 船撞上冰山，開始在冰冷的大海中下沉。",
-      "Please put the dirty dishes in the kitchen sink after you finish. 用餐後請將髒盤子放進廚房水槽。"
+      "Put the dirty dishes in the kitchen sink. 把髒盤子放進廚房水槽。",
+      "The bathroom sink needs cleaning. 浴室的洗手台需要清潔。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -11400,11 +11400,11 @@
   },
   {
     "word": "ski",
-    "meaning": "滑雪",
+    "meaning": "滑雪板",
     "partOfSpeech": "noun",
     "sentences": [
-      "We are planning a trip to Hokkaido to ski during the winter. 我們計劃冬天去北海道滑雪。",
-      "He is a very skilled skier who has won several competitions. 他是一位技術非常精湛的滑雪者，贏得了幾項競賽。"
+      "One ski came loose during the lesson. 上課時，一隻滑雪板鬆脫了。",
+      "She rented a pair of skis for the weekend. 她租了一副滑雪板，準備週末使用。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -12966,11 +12966,11 @@
   },
   {
     "word": "smell",
-    "meaning": "聞",
+    "meaning": "氣味；嗅覺",
     "partOfSpeech": "noun",
     "sentences": [
-      "I love the smell of fresh coffee in the morning. 我喜歡早晨新鮮咖啡的味道。",
-      "Can you smell something burning? I think the toast is ready. 你聞到燒焦味了嗎？我想吐司好了。"
+      "The smell of fresh bread filled the kitchen. 新鮮麵包的香味充滿廚房。",
+      "Dogs have a keen sense of smell. 狗的嗅覺很靈敏。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -13785,11 +13785,11 @@
   },
   {
     "word": "so",
-    "meaning": "所以",
+    "meaning": "如此；這麼；非常",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I was very tired, so I decided to go to bed early. 我很累，所以我決定早點睡覺。",
-      "She speaks English so well that people think she's a native speaker. 她英語說得非常好，人們以為她是母語人士。"
+      "Why are you so tired today? 你今天為什麼這麼累？",
+      "She speaks so clearly that everyone can understand her. 她說得非常清楚，每個人都聽得懂。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -15221,11 +15221,11 @@
   },
   {
     "word": "sore",
-    "meaning": "瘡",
+    "meaning": "疼痛的；酸痛的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "I have a sore throat and a slight fever today. 我今天喉嚨痛且有點發燒。",
-      "His muscles were sore after the intense workout yesterday. 激烈運動後，他的肌肉今天很酸痛。"
+      "I have a sore throat today. 我今天喉嚨痛。",
+      "Her legs were sore after the long hike. 長途健行後，她的雙腿很酸痛。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -16104,11 +16104,11 @@
   },
   {
     "word": "speaker",
-    "meaning": "揚聲器",
+    "meaning": "說話者；演講者；揚聲器",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guest speaker gave an inspiring speech to the graduates. 客座講師對畢業生們發表了一場激勵人心的演講。",
-      "Could you please turn up the volume on the computer speakers? 你能調大電腦揚聲器的音量嗎？"
+      "The guest speaker answered questions after the lecture. 客座講者在演講後回答問題。",
+      "The left speaker is making a strange noise. 左邊的揚聲器發出奇怪的聲音。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -16689,7 +16689,7 @@
   },
   {
     "word": "speechless",
-    "meaning": "四 (尤指氣得或驚訝得) 说不出话来的",
+    "meaning": "說不出話的；無言的",
     "partOfSpeech": "adjective",
     "sentences": [
       "The surprise gift left her speechless. 那份驚喜禮物讓她說不出話。",
@@ -20640,11 +20640,11 @@
   },
   {
     "word": "stick",
-    "meaning": "戳",
+    "meaning": "黏貼；黏住；（stick to）堅持",
     "partOfSpeech": "verb",
     "sentences": [
-      "He used a long wooden stick to reach the fruit on the high branch. 他用一根長木棍去勾高枝上的水果。",
-      "It's important to stick to your principles, even when it's hard. 即使困難，堅持自己的原則也很重要。"
+      "Stick the label on the box. 把標籤貼在盒子上。",
+      "We should stick to our original plan. 我們應該堅持原來的計畫。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -21181,11 +21181,11 @@
   },
   {
     "word": "stone",
-    "meaning": "結石",
+    "meaning": "石頭；石材；結石",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old castle was built from large blocks of local stone. 這座舊城堡是由當地的巨石塊建造而成的。",
-      "The little boy was happily skipping stones across the calm lake. 小男孩正開心地在平靜的湖面上玩打水漂。"
+      "The wall was built from local stone. 那面牆是用當地石材建成的。",
+      "He threw a small stone into the lake. 他把一顆小石頭丟進湖裡。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -22012,11 +22012,11 @@
   },
   {
     "word": "stretch",
-    "meaning": "拉緊",
+    "meaning": "伸展；一段路；一段時間",
     "partOfSpeech": "noun",
     "sentences": [
-      "It's important to stretch your muscles before and after exercise. 運動前後伸展肌肉是很重要的。",
-      "The long sandy beach stretches for miles along the coast. 漫長的沙灘沿著海岸延伸了好幾英里。"
+      "A gentle stretch helped relieve the tension in her back. 輕柔的伸展幫助舒緩她背部的緊繃。",
+      "This stretch of road is closed for repairs. 這段道路因維修而封閉。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [

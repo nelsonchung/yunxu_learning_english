@@ -4760,11 +4760,11 @@
   },
   {
     "word": "yet",
-    "meaning": "然而",
+    "meaning": "還；尚未；（yet to）尚待",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I haven't finished my homework yet, but I'm working on it. 我還沒做完功課，但我正在努力。",
-      "The best part of the trip is yet to come, believe me! 這趟旅行最棒的部分還在後頭，相信我！"
+      "I have not finished my homework yet. 我還沒完成作業。",
+      "The best part of the trip is yet to come. 這趟旅行最棒的部分還在後頭。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [

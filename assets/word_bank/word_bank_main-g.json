@@ -28953,11 +28953,11 @@
   },
   {
     "word": "getaway",
-    "meaning": "逃脫",
+    "meaning": "逃脫；短期度假",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the getaway nearby. 我在附近看到逃脫。",
-      "I noticed the getaway nearby. 我注意到附近有個逃脫。"
+      "The thieves made their getaway in a van. 小偷搭廂型車逃走了。",
+      "We planned a weekend getaway by the sea. 我們安排了週末到海邊度假。"
     ],
     "audienceTags": [
       "general"
@@ -29723,11 +29723,11 @@
   },
   {
     "word": "ghetto",
-    "meaning": "貧民區",
+    "meaning": "貧民區；少數族群聚居區",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the ghetto nearby. 我在附近看到貧民區。",
-      "I noticed the ghetto nearby. 我注意到附近有個貧民區。"
+      "Many families in the ghetto lacked access to good schools. 貧民區裡許多家庭無法讓孩子就讀良好的學校。",
+      "The novel describes life in a crowded urban ghetto. 這本小說描寫擁擠的都市貧民區裡的生活。"
     ],
     "audienceTags": [
       "general"
@@ -31461,8 +31461,8 @@
     "meaning": "禮物；天賦",
     "partOfSpeech": "noun",
     "sentences": [
-      "Gift wrapping made the small box look special. 禮物包裝讓小盒子看起來很特別。",
-      "Gift for languages helped her learn quickly. 語言天賦幫助她快速學習。"
+      "She received a gift from her sister. 她收到姊姊送的禮物。",
+      "He has a gift for languages. 他有語言天賦。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -33652,8 +33652,8 @@
     "meaning": "薑餅",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gingerbread nearby. 我在附近看到薑餅。",
-      "I noticed the gingerbread nearby. 我注意到附近有個薑餅。"
+      "We baked gingerbread for Christmas. 我們烤了薑餅來過聖誕節。",
+      "The children decorated a gingerbread house. 孩子們裝飾了一座薑餅屋。"
     ],
     "audienceTags": [
       "general"
@@ -34925,8 +34925,8 @@
     "meaning": "女孩",
     "partOfSpeech": "noun",
     "sentences": [
-      "Girl carried a yellow umbrella through the rain. 女孩撐著黃色雨傘走過雨中。",
-      "Girl smiled when her puppy found the ball. 小狗找到球時，女孩笑了。"
+      "The girl carried a yellow umbrella. 那個女孩撐著一把黃色雨傘。",
+      "A girl in my class won the race. 我班上一個女孩贏得了賽跑。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -62283,11 +62283,11 @@
   },
   {
     "word": "grantee",
-    "meaning": "受贈者",
+    "meaning": "受贈人；受讓人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grantee is happy. 受贈者很高興。",
-      "I noticed the grantee nearby. 我今天又遇到一位受贈者。"
+      "The deed names her as the grantee. 那份契據將她列為受讓人。",
+      "The grantee accepted the land donation. 受贈人接受了土地捐贈。"
     ],
     "difficultyLevel": 6
   },
@@ -62352,11 +62352,11 @@
   },
   {
     "word": "grantor",
-    "meaning": "讓與人",
+    "meaning": "讓與人；授予人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grantor is here. 讓與人在這裡。",
-      "I noticed the grantor nearby. 我今天又遇到一位讓與人。"
+      "The grantor signed the deed. 讓與人在契據上簽名。",
+      "The trust document identifies the grantor. 信託文件列明了委託人。"
     ],
     "difficultyLevel": 6
   },
@@ -62378,8 +62378,8 @@
     "meaning": "顆粒狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The sand is granular. 沙子呈顆粒狀。",
-      "The surface seems granular. 這個特徵和顆粒狀有關。"
+      "The soil has a granular texture. 這種土壤的質地呈顆粒狀。",
+      "The granular material poured easily from the bag. 那種顆粒狀材料很容易從袋子裡倒出來。"
     ],
     "audienceTags": [
       "general"
@@ -62430,11 +62430,11 @@
   },
   {
     "word": "granulated",
-    "meaning": "成粒狀的",
+    "meaning": "製成顆粒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is granulated. 這個物品呈現成粒狀特徵。",
-      "The surface seems granulated. 這個特徵和成粒狀有關。"
+      "Add two spoonfuls of granulated sugar. 加入兩匙砂糖。",
+      "The fertilizer is sold in granulated form. 這種肥料以顆粒形式販售。"
     ],
     "audienceTags": [
       "general"
@@ -62491,8 +62491,8 @@
     "meaning": "小顆粒",
     "partOfSpeech": "noun",
     "sentences": [
-      "Add a granule of salt. 加一小粒鹽。",
-      "I noticed the granule nearby. 我注意到附近有個小顆粒。"
+      "A granule of sugar fell onto the table. 一粒糖掉到了桌上。",
+      "Each granule dissolves quickly in hot water. 每個小顆粒都會很快溶於熱水。"
     ],
     "difficultyLevel": 5
   },
@@ -62622,11 +62622,11 @@
   },
   {
     "word": "granulocyte",
-    "meaning": "顆粒球",
+    "meaning": "顆粒球；一類白血球",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the granulocyte nearby. 我在附近看到顆粒球。",
-      "I noticed the granulocyte nearby. 我注意到附近有個顆粒球。"
+      "A granulocyte contains visible granules in its cytoplasm. 顆粒球的細胞質中含有可見的顆粒。",
+      "The laboratory identified a granulocyte in the blood sample. 實驗室在血液樣本中辨認出一個顆粒球。"
     ],
     "difficultyLevel": 6
   },
@@ -62645,8 +62645,8 @@
     "meaning": "肉芽腫",
     "partOfSpeech": "noun",
     "sentences": [
-      "He has a small granuloma. 他有一個小肉芽腫。",
-      "I noticed the granuloma nearby. 我注意到附近有個肉芽腫。"
+      "The biopsy revealed a granuloma. 切片檢查發現了一個肉芽腫。",
+      "The doctor examined the granuloma under a microscope. 醫師用顯微鏡檢查了那個肉芽腫。"
     ],
     "difficultyLevel": 6
   },
@@ -62665,8 +62665,8 @@
     "meaning": "肉芽腫性的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is granulomatous. 這個物品呈現肉芽腫性特徵。",
-      "The surface seems granulomatous. 這個特徵和肉芽腫性有關。"
+      "The report described granulomatous inflammation. 報告描述了肉芽腫性發炎。",
+      "The pathologist examined the granulomatous tissue. 病理醫師檢查了肉芽腫性組織。"
     ],
     "difficultyLevel": 6
   },
@@ -62760,8 +62760,8 @@
     "meaning": "葡萄",
     "partOfSpeech": "noun",
     "sentences": [
-      "I want a grape. 我想要一顆葡萄。",
-      "I noticed the grape nearby. 我注意到附近有個葡萄。"
+      "She picked a ripe grape from the vine. 她從葡萄藤上摘下一顆成熟的葡萄。",
+      "This grape tastes sweeter than the last one. 這顆葡萄吃起來比上一顆甜。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -62804,8 +62804,8 @@
     "meaning": "葡萄柚",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grapefruit nearby. 我在附近看到葡萄柚。",
-      "I noticed the grapefruit nearby. 我注意到附近有個葡萄柚。"
+      "I ate half a grapefruit for breakfast. 我早餐吃了半顆葡萄柚。",
+      "She squeezed a grapefruit to make fresh juice. 她榨了一顆葡萄柚來做新鮮果汁。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -63007,8 +63007,8 @@
     "meaning": "圖表",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the graph nearby. 我在附近看到圖表。",
-      "I noticed the graph nearby. 我注意到附近有個圖表。"
+      "The graph shows monthly sales. 這張圖表顯示每個月的銷售額。",
+      "Draw a graph to compare the two sets of data. 畫一張圖表來比較這兩組資料。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -63034,11 +63034,11 @@
   },
   {
     "word": "graphic",
-    "meaning": "生動的",
+    "meaning": "生動而詳盡的；圖像的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The detail is graphic. 細節很生動。",
-      "The surface seems graphic. 這個特徵和生動有關。"
+      "He gave a graphic description of the accident. 他生動而詳盡地描述了那場事故。",
+      "She works as a graphic designer. 她是一名平面設計師。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -63053,11 +63053,11 @@
   },
   {
     "word": "graphical",
-    "meaning": "圖形的",
+    "meaning": "圖形的；圖形化的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The UI is graphical. 介面是圖形化的。",
-      "The surface seems graphical. 這個特徵和圖形有關。"
+      "The program has a graphical interface. 這個程式有圖形化介面。",
+      "A graphical representation makes the results easier to understand. 用圖形呈現能讓結果更容易理解。"
     ],
     "audienceTags": [
       "general"
@@ -63204,8 +63204,8 @@
     "meaning": "石墨",
     "partOfSpeech": "noun",
     "sentences": [
-      "Use graphite for lube. 用石墨作潤滑劑。",
-      "I noticed the graphite nearby. 我注意到附近有個石墨。"
+      "Pencil leads contain graphite. 鉛筆芯含有石墨。",
+      "Graphite can be used as a lubricant. 石墨可以用作潤滑劑。"
     ],
     "audienceTags": [
       "general"
@@ -63226,11 +63226,11 @@
   },
   {
     "word": "graphitic",
-    "meaning": "石墨的",
+    "meaning": "石墨的；含石墨的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "It is a graphitic carbon. 這是石墨碳。",
-      "The surface seems graphitic. 這個特徵和石墨有關。"
+      "The sample contains graphitic carbon. 那個樣本含有石墨碳。",
+      "The geologist examined a graphitic rock. 地質學家檢查了一塊含石墨的岩石。"
     ],
     "difficultyLevel": 6
   },
@@ -64567,11 +64567,11 @@
   },
   {
     "word": "gratified",
-    "meaning": "滿意的",
+    "meaning": "感到滿意的；欣慰的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "She was gratified by the progress. 她對結果感到滿意。",
-      "The surface seems gratified. 這個特徵和滿意有關。"
+      "She was gratified by her students' progress. 她對學生們的進步感到欣慰。",
+      "He felt gratified when his hard work was recognized. 他的努力獲得肯定時，他感到很滿足。"
     ],
     "difficultyLevel": 5
   },
@@ -64607,11 +64607,11 @@
   },
   {
     "word": "gratifying",
-    "meaning": "令人滿意的",
+    "meaning": "令人滿意的；令人欣慰的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "It was a gratifying win. 這是次令人滿意的勝利。",
-      "The surface seems gratifying. 這個特徵和令人滿意有關。"
+      "It was gratifying to see the children recover. 看到孩子們康復令人欣慰。",
+      "Finishing the project was a gratifying experience. 完成這個專案是一次令人滿足的經驗。"
     ],
     "difficultyLevel": 4
   },
@@ -64666,11 +64666,11 @@
   },
   {
     "word": "grating",
-    "meaning": "刺耳的",
+    "meaning": "刺耳的；令人不快的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "He has a grating voice. 他的聲音很刺耳。",
-      "The surface seems grating. 這個特徵和刺耳有關。"
+      "His grating voice disturbed everyone. 他刺耳的聲音讓大家感到不舒服。",
+      "The machine made a grating noise. 那台機器發出刺耳的聲響。"
     ],
     "audienceTags": [
       "general"
@@ -64794,11 +64794,11 @@
   },
   {
     "word": "gratuitous",
-    "meaning": "無端的",
+    "meaning": "無端的；不必要的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gratuitous. 這個物品呈現無端特徵。",
-      "The surface seems gratuitous. 這個特徵和無端有關。"
+      "The film contains gratuitous violence. 這部電影含有不必要的暴力場面。",
+      "Her gratuitous insult upset him. 她無端的侮辱讓他很難過。"
     ],
     "difficultyLevel": 6
   },
@@ -64827,8 +64827,8 @@
     "meaning": "小費",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gratuity nearby. 我在附近看到小費。",
-      "I noticed the gratuity nearby. 我注意到附近有個小費。"
+      "The bill includes a gratuity for the waiter. 帳單包含給服務生的小費。",
+      "She left a generous gratuity after dinner. 晚餐後，她留下了豐厚的小費。"
     ],
     "difficultyLevel": 5
   },
@@ -64926,8 +64926,8 @@
     "meaning": "墳墓",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grave was deep. 墳墓很深。",
-      "I noticed the grave nearby. 我注意到附近有個墳墓。"
+      "They placed flowers on his grave. 他們把花放在他的墳上。",
+      "The grave lies beneath an old oak tree. 那座墳位於一棵老橡樹下。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -65018,11 +65018,11 @@
   },
   {
     "word": "gravel",
-    "meaning": "砂礫",
+    "meaning": "砂礫；碎石",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gravel nearby. 我在附近看到砂礫。",
-      "I noticed the gravel nearby. 我注意到附近有個砂礫。"
+      "Gravel covered the driveway. 車道上鋪滿了碎石。",
+      "Our shoes crunched on the gravel. 我們的鞋子踩在砂礫上發出嘎吱聲。"
     ],
     "audienceTags": [
       "general"
@@ -65082,11 +65082,11 @@
   },
   {
     "word": "gravelled",
-    "meaning": "鋪砂礫的",
+    "meaning": "鋪有碎石的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gravelled. 這個物品呈現鋪砂礫特徵。",
-      "The surface seems gravelled. 這個特徵和鋪砂礫有關。"
+      "We walked along a gravelled path. 我們沿著一條鋪有碎石的小徑走。",
+      "The gravelled driveway led to the farmhouse. 那條鋪有碎石的車道通向農舍。"
     ],
     "difficultyLevel": 6
   },
@@ -65125,11 +65125,11 @@
   },
   {
     "word": "gravelly",
-    "meaning": "沙啞的",
+    "meaning": "沙啞的；多砂礫的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gravelly. 這個物品呈現沙啞特徵。",
-      "The surface seems gravelly. 這個特徵和沙啞有關。"
+      "He spoke in a gravelly voice. 他用沙啞的聲音說話。",
+      "The gravelly path was difficult to walk on. 那條多砂礫的小徑很難走。"
     ],
     "difficultyLevel": 5
   },
@@ -65230,11 +65230,11 @@
   },
   {
     "word": "graven",
-    "meaning": "刻下的",
+    "meaning": "雕刻的；銘刻的（古語）",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is graven. 這個物品呈現刻下特徵。",
-      "The surface seems graven. 這個特徵和刻下有關。"
+      "The graven image stood in the temple. 那尊雕像立在神廟裡。",
+      "They found a graven inscription on the stone. 他們在石頭上發現了雕刻的碑文。"
     ],
     "difficultyLevel": 6
   },
@@ -65299,21 +65299,21 @@
   },
   {
     "word": "graver",
-    "meaning": "雕刻師",
+    "meaning": "雕刻師；雕刻刀",
     "partOfSpeech": "noun",
     "sentences": [
-      "The graver is skilled. 雕刻師很熟練。",
-      "I noticed the graver nearby. 我今天又遇到一位雕刻師。"
+      "The graver carved delicate patterns into the metal. 雕刻師在金屬上刻出細緻的圖案。",
+      "He used a graver to cut the fine lines. 他用雕刻刀刻出細線。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "graves",
-    "meaning": "墳墓",
+    "meaning": "墳墓（grave 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the graves nearby. 我在附近看到墳墓。",
-      "I noticed the graves nearby. 我注意到附近有個墳墓。"
+      "The graves were marked with simple stones. 那些墳墓以簡單的石塊作標記。",
+      "They placed flowers on their parents' graves. 他們在父母的墳上放了花。"
     ],
     "difficultyLevel": 2
   },
@@ -65332,11 +65332,11 @@
   },
   {
     "word": "graveside",
-    "meaning": "墓穴旁",
+    "meaning": "墓旁；墓穴旁",
     "partOfSpeech": "noun",
     "sentences": [
-      "Stood at the graveside. 站在墓穴旁。",
-      "I noticed the graveside nearby. 我注意到附近有個墓穴旁。"
+      "The family gathered at the graveside. 家人聚集在墓旁。",
+      "She left flowers at the graveside. 她在墓旁留下了花。"
     ],
     "difficultyLevel": 5
   },
@@ -65358,8 +65358,8 @@
     "meaning": "墓碑",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gravestone nearby. 我在附近看到墓碑。",
-      "I noticed the gravestone nearby. 我注意到附近有個墓碑。"
+      "Her name was carved on the gravestone. 她的名字刻在墓碑上。",
+      "They cleaned the moss from the gravestone. 他們清除了墓碑上的青苔。"
     ],
     "difficultyLevel": 4
   },
@@ -65394,8 +65394,8 @@
     "meaning": "墓地",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the graveyard nearby. 我在附近看到墓地。",
-      "I noticed the graveyard nearby. 我注意到附近有個墓地。"
+      "We walked past the old graveyard. 我們走過那座古老的墓地。",
+      "The graveyard is next to the church. 那座墓地就在教堂旁邊。"
     ],
     "audienceTags": [
       "general"
@@ -65426,11 +65426,11 @@
   },
   {
     "word": "gravid",
-    "meaning": "懷孕的",
+    "meaning": "懷孕的；懷卵的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The cow is gravid. 這頭牛懷孕了。",
-      "The surface seems gravid. 這個特徵和懷孕有關。"
+      "The gravid female sought a place to lay her eggs. 那隻懷卵的雌性動物尋找產卵的地方。",
+      "The gravid uterus was examined during the scan. 掃描時檢查了妊娠子宮。"
     ],
     "difficultyLevel": 6
   },
@@ -65532,11 +65532,11 @@
   },
   {
     "word": "gravimetric",
-    "meaning": "重量分析的",
+    "meaning": "重量分析的；重力測量的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gravimetric. 這個物品呈現重量分析特徵。",
-      "The surface seems gravimetric. 這個特徵和重量分析有關。"
+      "The chemist used a gravimetric method to measure the sample. 化學家使用重量分析法測量樣本。",
+      "Gravimetric analysis requires accurate weighing. 重量分析需要精確稱重。"
     ],
     "difficultyLevel": 6
   },
@@ -65643,11 +65643,11 @@
   },
   {
     "word": "gravitational",
-    "meaning": "引力的",
+    "meaning": "引力的；重力的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gravitational. 這個物品呈現引力特徵。",
-      "The surface seems gravitational. 這個特徵和引力有關。"
+      "The moon's gravitational pull affects the tides. 月球的引力會影響潮汐。",
+      "The satellite escaped Earth's gravitational field. 那顆衛星脫離了地球的引力場。"
     ],
     "difficultyLevel": 5
   },
@@ -65705,18 +65705,18 @@
     "meaning": "凹版印刷",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gravure nearby. 我在附近看到凹版印刷。",
-      "I noticed the gravure nearby. 我注意到附近有個凹版印刷。"
+      "The magazine's illustrations were produced by gravure. 那本雜誌的插圖採用凹版印刷製作。",
+      "The printer specializes in gravure. 那家印刷廠專門從事凹版印刷。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "gravy",
-    "meaning": "肉汁",
+    "meaning": "肉汁；肉汁醬",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gravy nearby. 我在附近看到肉汁。",
-      "I noticed the gravy nearby. 我注意到附近有個肉汁。"
+      "She poured gravy over the mashed potatoes. 她把肉汁醬淋在馬鈴薯泥上。",
+      "The roast was served with hot gravy. 那份烤肉配上了熱肉汁醬。"
     ],
     "audienceTags": [
       "general"
@@ -65842,11 +65842,11 @@
   },
   {
     "word": "grayish",
-    "meaning": "微灰色的",
+    "meaning": "略帶灰色的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grayish. 這個物品呈現微灰色特徵。",
-      "The surface seems grayish. 這個特徵和微灰色有關。"
+      "The sky had a grayish tint. 天空略帶灰色。",
+      "A grayish stain appeared on the wall. 牆上出現了一塊略帶灰色的汙漬。"
     ],
     "difficultyLevel": 5
   },
@@ -65954,11 +65954,11 @@
   },
   {
     "word": "graywacke",
-    "meaning": "硬砂岩",
+    "meaning": "雜砂岩；硬砂岩",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the graywacke nearby. 我在附近看到硬砂岩。",
-      "I noticed the graywacke nearby. 我注意到附近有個硬砂岩。"
+      "The cliff contains layers of graywacke. 那面懸崖含有雜砂岩層。",
+      "The geologist collected a graywacke sample. 地質學家採集了一塊雜砂岩樣本。"
     ],
     "difficultyLevel": 6
   },
@@ -66042,11 +66042,11 @@
   },
   {
     "word": "grazier",
-    "meaning": "放牧者",
+    "meaning": "放牧者；牧場經營者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grazier is busy. 那位牧主很忙。",
-      "I noticed the grazier nearby. 我今天又遇到一位放牧者。"
+      "The grazier moved the cattle to fresh pasture. 牧場經營者把牛群移到新的牧草地。",
+      "A local grazier supplied beef to the market. 一位本地牧場經營者向市場供應牛肉。"
     ],
     "difficultyLevel": 6
   },
@@ -66098,11 +66098,11 @@
   },
   {
     "word": "grease",
-    "meaning": "油脂",
+    "meaning": "油脂；潤滑脂",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grease nearby. 我在附近看到油脂。",
-      "I noticed the grease nearby. 我注意到附近有個油脂。"
+      "Grease covered the kitchen wall. 廚房牆上沾滿了油脂。",
+      "The mechanic applied grease to the gears. 技師在齒輪上塗了潤滑脂。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -66133,8 +66133,8 @@
     "meaning": "塗了油的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is greased. 這個物品呈現塗了油特徵。",
-      "The surface seems greased. 這個特徵和塗了油有關。"
+      "Place the dough on a greased baking tray. 把麵糰放在塗了油的烤盤上。",
+      "The greased hinges no longer squeaked. 塗了油的鉸鏈不再吱吱作響。"
     ],
     "difficultyLevel": 5
   },
@@ -66238,11 +66238,11 @@
   },
   {
     "word": "greasiness",
-    "meaning": "油膩",
+    "meaning": "油膩；油膩感",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greasiness nearby. 我在附近看到油膩。",
-      "I noticed the greasiness nearby. 我注意到附近有個油膩。"
+      "She disliked the greasiness of the fried food. 她不喜歡炸物的油膩感。",
+      "Blotting paper reduced the greasiness of his skin. 吸油面紙減少了他皮膚的油膩感。"
     ],
     "difficultyLevel": 6
   },
@@ -66258,11 +66258,11 @@
   },
   {
     "word": "greasy",
-    "meaning": "油膩的",
+    "meaning": "油膩的；沾滿油脂的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is greasy. 這個物品呈現油膩特徵。",
-      "The surface seems greasy. 這個特徵和油膩有關。"
+      "The fried chicken was too greasy. 那份炸雞太油膩了。",
+      "He wiped his greasy hands on a rag. 他用一塊抹布擦掉手上的油。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -66275,11 +66275,11 @@
   },
   {
     "word": "great",
-    "meaning": "偉大的",
+    "meaning": "偉大的；很棒的；巨大的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is great. 這個物品呈現偉大特徵。",
-      "The surface seems great. 這個特徵和偉大有關。"
+      "She is a great scientist. 她是一位偉大的科學家。",
+      "We had a great time at the beach. 我們在海邊玩得很開心。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -66487,11 +66487,11 @@
   },
   {
     "word": "grebe",
-    "meaning": "鸊鷉",
+    "meaning": "鸊鷉；一種善於潛水的水鳥",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grebe is diving. 鸊鷉正在下潛。",
-      "I noticed the grebe nearby. 我注意到附近有個鸊鷉。"
+      "A grebe dived beneath the lake's surface. 一隻鸊鷉潛入湖面下。",
+      "The grebe carried its chicks on its back. 那隻鸊鷉把幼鳥載在背上。"
     ],
     "difficultyLevel": 6
   },
@@ -66523,11 +66523,11 @@
   },
   {
     "word": "Grecian",
-    "meaning": "希臘的",
+    "meaning": "古希臘的；希臘風格的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is Grecian. 這個物品呈現希臘特徵。",
-      "The surface seems Grecian. 這個特徵和希臘有關。"
+      "The building has Grecian columns. 那棟建築有希臘式柱子。",
+      "She wore a Grecian gown to the ceremony. 她穿著希臘風格的長禮服出席典禮。"
     ],
     "difficultyLevel": 5
   },
@@ -66700,11 +66700,11 @@
   },
   {
     "word": "greedy",
-    "meaning": "貪婪的",
+    "meaning": "貪婪的；貪吃的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is greedy. 這個物品呈現貪婪特徵。",
-      "The surface seems greedy. 這個特徵和貪婪有關。"
+      "The greedy landlord kept raising the rent. 那個貪婪的房東不斷調漲房租。",
+      "Don't be greedy; leave some cake for the others. 別貪吃；留點蛋糕給其他人。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -66864,8 +66864,8 @@
     "meaning": "綠色的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is green. 這個物品呈現綠色特徵。",
-      "The surface seems green. 這個特徵和綠色有關。"
+      "She wore a green coat. 她穿了一件綠色外套。",
+      "The leaves turn green in spring. 葉子在春天變綠。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -66919,11 +66919,11 @@
   },
   {
     "word": "greenback",
-    "meaning": "美鈔",
+    "meaning": "美鈔；美元紙幣",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greenback nearby. 我在附近看到美鈔。",
-      "I noticed the greenback nearby. 我注意到附近有個美鈔。"
+      "He tucked a greenback into his wallet. 他把一張美鈔塞進皮夾。",
+      "The old greenback was badly creased. 那張舊美鈔皺得很厲害。"
     ],
     "difficultyLevel": 5
   },
@@ -66968,11 +66968,11 @@
   },
   {
     "word": "greenbelt",
-    "meaning": "綠帶",
+    "meaning": "綠帶；都市周邊限制開發的綠地",
     "partOfSpeech": "noun",
     "sentences": [
-      "The city has a greenbelt. 城市有一圈綠帶。",
-      "I noticed the greenbelt nearby. 我注意到附近有個綠帶。"
+      "The city protected its greenbelt from development. 那座城市保護綠帶，避免遭到開發。",
+      "A footpath runs through the greenbelt. 一條步道穿過那片綠帶。"
     ],
     "difficultyLevel": 5
   },
@@ -67046,11 +67046,11 @@
   },
   {
     "word": "greenery",
-    "meaning": "綠色植物",
+    "meaning": "綠色植物；綠意",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greenery nearby. 我在附近看到綠色植物。",
-      "I noticed the greenery nearby. 我注意到附近有個綠色植物。"
+      "The balcony was full of greenery. 陽台上滿是綠色植物。",
+      "They added greenery to the wedding decorations. 他們在婚禮布置中加入了綠色植物。"
     ],
     "difficultyLevel": 4
   },
@@ -67089,11 +67089,11 @@
   },
   {
     "word": "greenfinch",
-    "meaning": "金翅雀",
+    "meaning": "綠雀；一種雀科鳥類",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greenfinch nearby. 我在附近看到金翅雀。",
-      "I noticed the greenfinch nearby. 我注意到附近有個金翅雀。"
+      "A greenfinch perched on the feeder. 一隻綠雀停在餵鳥器上。",
+      "We heard a greenfinch singing in the hedge. 我們聽到一隻綠雀在樹籬裡鳴唱。"
     ],
     "difficultyLevel": 6
   },
@@ -67109,11 +67109,11 @@
   },
   {
     "word": "greengage",
-    "meaning": "青李",
+    "meaning": "青李；一種綠色果實的李子",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greengage nearby. 我在附近看到青李。",
-      "I noticed the greengage nearby. 我注意到附近有個青李。"
+      "She picked a ripe greengage from the tree. 她從樹上摘下一顆成熟的青李。",
+      "The greengage tasted sweet and juicy. 那顆青李吃起來香甜多汁。"
     ],
     "difficultyLevel": 6
   },
@@ -67132,11 +67132,11 @@
   },
   {
     "word": "greengrocer",
-    "meaning": "菜商",
+    "meaning": "蔬果商",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a greengrocer today. 我今天遇到一位菜商。",
-      "I noticed the greengrocer nearby. 我今天又遇到一位菜商。"
+      "The greengrocer sells fresh local vegetables. 那位蔬果商販售新鮮的本地蔬菜。",
+      "I bought apples from the greengrocer. 我向那位蔬果商買了蘋果。"
     ],
     "difficultyLevel": 5
   },
@@ -67237,11 +67237,11 @@
   },
   {
     "word": "greenhorn",
-    "meaning": "生手",
+    "meaning": "新手；生手",
     "partOfSpeech": "noun",
     "sentences": [
-      "He is a greenhorn. 他是個生手。",
-      "I noticed the greenhorn nearby. 我注意到附近有個生手。"
+      "As a greenhorn, I made several mistakes. 身為新手，我犯了幾個錯誤。",
+      "The experienced sailor helped the greenhorn learn the ropes. 那位經驗豐富的水手教新手學習船上的工作。"
     ],
     "difficultyLevel": 6
   },
@@ -67263,8 +67263,8 @@
     "meaning": "溫室",
     "partOfSpeech": "noun",
     "sentences": [
-      "Grow plants in a greenhouse. 在溫室裡種植物。",
-      "I noticed the greenhouse nearby. 我注意到附近有個溫室。"
+      "We grow tomatoes in a greenhouse. 我們在溫室裡種番茄。",
+      "The greenhouse keeps the plants warm in winter. 那座溫室讓植物在冬天保持溫暖。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -67300,8 +67300,8 @@
     "meaning": "帶綠色的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is greenish. 這個物品呈現帶綠色特徵。",
-      "The surface seems greenish. 這個特徵和帶綠色有關。"
+      "The pond had a greenish surface. 池塘的水面帶著綠色。",
+      "She wore a greenish scarf. 她戴了一條帶綠色的圍巾。"
     ],
     "difficultyLevel": 4
   },
@@ -67471,11 +67471,11 @@
   },
   {
     "word": "greenness",
-    "meaning": "綠色",
+    "meaning": "綠色；綠意",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greenness nearby. 我在附近看到綠色。",
-      "I noticed the greenness nearby. 我注意到附近有個綠色。"
+      "Rain restored the greenness of the lawn. 雨水讓草坪恢復綠意。",
+      "The greenness of the leaves surprised us. 葉子的翠綠讓我們驚訝。"
     ],
     "difficultyLevel": 5
   },
@@ -67504,21 +67504,21 @@
   },
   {
     "word": "greenroom",
-    "meaning": "休息室",
+    "meaning": "演員休息室",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wait in the greenroom. 在休息室等候。",
-      "I noticed the greenroom nearby. 我注意到附近有個休息室。"
+      "The actors waited in the greenroom. 演員們在休息室裡等候。",
+      "Coffee was served in the greenroom before the show. 演出前，演員休息室裡提供了咖啡。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "greens",
-    "meaning": "蔬菜",
+    "meaning": "綠葉蔬菜",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greens nearby. 我在附近看到蔬菜。",
-      "I noticed the greens nearby. 我注意到附近有個蔬菜。"
+      "Eat more leafy greens with your meals. 吃飯時多吃一些綠葉蔬菜。",
+      "She washed the greens before cooking them. 她烹煮前先洗了那些綠葉蔬菜。"
     ],
     "difficultyLevel": 2
   },
@@ -67646,11 +67646,11 @@
   },
   {
     "word": "greensward",
-    "meaning": "草地",
+    "meaning": "青草地；草坪",
     "partOfSpeech": "noun",
     "sentences": [
-      "Sit on the greensward. 坐在草地上。",
-      "I noticed the greensward nearby. 我注意到附近有個草地。"
+      "We rested on the greensward beside the river. 我們在河邊的青草地上休息。",
+      "The children ran across the greensward. 孩子們跑過那片青草地。"
     ],
     "difficultyLevel": 6
   },
@@ -67754,11 +67754,11 @@
   },
   {
     "word": "greenwood",
-    "meaning": "綠林",
+    "meaning": "綠林；枝葉茂盛的森林",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the greenwood nearby. 我在附近看到綠林。",
-      "I noticed the greenwood nearby. 我注意到附近有個綠林。"
+      "The path led into the greenwood. 那條小徑通向綠林。",
+      "Birds sang in the greenwood at dawn. 黎明時鳥兒在綠林中鳴唱。"
     ],
     "audienceTags": [
       "general"
@@ -67817,11 +67817,11 @@
   },
   {
     "word": "greeter",
-    "meaning": "接待員",
+    "meaning": "迎賓員；接待員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The greeter is kind. 接待員很友善。",
-      "I noticed the greeter nearby. 我今天又遇到一位接待員。"
+      "The greeter welcomed us at the entrance. 迎賓員在入口歡迎我們。",
+      "A friendly greeter showed us to our seats. 一位友善的接待員帶我們入座。"
     ],
     "difficultyLevel": 5
   },
@@ -68113,11 +68113,11 @@
   },
   {
     "word": "gregarious",
-    "meaning": "愛社交的",
+    "meaning": "愛社交的；群居的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gregarious. 這個物品呈現愛社交特徵。",
-      "The surface seems gregarious. 這個特徵和愛社交有關。"
+      "My gregarious sister makes friends easily. 我那愛社交的姊姊很容易交到朋友。",
+      "These gregarious birds gather in large flocks. 這些群居鳥類會聚成大群。"
     ],
     "difficultyLevel": 5
   },
@@ -68346,11 +68346,11 @@
   },
   {
     "word": "gremlin",
-    "meaning": "小妖精",
+    "meaning": "小妖精；引起故障的問題（幽默用法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gremlin nearby. 我在附近看到小妖精。",
-      "I noticed the gremlin nearby. 我注意到附近有個小妖精。"
+      "A gremlin in the software caused the screen to freeze. 軟體裡的一個小問題導致螢幕當機。",
+      "The story features a mischievous gremlin. 那個故事裡有一個淘氣的小妖精。"
     ],
     "difficultyLevel": 5
   },
@@ -68369,8 +68369,8 @@
     "meaning": "手榴彈",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grenade nearby. 我在附近看到手榴彈。",
-      "I noticed the grenade nearby. 我注意到附近有個手榴彈。"
+      "The soldier threw a grenade behind the wall. 那名士兵把一枚手榴彈扔到牆後。",
+      "The unexploded grenade was removed by specialists. 那枚未爆手榴彈由專家移走了。"
     ],
     "audienceTags": [
       "general"
@@ -68394,8 +68394,8 @@
     "meaning": "擲彈兵",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a grenadier today. 我今天遇到一位擲彈兵。",
-      "I noticed the grenadier nearby. 我今天又遇到一位擲彈兵。"
+      "The grenadier advanced with the infantry. 那名擲彈兵與步兵一同前進。",
+      "A grenadier stood guard beside the cannon. 一名擲彈兵在火炮旁站崗。"
     ],
     "difficultyLevel": 6
   },
@@ -68453,11 +68453,11 @@
   },
   {
     "word": "grenadine",
-    "meaning": "紅石榴糖漿",
+    "meaning": "石榴糖漿",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grenadine nearby. 我在附近看到紅石榴糖漿。",
-      "I noticed the grenadine nearby. 我注意到附近有個紅石榴糖漿。"
+      "The bartender added grenadine to the drink. 調酒師在飲料中加入石榴糖漿。",
+      "Grenadine gave the cocktail a red color. 石榴糖漿讓雞尾酒呈現紅色。"
     ],
     "difficultyLevel": 6
   },
@@ -68677,11 +68677,11 @@
   },
   {
     "word": "greyish",
-    "meaning": "微灰色的",
+    "meaning": "略帶灰色的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is greyish. 這個物品呈現微灰色特徵。",
-      "The surface seems greyish. 這個特徵和微灰色有關。"
+      "The water looked greyish under the clouds. 雲層下的水看起來略帶灰色。",
+      "She chose a greyish blue for the walls. 她選了略帶灰色的藍色來漆牆。"
     ],
     "difficultyLevel": 4
   },
@@ -68746,11 +68746,11 @@
   },
   {
     "word": "grid",
-    "meaning": "網格",
+    "meaning": "網格；電力網",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grid nearby. 我在附近看到網格。",
-      "I noticed the grid nearby. 我注意到附近有個網格。"
+      "Draw the pattern on a square grid. 在方形網格上畫出圖案。",
+      "The solar panels supply electricity to the grid. 那些太陽能板向電力網供電。"
     ],
     "audienceTags": [
       "general"
@@ -68758,11 +68758,11 @@
   },
   {
     "word": "griddle",
-    "meaning": "煎鍋",
+    "meaning": "平底煎鍋；煎烤盤",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the griddle nearby. 我在附近看到煎鍋。",
-      "I noticed the griddle nearby. 我注意到附近有個煎鍋。"
+      "She cooked pancakes on the griddle. 她在平底煎鍋上做鬆餅。",
+      "Heat the griddle before adding the batter. 倒入麵糊前先把煎烤盤加熱。"
     ],
     "difficultyLevel": 5
   },
@@ -68830,11 +68830,11 @@
   },
   {
     "word": "gridlock",
-    "meaning": "僵局",
+    "meaning": "交通壅塞；僵局",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gridlock nearby. 我在附近看到僵局。",
-      "I noticed the gridlock nearby. 我注意到附近有個僵局。"
+      "The accident caused gridlock in the city center. 那場事故造成市中心交通壅塞。",
+      "Political gridlock delayed the budget vote. 政治僵局延誤了預算表決。"
     ],
     "difficultyLevel": 5
   },
@@ -68948,11 +68948,11 @@
   },
   {
     "word": "grievance",
-    "meaning": "抱怨",
+    "meaning": "不滿；申訴",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grievance nearby. 我在附近看到抱怨。",
-      "I noticed the grievance nearby. 我注意到附近有個抱怨。"
+      "She filed a grievance about unfair treatment. 她就不公平的待遇提出申訴。",
+      "The manager listened to each employee's grievance. 經理聽取了每位員工的不滿。"
     ],
     "examTags": [
       "toeic"
@@ -69060,11 +69060,11 @@
   },
   {
     "word": "grievous",
-    "meaning": "嚴重的",
+    "meaning": "嚴重的；令人悲痛的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grievous. 這個物品呈現嚴重特徵。",
-      "The surface seems grievous. 這個特徵和嚴重有關。"
+      "The crash caused grievous injuries. 那場車禍造成了嚴重傷害。",
+      "Losing his friend was a grievous blow. 失去朋友對他是沉痛的打擊。"
     ],
     "difficultyLevel": 6
   },
@@ -69155,11 +69155,11 @@
   },
   {
     "word": "griffin",
-    "meaning": "獅鷲",
+    "meaning": "獅鷲；鷹頭獅身的神話生物",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the griffin nearby. 我在附近看到獅鷲。",
-      "I noticed the griffin nearby. 我注意到附近有個獅鷲。"
+      "A stone griffin guarded the castle entrance. 一尊石雕獅鷲守著城堡入口。",
+      "The story describes a griffin with golden wings. 那個故事描寫一隻長著金色翅膀的獅鷲。"
     ],
     "audienceTags": [
       "general"
@@ -69411,8 +69411,8 @@
     "meaning": "烤架",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grill nearby. 我在附近看到烤架。",
-      "I noticed the grill nearby. 我注意到附近有個烤架。"
+      "Put the vegetables on the grill. 把蔬菜放到烤架上。",
+      "We cleaned the grill after the barbecue. 烤肉後，我們清洗了烤架。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -69453,11 +69453,11 @@
   },
   {
     "word": "grille",
-    "meaning": "柵欄",
+    "meaning": "格柵；護柵",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grille nearby. 我在附近看到柵欄。",
-      "I noticed the grille nearby. 我注意到附近有個柵欄。"
+      "The car's front grille was damaged. 那輛車的前格柵受損了。",
+      "Air flows through the metal grille. 空氣經由金屬格柵流通。"
     ],
     "difficultyLevel": 5
   },
@@ -69488,31 +69488,31 @@
   },
   {
     "word": "grilling",
-    "meaning": "燒烤",
+    "meaning": "燒烤；嚴厲盤問",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grilling was perfect. 燒烤做得很好。",
-      "I noticed the grilling nearby. 我注意到附近有個燒烤。"
+      "Grilling gives the meat a smoky flavor. 燒烤讓肉帶有煙燻風味。",
+      "The minister faced a grilling from reporters. 部長遭到記者嚴厲盤問。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "grillroom",
-    "meaning": "燒烤廳",
+    "meaning": "燒烤餐廳",
     "partOfSpeech": "noun",
     "sentences": [
-      "Eat in the grillroom. 在燒烤廳用餐。",
-      "I noticed the grillroom nearby. 我注意到附近有個燒烤廳。"
+      "We had dinner in the hotel's grillroom. 我們在飯店的燒烤餐廳吃晚餐。",
+      "The grillroom serves steaks and seafood. 那間燒烤餐廳供應牛排和海鮮。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "grills",
-    "meaning": "烤架",
+    "meaning": "烤架（grill 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Clean the metal grills. 清洗金屬烤架。",
-      "I noticed the grills nearby. 我注意到附近有個烤架。"
+      "The cooks cleaned the grills after service. 廚師們在營業結束後清洗了烤架。",
+      "Two grills stood beside the picnic area. 野餐區旁放著兩個烤架。"
     ],
     "difficultyLevel": 3
   },
@@ -69541,11 +69541,11 @@
   },
   {
     "word": "grim",
-    "meaning": "嚴肅的",
+    "meaning": "嚴肅的；令人沮喪的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grim. 這個物品呈現嚴肅特徵。",
-      "The surface seems grim. 這個特徵和嚴肅有關。"
+      "His grim expression worried me. 他嚴肅的表情讓我擔心。",
+      "The report paints a grim picture of the economy. 那份報告描繪出令人沮喪的經濟情況。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -69560,11 +69560,11 @@
   },
   {
     "word": "grimace",
-    "meaning": "鬼臉",
+    "meaning": "痛苦或厭惡的表情；鬼臉",
     "partOfSpeech": "noun",
     "sentences": [
-      "He made a grimace. 他做了個鬼臉。",
-      "I noticed the grimace nearby. 我今天又遇到一位鬼臉。"
+      "His face twisted into a grimace of pain. 他的臉因疼痛而扭曲。",
+      "She made a grimace after tasting the bitter medicine. 她嘗了苦藥後露出難受的表情。"
     ],
     "audienceTags": [
       "general"
@@ -69637,8 +69637,8 @@
     "meaning": "汙垢",
     "partOfSpeech": "noun",
     "sentences": [
-      "The wall has grime. 牆上有汙垢。",
-      "I noticed the grime nearby. 我注意到附近有個汙垢。"
+      "He scrubbed the grime off the tiles. 他刷掉了磁磚上的汙垢。",
+      "Years of grime covered the windows. 多年累積的汙垢覆蓋了窗戶。"
     ],
     "audienceTags": [
       "general"
@@ -69833,11 +69833,11 @@
   },
   {
     "word": "grimy",
-    "meaning": "汙穢的",
+    "meaning": "滿是汙垢的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grimy. 這個物品呈現汙穢特徵。",
-      "The surface seems grimy. 這個特徵和汙穢有關。"
+      "He washed his grimy hands before eating. 他吃飯前洗了滿是汙垢的手。",
+      "The grimy windows let in little light. 那些骯髒的窗戶透進的光很少。"
     ],
     "difficultyLevel": 5
   },
@@ -69906,8 +69906,8 @@
     "meaning": "可磨碎的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grindable. 這個物品呈現可磨碎特徵。",
-      "The surface seems grindable. 這個特徵和可磨碎有關。"
+      "The machine can process grindable materials. 那台機器能處理可磨碎的材料。",
+      "These dried spices are easily grindable. 這些乾燥香料很容易磨碎。"
     ],
     "difficultyLevel": 6
   },
@@ -69926,11 +69926,11 @@
   },
   {
     "word": "grinder",
-    "meaning": "磨床",
+    "meaning": "研磨機；磨床",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grinder nearby. 我在附近看到磨床。",
-      "I noticed the grinder nearby. 我注意到附近有個磨床。"
+      "The coffee grinder broke this morning. 咖啡研磨機今天早上壞了。",
+      "He shaped the metal with a grinder. 他用磨床將金屬磨成所需形狀。"
     ],
     "difficultyLevel": 4
   },
@@ -70072,21 +70072,21 @@
   },
   {
     "word": "grinner",
-    "meaning": "愛笑的人",
+    "meaning": "愛咧嘴笑的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "She is a grinner. 她是個愛笑的人。",
-      "I noticed the grinner nearby. 我今天又遇到一位愛笑的人。"
+      "The cheerful grinner greeted everyone at the door. 那個開朗、愛咧嘴笑的人在門口向每個人打招呼。",
+      "He was always a grinner in family photographs. 他在家庭照片裡總是咧嘴笑。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "grinning",
-    "meaning": "露齒笑的",
+    "meaning": "咧嘴笑的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grinning. 這個物品呈現露齒笑特徵。",
-      "The surface seems grinning. 這個特徵和露齒笑有關。"
+      "The grinning child held up his prize. 那個咧嘴笑的孩子舉起他的獎品。",
+      "A grinning face appeared at the window. 一張咧嘴笑的臉出現在窗邊。"
     ],
     "audienceTags": [
       "general"
@@ -70117,11 +70117,11 @@
   },
   {
     "word": "grins",
-    "meaning": "露齒笑",
+    "meaning": "咧嘴笑的表情（grin 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grins nearby. 我在附近看到露齒笑。",
-      "I noticed the grins nearby. 我注意到附近有個露齒笑。"
+      "Their broad grins showed how happy they were. 他們咧嘴大笑的表情顯示出他們有多開心。",
+      "The children exchanged mischievous grins. 孩子們交換了淘氣的笑容。"
     ],
     "difficultyLevel": 3
   },
@@ -70187,18 +70187,18 @@
     "meaning": "愛抱怨的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "Stop being a griper. 別再當個愛抱怨的人了。",
-      "I noticed the griper nearby. 我今天又遇到一位愛抱怨的人。"
+      "The griper found fault with every meal. 那個愛抱怨的人每一餐都挑毛病。",
+      "Even the office griper liked the new chairs. 就連辦公室裡那個愛抱怨的人也喜歡新椅子。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "gripes",
-    "meaning": "抱怨",
+    "meaning": "抱怨；不滿（gripe 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gripes nearby. 我在附近看到抱怨。",
-      "I noticed the gripes nearby. 我注意到附近有個抱怨。"
+      "The manager listened to the workers' gripes. 經理聽取了工人們的抱怨。",
+      "His main gripes concerned pay and working hours. 他的主要不滿與薪資和工時有關。"
     ],
     "difficultyLevel": 5
   },
@@ -70243,11 +70243,11 @@
   },
   {
     "word": "griping",
-    "meaning": "抱怨",
+    "meaning": "抱怨；發牢騷",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the griping nearby. 我在附近看到抱怨。",
-      "I noticed the griping nearby. 我注意到附近有個抱怨。"
+      "His endless griping spoiled the trip. 他沒完沒了的抱怨破壞了旅程。",
+      "There was much griping about the new rules. 大家對新規定抱怨連連。"
     ],
     "difficultyLevel": 6
   },
@@ -70335,11 +70335,11 @@
   },
   {
     "word": "gripper",
-    "meaning": "抓具",
+    "meaning": "夾持器；抓具",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gripper nearby. 我在附近看到抓具。",
-      "I noticed the gripper nearby. 我注意到附近有個抓具。"
+      "The robot's gripper picked up the box. 機器人的夾持器抓起了箱子。",
+      "The technician replaced the worn gripper. 技師更換了磨損的夾持器。"
     ],
     "difficultyLevel": 6
   },
@@ -70361,8 +70361,8 @@
     "meaning": "扣人心弦的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gripping. 這個物品呈現扣人心弦特徵。",
-      "The surface seems gripping. 這個特徵和扣人心弦有關。"
+      "The novel tells a gripping story. 這本小說講述一個扣人心弦的故事。",
+      "We watched a gripping match that lasted three hours. 我們看了一場持續三小時、扣人心弦的比賽。"
     ],
     "difficultyLevel": 5
   },
@@ -70427,11 +70427,11 @@
   },
   {
     "word": "grippy",
-    "meaning": "有抓地力的",
+    "meaning": "抓地力好的；不易滑的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The tires are grippy. 輪胎抓地力很好。",
-      "The surface seems grippy. 這個特徵和有抓地力有關。"
+      "These grippy shoes are useful on wet trails. 這些抓地力好的鞋子很適合溼滑步道。",
+      "The grippy handle stayed firm in my hand. 那個不易滑的握柄穩穩地握在我手中。"
     ],
     "difficultyLevel": 6
   },
@@ -70509,11 +70509,11 @@
   },
   {
     "word": "grisaille",
-    "meaning": "灰色畫",
+    "meaning": "灰色調繪畫；單色灰階畫法",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grisaille nearby. 我在附近看到灰色畫。",
-      "I noticed the grisaille nearby. 我注意到附近有個灰色畫。"
+      "The artist painted the portrait in grisaille. 那位畫家以灰階畫法畫了那幅肖像。",
+      "A grisaille decorated the chapel wall. 一幅灰色調畫作裝飾著小教堂的牆。"
     ],
     "difficultyLevel": 6
   },
@@ -70745,11 +70745,11 @@
   },
   {
     "word": "grist",
-    "meaning": "穀物",
+    "meaning": "待磨的穀物；可利用的素材",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grist nearby. 我在附近看到穀物。",
-      "I noticed the grist nearby. 我注意到附近有個穀物。"
+      "The miller ground the grist into flour. 磨坊工人把穀物磨成麵粉。",
+      "The scandal provided grist for the journalist's next article. 那樁醜聞為記者的下一篇文章提供了素材。"
     ],
     "difficultyLevel": 6
   },
@@ -70797,8 +70797,8 @@
     "meaning": "軟骨",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gristle nearby. 我在附近看到軟骨。",
-      "I noticed the gristle nearby. 我注意到附近有個軟骨。"
+      "There was a piece of gristle in the meat. 那塊肉裡有一片軟骨。",
+      "He cut the gristle away before cooking. 他在烹煮前把軟骨切掉了。"
     ],
     "difficultyLevel": 5
   },
@@ -70817,11 +70817,11 @@
   },
   {
     "word": "gristly",
-    "meaning": "多軟骨的",
+    "meaning": "多軟骨的；像軟骨的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gristly. 這個物品呈現多軟骨特徵。",
-      "The surface seems gristly. 這個特徵和多軟骨有關。"
+      "The steak was tough and gristly. 那塊牛排很硬，而且多軟骨。",
+      "She cut away the gristly part of the meat. 她切掉了肉裡多軟骨的部分。"
     ],
     "difficultyLevel": 6
   },
@@ -70876,11 +70876,11 @@
   },
   {
     "word": "grit",
-    "meaning": "砂礫",
+    "meaning": "砂礫；毅力",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grit nearby. 我在附近看到砂礫。",
-      "I noticed the grit nearby. 我注意到附近有個砂礫。"
+      "A piece of grit got into my shoe. 一粒砂礫跑進了我的鞋子。",
+      "She showed real grit during the difficult climb. 她在艱難的攀爬過程中展現了真正的毅力。"
     ],
     "audienceTags": [
       "general"
@@ -70950,11 +70950,11 @@
   },
   {
     "word": "grits",
-    "meaning": "粗麵粉",
+    "meaning": "玉米粗粒粥；玉米粗粒",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grits nearby. 我在附近看到粗麵粉。",
-      "I noticed the grits nearby. 我注意到附近有個粗麵粉。"
+      "She served grits with eggs for breakfast. 她早餐端上了玉米粗粒粥配蛋。",
+      "He stirred the grits as they cooked. 他一邊煮玉米粗粒粥，一邊攪拌。"
     ],
     "difficultyLevel": 5
   },
@@ -70996,11 +70996,11 @@
   },
   {
     "word": "gritter",
-    "meaning": "撒砂車",
+    "meaning": "道路撒砂車；撒鹽車",
     "partOfSpeech": "noun",
     "sentences": [
-      "The gritter is out. 撒砂車出動了。",
-      "I noticed the gritter nearby. 我注意到附近有個撒砂車。"
+      "A gritter treated the icy road. 一輛撒鹽車處理了結冰的道路。",
+      "The gritter went out before dawn. 那輛道路撒砂車在黎明前出動了。"
     ],
     "difficultyLevel": 6
   },
@@ -71016,11 +71016,11 @@
   },
   {
     "word": "grittiness",
-    "meaning": "堅毅",
+    "meaning": "砂粒感；堅毅",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grittiness nearby. 我在附近看到堅毅。",
-      "I noticed the grittiness nearby. 我注意到附近有個堅毅。"
+      "The grittiness of the sauce spoiled the dish. 醬汁的砂粒感破壞了那道菜的口感。",
+      "Her grittiness helped her overcome the setback. 她的堅毅幫助她克服了挫折。"
     ],
     "difficultyLevel": 6
   },
@@ -71049,11 +71049,11 @@
   },
   {
     "word": "gritty",
-    "meaning": "有砂礫的",
+    "meaning": "有砂礫的；堅毅的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gritty. 這個物品呈現有砂礫特徵。",
-      "The surface seems gritty. 這個特徵和有砂礫有關。"
+      "The spinach tasted gritty because it had not been washed well. 菠菜沒洗乾淨，吃起來有沙。",
+      "Her gritty performance helped the team win. 她堅毅的表現幫助球隊獲勝。"
     ],
     "audienceTags": [
       "general"
@@ -71123,11 +71123,11 @@
   },
   {
     "word": "grizzled",
-    "meaning": "花白的",
+    "meaning": "頭髮花白的；毛色灰白的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grizzled. 這個物品呈現花白特徵。",
-      "The surface seems grizzled. 這個特徵和花白有關。"
+      "A grizzled man opened the door. 一位頭髮花白的男人打開了門。",
+      "The old dog's grizzled muzzle showed its age. 那隻老狗灰白的口鼻部顯示了牠的年紀。"
     ],
     "difficultyLevel": 5
   },
@@ -71149,8 +71149,8 @@
     "meaning": "灰熊",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grizzly nearby. 我在附近看到灰熊。",
-      "I noticed the grizzly nearby. 我注意到附近有個灰熊。"
+      "A grizzly caught a fish in the river. 一隻灰熊在河裡抓到了一條魚。",
+      "We watched the grizzly from a safe distance. 我們從安全的距離觀察那隻灰熊。"
     ],
     "audienceTags": [
       "general"
@@ -71245,11 +71245,11 @@
   },
   {
     "word": "groats",
-    "meaning": "穀粒",
+    "meaning": "去殼穀粒；粗粒穀物",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groats nearby. 我在附近看到穀粒。",
-      "I noticed the groats nearby. 我注意到附近有個穀粒。"
+      "She cooked oat groats for breakfast. 她早餐煮了去殼燕麥粒。",
+      "The groats softened after soaking overnight. 那些穀粒浸泡一夜後變軟了。"
     ],
     "difficultyLevel": 6
   },
@@ -71358,11 +71358,11 @@
   },
   {
     "word": "grocery",
-    "meaning": "雜貨店",
+    "meaning": "雜貨店；食品雜貨",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grocery is open. 雜貨店開著。",
-      "I noticed the grocery nearby. 我注意到附近有個雜貨店。"
+      "The grocery on the corner sells fresh bread. 轉角那間雜貨店販售新鮮麵包。",
+      "She works in a grocery store near her home. 她在住家附近的一間雜貨店工作。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -71414,11 +71414,11 @@
   },
   {
     "word": "grog",
-    "meaning": "烈酒",
+    "meaning": "摻水的烈酒；酒（口語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grog nearby. 我在附近看到烈酒。",
-      "I noticed the grog nearby. 我注意到附近有個烈酒。"
+      "The sailors received a ration of grog. 水手們領到一份摻水的烈酒。",
+      "He drank a mug of grog by the fire. 他在火邊喝了一杯酒。"
     ],
     "difficultyLevel": 6
   },
@@ -71454,11 +71454,11 @@
   },
   {
     "word": "grogginess",
-    "meaning": "昏沉",
+    "meaning": "昏沉；頭腦不清醒",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grogginess nearby. 我在附近看到昏沉。",
-      "I noticed the grogginess nearby. 我注意到附近有個昏沉。"
+      "The grogginess faded after a cup of tea. 喝了一杯茶後，昏沉感消退了。",
+      "Lack of sleep caused her morning grogginess. 睡眠不足讓她早上頭腦昏沉。"
     ],
     "difficultyLevel": 6
   },
@@ -71474,11 +71474,11 @@
   },
   {
     "word": "groggy",
-    "meaning": "昏沈的",
+    "meaning": "昏昏沉沉的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Feel a bit groggy. 感到有點昏沉。",
-      "The surface seems groggy. 這個特徵和昏沈有關。"
+      "I felt groggy after waking from a long nap. 睡了很久的午覺醒來後，我覺得昏昏沉沉。",
+      "The medicine left him groggy all morning. 那種藥讓他整個早上都昏昏沉沉。"
     ],
     "difficultyLevel": 5
   },
@@ -71510,8 +71510,8 @@
     "meaning": "腹股溝",
     "partOfSpeech": "noun",
     "sentences": [
-      "Injury to the groin. 腹股溝受傷。",
-      "I noticed the groin nearby. 我注意到附近有個腹股溝。"
+      "The runner injured his groin during training. 那名跑者訓練時傷到了腹股溝。",
+      "He felt a sharp pain in his groin. 他感到腹股溝一陣劇痛。"
     ],
     "audienceTags": [
       "general"
@@ -71627,11 +71627,11 @@
   },
   {
     "word": "grommet",
-    "meaning": "金屬環",
+    "meaning": "護孔環；金屬孔環",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grommet nearby. 我在附近看到金屬環。",
-      "I noticed the grommet nearby. 我注意到附近有個金屬環。"
+      "A rubber grommet protects the cable from the sharp edge. 一個橡膠護孔環保護電線，避免被銳利邊緣割傷。",
+      "The rope passes through a metal grommet in the canvas. 繩子穿過帆布上的金屬孔環。"
     ],
     "difficultyLevel": 6
   },
@@ -71647,11 +71647,11 @@
   },
   {
     "word": "groom",
-    "meaning": "新郎",
+    "meaning": "新郎；馬夫",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groom nearby. 我在附近看到新郎。",
-      "I noticed the groom nearby. 我注意到附近有個新郎。"
+      "The groom waited for the bride at the church. 新郎在教堂等候新娘。",
+      "The groom brushed the horse before the ride. 馬夫在騎乘前替馬刷毛。"
     ],
     "difficultyLevel": 3
   },
@@ -71667,21 +71667,21 @@
   },
   {
     "word": "groomer",
-    "meaning": "美容師",
+    "meaning": "寵物美容師",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a groomer today. 我今天遇到一位美容師。",
-      "I noticed the groomer nearby. 我今天又遇到一位美容師。"
+      "The groomer trimmed the dog's fur. 寵物美容師修剪了狗的毛。",
+      "We took our cat to a professional groomer. 我們帶貓去找專業寵物美容師。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "grooming",
-    "meaning": "美容",
+    "meaning": "梳洗；整理儀容；寵物美容",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grooming nearby. 我在附近看到美容。",
-      "I noticed the grooming nearby. 我注意到附近有個美容。"
+      "Regular grooming keeps the dog's coat clean. 定期梳洗能讓狗的毛保持乾淨。",
+      "He spent an hour on personal grooming before the interview. 他在面試前花了一小時整理儀容。"
     ],
     "difficultyLevel": 4
   },
@@ -71752,8 +71752,8 @@
     "meaning": "男儐相",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groomsman nearby. 我在附近看到男儐相。",
-      "I noticed the groomsman nearby. 我注意到附近有個男儐相。"
+      "His brother served as a groomsman. 他的弟弟擔任男儐相。",
+      "The groomsman helped the guests find their seats. 那位男儐相幫賓客找到座位。"
     ],
     "difficultyLevel": 5
   },
@@ -71824,8 +71824,8 @@
     "meaning": "溝槽",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groove nearby. 我在附近看到溝槽。",
-      "I noticed the groove nearby. 我注意到附近有個溝槽。"
+      "The wheel fits into this groove. 這個輪子嵌入這道溝槽。",
+      "Water collected in a groove in the rock. 水積在岩石的一道溝槽裡。"
     ],
     "audienceTags": [
       "general"
@@ -71833,21 +71833,21 @@
   },
   {
     "word": "grooved",
-    "meaning": "有槽的",
+    "meaning": "有溝槽的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grooved. 這個物品呈現有槽特徵。",
-      "The surface seems grooved. 這個特徵和有槽有關。"
+      "The grooved surface prevents slipping. 有溝槽的表面能防止滑動。",
+      "She fitted the panel into the grooved frame. 她把面板嵌入有溝槽的框架裡。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "grooveless",
-    "meaning": "無槽的",
+    "meaning": "無溝槽的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grooveless. 這個物品呈現無槽特徵。",
-      "The surface seems grooveless. 這個特徵和無槽有關。"
+      "The grooveless surface was smooth to the touch. 那個無溝槽的表面摸起來很光滑。",
+      "The technician selected a grooveless roller. 技師選了一個無溝槽的滾輪。"
     ],
     "difficultyLevel": 6
   },
@@ -71889,11 +71889,11 @@
   },
   {
     "word": "grooviness",
-    "meaning": "時髦",
+    "meaning": "時髦；酷勁（口語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grooviness nearby. 我在附近看到時髦。",
-      "I noticed the grooviness nearby. 我注意到附近有個時髦。"
+      "The grooviness of the music filled the room with energy. 音樂的酷勁讓房間充滿活力。",
+      "She admired the grooviness of his retro outfit. 她很欣賞他那套復古服裝的時髦感。"
     ],
     "difficultyLevel": 6
   },
@@ -71909,11 +71909,11 @@
   },
   {
     "word": "groovy",
-    "meaning": "時髦的",
+    "meaning": "很棒的；時髦的（口語）",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is groovy. 這個物品呈現時髦特徵。",
-      "The surface seems groovy. 這個特徵和時髦有關。"
+      "That band has a groovy sound. 那個樂團的音樂很棒。",
+      "He wore a groovy jacket to the party. 他穿了一件時髦的外套去參加派對。"
     ],
     "audienceTags": [
       "general"
@@ -71941,11 +71941,11 @@
   },
   {
     "word": "groping",
-    "meaning": "摸索",
+    "meaning": "摸索；摸索著尋找",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groping nearby. 我在附近看到摸索。",
-      "I noticed the groping nearby. 我注意到附近有個摸索。"
+      "After some groping in the dark, he found the switch. 在黑暗中摸索了一陣子後，他找到了開關。",
+      "Their groping for a solution took several weeks. 他們摸索了幾週才找出解決方法。"
     ],
     "difficultyLevel": 5
   },
@@ -72072,11 +72072,11 @@
   },
   {
     "word": "gross",
-    "meaning": "總共的",
+    "meaning": "總額的；令人噁心的；嚴重的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gross. 這個物品呈現總共特徵。",
-      "The surface seems gross. 這個特徵和總共有關。"
+      "Her gross income includes bonuses. 她的收入總額包含獎金。",
+      "Leaving food to rot is gross. 任由食物腐爛很噁心。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -72326,11 +72326,11 @@
   },
   {
     "word": "grotesque",
-    "meaning": "怪誕的",
+    "meaning": "怪誕的；奇形怪狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grotesque. 這個物品呈現怪誕特徵。",
-      "The surface seems grotesque. 這個特徵和怪誕有關。"
+      "The mask had a grotesque face. 那個面具的臉奇形怪狀。",
+      "The story describes a grotesque creature in the cellar. 那個故事描寫地窖裡一隻怪誕的生物。"
     ],
     "audienceTags": [
       "general"
@@ -72348,11 +72348,11 @@
   },
   {
     "word": "grotesqueness",
-    "meaning": "怪誕",
+    "meaning": "怪誕；奇形怪狀",
     "partOfSpeech": "noun",
     "sentences": [
-      "The grotesqueness was odd. 這種怪誕很奇特。",
-      "I noticed the grotesqueness nearby. 我注意到附近有個怪誕。"
+      "The grotesqueness of the mask frightened the children. 面具的怪誕模樣嚇到了孩子們。",
+      "The painting's grotesqueness made it unforgettable. 那幅畫的怪誕風格讓人難以忘懷。"
     ],
     "difficultyLevel": 6
   },
@@ -72498,11 +72498,11 @@
   },
   {
     "word": "grotty",
-    "meaning": "破爛的",
+    "meaning": "骯髒破舊的；令人不快的（英式口語）",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grotty. 這個物品呈現破爛特徵。",
-      "The surface seems grotty. 這個特徵和破爛有關。"
+      "We stayed in a grotty little hotel. 我們住在一間骯髒破舊的小旅館。",
+      "He felt grotty after the long flight. 長途飛行後，他覺得很不舒服。"
     ],
     "difficultyLevel": 6
   },
@@ -72599,11 +72599,11 @@
   },
   {
     "word": "ground",
-    "meaning": "地面",
+    "meaning": "地面；土地",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the ground nearby. 我在附近看到地面。",
-      "I noticed the ground nearby. 我注意到附近有個地面。"
+      "The child sat on the ground. 那個孩子坐在地上。",
+      "The ground was too dry for planting. 那片土地太乾，不適合種植。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -72677,11 +72677,11 @@
   },
   {
     "word": "groundbreaker",
-    "meaning": "開拓者",
+    "meaning": "開拓者；先驅",
     "partOfSpeech": "noun",
     "sentences": [
-      "He is a groundbreaker. 他是個開拓者。",
-      "I noticed the groundbreaker nearby. 我今天又遇到一位開拓者。"
+      "She was a groundbreaker in computer science. 她是電腦科學領域的先驅。",
+      "The award honored a groundbreaker in modern dance. 那個獎表揚了一位現代舞的開拓者。"
     ],
     "difficultyLevel": 5
   },
@@ -72690,8 +72690,8 @@
     "meaning": "開創性的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is groundbreaking. 這個物品呈現開創性特徵。",
-      "The surface seems groundbreaking. 這個特徵和開創性有關。"
+      "The team published groundbreaking research. 那個團隊發表了開創性的研究。",
+      "Her groundbreaking invention changed medical care. 她開創性的發明改變了醫療照護。"
     ],
     "difficultyLevel": 4
   },
@@ -72756,8 +72756,8 @@
     "meaning": "滾地球",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grounder nearby. 我在附近看到滾地球。",
-      "I noticed the grounder nearby. 我注意到附近有個滾地球。"
+      "The shortstop caught the grounder. 游擊手接住了滾地球。",
+      "He hit a grounder toward third base. 他擊出一記朝三壘方向的滾地球。"
     ],
     "difficultyLevel": 5
   },
@@ -72786,11 +72786,11 @@
   },
   {
     "word": "grounding",
-    "meaning": "基礎",
+    "meaning": "基礎知識；基礎訓練；接地",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grounding nearby. 我在附近看到基礎。",
-      "I noticed the grounding nearby. 我注意到附近有個基礎。"
+      "The course provides a grounding in mathematics. 這門課提供數學基礎訓練。",
+      "Proper grounding helps prevent electric shocks. 正確接地有助於防止觸電。"
     ],
     "difficultyLevel": 5
   },
@@ -72799,8 +72799,8 @@
     "meaning": "無根據的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is groundless. 這個物品呈現無根據特徵。",
-      "The surface seems groundless. 這個特徵和無根據有關。"
+      "The accusation was groundless. 那項指控毫無根據。",
+      "His fears proved groundless when the test results arrived. 檢驗結果出來後，證明他的擔憂毫無根據。"
     ],
     "difficultyLevel": 5
   },
@@ -72898,8 +72898,8 @@
     "meaning": "花生",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groundnut nearby. 我在附近看到花生。",
-      "I noticed the groundnut nearby. 我注意到附近有個花生。"
+      "The farmer planted groundnut seeds. 那位農民種了花生種子。",
+      "Groundnut oil is used in cooking. 花生油用於烹飪。"
     ],
     "difficultyLevel": 5
   },
@@ -72940,11 +72940,11 @@
   },
   {
     "word": "groundsheet",
-    "meaning": "防潮布",
+    "meaning": "防潮地布",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groundsheet nearby. 我在附近看到防潮布。",
-      "I noticed the groundsheet nearby. 我注意到附近有個防潮布。"
+      "We spread a groundsheet beneath the tent. 我們在帳篷下面鋪了一張防潮地布。",
+      "The groundsheet kept our sleeping bags dry. 防潮地布讓我們的睡袋保持乾燥。"
     ],
     "difficultyLevel": 5
   },
@@ -72960,11 +72960,11 @@
   },
   {
     "word": "groundskeeper",
-    "meaning": "管理員",
+    "meaning": "場地管理員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The groundskeeper is out. 場地管理員出去了。",
-      "I noticed the groundskeeper nearby. 我今天又遇到一位管理員。"
+      "The groundskeeper mowed the lawn. 場地管理員修剪了草坪。",
+      "The groundskeeper checked the field before the match. 場地管理員在比賽前檢查了場地。"
     ],
     "difficultyLevel": 5
   },
@@ -73003,11 +73003,11 @@
   },
   {
     "word": "groundswell",
-    "meaning": "高漲",
+    "meaning": "情緒或支持的高漲；長浪",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groundswell nearby. 我在附近看到高漲。",
-      "I noticed the groundswell nearby. 我注意到附近有個高漲。"
+      "A groundswell of support followed her speech. 她的演說引發了高漲的支持。",
+      "The petition reflected a groundswell of public anger. 那份請願書反映了民眾怒氣高漲。"
     ],
     "difficultyLevel": 6
   },
@@ -73026,8 +73026,8 @@
     "meaning": "地下水",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groundwater nearby. 我在附近看到地下水。",
-      "I noticed the groundwater nearby. 我注意到附近有個地下水。"
+      "The village relies on groundwater for drinking water. 那個村莊依靠地下水取得飲用水。",
+      "Pollution has contaminated the groundwater. 汙染已使地下水受到汙染。"
     ],
     "difficultyLevel": 4
   },
@@ -73046,11 +73046,11 @@
   },
   {
     "word": "groundwork",
-    "meaning": "基礎",
+    "meaning": "基礎；準備工作",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groundwork nearby. 我在附近看到基礎。",
-      "I noticed the groundwork nearby. 我注意到附近有個基礎。"
+      "The talks laid the groundwork for an agreement. 那些會談為達成協議奠定了基礎。",
+      "We must do the groundwork before launching the project. 我們必須先做好準備工作，才能啟動這個專案。"
     ],
     "audienceTags": [
       "general"
@@ -73081,11 +73081,11 @@
   },
   {
     "word": "group",
-    "meaning": "群組",
+    "meaning": "群；組；團體",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the group nearby. 我在附近看到群組。",
-      "I noticed the group nearby. 我注意到附近有個群組。"
+      "A group of children waited outside. 一群孩子在外面等候。",
+      "She joined a local reading group. 她加入了一個當地讀書會。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -73109,8 +73109,8 @@
     "meaning": "可分組的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is groupable. 這個物品呈現可分組特徵。",
-      "The surface seems groupable. 這個特徵和可分組有關。"
+      "The records are groupable by date. 這些紀錄可以按日期分組。",
+      "Only groupable items appear in this list. 這份清單只顯示可以分組的項目。"
     ],
     "difficultyLevel": 6
   },
@@ -73142,11 +73142,11 @@
   },
   {
     "word": "grouped",
-    "meaning": "分組的",
+    "meaning": "成組的；分組的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grouped. 這個物品呈現分組特徵。",
-      "The surface seems grouped. 這個特徵和分組有關。"
+      "The grouped chairs left room for people to walk. 成組擺放的椅子留出了走道。",
+      "The grouped data were easier to compare. 分組後的資料更容易比較。"
     ],
     "difficultyLevel": 4
   },
@@ -73155,28 +73155,28 @@
     "meaning": "石斑魚",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grouper nearby. 我在附近看到石斑魚。",
-      "I noticed the grouper nearby. 我注意到附近有個石斑魚。"
+      "The diver saw a grouper near the reef. 潛水員在珊瑚礁旁看到一條石斑魚。",
+      "They served steamed grouper for dinner. 他們晚餐端上了清蒸石斑魚。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "groupie",
-    "meaning": "追星族",
+    "meaning": "追星族；熱衷追隨樂團的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the groupie nearby. 我在附近看到追星族。",
-      "I noticed the groupie nearby. 我注意到附近有個追星族。"
+      "A groupie followed the band from city to city. 一位追星族跟著樂團到各個城市。",
+      "She met a devoted groupie outside the concert hall. 她在音樂廳外遇到一位忠實的追星族。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "grouping",
-    "meaning": "分類",
+    "meaning": "分組；群組",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grouping nearby. 我在附近看到分類。",
-      "I noticed the grouping nearby. 我注意到附近有個分類。"
+      "The grouping of students by age made teaching easier. 依年齡將學生分組讓教學更容易。",
+      "Each grouping of houses has a shared garden. 每一群房屋都有一座共用花園。"
     ],
     "difficultyLevel": 4
   },
@@ -73282,11 +73282,11 @@
   },
   {
     "word": "grouser",
-    "meaning": "埋怨者",
+    "meaning": "愛抱怨的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a grouser today. 我今天遇到一位埋怨者。",
-      "I noticed the grouser nearby. 我今天又遇到一位埋怨者。"
+      "The grouser complained about the cold. 那個愛抱怨的人抱怨天氣冷。",
+      "He was known as a grouser among his colleagues. 同事都知道他是個愛抱怨的人。"
     ],
     "difficultyLevel": 6
   },
@@ -73318,11 +73318,11 @@
   },
   {
     "word": "grousing",
-    "meaning": "抱怨",
+    "meaning": "抱怨；發牢騷",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grousing nearby. 我在附近看到抱怨。",
-      "I noticed the grousing nearby. 我注意到附近有個抱怨。"
+      "The constant grousing annoyed everyone. 不斷的抱怨惹惱了大家。",
+      "There was some grousing about the delayed train. 有人抱怨火車誤點。"
     ],
     "difficultyLevel": 6
   },
@@ -73341,11 +73341,11 @@
   },
   {
     "word": "grout",
-    "meaning": "灌漿",
+    "meaning": "填縫劑；灌漿材料",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grout nearby. 我在附近看到灌漿。",
-      "I noticed the grout nearby. 我注意到附近有個灌漿。"
+      "The grout between the tiles had cracked. 磁磚間的填縫劑裂開了。",
+      "He applied fresh grout to seal the gaps. 他塗上新的填縫劑來封住縫隙。"
     ],
     "audienceTags": [
       "general"
@@ -73376,11 +73376,11 @@
   },
   {
     "word": "grouting",
-    "meaning": "灌漿",
+    "meaning": "填縫；灌漿",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grouting nearby. 我在附近看到灌漿。",
-      "I noticed the grouting nearby. 我注意到附近有個灌漿。"
+      "The grouting around the bathtub needs repair. 浴缸周圍的填縫需要修補。",
+      "The workers finished the grouting before cleaning the tiles. 工人們完成填縫後才清洗磁磚。"
     ],
     "difficultyLevel": 6
   },
@@ -73485,8 +73485,8 @@
     "meaning": "卑躬屈膝的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is groveling. 這個物品呈現卑躬屈膝特徵。",
-      "The surface seems groveling. 這個特徵和卑躬屈膝有關。"
+      "He offered a groveling apology to his boss. 他向老闆卑躬屈膝地道歉。",
+      "She disliked his groveling manner. 她不喜歡他卑躬屈膝的態度。"
     ],
     "difficultyLevel": 6
   },
@@ -73528,11 +73528,11 @@
   },
   {
     "word": "grow",
-    "meaning": "生長",
+    "meaning": "生長；成長；種植",
     "partOfSpeech": "verb",
     "sentences": [
-      "Please grow it gently. 請輕輕地生長。",
-      "Please grow it again. 請再生長一次。"
+      "These plants grow quickly in warm weather. 這些植物在溫暖的天氣裡長得很快。",
+      "We grow tomatoes in our garden. 我們在花園裡種番茄。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -73583,11 +73583,11 @@
   },
   {
     "word": "grower",
-    "meaning": "栽培者",
+    "meaning": "種植者；栽培者",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a grower today. 我今天遇到一位栽培者。",
-      "I noticed the grower nearby. 我今天又遇到一位栽培者。"
+      "The grower sells strawberries at the market. 那位種植者在市場販售草莓。",
+      "A local grower supplied the flowers for our wedding. 一位本地花農提供了我們婚禮用的花。"
     ],
     "audienceTags": [
       "general"
@@ -73595,11 +73595,11 @@
   },
   {
     "word": "growing",
-    "meaning": "生長的",
+    "meaning": "成長中的；日益增加的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is growing. 這個物品呈現生長特徵。",
-      "The surface seems growing. 這個特徵和生長有關。"
+      "A growing child needs plenty of sleep. 成長中的孩子需要充足睡眠。",
+      "There is growing demand for clean energy. 對乾淨能源的需求日益增加。"
     ],
     "audienceTags": [
       "general"
@@ -73672,11 +73672,11 @@
   },
   {
     "word": "growling",
-    "meaning": "咆哮的",
+    "meaning": "咆哮的；低吼的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is growling. 這個物品呈現咆哮特徵。",
-      "The surface seems growling. 這個特徵和咆哮有關。"
+      "The growling dog kept us away from the gate. 那隻低吼的狗使我們不敢靠近大門。",
+      "A growling voice came from the dark room. 黑暗的房間裡傳來低吼般的聲音。"
     ],
     "audienceTags": [
       "general"
@@ -73707,11 +73707,11 @@
   },
   {
     "word": "grown",
-    "meaning": "長大的",
+    "meaning": "成年的；長成的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grown. 這個物品呈現長大特徵。",
-      "The surface seems grown. 這個特徵和長大有關。"
+      "Their children are now grown adults. 他們的孩子現在都已成年。",
+      "The tree is fully grown. 那棵樹已完全長成。"
     ],
     "audienceTags": [
       "general"
@@ -73719,11 +73719,11 @@
   },
   {
     "word": "grownup",
-    "meaning": "成年人",
+    "meaning": "成年人（口語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a grownup today. 我今天遇到一位成年人。",
-      "I noticed the grownup nearby. 我今天又遇到一位成年人。"
+      "Ask a grownup to help you cross the road. 請一位成年人幫你過馬路。",
+      "The child wanted to be treated like a grownup. 那個孩子希望被當作成年人對待。"
     ],
     "difficultyLevel": 3
   },
@@ -73755,11 +73755,11 @@
   },
   {
     "word": "growth",
-    "meaning": "增長",
+    "meaning": "生長；成長；增長",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the growth nearby. 我在附近看到增長。",
-      "I noticed the growth nearby. 我注意到附近有個增長。"
+      "Sunlight encourages plant growth. 陽光促進植物生長。",
+      "The company reported strong sales growth. 公司公布了強勁的銷售成長。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -73930,11 +73930,11 @@
   },
   {
     "word": "grubbiness",
-    "meaning": "骯髒",
+    "meaning": "骯髒；邋遢",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grubbiness nearby. 我在附近看到骯髒。",
-      "I noticed the grubbiness nearby. 我注意到附近有個骯髒。"
+      "The grubbiness of the room made her uncomfortable. 房間的髒亂讓她很不舒服。",
+      "The grubbiness of his hands showed that he had been working in the garden. 他雙手髒兮兮，顯示他剛在花園工作過。"
     ],
     "difficultyLevel": 6
   },
@@ -74063,8 +74063,8 @@
     "meaning": "怨恨",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grudge nearby. 我在附近看到怨恨。",
-      "I noticed the grudge nearby. 我注意到附近有個怨恨。"
+      "He still holds a grudge against his former boss. 他仍對前任老闆懷恨在心。",
+      "She refused to let an old grudge ruin their friendship. 她不願讓舊怨毀掉他們的友誼。"
     ],
     "audienceTags": [
       "general"
@@ -74147,11 +74147,11 @@
   },
   {
     "word": "grudging",
-    "meaning": "勉強的",
+    "meaning": "勉強的；不情願的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grudging. 這個物品呈現勉強特徵。",
-      "The surface seems grudging. 這個特徵和勉強有關。"
+      "He gave a grudging apology. 他勉強道了歉。",
+      "Her success earned even her rivals' grudging respect. 她的成功讓對手也不得不敬重她。"
     ],
     "difficultyLevel": 5
   },
@@ -74167,11 +74167,11 @@
   },
   {
     "word": "grudgingness",
-    "meaning": "不情願",
+    "meaning": "勉強；不情願",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grudgingness nearby. 我在附近看到不情願。",
-      "I noticed the grudgingness nearby. 我注意到附近有個不情願。"
+      "The grudgingness of his apology was obvious. 他道歉時的不情願顯而易見。",
+      "She accepted the task with obvious grudgingness. 她明顯不情願地接受了任務。"
     ],
     "difficultyLevel": 6
   },
@@ -74265,11 +74265,11 @@
   },
   {
     "word": "gruesome",
-    "meaning": "可怕的",
+    "meaning": "可怕的；令人毛骨悚然的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gruesome. 這個物品呈現可怕特徵。",
-      "The surface seems gruesome. 這個特徵和可怕有關。"
+      "The film showed a gruesome scene. 那部電影呈現了一個令人毛骨悚然的場景。",
+      "He refused to describe the gruesome details of the accident. 他拒絕描述事故中那些可怕的細節。"
     ],
     "audienceTags": [
       "general"
@@ -74297,11 +74297,11 @@
   },
   {
     "word": "gruff",
-    "meaning": "粗魯的",
+    "meaning": "粗聲粗氣的；生硬的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gruff. 這個物品呈現粗魯特徵。",
-      "The surface seems gruff. 這個特徵和粗魯有關。"
+      "His gruff voice frightened the child. 他粗聲粗氣的聲音嚇到了孩子。",
+      "Despite his gruff manner, he is kind. 儘管他的態度生硬，他其實很善良。"
     ],
     "difficultyLevel": 5
   },
@@ -74356,11 +74356,11 @@
   },
   {
     "word": "gruffness",
-    "meaning": "粗魯",
+    "meaning": "生硬；粗聲粗氣",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gruffness nearby. 我在附近看到粗魯。",
-      "I noticed the gruffness nearby. 我注意到附近有個粗魯。"
+      "His gruffness hid a kind heart. 他生硬的態度掩藏了一顆善良的心。",
+      "The gruffness of her reply surprised me. 她粗聲粗氣的答覆讓我驚訝。"
     ],
     "difficultyLevel": 6
   },
@@ -74503,8 +74503,8 @@
     "meaning": "愛抱怨的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "He is a grumbler. 他是個愛抱怨的人。",
-      "I noticed the grumbler nearby. 我今天又遇到一位愛抱怨的人。"
+      "The grumbler complained about the weather again. 那個愛抱怨的人又在抱怨天氣了。",
+      "Nobody wanted to sit beside the grumbler. 沒有人想坐在那個愛抱怨的人旁邊。"
     ],
     "difficultyLevel": 6
   },
@@ -74536,11 +74536,11 @@
   },
   {
     "word": "grumbling",
-    "meaning": "抱怨",
+    "meaning": "抱怨；咕噥",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grumbling nearby. 我在附近看到抱怨。",
-      "I noticed the grumbling nearby. 我注意到附近有個抱怨。"
+      "There was grumbling about the longer working hours. 大家對工時變長頗有怨言。",
+      "His constant grumbling annoyed his coworkers. 他不斷的抱怨惹惱了同事。"
     ],
     "difficultyLevel": 5
   },
@@ -74773,11 +74773,11 @@
   },
   {
     "word": "grumpiness",
-    "meaning": "脾氣壞",
+    "meaning": "壞脾氣；易怒",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the grumpiness nearby. 我在附近看到脾氣壞。",
-      "I noticed the grumpiness nearby. 我注意到附近有個脾氣壞。"
+      "His grumpiness disappeared after breakfast. 吃完早餐後，他的壞脾氣消失了。",
+      "Tiredness often leads to grumpiness. 疲倦常讓人脾氣不好。"
     ],
     "difficultyLevel": 6
   },
@@ -74793,11 +74793,11 @@
   },
   {
     "word": "grumpy",
-    "meaning": "易怒的",
+    "meaning": "脾氣不好的；易怒的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grumpy. 這個物品呈現易怒特徵。",
-      "The surface seems grumpy. 這個特徵和易怒有關。"
+      "He gets grumpy when he is tired. 他累了就會脾氣不好。",
+      "The grumpy customer complained about everything. 那位脾氣不好的顧客什麼都抱怨。"
     ],
     "audienceTags": [
       "general"
@@ -74932,11 +74932,11 @@
   },
   {
     "word": "grungy",
-    "meaning": "骯髒的",
+    "meaning": "骯髒的；邋遢的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is grungy. 這個物品呈現骯髒特徵。",
-      "The surface seems grungy. 這個特徵和骯髒有關。"
+      "He wore a grungy old shirt. 他穿了一件骯髒的舊襯衫。",
+      "The grungy kitchen needed a thorough cleaning. 那間髒亂的廚房需要徹底清掃。"
     ],
     "difficultyLevel": 6
   },
@@ -75020,11 +75020,11 @@
   },
   {
     "word": "gruntled",
-    "meaning": "滿意的",
+    "meaning": "滿意的；心滿意足的（幽默用法）",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gruntled. 這個物品呈現滿意特徵。",
-      "The surface seems gruntled. 這個特徵和滿意有關。"
+      "After a good meal, he felt thoroughly gruntled. 吃了一頓好飯後，他感到心滿意足。",
+      "The unusually gruntled customer praised the service. 那位難得心滿意足的顧客稱讚了服務。"
     ],
     "difficultyLevel": 6
   },
@@ -75302,11 +75302,11 @@
   },
   {
     "word": "gryphon",
-    "meaning": "獅鷲",
+    "meaning": "獅鷲（griffin 的異體拼法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gryphon nearby. 我在附近看到獅鷲。",
-      "I noticed the gryphon nearby. 我注意到附近有個獅鷲。"
+      "The tale describes a gryphon guarding a treasure. 那個傳說描寫一隻守護寶藏的獅鷲。",
+      "A gryphon was carved above the doorway. 門口上方雕著一隻獅鷲。"
     ],
     "difficultyLevel": 6
   },
@@ -75759,11 +75759,11 @@
   },
   {
     "word": "guanaco",
-    "meaning": "原駝",
+    "meaning": "原駝；一種南美洲駱駝科動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guanaco nearby. 我在附近看到原駝。",
-      "I noticed the guanaco nearby. 我注意到附近有個原駝。"
+      "A guanaco stood on the hillside. 一隻原駝站在山坡上。",
+      "The guanaco grazed on dry grass. 那隻原駝吃著乾草。"
     ],
     "difficultyLevel": 6
   },
@@ -75900,11 +75900,11 @@
   },
   {
     "word": "guanine",
-    "meaning": "鳥嘌呤",
+    "meaning": "鳥嘌呤；核酸中的一種鹼基",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guanine nearby. 我在附近看到鳥嘌呤。",
-      "I noticed the guanine nearby. 我注意到附近有個鳥嘌呤。"
+      "Guanine is one of the bases in DNA. 鳥嘌呤是 DNA 中的一種鹼基。",
+      "In DNA, guanine pairs with cytosine. 在 DNA 中，鳥嘌呤與胞嘧啶配對。"
     ],
     "difficultyLevel": 6
   },
@@ -75923,11 +75923,11 @@
   },
   {
     "word": "guano",
-    "meaning": "海鳥糞",
+    "meaning": "海鳥糞；鳥糞肥",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guano nearby. 我在附近看到海鳥糞。",
-      "I noticed the guano nearby. 我注意到附近有個海鳥糞。"
+      "The island's rocks were covered with guano. 島上的岩石覆滿了海鳥糞。",
+      "Farmers used guano as fertilizer. 農民把鳥糞當作肥料。"
     ],
     "difficultyLevel": 6
   },
@@ -75946,8 +75946,8 @@
     "meaning": "鳥苷",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guanosine nearby. 我在附近看到鳥苷。",
-      "I noticed the guanosine nearby. 我注意到附近有個鳥苷。"
+      "Guanosine contains guanine and a sugar called ribose. 鳥苷含有鳥嘌呤與稱為核糖的糖。",
+      "The researcher measured guanosine in the sample. 研究人員測量了樣本中的鳥苷。"
     ],
     "difficultyLevel": 6
   },
@@ -76152,11 +76152,11 @@
   },
   {
     "word": "guarantee",
-    "meaning": "保證",
+    "meaning": "保證；保證書",
     "partOfSpeech": "noun/verb",
     "sentences": [
-      "I saw the guarantee nearby. 我在附近看到保證。",
-      "I noticed the guarantee nearby. 我注意到附近有個保證。"
+      "This watch comes with a two-year guarantee. 這支手錶附有兩年保固。",
+      "We guarantee that the work will be finished on time. 我們保證工作會準時完成。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -76173,11 +76173,11 @@
   },
   {
     "word": "guaranteed",
-    "meaning": "有保證的",
+    "meaning": "有保證的；確保的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guaranteed. 這個物品呈現有保證特徵。",
-      "The surface seems guaranteed. 這個特徵和有保證有關。"
+      "The loan has a guaranteed interest rate. 這筆貸款的利率有保證。",
+      "Every employee receives a guaranteed minimum wage. 每位員工都能獲得有保障的最低工資。"
     ],
     "difficultyLevel": 4
   },
@@ -76199,8 +76199,8 @@
     "meaning": "保證人",
     "partOfSpeech": "noun",
     "sentences": [
-      "Act as a guarantor. 擔任保證人。",
-      "I noticed the guarantor nearby. 我今天又遇到一位保證人。"
+      "Her father acted as guarantor for the loan. 她的父親擔任那筆貸款的保證人。",
+      "The landlord asked the tenant to find a guarantor. 房東要求房客找一位保證人。"
     ],
     "difficultyLevel": 5
   },
@@ -76219,11 +76219,11 @@
   },
   {
     "word": "guaranty",
-    "meaning": "擔保",
+    "meaning": "擔保；保證",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guaranty nearby. 我在附近看到擔保。",
-      "I noticed the guaranty nearby. 我注意到附近有個擔保。"
+      "The lender required a written guaranty. 貸款方要求書面擔保。",
+      "The guaranty covered repayment of the loan. 那份擔保涵蓋貸款的償還。"
     ],
     "difficultyLevel": 5
   },
@@ -76268,11 +76268,11 @@
   },
   {
     "word": "guard",
-    "meaning": "守衛",
+    "meaning": "守衛；守護",
     "partOfSpeech": "noun/verb",
     "sentences": [
-      "I saw the guard nearby. 我在附近看到守衛。",
-      "I noticed the guard nearby. 我注意到附近有個守衛。"
+      "The guard checked our tickets at the entrance. 守衛在入口檢查我們的票。",
+      "Two dogs guard the farm at night. 兩隻狗在夜間守護農場。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -76312,11 +76312,11 @@
   },
   {
     "word": "guarded",
-    "meaning": "謹慎的",
+    "meaning": "謹慎的；有所保留的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guarded. 這個物品呈現謹慎特徵。",
-      "The surface seems guarded. 這個特徵和謹慎有關。"
+      "She gave a guarded reply to the question. 她對那個問題作出有所保留的答覆。",
+      "He remained guarded about his future plans. 他對未來的計畫仍有所保留。"
     ],
     "difficultyLevel": 4
   },
@@ -76332,11 +76332,11 @@
   },
   {
     "word": "guardedness",
-    "meaning": "謹慎",
+    "meaning": "謹慎；有所保留",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guardedness nearby. 我在附近看到謹慎。",
-      "I noticed the guardedness nearby. 我注意到附近有個謹慎。"
+      "His guardedness made the interview difficult. 他有所保留的態度讓訪談很難進行。",
+      "She spoke with guardedness about the negotiations. 她謹慎地談到談判情況。"
     ],
     "difficultyLevel": 6
   },
@@ -76417,11 +76417,11 @@
   },
   {
     "word": "guardian",
-    "meaning": "監護人",
+    "meaning": "監護人；守護者",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a guardian today. 我今天遇到一位監護人。",
-      "I noticed the guardian nearby. 我今天又遇到一位監護人。"
+      "A parent or guardian must sign the form. 家長或監護人必須在表格上簽名。",
+      "Her aunt became her legal guardian. 她的阿姨成為她的法定監護人。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -76586,21 +76586,21 @@
   },
   {
     "word": "guardroom",
-    "meaning": "警衛室",
+    "meaning": "衛兵室；警衛室",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wait in the guardroom. 在警衛室等候。",
-      "I noticed the guardroom nearby. 我注意到附近有個警衛室。"
+      "The soldier reported to the guardroom. 那名士兵到衛兵室報到。",
+      "The keys were kept in the guardroom. 鑰匙存放在警衛室裡。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "guards",
-    "meaning": "守衛",
+    "meaning": "守衛（guard 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guards nearby. 我在附近看到守衛。",
-      "I noticed the guards nearby. 我注意到附近有個守衛。"
+      "Two guards stood at the gate. 兩名守衛站在門口。",
+      "The guards checked every visitor's identification. 守衛檢查了每位訪客的身分證件。"
     ],
     "difficultyLevel": 2
   },
@@ -76619,11 +76619,11 @@
   },
   {
     "word": "guardsman",
-    "meaning": "衛兵",
+    "meaning": "衛兵；近衛軍士兵",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a guardsman today. 我今天遇到一位衛兵。",
-      "I noticed the guardsman nearby. 我今天又遇到一位衛兵。"
+      "A guardsman stood outside the palace. 一名衛兵站在宮殿外。",
+      "The guardsman wore a ceremonial uniform. 那名近衛軍士兵穿著禮服。"
     ],
     "difficultyLevel": 5
   },
@@ -76905,8 +76905,8 @@
     "meaning": "番石榴",
     "partOfSpeech": "noun",
     "sentences": [
-      "Eat a fresh guava. 吃一顆新鮮的番石榴。",
-      "I noticed the guava nearby. 我注意到附近有個番石榴。"
+      "He sliced a ripe guava for us. 他切了一顆成熟的番石榴給我們。",
+      "This guava has pink flesh. 這顆番石榴的果肉是粉紅色的。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -77662,11 +77662,11 @@
   },
   {
     "word": "guerilla",
-    "meaning": "游擊隊",
+    "meaning": "游擊隊員；游擊戰士（guerrilla 的異體拼法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guerilla nearby. 我在附近看到游擊隊。",
-      "I noticed the guerilla nearby. 我注意到附近有個游擊隊。"
+      "A guerilla hid in the forest. 一名游擊隊員藏在森林裡。",
+      "The guerilla carried supplies to the camp. 那名游擊隊員把補給品帶到營地。"
     ],
     "difficultyLevel": 5
   },
@@ -77710,11 +77710,11 @@
   },
   {
     "word": "guerrilla",
-    "meaning": "游擊隊",
+    "meaning": "游擊隊員；游擊戰士",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guerrilla nearby. 我在附近看到游擊隊。",
-      "I noticed the guerrilla nearby. 我注意到附近有個游擊隊。"
+      "The guerrilla knew every path through the forest. 那名游擊隊員熟悉森林中的每條路。",
+      "A guerrilla joined the resistance movement. 一名游擊戰士加入了抵抗運動。"
     ],
     "audienceTags": [
       "general"
@@ -77777,8 +77777,8 @@
     "meaning": "猜測",
     "partOfSpeech": "verb/noun",
     "sentences": [
-      "I saw the guess nearby. 我在附近看到猜測。",
-      "I noticed the guess nearby. 我注意到附近有個猜測。"
+      "Can you guess the answer? 你能猜出答案嗎？",
+      "My first guess was wrong. 我第一次的猜測是錯的。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -77796,8 +77796,8 @@
     "meaning": "可猜到的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guessable. 這個物品呈現可猜到特徵。",
-      "The surface seems guessable. 這個特徵和可猜到有關。"
+      "The password was easily guessable. 那個密碼很容易猜到。",
+      "The ending was guessable from the first chapter. 從第一章就能猜到結局。"
     ],
     "difficultyLevel": 6
   },
@@ -77806,8 +77806,8 @@
     "meaning": "猜測者",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a guesser today. 我今天遇到一位猜測者。",
-      "I noticed the guesser nearby. 我今天又遇到一位猜測者。"
+      "The best guesser won the game. 猜得最準的人贏了遊戲。",
+      "Each guesser wrote down an answer. 每位猜測者都寫下一個答案。"
     ],
     "difficultyLevel": 6
   },
@@ -77816,8 +77816,8 @@
     "meaning": "猜測",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guessing nearby. 我在附近看到猜測。",
-      "I noticed the guessing nearby. 我注意到附近有個猜測。"
+      "Random guessing will not solve the problem. 隨意猜測無法解決問題。",
+      "Her accurate guessing surprised the teacher. 她猜得很準，讓老師驚訝。"
     ],
     "difficultyLevel": 3
   },
@@ -77836,11 +77836,11 @@
   },
   {
     "word": "guesswork",
-    "meaning": "瞎猜",
+    "meaning": "猜測；憑猜測行事",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guesswork nearby. 我在附近看到瞎猜。",
-      "I noticed the guesswork nearby. 我注意到附近有個瞎猜。"
+      "The estimate was based on guesswork. 那個估計是根據猜測作出的。",
+      "Accurate measurements remove the guesswork from cooking. 精確測量能讓烹飪不用靠猜。"
     ],
     "difficultyLevel": 5
   },
@@ -77859,11 +77859,11 @@
   },
   {
     "word": "guest",
-    "meaning": "客人",
+    "meaning": "客人；賓客",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a guest today. 我今天遇到一位客人。",
-      "I noticed the guest nearby. 我今天又遇到一位客人。"
+      "We welcomed our guest at the door. 我們在門口歡迎客人。",
+      "Each guest received a small gift. 每位賓客都收到了一份小禮物。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -77920,11 +77920,11 @@
   },
   {
     "word": "guesthouse",
-    "meaning": "賓館",
+    "meaning": "旅館；民宿",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guesthouse nearby. 我在附近看到賓館。",
-      "I noticed the guesthouse nearby. 我注意到附近有個賓館。"
+      "We stayed in a small guesthouse by the lake. 我們住在湖邊的一間小旅館。",
+      "The guesthouse serves breakfast every morning. 那間民宿每天早上提供早餐。"
     ],
     "difficultyLevel": 4
   },
@@ -78060,21 +78060,21 @@
   },
   {
     "word": "guff",
-    "meaning": "廢話",
+    "meaning": "廢話；胡扯（口語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guff nearby. 我在附近看到廢話。",
-      "I noticed the guff nearby. 我注意到附近有個廢話。"
+      "I don't want to hear any more guff. 我不想再聽任何廢話了。",
+      "His explanation was a load of guff. 他的解釋全是胡扯。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "guffaw",
-    "meaning": "狂笑",
+    "meaning": "放聲大笑；哄笑",
     "partOfSpeech": "verb/noun",
     "sentences": [
-      "I saw the guffaw nearby. 我在附近看到狂笑。",
-      "I noticed the guffaw nearby. 我注意到附近有個狂笑。"
+      "His joke drew a guffaw from the audience. 他的笑話引起觀眾哄笑。",
+      "They guffaw whenever he tells that story. 每當他講那個故事，他們就放聲大笑。"
     ],
     "difficultyLevel": 6
   },
@@ -78340,11 +78340,11 @@
   },
   {
     "word": "guidance",
-    "meaning": "指導",
+    "meaning": "指導；引導",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guidance nearby. 我在附近看到指導。",
-      "I noticed the guidance nearby. 我注意到附近有個指導。"
+      "She completed the task with her teacher's guidance. 她在老師的指導下完成了任務。",
+      "New employees need clear guidance. 新進員工需要明確的指導。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -78398,11 +78398,11 @@
   },
   {
     "word": "guidebook",
-    "meaning": "指南",
+    "meaning": "指南；旅遊指南",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guidebook nearby. 我在附近看到指南。",
-      "I noticed the guidebook nearby. 我注意到附近有個指南。"
+      "The guidebook recommends several walking routes. 那本旅遊指南推薦了幾條步行路線。",
+      "I bought a guidebook before visiting Kyoto. 我去京都前買了一本旅遊指南。"
     ],
     "difficultyLevel": 4
   },
@@ -78434,11 +78434,11 @@
   },
   {
     "word": "guided",
-    "meaning": "受引導的",
+    "meaning": "有人引導的；有導遊帶領的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guided. 這個物品呈現受引導特徵。",
-      "The surface seems guided. 這個特徵和受引導有關。"
+      "We took a guided tour of the museum. 我們參加了博物館的導覽行程。",
+      "The students completed a guided reading exercise. 學生們完成了一項有指導的閱讀練習。"
     ],
     "difficultyLevel": 3
   },
@@ -78554,11 +78554,11 @@
   },
   {
     "word": "guiding",
-    "meaning": "指導的",
+    "meaning": "引導的；指導的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guiding. 這個物品呈現指導特徵。",
-      "The surface seems guiding. 這個特徵和指導有關。"
+      "Fairness is our guiding principle. 公平是我們的指導原則。",
+      "Her father's advice remained a guiding influence. 她父親的建議持續發揮引導作用。"
     ],
     "difficultyLevel": 4
   },
@@ -78694,11 +78694,11 @@
   },
   {
     "word": "guild",
-    "meaning": "公會",
+    "meaning": "同業公會；行會",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guild nearby. 我在附近看到公會。",
-      "I noticed the guild nearby. 我注意到附近有個公會。"
+      "The carpenter joined a local guild. 那位木匠加入了當地的行會。",
+      "The guild set standards for its members' work. 那個公會為會員的工作訂定了標準。"
     ],
     "audienceTags": [
       "general"
@@ -78775,11 +78775,11 @@
   },
   {
     "word": "guile",
-    "meaning": "狡詐",
+    "meaning": "狡詐；詭計",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guile nearby. 我在附近看到狡詐。",
-      "I noticed the guile nearby. 我注意到附近有個狡詐。"
+      "He used guile to win their trust. 他用詭計取得了他們的信任。",
+      "Her honest answer showed no guile. 她誠實的回答毫無狡詐。"
     ],
     "audienceTags": [
       "general"
@@ -78790,8 +78790,8 @@
     "meaning": "狡詐的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guileful. 這個物品呈現狡詐特徵。",
-      "The surface seems guileful. 這個特徵和狡詐有關。"
+      "The guileful salesman concealed the defect. 那個狡詐的業務員隱瞞了瑕疵。",
+      "She recognized his guileful attempt to gain her trust. 她識破了他企圖取得她信任的狡詐手段。"
     ],
     "difficultyLevel": 6
   },
@@ -78817,11 +78817,11 @@
   },
   {
     "word": "guileless",
-    "meaning": "厚道的",
+    "meaning": "純真的；毫無心機的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guileless. 這個物品呈現厚道特徵。",
-      "The surface seems guileless. 這個特徵和厚道有關。"
+      "Her guileless smile won their trust. 她純真的笑容贏得了他們的信任。",
+      "He gave a guileless account of what happened. 他毫無心機地敘述了發生的事。"
     ],
     "difficultyLevel": 6
   },
@@ -78837,11 +78837,11 @@
   },
   {
     "word": "guilelessness",
-    "meaning": "純真",
+    "meaning": "純真；毫無心機",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guilelessness nearby. 我在附近看到純真。",
-      "I noticed the guilelessness nearby. 我注意到附近有個純真。"
+      "Her guilelessness made her easy to trust. 她的純真讓人容易信任她。",
+      "He answered with the guilelessness of a child. 他像孩子一樣毫無心機地回答。"
     ],
     "difficultyLevel": 6
   },
@@ -78945,11 +78945,11 @@
   },
   {
     "word": "guillotine",
-    "meaning": "斷頭台",
+    "meaning": "斷頭臺；裁紙機",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guillotine nearby. 我在附近看到斷頭台。",
-      "I noticed the guillotine nearby. 我注意到附近有個斷頭台。"
+      "The prisoner was executed by guillotine. 那名囚犯被送上斷頭臺處決。",
+      "She cut the paper with a guillotine. 她用裁紙機裁紙。"
     ],
     "audienceTags": [
       "general"
@@ -79009,11 +79009,11 @@
   },
   {
     "word": "guilt",
-    "meaning": "有罪",
+    "meaning": "罪責；罪惡感",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guilt nearby. 我在附近看到有罪。",
-      "I noticed the guilt nearby. 我注意到附近有個有罪。"
+      "The evidence established his guilt. 那些證據確立了他的罪責。",
+      "She felt guilt about lying to her friend. 她因為對朋友說謊而感到內疚。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -79046,11 +79046,11 @@
   },
   {
     "word": "guiltless",
-    "meaning": "無罪的",
+    "meaning": "無罪的；無辜的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guiltless. 這個物品呈現無罪特徵。",
-      "The surface seems guiltless. 這個特徵和無罪有關。"
+      "The evidence showed that he was guiltless. 證據顯示他是無辜的。",
+      "A guiltless person should not be punished. 無罪的人不應受罰。"
     ],
     "difficultyLevel": 5
   },
@@ -79089,11 +79089,11 @@
   },
   {
     "word": "guilty",
-    "meaning": "有罪的",
+    "meaning": "有罪的；內疚的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guilty. 這個物品呈現有罪特徵。",
-      "The surface seems guilty. 這個特徵和有罪有關。"
+      "The jury found him guilty of theft. 陪審團裁定他犯了竊盜罪。",
+      "I felt guilty for forgetting her birthday. 我因為忘記她的生日而感到內疚。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -79222,11 +79222,11 @@
   },
   {
     "word": "guise",
-    "meaning": "偽裝",
+    "meaning": "外表；偽裝",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guise nearby. 我在附近看到偽裝。",
-      "I noticed the guise nearby. 我注意到附近有個偽裝。"
+      "He entered the building in the guise of a repairman. 他假扮維修人員進入大樓。",
+      "The offer came under the guise of friendship. 那個提議披著友誼的外衣。"
     ],
     "audienceTags": [
       "general"
@@ -79276,8 +79276,8 @@
     "meaning": "吉他",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guitar nearby. 我在附近看到吉他。",
-      "I noticed the guitar nearby. 我注意到附近有個吉他。"
+      "He plays the guitar every evening. 他每天晚上都彈吉他。",
+      "She replaced a broken string on her guitar. 她換掉了吉他上一條斷掉的弦。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -79308,8 +79308,8 @@
     "meaning": "吉他手",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guitarist nearby. 我在附近看到吉他手。",
-      "I noticed the guitarist nearby. 我注意到附近有個吉他手。"
+      "The guitarist played a beautiful solo. 那位吉他手演奏了一段優美的獨奏。",
+      "Our band needs a new guitarist. 我們的樂團需要一位新吉他手。"
     ],
     "audienceTags": [
       "general"
@@ -79496,11 +79496,11 @@
   },
   {
     "word": "gulch",
-    "meaning": "深溝",
+    "meaning": "深溝；狹谷",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gulch nearby. 我在附近看到深溝。",
-      "I noticed the gulch nearby. 我注意到附近有個深溝。"
+      "The trail crossed a steep gulch. 那條步道越過一道陡峭的狹谷。",
+      "Rainwater filled the gulch overnight. 雨水一夜之間填滿了那道深溝。"
     ],
     "difficultyLevel": 6
   },
@@ -79555,11 +79555,11 @@
   },
   {
     "word": "gulf",
-    "meaning": "海灣",
+    "meaning": "海灣；巨大差距",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gulf nearby. 我在附近看到海灣。",
-      "I noticed the gulf nearby. 我注意到附近有個海灣。"
+      "The ship sailed across the gulf. 那艘船駛過海灣。",
+      "A gulf separates their views on education. 他們對教育的看法存在巨大差距。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -79705,8 +79705,8 @@
     "meaning": "海鷗",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gull nearby. 我在附近看到海鷗。",
-      "I noticed the gull nearby. 我注意到附近有個海鷗。"
+      "A gull landed on the boat. 一隻海鷗停在船上。",
+      "The gull snatched a piece of bread. 那隻海鷗搶走了一塊麵包。"
     ],
     "difficultyLevel": 4
   },
@@ -79738,11 +79738,11 @@
   },
   {
     "word": "gullet",
-    "meaning": "食道",
+    "meaning": "食道；喉嚨",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gullet nearby. 我在附近看到食道。",
-      "I noticed the gullet nearby. 我注意到附近有個食道。"
+      "Food passes down the gullet to the stomach. 食物經由食道進入胃。",
+      "The bird swallowed the fish down its gullet. 那隻鳥把魚吞進喉嚨裡。"
     ],
     "difficultyLevel": 6
   },
@@ -79761,11 +79761,11 @@
   },
   {
     "word": "gullibility",
-    "meaning": "易受騙",
+    "meaning": "輕信；容易受騙",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gullibility nearby. 我在附近看到易受騙。",
-      "I noticed the gullibility nearby. 我注意到附近有個易受騙。"
+      "The scammer took advantage of his gullibility. 詐騙者利用了他的輕信。",
+      "Her gullibility made her believe every rumor. 她容易受騙，什麼謠言都相信。"
     ],
     "difficultyLevel": 6
   },
@@ -79855,11 +79855,11 @@
   },
   {
     "word": "gully",
-    "meaning": "山溝",
+    "meaning": "山溝；沖溝",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gully nearby. 我在附近看到山溝。",
-      "I noticed the gully nearby. 我注意到附近有個山溝。"
+      "Rainwater rushed down the gully. 雨水沿著山溝奔流而下。",
+      "We crossed a narrow gully on our hike. 我們健行時越過了一道狹窄的山溝。"
     ],
     "audienceTags": [
       "general"
@@ -79965,11 +79965,11 @@
   },
   {
     "word": "gulping",
-    "meaning": "吞嚥",
+    "meaning": "大口吞嚥",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gulping nearby. 我在附近看到吞嚥。",
-      "I noticed the gulping nearby. 我注意到附近有個吞嚥。"
+      "His gulping made it clear that he was thirsty. 他大口吞嚥的樣子顯示出他很渴。",
+      "Rapid gulping can make it hard to enjoy a meal. 吃得太快、大口吞嚥會讓人難以享受一餐。"
     ],
     "difficultyLevel": 5
   },
@@ -80027,11 +80027,11 @@
   },
   {
     "word": "gum",
-    "meaning": "口香糖",
+    "meaning": "口香糖；牙齦；樹膠",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gum nearby. 我在附近看到口香糖。",
-      "I noticed the gum nearby. 我注意到附近有個口香糖。"
+      "Please stop chewing gum during class. 上課時請不要嚼口香糖。",
+      "The dentist examined the swollen gum around my tooth. 牙醫檢查了我牙齒周圍腫起的牙齦。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -80044,11 +80044,11 @@
   },
   {
     "word": "gumbo",
-    "meaning": "秋葵濃湯",
+    "meaning": "秋葵濃湯；美國南方濃湯",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gumbo nearby. 我在附近看到秋葵濃湯。",
-      "I noticed the gumbo nearby. 我注意到附近有個秋葵濃湯。"
+      "She made gumbo with shrimp and okra. 她用蝦和秋葵煮了濃湯。",
+      "A bowl of hot gumbo warmed us up. 一碗熱濃湯讓我們暖和起來。"
     ],
     "difficultyLevel": 6
   },
@@ -80067,11 +80067,11 @@
   },
   {
     "word": "gumboot",
-    "meaning": "雨靴",
+    "meaning": "橡膠長靴；雨靴",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gumboot nearby. 我在附近看到雨靴。",
-      "I noticed the gumboot nearby. 我注意到附近有個雨靴。"
+      "He pulled on a gumboot before stepping into the mud. 他踏進泥地前套上了一隻雨靴。",
+      "Water leaked into her gumboot. 水滲進了她的雨靴。"
     ],
     "difficultyLevel": 5
   },
@@ -80426,11 +80426,11 @@
   },
   {
     "word": "gummy",
-    "meaning": "黏的",
+    "meaning": "黏的；膠黏的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gummy. 這個物品呈現黏特徵。",
-      "The surface seems gummy. 這個特徵和黏有關。"
+      "The glue left a gummy residue. 膠水留下黏黏的殘留物。",
+      "The candy became gummy in the heat. 那顆糖因高溫變得黏黏的。"
     ],
     "difficultyLevel": 4
   },
@@ -80630,8 +80630,8 @@
     "meaning": "炮艦",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunboat nearby. 我在附近看到炮艦。",
-      "I noticed the gunboat nearby. 我注意到附近有個炮艦。"
+      "The gunboat patrolled the river. 那艘炮艦在河上巡邏。",
+      "A gunboat anchored near the harbor. 一艘炮艦停泊在港口附近。"
     ],
     "difficultyLevel": 6
   },
@@ -80867,11 +80867,11 @@
   },
   {
     "word": "gunman",
-    "meaning": "槍手",
+    "meaning": "持槍者；槍手",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunman nearby. 我在附近看到槍手。",
-      "I noticed the gunman nearby. 我注意到附近有個槍手。"
+      "The police arrested the gunman. 警方逮捕了那名持槍者。",
+      "Witnesses described the gunman to the officers. 目擊者向警員描述了那名槍手。"
     ],
     "audienceTags": [
       "general"
@@ -80947,8 +80947,8 @@
     "meaning": "炮手",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunner nearby. 我在附近看到炮手。",
-      "I noticed the gunner nearby. 我注意到附近有個炮手。"
+      "The gunner waited for orders. 炮手等候命令。",
+      "The gunner checked the cannon before the drill. 炮手在演習前檢查了火炮。"
     ],
     "audienceTags": [
       "general"
@@ -81116,11 +81116,11 @@
   },
   {
     "word": "gunpoint",
-    "meaning": "槍口",
+    "meaning": "槍口；槍械威脅",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunpoint nearby. 我在附近看到槍口。",
-      "I noticed the gunpoint nearby. 我注意到附近有個槍口。"
+      "The robber held the cashier at gunpoint. 搶匪用槍抵著收銀員。",
+      "They were forced to leave at gunpoint. 他們在槍械威脅下被迫離開。"
     ],
     "difficultyLevel": 5
   },
@@ -81129,8 +81129,8 @@
     "meaning": "火藥",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunpowder nearby. 我在附近看到火藥。",
-      "I noticed the gunpowder nearby. 我注意到附近有個火藥。"
+      "The soldiers stored gunpowder in a dry room. 士兵把火藥存放在乾燥的房間裡。",
+      "A spark can ignite gunpowder. 火花可以點燃火藥。"
     ],
     "audienceTags": [
       "general"
@@ -81216,8 +81216,8 @@
     "meaning": "軍火走私者",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a gunrunner today. 我今天遇到一位軍火走私者。",
-      "I noticed the gunrunner nearby. 我今天又遇到一位軍火走私者。"
+      "The police arrested a gunrunner at the border. 警方在邊境逮捕了一名軍火走私者。",
+      "The gunrunner hid weapons in a truck. 那名軍火走私者把武器藏在卡車裡。"
     ],
     "difficultyLevel": 6
   },
@@ -81226,8 +81226,8 @@
     "meaning": "軍火走私",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunrunning nearby. 我在附近看到軍火走私。",
-      "I noticed the gunrunning nearby. 我注意到附近有個軍火走私。"
+      "The authorities investigated the gunrunning operation. 當局調查了那項軍火走私活動。",
+      "He was convicted of gunrunning. 他因軍火走私被判有罪。"
     ],
     "difficultyLevel": 6
   },
@@ -81246,11 +81246,11 @@
   },
   {
     "word": "gunship",
-    "meaning": "武裝直升機",
+    "meaning": "武裝直升機；武裝攻擊機",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunship nearby. 我在附近看到武裝直升機。",
-      "I noticed the gunship nearby. 我注意到附近有個武裝直升機。"
+      "A gunship flew over the valley. 一架武裝直升機飛過山谷。",
+      "The gunship returned to its base. 那架武裝攻擊機返回了基地。"
     ],
     "difficultyLevel": 5
   },
@@ -81297,8 +81297,8 @@
     "meaning": "槍匠",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunsmith nearby. 我在附近看到槍匠。",
-      "I noticed the gunsmith nearby. 我注意到附近有個槍匠。"
+      "The gunsmith repaired the damaged rifle. 槍匠修好了受損的步槍。",
+      "A skilled gunsmith inspected the antique weapon. 一位熟練的槍匠檢查了那把古董武器。"
     ],
     "difficultyLevel": 6
   },
@@ -81359,8 +81359,8 @@
     "meaning": "槍托",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunstock nearby. 我在附近看到槍托。",
-      "I noticed the gunstock nearby. 我注意到附近有個槍托。"
+      "The rifle has a wooden gunstock. 那把步槍有木製槍托。",
+      "He rested the gunstock against his shoulder. 他把槍托抵在肩膀上。"
     ],
     "difficultyLevel": 6
   },
@@ -81431,11 +81431,11 @@
   },
   {
     "word": "gunwale",
-    "meaning": "船舷",
+    "meaning": "船舷上緣",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gunwale nearby. 我在附近看到船舷。",
-      "I noticed the gunwale nearby. 我注意到附近有個船舷。"
+      "He held the gunwale as the boat rocked. 船搖晃時，他抓住船舷上緣。",
+      "Water splashed over the gunwale. 水濺過了船舷上緣。"
     ],
     "difficultyLevel": 6
   },
@@ -81522,8 +81522,8 @@
     "meaning": "孔雀魚",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guppy nearby. 我在附近看到孔雀魚。",
-      "I noticed the guppy nearby. 我注意到附近有個孔雀魚。"
+      "A guppy swam among the water plants. 一條孔雀魚在水草間游動。",
+      "She keeps a guppy in her aquarium. 她在水族箱裡養了一條孔雀魚。"
     ],
     "difficultyLevel": 5
   },
@@ -81695,11 +81695,11 @@
   },
   {
     "word": "gurgling",
-    "meaning": "咕嚕聲的",
+    "meaning": "發出咕嚕聲的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gurgling. 這個物品呈現咕嚕聲特徵。",
-      "The surface seems gurgling. 這個特徵和咕嚕聲有關。"
+      "The gurgling stream flowed past our camp. 那條發出潺潺水聲的小溪流過我們的營地。",
+      "A gurgling sound came from the drain. 排水口傳出咕嚕聲。"
     ],
     "difficultyLevel": 5
   },
@@ -82175,11 +82175,11 @@
   },
   {
     "word": "gusset",
-    "meaning": "三角鑲塊",
+    "meaning": "衣物的補強鑲片；三角補強板",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gusset nearby. 我在附近看到三角鑲塊。",
-      "I noticed the gusset nearby. 我注意到附近有個三角鑲塊。"
+      "A gusset under the sleeve allows more movement. 袖子下方的鑲片讓活動更自在。",
+      "The engineer added a gusset to strengthen the joint. 工程師加了一塊補強板來強化接合處。"
     ],
     "difficultyLevel": 6
   },
@@ -82211,8 +82211,8 @@
     "meaning": "一陣強風",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gust nearby. 我在附近看到一陣強風。",
-      "I noticed the gust nearby. 我注意到附近有個一陣強風。"
+      "A sudden gust blew my hat away. 突然的一陣強風吹走了我的帽子。",
+      "Each gust shook the window frame. 每一陣強風都使窗框震動。"
     ],
     "audienceTags": [
       "general"
@@ -82266,8 +82266,8 @@
     "meaning": "味覺的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gustatory. 這個物品呈現味覺特徵。",
-      "The surface seems gustatory. 這個特徵和味覺有關。"
+      "The tongue contains gustatory receptors. 舌頭含有味覺受器。",
+      "The experiment tested gustatory responses to sweetness. 那項實驗測試了對甜味的味覺反應。"
     ],
     "difficultyLevel": 6
   },
@@ -82355,11 +82355,11 @@
   },
   {
     "word": "gusto",
-    "meaning": "熱情",
+    "meaning": "熱情；興致",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gusto nearby. 我在附近看到熱情。",
-      "I noticed the gusto nearby. 我注意到附近有個熱情。"
+      "She sang with gusto. 她興致勃勃地唱歌。",
+      "He tackled the work with gusto. 他熱情地投入工作。"
     ],
     "audienceTags": [
       "general"
@@ -82406,18 +82406,18 @@
     "meaning": "多陣風的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gusty. 這個物品呈現多陣風特徵。",
-      "The surface seems gusty. 這個特徵和多陣風有關。"
+      "It was a gusty afternoon. 那是一個陣風不斷的下午。",
+      "The gusty wind made cycling difficult. 一陣陣的強風讓騎自行車變得困難。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "gut",
-    "meaning": "腸子",
+    "meaning": "腸道；直覺",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gut nearby. 我在附近看到腸子。",
-      "I noticed the gut nearby. 我注意到附近有個腸子。"
+      "The bacteria live in the human gut. 那些細菌生活在人的腸道裡。",
+      "My gut tells me that something is wrong. 我的直覺告訴我事情不對勁。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -82462,21 +82462,21 @@
   },
   {
     "word": "gutless",
-    "meaning": "沒膽的",
+    "meaning": "膽小的；沒膽量的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gutless. 這個物品呈現沒膽特徵。",
-      "The surface seems gutless. 這個特徵和沒膽有關。"
+      "It was a gutless refusal to take responsibility. 那是膽怯地拒絕承擔責任。",
+      "He called the decision gutless. 他說那個決定毫無膽量。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "gutlessness",
-    "meaning": "沒膽量",
+    "meaning": "怯懦；沒膽量",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gutlessness nearby. 我在附近看到沒膽量。",
-      "I noticed the gutlessness nearby. 我注意到附近有個沒膽量。"
+      "He criticized the committee's gutlessness. 他批評委員會的怯懦。",
+      "Her refusal to act was seen as gutlessness. 她拒絕採取行動被視為沒膽量。"
     ],
     "difficultyLevel": 6
   },
@@ -82534,21 +82534,21 @@
   },
   {
     "word": "guts",
-    "meaning": "勇氣",
+    "meaning": "勇氣；膽量",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guts nearby. 我在附近看到勇氣。",
-      "I noticed the guts nearby. 我注意到附近有個勇氣。"
+      "It takes guts to admit a mistake. 承認錯誤需要勇氣。",
+      "She had the guts to speak up at the meeting. 她有勇氣在會議上發言。"
     ],
     "difficultyLevel": 3
   },
   {
     "word": "gutsy",
-    "meaning": "勇敢的",
+    "meaning": "勇敢的；有膽量的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gutsy. 這個物品呈現勇敢特徵。",
-      "The surface seems gutsy. 這個特徵和勇敢有關。"
+      "It was a gutsy decision to start over. 決定重新開始很有勇氣。",
+      "The team gave a gutsy performance. 那支隊伍展現了勇敢的表現。"
     ],
     "difficultyLevel": 5
   },
@@ -82669,11 +82669,11 @@
   },
   {
     "word": "gutter",
-    "meaning": "水槽",
+    "meaning": "排水溝；屋簷排水槽",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gutter nearby. 我在附近看到水槽。",
-      "I noticed the gutter nearby. 我注意到附近有個水槽。"
+      "Leaves blocked the gutter on the roof. 樹葉堵住了屋頂的排水槽。",
+      "Rainwater flowed along the street gutter. 雨水沿著街道的排水溝流動。"
     ],
     "audienceTags": [
       "general"
@@ -82707,11 +82707,11 @@
   },
   {
     "word": "guttering",
-    "meaning": "排水溝系統",
+    "meaning": "屋簷排水槽系統",
     "partOfSpeech": "noun",
     "sentences": [
-      "The guttering is old. 排水系統舊了。",
-      "I noticed the guttering nearby. 我注意到附近有個排水溝系統。"
+      "The guttering needs to be cleared of leaves. 屋簷排水槽需要清除樹葉。",
+      "They replaced the damaged guttering. 他們更換了受損的屋簷排水槽。"
     ],
     "difficultyLevel": 6
   },
@@ -83023,8 +83023,8 @@
     "meaning": "喉音的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is guttural. 這個物品呈現喉音特徵。",
-      "The surface seems guttural. 這個特徵和喉音有關。"
+      "He made a low guttural sound. 他發出低沉的喉音。",
+      "The singer used a guttural voice for that passage. 那位歌手用喉音唱了那個段落。"
     ],
     "difficultyLevel": 6
   },
@@ -83252,11 +83252,11 @@
   },
   {
     "word": "guy",
-    "meaning": "傢伙",
+    "meaning": "傢伙；男人",
     "partOfSpeech": "noun",
     "sentences": [
-      "That guy is nice. 那傢伙人不錯。",
-      "I noticed the guy nearby. 我注意到附近有個傢伙。"
+      "That guy helped me carry my bags. 那個傢伙幫我提袋子。",
+      "I met a friendly guy on the train. 我在火車上遇到一個友善的男人。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -83408,21 +83408,21 @@
   },
   {
     "word": "guzzler",
-    "meaning": "狂飲者",
+    "meaning": "狂飲者；大量耗用者",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a guzzler today. 我今天遇到一位狂飲者。",
-      "I noticed the guzzler nearby. 我今天又遇到一位狂飲者。"
+      "That old car is a gas guzzler. 那輛老車很耗油。",
+      "The guzzler emptied his glass in seconds. 那個狂飲者幾秒鐘就把酒杯喝空了。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "guzzling",
-    "meaning": "狂飲",
+    "meaning": "狂飲；大量耗用",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the guzzling nearby. 我在附近看到狂飲。",
-      "I noticed the guzzling nearby. 我注意到附近有個狂飲。"
+      "His guzzling left no juice for the others. 他狂飲果汁，沒留給其他人。",
+      "The truck's fuel guzzling made it expensive to run. 那輛卡車大量耗油，使用成本很高。"
     ],
     "difficultyLevel": 6
   },
@@ -83630,11 +83630,11 @@
   },
   {
     "word": "gym",
-    "meaning": "體育館",
+    "meaning": "健身房；體育館",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gym nearby. 我在附近看到體育館。",
-      "I noticed the gym nearby. 我注意到附近有個體育館。"
+      "I go to the gym after work. 我下班後去健身房。",
+      "The students played basketball in the school gym. 學生們在學校體育館打籃球。"
     ],
     "difficultyLevel": 2
   },
@@ -83751,11 +83751,11 @@
   },
   {
     "word": "gymnasia",
-    "meaning": "體育館(複)",
+    "meaning": "體育館（gymnasium 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gymnasia nearby. 我在附近看到體育館(複)。",
-      "I noticed the gymnasia nearby. 我注意到附近有個體育館(複)。"
+      "The schools built new gymnasia. 那些學校興建了新的體育館。",
+      "Both gymnasia were full during the tournament. 比賽期間，兩座體育館都擠滿了人。"
     ],
     "difficultyLevel": 6
   },
@@ -83820,11 +83820,11 @@
   },
   {
     "word": "gymnasium",
-    "meaning": "體育館",
+    "meaning": "體育館；健身房",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gymnasium nearby. 我在附近看到體育館。",
-      "I noticed the gymnasium nearby. 我注意到附近有個體育館。"
+      "The ceremony was held in the school gymnasium. 儀式在學校體育館舉行。",
+      "The gymnasium has a basketball court. 那座體育館有一座籃球場。"
     ],
     "difficultyLevel": 4
   },
@@ -83850,8 +83850,8 @@
     "meaning": "體操運動員",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a gymnast today. 我今天遇到一位體操運動員。",
-      "I noticed the gymnast nearby. 我今天又遇到一位體操運動員。"
+      "The gymnast landed perfectly. 那位體操運動員完美地落地。",
+      "The gymnast trains for several hours each day. 那位體操運動員每天訓練好幾個小時。"
     ],
     "difficultyLevel": 4
   },
@@ -83860,8 +83860,8 @@
     "meaning": "體操的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gymnastic. 這個物品呈現體操特徵。",
-      "The surface seems gymnastic. 這個特徵和體操有關。"
+      "She practiced a difficult gymnastic routine. 她練習了一套高難度的體操動作。",
+      "His gymnastic skills impressed the judges. 他的體操技巧讓評審印象深刻。"
     ],
     "difficultyLevel": 5
   },
@@ -83880,8 +83880,8 @@
     "meaning": "體操",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gymnastics nearby. 我在附近看到體操。",
-      "I noticed the gymnastics nearby. 我注意到附近有個體操。"
+      "She started learning gymnastics at six. 她六歲開始學體操。",
+      "Gymnastics requires strength and balance. 體操需要力量和平衡感。"
     ],
     "audienceTags": [
       "general"
@@ -84465,8 +84465,8 @@
     "meaning": "裸子植物",
     "partOfSpeech": "noun",
     "sentences": [
-      "Pine is a gymnosperm. 松樹是裸子植物。",
-      "I noticed the gymnosperm nearby. 我注意到附近有個裸子植物。"
+      "A pine tree is a gymnosperm. 松樹是一種裸子植物。",
+      "The seeds of a gymnosperm are not enclosed in a fruit. 裸子植物的種子不包在果實裡。"
     ],
     "difficultyLevel": 6
   },
@@ -84852,18 +84852,18 @@
     "meaning": "婦科的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gynaecological. 這個物品呈現婦科特徵。",
-      "The surface seems gynaecological. 這個特徵和婦科有關。"
+      "She attended a gynaecological appointment. 她去看了婦科門診。",
+      "The hospital offers gynaecological care. 那家醫院提供婦科照護。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "gynaecologist",
-    "meaning": "婦科醫生",
+    "meaning": "婦科醫師",
     "partOfSpeech": "noun",
     "sentences": [
-      "I met a gynaecologist today. 我今天遇到一位婦科醫生。",
-      "I noticed the gynaecologist nearby. 我今天又遇到一位婦科醫生。"
+      "She consulted a gynaecologist about her symptoms. 她就自己的症狀諮詢了婦科醫師。",
+      "The gynaecologist explained the test results. 婦科醫師解釋了檢查結果。"
     ],
     "difficultyLevel": 6
   },
@@ -85258,8 +85258,8 @@
     "meaning": "婦科的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gynecological. 這個物品呈現婦科特徵。",
-      "The surface seems gynecological. 這個特徵和婦科有關。"
+      "The clinic provides gynecological examinations. 那間診所提供婦科檢查。",
+      "She scheduled a gynecological consultation. 她預約了婦科諮詢。"
     ],
     "examTags": [
       "toeic"
@@ -85270,11 +85270,11 @@
   },
   {
     "word": "gynecologist",
-    "meaning": "婦科醫生",
+    "meaning": "婦科醫師",
     "partOfSpeech": "noun",
     "sentences": [
-      "My gynecologist is nice. 我的婦科醫生很客氣。",
-      "I noticed the gynecologist nearby. 我今天又遇到一位婦科醫生。"
+      "The gynecologist answered her questions. 婦科醫師回答了她的問題。",
+      "Her doctor referred her to a gynecologist. 她的醫師轉介她去看婦科醫師。"
     ],
     "difficultyLevel": 6
   },
@@ -86212,8 +86212,8 @@
     "meaning": "石膏",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gypsum nearby. 我在附近看到石膏。",
-      "I noticed the gypsum nearby. 我注意到附近有個石膏。"
+      "Gypsum is used to make wallboard. 石膏用於製造牆板。",
+      "The mine produces large quantities of gypsum. 那座礦場產出大量石膏。"
     ],
     "difficultyLevel": 5
   },
@@ -86432,11 +86432,11 @@
   },
   {
     "word": "gyrating",
-    "meaning": "旋轉中的",
+    "meaning": "旋轉中的；回旋的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gyrating. 這個物品呈現旋轉中特徵。",
-      "The surface seems gyrating. 這個特徵和旋轉中有關。"
+      "The gyrating dancer moved across the stage. 那位旋轉中的舞者移動到舞臺另一側。",
+      "The gyrating wheel gradually slowed down. 旋轉中的輪子逐漸慢了下來。"
     ],
     "difficultyLevel": 5
   },
@@ -86472,21 +86472,21 @@
   },
   {
     "word": "gyratory",
-    "meaning": "旋轉的",
+    "meaning": "旋轉的；回旋式的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gyratory. 這個物品呈現旋轉特徵。",
-      "The surface seems gyratory. 這個特徵和旋轉有關。"
+      "The factory uses a gyratory crusher. 那家工廠使用回旋式破碎機。",
+      "The machine has a gyratory motion. 那台機器作回旋運動。"
     ],
     "difficultyLevel": 6
   },
   {
     "word": "gyre",
-    "meaning": "環流",
+    "meaning": "環流；旋轉流動",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gyre nearby. 我在附近看到環流。",
-      "I noticed the gyre nearby. 我注意到附近有個環流。"
+      "Plastic waste collects in the ocean gyre. 塑膠廢棄物在海洋環流中聚集。",
+      "The gyre carries water around the ocean basin. 環流帶動海水繞著海盆流動。"
     ],
     "difficultyLevel": 6
   },
@@ -86704,8 +86704,8 @@
     "meaning": "陀螺羅盤",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gyrocompass nearby. 我在附近看到陀螺羅盤。",
-      "I noticed the gyrocompass nearby. 我注意到附近有個陀螺羅盤。"
+      "The ship's gyrocompass indicated true north. 那艘船的陀螺羅盤指向真北。",
+      "The navigator checked the gyrocompass. 航海員檢查了陀螺羅盤。"
     ],
     "difficultyLevel": 6
   },
@@ -87006,11 +87006,11 @@
   },
   {
     "word": "gyroplane",
-    "meaning": "旋翼機",
+    "meaning": "旋翼機；自轉旋翼機",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gyroplane nearby. 我在附近看到旋翼機。",
-      "I noticed the gyroplane nearby. 我注意到附近有個旋翼機。"
+      "The pilot landed the gyroplane in a field. 飛行員把旋翼機降落在田地裡。",
+      "The gyroplane's rotor turns freely in flight. 自轉旋翼機的旋翼在飛行時自由轉動。"
     ],
     "difficultyLevel": 6
   },
@@ -87029,18 +87029,18 @@
     "meaning": "陀螺儀",
     "partOfSpeech": "noun",
     "sentences": [
-      "I saw the gyroscope nearby. 我在附近看到陀螺儀。",
-      "I noticed the gyroscope nearby. 我注意到附近有個陀螺儀。"
+      "The drone uses a gyroscope to maintain stability. 那架無人機用陀螺儀保持穩定。",
+      "The engineer tested the gyroscope before the flight. 工程師在飛行前測試了陀螺儀。"
     ],
     "difficultyLevel": 5
   },
   {
     "word": "gyroscopic",
-    "meaning": "陀螺儀的",
+    "meaning": "陀螺儀的；陀螺效應的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The item is gyroscopic. 這個物品呈現陀螺儀特徵。",
-      "The surface seems gyroscopic. 這個特徵和陀螺儀有關。"
+      "The vehicle uses gyroscopic stabilization. 那輛車使用陀螺儀來穩定車身。",
+      "The spinning wheel produces a gyroscopic effect. 旋轉的輪子會產生陀螺效應。"
     ],
     "difficultyLevel": 6
   },
@@ -87226,8 +87226,8 @@
     "meaning": "腦回",
     "partOfSpeech": "noun",
     "sentences": [
-      "The precentral gyrus is in the brain. 中央前迴位於大腦中。",
-      "I noticed the gyrus nearby. 我注意到附近有個腦回。"
+      "A gyrus is separated from another by a groove. 一個腦回與另一個腦回之間由溝隔開。",
+      "The scan showed damage to a gyrus in the brain. 掃描顯示大腦的一個腦回受損。"
     ],
     "difficultyLevel": 6,
     "audienceTags": []
@@ -87260,11 +87260,11 @@
   },
   {
     "word": "gyve",
-    "meaning": "腳鐐；束縛 (古語)",
+    "meaning": "腳鐐；束縛（古語）",
     "partOfSpeech": "noun/verb",
     "sentences": [
-      "I saw the gyve nearby. 我在附近看到腳鐐；束縛 (古語)。",
-      "I noticed the gyve nearby. 我注意到附近有個腳鐐；束縛 (古語)。"
+      "The prisoner dragged a heavy gyve behind him. 那名囚犯拖著沉重的腳鐐。",
+      "They gyve the captives to prevent escape. 他們給俘虜戴上腳鐐以防逃走。"
     ],
     "difficultyLevel": 6,
     "audienceTags": []
@@ -87274,8 +87274,8 @@
     "meaning": "戴著腳鐐的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The gyved prisoner could not run. 戴著腳鐐的囚犯無法逃跑。",
-      "The surface seems gyved. 這個特徵和戴著腳鐐有關。"
+      "The gyved prisoner could barely walk. 那名戴著腳鐐的囚犯幾乎無法行走。",
+      "His gyved ankles made each step painful. 他戴著腳鐐的腳踝讓每一步都很痛。"
     ],
     "difficultyLevel": 6
   },

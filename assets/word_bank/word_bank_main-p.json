@@ -28153,7 +28153,7 @@
   },
   {
     "word": "paramagnetism",
-    "meaning": "順磁性物質在磁場中的磁性",
+    "meaning": "順磁性；物質受到外加磁場微弱吸引的性質",
     "partOfSpeech": "noun",
     "sentences": [
       "The lesson introduced paramagnetism with an aluminum sample. 這堂課用鋁樣本介紹順磁性。",
@@ -159729,11 +159729,11 @@
   },
   {
     "word": "politically",
-    "meaning": "關於政治，以某種方式與政治相關",
+    "meaning": "在政治上；從政治角度而言",
     "partOfSpeech": "adverb",
     "sentences": [
-      "She moved politically across the room. 她以關於政治，以某種方式與政治相關的方式穿過房間。",
-      "He answered politically after the pause. 他停頓後以關於政治，以某種方式與政治相關的方式回答。"
+      "The issue is politically sensitive. 這個議題在政治上很敏感。",
+      "The two candidates are politically opposed. 這兩位候選人的政治立場相反。"
     ],
     "audienceTags": [
       "general"
@@ -278968,11 +278968,11 @@
   },
   {
     "word": "public",
-    "meaning": "民眾",
+    "meaning": "公共的；公開的；大眾的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The new library will be open to the general public next month. 新圖書館將於下個月向大眾開放。",
-      "Using public transportation is a great way to reduce pollution. 使用大眾運輸是減少污染的好方法。"
+      "The new public library will open next month. 這座新的公共圖書館將於下個月開幕。",
+      "Using public transportation can help reduce pollution. 搭乘大眾運輸有助於減少污染。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -286096,7 +286096,7 @@
   },
   {
     "word": "pupil",
-    "meaning": "瞳孔",
+    "meaning": "學生；瞳孔",
     "partOfSpeech": "noun",
     "sentences": [
       "The elementary school has over five hundred young pupils. 這所小學有超過五百名年幼的小學生。",

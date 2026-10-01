@@ -7184,11 +7184,11 @@
   },
   {
     "word": "talk",
-    "meaning": "演講",
+    "meaning": "說話；交談；討論",
     "partOfSpeech": "verb",
     "sentences": [
-      "We need to talk about the new project proposal after the meeting. 會議結束後我們需要討論一下新專案提案。",
-      "She likes to talk to her friends on the phone every evening. 她喜歡每天晚上和朋友在電話裡聊天。"
+      "We need to talk about the new project. 我們需要討論新專案。",
+      "She likes to talk to her friends after school. 她喜歡放學後和朋友聊天。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -18204,11 +18204,11 @@
   },
   {
     "word": "taste",
-    "meaning": "品嚐",
+    "meaning": "味道；味覺；品味",
     "partOfSpeech": "noun",
     "sentences": [
-      "The soup has a very spicy taste, but it's delicious. 這湯的味道很辣，但很好吃。",
-      "Can you taste the ginger in this ginger tea? 你能在這杯薑茶裡嚐出薑味嗎？"
+      "The soup has a rich taste. 那碗湯味道濃郁。",
+      "She has excellent taste in music. 她的音樂品味很好。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -23327,11 +23327,11 @@
   },
   {
     "word": "tear",
-    "meaning": "撕",
+    "meaning": "裂口；眼淚",
     "partOfSpeech": "noun",
     "sentences": [
       "There is a tear in my shirt. 我的襯衫上有一道裂口。",
-      "She tried not to shed a tear during the speech. 她演講時努力不掉眼淚。"
+      "A tear rolled down her cheek. 一滴眼淚滑下她的臉頰。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -33373,11 +33373,11 @@
   },
   {
     "word": "tender",
-    "meaning": "標",
+    "meaning": "柔軟的；鮮嫩的；溫柔的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The steak was cooked to perfection, incredibly tender and juicy. 這塊牛排煮得恰到好處，無比鮮嫩多汁。",
-      "The mother gave her baby a tender kiss on the forehead. 母親給了寶寶一個溫柔的額頭吻。"
+      "The steak was tender and juicy. 那塊牛排鮮嫩多汁。",
+      "She gave the baby a tender kiss. 她溫柔地親了寶寶一下。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -50785,8 +50785,8 @@
     "meaning": "感謝",
     "partOfSpeech": "verb",
     "sentences": [
-      "Thank thank the nurse for her careful help. 感謝護士細心的幫助。",
-      "Thank thank your host before you leave. 離開前感謝你的主人。"
+      "Thank the nurse for her careful help. 感謝護士細心的幫助。",
+      "Thank your host before you leave. 離開前向主人致謝。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -51175,11 +51175,11 @@
   },
   {
     "word": "that",
-    "meaning": "那",
+    "meaning": "（連接詞）引導子句；常不直接翻譯",
     "partOfSpeech": "conjunction",
     "sentences": [
-      "I believe that everything will be fine in the end. 我相信最後一切都會好起來的。",
-      "Is that the book you were looking for? 那是你在找的那本書嗎？"
+      "I believe that she is telling the truth. 我相信她說的是實話。",
+      "He said that the train was late. 他說火車誤點了。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -51713,11 +51713,11 @@
   },
   {
     "word": "the",
-    "meaning": "這",
+    "meaning": "定冠詞；用於特定、已知或唯一的人事物前",
     "partOfSpeech": "determiner",
     "sentences": [
-      "The sun rises in the east and sets in the west. 太陽從東方升起，從西方落下。",
-      "The city center is very crowded during the weekend. 市中心在週末非常擁擠。"
+      "Please close the door. 請把門關上。",
+      "The sun rises in the east. 太陽從東方升起。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -58033,11 +58033,11 @@
   },
   {
     "word": "there",
-    "meaning": "那裡",
+    "meaning": "那裡；（there is／are）有",
     "partOfSpeech": "adverb",
     "sentences": [
-      "There is a beautiful park near our new house. 我們的換新家附近有一個漂亮的公園。",
-      "I'll meet you there at 7:00 p.m. tonight. 我今晚七點在那裡和妳碰面。"
+      "There is a park near our new house. 我們的新家附近有一座公園。",
+      "I will meet you there at seven. 我會七點在那裡和你碰面。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -67236,11 +67236,11 @@
   },
   {
     "word": "this",
-    "meaning": "這",
+    "meaning": "這個；這件事",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "This is the best book that I have ever read. 這是過我看過最棒的一本書。",
-      "How much does this beautiful silk scarf cost? 這條漂亮的絲巾要多少錢？"
+      "This is the best book I have ever read. 這是我看過最棒的一本書。",
+      "Who made this? 這是誰做的？"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -70033,11 +70033,11 @@
   },
   {
     "word": "though",
-    "meaning": "雖然；然而",
+    "meaning": "雖然；儘管",
     "partOfSpeech": "conjunction",
     "sentences": [
-      "Thoughe saw though beside the wall.. 我們在牆邊看到了這個詞。",
-      "The worker placed though beside the other materials.. 工人把這個詞放在其他材料旁。"
+      "Though it was raining, we went for a walk. 雖然下著雨，我們還是去散步。",
+      "Though she was tired, she finished her homework. 儘管很累，她還是完成了作業。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -99529,11 +99529,11 @@
   },
   {
     "word": "too",
-    "meaning": "也",
+    "meaning": "太；也",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The coffee is too hot to drink; I'll wait for a minute. 咖啡太燙了，喝不了，我等一分鐘。",
-      "I like reading books in the park, and my sister does too. 我喜歡在公園讀書，我姊姊也是。"
+      "The coffee is too hot to drink. 咖啡太燙，不能喝。",
+      "I like reading, and my sister does too. 我喜歡閱讀，我姊姊也是。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -106505,11 +106505,11 @@
   },
   {
     "word": "toss",
-    "meaning": "折騰",
+    "meaning": "拋；擲；丟棄",
     "partOfSpeech": "verb",
     "sentences": [
-      "Let's toss a coin to decide who goes first in the game. 讓我們擲硬幣決定遊戲中誰先開始吧。",
-      "He decided to toss his old clothes and buy some new ones. 他決定扔掉（丟棄）舊衣服，買些新的。"
+      "Toss a coin to decide who goes first. 擲硬幣決定誰先開始。",
+      "He tossed the empty wrapper into the bin. 他把空包裝紙丟進垃圾桶。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -129320,7 +129320,7 @@
     "meaning": "樹；樹木",
     "partOfSpeech": "noun",
     "sentences": [
-      "Tree shaded the bench at noon. 樹木在中午為長椅遮蔭。",
+      "A large tree shaded the bench at noon. 一棵大樹在中午為長椅遮蔭。",
       "Tree roots cracked the old pavement. 樹根使老舊人行道裂開。"
     ],
     "difficultyLevel": 1,
@@ -177751,11 +177751,11 @@
   },
   {
     "word": "twin",
-    "meaning": "雙",
+    "meaning": "雙胞胎之一",
     "partOfSpeech": "noun",
     "sentences": [
-      "My twin sister and I look exactly alike, even our smiles. 我孿生（雙胞胎）姐姐和我長得一模一樣，甚至笑容也是。",
-      "The hotel offers a twin room with two separate comfortable beds. 飯店提供一間配有兩張獨立舒服床位的雙人房。"
+      "She has a twin who looks just like her. 她有一位和她長得一模一樣的雙胞胎手足。",
+      "One twin likes swimming, and the other prefers cycling. 雙胞胎中的一人喜歡游泳，另一人較喜歡騎自行車。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -178505,11 +178505,11 @@
   },
   {
     "word": "twist",
-    "meaning": "捻",
+    "meaning": "扭轉；轉折",
     "partOfSpeech": "noun",
     "sentences": [
-      "The movie has a very surprising twist at the absolute end. 電影在最後竟然有一個非常令人驚訝的轉折。",
-      "Be careful not to twist your ankle while running on the trail. 跑步（走山路）時小心別扭傷了腳踝。"
+      "The story has an unexpected twist at the end. 故事結尾出現意想不到的轉折。",
+      "Give the lid a gentle twist to open the jar. 輕輕轉動蓋子，把罐子打開。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [

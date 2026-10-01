@@ -10219,11 +10219,11 @@
   },
   {
     "word": "watch",
-    "meaning": "手錶",
+    "meaning": "觀看；注視；留意",
     "partOfSpeech": "verb",
     "sentences": [
-      "He gave me a beautiful gold watch for my graduation. 他送了我一支漂亮的母金手錶作為畢業禮物。",
-      "I like to watch documentaries about nature and wildlife. 我喜歡看關於大自然和野生動物的紀錄片。"
+      "We watched a movie after dinner. 我們晚餐後看了一部電影。",
+      "Please watch your step on the slippery stairs. 樓梯很滑，請留意腳步。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -22913,10 +22913,10 @@
   },
   {
     "word": "whether",
-    "meaning": "無論",
+    "meaning": "是否；（whether ... or ...）不論……還是……",
     "partOfSpeech": "conjunction",
     "sentences": [
-      "I'm not sure whether I can attend the meeting tomorrow. 我不確定明天是否能參加會議。",
+      "I am not sure whether I can attend the meeting. 我不確定是否能參加會議。",
       "The decision depends on whether we can get enough funding. 決定取決於我們是否能獲得足夠的資金。"
     ],
     "difficultyLevel": 2,
@@ -23685,11 +23685,11 @@
   },
   {
     "word": "while",
-    "meaning": "儘管",
+    "meaning": "當……時；在……期間；然而；雖然",
     "partOfSpeech": "conjunction",
     "sentences": [
-      "I like to listen to music while I'm studying to help me focus. 我喜歡在唸書時聽音樂，以幫助我集中注意力。",
-      "The phone rang while I was taking a shower this morning. 我今天早上洗澡時電話響了。"
+      "The phone rang while I was taking a shower. 我洗澡時電話響了。",
+      "I prefer tea, while my sister prefers coffee. 我比較喜歡茶，而我姊姊比較喜歡咖啡。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -25559,8 +25559,8 @@
     "meaning": "威士忌",
     "partOfSpeech": "noun",
     "sentences": [
-      "Whiskey/whisky was noticed during the evening practice. 受到注意在傍晚練習時。",
-      "Whiskey/whisky was used at the community event. 被使用在社區活動中。"
+      "He ordered a glass of whisky after dinner. 他晚餐後點了一杯威士忌。",
+      "The shop sells whiskey from several countries. 那家店販售來自幾個國家的威士忌。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -27551,11 +27551,11 @@
   },
   {
     "word": "who",
-    "meaning": "世界衛生組織",
+    "meaning": "誰；（關係代名詞）指人",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Who is that person standing over there by the fountain? 站在噴泉那邊的那個人是誰？",
-      "The woman who lives next door is a famous scientist. 住在隔壁的那位女士是一位著名的科學家。"
+      "Who is standing by the fountain? 站在噴泉旁的人是誰？",
+      "The woman who lives next door is a scientist. 住在隔壁的女士是一位科學家。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -28314,11 +28314,11 @@
   },
   {
     "word": "whose",
-    "meaning": "誰",
+    "meaning": "誰的；（關係代名詞）表示所屬關係",
     "partOfSpeech": "pronoun",
     "sentences": [
-      "Whose book is this? I found it on the coffee table. 這是誰的書？我在咖啡桌上看到的。",
-      "The student whose marks were the highest received an award. 成績最高的學生獲得了獎勵。"
+      "Whose is this book? 這本書是誰的？",
+      "The student whose grades were highest won an award. 成績最高的那位學生獲得了獎項。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -28764,11 +28764,11 @@
   },
   {
     "word": "wicked",
-    "meaning": "邪惡",
+    "meaning": "邪惡的；惡毒的；（口語）厲害的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The movie tells a story about a brave knight and a wicked witch. 這部電影講述了一個關於勇敢騎士與邪惡巫婆的故事。",
-      "I have a wicked headache today; I think I need to stay in bed. 我今天頭痛得厲害（邪惡地）；我想我需要臥床休息。"
+      "The story is about a wicked witch. 這個故事講述一位邪惡的女巫。",
+      "I have a wicked headache today. 我今天頭痛得厲害。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -29738,8 +29738,8 @@
     "meaning": "妻子",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wife appeared in the field guide beside a clear drawing. 她的丈夫是一位有才華的建築師，而她是一位醫生。",
-      "Wife grew in a small patch near the pond. 他們已經幸福地結婚超過十五年了。"
+      "His wife is a doctor. 他的妻子是一位醫師。",
+      "He and his wife moved to Tainan last year. 他和妻子去年搬到台南。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -30393,11 +30393,11 @@
   },
   {
     "word": "wild",
-    "meaning": "荒野",
+    "meaning": "野生的；未馴服的；狂野的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Wild animals should be allowed to live in their natural habitat. 應該允許野生動物生活在它們的自然棲息地。",
-      "The garden was full of colorful wild flowers in the spring. 春天時花園裡開滿了繽紛的野花。"
+      "Wild animals need their natural habitats. 野生動物需要自然棲息地。",
+      "Wild flowers grew along the path. 野花沿著小路生長。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -31980,8 +31980,8 @@
     "meaning": "風",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wind was checked before sunrise by the caretaker. 當我過橋時，強風吹跑了我的帽子。",
-      "Wind led through the tangled paths behind the farm. 從山那邊吹來一陣微風。"
+      "The strong wind blew my hat off. 強風吹掉了我的帽子。",
+      "A gentle wind blew down from the mountains. 一陣微風從山上吹來。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -39332,7 +39332,7 @@
     "meaning": "狼",
     "partOfSpeech": "noun",
     "sentences": [
-      "Wolf howled beyond the campsite at night. 狼在夜晚的營地外嚎叫。",
+      "A wolf howled beyond the campsite at night. 一隻狼夜裡在營地外嚎叫。",
       "Wolf tracks crossed the fresh snow. 狼的足跡穿過新雪。"
     ],
     "difficultyLevel": 3,
@@ -43699,11 +43699,11 @@
   },
   {
     "word": "work",
-    "meaning": "工作",
+    "meaning": "工作；工作成果；作品",
     "partOfSpeech": "noun",
     "sentences": [
-      "He is looking for a new work in the software industry. 他正在尋找軟體產業的新工作。",
-      "The team worked together to complete the task before the deadline. 團隊齊心協力在截止日期前完成了任務。"
+      "Finding work in this town can be difficult. 在這個城鎮找工作可能很困難。",
+      "She has a lot of work to finish today. 她今天有很多工作要完成。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -48005,8 +48005,8 @@
     "meaning": "手腕",
     "partOfSpeech": "noun",
     "sentences": [
-      "She wore a beautiful gold watch around her left wrist. 她在左手腕上戴了一支漂亮的母金手錶。",
-      "He hurt his wrist while playing tennis yesterday morning. 他昨天早上打網球時弄傷了手腕。"
+      "She wore a gold watch on her left wrist. 她在左手腕上戴了一支金手錶。",
+      "He hurt his wrist while playing tennis. 他打網球時弄傷了手腕。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [

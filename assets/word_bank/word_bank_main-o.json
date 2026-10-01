@@ -1927,7 +1927,7 @@
   },
   {
     "word": "object",
-    "meaning": "目的",
+    "meaning": "物體；東西；目的；目標",
     "partOfSpeech": "noun",
     "sentences": [
       "The mysterious object in the night sky was later identified as a satellite. 夜空中那個神秘物體後來被證實是衛星。",
@@ -2728,11 +2728,11 @@
   },
   {
     "word": "obligatorily",
-    "meaning": "以一種強制性的方式：以便具有強制性",
+    "meaning": "強制性地；必須地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "obligatorily modifies a verb by expressing in a coercive way. 此副詞表示動作以「以一種強制性的方式：以便具有強制性」的方式進行。",
-      "obligatorily tells the reader how the action occurs. 這個詞讓動作方式一目了然。"
+      "New employees are obligatorily enrolled in the training program. 新進員工必須參加這項培訓課程。",
+      "The fee is obligatorily included in the final bill. 這筆費用必須列入最終帳單。"
     ],
     "audienceTags": [
       "general"
@@ -2894,11 +2894,11 @@
   },
   {
     "word": "obligingness",
-    "meaning": "樂於助人的品質或狀態",
+    "meaning": "樂於助人；親切配合的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "obligingness names the quality or state of being helpful. 此詞指「樂於助人的品質或狀態」。",
-      "obligingness gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "Her obligingness made the new guests feel welcome. 她樂於幫忙的態度讓新來的客人感到受歡迎。",
+      "We appreciated his obligingness when our plans changed. 計畫改變時，我們很感謝他願意配合。"
     ],
     "audienceTags": [
       "general"
@@ -4173,11 +4173,11 @@
   },
   {
     "word": "obsequiousness",
-    "meaning": "諂媚的品質；奴性服從",
+    "meaning": "諂媚；卑躬屈膝的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "obsequiousness designates the quality of flattery. 此詞指「諂媚的品質；奴性服從」。",
-      "obsequiousness keeps the reference exact. 這個詞讓指稱保持精確。"
+      "His obsequiousness toward the manager annoyed his colleagues. 他對經理卑躬屈膝的態度讓同事感到厭煩。",
+      "The novel exposes the obsequiousness of the king's advisers. 這部小說揭露了國王顧問們的諂媚。"
     ],
     "audienceTags": [
       "general"
@@ -4643,11 +4643,11 @@
   },
   {
     "word": "obsidian",
-    "meaning": "一種由火山產生的天然黑色玻璃",
+    "meaning": "黑曜石；火山熔岩迅速冷卻形成的天然玻璃",
     "partOfSpeech": "noun",
     "sentences": [
-      "obsidian refers to A natural black glass produced by volcanoes. 此詞指「一種由火山產生的天然黑色玻璃」。",
-      "obsidian marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The museum displays arrowheads made of obsidian. 博物館展示了用黑曜石製成的箭頭。",
+      "The polished obsidian reflected the light. 磨亮的黑曜石反射著光線。"
     ],
     "audienceTags": [
       "general"
@@ -4927,11 +4927,11 @@
   },
   {
     "word": "obstetrician",
-    "meaning": "產科醫生",
+    "meaning": "產科醫師",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstetrician denotes Obstetrician. 此詞指「產科醫生」。",
-      "obstetrician expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "She made an appointment with her obstetrician. 她預約了產科醫師的門診。",
+      "The obstetrician explained what to expect during delivery. 產科醫師說明了分娩時可能遇到的情況。"
     ],
     "audienceTags": [
       "general"
@@ -4999,11 +4999,11 @@
   },
   {
     "word": "obstinacy",
-    "meaning": "頑固或固執的狀態或行為",
+    "meaning": "固執；頑固",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstinacy denotes The state or behavior of being stubborn or obstinate. 此詞指「頑固或固執的狀態或行為」。",
-      "obstinacy expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "His obstinacy prevented the team from reaching an agreement. 他的固執讓團隊無法達成共識。",
+      "She admitted that refusing the offer had been an act of obstinacy. 她承認，拒絕那項提議是一時固執。"
     ],
     "audienceTags": [
       "general"
@@ -5042,11 +5042,11 @@
   },
   {
     "word": "obstinately",
-    "meaning": "以一種固執的方式",
+    "meaning": "固執地；頑固地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "especially An action can be stated obstinately to express in a stubborn way. 此副詞表示動作以「以一種固執的方式」的方式進行。",
-      "obstinately lets readers recognize the intended manner. 讀者可從這個詞辨認預期的方式。"
+      "He obstinately refused to change his mind. 他固執地拒絕改變想法。",
+      "The old engine obstinately refused to start. 那具老引擎怎麼也發動不了。"
     ],
     "audienceTags": [
       "general"
@@ -5054,11 +5054,11 @@
   },
   {
     "word": "obstinateness",
-    "meaning": "固執的品質或狀態：固執",
+    "meaning": "固執；頑固的性格",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstinateness designates The quality or state of stubbornness. 此詞指「固執的品質或狀態：固執」。",
-      "obstinateness keeps the reference exact. 這個詞讓指稱保持精確。"
+      "Her obstinateness made negotiations difficult. 她固執的性格讓談判變得困難。",
+      "He mistook obstinateness for strength of character. 他把固執誤認為性格堅定。"
     ],
     "audienceTags": [
       "general"
@@ -5126,11 +5126,11 @@
   },
   {
     "word": "obstreperous",
-    "meaning": "伴隨或發出響亮而喧鬧的噪音；吵鬧的；吵雜;吵鬧的。 喧鬧的城市。華茲華斯。 粗俗的認可。艾迪森.用它們頑固的喙敲擊空氣。 B·瓊森。 -- Ob*strep\"er*ous*ly, adv. -- Ob*strep\"er*ous*ness, n.",
+    "meaning": "吵鬧的；喧鬧而難以管束的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "obstreperous describes accompany or make loud and boisterous noise. 此形容詞描述「伴隨或發出響亮而喧鬧的噪音；吵鬧的；吵雜;吵鬧的。 喧鬧的城市。華茲華斯。 粗俗的認可。艾迪森.用它們頑固的喙敲擊空氣。 B·瓊森。 -- Ob*strep\"er*ous*ly, adv. -- Ob*strep\"er*ous*ness, n.」所指的特徵。",
-      "obstreperous also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The teacher asked the obstreperous children to settle down. 老師請那些吵鬧的孩子安靜下來。",
+      "An obstreperous crowd gathered outside the gates. 一群喧鬧的人聚集在大門外。"
     ],
     "audienceTags": [
       "general"
@@ -5150,11 +5150,11 @@
   },
   {
     "word": "obstreperousness",
-    "meaning": "刁蠻的品質",
+    "meaning": "喧鬧；吵鬧而難以管束的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstreperousness names Unruly quality. 此詞指「刁蠻的品質」。",
-      "obstreperousness gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The audience's obstreperousness interrupted the speech. 觀眾的喧鬧打斷了演講。",
+      "His obstreperousness made the long bus ride exhausting. 他一路吵鬧，讓這趟長途巴士之旅格外疲憊。"
     ],
     "audienceTags": [
       "general"
@@ -5258,11 +5258,11 @@
   },
   {
     "word": "obstructionism",
-    "meaning": "故意阻礙某事的政策，尤其是政治進程或機構",
+    "meaning": "蓄意阻撓；阻礙議事或進展的做法",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstructionism refers to A policy that deliberately hinders something, especially a political process or institution. 此詞指「故意阻礙某事的政策，尤其是政治進程或機構」。",
-      "obstructionism marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The bill was delayed by parliamentary obstructionism. 這項法案因議會中的蓄意阻撓而延誤。",
+      "They accused the committee of obstructionism. 他們指責委員會蓄意阻撓。"
     ],
     "audienceTags": [
       "general"
@@ -5270,11 +5270,11 @@
   },
   {
     "word": "obstructionist",
-    "meaning": "阻礙進步的一種：故意且經常透過間接或拖延策略阻礙業務的一種（如立法機構）",
+    "meaning": "蓄意阻撓者；阻礙議事或進展的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "obstructionist denotes Progressive. 此詞指「阻礙進步的一種：故意且經常透過間接或拖延策略阻礙業務的一種（如立法機構）」。",
-      "obstructionist expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The obstructionist refused to let the committee vote. 那名蓄意阻撓者不肯讓委員會投票。",
+      "She criticized the obstructionists who kept delaying the repairs. 她批評了那些一再拖延修繕工作的人。"
     ],
     "audienceTags": [
       "general"
@@ -5676,11 +5676,11 @@
   },
   {
     "word": "obtrusively",
-    "meaning": "以一種咄咄逼人的方式",
+    "meaning": "礙眼地；惹人注意地；唐突地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "plainly An action can be stated obtrusively to express in an aggressive manner. 此副詞表示動作以「以一種咄咄逼人的方式」的方式進行。",
-      "obtrusively lets readers recognize the intended manner. 讀者可從這個詞辨認預期的方式。"
+      "A large advertisement hung obtrusively above the entrance. 一幅巨大的廣告礙眼地掛在入口上方。",
+      "He stood obtrusively close while she was speaking. 她說話時，他站得過近，令人不自在。"
     ],
     "audienceTags": [
       "general"
@@ -5820,11 +5820,11 @@
   },
   {
     "word": "obtuse",
-    "meaning": "鈍",
-    "partOfSpeech": "noun",
+    "meaning": "遲鈍的；（角）鈍角的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "obtuse names blunt. 此詞指「鈍」。",
-      "obtuse gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "I was being obtuse and failed to understand her hint. 我當時太遲鈍，沒有聽懂她的暗示。",
+      "The two lines form an obtuse angle. 這兩條線形成一個鈍角。"
     ],
     "audienceTags": [
       "general"
@@ -5832,11 +5832,11 @@
   },
   {
     "word": "obtuse angle",
-    "meaning": "钝角",
+    "meaning": "鈍角；大於九十度且小於一百八十度的角",
     "partOfSpeech": "noun",
     "sentences": [
-      "obtuse angle refers to obtuse angle. 此詞指「钝角」。",
-      "obtuse angle marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The two sides meet at an obtuse angle. 這兩邊相交形成一個鈍角。",
+      "Draw an obtuse angle of one hundred and twenty degrees. 畫出一個一百二十度的鈍角。"
     ],
     "audienceTags": [
       "general"
@@ -6048,11 +6048,11 @@
   },
   {
     "word": "obverse",
-    "meaning": "硬幣的正面，上面有主要圖像或銘文； ——另一面則相反",
+    "meaning": "硬幣或獎章的正面",
     "partOfSpeech": "noun",
     "sentences": [
-      "obverse designates The obverse side of a coin, with the main image or inscription on it. 此詞指「硬幣的正面，上面有主要圖像或銘文； ——另一面則相反」。",
-      "obverse keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The obverse of the coin shows a portrait. 這枚硬幣的正面有一幅肖像。",
+      "She photographed both the obverse and the reverse of the medal. 她拍下了這枚獎章的正面與背面。"
     ],
     "audienceTags": [
       "general"
@@ -6198,11 +6198,11 @@
   },
   {
     "word": "obviousness",
-    "meaning": "特徵是明顯",
+    "meaning": "明顯；顯而易見的程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "obviousness refers to The characteristics are obvious. 此詞指「特徵是明顯」。",
-      "obviousness marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "Despite the obviousness of the mistake, no one corrected it. 儘管錯誤很明顯，卻沒有人改正。",
+      "The obviousness of the answer made the puzzle less interesting. 答案太容易看出來，讓這道謎題少了趣味。"
     ],
     "audienceTags": [
       "general"
@@ -6282,11 +6282,11 @@
   },
   {
     "word": "ocarina",
-    "meaning": "一種木管樂器，兩側封閉，形成封閉空間，並用指孔刺穿",
+    "meaning": "陶笛；帶有指孔的封閉式吹奏樂器",
     "partOfSpeech": "noun",
     "sentences": [
-      "ocarina refers to A woodwind instrument with two sides closed to form an enclosed space and pierced with finger holes. 此詞指「一種木管樂器，兩側封閉，形成封閉空間，並用指孔刺穿」。",
-      "ocarina marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "She played a gentle melody on her ocarina. 她用陶笛吹奏了一段柔和的旋律。",
+      "This ocarina has twelve finger holes. 這支陶笛有十二個指孔。"
     ],
     "audienceTags": [
       "general"
@@ -6628,11 +6628,11 @@
   },
   {
     "word": "occipital",
-    "meaning": "枕骨或枕骨的、關於枕骨或枕骨的、或位於枕骨或枕骨之內或附近的",
+    "meaning": "枕部的；枕骨的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "occipital describes Of, about, or in or near the occipital bone or occipital bone. 此形容詞描述「枕骨或枕骨的、關於枕骨或枕骨的、或位於枕骨或枕骨之內或附近的」所指的特徵。",
-      "occipital also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The diagram shows the occipital bone at the back of the skull. 圖中顯示了位於頭骨後方的枕骨。",
+      "The researcher examined the occipital region in the image. 研究人員檢視了影像中的枕部區域。"
     ],
     "audienceTags": [
       "general"
@@ -6976,11 +6976,11 @@
   },
   {
     "word": "occiput",
-    "meaning": "頭部或頭骨的後部",
+    "meaning": "後腦部；頭部或頭骨的後部",
     "partOfSpeech": "noun",
     "sentences": [
-      "occiput refers to the back of the head or skull. 此詞指「頭部或頭骨的後部」。",
-      "occiput marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The helmet protects the occiput as well as the top of the head. 這頂安全帽既保護後腦，也保護頭頂。",
+      "The arrow in the diagram points to the occiput. 圖中的箭頭指向後腦部。"
     ],
     "audienceTags": [
       "general"
@@ -7204,11 +7204,11 @@
   },
   {
     "word": "occultism",
-    "meaning": "神秘理論或實踐：對超自然或超常力量的作用或影響的信念或研究",
+    "meaning": "神祕學；對超自然力量的研究或實踐",
     "partOfSpeech": "noun",
     "sentences": [
-      "occultism refers to Occult Theory or Practice. 此詞指「神秘理論或實踐：對超自然或超常力量的作用或影響的信念或研究」。",
-      "occultism marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "His interest in occultism led him to study old manuscripts. 他對神祕學的興趣促使他研究古老的手稿。",
+      "The book explores the history of occultism in Europe. 這本書探討歐洲神祕學的歷史。"
     ],
     "audienceTags": [
       "general"
@@ -7216,11 +7216,11 @@
   },
   {
     "word": "occultist",
-    "meaning": "實踐或研究神祕學的人；神祕學的實踐者或學習者",
+    "meaning": "神祕學研究者或實踐者",
     "partOfSpeech": "noun",
     "sentences": [
-      "occultist denotes A person who practices or studies the occult. 此詞指「實踐或研究神祕學的人；神祕學的實踐者或學習者」。",
-      "occultist expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The occultist kept a collection of handwritten symbols. 那位神祕學研究者收藏了一批手寫符號。",
+      "Several occultists contributed essays to the journal. 幾位神祕學研究者為那份期刊撰寫了文章。"
     ],
     "audienceTags": [
       "general"
@@ -7288,11 +7288,11 @@
   },
   {
     "word": "occupant",
-    "meaning": "擔任辦公室或職位的人",
+    "meaning": "居住者；占用者；任職者",
     "partOfSpeech": "noun",
     "sentences": [
-      "occupant refers to a person who holds an office or position. 此詞指「擔任辦公室或職位的人」。",
-      "occupant marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The apartment has only one occupant. 這間公寓只有一位住戶。",
+      "All occupants left the building when the alarm sounded. 警報響起時，所有在建築內的人都離開了。"
     ],
     "examTags": [
       "toeic"
@@ -7383,11 +7383,11 @@
   },
   {
     "word": "occupiable",
-    "meaning": "可被佔用",
+    "meaning": "可供居住或使用的；可被占用的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Something occupiable has can be occupied. 此形容詞描述「可被佔用」所指的特徵。",
-      "occupiable keeps the description precise. 這個形容詞讓描述保持精確。"
+      "The renovated rooms are now occupiable. 翻修後的房間現在可以入住了。",
+      "The inspection found no occupiable space in the damaged building. 檢查發現，這棟受損建築內沒有可供使用的空間。"
     ],
     "audienceTags": [
       "general"
@@ -7608,11 +7608,11 @@
   },
   {
     "word": "oceanographer",
-    "meaning": "海洋學專家",
+    "meaning": "海洋學家",
     "partOfSpeech": "noun",
     "sentences": [
-      "oceanographer names oceanographic expert. 此詞指「海洋學專家」。",
-      "oceanographer gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The oceanographer measured currents near the coast. 海洋學家測量了沿岸的海流。",
+      "An oceanographer joined the research voyage. 一位海洋學家參加了這次研究航行。"
     ],
     "audienceTags": [
       "general"
@@ -7668,11 +7668,11 @@
   },
   {
     "word": "oceanography",
-    "meaning": "海洋和洋底的勘探和科學研究",
+    "meaning": "海洋學；研究海洋及其物理、化學與生物現象的學科",
     "partOfSpeech": "noun",
     "sentences": [
-      "oceanography designates Exploration and scientific research of the oceans and ocean floor. 此詞指「海洋和洋底的勘探和科學研究」。",
-      "oceanography keeps the reference exact. 這個詞讓指稱保持精確。"
+      "She chose to study oceanography at university. 她選擇在大學攻讀海洋學。",
+      "The expedition collected data for oceanography research. 這次考察蒐集了海洋學研究所需的資料。"
     ],
     "audienceTags": [
       "general"
@@ -7680,11 +7680,11 @@
   },
   {
     "word": "oceanology",
-    "meaning": "海洋學",
+    "meaning": "海洋學；對海洋的科學研究",
     "partOfSpeech": "noun",
     "sentences": [
-      "oceanology names oceanography. 此詞指「海洋學」。",
-      "oceanology gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "He published a paper on oceanology. 他發表了一篇海洋學論文。",
+      "The institute supports oceanology projects along the coast. 這間研究機構支持沿岸的海洋學研究計畫。"
     ],
     "audienceTags": [
       "general"
@@ -7920,11 +7920,11 @@
   },
   {
     "word": "ocelot",
-    "meaning": "一種美國貓科食肉動物（Leopardus pardalis，同義詞 Felis pardalis），全身佈滿黑色的單眼斑點和排列各異的斑點",
+    "meaning": "虎貓（美洲豹貓）；美洲的一種有斑紋的野生貓科動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "ocelot denotes An American feline carnivore (Leopardus pardalis, synonym Felis pardalis) whose body is covered with black single-eyed spots and variously arranged spots. 此詞指「一種美國貓科食肉動物（Leopardus pardalis，同義詞 Felis pardalis），全身佈滿黑色的單眼斑點和排列各異的斑點」。",
-      "ocelot expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "An ocelot moved quietly through the forest. 一隻虎貓悄悄穿過森林。",
+      "The ocelot's spotted coat helps it blend into the shadows. 虎貓帶斑紋的毛皮有助於牠融入陰影。"
     ],
     "audienceTags": [
       "general"
@@ -8832,11 +8832,11 @@
   },
   {
     "word": "octagon",
-    "meaning": "有八條邊和八個角的多邊形",
+    "meaning": "八邊形",
     "partOfSpeech": "noun",
     "sentences": [
-      "octagon names Polygon with eight sides and eight angles. 此詞指「有八條邊和八個角的多邊形」。",
-      "octagon gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The stop sign is shaped like an octagon. 那面停車標誌的形狀是八邊形。",
+      "Draw an octagon with eight equal sides. 畫出一個八邊等長的八邊形。"
     ],
     "audienceTags": [
       "general"
@@ -8868,11 +8868,11 @@
   },
   {
     "word": "octahedral",
-    "meaning": "八面體的、關於八面體的或具有八面體的形狀",
+    "meaning": "八面體的；呈八面體形狀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "octahedral describes of, about or having the shape of an octahedron. 此形容詞描述「八面體的、關於八面體的或具有八面體的形狀」所指的特徵。",
-      "octahedral also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The model has an octahedral shape. 這個模型呈八面體形狀。",
+      "She built an octahedral frame from thin rods. 她用細桿做了一個八面體框架。"
     ],
     "audienceTags": [
       "general"
@@ -8928,11 +8928,11 @@
   },
   {
     "word": "octahedron",
-    "meaning": "有八個面的多面體；正八面體具有正三角形作為面，是柏拉圖立體之一",
+    "meaning": "八面體；有八個面的多面體",
     "partOfSpeech": "noun",
     "sentences": [
-      "octahedron denotes A polyhedron with eight faces. 此詞指「有八個面的多面體；正八面體具有正三角形作為面，是柏拉圖立體之一」。",
-      "octahedron expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The student folded the paper into an octahedron. 學生把紙摺成八面體。",
+      "A regular octahedron has eight triangular faces. 正八面體有八個三角形面。"
     ],
     "audienceTags": [
       "general"
@@ -9144,11 +9144,11 @@
   },
   {
     "word": "octant",
-    "meaning": "圓的第八部分； 45度的弧線",
+    "meaning": "八分圓；圓周或空間的八分之一區域",
     "partOfSpeech": "noun",
     "sentences": [
-      "octant refers to Eighth part of a circle. 此詞指「圓的第八部分； 45度的弧線」。",
-      "octant marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "An arc of forty-five degrees spans one octant of a circle. 四十五度的圓弧占圓周的八分之一。",
+      "The diagram divides the circle into eight octants. 這張圖把圓分成八個八分圓。"
     ],
     "audienceTags": [
       "general"
@@ -9492,11 +9492,11 @@
   },
   {
     "word": "octavo",
-    "meaning": "一本八開頁的書",
+    "meaning": "八開本；把整張紙摺成八葉十六頁而成的書籍開本",
     "partOfSpeech": "noun",
     "sentences": [
-      "octavo designates a book of eight pages. 此詞指「一本八開頁的書」。",
-      "octavo keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The librarian placed the small octavo beside the larger folio. 圖書館員把小型八開本放在較大的對開本旁。",
+      "The catalogue describes the volume as an octavo. 目錄把這冊書列為八開本。"
     ],
     "audienceTags": [
       "general"
@@ -10663,11 +10663,11 @@
   },
   {
     "word": "octosyllabic",
-    "meaning": "由八個音節組成",
+    "meaning": "由八個音節組成的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "octosyllabic describes consists of eight syllables. 此形容詞描述「由八個音節組成」所指的特徵。",
-      "octosyllabic also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The poet wrote the verse in octosyllabic lines. 詩人用每行八個音節的形式寫這首詩。",
+      "We counted the syllables in each octosyllabic line. 我們數了每一行八音節詩句的音節。"
     ],
     "audienceTags": [
       "general"
@@ -10759,11 +10759,11 @@
   },
   {
     "word": "octuplet",
-    "meaning": "同一次懷孕產生的八個後代之一",
+    "meaning": "八胞胎之一",
     "partOfSpeech": "noun",
     "sentences": [
-      "octuplet names One of eight offspring from the same pregnancy. 此詞指「同一次懷孕產生的八個後代之一」。",
-      "octuplet gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "Each octuplet wore a different-colored hat. 八胞胎中的每個孩子都戴著不同顏色的帽子。",
+      "The family celebrated the octuplets' birthday together. 這家人一起慶祝八胞胎的生日。"
     ],
     "audienceTags": [
       "general"
@@ -11511,11 +11511,11 @@
   },
   {
     "word": "oddish",
-    "meaning": "有點奇怪",
+    "meaning": "有些奇怪的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "oddish describes a bit strange. 此形容詞描述「有點奇怪」所指的特徵。",
-      "oddish also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "He gave me an oddish smile before leaving. 他離開前對我露出一個有些奇怪的微笑。",
+      "The old house has an oddish shape. 這棟老房子的形狀有點奇怪。"
     ],
     "audienceTags": [
       "general"
@@ -11571,11 +11571,11 @@
   },
   {
     "word": "oddment",
-    "meaning": "剩下的東西：剩餘物",
+    "meaning": "零星剩餘物；零頭",
     "partOfSpeech": "noun",
     "sentences": [
-      "oddment refers to leftovers. 此詞指「剩下的東西：剩餘物」。",
-      "oddment marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "She used an oddment of cloth to patch the sleeve. 她用一小塊剩布補好了袖子。",
+      "An oddment of wool was left after she finished the scarf. 她織完圍巾後，剩下一點毛線。"
     ],
     "audienceTags": [
       "general"
@@ -11583,11 +11583,11 @@
   },
   {
     "word": "oddments",
-    "meaning": "剩下的東西：剩餘物",
+    "meaning": "零星剩餘物；零碎物品",
     "partOfSpeech": "noun",
     "sentences": [
-      "oddments denotes leftovers. 此詞指「剩下的東西：剩餘物」。",
-      "oddments expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The drawer was full of oddments of string and cloth. 抽屜裡裝滿零碎的繩子和布料。",
+      "She made a quilt from oddments of fabric. 她用零碎布料做了一床拼布被。"
     ],
     "audienceTags": [
       "general"
@@ -11666,11 +11666,11 @@
   },
   {
     "word": "ode",
-    "meaning": "一首抒情詩，通常以情感和風格的提升、行的長度不同和詩節形式的複雜為特徵",
+    "meaning": "頌詩；抒情詩",
     "partOfSpeech": "noun",
     "sentences": [
-      "ode refers to A lyric poem, usually characterized by an elevation of emotion and style, varying line lengths, and complexity of stanza form. 此詞指「一首抒情詩，通常以情感和風格的提升、行的長度不同和詩節形式的複雜為特徵」。",
-      "ode marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The poet wrote an ode to the sea. 詩人寫了一首歌頌大海的詩。",
+      "We read an ode aloud in literature class. 我們在文學課上朗讀了一首頌詩。"
     ],
     "audienceTags": [
       "general"
@@ -11894,11 +11894,11 @@
   },
   {
     "word": "odiousness",
-    "meaning": "某種性質或狀態",
+    "meaning": "可憎；令人厭惡的性質",
     "partOfSpeech": "noun",
     "sentences": [
-      "odiousness denotes a certain quality or state. 此詞指「某種性質或狀態」。",
-      "odiousness expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The odiousness of his remarks shocked the listeners. 他言論的可憎程度讓聽眾震驚。",
+      "The author exposes the odiousness of the villain's behavior. 作者揭露了反派行為的可憎之處。"
     ],
     "audienceTags": [
       "general"
@@ -13116,11 +13116,11 @@
   },
   {
     "word": "odorant",
-    "meaning": "有氣味的物質；特別是：添加到一種危險的無味物質中以警告其存在",
+    "meaning": "氣味劑；有氣味的物質",
     "partOfSpeech": "noun",
     "sentences": [
-      "odorant designates An odorous substance. 此詞指「有氣味的物質；特別是：添加到一種危險的無味物質中以警告其存在」。",
-      "odorant keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The laboratory compared several odorants. 實驗室比較了幾種有氣味的物質。",
+      "An odorant is added to the gas so that leaks can be detected. 氣體中添加了氣味劑，讓洩漏容易被察覺。"
     ],
     "audienceTags": [
       "general"
@@ -13200,11 +13200,11 @@
   },
   {
     "word": "odoriferous",
-    "meaning": "產生氣味：有臭味",
+    "meaning": "散發氣味的；有香味或臭味的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "odoriferous describes Produces odor. 此形容詞描述「產生氣味：有臭味」所指的特徵。",
-      "odoriferous also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The odoriferous flowers filled the garden with fragrance. 那些散發香氣的花讓花園充滿芬芳。",
+      "They moved the odoriferous rubbish outside. 他們把散發臭味的垃圾搬到外面。"
     ],
     "audienceTags": [
       "general"
@@ -13344,11 +13344,11 @@
   },
   {
     "word": "odorous",
-    "meaning": "有氣味臭味的",
+    "meaning": "有氣味的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "odorous describes Discussion of synonyms for smelly. 此形容詞描述「有氣味臭味的同義詞討論」所指的特徵。",
-      "odorous also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "An odorous liquid leaked from the container. 一種有氣味的液體從容器裡漏了出來。",
+      "The kitchen was full of odorous steam. 廚房裡充滿帶有氣味的蒸氣。"
     ],
     "audienceTags": [
       "general"
@@ -14064,11 +14064,11 @@
   },
   {
     "word": "oenological",
-    "meaning": "一門研究葡萄酒和釀酒的科學",
+    "meaning": "葡萄酒學的；與葡萄酒或釀酒研究有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "oenological describes the science of wine and winemaking. 此形容詞描述「一門研究葡萄酒和釀酒的科學」所指的特徵。",
-      "oenological also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The institute opened an oenological laboratory. 那間研究機構開設了一座葡萄酒學實驗室。",
+      "She attended an oenological conference in France. 她參加了在法國舉行的葡萄酒學研討會。"
     ],
     "audienceTags": [
       "general"
@@ -14076,11 +14076,11 @@
   },
   {
     "word": "oenologist",
-    "meaning": "一門研究葡萄酒和釀酒的科學",
+    "meaning": "葡萄酒學家；研究釀酒的專家",
     "partOfSpeech": "noun",
     "sentences": [
-      "oenologist designates the science of wine and winemaking. 此詞指「一門研究葡萄酒和釀酒的科學」。",
-      "oenologist keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The oenologist tested the wine before bottling. 葡萄酒學家在裝瓶前檢驗了酒液。",
+      "An oenologist advised the vineyard on fermentation. 一位釀酒專家向葡萄園提供發酵方面的建議。"
     ],
     "audienceTags": [
       "general"
@@ -14088,11 +14088,11 @@
   },
   {
     "word": "oenology",
-    "meaning": "一門研究葡萄酒和釀酒的科學",
+    "meaning": "葡萄酒學；研究葡萄酒與釀酒的學科",
     "partOfSpeech": "noun",
     "sentences": [
-      "oenology names the science of wine and winemaking. 此詞指「一門研究葡萄酒和釀酒的科學」。",
-      "oenology gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "She studied oenology before joining the winery. 她加入酒莊前曾研讀葡萄酒學。",
+      "The course covers the basics of oenology. 這門課涵蓋葡萄酒學的基礎知識。"
     ],
     "audienceTags": [
       "general"
@@ -14556,11 +14556,11 @@
   },
   {
     "word": "off",
-    "meaning": "離開",
+    "meaning": "（表示離開、分離或關閉）離開；關掉",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Please turn off the lights when you leave the office. 離開辦公室時請隨手關燈。",
-      "The airplane took off on time despite the heavy fog. 儘管大霧，飛機仍準時起飛。"
+      "The driver dropped us off at the station. 司機讓我們在車站下車。",
+      "Please turn off the lights before you leave. 離開前請把燈關掉。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -14639,11 +14639,11 @@
   },
   {
     "word": "offcut",
-    "meaning": "被切斷的東西（例如廢木材）",
+    "meaning": "裁切後的邊角料",
     "partOfSpeech": "noun",
     "sentences": [
-      "offcut names something that has been cut off (such as scrap wood). 此詞指「被切斷的東西（例如廢木材）」。",
-      "offcut gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "He used a wood offcut to make a small shelf. 他用一塊木材邊角料做了小架子。",
+      "Keep the fabric offcuts for smaller sewing projects. 把布料邊角料留著，供較小的縫紉作品使用。"
     ],
     "audienceTags": [
       "general"
@@ -14728,11 +14728,11 @@
   },
   {
     "word": "offender",
-    "meaning": "罪犯",
+    "meaning": "違法者；犯錯或冒犯他人的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "offender names criminal. 此詞指「罪犯」。",
-      "offender gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The court considered whether he was a first-time offender. 法院考量他是否為初犯。",
+      "The school asked the offender to apologize. 學校要求那名犯錯的人道歉。"
     ],
     "audienceTags": [
       "general"
@@ -15055,11 +15055,11 @@
   },
   {
     "word": "offhandedness",
-    "meaning": "隨手",
+    "meaning": "隨便；漫不經心的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "offhandedness refers to casually. 此詞指「隨手」。",
-      "offhandedness marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "His offhandedness made the guests feel unwelcome. 他漫不經心的態度讓客人覺得不受歡迎。",
+      "She regretted the offhandedness of her reply. 她後悔自己的回答太過隨便。"
     ],
     "audienceTags": [
       "general"
@@ -15093,8 +15093,8 @@
     "meaning": "辦公大樓",
     "partOfSpeech": "noun",
     "sentences": [
-      "office block denotes office building. 此詞指「辦公大樓」。",
-      "office block expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The company moved into a new office block. 公司搬進了一棟新的辦公大樓。",
+      "The office block is next to the railway station. 那棟辦公大樓就在火車站旁。"
     ],
     "examTags": [
       "toeic"
@@ -15135,11 +15135,11 @@
   },
   {
     "word": "officeholder",
-    "meaning": "擔任公職的人",
+    "meaning": "公職人員；任職者",
     "partOfSpeech": "noun",
     "sentences": [
-      "officeholder designates person holding public office. 此詞指「擔任公職的人」。",
-      "officeholder keeps the reference exact. 這個詞讓指稱保持精確。"
+      "Every officeholder must follow the ethics rules. 每位公職人員都必須遵守倫理規範。",
+      "The voters replaced the officeholder in the next election. 選民在下一次選舉中換掉了那位任職者。"
     ],
     "audienceTags": [
       "general"
@@ -15284,11 +15284,11 @@
   },
   {
     "word": "officialdom",
-    "meaning": "官員作為一個階級",
+    "meaning": "官僚體系；官員群體",
     "partOfSpeech": "noun",
     "sentences": [
-      "officialdom names officials as a category. 此詞指「官員作為一個階級」。",
-      "officialdom gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The proposal met resistance from officialdom. 這項提案受到官僚體系的反對。",
+      "She was frustrated by the slow response of officialdom. 官僚體系回應緩慢，讓她感到挫折。"
     ],
     "audienceTags": [
       "general"
@@ -15296,11 +15296,11 @@
   },
   {
     "word": "officialese",
-    "meaning": "官方聲明的特有語言：冗長、浮誇或晦澀的語言",
+    "meaning": "公文腔；冗長而難懂的官樣用語",
     "partOfSpeech": "noun",
     "sentences": [
-      "officialese refers to Language typical of official statements. 此詞指「官方聲明的特有語言：冗長、浮誇或晦澀的語言」。",
-      "officialese marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "The form was written in confusing officialese. 這份表格用令人困惑的公文腔寫成。",
+      "The editor replaced the officialese with plain language. 編輯把官樣用語改成淺白的文字。"
     ],
     "audienceTags": [
       "general"
@@ -15380,11 +15380,11 @@
   },
   {
     "word": "officiant",
-    "meaning": "主持宗教儀式的人（例如牧師）",
+    "meaning": "儀式主持人；宗教儀式的主持者",
     "partOfSpeech": "noun",
     "sentences": [
-      "officiant names A person who conducts religious ceremonies (such as a priest). 此詞指「主持宗教儀式的人（例如牧師）」。",
-      "officiant gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The officiant welcomed the guests to the ceremony. 儀式主持人歡迎來賓參加典禮。",
+      "The couple chose an officiant for their wedding. 這對新人選了一位婚禮主持人。"
     ],
     "audienceTags": [
       "general"
@@ -15846,11 +15846,11 @@
   },
   {
     "word": "oft",
-    "meaning": "經常",
-    "partOfSpeech": "noun",
+    "meaning": "經常；常常（詩歌或古語）",
+    "partOfSpeech": "adverb",
     "sentences": [
-      "oft names often. 此詞指「經常」。",
-      "oft gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The poet oft returned to the village of his childhood. 那位詩人常常回到童年居住的村莊。",
+      "His oft-repeated warning was finally understood. 他一再重複的警告終於被理解了。"
     ],
     "audienceTags": [
       "general"
@@ -16359,11 +16359,11 @@
   },
   {
     "word": "ogress",
-    "meaning": "一個女性食人魔",
+    "meaning": "女食人魔",
     "partOfSpeech": "noun",
     "sentences": [
-      "ogress denotes a female ogre. 此詞指「一個女性食人魔」。",
-      "ogress expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "In the tale, an ogress lived in a cave. 故事裡，一名女食人魔住在山洞中。",
+      "The children escaped before the ogress returned. 孩子們在女食人魔回來前逃走了。"
     ],
     "audienceTags": [
       "general"
@@ -16503,11 +16503,11 @@
   },
   {
     "word": "ohm",
-    "meaning": "實用的米-公斤-秒電阻單位，等於一伏特電位差產生一安培電流的電路的電阻",
+    "meaning": "歐姆；電阻的單位",
     "partOfSpeech": "noun",
     "sentences": [
-      "ohm denotes A practical meter-kilogram-second unit of resistance equal to the resistance of a circuit in which a potential difference of one volt produces a current of one ampere. 此詞指「實用的米-公斤-秒電阻單位，等於一伏特電位差產生一安培電流的電路的電阻」。",
-      "ohm expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The resistor has a resistance of ten ohms. 這個電阻器的電阻是十歐姆。",
+      "The reading on the meter rose by one ohm. 儀表上的讀值增加了一歐姆。"
     ],
     "audienceTags": [
       "general"
@@ -16539,11 +16539,11 @@
   },
   {
     "word": "ohmmeter",
-    "meaning": "直接以歐姆為單位指示電阻的儀器",
+    "meaning": "歐姆計；測量電阻的儀器",
     "partOfSpeech": "noun",
     "sentences": [
-      "ohmmeter designates An instrument that indicates resistance directly in ohms. 此詞指「直接以歐姆為單位指示電阻的儀器」。",
-      "ohmmeter keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The technician used an ohmmeter to check the component. 技術人員用歐姆計檢查了那個元件。",
+      "The ohmmeter displayed a resistance of fifty ohms. 歐姆計顯示電阻為五十歐姆。"
     ],
     "audienceTags": [
       "general"
@@ -16754,11 +16754,11 @@
   },
   {
     "word": "oilcan",
-    "meaning": "油壶",
-    "partOfSpeech": "adjective",
+    "meaning": "油壺；注油器",
+    "partOfSpeech": "noun",
     "sentences": [
-      "oilcan describes Oil can. 此形容詞描述「油壶」所指的特徵。",
-      "oilcan also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "He used an oilcan to lubricate the hinge. 他用油壺替鉸鏈上油。",
+      "The oilcan was kept beside the tools. 油壺放在工具旁邊。"
     ],
     "examTags": [
       "toeic"
@@ -16817,11 +16817,11 @@
   },
   {
     "word": "oiled",
-    "meaning": "被油覆蓋或供應有油",
+    "meaning": "塗過油的；上了油的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "oiled describes Covered in oil or supplied with oil. 此形容詞描述「被油覆蓋或供應有油」所指的特徵。",
-      "oiled also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "The oiled hinge moved without a sound. 上過油的鉸鏈轉動時沒有聲音。",
+      "She placed the dough on an oiled tray. 她把麵團放在塗過油的托盤上。"
     ],
     "audienceTags": [
       "general"
@@ -16889,11 +16889,11 @@
   },
   {
     "word": "oiliness",
-    "meaning": "油膩的品質或狀態",
+    "meaning": "油膩；油膩的程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "oiliness denotes The quality or state of being greasy. 此詞指「油膩的品質或狀態」。",
-      "oiliness expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The oiliness of the sauce made the dish feel heavy. 醬汁太油膩，讓這道菜吃起來很膩。",
+      "The new cleanser reduced the oiliness of her skin. 新的潔面產品減少了她皮膚的油膩感。"
     ],
     "audienceTags": [
       "general"
@@ -16949,11 +16949,11 @@
   },
   {
     "word": "oilman",
-    "meaning": "四石油大享， 石油工人",
+    "meaning": "石油業者；石油工人",
     "partOfSpeech": "noun",
     "sentences": [
-      "oilman names Four oil feasts, oil workers. 此詞指「四石油大享， 石油工人」。",
-      "oilman gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "The oilman had worked on drilling rigs for years. 那位石油工人在鑽油平台工作多年。",
+      "An oilman invested in the new exploration project. 一位石油業者投資了新的探勘計畫。"
     ],
     "examTags": [
       "toeic"
@@ -17012,11 +17012,11 @@
   },
   {
     "word": "oilproof",
-    "meaning": "不透油",
-    "partOfSpeech": "noun",
+    "meaning": "防油的；不透油的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "oilproof designates Oil impermeable. 此詞指「不透油」。",
-      "oilproof keeps the reference exact. 這個詞讓指稱保持精確。"
+      "The mechanic wore oilproof gloves. 機械技師戴著防油手套。",
+      "An oilproof lining protected the inside of the bag. 防油內襯保護了袋子內部。"
     ],
     "audienceTags": [
       "general"
@@ -17048,11 +17048,11 @@
   },
   {
     "word": "oilseed rape",
-    "meaning": "油菜",
+    "meaning": "油菜；用於榨油的油菜作物",
     "partOfSpeech": "noun",
     "sentences": [
-      "oilseed rape denotes rape. 此詞指「油菜」。",
-      "oilseed rape expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The field was planted with oilseed rape. 那片田種了油菜。",
+      "Oilseed rape produces seeds that can be pressed for oil. 油菜結出的種子可以用來榨油。"
     ],
     "audienceTags": [
       "general"
@@ -17096,11 +17096,11 @@
   },
   {
     "word": "oilstone",
-    "meaning": "與油一起使用的磨刀石",
+    "meaning": "油磨石；配合油使用的磨刀石",
     "partOfSpeech": "noun",
     "sentences": [
-      "oilstone names Sharpening stone for use with oil. 此詞指「與油一起使用的磨刀石」。",
-      "oilstone gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "He sharpened the chisel on an oilstone. 他在油磨石上磨利了鑿刀。",
+      "The carpenter kept an oilstone on the workbench. 木匠在工作台上放了一塊油磨石。"
     ],
     "audienceTags": [
       "general"
@@ -17120,11 +17120,11 @@
   },
   {
     "word": "oiltight",
-    "meaning": "如此緊密以防止油通過",
-    "partOfSpeech": "noun",
+    "meaning": "密封防漏油的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "oiltight denotes So tight to prevent oil from passing through. 此詞指「如此緊密以防止油通過」。",
-      "oiltight expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "The container must remain oiltight during transport. 容器在運送過程中必須保持密封，不能漏油。",
+      "An oiltight seal prevents leaks at the joint. 防漏油的密封件可防止接合處漏油。"
     ],
     "audienceTags": [
       "general"
@@ -17264,11 +17264,11 @@
   },
   {
     "word": "ointment",
-    "meaning": "牛軟膏,藥膏",
+    "meaning": "軟膏；藥膏",
     "partOfSpeech": "noun",
     "sentences": [
-      "ointment denotes cattle ointment, ointment. 此詞指「牛軟膏,藥膏」。",
-      "ointment expresses this meaning in a concise entry. 簡短詞條會用這個詞表達上述含義。"
+      "She put the tube of ointment in the medicine cabinet. 她把那條藥膏放進藥櫃。",
+      "The pharmacist explained how to store the ointment. 藥師說明了這條藥膏的保存方式。"
     ],
     "schoolLevels": [
       "college"
@@ -17766,11 +17766,11 @@
   },
   {
     "word": "old age",
-    "meaning": "老年，莫年",
+    "meaning": "老年；晚年",
     "partOfSpeech": "noun",
     "sentences": [
-      "old age names Old age, Mo Nian. 此詞指「老年，莫年」。",
-      "old age gives this noun a precise name. 這個詞是對該概念的精確稱呼。"
+      "They hope to remain active in old age. 他們希望到了老年仍能保持活力。",
+      "He wrote his memoirs in old age. 他在晚年撰寫了回憶錄。"
     ],
     "audienceTags": [
       "general"
@@ -17778,11 +17778,11 @@
   },
   {
     "word": "old hand",
-    "meaning": "有經驗者",
+    "meaning": "老手；經驗豐富的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "old hand refers to Experienced person. 此詞指「有經驗者」。",
-      "old hand marks this exact meaning in a dictionary. 字典中，這個詞標示這項確切含義。"
+      "Ask her for advice; she is an old hand at gardening. 向她請教吧，她是園藝老手。",
+      "An old hand showed the new worker how to use the machine. 一位老手教新員工如何使用那部機器。"
     ],
     "audienceTags": [
       "general"
@@ -17814,11 +17814,11 @@
   },
   {
     "word": "older",
-    "meaning": "老年人",
+    "meaning": "較年長的；較舊的（old 的比較級）",
     "partOfSpeech": "adjective",
     "sentences": [
-      "older describes elderly. 此形容詞描述「老年人」所指的特徵。",
-      "older also marks this quality precisely. 這個詞精確標示這項特徵。"
+      "My older sister lives in Taipei. 我姊姊住在台北。",
+      "This older model is cheaper than the new one. 這款較舊的型號比新款便宜。"
     ],
     "audienceTags": [
       "general"
@@ -24097,11 +24097,11 @@
   },
   {
     "word": "once",
-    "meaning": "一次",
+    "meaning": "一次；曾經",
     "partOfSpeech": "adverb",
     "sentences": [
-      "I have been to Paris once, and I would love to go again. 我去過一次巴黎，我很想再去一次。",
-      "Once you finish your homework, you can watch TV. 一旦你做完功課，就可以看電視了。"
+      "I have been to Paris once. 我去過巴黎一次。",
+      "This building was once a school. 這棟建築曾經是一所學校。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -24563,11 +24563,11 @@
   },
   {
     "word": "one",
-    "meaning": "一",
-    "partOfSpeech": "adverb",
+    "meaning": "一個；一",
+    "partOfSpeech": "determiner",
     "sentences": [
-      "one changes the manner of a statement in specialized vocabulary. 這個詞指「一」。",
-      "one should appear near the action it qualifies. 在相關專業語境中，它表示「一」。"
+      "Only one seat was left on the bus. 公車上只剩一個座位。",
+      "She brought one notebook to class. 她帶了一本筆記本去上課。"
     ],
     "audienceTags": [
       "general"
@@ -24983,11 +24983,11 @@
   },
   {
     "word": "onerously",
-    "meaning": "以繁重的方式",
+    "meaning": "繁重地；苛刻地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "onerously changes the manner of a statement in specialized vocabulary. 這個詞指「以繁重的方式」。",
-      "onerously should appear near the action it qualifies. 在相關專業語境中，它表示「以繁重的方式」。"
+      "The agreement was onerously restrictive. 那份協議的限制過於苛刻。",
+      "The costs fell onerously on the small business. 這些費用給那家小企業帶來了沉重的負擔。"
     ],
     "audienceTags": [
       "general"
@@ -25453,11 +25453,11 @@
   },
   {
     "word": "online",
-    "meaning": "在線的",
+    "meaning": "線上的；連上網路的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "I usually do my grocery shopping online to save time. 我通常在網上買雜貨以節省時間。",
-      "The online course allows students to learn at their own pace. 這門線上課程允許學生按照自己的節奏學習。"
+      "The online course lets students learn at their own pace. 這門線上課程讓學生按照自己的步調學習。",
+      "Our online store is open all day. 我們的線上商店全天營業。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -26378,11 +26378,11 @@
   },
   {
     "word": "ontologist",
-    "meaning": "本體論研究者；探討存在、實體與範疇等問題的哲學家",
+    "meaning": "本體論研究者；探討存在與實體等問題的哲學家",
     "partOfSpeech": "noun",
     "sentences": [
-      "ontologist Amie Thomasson examines how ordinary concepts shape questions about what exists. 本體論學者艾米・托馬森探討日常概念如何形塑「什麼存在」這類問題。",
-      "ontologist working on artificial intelligence may organize entities and relationships into a formal knowledge model. 從事人工智慧研究的本體論專家可能會把實體與關係整理成形式化知識模型。"
+      "The ontologist examined what it means for an object to exist. 那位本體論學者探討物體存在的意義。",
+      "An ontologist joined the discussion about abstract entities. 一位本體論學者加入了關於抽象實體的討論。"
     ],
     "audienceTags": [
       "general"
@@ -28478,11 +28478,11 @@
   },
   {
     "word": "opalescence",
-    "meaning": "乳光；呈現如蛋白石般柔和、會隨角度變化色彩的光學現象",
+    "meaning": "乳光；如蛋白石般柔和的變彩光澤",
     "partOfSpeech": "noun",
     "sentences": [
-      "opalescence in the glass shifted from milky blue to warm orange when the lamp moved. 燈具移動時，玻璃乳光從乳藍轉為暖橙色。",
-      "opalescence gave the soap bubble a changing wash of pink, green, and violet. 乳光使肥皂泡泛起不斷變化的粉紅、綠與紫色。"
+      "A faint opalescence was visible in the glass. 玻璃中可見淡淡的乳光。",
+      "The jeweler admired the stone's opalescence. 珠寶商欣賞著那顆寶石的乳光。"
     ],
     "audienceTags": [
       "general"
@@ -28490,11 +28490,11 @@
   },
   {
     "word": "opalescent",
-    "meaning": "呈乳光的；像蛋白石般半透明並映出變彩的",
+    "meaning": "呈乳光的；像蛋白石般帶有柔和變彩的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "opalescent tiles shimmered blue and green beneath the swimming pool lights. 游泳池燈光下，乳光磁磚閃著藍綠色澤。",
-      "opalescent clouds around the moon displayed faint pastel colors after sunset. 日落後，月亮周圍的乳光雲呈現淡淡的粉彩色。"
+      "The opalescent glass glowed in the afternoon light. 那塊乳光玻璃在午後的光線中泛著光澤。",
+      "She chose opalescent beads for the necklace. 她選了帶有乳光的珠子做項鍊。"
     ],
     "audienceTags": [
       "general"
@@ -28749,11 +28749,11 @@
   },
   {
     "word": "open-hearted",
-    "meaning": "坦率真誠的；仁慈而樂於表達感情的",
-    "partOfSpeech": "verb",
+    "meaning": "坦率真誠的；熱心友善的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "open-hearted neighbors welcomed the displaced family with food, blankets, and practical help. 熱心坦誠的鄰居用食物、毛毯與實際協助歡迎流離失所的一家人。",
-      "open-hearted conversation allowed both friends to admit their fears without embarrassment. 坦誠的談話讓兩位朋友都能不感難堪地說出恐懼。"
+      "Her open-hearted welcome put the guests at ease. 她熱心真誠的歡迎讓客人放鬆下來。",
+      "They had an open-hearted conversation about their worries. 他們坦誠地談了彼此的擔憂。"
     ],
     "audienceTags": [
       "general"
@@ -28761,11 +28761,11 @@
   },
   {
     "word": "open-necked",
-    "meaning": "敞領的；衣領未扣合或領口較低的",
-    "partOfSpeech": "verb",
+    "meaning": "敞領的；領口未扣合的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "open-necked shirt kept him comfortable during the humid outdoor ceremony. 敞領襯衫讓他在潮濕的戶外典禮中保持舒適。",
-      "open-necked dresses became fashionable for informal evening gatherings during the period. 那個時期，敞領洋裝在非正式晚間聚會中蔚為流行。"
+      "He wore an open-necked shirt to the picnic. 他穿著一件敞領襯衫去野餐。",
+      "The open-necked blouse felt comfortable in the summer heat. 那件敞領上衣在炎熱的夏天穿起來很舒服。"
     ],
     "audienceTags": [
       "general"
@@ -28833,11 +28833,11 @@
   },
   {
     "word": "opened",
-    "meaning": "中空缺的职位",
+    "meaning": "打開；開啟（open 的過去式或過去分詞）",
     "partOfSpeech": "verb",
     "sentences": [
-      "opened describes a change recognized in specialized vocabulary. 這個詞指「中空缺的职位」。",
-      "opened can follow its subject in a concise sentence. 在相關專業語境中，它表示「中空缺的职位」。"
+      "She opened the window to let in fresh air. 她打開窗戶，讓新鮮空氣進來。",
+      "The museum opened its doors at nine. 博物館九點開門。"
     ],
     "audienceTags": [
       "general"
@@ -28869,11 +28869,11 @@
   },
   {
     "word": "openhandedly",
-    "meaning": "慷慨大方地；毫不吝嗇地",
+    "meaning": "慷慨大方地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "openhandedly she paid the apprentices a bonus after the workshop earned an unexpected profit. 工坊意外獲利後，她大方地發給學徒獎金。",
-      "openhandedly donating his tools enabled several young carpenters to start working immediately. 他慷慨捐出工具，讓幾名年輕木匠得以立即開工。"
+      "She donated openhandedly to the community kitchen. 她慷慨捐款給社區廚房。",
+      "He shared his tools openhandedly with the apprentices. 他大方地和學徒分享自己的工具。"
     ],
     "audienceTags": [
       "general"
@@ -28881,11 +28881,11 @@
   },
   {
     "word": "openhandedness",
-    "meaning": "慷慨；樂於給予金錢、時間或協助的態度",
+    "meaning": "慷慨；樂於給予的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "openhandedness kept the community kitchen stocked when food prices rose sharply. 物價大漲時，眾人的慷慨讓社區廚房仍有充足存糧。",
-      "openhandedness earned the merchant affection, although some rivals tried to exploit his generosity. 那位商人的慷慨為他贏得愛戴，儘管有些對手企圖利用他的善意。"
+      "His openhandedness helped the shelter stay open. 他的慷慨幫助收容所繼續營運。",
+      "We appreciated her openhandedness during the difficult winter. 在那個艱難的冬天，我們很感激她的慷慨。"
     ],
     "audienceTags": [
       "general"
@@ -28929,11 +28929,11 @@
   },
   {
     "word": "openheartedness",
-    "meaning": "坦率真誠；樂於信任、分享感受並善待他人的特質",
+    "meaning": "坦率真誠；熱心友善的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "openheartedness made it easy for newcomers to speak honestly about why they needed help. 坦率真誠的氛圍讓新來者能坦白說明自己為何需要協助。",
-      "openheartedness strengthened their friendship when each person listened without judging the other. 雙方都不帶批判地傾聽彼此時，真誠相待加深了友誼。"
+      "Her openheartedness made it easy to discuss difficult feelings. 她坦率真誠的態度讓人容易談起難以啟齒的感受。",
+      "The family's openheartedness made every visitor feel welcome. 這家人的熱心友善讓每位訪客都感到受歡迎。"
     ],
     "audienceTags": [
       "general"
@@ -28941,11 +28941,11 @@
   },
   {
     "word": "opening",
-    "meaning": "空缺職位；可供進入、開始或採取行動的機會",
-    "partOfSpeech": "verb",
+    "meaning": "空缺職位；機會；開口",
+    "partOfSpeech": "noun",
     "sentences": [
-      "opening at the hospital attracted nurses who wanted experience in emergency care. 醫院的職缺吸引了想累積急診照護經驗的護理師。",
-      "opening appeared in the defense when the goalkeeper stepped too far from the near post. 守門員離近門柱太遠時，防線出現了一個可乘之機。"
+      "There is an opening for a nurse at the hospital. 那間醫院有一個護理師職缺。",
+      "The striker found an opening in the defense. 前鋒找到防線的一個空隙。"
     ],
     "audienceTags": [
       "general"
@@ -28953,11 +28953,11 @@
   },
   {
     "word": "openly",
-    "meaning": "公然",
+    "meaning": "公開地；坦率地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "openly changes the manner of a statement in specialized vocabulary. 這個詞指「公然」。",
-      "openly should appear near the action it qualifies. 在相關專業語境中，它表示「公然」。"
+      "She spoke openly about the problem. 她坦率地談了那個問題。",
+      "The decision was openly criticized at the meeting. 那項決定在會議上受到公開批評。"
     ],
     "audienceTags": [
       "general"
@@ -29001,11 +29001,11 @@
   },
   {
     "word": "openness",
-    "meaning": "開放、坦率或願意接受新想法的狀態",
+    "meaning": "開放；坦率；接受新想法的態度",
     "partOfSpeech": "noun",
     "sentences": [
-      "openness about the budget helped residents understand why the library reduced its weekend hours. 公開說明預算狀況，讓居民了解圖書館為何縮短週末開放時間。",
-      "openness to criticism allowed the design team to fix accessibility problems before launch. 願意接受批評，使設計團隊能在推出前修正無障礙問題。"
+      "Her openness to new ideas helped the team improve. 她願意接受新想法，幫助團隊進步。",
+      "We value openness when discussing the budget. 我們重視討論預算時的坦誠。"
     ],
     "audienceTags": [
       "general"
@@ -29213,8 +29213,8 @@
     "meaning": "操作；運轉；經營；施行手術",
     "partOfSpeech": "verb",
     "sentences": [
-      "operate the press only after both safety guards have locked into position. 兩道安全護罩都鎖定就位後，才能操作壓床。",
-      "operate from the temporary clinic until flood damage at the main hospital is repaired. 主要醫院的水災損害修復前，先在臨時診所提供服務。"
+      "She learned to operate the new machine. 她學會了操作新機器。",
+      "The company operates a small hotel near the station. 這家公司在車站附近經營一家小旅館。"
     ],
     "difficultyLevel": 2,
     "schoolLevels": [
@@ -29276,11 +29276,11 @@
   },
   {
     "word": "operating",
-    "meaning": "運作中的；操作或控制設備的；施行手術的",
+    "meaning": "正在操作或運作（operate 的現在分詞）",
     "partOfSpeech": "verb",
     "sentences": [
-      "operating engine was shut down immediately when smoke appeared near the fuel line. 燃油管附近冒煙時，運轉中的引擎立刻被關閉。",
-      "operating surgeon marked the correct knee before the patient entered the theatre. 主刀醫師在患者進入手術室前標記了正確的膝部。"
+      "The technician is operating the control panel. 技術人員正在操作控制面板。",
+      "The company is operating from a temporary office. 這家公司目前在臨時辦公室運作。"
     ],
     "audienceTags": [
       "general"
@@ -29673,11 +29673,11 @@
   },
   {
     "word": "operetta",
-    "meaning": "輕歌劇；篇幅較短、常帶喜劇色彩並穿插歌曲、舞蹈與口白的舞臺作品",
+    "meaning": "輕歌劇；帶有歌曲與口白的較短舞臺作品",
     "partOfSpeech": "noun",
     "sentences": [
-      "operetta filled the stage with mistaken identities, lively waltzes, and a cheerful romantic ending. 這齣輕歌劇以身分錯認、活潑華爾滋和歡樂浪漫結局充滿舞臺。",
-      "operetta by Gilbert and Sullivan satirized British institutions through catchy songs and absurd plots. 吉爾伯特與薩利文的輕歌劇用朗朗上口的歌曲與荒誕情節諷刺英國制度。"
+      "The theatre staged a comic operetta last month. 那家劇院上個月演出了一齣喜劇輕歌劇。",
+      "She sang the leading role in the operetta. 她在那齣輕歌劇中演唱主角。"
     ],
     "audienceTags": [
       "general"
@@ -31809,11 +31809,11 @@
   },
   {
     "word": "opine",
-    "meaning": "表達意見，提出看法",
+    "meaning": "表達意見；認為（正式用語）",
     "partOfSpeech": "verb",
     "sentences": [
-      "opine describes a change recognized in specialized vocabulary. 這個詞指「表達意見，提出看法」。",
-      "opine can follow its subject in a concise sentence. 在相關專業語境中，它表示「表達意見，提出看法」。"
+      "She opined that the plan needed more time. 她認為那項計畫需要更多時間。",
+      "Several experts opined on the proposed changes. 幾位專家對擬議中的變更發表了意見。"
     ],
     "audienceTags": [
       "general"
@@ -33034,11 +33034,11 @@
   },
   {
     "word": "opportunely",
-    "meaning": "在適當的時間或地點，以便恰到好處",
+    "meaning": "及時地；在適當時機",
     "partOfSpeech": "adverb",
     "sentences": [
-      "opportunely changes the manner of a statement in specialized vocabulary. 這個詞指「在適當的時間或地點，以便恰到好處」。",
-      "opportunely should appear near the action it qualifies. 在相關專業語境中，它表示「在適當的時間或地點，以便恰到好處」。"
+      "The invitation arrived opportunely, just as she began looking for work. 她剛開始找工作，邀請就適時到來了。",
+      "He intervened opportunely before the argument grew worse. 他適時介入，避免爭執進一步惡化。"
     ],
     "audienceTags": [
       "general"
@@ -33100,11 +33100,11 @@
   },
   {
     "word": "opportunistically",
-    "meaning": "抓住出現的機會",
+    "meaning": "伺機地；投機地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "opportunistically changes the manner of a statement in specialized vocabulary. 這個詞指「抓住出現的機會」。",
-      "opportunistically should appear near the action it qualifies. 在相關專業語境中，它表示「抓住出現的機會」。"
+      "The birds feed opportunistically on whatever food they find. 那些鳥遇到什麼食物就吃什麼。",
+      "He opportunistically claimed credit for someone else's work. 他投機地把別人的成果說成自己的功勞。"
     ],
     "audienceTags": [
       "general"
@@ -39135,11 +39135,11 @@
   },
   {
     "word": "organoboron",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機硼化合物；具有碳硼鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organoboron needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organoboron poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The reaction used an organoboron compound as a starting material. 這個反應用一種有機硼化合物作為起始原料。",
+      "His research focuses on organoboron chemistry. 他的研究著重於有機硼化學。"
     ],
     "audienceTags": [
       "general"
@@ -39339,11 +39339,11 @@
   },
   {
     "word": "organoleptic",
-    "meaning": "罕見專門形容詞，現有資料不足以可靠確定其具體修飾對象",
+    "meaning": "感官的；透過味覺、嗅覺、視覺等感官評估的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The rare term organoleptic needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organoleptic poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The panel performed an organoleptic assessment of the olive oil. 評審小組對橄欖油進行了感官評估。",
+      "The storage method changed the cheese's organoleptic qualities. 保存方式改變了起司的感官特性。"
     ],
     "audienceTags": [
       "general"
@@ -39351,11 +39351,11 @@
   },
   {
     "word": "organolithium",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機鋰化合物；具有碳鋰鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organolithium needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organolithium poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The chemist selected an organolithium reagent for the synthesis. 化學家選了一種有機鋰試劑來進行合成。",
+      "The study compared two organolithium compounds. 這項研究比較了兩種有機鋰化合物。"
     ],
     "audienceTags": [
       "general"
@@ -39411,11 +39411,11 @@
   },
   {
     "word": "organomagnesium",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機鎂化合物；具有碳鎂鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organomagnesium needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organomagnesium poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "An organomagnesium reagent was used to form the new bond. 研究使用一種有機鎂試劑來形成新化學鍵。",
+      "The lecture covered organomagnesium chemistry and its applications. 那堂課介紹了有機鎂化學及其應用。"
     ],
     "audienceTags": [
       "general"
@@ -39663,11 +39663,11 @@
   },
   {
     "word": "organosodium",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機鈉化合物；含有碳鈉鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organosodium needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organosodium poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The researcher prepared an organosodium reagent. 研究人員製備了一種有機鈉試劑。",
+      "The team examined the structure of the organosodium compound. 團隊檢視了那種有機鈉化合物的結構。"
     ],
     "audienceTags": [
       "general"
@@ -39699,11 +39699,11 @@
   },
   {
     "word": "organotin",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機錫化合物；具有碳錫鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organotin needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organotin poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The laboratory tested the water for organotin compounds. 實驗室檢測了水中的有機錫化合物。",
+      "The paper describes a new organotin complex. 那篇論文描述了一種新的有機錫錯合物。"
     ],
     "audienceTags": [
       "general"
@@ -39771,11 +39771,11 @@
   },
   {
     "word": "organozinc",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "有機鋅化合物；具有碳鋅鍵的化合物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term organozinc needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define organozinc poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The synthesis required an organozinc reagent. 這項合成需要一種有機鋅試劑。",
+      "She compared the structures of several organozinc compounds. 她比較了幾種有機鋅化合物的結構。"
     ],
     "audienceTags": [
       "general"
@@ -40208,11 +40208,11 @@
   },
   {
     "word": "Oriental",
-    "meaning": "罕見專門形容詞，現有資料不足以可靠確定其具體修飾對象",
+    "meaning": "東方的；尤指亞洲的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The rare term Oriental needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define Oriental poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The museum displayed a collection of Oriental ceramics. 博物館展出了一批東方陶瓷。",
+      "The gallery specializes in Oriental art. 那間藝廊專門展示東方藝術。"
     ],
     "audienceTags": [
       "general"
@@ -41525,11 +41525,11 @@
   },
   {
     "word": "ornery",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
-    "partOfSpeech": "noun",
+    "meaning": "脾氣壞的；倔強而難相處的（美式口語）",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "The rare term ornery needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define ornery poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The ornery neighbor complained about every little noise. 那位難相處的鄰居對任何小聲響都要抱怨。",
+      "The mule became ornery and refused to move. 那匹騾子鬧起脾氣，不肯前進。"
     ],
     "audienceTags": [
       "general"
@@ -43541,11 +43541,11 @@
   },
   {
     "word": "Orson",
-    "meaning": "罕見的專門名詞，現有資料不足以可靠確定其詞義",
+    "meaning": "奧森（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term Orson needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define Orson poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "Orson sent the revised schedule to the team. 奧森把修改後的時程表寄給了團隊。",
+      "We asked Orson to introduce the guest speaker. 我們請奧森介紹那位客座講者。"
     ],
     "audienceTags": [
       "general"
@@ -44880,11 +44880,11 @@
   },
   {
     "word": "orthography",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "正字法；書寫與拼字的規範",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term orthography needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define orthography poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The reform changed the language's orthography. 那次改革改變了這種語言的書寫規範。",
+      "The dictionary follows modern English orthography. 這本字典遵循現代英語的拼字規範。"
     ],
     "audienceTags": [
       "general"
@@ -46452,11 +46452,11 @@
   },
   {
     "word": "Orville",
-    "meaning": "罕見的專門名詞，現有資料不足以可靠確定其詞義",
+    "meaning": "奧維爾（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term Orville needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define Orville poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "Orville fixed the loose handle on the door. 奧維爾修好了門上鬆動的把手。",
+      "I met Orville at the community concert. 我在社區音樂會上遇見奧維爾。"
     ],
     "audienceTags": [
       "general"
@@ -47760,11 +47760,11 @@
   },
   {
     "word": "Oskar",
-    "meaning": "罕見的專門名詞，現有資料不足以可靠確定其詞義",
+    "meaning": "奧斯卡（男子名；Oscar 的另一種拼法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The rare term Oskar needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define Oskar poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "Oskar saved a seat for his sister. 奧斯卡替姊姊留了一個座位。",
+      "The parcel arrived at Oskar's house yesterday. 包裹昨天送到了奧斯卡家。"
     ],
     "audienceTags": [
       "general"
@@ -49068,11 +49068,11 @@
   },
   {
     "word": "ossified",
-    "meaning": "罕見專門詞，現有資料不足以可靠確定詞義",
+    "meaning": "骨化的；僵化而難以改變的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "The rare term ossified needs specialist confirmation. 該詞屬於罕見專門用語，詞義仍待考。",
-      "Reliable sources define ossified poorly. 目前沒有可靠資料能清楚界定該詞。"
+      "The organization was trapped in an ossified hierarchy. 這個組織受困於僵化的階級制度。",
+      "Her proposal challenged the committee's ossified habits. 她的提案挑戰了委員會僵化的習慣。"
     ],
     "audienceTags": [
       "general"
@@ -49512,11 +49512,11 @@
   },
   {
     "word": "ostensible",
-    "meaning": "表面上的；看似如此的",
+    "meaning": "表面上的；聲稱的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "ostensible reasons are the reasons given openly. 這個詞指公開說出的表面理由。",
-      "ostensible calm may cover real worry. 表面平靜也可能掩住真正的不安。"
+      "The ostensible reason for the visit was a business meeting. 這次拜訪表面上的理由是商務會議。",
+      "His ostensible calm concealed deep anxiety. 他表面上的平靜掩藏著深深的不安。"
     ],
     "audienceTags": [
       "general"
@@ -49623,8 +49623,8 @@
     "meaning": "炫耀；賣弄排場",
     "partOfSpeech": "noun",
     "sentences": [
-      "ostentation is showy display meant to draw notice. 這個詞指故意引人注意的炫耀。",
-      "ostentation often feels louder than true confidence. 炫耀往往比真正的自信更張揚。"
+      "They chose a simple wedding without ostentation. 他們選擇了一場沒有排場的簡樸婚禮。",
+      "His display of wealth was pure ostentation. 他展示財富的舉動完全是在炫耀。"
     ],
     "audienceTags": [
       "general"
@@ -49635,8 +49635,8 @@
     "meaning": "炫耀的；賣弄排場的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "ostentatious clothes seem designed to attract notice. 這個詞指刻意引人注目的穿著或風格。",
-      "ostentatious taste values display over restraint. 這個詞也可形容重排場勝過節制的品味。"
+      "The mansion had an ostentatious marble entrance. 那棟豪宅有一個賣弄排場的大理石入口。",
+      "She avoided ostentatious jewelry at work. 她上班時避免佩戴過於招搖的珠寶。"
     ],
     "audienceTags": [
       "general"
@@ -49647,8 +49647,8 @@
     "meaning": "炫耀地；招搖地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "ostentatiously, he stacked the gifts where everyone could see them. 他招搖地把禮物堆在大家都看得到的地方。",
-      "ostentatiously, the room announced wealth instead of comfort. 那個空間招搖地傳出財富感，而不是舒適感。"
+      "He ostentatiously checked his expensive watch. 他炫耀地看了看自己的昂貴手錶。",
+      "She left the meeting ostentatiously to show her displeasure. 她大張旗鼓地離開會議，藉此表達不滿。"
     ],
     "audienceTags": [
       "general"
@@ -49656,11 +49656,11 @@
   },
   {
     "word": "ostentatiousness",
-    "meaning": "炫耀性；招搖",
+    "meaning": "炫耀；招搖的程度或性質",
     "partOfSpeech": "noun",
     "sentences": [
-      "ostentatiousness is the quality of being showy and attention seeking. 這個詞指招搖又愛吸引目光的性質。",
-      "ostentatiousness can make even a small gesture feel forced. 過度炫耀會讓連小小的舉動都顯得刻意。"
+      "The ostentatiousness of the decorations made the room feel crowded. 裝飾過於招搖，讓房間顯得擁擠。",
+      "He disliked the ostentatiousness of the ceremony. 他不喜歡那場典禮鋪張炫耀的作風。"
     ],
     "audienceTags": [
       "general"
@@ -49707,8 +49707,8 @@
     "meaning": "骨關節炎",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteoarthritis is joint wear that often brings pain and stiffness. 這個詞指常會造成疼痛與僵硬的骨關節炎。",
-      "osteoarthritis commonly affects knees, hips, and hands. 骨關節炎常見於膝、髖與手部。"
+      "He has osteoarthritis in his right knee. 他的右膝患有骨關節炎。",
+      "The report describes how osteoarthritis affected her daily activities. 報告描述了骨關節炎如何影響她的日常活動。"
     ],
     "audienceTags": [
       "general"
@@ -49740,11 +49740,11 @@
   },
   {
     "word": "osteoblast",
-    "meaning": "成骨細胞",
+    "meaning": "成骨細胞；形成新骨組織的細胞",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteoblast is a cell that builds new bone. 這個詞指製造新骨的細胞。",
-      "osteoblast activity helps the skeleton grow and heal. 成骨細胞的活動有助於骨骼生長與修復。"
+      "The diagram shows an osteoblast on the bone surface. 圖中顯示骨表面的一個成骨細胞。",
+      "The researchers grew osteoblasts in the laboratory. 研究人員在實驗室培養了成骨細胞。"
     ],
     "audienceTags": [
       "general"
@@ -49752,11 +49752,11 @@
   },
   {
     "word": "osteoblastic",
-    "meaning": "成骨細胞的；成骨的",
+    "meaning": "成骨細胞的；與骨形成有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "osteoblastic activity means activity that forms bone. 這個詞指形成骨頭的活動。",
-      "osteoblastic change suggests new bone production. 這個詞也可表示新骨生成的變化。"
+      "The study measured osteoblastic activity in the sample. 這項研究測量了樣本中的成骨細胞活動。",
+      "The microscope revealed osteoblastic cells near the new bone. 顯微鏡下可見新骨附近的成骨細胞。"
     ],
     "audienceTags": [
       "general"
@@ -49956,11 +49956,11 @@
   },
   {
     "word": "osteoclast",
-    "meaning": "破骨細胞",
+    "meaning": "破骨細胞；分解骨組織的細胞",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteoclast is a cell that breaks down bone. 這個詞指分解骨組織的細胞。",
-      "osteoclast activity is part of normal bone remodeling. 破骨細胞的活動是正常骨重塑的一部分。"
+      "An osteoclast was visible in the tissue image. 組織影像中可見一個破骨細胞。",
+      "The experiment examined how osteoclasts break down bone. 這項實驗檢視了破骨細胞如何分解骨組織。"
     ],
     "audienceTags": [
       "general"
@@ -49968,11 +49968,11 @@
   },
   {
     "word": "osteoclastic",
-    "meaning": "破骨細胞的；蝕骨的",
+    "meaning": "破骨細胞的；與骨吸收有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "osteoclastic action removes bone tissue. 這個詞指移除骨組織的作用。",
-      "osteoclastic change reflects active bone breakdown. 這個詞也表示骨分解正在進行的變化。"
+      "The researchers measured osteoclastic activity in the culture. 研究人員測量了培養物中的破骨細胞活動。",
+      "The paper compares osteoclastic and osteoblastic processes. 那篇論文比較了破骨細胞與成骨細胞的作用過程。"
     ],
     "audienceTags": [
       "general"
@@ -50487,8 +50487,8 @@
     "meaning": "骨學的；與骨骼研究有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "osteological analysis examines bones systematically. 這個詞指系統性檢視骨骼的分析。",
-      "osteological evidence can clarify how a skeleton developed. 骨學證據可幫助釐清骨骼如何發育。"
+      "The archaeologist carried out an osteological analysis of the remains. 考古學家對遺骸進行了骨學分析。",
+      "The museum maintains an osteological collection for research. 博物館保存了一批供研究使用的骨學標本。"
     ],
     "audienceTags": [
       "general"
@@ -50511,8 +50511,8 @@
     "meaning": "骨學家；研究骨骼的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteologist studies bones and skeletal structure. 這個詞指研究骨骼與骨架構造的人。",
-      "osteologist can learn a great deal from a single skeleton. 骨學家能從一具骨骼看出很多訊息。"
+      "The osteologist examined the skeleton recovered from the site. 骨學家檢查了從遺址出土的骨骼。",
+      "An osteologist helped identify the animal remains. 一位骨學家協助辨識了動物遺骸。"
     ],
     "audienceTags": [
       "general"
@@ -50523,8 +50523,8 @@
     "meaning": "骨學；研究骨骼的學科",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteology is the study of bones. 這個詞指研究骨骼的學科。",
-      "osteology helps explain structure, growth, and function in the skeleton. 骨學有助於說明骨架的構造、生長與功能。"
+      "She took a course in human osteology. 她修了一門人類骨學課程。",
+      "Knowledge of osteology helped the team identify the bones. 骨學知識幫助團隊辨識了那些骨頭。"
     ],
     "audienceTags": [
       "general"
@@ -50688,11 +50688,11 @@
   },
   {
     "word": "osteomyelitis",
-    "meaning": "骨髓炎；骨與骨髓的感染性發炎",
+    "meaning": "骨髓炎；骨組織的感染性發炎",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteomyelitis is an infection and inflammation of bone and marrow. 這個詞指骨與骨髓的感染性發炎。",
-      "osteomyelitis can cause fever, pain, and tissue damage. 骨髓炎可能引起發燒、疼痛與組織損傷。"
+      "The hospital admitted a patient with osteomyelitis. 醫院收治了一位骨髓炎患者。",
+      "The medical team reviewed his history of osteomyelitis. 醫療團隊檢視了他的骨髓炎病史。"
     ],
     "audienceTags": [
       "general"
@@ -50712,11 +50712,11 @@
   },
   {
     "word": "osteonecrosis",
-    "meaning": "骨壞死",
+    "meaning": "骨壞死；骨組織死亡的狀況",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteonecrosis means death of bone tissue. 這個詞指骨組織壞死。",
-      "osteonecrosis often follows loss of blood supply. 骨壞死常發生在血液供應中斷之後。"
+      "The scan showed osteonecrosis in the hip. 掃描顯示髖部有骨壞死。",
+      "The specialist discussed the diagnosis of osteonecrosis with the patient. 專科醫師和患者討論了骨壞死的診斷。"
     ],
     "audienceTags": [
       "general"
@@ -51015,8 +51015,8 @@
     "meaning": "骨質疏鬆症",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteoporosis makes bones thinner and easier to break. 這個詞指讓骨頭變薄且更易斷裂的骨質疏鬆症。",
-      "osteoporosis often develops quietly over many years. 骨質疏鬆症常在多年之間悄悄發展。"
+      "Her doctor diagnosed osteoporosis after a bone density test. 骨密度檢查後，醫師診斷她患有骨質疏鬆症。",
+      "The study followed people living with osteoporosis. 這項研究追蹤了患有骨質疏鬆症的人。"
     ],
     "audienceTags": [
       "general"
@@ -51027,8 +51027,8 @@
     "meaning": "骨質疏鬆的；患有骨質疏鬆症的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "osteoporotic bone breaks more easily than healthy bone. 這個詞指比健康骨頭更容易斷裂的骨質疏鬆骨。",
-      "osteoporotic change reduces bone strength. 這個詞也表示讓骨強度下降的變化。"
+      "The researchers compared osteoporotic bone with healthy bone. 研究人員比較了骨質疏鬆的骨骼與健康骨骼。",
+      "The study included several osteoporotic patients. 這項研究納入了幾位骨質疏鬆症患者。"
     ],
     "audienceTags": [
       "general"
@@ -51048,11 +51048,11 @@
   },
   {
     "word": "osteosarcoma",
-    "meaning": "骨肉瘤",
+    "meaning": "骨肉瘤；一種產生骨組織的惡性腫瘤",
     "partOfSpeech": "noun",
     "sentences": [
-      "osteosarcoma is a malignant tumor that forms bone tissue. 這個詞指會形成骨組織的惡性腫瘤。",
-      "osteosarcoma often grows aggressively. 骨肉瘤常常生長迅速而兇猛。"
+      "The pathology report confirmed osteosarcoma. 病理報告確認了骨肉瘤的診斷。",
+      "She joined a research project on osteosarcoma. 她參加了一項骨肉瘤研究計畫。"
     ],
     "audienceTags": [
       "general"
@@ -63618,11 +63618,11 @@
   },
   {
     "word": "outvote",
-    "meaning": "以多數票擊敗；票數多於",
+    "meaning": "以較多票數擊敗；在表決中勝過",
     "partOfSpeech": "verb",
     "sentences": [
-      "outvote means to defeat a motion with a larger number of votes. 這表示以較多票數否決一項動議。",
-      "outvote allowed the council to reject the proposal. 這讓議會得以否決提案。"
+      "The younger members outvoted the older members. 較年輕的成員在表決中以較多票數勝過了較年長的成員。",
+      "We were outvoted on the proposal to extend the meeting. 在是否延長會議的表決中，我們的票數輸了。"
     ],
     "audienceTags": [
       "general"
@@ -63654,11 +63654,11 @@
   },
   {
     "word": "outwait",
-    "meaning": "等待得比……更久",
+    "meaning": "等得比……更久；以耐心等待勝過",
     "partOfSpeech": "verb",
     "sentences": [
-      "outwait means to remain patient longer than another person. 這表示比另一人更有耐心地等待。",
-      "outwait eventually forced the impatient bidder to leave. 這種等待終於迫使缺乏耐心的投標者離開。"
+      "She decided to outwait the other bidders. 她決定比其他出價者等得更久。",
+      "The negotiators tried to outwait each other. 雙方談判代表試圖以更有耐心的等待勝過對方。"
     ],
     "audienceTags": [
       "general"
@@ -63693,8 +63693,8 @@
     "meaning": "走得比……更快或更遠",
     "partOfSpeech": "verb",
     "sentences": [
-      "outwalk means to walk faster or farther than another person. 這表示走得比另一人更快或更遠。",
-      "outwalk let the hiker reach the pass before sunset. 這讓健行者在日落前抵達山口。"
+      "Even at seventy, he could outwalk the younger hikers. 即使七十歲了，他仍能走得比年輕的健行者更遠。",
+      "She easily outwalked me on the steep trail. 在陡峭的小徑上，她輕鬆地走在我前面。"
     ],
     "audienceTags": [
       "general"
@@ -63835,11 +63835,11 @@
   },
   {
     "word": "outwards",
-    "meaning": "向外；遠離中心",
+    "meaning": "向外；往外",
     "partOfSpeech": "adverb",
     "sentences": [
-      "outwards describes movement away from a central point. 這描述遠離中心的移動。",
-      "outwards the smoke drifted across the open roof. 煙霧向外飄過敞開的屋頂。"
+      "The doors open outwards. 這些門向外開。",
+      "Ripples spread outwards from the falling stone. 石頭落下後，漣漪向外擴散。"
     ],
     "audienceTags": [
       "general"
@@ -63931,11 +63931,11 @@
   },
   {
     "word": "outwear",
-    "meaning": "穿破；使疲憊不堪；耗盡",
+    "meaning": "穿破；耗盡；比……更耐用",
     "partOfSpeech": "verb",
     "sentences": [
-      "outwear means to wear something out through long use. 這表示長期使用而把某物磨損。",
-      "outwear can also exhaust a person through repeated effort. 這也能表示反覆努力使人筋疲力竭。"
+      "These leather boots will outwear cheaper ones. 這雙皮靴會比便宜的靴子更耐穿。",
+      "The long struggle had outworn his strength. 長期的奮鬥已耗盡他的力氣。"
     ],
     "audienceTags": [
       "general"
@@ -64138,8 +64138,8 @@
     "meaning": "以機智勝過；智取",
     "partOfSpeech": "verb",
     "sentences": [
-      "outwit means to defeat someone through superior cleverness. 這表示用更高明的機智擊敗某人。",
-      "outwit helped the prisoner evade the guard's routine. 這讓囚犯避開了守衛的例行巡查。"
+      "The detective outwitted the thief. 偵探用機智勝過了小偷。",
+      "She outwitted her opponent with an unexpected move. 她用出人意料的一步智取了對手。"
     ],
     "audienceTags": [
       "general"
@@ -64147,11 +64147,11 @@
   },
   {
     "word": "outwith",
-    "meaning": "在……之外；超出……範圍；蘇格蘭英語用法",
+    "meaning": "在……之外；超出……範圍（蘇格蘭英語）",
     "partOfSpeech": "preposition",
     "sentences": [
-      "outwith means outside a place, limit, or area. 這表示在某處、界線或範圍之外。",
-      "outwith the city, the roads became narrow and quiet. 城市之外，道路變得狹窄而安靜。"
+      "The matter is outwith our control. 這件事超出了我們的控制範圍。",
+      "The village lies outwith the city boundary. 那座村莊位於市界之外。"
     ],
     "audienceTags": [
       "general"
@@ -64243,11 +64243,11 @@
   },
   {
     "word": "outwork",
-    "meaning": "外圍防禦工事；主防線外的工事",
+    "meaning": "外圍防禦工事",
     "partOfSpeech": "noun",
     "sentences": [
-      "outwork is a defensive structure placed outside a main fort. 這是設在主堡壘外的防禦工事。",
-      "outwork slowed the attackers before they reached the walls. 外圍工事讓攻擊者在抵達城牆前放慢腳步。"
+      "The soldiers defended the outwork before retreating to the fort. 士兵先守住外圍工事，再退回堡壘。",
+      "A stone outwork protected the main gate. 一座石造外圍工事保護著主城門。"
     ],
     "audienceTags": [
       "general"
@@ -64255,11 +64255,11 @@
   },
   {
     "word": "outworker",
-    "meaning": "為商業公司在家工作的工人；居家工作者",
+    "meaning": "在工作場所外承接工作的工人；居家代工者",
     "partOfSpeech": "noun",
     "sentences": [
-      "outworker names a person who works at home for a business firm. 這指在家為商業公司工作的工人。",
-      "outworker received tasks by courier each morning. 這名居家工作者每天早上透過快遞收到工作。"
+      "The outworker sewed the garments at home. 那位居家代工者在家縫製衣服。",
+      "The company delivered materials to its outworkers each week. 公司每週把材料送給外部代工者。"
     ],
     "audienceTags": [
       "general"
@@ -64279,11 +64279,11 @@
   },
   {
     "word": "outworn",
-    "meaning": "磨損殆盡的；過時而不再適用的",
+    "meaning": "磨損的；過時而不再適用的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "outworn describes something worn out or no longer acceptable. 這形容磨損殆盡或不再被接受的事物。",
-      "outworn customs slowly disappeared from public life. 過時的習俗逐漸從公共生活中消失。"
+      "They replaced the outworn carpet in the hallway. 他們換掉了走廊裡磨損的地毯。",
+      "The reform challenged several outworn traditions. 這項改革挑戰了幾項過時的傳統。"
     ],
     "audienceTags": [
       "general"
@@ -64483,11 +64483,11 @@
   },
   {
     "word": "ova",
-    "meaning": "卵；雌配子，是 ovum 的複數",
+    "meaning": "卵；卵細胞（ovum 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "ova are larger reproductive cells that can be fertilized. 這些是可受精且較大的生殖細胞。",
-      "ova develop inside the reproductive organs of many animals. 卵在許多動物的生殖器官內發育。"
+      "The biologist counted the ova under a microscope. 生物學家在顯微鏡下數了卵細胞。",
+      "The diagram shows ova at several stages of development. 圖中顯示了幾個發育階段的卵細胞。"
     ],
     "audienceTags": [
       "general"
@@ -64707,8 +64707,8 @@
     "meaning": "卵巢的；與卵巢有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "ovarian means of or relating to an ovary. 這表示卵巢的或與卵巢有關的。",
-      "ovarian hormones influence several reproductive processes. 卵巢激素會影響數個生殖過程。"
+      "The researcher examined ovarian tissue under a microscope. 研究人員在顯微鏡下檢視卵巢組織。",
+      "The diagram labels the ovarian artery. 圖中標示了卵巢動脈。"
     ],
     "audienceTags": [
       "general"
@@ -64959,8 +64959,8 @@
     "meaning": "卵巢；植物的子房",
     "partOfSpeech": "noun",
     "sentences": [
-      "ovary is the organ that produces eggs in many female animals. 這是許多雌性動物產生卵的器官。",
-      "ovary becomes part of the fruit after fertilization in a flower. 花朵受精後，子房會成為果實的一部分。"
+      "The drawing shows an ovary beside the uterus. 這幅圖畫出子宮旁的一個卵巢。",
+      "The botanist examined the ovary of the flower. 植物學家檢查了那朵花的子房。"
     ],
     "audienceTags": [
       "general"
@@ -64968,11 +64968,11 @@
   },
   {
     "word": "ovate",
-    "meaning": "卵形的；形狀像雞蛋的",
+    "meaning": "卵形的；外形像蛋的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "ovate describes a shape that resembles an egg. 這形容類似雞蛋的形狀。",
-      "ovate leaves are broader below the middle. 卵形葉片在中部以下較寬。"
+      "This plant has broad, ovate leaves. 這種植物有寬大的卵形葉片。",
+      "The botanist sketched the ovate outline of the leaf. 植物學家畫出了葉片的卵形輪廓。"
     ],
     "audienceTags": [
       "general"

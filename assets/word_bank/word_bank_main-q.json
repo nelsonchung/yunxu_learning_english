@@ -19408,11 +19408,11 @@
   },
   {
     "word": "quote",
-    "meaning": "引用",
+    "meaning": "引用；報價",
     "partOfSpeech": "verb",
     "sentences": [
-      "The author's famous quote managed to inspire millions of people. 這位作者的名言（引用語）激勵了數百萬人。",
-      "Could you please provide a quote for the car repair service? 能請您提供一份汽車維修服務的報價嗎？"
+      "Please quote the author accurately in your essay. 請在文章中正確引用這位作者的話。",
+      "The mechanic quoted me a price for the repair. 技師向我報了維修價格。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [

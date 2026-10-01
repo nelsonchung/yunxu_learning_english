@@ -1,7 +1,7 @@
 [
   {
     "word": "a/an",
-    "meaning": "一個/一個",
+    "meaning": "一個（不定冠詞，a 用於子音音素前，an 用於母音音素前）",
     "partOfSpeech": "determiner",
     "sentences": [
       "I saw an old man sitting on a wooden bench. 我看到一位老人坐在木凳上。",
@@ -619,11 +619,11 @@
   },
   {
     "word": "abandonment",
-    "meaning": "自願離開與其有特殊關係的人，例如妻子、丈夫或孩子；遺棄。",
+    "meaning": "遺棄；放棄",
     "partOfSpeech": "noun",
     "sentences": [
-      "Since he left her, she's suing him for divorce on grounds of abandonment. 自從他離開她後，她以遺棄為由起訴他離婚。",
-      "The term abandonment refers to the voluntary leaving of a person to whom one is bound by a special relation, as a wife, husband or child; desertion. 遺棄一詞是指自願離開與某人有特殊關係的人，例如妻子、丈夫或孩子；遺棄。"
+      "The abandonment of the project disappointed the team. 專案被放棄令團隊失望。",
+      "The shelter cares for dogs that have suffered abandonment. 收容所照顧遭到遺棄的狗。"
     ],
     "audienceTags": [
       "general"
@@ -2363,11 +2363,11 @@
   },
   {
     "word": "aberration",
-    "meaning": "任何具有超自然力量的生物，在給定環境中的有組織的生物類別中找不到。",
+    "meaning": "偏差；異常現象",
     "partOfSpeech": "noun",
     "sentences": [
-      "Only by submitting to the aberration could the human traders travel safely through the territory of Zularn. 只有屈服於畸變，人類商人才能安全地穿越祖拉恩的領地。",
-      "The term aberration refers to Any creature with supernatural powers not found in the organized classes of beings in a given setting. 畸變一詞是指在給定環境中的有組織的生物類別中未發現的具有超自然力量的任何生物。"
+      "The sudden drop in temperature was an aberration for this season. 氣溫突然下降是這個季節的異常現象。",
+      "One poor result may be an aberration rather than a trend. 一次不佳的結果可能只是異常，而非趨勢。"
     ],
     "examTags": [
       "toeic"
@@ -4992,7 +4992,7 @@
   },
   {
     "word": "above",
-    "meaning": "多於",
+    "meaning": "在……上方；超過",
     "partOfSpeech": "preposition",
     "sentences": [
       "The birds were flying high above the trees. 鳥兒在樹林上方高高地飛翔。",
@@ -6329,11 +6329,11 @@
   },
   {
     "word": "absolution",
-    "meaning": "赦免或免除內疚、罪惡或懲罰；寬恕罪行。",
+    "meaning": "赦罪；寬恕",
     "partOfSpeech": "noun",
     "sentences": [
-      "Governments granting absolution to the nation. 政府給予國民赦免。",
-      "The term absolution refers to An absolving, or setting free from guilt, sin, or penalty; forgiveness of an offense. 赦免一詞是指赦免或免除罪惡感、罪惡或懲罰；寬恕罪行。"
+      "The priest offered absolution after the confession. 神父在告解後給予赦罪。",
+      "He sought absolution for the harm he had caused. 他為自己造成的傷害尋求寬恕。"
     ],
     "audienceTags": [
       "general"
@@ -8091,11 +8091,11 @@
   },
   {
     "word": "abyss",
-    "meaning": "道德敗壞；廣闊的智力或道德深度。",
+    "meaning": "深淵；無底洞",
     "partOfSpeech": "noun",
     "sentences": [
-      "They fell into the abyss of drug addiction. 他們陷入了毒癮的深淵。",
-      "The term abyss refers to Moral depravity; vast intellectual or moral depth. 深淵這個字是指道德敗壞；廣闊的智力或道德深度。"
+      "They looked down into the dark abyss. 他們向下望進黑暗的深淵。",
+      "The failed business left him in an abyss of debt. 生意失敗讓他陷入債務深淵。"
     ],
     "audienceTags": [
       "general"
@@ -10871,11 +10871,11 @@
   },
   {
     "word": "accession",
-    "meaning": "來到；加入與加入的行為。",
+    "meaning": "即位；加入",
     "partOfSpeech": "noun",
     "sentences": [
-      "a king's accession to a confederacy 國王加入聯盟",
-      "The term accession refers to a coming to; the act of acceding and becoming joined. 「加入」一詞是指「來到」；加入和加入的行為。"
+      "The king's accession was celebrated across the country. 全國慶祝國王即位。",
+      "The treaty set conditions for accession to the union. 條約訂定了加入聯盟的條件。"
     ],
     "audienceTags": [
       "general"
@@ -20246,11 +20246,11 @@
   },
   {
     "word": "acoustics",
-    "meaning": "影響聲音傳播方式的空間屬性。",
+    "meaning": "聲學；音響效果",
     "partOfSpeech": "noun",
     "sentences": [
-      "The acoustics in the opera house gave the whole concert a spooky sound. 歌劇院的音響效果讓整場音樂會充滿了詭異的聲音。",
-      "The term acoustics refers to The properties of a space that affect how sound carries. 聲學一詞是指影響聲音傳播方式的空間特性。"
+      "The concert hall has excellent acoustics. 這座音樂廳的音響效果極佳。",
+      "She studies acoustics to understand how sound travels. 她研究聲學，以了解聲音如何傳播。"
     ],
     "audienceTags": [
       "general"
@@ -23528,11 +23528,11 @@
   },
   {
     "word": "acrylic",
-    "meaning": "含有丙烯酸樹脂的塗料。",
+    "meaning": "壓克力；壓克力顏料",
     "partOfSpeech": "noun",
     "sentences": [
-      "When it comes to painting, I prefer using acrylics as my medium. 當談到繪畫時，我更喜歡使用丙烯酸作為我的媒介。",
-      "The term acrylic refers to a paint containing an acrylic resin. 術語丙烯酸是指含有丙烯酸樹脂的塗料。"
+      "She painted the landscape in acrylic. 她用壓克力顏料畫了這幅風景畫。",
+      "The display case is made of clear acrylic. 這個展示盒是透明壓克力做的。"
     ],
     "audienceTags": [
       "general"
@@ -25258,11 +25258,11 @@
   },
   {
     "word": "activation",
-    "meaning": "透過活動或活動推廣品牌。",
+    "meaning": "啟動；活化",
     "partOfSpeech": "noun",
     "sentences": [
-      "using shopper activation to convert shoppers into buyers 使用購物者啟動將購物者轉化為買家",
-      "The term activation refers to the promotion of a brand through an event or campaign. 激活一詞是指透過活動或活動來推廣品牌。"
+      "Account activation requires a confirmation email. 帳號啟用需要一封確認電子郵件。",
+      "The alarm sounded after activation of the sensor. 感測器啟動後，警報響了。"
     ],
     "audienceTags": [
       "general"
@@ -25857,11 +25857,11 @@
   },
   {
     "word": "acuity",
-    "meaning": "清晰地思考、看或聽的能力。",
+    "meaning": "敏銳度；敏銳的感知或思考能力",
     "partOfSpeech": "noun",
     "sentences": [
-      "The old woman with dementia lost her mental acuity. 這位患有癡呆症的老婦人失去了理智。",
-      "The term acuity refers to The ability to think, see, or hear clearly. 術語「敏銳度」是指清晰地思考、看或聽的能力。"
+      "The test measures visual acuity. 這項測試測量視覺敏銳度。",
+      "Her mental acuity helped her solve the difficult puzzle. 她敏銳的思考能力幫助她解開難題。"
     ],
     "audienceTags": [
       "general"
@@ -27214,11 +27214,11 @@
   },
   {
     "word": "adapter",
-    "meaning": "一個能夠適應不同情況的人。",
+    "meaning": "轉接器；適配器",
     "partOfSpeech": "noun",
     "sentences": [
-      "He was an able adapter, and could easily adjust to the differences when the company changed ownership. 他是一位能幹的適應者，當公司所有權變更時，他能夠輕鬆適應差異。",
-      "The term adapter refers to one who is capable of adapting to differing situations. 適配器一詞指的是能夠適應不同情況的人。"
+      "You need an adapter to connect this monitor to your laptop. 你需要轉接器才能把這台螢幕接到筆電。",
+      "I packed a travel adapter for the trip abroad. 我為出國旅行帶了旅行用轉接器。"
     ],
     "examTags": [
       "toeic"
@@ -27680,11 +27680,11 @@
   },
   {
     "word": "adder",
-    "meaning": "增加或增加的東西。",
+    "meaning": "蝰蛇；加法器",
     "partOfSpeech": "noun",
     "sentences": [
-      "They sought out cost adders with an eye toward eliminating them. 他們尋找成本增加者，並專注於消除它們。",
-      "The term adder refers to Something which adds or increases. 術語“加法器”指的是添加或增加的東西。"
+      "An adder was resting beside the path. 一條蝰蛇在小徑旁休息。",
+      "The circuit includes an adder for adding binary numbers. 這個電路包含用來相加二進位數的加法器。"
     ],
     "audienceTags": [
       "general"
@@ -30093,11 +30093,11 @@
   },
   {
     "word": "adequacy",
-    "meaning": "充分、充分或能夠滿足需求的品質。",
+    "meaning": "充分性；足夠程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "His zeal is, of course, unquestionable; his adequacy, however, I doubt. 當然，他的熱情是毋庸置疑的。然而，我懷疑他的充分性。",
-      "The term adequacy refers to The quality of being sufficient, adequate or able to meet the needs. 術語「充分性」是指充分、適當或能夠滿足需求的品質。"
+      "We questioned the adequacy of the emergency supplies. 我們質疑緊急物資是否足夠。",
+      "The inspector checked the adequacy of the ventilation. 檢查員檢查通風是否充足。"
     ],
     "audienceTags": [
       "general"
@@ -32703,11 +32703,11 @@
   },
   {
     "word": "admirer",
-    "meaning": "被某人浪漫地吸引的人。",
+    "meaning": "仰慕者；愛慕者",
     "partOfSpeech": "noun",
     "sentences": [
-      "Although he has a number of admirers, he prefers to remain single. 儘管他有很多崇拜者，但他寧願保持單身。",
-      "The term admirer refers to one who is romantically attracted to someone. 仰慕者一詞指的是被某人浪漫地吸引的人。"
+      "An admirer sent the singer a handwritten letter. 一位仰慕者寄了親筆信給歌手。",
+      "She has many admirers but prefers to remain single. 她有許多愛慕者，但寧願保持單身。"
     ],
     "audienceTags": [
       "general"
@@ -33266,11 +33266,11 @@
   },
   {
     "word": "adobe",
-    "meaning": "未燒完的磚塊在陽光下曬乾。",
+    "meaning": "土坯；曬乾而未燒製的泥磚",
     "partOfSpeech": "noun",
     "sentences": [
-      "Many people in Texas and New Mexico live in adobe houses. 德州和新墨西哥州的許多人住在土坯房。",
-      "The term adobe refers to an unburnt brick dried in the sun. 土坯一詞是指在陽光下乾燥的未燒製的磚。"
+      "The old house was built of adobe. 這棟老房子是用土坯建造的。",
+      "Workers left the adobe bricks in the sun to dry. 工人把土坯磚放在陽光下曬乾。"
     ],
     "audienceTags": [
       "general"
@@ -35033,11 +35033,11 @@
   },
   {
     "word": "adultery",
-    "meaning": "第六條/第七誡所禁止的思想和行為的淫蕩或不貞潔；有罪的性行為作為一個類別。",
+    "meaning": "通姦；婚外性關係",
     "partOfSpeech": "noun",
     "sentences": [
-      "Thou shalt not commit adultery. 不可姦淫。",
-      "The term adultery refers to lewdness or unchastity of thought as well as act, as forbidden by the sixth/seventh commandment; sinful sexual behavior as a category. 通姦一詞是指思想和行為的淫蕩或不貞潔，這是第六條/第七誡所禁止的；有罪的性行為作為一個類別。"
+      "Their marriage ended after he admitted to adultery. 他承認通姦後，他們的婚姻結束了。",
+      "The novel explores the consequences of adultery. 這部小說探討婚外性關係的後果。"
     ],
     "audienceTags": [
       "general"
@@ -35362,11 +35362,11 @@
   },
   {
     "word": "advancement",
-    "meaning": "前進的行為；晉升到更高的職位或尊嚴。",
+    "meaning": "進步；晉升",
     "partOfSpeech": "noun",
     "sentences": [
-      "the advancement of learning 學習的進步",
-      "The term advancement refers to the act of advancing; promotion to a higher place or dignity. 「進步」一詞是指進步的行為；晉升到更高的職位或尊嚴。"
+      "The course supports career advancement. 這門課程有助於職涯晉升。",
+      "Scientific advancement has improved communication. 科學進步改善了通訊。"
     ],
     "audienceTags": [
       "general"
@@ -36185,11 +36185,11 @@
   },
   {
     "word": "advertisement",
-    "meaning": "旨在銷售某種商品、服務或類似產品的商業招攬。",
+    "meaning": "廣告",
     "partOfSpeech": "noun",
     "sentences": [
-      "Companies try to sell their products using advertisements in form of placards, television spots and print publications. 公司嘗試使用標語牌、電視廣告和印刷出版物等形式的廣告來銷售其產品。",
-      "The term advertisement refers to A commercial solicitation designed to sell some commodity, service or similar. 廣告一詞是指旨在銷售某種商品、服務或類似產品的商業招攬。"
+      "I saw an advertisement for the concert on the bus. 我在公車上看到演唱會的廣告。",
+      "The company placed an advertisement in the newspaper. 公司在報紙上刊登廣告。"
     ],
     "examTags": [
       "toeic"
@@ -38865,11 +38865,11 @@
   },
   {
     "word": "aerodynamics",
-    "meaning": "特定物體（通常是汽車或飛機）的空氣動力學特性。",
+    "meaning": "空氣動力學；空氣動力特性",
     "partOfSpeech": "noun",
     "sentences": [
-      "This type of airfoil doesn't have the right aerodynamics to achieve what they're trying to achieve. 這種類型的翼型不具備正確的空氣動力學特性來實現他們想要實現的目標。",
-      "The term aerodynamics refers to The aerodynamic properties of a particular object (typically a car or aircraft). 空氣動力學一詞是指特定物體（通常是汽車或飛機）的空氣動力學特性。"
+      "Engineers study aerodynamics when designing aircraft. 工程師設計飛機時會研究空氣動力學。",
+      "The curved roof improves the car's aerodynamics. 弧形車頂改善了這輛車的空氣動力特性。"
     ],
     "audienceTags": [
       "general"
@@ -39372,11 +39372,11 @@
   },
   {
     "word": "aerosol",
-    "meaning": "懸浮在氣態介質中的細小固體顆粒或液滴的混合物。",
+    "meaning": "氣膠；氣霧劑",
     "partOfSpeech": "noun",
     "sentences": [
-      "Examples of common aerosols are mist, fog, and smoke. 常見氣溶膠的例子有薄霧、霧氣和煙霧。",
-      "The term aerosol refers to A mixture of fine solid particles or liquid droplets suspended in a gaseous medium. 術語「氣溶膠」是指懸浮在氣態介質中的細小固體顆粒或液滴的混合物。"
+      "Smoke is an aerosol containing tiny particles. 煙是含有微小粒子的氣膠。",
+      "The cleaner comes in an aerosol can. 這款清潔劑裝在氣霧罐裡。"
     ],
     "audienceTags": [
       "general"
@@ -40701,11 +40701,11 @@
   },
   {
     "word": "affidavit",
-    "meaning": "經簽署的文件，其中宣誓人作出宣誓聲明。",
+    "meaning": "宣誓書",
     "partOfSpeech": "noun",
     "sentences": [
-      "He submitted his affidavit rather than appearing to testify in court. 他提交了宣誓書，而不是出庭作證。",
-      "The term affidavit refers to a signed document wherein an affiant makes a sworn statement. 宣誓書一詞係指宣誓人作出宣誓聲明的簽署文件。"
+      "She signed an affidavit describing what she had witnessed. 她簽署宣誓書，說明自己目睹的事情。",
+      "The lawyer submitted the affidavit to the court. 律師向法院提交宣誓書。"
     ],
     "audienceTags": [
       "general"
@@ -41675,11 +41675,11 @@
   },
   {
     "word": "affront",
-    "meaning": "公開或故意的冒犯、輕蔑或侮辱。",
+    "meaning": "侮辱；冒犯",
     "partOfSpeech": "noun",
     "sentences": [
-      "Such behavior is an affront to society. 這種行為是對社會的侮辱。",
-      "The term affront refers to An open or intentional offense, slight, or insult. 侮辱一詞是指公開或故意的冒犯、輕蔑或侮辱。"
+      "He considered the remark an affront to his family. 他認為那句話侮辱了他的家人。",
+      "The unfair decision was an affront to justice. 這項不公平的決定是對正義的侮辱。"
     ],
     "audienceTags": [
       "general"
@@ -43522,11 +43522,11 @@
   },
   {
     "word": "afterlife",
-    "meaning": "死後有意識的存在；在某些世界觀中，一種遵循自然生活的超自然生活。",
+    "meaning": "來世；死後的生命",
     "partOfSpeech": "noun",
     "sentences": [
-      "Many religious people believe in an afterlife. 許多宗教人士相信來世。",
-      "The term afterlife refers to a conscious existence after death; a supernatural life that follows one's natural life, in some worldviews. 來世這個字是指死後有意識的存在。在某些世界觀中，一種遵循自然生活的超自然生活。"
+      "She believes in an afterlife. 她相信有來世。",
+      "Different religions describe the afterlife in different ways. 不同宗教對來世有不同的描述。"
     ],
     "audienceTags": [
       "general"
@@ -43630,11 +43630,11 @@
   },
   {
     "word": "aftermath",
-    "meaning": "之後發生的事情，隨後發生的事情，在大多數情況下通常具有強烈的負面含義，暗示先前的災難。",
+    "meaning": "災難或重大事件後的局面；餘波",
     "partOfSpeech": "noun",
     "sentences": [
-      "In contrast to most projections of the aftermath of nuclear war, in this there is no rioting or looting. 與大多數對核戰後果的預測相反，這裡沒有騷亂或搶劫。",
-      "The term aftermath refers to that which happens after, that which follows, usually of strongly negative connotation in most contexts, implying a preceding catastrophe. 「後果」一詞指的是隨後發生的事情，在大多數情況下通常具有強烈的負面含義，暗示先前發生的災難。"
+      "Volunteers brought food in the aftermath of the flood. 水災過後，志工送來食物。",
+      "The city struggled to recover from the aftermath of the war. 這座城市在戰後艱難地復原。"
     ],
     "examTags": [
       "toeic"
@@ -47165,11 +47165,11 @@
   },
   {
     "word": "aggressiveness",
-    "meaning": "土壤或水溶解金屬或水泥結構的傾向。",
+    "meaning": "攻擊性；進取性；侵蝕性",
     "partOfSpeech": "noun",
     "sentences": [
-      "The aggressiveness of various sulfate salts towards concrete is partly related to solubility. 各種硫酸鹽對混凝土的侵蝕性部分與溶解度有關。",
-      "The term aggressiveness refers to The propensity of a soil or water to dissolve metal or cement structures. 術語侵蝕性是指土壤或水溶解金屬或水泥結構的傾向。"
+      "The dog's aggressiveness worried its owner. 這隻狗的攻擊性令主人擔心。",
+      "The coach praised her aggressiveness in pursuing the ball. 教練讚賞她積極搶球的勁頭。"
     ],
     "audienceTags": [
       "general"
@@ -47648,11 +47648,11 @@
   },
   {
     "word": "agitation",
-    "meaning": "激動的行為，或激動的狀態；因暴力或不正常行為而受到干擾的狀態；騷動。",
+    "meaning": "焦躁；激動；攪動",
     "partOfSpeech": "noun",
     "sentences": [
-      "During a storm the sea is in agitation. 暴風雨期間，大海波濤洶湧。",
-      "The term agitation refers to the act of agitating, or the state of being agitated; the state of being disrupted with violence, or with irregular action; commotion. 術語「攪動」是指攪動的行為或被攪動的狀態；因暴力或不正常行為而受到干擾的狀態；騷動。"
+      "He paced the room in agitation. 他焦躁地在房間裡踱步。",
+      "Gentle agitation keeps the particles suspended in the liquid. 輕輕攪動可使粒子保持懸浮在液體中。"
     ],
     "audienceTags": [
       "general"
@@ -48871,11 +48871,11 @@
   },
   {
     "word": "agonist",
-    "meaning": "當另一塊肌肉放鬆時收縮。",
+    "meaning": "致效劑；主動肌",
     "partOfSpeech": "noun",
     "sentences": [
-      "When bending the elbow, the biceps is the agonist. 彎曲手肘時，二頭肌是主動肌。",
-      "The term agonist refers to The muscle that contracts while the other relaxes. 激動劑一詞是指在另一塊肌肉放鬆時收縮的肌肉。"
+      "The drug acts as an agonist at this receptor. 這種藥物在這個受體上發揮致效劑的作用。",
+      "When the elbow bends, the biceps acts as an agonist. 手肘彎曲時，二頭肌充當主動肌。"
     ],
     "examTags": [
       "toeic"
@@ -52771,11 +52771,11 @@
   },
   {
     "word": "airframe",
-    "meaning": "飛機的主體和結構（不包括動力裝置）。",
+    "meaning": "機體；不含動力裝置的飛機結構",
     "partOfSpeech": "noun",
     "sentences": [
-      "This airframe has 2600 flight hours on it; the powerplant has just over 800. 機身有2600個飛行小時；動力裝置只有800多台。",
-      "The term airframe refers to The main body and structure of an aircraft (without the powerplant). 機身一詞是指飛機的主體和結構（不包括動力裝置）。"
+      "The mechanic inspected the airframe for cracks. 技師檢查機體有無裂痕。",
+      "The airframe has more flight hours than the engine. 機體的飛行時數比引擎更多。"
     ],
     "examTags": [
       "toeic"
@@ -63112,11 +63112,11 @@
   },
   {
     "word": "alienation",
-    "meaning": "疏遠行為。",
+    "meaning": "疏離；疏遠",
     "partOfSpeech": "noun",
     "sentences": [
-      "The alienation of that viewing demographic is a poor business decision. 疏遠觀看人群是一個糟糕的商業決策。",
-      "The term alienation refers to the act of alienating. 異化一詞是指異化的行為。"
+      "Moving to a new city deepened his sense of alienation. 搬到新城市加深了他的疏離感。",
+      "The policy caused alienation among long-term employees. 這項政策使資深員工產生疏離感。"
     ],
     "examTags": [
       "toeic"
@@ -65751,11 +65751,11 @@
   },
   {
     "word": "allegation",
-    "meaning": "斷言，尤其是指控，不一定基於事實。",
+    "meaning": "指控；未經證實的說法",
     "partOfSpeech": "noun",
     "sentences": [
-      "She put forth several allegations regarding her partner in hopes of discrediting his actions. 她對她的伴侶提出了幾項指控，希望抹黑他的行為。",
-      "The term allegation refers to an assertion, especially an accusation, not necessarily based on facts. 指控一詞指的是一種斷言，尤其是一種指控，不一定是基於事實。"
+      "The company denied the allegation of fraud. 公司否認詐欺指控。",
+      "Investigators found no evidence to support the allegation. 調查人員找不到支持這項指控的證據。"
     ],
     "audienceTags": [
       "general"
@@ -67181,11 +67181,11 @@
   },
   {
     "word": "allocation",
-    "meaning": "已分配的；津貼, 津貼。",
+    "meaning": "分配；分配額",
     "partOfSpeech": "noun",
     "sentences": [
-      "The farmer received his full allocation of water from the government. 農民從政府那裡得到了全額的水分配​​。",
-      "The term allocation refers to that which is allocated; allowance, entitlement. 術語分配是指已分配的；津貼，權利。"
+      "The committee discussed the allocation of funds. 委員會討論資金的分配。",
+      "Each farm received an allocation of water. 每座農場都獲得配給的用水量。"
     ],
     "audienceTags": [
       "general"
@@ -69061,11 +69061,11 @@
   },
   {
     "word": "alloy",
-    "meaning": "價值較低的金屬與價值較高的金屬混合。",
+    "meaning": "合金",
     "partOfSpeech": "noun",
     "sentences": [
-      "gold without alloy 不含合金的金",
-      "The term alloy refers to a metal of lesser value, mixed with a metal of greater value. 術語「合金」是指價值較低的金屬與價值較高的金屬混合。"
+      "Bronze is an alloy of copper and tin. 青銅是銅與錫的合金。",
+      "The frame is made from a lightweight alloy. 這個框架以輕質合金製成。"
     ],
     "audienceTags": [
       "general"
@@ -73933,11 +73933,11 @@
   },
   {
     "word": "aluminium",
-    "meaning": "從鋁土礦中提取的輕質銀色金屬，原子序數為 13 的化學元素（符號 Al）。",
+    "meaning": "鋁（化學元素，符號 Al）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term aluminium refers to a light, silvery metal extracted from bauxite, and a chemical element (symbol Al) with an atomic number of 13. 鋁一詞是指從鋁土礦中提取的一種輕質銀色金屬，是一種原子序數為 13 的化學元素（符號 Al）。",
-      "The lesson introduced aluminium as a useful term to understand. 本課程介紹了鋁作為一個易於理解的有用術語。"
+      "The can is made of aluminium. 這個罐子是鋁製的。",
+      "Aluminium is light enough for use in aircraft. 鋁的重量很輕，適合用於飛機。"
     ],
     "audienceTags": [
       "general"
@@ -79257,11 +79257,11 @@
   },
   {
     "word": "amendment",
-    "meaning": "添加的內容；用於增加或補充某物的東西。",
+    "meaning": "修正案；修訂；改良劑",
     "partOfSpeech": "noun",
     "sentences": [
-      "a soil amendment 土壤改良劑",
-      "The term amendment refers to that which is added; that which is used to increase or supplement something. 所稱修改，是指增加的內容；用於增加或補充某物的東西。"
+      "The committee approved an amendment to the rules. 委員會通過了規則的修正案。",
+      "Compost can be used as a soil amendment. 堆肥可以用作土壤改良劑。"
     ],
     "audienceTags": [
       "general"
@@ -79269,11 +79269,11 @@
   },
   {
     "word": "amends",
-    "meaning": "受傷或損失的賠償；補償;賠償。",
+    "meaning": "補償；賠罪",
     "partOfSpeech": "noun",
     "sentences": [
-      "Amends were made for the damage and no charges were filed. 已對損壞進行了修復，並且未提出任何指控。",
-      "The term amends refers to Compensation for an injury or loss; recompense; reparation. 術語「修正」是指對傷害或損失的賠償；補償;賠償。"
+      "He tried to make amends for breaking her vase. 他打破了她的花瓶，試著作出補償。",
+      "A sincere apology was the first step toward making amends. 真誠道歉是賠罪的第一步。"
     ],
     "audienceTags": [
       "general"
@@ -79995,11 +79995,11 @@
   },
   {
     "word": "amethyst",
-    "meaning": "一種透明的紫色至紫羅蘭色石英，含有微量錳，用作寶石。",
+    "meaning": "紫水晶",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amethyst refers to a transparent purple to violet variety of quartz with traces of manganese, used as a gemstone. 紫水晶一詞是指一種透明的紫色至紫羅蘭色石英，含有微量錳，用作寶石。",
-      "The lesson introduced amethyst as a useful term to understand. 本課程介紹了紫水晶作為一個易於理解的有用術語。"
+      "Her ring contains a small amethyst. 她的戒指上鑲有一顆小紫水晶。",
+      "The jeweler polished the amethyst before setting it. 珠寶師在鑲嵌前將紫水晶磨亮。"
     ],
     "audienceTags": [
       "general"
@@ -86784,11 +86784,11 @@
   },
   {
     "word": "amphitheater",
-    "meaning": "美國形式的圓形劇場。",
+    "meaning": "圓形劇場；露天階梯式劇場",
     "partOfSpeech": "noun",
     "sentences": [
-      "The symphony warmed up inside the amphitheater while the audience crowded around outside. 交響樂在圓形劇場內逐漸升溫，而觀眾則擠滿了劇場外。",
-      "The term amphitheater refers to American form of amphitheatre. 圓形劇場一詞指的是美國形式的圓形劇場。"
+      "The concert was held in an outdoor amphitheater. 演唱會在露天階梯式劇場舉行。",
+      "The audience filled the seats of the ancient amphitheater. 觀眾坐滿了古代圓形劇場的座位。"
     ],
     "audienceTags": [
       "general"
@@ -87559,11 +87559,11 @@
   },
   {
     "word": "amplifier",
-    "meaning": "任何放大或使事物變得更大或更強烈的事物。",
+    "meaning": "放大器；擴音器",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amplifier refers to anything that amplifies, or makes something larger or more intense. 放大器一詞指的是任何可以放大或使某物變得更大或更強烈的東西。",
-      "The lesson introduced amplifier as a useful term to understand. 本課介紹了放大器作為一個需要理解的有用術語。"
+      "He connected his guitar to an amplifier. 他把吉他接到擴音器。",
+      "The amplifier made the weak signal stronger. 放大器增強了微弱的訊號。"
     ],
     "audienceTags": [
       "general"
@@ -87594,11 +87594,11 @@
   },
   {
     "word": "amplitude",
-    "meaning": "測量某物的尺寸，特別是其寬度或廣度；大小、大小。",
+    "meaning": "振幅",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amplitude refers to the measure of the size of something, especially its width or breadth; largeness, magnitude. 振幅一詞是指某物的尺寸的測量，尤其是其寬度或廣度；大小、大小。",
-      "The lesson introduced amplitude as a useful term to understand. 本課介紹了振幅這個易於理解的有用術語。"
+      "The amplitude of the wave increased. 這個波的振幅增加了。",
+      "A louder sound has a greater amplitude. 較響亮的聲音具有較大的振幅。"
     ],
     "audienceTags": [
       "general"
@@ -87810,11 +87810,11 @@
   },
   {
     "word": "amputation",
-    "meaning": "手術切除全部或部分肢體等。",
+    "meaning": "截肢；切除肢體的手術",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term amputation refers to surgical removal of all or part of a limb, etc. 截肢一詞是指手術切除肢體的全部或部分等。",
-      "The lesson introduced amputation as a useful term to understand. 本課介紹了截肢作為一個易於理解的有用術語。"
+      "The injury required amputation of his leg. 這次傷勢使他必須接受腿部截肢。",
+      "She received rehabilitation after the amputation. 她在截肢後接受復健。"
     ],
     "audienceTags": [
       "general"
@@ -88234,11 +88234,11 @@
   },
   {
     "word": "amusement",
-    "meaning": "娛樂。",
+    "meaning": "娛樂；覺得有趣或好笑",
     "partOfSpeech": "noun",
     "sentences": [
-      "To my great amusement, the dog kept on chasing its tail and yelped when it bit it. 讓我感到非常有趣的是，那隻狗繼續追著它的尾巴，當它咬到它時，它就叫起來。",
-      "The term amusement refers to entertainment. 娛樂一詞指的是娛樂。"
+      "The puppy's antics caused great amusement. 小狗的滑稽動作讓大家覺得非常有趣。",
+      "He read comic books for amusement. 他讀漫畫來消遣。"
     ],
     "audienceTags": [
       "general"
@@ -133949,11 +133949,11 @@
   },
   {
     "word": "apartheid",
-    "meaning": "任何類似的種族隔離或分離和歧視政策，特別是在支持少數群體規則時。",
+    "meaning": "種族隔離制度或政策",
     "partOfSpeech": "noun",
     "sentences": [
-      "The 1973 Apartheid Convention conferred universal jurisdiction to the state signatories to prosecute those who commit apartheid. 1973 年《種族隔離公約》賦予簽署國普遍管轄權，可起訴實施種族隔離的人。",
-      "The term apartheid refers to any similar policy of racial segregation or separation and discrimination, particularly when in favor of a minority rule. 種族隔離一詞指的是任何類似的種族隔離或分離和歧視政策，特別是在支持少數群體統治時。"
+      "The museum documents life under apartheid. 這座博物館記錄種族隔離制度下的生活。",
+      "Activists campaigned against apartheid. 社運人士發起反對種族隔離的運動。"
     ],
     "audienceTags": [
       "general"
@@ -134649,11 +134649,11 @@
   },
   {
     "word": "aperture",
-    "meaning": "小或窄的開口、間隙、狹縫或孔。",
+    "meaning": "孔隙；開口；光圈",
     "partOfSpeech": "noun",
     "sentences": [
-      "an aperture in a wall 牆上的一個孔",
-      "The term aperture refers to a small or narrow opening, gap, slit, or hole. 術語「孔徑」是指小或窄的開口、間隙、狹縫或孔。"
+      "Light entered through a small aperture in the wall. 光線從牆上的小孔射入。",
+      "A wider aperture lets more light into the camera. 較大的光圈讓更多光線進入相機。"
     ],
     "audienceTags": [
       "general"
@@ -140591,11 +140591,11 @@
   },
   {
     "word": "apostle",
-    "meaning": "傳教士或宗教使命的領導者，特別是早期基督教會的傳教士或領導者（但請參閱使徒）。",
+    "meaning": "使徒；倡導者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term apostle refers to a missionary, or leader of a religious mission, especially one in the early Christian Church (but see Apostle). 使徒一詞指傳教士或宗教使命的領導者，特別是早期基督教會的傳教士（但請參閱使徒）。",
-      "The lesson introduced apostle as a useful term to understand. 本課介紹了使徒這個易於理解的有用術語。"
+      "The painting depicts an apostle beside Jesus. 畫中描繪了一位站在耶穌身旁的使徒。",
+      "He became an apostle of nonviolent resistance. 他成為非暴力抵抗的倡導者。"
     ],
     "audienceTags": [
       "general"
@@ -141925,11 +141925,11 @@
   },
   {
     "word": "appellant",
-    "meaning": "正在向法庭提出上訴的訴訟當事人或當事人",
+    "meaning": "上訴人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The appellant made her submissions to the court. 上訴人向法院提出了陳詞。",
-      "The term appellant refers to a litigant or party that is making an appeal in court. 上訴人一詞是指向法院提出上訴的訴訟當事人或當事人。"
+      "The appellant asked the court to reverse the judgment. 上訴人請求法院撤銷判決。",
+      "A lawyer presented evidence on behalf of the appellant. 律師代表上訴人提出證據。"
     ],
     "audienceTags": [
       "general"
@@ -143612,11 +143612,11 @@
   },
   {
     "word": "appointee",
-    "meaning": "被任命的人",
+    "meaning": "受任命者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The ambassador is a political appointee, not a career diplomat. 大使是政治任命者，而不是職業外交官。",
-      "The term appointee refers to a person who is appointed. 術語「被任命者」是指被任命的人。"
+      "The new appointee will begin work on Monday. 新任命的人員將在星期一開始工作。",
+      "The ambassador is a political appointee. 這位大使是政治任命的官員。"
     ],
     "audienceTags": [
       "general"
@@ -143648,11 +143648,11 @@
   },
   {
     "word": "appointment",
-    "meaning": "被任命擔任某個職務或職務的狀態；一個人被任命擔任的職務。",
+    "meaning": "約定；預約；任命",
     "partOfSpeech": "noun",
     "sentences": [
-      "the appointment of treasurer 財務主管的任命",
-      "The term appointment refers to the state of being appointed to a service or office; an office to which one is appointed. 任命一詞是指被任命擔任某個職務或職務的狀態；一個人被任命擔任的職務。"
+      "I have a dental appointment tomorrow. 我明天預約了看牙醫。",
+      "Her appointment as director was announced today. 她獲任命為主管的消息今天公布了。"
     ],
     "examTags": [
       "toeic"
@@ -144277,11 +144277,11 @@
   },
   {
     "word": "apprehension",
-    "meaning": "抓住或抓住（某物）的身體行為；抓住。",
+    "meaning": "憂慮；逮捕",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term apprehension refers to The physical act of seizing or taking hold of (something); seizing. 術語「理解」是指抓住或抓住（某物）的物理行為；抓住。",
-      "We learned the meaning of apprehension during today's lesson. 在今天的課程中，我們學習了憂慮的意思。"
+      "She felt apprehension before her first interview. 她在第一次面試前感到憂慮。",
+      "The search ended with the apprehension of the suspect. 搜索以逮捕嫌疑人告終。"
     ],
     "audienceTags": [
       "general"
@@ -144817,11 +144817,11 @@
   },
   {
     "word": "appropriation",
-    "meaning": "挪用的行為或例子。",
+    "meaning": "挪用；撥款",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term appropriation refers to An act or instance of appropriating. 挪用一詞是指挪用的行為或例子。",
-      "We learned the meaning of appropriation during today's lesson. 我們在今天的課程中學習了撥款的含義。"
+      "The investigation uncovered the appropriation of public funds. 調查揭露了公款遭到挪用。",
+      "The school requested an appropriation for new equipment. 學校請求撥款購買新設備。"
     ],
     "audienceTags": [
       "general"
@@ -146184,11 +146184,11 @@
   },
   {
     "word": "aqua",
-    "meaning": "一種顏色，通常是藍色和綠色的混合，類似綠松石色。",
+    "meaning": "水藍綠色",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term aqua refers to a shade of colour, usually a mix of blue and green similar to the colour turquoise. 水綠色一詞指的是一種顏色，通常是藍色和綠色的混合，類似於綠松石。",
-      "The lesson introduced aqua as a useful term to understand. 本課程介紹了水作為一個易於理解的有用術語。"
+      "She chose aqua for the bathroom walls. 她選擇水藍綠色作為浴室牆面的顏色。",
+      "The scarf combines aqua with white. 這條圍巾結合了水藍綠色與白色。"
     ],
     "audienceTags": [
       "general"
@@ -146244,11 +146244,11 @@
   },
   {
     "word": "aquaculture",
-    "meaning": "水生植物、魚類、其他水生動物等水產品養殖。",
+    "meaning": "水產養殖",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term aquaculture refers to the cultivation of aquatic produce such as aquatic plants, fish, and other aquatic animals. 水產養殖是指水生植物、魚類和其他水生動物等水產的養殖。",
-      "The lesson introduced aquaculture as a useful term to understand. 本課程介紹了水產養殖這個易於理解的有用術語。"
+      "Aquaculture supplies fish to the local market. 水產養殖業為當地市場供應魚類。",
+      "The farm uses aquaculture to raise shellfish. 這座養殖場以水產養殖方式培育貝類。"
     ],
     "audienceTags": [
       "general"
@@ -149237,11 +149237,11 @@
   },
   {
     "word": "arbitration",
-    "meaning": "仲裁的行為或過程。",
+    "meaning": "仲裁",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term arbitration refers to the act or process of arbitrating. 仲裁一詞是指仲裁的行為或過程。",
-      "The lesson introduced arbitration as a useful term to understand. 本課介紹了仲裁這個易於理解的有用術語。"
+      "The two companies agreed to settle the dispute through arbitration. 兩家公司同意透過仲裁解決爭議。",
+      "The contract contains an arbitration clause. 這份合約包含仲裁條款。"
     ],
     "audienceTags": [
       "general"
@@ -150824,11 +150824,11 @@
   },
   {
     "word": "archbishop",
-    "meaning": "結合了象和馬的走法的仙子棋子。",
+    "meaning": "大主教",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term archbishop refers to a fairy chess piece which combines the moves of the bishop and the knight. 大主教一詞指的是結合了主教和騎士走法的仙子棋子。",
-      "The lesson introduced archbishop as a useful term to understand. 本課介紹了大主教作為一個需要理解的有用術語。"
+      "The archbishop addressed the congregation. 大主教向會眾致詞。",
+      "The ceremony was led by the archbishop. 這場儀式由大主教主持。"
     ],
     "audienceTags": [
       "general"
@@ -151352,11 +151352,11 @@
   },
   {
     "word": "archdiocese",
-    "meaning": "由大主教管理的一組教區。",
+    "meaning": "總教區；大主教管轄區",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term archdiocese refers to a group of dioceses administered by an archbishop. 大主教管區一詞是指由大主教管理的一組教區。",
-      "The lesson introduced archdiocese as a useful term to understand. 本課介紹了大主教區作為一個易於理解的有用術語。"
+      "The archdiocese includes several towns. 這個總教區涵蓋數座城鎮。",
+      "The archbishop visited schools in the archdiocese. 大主教探訪了總教區內的學校。"
     ],
     "audienceTags": [
       "general"
@@ -151484,11 +151484,11 @@
   },
   {
     "word": "archduke",
-    "meaning": "奧匈帝國皇帝的兒子或男系孫子。",
+    "meaning": "大公（歐洲貴族頭銜）",
     "partOfSpeech": "noun",
     "sentences": [
-      "World War I traditionally started with the assassination of Archduke Francis (Franz) Ferdinand. 傳統上，第一次世界大戰是隨著弗朗茨·斐迪南大公被暗殺而開始的。",
-      "The term archduke refers to The son or male-line grandson of an emperor of the Austro-Hungarian Empire. 大公一詞指的是奧匈帝國皇帝的兒子或男性孫子。"
+      "The archduke arrived at the palace with his attendants. 大公帶著隨從抵達宮殿。",
+      "The portrait shows an archduke in formal dress. 畫像描繪了一位穿著禮服的大公。"
     ],
     "audienceTags": [
       "general"
@@ -151880,11 +151880,11 @@
   },
   {
     "word": "archer",
-    "meaning": "用弓射箭或用十字弓射出箭的人。",
+    "meaning": "弓箭手",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term archer refers to one who shoots an arrow from a bow or a bolt from a crossbow. 弓箭手一詞是指用弓射箭或用弩射出箭的人。",
-      "The lesson introduced archer as a useful term to understand. 本課程介紹了弓箭手這個術語，這是一個需要理解的有用術語。"
+      "The archer aimed at the distant target. 弓箭手瞄準遠處的靶子。",
+      "Each archer carried a bow and a quiver. 每位弓箭手都帶著弓和箭筒。"
     ],
     "audienceTags": [
       "general"
@@ -151928,11 +151928,11 @@
   },
   {
     "word": "archery",
-    "meaning": "用弓射箭的練習或運動。",
+    "meaning": "射箭",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term archery refers to the practice or sport of shooting arrows with a bow. 射箭一詞是指用弓射箭的練習或運動。",
-      "The lesson introduced archery as a useful term to understand. 本課介紹了射箭這個術語，這是一個需要理解的有用術語。"
+      "She practices archery every weekend. 她每個週末都練習射箭。",
+      "The school offers an archery class for beginners. 學校提供初學者射箭課程。"
     ],
     "audienceTags": [
       "general"
@@ -152012,11 +152012,11 @@
   },
   {
     "word": "archetype",
-    "meaning": "某事的理想例子；一個精髓。",
+    "meaning": "原型；典型",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term archetype refers to An ideal example of something; a quintessence. 原型一詞指的是某事物的理想例子；一個精髓。",
-      "We learned the meaning of archetype during today's lesson. 我們在今天的課程中學習了原型的意義。"
+      "The wise mentor is a familiar archetype in stories. 智慧導師是故事中常見的典型角色。",
+      "This character is an archetype of the reluctant hero. 這個角色是勉強出任英雄的典型。"
     ],
     "audienceTags": [
       "general"
@@ -153260,11 +153260,11 @@
   },
   {
     "word": "archipelago",
-    "meaning": "像群島一樣分散的東西。",
+    "meaning": "群島",
     "partOfSpeech": "noun",
     "sentences": [
-      "the Gulag Archipelago 古拉格群島",
-      "The term archipelago refers to something scattered around like an archipelago. 群島一詞指的是像群島一樣分散的東西。"
+      "They sailed through an archipelago in the Pacific. 他們航行穿過太平洋上的一個群島。",
+      "The archipelago contains hundreds of small islands. 這個群島包含數百座小島。"
     ],
     "audienceTags": [
       "general"
@@ -153682,11 +153682,11 @@
   },
   {
     "word": "archival",
-    "meaning": "將物品存放在檔案中的做法；歸檔；一個這樣的例子。",
-    "partOfSpeech": "noun",
+    "meaning": "檔案的；與檔案保存有關的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "Our nightly computer backups include the archival of old e-mail messages. 我們每晚的電腦備份包括舊電子郵件的存檔。",
-      "The term archival refers to the practice of storing items in an archive; archiving; an instance of this. 術語「歸檔」是指將項目儲存在檔案中的做法；歸檔；一個這樣的例子。"
+      "The historian examined archival records. 歷史學家查閱了檔案紀錄。",
+      "The photographs are stored in archival boxes. 這些照片存放在檔案保存盒裡。"
     ],
     "audienceTags": [
       "general"
@@ -159791,11 +159791,11 @@
   },
   {
     "word": "aristocracy",
-    "meaning": "貴族或世襲統治階級。",
+    "meaning": "貴族；貴族階級",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term aristocracy refers to the nobility, or the hereditary ruling class. 貴族一詞指的是貴族，或世襲的統治階級。",
-      "The lesson introduced aristocracy as a useful term to understand. 本課介紹了貴族制這個術語，這是一個需要理解的有用術語。"
+      "The aristocracy once owned much of the land. 貴族階級曾經擁有大部分土地。",
+      "The novel portrays life among the aristocracy. 這部小說描寫貴族階級的生活。"
     ],
     "audienceTags": [
       "general"
@@ -160777,11 +160777,11 @@
   },
   {
     "word": "armament",
-    "meaning": "為戰爭做好準備的部隊。",
+    "meaning": "武器裝備；軍備",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term armament refers to a body of forces equipped for war. 軍備一詞是指為戰爭而裝備的部隊。",
-      "The lesson introduced armament as a useful term to understand. 本課介紹了「武器」這個易於理解的有用術語。"
+      "The treaty limited naval armament. 這項條約限制了海軍軍備。",
+      "The ship carried heavy armament. 這艘船配備了重型武器。"
     ],
     "audienceTags": [
       "general"
@@ -161358,11 +161358,11 @@
   },
   {
     "word": "armistice",
-    "meaning": "結束戰鬥的正式協議，特別是國家之間的協議。",
+    "meaning": "停戰協定；休戰",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term armistice refers to a formal agreement, especially between nations, to end combat. 停戰一詞是指結束戰鬥的正式協議，特別是國家之間的協議。",
-      "The lesson introduced armistice as a useful term to understand. 本課介紹了停戰是一個易於理解的有用術語。"
+      "The two sides signed an armistice. 雙方簽署了停戰協定。",
+      "The armistice brought a temporary halt to the fighting. 停戰協定使戰鬥暫時停止。"
     ],
     "audienceTags": [
       "general"
@@ -161430,11 +161430,11 @@
   },
   {
     "word": "armor",
-    "meaning": "身體、車輛或其他物體上的保護層，旨在偏轉或分散破壞力。",
+    "meaning": "盔甲；裝甲",
     "partOfSpeech": "noun",
     "sentences": [
-      "a suit of armor 一套盔甲",
-      "The term armor refers to a protective layer over a body, vehicle, or other object intended to deflect or diffuse damaging forces. 術語「裝甲」是指覆蓋在車身、車輛或其他物體上的保護層，旨在偏轉或分散破壞力。"
+      "The knight wore heavy armor. 騎士穿著沉重的盔甲。",
+      "The vehicle's armor protected the crew. 車輛的裝甲保護了乘員。"
     ],
     "audienceTags": [
       "general"
@@ -161574,11 +161574,11 @@
   },
   {
     "word": "armory",
-    "meaning": "軍械庫的美國標準拼寫。",
+    "meaning": "軍械庫；武器庫",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term armory refers to american standard spelling of armoury. 軍械庫一詞是指軍械庫的美國標準拼法。",
-      "The lesson introduced armory as a useful term to understand. 本課介紹了軍械庫這個術語，這是一個需要理解的有用術語。"
+      "The guards stored their weapons in the armory. 衛兵把武器存放在軍械庫。",
+      "The old armory is now a museum. 舊軍械庫現在是一座博物館。"
     ],
     "audienceTags": [
       "general"
@@ -162303,11 +162303,11 @@
   },
   {
     "word": "arousal",
-    "meaning": "喚起的行為或被喚起的狀態。",
+    "meaning": "喚起；興奮狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "to influence the arousal of brain and behavior 影響大腦的喚醒和行為",
-      "The term arousal refers to The act of arousing or the state of being aroused. 術語「喚醒」是指「喚醒」的行為或「被喚醒」的狀態。"
+      "Loud noises can increase physiological arousal. 巨大的聲響可能提高生理上的喚醒程度。",
+      "The researcher measured emotional arousal during the film. 研究員測量觀影期間的情緒激動程度。"
     ],
     "audienceTags": [
       "general"
@@ -163542,11 +163542,11 @@
   },
   {
     "word": "arrogance",
-    "meaning": "傲慢的狀態；一種極端或愚蠢的驕傲，其中某人感覺自己比另一個人優越得多。",
+    "meaning": "傲慢；自大",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term arrogance refers to the state of being arrogant; a type of extreme or foolish pride in which someone feels much superior to another. 傲慢一詞是指傲慢的狀態；一種極端或愚蠢的驕傲，在這種驕傲中，某人感覺自己比另一個人優越得多。",
-      "The lesson introduced arrogance as a useful term to understand. 本課介紹了「傲慢」這個術語，它是一個值得理解的有用術語。"
+      "His arrogance made cooperation difficult. 他的傲慢使合作變得困難。",
+      "She mistook his confidence for arrogance. 她把他的自信誤認為傲慢。"
     ],
     "audienceTags": [
       "general"
@@ -164150,11 +164150,11 @@
   },
   {
     "word": "arsenic",
-    "meaning": "有毒的灰色脆性非金屬化學元素（符號As），原子序33。",
+    "meaning": "砷（化學元素，符號 As）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term arsenic refers to a toxic grey brittle nonmetallic chemical element (symbol As) with an atomic number of 33. 砷一詞是指一種有毒的灰色脆性非金屬化學元素（符號As），原子序為33。",
-      "The lesson introduced arsenic as a useful term to understand. 本課介紹了砷這個易於理解的有用術語。"
+      "The laboratory tested the water for arsenic. 實驗室檢測水中的砷。",
+      "High levels of arsenic can contaminate groundwater. 高濃度的砷可能污染地下水。"
     ],
     "audienceTags": [
       "general"
@@ -165255,11 +165255,11 @@
   },
   {
     "word": "arterial",
-    "meaning": "大容量城市道路。",
-    "partOfSpeech": "noun",
+    "meaning": "動脈的；幹道的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "Arterial ends here. 動脈到這裡就結束了。",
-      "The term arterial refers to a high-capacity urban road. 主幹道一詞是指高容量的城市道路。"
+      "The doctor measured arterial blood pressure. 醫師測量動脈血壓。",
+      "Traffic was heavy on the arterial road. 幹道上的車流很大。"
     ],
     "audienceTags": [
       "general"
@@ -167428,11 +167428,11 @@
   },
   {
     "word": "articulation",
-    "meaning": "某物透過鉸接或鉸接以進行彎曲的接頭或接頭集合。",
+    "meaning": "清晰表達；發音；關節連接",
     "partOfSpeech": "noun",
     "sentences": [
-      "The articulation allowed the robot to move around corners. 這種關節允許機器人在角落處移動。",
-      "The term articulation refers to A joint or the collection of joints at which something is articulated, or hinged, for bending. 術語「關節」是指關節或關節的集合，在該關節或關節處，物體被鉸接或鉸接以進行彎曲。"
+      "The teacher helped him improve his articulation. 老師幫助他改善發音的清晰度。",
+      "The articulation of the joint allows the arm to bend. 關節的連接構造使手臂能夠彎曲。"
     ],
     "audienceTags": [
       "general"
@@ -167524,11 +167524,11 @@
   },
   {
     "word": "artifact",
-    "meaning": "具有考古或歷史意義的物體，例如工具、裝飾品或武器，特別是在考古發掘中發現的物體。",
+    "meaning": "人工製品；文物",
     "partOfSpeech": "noun",
     "sentences": [
-      "The dig produced many Roman artifacts. 這次挖掘出土了許多羅馬文物。",
-      "The term artifact refers to an object, such as a tool, ornament, or weapon of archaeological or historical interest, especially such an object found at an archaeological excavation. 術語「人工製品」是指具有考古或歷史意義的物體，例如工具、裝飾品或武器，尤其是在考古發掘中發現的物體。"
+      "The archaeologist found a clay artifact near the ruins. 考古學家在遺跡附近發現一件陶製文物。",
+      "Each artifact is labeled with its place of origin. 每件文物都標示了出土地點。"
     ],
     "audienceTags": [
       "general"
@@ -167697,11 +167697,11 @@
   },
   {
     "word": "artillery",
-    "meaning": "大型彈射武器，在現代使用中通常是大型火砲，但也有火箭砲。",
+    "meaning": "大砲；砲兵",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term artillery refers to large projectile weapons, in modern usage usually large guns, but also rocket artillery. 火砲一詞指的是大型彈射武器，在現代用法中通常是大型火砲，但也包括火箭。",
-      "The lesson introduced artillery as a useful term to understand. 本課介紹了火砲作為一個需要理解的有用術語。"
+      "Heavy artillery damaged the fort. 重型大砲破壞了堡壘。",
+      "The army moved its artillery away from the village. 軍隊將砲兵部隊撤離村莊。"
     ],
     "examTags": [
       "toeic"
@@ -169583,11 +169583,11 @@
   },
   {
     "word": "ascension",
-    "meaning": "上升的動作； an ascent。",
+    "meaning": "上升；升天",
     "partOfSpeech": "noun",
     "sentences": [
-      "The ascension of the hot-air balloon gave us a better view. 熱氣球的升空讓我們看到了更好的景色。",
-      "The term ascension refers to the act of ascending; an ascent. 揚升一詞指的是揚升的行為；一次上升。"
+      "The painting depicts the ascension of Christ. 這幅畫描繪基督升天。",
+      "The balloon's ascension drew a crowd. 氣球升空吸引了一群人。"
     ],
     "audienceTags": [
       "general"
@@ -169643,11 +169643,11 @@
   },
   {
     "word": "ascent",
-    "meaning": "上升的動作；向上移動。",
+    "meaning": "上升；攀登",
     "partOfSpeech": "noun",
     "sentences": [
-      "He made a tedious ascent of Mont Blanc. 他艱難地攀登了白朗峰。",
-      "The term ascent refers to the act of ascending; a motion upwards. 術語「上升」是指上升的行為；向上的動作。"
+      "The final ascent to the summit was steep. 最後一段登頂路程很陡。",
+      "We watched the aircraft's rapid ascent. 我們看著飛機迅速爬升。"
     ],
     "audienceTags": [
       "general"
@@ -174527,11 +174527,11 @@
   },
   {
     "word": "assassin",
-    "meaning": "故意殺人的人，尤其是殺害公眾或政治人物的專業人士。",
+    "meaning": "刺客；暗殺者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term assassin refers to someone who intentionally kills a person, especially a professional who kills a public or political figure. 刺客一詞指的是故意殺人的人，尤其是殺害公眾或政治人物的專業人士。",
-      "The lesson introduced assassin as a useful term to understand. 本課程介紹了刺客這個術語，這是一個需要理解的有用術語。"
+      "The assassin escaped through a side door. 刺客從側門逃走。",
+      "Police searched for the assassin who attacked the minister. 警方搜捕襲擊部長的暗殺者。"
     ],
     "audienceTags": [
       "general"
@@ -174697,11 +174697,11 @@
   },
   {
     "word": "assay",
-    "meaning": "受到危險或苦難的考驗；冒險;風險;困難；受審狀態。",
+    "meaning": "化驗；分析測定",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term assay refers to trial by danger or by affliction; adventure; risk; hardship; state of being tried. 「試驗」一詞指的是經過危險或痛苦進行的考驗；冒險;風險;困難；正在受審的狀態。",
-      "The lesson introduced assay as a useful term to understand. 本課介紹了測定作為一個易於理解的有用術語。"
+      "The laboratory performed an assay of the ore. 實驗室對礦石進行化驗。",
+      "The assay revealed traces of gold. 化驗顯示了微量黃金。"
     ],
     "audienceTags": [
       "general"
@@ -174872,11 +174872,11 @@
   },
   {
     "word": "assembler",
-    "meaning": "根據計劃，一種能夠組裝奈米設備的奈米設備，可能包括其自身的複製品。",
+    "meaning": "組合語言組譯器；組裝工",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term assembler refers to A nanodevice capable of assembling nanodevices, possibly including copies of itself, according to a plan. 術語組裝機是指能夠根據計劃組裝奈米裝置的奈米裝置，可能包括其自身的副本。",
-      "We learned the meaning of assembler during today's lesson. 在今天的課程中我們學習了彙編程式的含義。"
+      "An assembler converts assembly code into machine code. 組譯器將組合語言程式碼轉換成機器碼。",
+      "The factory hired an assembler to build small components. 工廠聘請組裝工來組裝小型零件。"
     ],
     "audienceTags": [
       "general"
@@ -174915,11 +174915,11 @@
   },
   {
     "word": "assent",
-    "meaning": "協議;表示同意的行為。",
+    "meaning": "同意；贊同",
     "partOfSpeech": "noun",
     "sentences": [
-      "I will give this act my assent. 我會同意這一行為。",
-      "The term assent refers to Agreement; act of agreeing. 「同意」一詞指協議；表示同意的行為。"
+      "The proposal received the committee's assent. 這項提案獲得委員會的同意。",
+      "She nodded to show her assent. 她點頭表示贊同。"
     ],
     "audienceTags": [
       "general"
@@ -175162,11 +175162,11 @@
   },
   {
     "word": "assertion",
-    "meaning": "某事已被斷言；聲明；斷言的聲明。",
+    "meaning": "斷言；聲明",
     "partOfSpeech": "noun",
     "sentences": [
-      "You're a man of strong assertions! 你是一個有強烈主張的人！",
-      "The term assertion refers to something which is asserted; a declaration; a statement asserted. 斷言一詞指的是被斷言的事物；聲明；斷言的聲明。"
+      "He offered no evidence for his assertion. 他沒有提出證據支持自己的斷言。",
+      "The assertion that all birds can fly is false. 所有鳥都能飛的說法是錯誤的。"
     ],
     "audienceTags": [
       "general"
@@ -175460,11 +175460,11 @@
   },
   {
     "word": "assessment",
-    "meaning": "評估行為或評估金額（稅金、徵費或關稅等）。",
+    "meaning": "評估；評定",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term assessment refers to the act of assessing or an amount (of tax, levy or duty etc) assessed. 評估一詞是指評估行為或評估金額（稅金、徵費或關稅等）。",
-      "The lesson introduced assessment as a useful term to understand. 本課程介紹了評估作為一個需要理解的有用術語。"
+      "The engineer completed a safety assessment. 工程師完成了安全評估。",
+      "The teacher's assessment helped her improve. 老師的評定幫助她進步。"
     ],
     "audienceTags": [
       "general"
@@ -176046,11 +176046,11 @@
   },
   {
     "word": "assimilation",
-    "meaning": "少數群體接受主流文化的習俗和態度。",
+    "meaning": "同化；吸收",
     "partOfSpeech": "noun",
     "sentences": [
-      "After centuries of British cultural assimilation, a majority of Irish now speak English instead of Irish. 經過幾個世紀的英國文化同化，大多數愛爾蘭人現在說英語而不是愛爾蘭語。",
-      "The term assimilation refers to the adoption, by a minority group, of the customs and attitudes of the dominant culture. 同化一詞是指少數群體接受主流文化的習俗和態度。"
+      "The book examines cultural assimilation among immigrants. 這本書探討移民的文化同化。",
+      "Assimilation of new information takes time. 吸收新資訊需要時間。"
     ],
     "audienceTags": [
       "general"
@@ -178026,11 +178026,11 @@
   },
   {
     "word": "asterisk",
-    "meaning": "原本傑出的成就中的瑕疵。",
+    "meaning": "星號（*）",
     "partOfSpeech": "noun",
     "sentences": [
-      "They came into the tournament highly ranked, but with a little bit of an asterisk as their last two wins had been unconvincing. 他們進入錦標賽時排名很高，但由於最近兩場勝利並沒有令人信服，所以被加了一點星號。",
-      "The term asterisk refers to a blemish in an otherwise outstanding achievement. 星號一詞指的是其他傑出成就的瑕疵。"
+      "An asterisk marks the required fields. 星號標示必填欄位。",
+      "The asterisk refers readers to a note at the bottom of the page. 星號引導讀者查看頁底的註解。"
     ],
     "audienceTags": [
       "general"
@@ -178122,11 +178122,11 @@
   },
   {
     "word": "asteroid",
-    "meaning": "分類學上 Asteroidea 的任何成員；一隻海星。",
+    "meaning": "小行星",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term asteroid refers to any member of the taxonomic class Asteroidea; a starfish. 小行星一詞是指小行星分類學中的任何成員；一隻海星。",
-      "The lesson introduced asteroid as a useful term to understand. 本課程介紹了小行星作為一個易於理解的有用術語。"
+      "The telescope detected a distant asteroid. 望遠鏡偵測到一顆遙遠的小行星。",
+      "An asteroid orbits the sun. 小行星繞著太陽運行。"
     ],
     "audienceTags": [
       "general"
@@ -179969,11 +179969,11 @@
   },
   {
     "word": "astrologer",
-    "meaning": "研究或實踐占星學的人。",
+    "meaning": "占星師",
     "partOfSpeech": "noun",
     "sentences": [
-      "Nicolaus Copernicus and Johannes Kepler both made a living as astrologers. 尼古拉斯·哥白尼和約翰尼斯·開普勒都以占星家為生。",
-      "The term astrologer refers to One who studies or practices astrology. 占星家一詞是指研究或實踐占星學的人。"
+      "The astrologer prepared a chart based on her birth date. 占星師依照她的出生日期製作星盤。",
+      "He consulted an astrologer before making his decision. 他作決定前諮詢了占星師。"
     ],
     "schoolLevels": [
       "college"
@@ -180920,11 +180920,11 @@
   },
   {
     "word": "asylum",
-    "meaning": "安全或避難所。",
+    "meaning": "庇護；避難所",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term asylum refers to a place of safety or refuge. 庇護一詞指的是安全或避難所。",
-      "The lesson introduced asylum as a useful term to understand. 本課介紹了庇護這個易於理解的有用術語。"
+      "The family sought asylum after fleeing the war. 這家人逃離戰爭後尋求庇護。",
+      "The church offered asylum to those in danger. 教堂為處於危險中的人提供庇護。"
     ],
     "audienceTags": [
       "general"
@@ -181040,11 +181040,11 @@
   },
   {
     "word": "asymptomatic",
-    "meaning": "沒有表現出疾病症狀的人或動物。",
-    "partOfSpeech": "noun",
+    "meaning": "無症狀的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "After a 10-day observation period, group 1 was divided into subgroup 1A (symptomatics) and subgroup 1B (asymptomatics). 經過10天的觀察期後，第1組分為1A亞組（有症狀）和1B亞組（無症狀）。",
-      "The term asymptomatic refers to A person or an animal that exhibits no symptoms of disease. 術語「無症狀」是指沒有表現出疾病症狀的人或動物。"
+      "An asymptomatic patient may still carry an infection. 無症狀的病人仍可能帶有感染。",
+      "The study included asymptomatic participants. 研究納入了無症狀的參與者。"
     ],
     "audienceTags": [
       "general"
@@ -182595,11 +182595,11 @@
   },
   {
     "word": "atheism",
-    "meaning": "相信神不存在（有時包括拒絕其他宗教信仰）。",
+    "meaning": "無神論",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term atheism refers to belief that no deities exist (sometimes including rejection of other religious beliefs). 無神論一詞是指相信神不存在（有時包括拒絕其他宗教信仰）。",
-      "The lesson introduced atheism as a useful term to understand. 本課介紹了無神論作為一個有用的術語來理解。"
+      "Atheism is discussed in the philosophy course. 哲學課程討論無神論。",
+      "The essay compares atheism with religious belief. 這篇文章比較無神論與宗教信仰。"
     ],
     "audienceTags": [
       "general"
@@ -182607,11 +182607,11 @@
   },
   {
     "word": "atheist",
-    "meaning": "不信仰任何宗教（甚至不信仰沒有神的宗教）的人；一個無宗教信仰的人。",
+    "meaning": "無神論者",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term atheist refers to a person who does not believe in any religion (not even a religion without gods); a nonreligious person. 無神論者一詞指的是不信仰任何宗教（甚至不信仰沒有神的宗教）的人；一個無宗教信仰的人。",
-      "The lesson introduced atheist as a useful term to understand. 本課介紹了無神論者作為一個有用的術語來理解。"
+      "She is an atheist who does not believe in any gods. 她是無神論者，不相信有任何神。",
+      "The atheist respected his friend's religious beliefs. 這位無神論者尊重朋友的宗教信仰。"
     ],
     "audienceTags": [
       "general"
@@ -185047,11 +185047,11 @@
   },
   {
     "word": "atonement",
-    "meaning": "神與人類因耶穌的死而和好。",
+    "meaning": "贖罪；彌補過錯",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term atonement refers to The reconciliation of God and mankind through the death of Jesus. 贖罪一詞指的是透過耶穌的死神與人類的和解。",
-      "We learned the meaning of atonement during today's lesson. 在今天的課程中我們學習了贖罪的意義。"
+      "He volunteered as an act of atonement. 他做志工以彌補過錯。",
+      "The sermon discussed atonement and forgiveness. 這篇講道討論贖罪與寬恕。"
     ],
     "audienceTags": [
       "general"
@@ -185878,11 +185878,11 @@
   },
   {
     "word": "atrocity",
-    "meaning": "極度殘忍的行為；可怕的不公正行為。",
+    "meaning": "暴行；殘酷行為",
     "partOfSpeech": "noun",
     "sentences": [
-      "to carry out / commit / perpetrate an atrocity 實施/犯下/犯下暴行",
-      "The term atrocity refers to an extremely cruel act; a horrid act of injustice. 暴行一詞是指極度殘忍的行為；一種可怕的不公正行為。"
+      "The report documented an atrocity committed during the war. 報告記錄了戰爭期間發生的一起暴行。",
+      "Survivors described the atrocities they had witnessed. 倖存者描述了他們目睹的暴行。"
     ],
     "audienceTags": [
       "general"
@@ -186567,11 +186567,11 @@
   },
   {
     "word": "attainment",
-    "meaning": "獲得的行為；到達或到達的行為；透過努力或努力獲得的行為。",
+    "meaning": "達成；獲得",
     "partOfSpeech": "noun",
     "sentences": [
-      "My attainment of proficiency in German was due to years upon years of study. 我的德語熟練程度得益於多年的學習。",
-      "The term attainment refers to the act of attaining; the act of arriving at or reaching; the act of obtaining by exertion or effort. 「成就」一詞是指獲得的行為；到達或到達的行為；透過努力或努力獲得的行為。"
+      "The attainment of this goal required years of work. 達成這個目標需要多年的努力。",
+      "The study measured educational attainment. 這項研究衡量教育程度。"
     ],
     "schoolLevels": [
       "college"
@@ -187515,11 +187515,11 @@
   },
   {
     "word": "attire",
-    "meaning": "一個人的穿著；穿什麼；一個人的衣服。",
+    "meaning": "服裝；衣著",
     "partOfSpeech": "noun",
     "sentences": [
-      "He was wearing his formal attire. 他穿著正式的服裝。",
-      "The term attire refers to one's dress; what one wears; one's clothes. 服裝一詞指的是一個人的穿著；穿什麼；一個人的衣服。"
+      "Guests are asked to wear formal attire. 請來賓穿著正式服裝。",
+      "Her colorful attire stood out in the crowd. 她鮮豔的衣著在人群中格外醒目。"
     ],
     "audienceTags": [
       "general"
@@ -189065,11 +189065,11 @@
   },
   {
     "word": "audition",
-    "meaning": "有抱負的表演者為了展現自己的適合性或才華而進行的表演。",
+    "meaning": "試鏡；試演；甄選",
     "partOfSpeech": "noun",
     "sentences": [
-      "I've been to five auditions this week. 這週我參加了五次試鏡。",
-      "The term audition refers to a performance, by an aspiring performer, to demonstrate suitability or talent. 試鏡一詞是指由有抱負的表演者進行的表演，以證明其適合性或才華。"
+      "She has an audition for the school musical. 她要參加校園音樂劇的甄選。",
+      "The actor prepared a short speech for his audition. 演員為試鏡準備了一段簡短的台詞。"
     ],
     "audienceTags": [
       "general"
@@ -189089,11 +189089,11 @@
   },
   {
     "word": "auditor",
-    "meaning": "在許多司法管轄區，選舉或任命的負責公共帳戶的公職人員；審計員。",
+    "meaning": "稽核員；審計員",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term auditor refers to in many jurisdictions, an elected or appointed public official in charge of the public accounts; a comptroller. 在許多司法管轄區，審計員一詞是指負責公共帳戶的民選或任命的公職人員；審計員。",
-      "The lesson introduced auditor as a useful term to understand. 本課介紹了審計員這個易於理解的有用術語。"
+      "The auditor checked the company's accounts. 稽核員檢查公司的帳目。",
+      "An independent auditor reviewed the financial report. 獨立審計員審查了財務報告。"
     ],
     "audienceTags": [
       "general"
@@ -189492,11 +189492,11 @@
   },
   {
     "word": "augmentation",
-    "meaning": "增強的行為或過程。",
+    "meaning": "增加；擴增",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term augmentation refers to the act or process of augmenting. 術語增強是指增強的行為或過程。",
-      "The lesson introduced augmentation as a useful term to understand. 本課程介紹了增強作為一個需要理解的有用術語。"
+      "The project requires an augmentation of the budget. 這個專案需要增加預算。",
+      "Data augmentation can improve a model's performance. 資料擴增可以改善模型的表現。"
     ],
     "audienceTags": [
       "general"
@@ -190459,11 +190459,11 @@
   },
   {
     "word": "aura",
-    "meaning": "周圍或與某事或某人相關的獨特氣氛或品質。",
+    "meaning": "氣氛；氣質",
     "partOfSpeech": "noun",
     "sentences": [
-      "This place has an aura of 19th century Paris. 這裡充滿了19世紀巴黎的氣息。",
-      "The term aura refers to a distinctive atmosphere or quality surrounding or associated with something or someone. 光環一詞是指周圍或與某事或某人相關的獨特氛圍或品質。"
+      "The old library has an aura of mystery. 這座老圖書館帶著神祕的氣氛。",
+      "She carries an aura of quiet confidence. 她散發著沉穩自信的氣質。"
     ],
     "audienceTags": [
       "general"
@@ -191695,11 +191695,11 @@
   },
   {
     "word": "aurora",
-    "meaning": "黎明或清晨的光本身；黎明。",
+    "meaning": "極光；曙光",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term aurora refers to the dawn or early morning light itself; the first light of day. 極光一詞指的是黎明或清晨的光本身；天的第一道陽光。",
-      "The lesson introduced aurora as a useful term to understand. 本課介紹了極光這個易於理解的有用術語。"
+      "We watched the aurora light up the night sky. 我們看著極光照亮夜空。",
+      "The photographer waited for the aurora in the cold. 攝影師在寒冷中等待極光出現。"
     ],
     "audienceTags": [
       "general"
@@ -192283,11 +192283,11 @@
   },
   {
     "word": "austerity",
-    "meaning": "舉止或生活的嚴肅性；極為嚴格或嚴格；嚴厲的紀律。",
+    "meaning": "緊縮；樸素；嚴格",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term austerity refers to severity of manners or life; extreme rigor or strictness; harsh discipline. 節儉一詞指的是舉止或生活的嚴格性。極度嚴格或嚴格；嚴厲的紀律。",
-      "The lesson introduced austerity as a useful term to understand. 本課介紹了緊縮作為一個值得理解的有用術語。"
+      "The government introduced austerity measures to reduce spending. 政府採取緊縮措施以減少支出。",
+      "The austerity of the room reflected his simple lifestyle. 房間的樸素反映了他簡單的生活方式。"
     ],
     "audienceTags": [
       "general"
@@ -193080,11 +193080,11 @@
   },
   {
     "word": "authentication",
-    "meaning": "驗證或確認某事物真實性的事物；或這樣做的過程。",
+    "meaning": "驗證；身分驗證",
     "partOfSpeech": "noun",
     "sentences": [
-      "The museum required scientific tests for the authentication of the painting. 博物館要求對這幅畫進行科學測試來鑑定其真偽。",
-      "The term authentication refers to Something which validates or confirms the authenticity of something; or the process of doing so. 術語「認證」是指驗證或確認某事物真實性的事物；或這樣做的過程。"
+      "The website requires two-factor authentication. 這個網站要求雙重身分驗證。",
+      "Authentication of the painting took several weeks. 驗證這幅畫的真偽花了數週。"
     ],
     "schoolLevels": [
       "college"
@@ -193293,11 +193293,11 @@
   },
   {
     "word": "authoritarian",
-    "meaning": "要求絕對服從他或她的權威的人。",
+    "meaning": "威權主義者；要求絕對服從的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "The dictator was an authoritarian. 獨裁者是個獨裁者。",
-      "The term authoritarian refers to One who commands absolute obedience to his or her authority. 專制一詞指的是絕對服從其權威的人。"
+      "The authoritarian refused to accept criticism. 這位威權主義者拒絕接受批評。",
+      "He described his former boss as an authoritarian. 他形容以前的老闆是要求絕對服從的人。"
     ],
     "audienceTags": [
       "general"
@@ -193384,11 +193384,11 @@
   },
   {
     "word": "authorization",
-    "meaning": "被授權做某事或去某處的狀態；正式獲得許可。",
+    "meaning": "授權；許可",
     "partOfSpeech": "noun",
     "sentences": [
-      "I've got authorization. Call the office and you'll see. 我已經得到授權了打電話給辦公室就知道了。",
-      "The term authorization refers to The state of being authorized to do something or to be somewhere; formally granted permission. 授權一詞是指被授權做某事或去某處的狀態；正式獲得許可。"
+      "You need authorization to enter the laboratory. 你需要許可才能進入實驗室。",
+      "The bank requested written authorization for the transfer. 銀行要求書面授權才能轉帳。"
     ],
     "examTags": [
       "toeic"
@@ -193506,11 +193506,11 @@
   },
   {
     "word": "autism",
-    "meaning": "異常和不健康的專注或堅持，通常伴隨著低自我意識和對反對或批評的不健康仇恨。",
+    "meaning": "自閉症；自閉症類群障礙",
     "partOfSpeech": "noun",
     "sentences": [
-      "weaponized autism 武器化的自閉症",
-      "The term autism refers to abnormal and unhealthy focus or persistence, stereotypically coupled with low self-awareness and unhealthy hatred of opposition or criticism. 自閉症一詞指的是異常和不健康的專注或堅持，通常伴隨著低自我意識和對反對或批評的不健康的仇恨。"
+      "The school provides support for students with autism. 學校為有自閉症的學生提供支持。",
+      "Autism can affect communication and social interaction. 自閉症可能影響溝通與社交互動。"
     ],
     "audienceTags": [
       "general"
@@ -196909,11 +196909,11 @@
   },
   {
     "word": "automotive",
-    "meaning": "與汽車相關的領域、業務或細分市場，尤其是其製造。",
-    "partOfSpeech": "noun",
+    "meaning": "汽車的；與汽車製造有關的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "His business is a machine shop that works mainly in automotive, aerospace, and medical. 他的企業是一家機械車間，主要從事汽車、航空航太和醫療領域的業務。",
-      "The term automotive refers to the field, business, or market segment that concerns automobiles, especially their manufacture. 汽車一詞是指與汽車相關的領域、業務或細分市場，尤其是其製造。"
+      "She works in the automotive industry. 她在汽車產業工作。",
+      "The factory produces automotive parts. 這間工廠生產汽車零件。"
     ],
     "examTags": [
       "toeic"
@@ -197487,11 +197487,11 @@
   },
   {
     "word": "autopilot",
-    "meaning": "用於在無人協助的情況下引導車輛的機械、電氣或液壓系統。",
+    "meaning": "自動駕駛系統",
     "partOfSpeech": "noun",
     "sentences": [
-      "I set the autopilot to due south, so I could get some rest. 我將自動駕駛儀設定為正南，這樣我就可以休息一下。",
-      "The term autopilot refers to a mechanical, electrical, or hydraulic system used to guide a vehicle without assistance from a human being. 自動駕駛儀一詞是指一種機械、電氣或液壓系統，用於在沒有人類幫助的情況下引導車輛。"
+      "The pilot switched on the autopilot. 飛行員開啟自動駕駛系統。",
+      "The autopilot kept the aircraft at a steady altitude. 自動駕駛系統使飛機保持穩定高度。"
     ],
     "audienceTags": [
       "general"
@@ -197763,11 +197763,11 @@
   },
   {
     "word": "autopsy",
-    "meaning": "對屍體進行解剖以找出可能的死亡原因。",
+    "meaning": "驗屍；屍體解剖",
     "partOfSpeech": "noun",
     "sentences": [
-      "The autopsy revealed he had died of multiple bullet wounds. 驗屍顯示他死於多處槍傷。",
-      "The term autopsy refers to a dissection performed on a cadaver to find possible cause(s) of death. 屍檢一詞是指對屍體進行解剖以找出可能的死亡原因。"
+      "The autopsy revealed the cause of death. 驗屍查明了死因。",
+      "A doctor performed an autopsy after the accident. 醫師在事故後進行驗屍。"
     ],
     "audienceTags": [
       "general"
@@ -199419,11 +199419,11 @@
   },
   {
     "word": "autumn",
-    "meaning": "某人或某物已經過了鼎盛時期的時期。",
+    "meaning": "秋天；衰退或晚年時期",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term autumn refers to the time period when someone or something is past its prime. 秋天這個字指的是某人或某物已經過了鼎盛時期的時期。",
-      "The lesson introduced autumn as a useful term to understand. 本課介紹了秋天作為一個易於理解的有用術語。"
+      "The leaves turn red in autumn. 葉子在秋天變紅。",
+      "They traveled together in the autumn of their lives. 他們在晚年一起旅行。"
     ],
     "audienceTags": [
       "general"
@@ -200067,11 +200067,11 @@
   },
   {
     "word": "availability",
-    "meaning": "可用的品質。",
+    "meaning": "可用性；供應情況；有空的時間",
     "partOfSpeech": "noun",
     "sentences": [
-      "What is your availability this week? 這週你有空嗎？",
-      "The term availability refers to the quality of being available. 可用性一詞是指可用的品質。"
+      "Room availability changes from day to day. 客房供應情況每天都不同。",
+      "Please confirm your availability for Friday's meeting. 請確認你是否有空參加星期五的會議。"
     ],
     "audienceTags": [
       "general"
@@ -200601,11 +200601,11 @@
   },
   {
     "word": "avenger",
-    "meaning": "報仇或伸冤的人。",
+    "meaning": "復仇者；替人伸冤者",
     "partOfSpeech": "noun",
     "sentences": [
-      "an avenger of blood 血的復仇者",
-      "The term avenger refers to One who avenges or vindicates. 復仇者一詞指的是報仇或伸冤的人。"
+      "The story follows an avenger searching for the murderer. 故事描寫一位追尋兇手的復仇者。",
+      "The hero becomes an avenger after his village is destroyed. 村莊遭到摧毀後，主角成為復仇者。"
     ],
     "audienceTags": [
       "general"
@@ -202891,11 +202891,11 @@
   },
   {
     "word": "awareness",
-    "meaning": "觀察者可以確認感知數據的意識狀態或程度。",
+    "meaning": "意識；察覺；認識",
     "partOfSpeech": "noun",
     "sentences": [
-      "I gradually passed from sleep to full awareness. 我逐漸從睡眠狀態進入完全清醒狀態。",
-      "The term awareness refers to The state or level of consciousness where sense data can be confirmed by an observer. 意識一詞是指觀察者可以確認感知資料的意識狀態或層次。"
+      "The campaign raises awareness of water conservation. 這項活動提升節水意識。",
+      "She showed an awareness of the risks. 她表現出對風險的認識。"
     ],
     "audienceTags": [
       "general"
@@ -203216,11 +203216,11 @@
   },
   {
     "word": "awesomeness",
-    "meaning": "令人敬畏的品質。",
+    "meaning": "令人驚嘆的特質；非常出色的程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term awesomeness refers to The quality of being awesome. 令人敬畏一詞指的是令人敬畏的品質。",
-      "We learned the meaning of awesomeness during today's lesson. 在今天的課程中，我們了解了敬畏的含義。"
+      "The awesomeness of the mountain view left us speechless. 山景的壯麗讓我們說不出話。",
+      "Fans celebrated the awesomeness of the performance. 粉絲讚嘆這場表演的精彩。"
     ],
     "audienceTags": [
       "general"

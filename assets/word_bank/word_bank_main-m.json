@@ -109,7 +109,7 @@
   },
   {
     "word": "Mabel",
-    "meaning": "一個罕見的或專門的英語術語，記錄為 Mabel。",
+    "meaning": "梅布爾（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
       "Mabel was a very popular name for girls a long time ago. 很久以前，梅布爾是一個非常受歡迎的女孩名字。",
@@ -217,11 +217,11 @@
   },
   {
     "word": "macabresque",
-    "meaning": "陰森、帶有死亡意象的",
+    "meaning": "陰森的；帶有死亡意象的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "macabresque appears in the old book. 那本舊書提到了這個概念。",
-      "macabresque made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The painting has a macabresque quality, with skulls hidden among the flowers. 那幅畫在花叢中藏著骷髏，帶有陰森的死亡意象。",
+      "The film’s macabresque imagery disturbed some viewers. 那部電影帶有死亡意象的陰森畫面讓部分觀眾不安。"
     ],
     "audienceTags": [
       "general"
@@ -541,11 +541,11 @@
   },
   {
     "word": "macaroon",
-    "meaning": "主要由蛋白、糖和杏仁粉或椰子粉組成的小餅乾",
+    "meaning": "蛋白小餅乾（通常用蛋白、糖及杏仁粉或椰子製成）",
     "partOfSpeech": "noun",
     "sentences": [
-      "macaroon went into the soup at lunchtime. 廚師午餐時把這種食物加進湯裡。",
-      "macaroon was served warm at the table. 這種食物以溫熱的方式端上餐桌。"
+      "She baked a tray of coconut macaroons for the party. 她為派對烤了一盤椰子小餅乾。",
+      "He ate a macaroon with his afternoon tea. 他喝下午茶時吃了一塊小餅乾。"
     ],
     "audienceTags": [
       "general"
@@ -709,11 +709,11 @@
   },
   {
     "word": "macedoine",
-    "meaning": "切成小丁混合的蔬菜或水果",
+    "meaning": "切丁混合蔬菜或水果；雜燴",
     "partOfSpeech": "noun",
     "sentences": [
-      "macedoine went into the soup at lunchtime. 廚師午餐時把這種食物加進湯裡。",
-      "macedoine was served warm at the table. 這種食物以溫熱的方式端上餐桌。"
+      "The chef served a macedoine of fresh fruit for dessert. 主廚端上一份切丁混合水果作為甜點。",
+      "She added a vegetable macedoine to the salad. 她在沙拉中加入了切丁混合蔬菜。"
     ],
     "audienceTags": [
       "general"
@@ -4720,11 +4720,11 @@
   },
   {
     "word": "madden",
-    "meaning": "使人發瘋；激情燃燒。",
+    "meaning": "使發狂；使極度惱怒",
     "partOfSpeech": "verb",
     "sentences": [
-      "madden is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "madden was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The constant noise was enough to madden anyone. 那持續不斷的噪音足以把任何人逼瘋。",
+      "Long delays can madden even patient customers. 長時間的延誤連有耐心的顧客也會惱怒。"
     ],
     "audienceTags": [
       "general"
@@ -4936,11 +4936,11 @@
   },
   {
     "word": "Madeline",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪德琳（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Madeline is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Madeline was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Madeline borrowed a book about birds. 瑪德琳借了一本介紹鳥類的書。",
+      "I saved a seat for Madeline beside the window. 我在窗邊替瑪德琳留了一個座位。"
     ],
     "audienceTags": [
       "general"
@@ -6338,11 +6338,11 @@
   },
   {
     "word": "magenta",
-    "meaning": "接近紅色和藍色等量混合的顏色，是加法二次色，但由紅色和淺藍色組合產生的減法原色。",
+    "meaning": "洋紅色；品紅色",
     "partOfSpeech": "noun",
     "sentences": [
-      "magenta brightened the living-room wall. 這種顏色讓客廳牆面更明亮。",
-      "magenta looked lovely on her new scarf. 這種顏色出現在她的新圍巾上很好看。"
+      "She chose magenta for the bedroom wall. 她選了洋紅色來粉刷臥室牆面。",
+      "The printer has run out of magenta ink. 印表機的洋紅色墨水用完了。"
     ],
     "audienceTags": [
       "general"
@@ -6362,11 +6362,11 @@
   },
   {
     "word": "Maggie",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪姬（女子名或暱稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Maggie is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Maggie was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Maggie baked an apple pie yesterday. 瑪姬昨天烤了一個蘋果派。",
+      "We asked Maggie to bring her camera. 我們請瑪姬帶相機來。"
     ],
     "audienceTags": [
       "general"
@@ -6617,8 +6617,8 @@
     "meaning": "魔術師",
     "partOfSpeech": "noun",
     "sentences": [
-      "magician is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "magician was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The magician pulled a rabbit out of a hat. 那位魔術師從帽子裡變出一隻兔子。",
+      "A magician performed at the children’s party. 一位魔術師在孩子們的派對上表演。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -6933,11 +6933,11 @@
   },
   {
     "word": "magistrateship",
-    "meaning": "治安法官辦公室；還有：治安法官的任期",
+    "meaning": "治安法官的職位或任期",
     "partOfSpeech": "noun",
     "sentences": [
-      "magistrateship appears in the old book. 那本舊書提到了這個概念。",
-      "magistrateship made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "She was appointed to a magistrateship in the district. 她獲任命為該區的治安法官。",
+      "His magistrateship ended when he retired. 他退休時，治安法官的任期也結束了。"
     ],
     "audienceTags": [
       "general"
@@ -8176,11 +8176,11 @@
   },
   {
     "word": "magnifier",
-    "meaning": "一個放大的；特別是：使物體看起來更大的鏡頭或鏡頭組合",
+    "meaning": "放大鏡；放大裝置",
     "partOfSpeech": "noun",
     "sentences": [
-      "magnifier appears in the old book. 那本舊書提到了這個概念。",
-      "magnifier made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "She used a magnifier to read the tiny print. 她用放大鏡閱讀細小的文字。",
+      "The jeweler examined the stone through a magnifier. 珠寶商透過放大鏡檢查那顆寶石。"
     ],
     "audienceTags": [
       "general"
@@ -8246,8 +8246,8 @@
     "meaning": "浮誇華麗的說話方式",
     "partOfSpeech": "noun",
     "sentences": [
-      "magniloquy describes the house in the writer's sentence. 作者在句子中用這個詞描述那棟房子。",
-      "magniloquy appears when people discuss the same feature. 人們談論相同特徵時會用到這個詞。"
+      "His magniloquy made a simple announcement sound like a royal decree. 他浮誇華麗的說話方式讓簡單的公告聽起來像皇家詔令。",
+      "The audience grew tired of the speaker’s magniloquy. 聽眾逐漸厭倦了演講者浮誇的言辭。"
     ],
     "audienceTags": [
       "general"
@@ -8651,11 +8651,11 @@
   },
   {
     "word": "maharaja",
-    "meaning": "地位高於王公的印度王子",
+    "meaning": "印度大君；印度王公的尊稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "maharaja appears in the old book. 那本舊書提到了這個概念。",
-      "maharaja made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The maharaja welcomed the visitors to his palace. 那位印度大君歡迎訪客來到他的宮殿。",
+      "The portrait shows a maharaja wearing a decorated turban. 那幅肖像描繪了一位戴著華麗頭巾的印度王公。"
     ],
     "audienceTags": [
       "general"
@@ -10956,8 +10956,8 @@
     "meaning": "大寫字母",
     "partOfSpeech": "noun",
     "sentences": [
-      "majuscule appears in the old book. 那本舊書提到了這個概念。",
-      "majuscule made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The inscription begins with a large majuscule. 那段銘文以一個大寫字母開頭。",
+      "The calligrapher practiced both majuscules and minuscules. 書法家練習了大寫與小寫字母。"
     ],
     "audienceTags": [
       "general"
@@ -12021,11 +12021,11 @@
   },
   {
     "word": "maladministration",
-    "meaning": "腐敗或無能的行政管理（如公職）",
+    "meaning": "行政失當；管理不善",
     "partOfSpeech": "noun",
     "sentences": [
-      "maladministration appears in the old book. 那本舊書提到了這個概念。",
-      "maladministration made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The inquiry found evidence of maladministration. 調查發現了行政失當的證據。",
+      "Years of maladministration left the hospital short of supplies. 多年的管理不善讓醫院物資不足。"
     ],
     "audienceTags": [
       "general"
@@ -12300,8 +12300,8 @@
     "meaning": "冒失無禮地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "malapertly appears in the old book. 那本舊書提到了這個概念。",
-      "malapertly made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The boy malapertly interrupted the guest. 那個男孩冒失無禮地打斷了客人。",
+      "She replied malapertly instead of listening to the advice. 她不聽建議，反而無禮地回話。"
     ],
     "audienceTags": [
       "general"
@@ -12984,11 +12984,11 @@
   },
   {
     "word": "malcontent",
-    "meaning": "一個不滿的人",
+    "meaning": "不滿現狀的人；牢騷滿腹的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "malcontent is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "malcontent was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The manager dismissed him as a malcontent who opposed every proposal. 經理把他視為反對每個提案、牢騷滿腹的人。",
+      "A few malcontents protested against the new rules. 幾位不滿現狀的人抗議新規定。"
     ],
     "audienceTags": [
       "general"
@@ -13957,8 +13957,8 @@
     "meaning": "出於惡意地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "maliciously appears in the old book. 那本舊書提到了這個概念。",
-      "maliciously made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "Someone maliciously deleted the shared files. 有人惡意刪除了共用檔案。",
+      "He maliciously spread false rumors about his coworker. 他惡意散播有關同事的不實謠言。"
     ],
     "audienceTags": [
       "general"
@@ -14374,11 +14374,11 @@
   },
   {
     "word": "malison",
-    "meaning": "詛咒",
+    "meaning": "詛咒（舊式用語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "malison appears in the old book. 那本舊書提到了這個概念。",
-      "malison made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The witch uttered a malison against the king. 女巫對國王下了詛咒。",
+      "In the tale, a malison falls upon the abandoned castle. 在故事裡，一道詛咒降臨在那座荒廢的城堡上。"
     ],
     "audienceTags": [
       "general"
@@ -15030,8 +15030,8 @@
     "meaning": "營養不良",
     "partOfSpeech": "noun",
     "sentences": [
-      "malnourishment was explained by the doctor in simple words. 醫生用簡單的話解釋了這種健康狀況。",
-      "malnourishment made her ask about possible discomfort. 這種健康狀況讓她詢問可能造成的不適。"
+      "The charity provides meals to children suffering from malnourishment. 那個慈善團體為營養不良的孩子提供餐點。",
+      "The report described widespread malnourishment in the region. 報告描述了該地區普遍的營養不良情況。"
     ],
     "audienceTags": [
       "general"
@@ -15459,11 +15459,11 @@
   },
   {
     "word": "malproportion",
-    "meaning": "比例不均衡；比例失調",
+    "meaning": "比例失調；不成比例",
     "partOfSpeech": "noun",
     "sentences": [
-      "malproportion describes the house in the writer's sentence. 作者在句子中用這個詞描述那棟房子。",
-      "malproportion appears when people discuss the same feature. 人們談論相同特徵時會用到這個詞。"
+      "The malproportion of the roof made the house look awkward. 屋頂比例失調，讓房子看起來不協調。",
+      "The artist corrected the malproportion between the figure’s head and body. 那位藝術家修正了人物頭部與身體之間的比例失調。"
     ],
     "audienceTags": [
       "general"
@@ -16666,11 +16666,11 @@
   },
   {
     "word": "mammoniacal",
-    "meaning": "貪戀金錢的",
+    "meaning": "貪財的；崇拜金錢的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "mammoniacal appears in the old book. 那本舊書提到了這個概念。",
-      "mammoniacal made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The novel criticizes the merchant’s mammoniacal ambitions. 這部小說批判了商人貪財的野心。",
+      "His mammoniacal attitude valued profit above friendship. 他崇拜金錢的態度讓他把利潤看得比友誼重要。"
     ],
     "audienceTags": [
       "general"
@@ -17166,11 +17166,11 @@
   },
   {
     "word": "managership",
-    "meaning": "經理的辦公室或職能",
+    "meaning": "經理的職位；管理者的職務",
     "partOfSpeech": "noun",
     "sentences": [
-      "managership appears in the old book. 那本舊書提到了這個概念。",
-      "managership made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "She accepted the managership of the new branch. 她接下了新分店經理的職位。",
+      "His managership lasted for nearly ten years. 他擔任經理將近十年。"
     ],
     "audienceTags": [
       "general"
@@ -17250,11 +17250,11 @@
   },
   {
     "word": "manatee",
-    "meaning": "生活在溫暖水域的大型草食性水生哺乳動物",
+    "meaning": "海牛",
     "partOfSpeech": "noun",
     "sentences": [
-      "manatee was spotted by a child near the water. 有個孩子在水邊看見了這類動物。",
-      "manatee drew attention while people watched wildlife. 人們觀察野生動物時注意到了這類動物。"
+      "A manatee swam slowly past the boat. 一隻海牛慢慢游過船邊。",
+      "The children watched a manatee feeding on aquatic plants. 孩子們看著一隻海牛吃水生植物。"
     ],
     "audienceTags": [
       "general"
@@ -18265,11 +18265,11 @@
   },
   {
     "word": "mandolin",
-    "meaning": "有梨形琴身和多組弦的撥弦樂器",
+    "meaning": "曼陀林（梨形琴身的撥弦樂器）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mandolin filled the festival with lively sound. 這種音樂讓節慶現場充滿活力。",
-      "mandolin inspired a dance at the party. 這種音樂啟發了派對上的一段舞蹈。"
+      "She played a folk song on the mandolin. 她用曼陀林演奏了一首民謠。",
+      "He tuned his mandolin before the concert. 他在音樂會前為曼陀林調音。"
     ],
     "audienceTags": [
       "general"
@@ -20046,11 +20046,11 @@
   },
   {
     "word": "manifesto",
-    "meaning": "公開宣示理念或主張的文件",
+    "meaning": "宣言；公開宣示理念或主張的文件",
     "partOfSpeech": "noun",
     "sentences": [
-      "manifesto appears in the old book. 那本舊書提到了這個概念。",
-      "manifesto made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The party published its election manifesto. 那個政黨公布了選舉宣言。",
+      "Their manifesto calls for equal access to education. 他們的宣言呼籲人人都能平等接受教育。"
     ],
     "audienceTags": [
       "general"
@@ -20648,8 +20648,8 @@
     "meaning": "像人的；具有人類特徵的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "manlike is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "manlike was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The robot moved in a manlike way. 那個機器人以像人一樣的方式移動。",
+      "The creature had a manlike face and long fur. 那個生物有一張像人的臉和長毛。"
     ],
     "audienceTags": [
       "general"
@@ -20811,11 +20811,11 @@
   },
   {
     "word": "mannered",
-    "meaning": "有禮貌或（通常是過度的）習慣。",
+    "meaning": "做作的；矯揉造作的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "mannered appears in the old book. 那本舊書提到了這個概念。",
-      "mannered made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "His mannered speech sounded unnatural. 他做作的說話方式聽起來不自然。",
+      "The critic disliked the actor’s mannered performance. 評論家不喜歡那位演員矯揉造作的演出。"
     ],
     "audienceTags": [
       "general"
@@ -21147,11 +21147,11 @@
   },
   {
     "word": "mannitol",
-    "meaning": "常用於食品和藥品的糖醇",
+    "meaning": "甘露醇（一種糖醇）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mannitol went into the soup at lunchtime. 廚師午餐時把這種食物加進湯裡。",
-      "mannitol was served warm at the table. 這種食物以溫熱的方式端上餐桌。"
+      "Mannitol is listed among the ingredients on the package. 包裝上的成分表列有甘露醇。",
+      "The laboratory stored the mannitol in a labeled container. 實驗室把甘露醇存放在有標籤的容器裡。"
     ],
     "audienceTags": [
       "general"
@@ -21255,11 +21255,11 @@
   },
   {
     "word": "Manny",
-    "meaning": "專名或分類名稱",
+    "meaning": "曼尼（男子名或暱稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Manny is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Manny was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Manny repaired the bicycle chain. 曼尼修好了腳踏車鏈條。",
+      "The coach chose Manny to lead the team. 教練選曼尼帶領球隊。"
     ],
     "audienceTags": [
       "general"
@@ -22970,11 +22970,11 @@
   },
   {
     "word": "manure",
-    "meaning": "任何施肥物質，無論是否源自動物；肥料。",
+    "meaning": "施肥；施糞肥（動詞）；糞肥（名詞）",
     "partOfSpeech": "verb",
     "sentences": [
-      "manure was spotted by a child near the water. 有個孩子在水邊看見了這類動物。",
-      "manure drew attention while people watched wildlife. 人們觀察野生動物時注意到了這類動物。"
+      "The farmers manure the fields before planting. 農民在種植前給田地施糞肥。",
+      "We manure the vegetable beds every spring. 我們每年春天給菜圃施糞肥。"
     ],
     "audienceTags": [
       "general"
@@ -23085,11 +23085,11 @@
   },
   {
     "word": "manuscriptural",
-    "meaning": "手稿的或的",
+    "meaning": "手稿的；與手稿有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "manuscriptural appears in the old book. 那本舊書提到了這個概念。",
-      "manuscriptural made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The scholar examined manuscriptural evidence for the earlier version. 學者檢查了證明較早版本的手稿資料。",
+      "The manuscriptural differences suggest that two scribes worked on the text. 手稿上的差異顯示那份文本可能由兩名抄寫者完成。"
     ],
     "audienceTags": [
       "general"
@@ -26893,11 +26893,11 @@
   },
   {
     "word": "Marjorie",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪喬麗（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marjorie is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marjorie was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marjorie grows tomatoes in her garden. 瑪喬麗在花園裡種番茄。",
+      "The blue jacket belongs to Marjorie. 那件藍色外套是瑪喬麗的。"
     ],
     "audienceTags": [
       "general"
@@ -26986,11 +26986,11 @@
   },
   {
     "word": "marked",
-    "meaning": "明顯明顯；顯;顯眼的。",
+    "meaning": "明顯的；顯著的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "marked appears in the old book. 那本舊書提到了這個概念。",
-      "marked made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "There has been a marked improvement in her reading. 她的閱讀能力有了明顯進步。",
+      "The two designs show a marked difference in style. 這兩個設計的風格有顯著差異。"
     ],
     "audienceTags": [
       "general"
@@ -27074,11 +27074,11 @@
   },
   {
     "word": "marketable",
-    "meaning": "具備上市能力。",
+    "meaning": "有銷路的；適合銷售的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "marketable appears in the old book. 那本舊書提到了這個概念。",
-      "marketable made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "She learned marketable skills at the training center. 她在訓練中心學到了就業市場需要的技能。",
+      "The damaged fruit was no longer marketable. 那些受損的水果已不適合銷售。"
     ],
     "audienceTags": [
       "general"
@@ -27284,11 +27284,11 @@
   },
   {
     "word": "Marko",
-    "meaning": "專名或分類名稱",
+    "meaning": "馬可（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marko is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marko was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marko joined the chess club. 馬可加入了西洋棋社。",
+      "We sent Marko the meeting schedule. 我們把會議時程寄給馬可。"
     ],
     "audienceTags": [
       "general"
@@ -27368,11 +27368,11 @@
   },
   {
     "word": "Markus",
-    "meaning": "專名或分類名稱",
+    "meaning": "馬庫斯（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Markus is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Markus was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Markus carried the bags upstairs. 馬庫斯把袋子搬上樓。",
+      "I thanked Markus for helping with the move. 我感謝馬庫斯協助搬家。"
     ],
     "audienceTags": [
       "general"
@@ -27416,11 +27416,11 @@
   },
   {
     "word": "Marla",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪拉（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marla is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marla was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marla designed the poster for the concert. 瑪拉設計了音樂會的海報。",
+      "The manager introduced Marla to the team. 經理把瑪拉介紹給團隊。"
     ],
     "audienceTags": [
       "general"
@@ -27464,11 +27464,11 @@
   },
   {
     "word": "Marlena",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪蓮娜（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marlena is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marlena was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marlena arrived early for her interview. 瑪蓮娜提早抵達面試現場。",
+      "I helped Marlena choose a new desk. 我幫瑪蓮娜挑了一張新書桌。"
     ],
     "audienceTags": [
       "general"
@@ -27860,11 +27860,11 @@
   },
   {
     "word": "marmoreal",
-    "meaning": "像大理石的",
+    "meaning": "大理石般的；像大理石的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "marmoreal appears in small items sold at the shop. 商店販售一些用這種材料製成的小物品。",
-      "marmoreal was kept in a small box at home. 他把一小塊這種材料放在家中的小盒子裡。"
+      "The statue had a pale, marmoreal surface. 那座雕像有著淡色、像大理石的表面。",
+      "Her marmoreal stillness made her look like a statue. 她像大理石般一動不動，看起來如同雕像。"
     ],
     "audienceTags": [
       "general"
@@ -27872,11 +27872,11 @@
   },
   {
     "word": "marmoreally",
-    "meaning": "以以特定方式地",
+    "meaning": "像大理石般地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "marmoreally describes the house in the writer's sentence. 作者在句子中用這個詞描述那棟房子。",
-      "marmoreally appears when people discuss the same feature. 人們談論相同特徵時會用到這個詞。"
+      "The statue gleamed marmoreally in the cold light. 雕像在冷光中像大理石般閃耀。",
+      "Her face remained marmoreally still during the announcement. 宣布消息時，她的臉像大理石般僵直不動。"
     ],
     "audienceTags": [
       "general"
@@ -27884,11 +27884,11 @@
   },
   {
     "word": "marmorean",
-    "meaning": "像大理石的",
+    "meaning": "大理石的；像大理石的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "marmorean appears in small items sold at the shop. 商店販售一些用這種材料製成的小物品。",
-      "marmorean was kept in a small box at home. 他把一小塊這種材料放在家中的小盒子裡。"
+      "A marmorean column stood at the entrance. 入口處立著一根大理石柱。",
+      "The painting gave the figure’s skin a marmorean whiteness. 那幅畫讓人物的皮膚呈現像大理石般的白色。"
     ],
     "audienceTags": [
       "general"
@@ -27896,11 +27896,11 @@
   },
   {
     "word": "marmoric",
-    "meaning": "像大理石的",
+    "meaning": "大理石的；與大理石有關的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "marmoric appears in small items sold at the shop. 商店販售一些用這種材料製成的小物品。",
-      "marmoric was kept in a small box at home. 他把一小塊這種材料放在家中的小盒子裡。"
+      "The sculptor studied the stone’s marmoric texture. 雕刻家研究了那塊石頭的大理石紋理。",
+      "The hall had a smooth, marmoric floor. 大廳鋪著光滑的大理石地板。"
     ],
     "audienceTags": [
       "general"
@@ -27944,11 +27944,11 @@
   },
   {
     "word": "marmot",
-    "meaning": "生活在山地洞穴中的大型松鼠科動物",
+    "meaning": "旱獺",
     "partOfSpeech": "noun",
     "sentences": [
-      "marmot was spotted by a child near the water. 有個孩子在水邊看見了這類動物。",
-      "marmot drew attention while people watched wildlife. 人們觀察野生動物時注意到了這類動物。"
+      "A marmot disappeared into its burrow. 一隻旱獺鑽進了洞穴。",
+      "We saw a marmot resting on a rock in the mountains. 我們在山裡看見一隻旱獺躺在岩石上休息。"
     ],
     "audienceTags": [
       "general"
@@ -28100,11 +28100,11 @@
   },
   {
     "word": "marplot",
-    "meaning": "因多管閒事而破壞他人計畫的人",
+    "meaning": "多管閒事而破壞他人計畫的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "marplot is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "marplot was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The comedy features a marplot who ruins every secret plan. 那齣喜劇裡有一個多管閒事、破壞每項祕密計畫的人。",
+      "His friends called him a marplot after his interference spoiled the surprise. 他插手壞了驚喜之後，朋友們稱他為愛攪局的人。"
     ],
     "audienceTags": [
       "general"
@@ -28160,11 +28160,11 @@
   },
   {
     "word": "marquess",
-    "meaning": "歐洲和日本的世襲貴族",
+    "meaning": "侯爵",
     "partOfSpeech": "noun",
     "sentences": [
-      "marquess appears in the old book. 那本舊書提到了這個概念。",
-      "marquess made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The marquess invited the guests into the dining room. 那位侯爵邀請客人進入餐廳。",
+      "The portrait shows a marquess wearing formal clothes. 那幅肖像描繪了一位穿著正式服裝的侯爵。"
     ],
     "audienceTags": [
       "general"
@@ -28184,11 +28184,11 @@
   },
   {
     "word": "marquis",
-    "meaning": "歐洲和日本的世襲貴族",
+    "meaning": "侯爵",
     "partOfSpeech": "noun",
     "sentences": [
-      "marquis appears in the old book. 那本舊書提到了這個概念。",
-      "marquis made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The marquis owned a large estate outside the city. 那位侯爵在城外擁有一座大莊園。",
+      "A letter from the marquis arrived at the palace. 宮殿收到了一封侯爵寄來的信。"
     ],
     "audienceTags": [
       "general"
@@ -28779,11 +28779,11 @@
   },
   {
     "word": "Marsha",
-    "meaning": "專名或分類名稱",
+    "meaning": "瑪莎（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marsha is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marsha was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marsha took the bus to work. 瑪莎搭公車去上班。",
+      "We celebrated Marsha’s birthday at home. 我們在家慶祝瑪莎的生日。"
     ],
     "audienceTags": [
       "general"
@@ -29662,11 +29662,11 @@
   },
   {
     "word": "martinet",
-    "meaning": "嚴格要求服從和紀律的人",
+    "meaning": "嚴格要求紀律與服從的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "martinet is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "martinet was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The officer was a martinet who demanded spotless uniforms. 那位軍官嚴格要求紀律，規定制服必須一塵不染。",
+      "Our old coach was a martinet about punctuality. 我們以前的教練對守時的要求極為嚴格。"
     ],
     "audienceTags": [
       "general"
@@ -29866,11 +29866,11 @@
   },
   {
     "word": "Marty",
-    "meaning": "專名或分類名稱",
+    "meaning": "馬蒂（人名或暱稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marty is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marty was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marty left a note on the fridge. 馬蒂在冰箱上留了一張便條。",
+      "I asked Marty to check the door lock. 我請馬蒂檢查門鎖。"
     ],
     "audienceTags": [
       "general"
@@ -30250,11 +30250,11 @@
   },
   {
     "word": "Marvin",
-    "meaning": "專名或分類名稱",
+    "meaning": "馬文（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Marvin is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Marvin was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Marvin bought fresh bread at the market. 馬文在市場買了新鮮麵包。",
+      "We listened to Marvin explain the rules. 我們聽馬文解釋規則。"
     ],
     "audienceTags": [
       "general"
@@ -31238,11 +31238,11 @@
   },
   {
     "word": "mason",
-    "meaning": "砌磚或砌石建造",
-    "partOfSpeech": "verb",
+    "meaning": "泥水匠；石匠（砌磚或砌石的工匠）",
+    "partOfSpeech": "noun",
     "sentences": [
-      "mason appears in the old book. 那本舊書提到了這個概念。",
-      "mason made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The mason repaired the old stone wall. 那位石匠修復了老石牆。",
+      "A skilled mason laid the bricks in even rows. 一位熟練的泥水匠把磚砌成整齊的排列。"
     ],
     "audienceTags": [
       "general"
@@ -31454,11 +31454,11 @@
   },
   {
     "word": "masquerade",
-    "meaning": "偽裝身分或參加化裝舞會",
+    "meaning": "假扮；偽裝身分",
     "partOfSpeech": "verb",
     "sentences": [
-      "masquerade is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "masquerade was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Some scammers masquerade as bank employees. 有些詐騙者假扮銀行員工。",
+      "He tried to masquerade as a tourist to avoid attention. 他試圖偽裝成遊客來避免引人注意。"
     ],
     "audienceTags": [
       "general"
@@ -31524,11 +31524,11 @@
   },
   {
     "word": "massacre",
-    "meaning": "在幾乎無法抵抗或根本無法抵抗的情況下，在沒有必要和/或違反文明規範的情況下，以不分青紅皂白的暴力手段殺害了相當多的人。",
+    "meaning": "大屠殺",
     "partOfSpeech": "noun",
     "sentences": [
-      "massacre is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "massacre was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The museum commemorates the victims of the massacre. 那座博物館紀念大屠殺的受害者。",
+      "Survivors described the massacre to investigators. 倖存者向調查人員描述了那場大屠殺。"
     ],
     "audienceTags": [
       "general"
@@ -32170,11 +32170,11 @@
   },
   {
     "word": "mastectomy",
-    "meaning": "切除乳房的手術",
+    "meaning": "乳房切除術",
     "partOfSpeech": "noun",
     "sentences": [
-      "mastectomy was explained by the doctor in simple words. 醫生用簡單的話解釋了這種健康狀況。",
-      "mastectomy made her ask about possible discomfort. 這種健康狀況讓她詢問可能造成的不適。"
+      "She discussed the mastectomy with her surgeon. 她與外科醫師討論了乳房切除手術。",
+      "The nurse explained what to expect after a mastectomy. 護理師說明了乳房切除術後可能遇到的情況。"
     ],
     "audienceTags": [
       "general"
@@ -32260,11 +32260,11 @@
   },
   {
     "word": "masterful",
-    "meaning": "技藝高超而熟練的",
+    "meaning": "技藝高超的；熟練的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "masterful appears in the old book. 那本舊書提到了這個概念。",
-      "masterful made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The pianist gave a masterful performance. 那位鋼琴家獻上了一場技藝高超的演出。",
+      "Her masterful handling of the discussion impressed everyone. 她熟練地主持討論，讓大家留下深刻印象。"
     ],
     "audienceTags": [
       "general"
@@ -34029,11 +34029,11 @@
   },
   {
     "word": "matching",
-    "meaning": "與另一物相同或相配的",
+    "meaning": "相配的；一致的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "matching appears in the old book. 那本舊書提到了這個概念。",
-      "matching made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "She wore a coat and a matching hat. 她穿了一件外套，戴著一頂相配的帽子。",
+      "The table comes with four matching chairs. 那張桌子搭配了四張同款椅子。"
     ],
     "audienceTags": [
       "general"
@@ -34959,11 +34959,11 @@
   },
   {
     "word": "matins",
-    "meaning": "基督教傳統中清晨舉行的祈禱儀式",
+    "meaning": "晨禱（基督教的祈禱儀式）",
     "partOfSpeech": "noun",
     "sentences": [
-      "matins appears in the old book. 那本舊書提到了這個概念。",
-      "matins made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The monks gathered for matins before dawn. 修道士在黎明前聚集晨禱。",
+      "The bells called the community to matins. 鐘聲召集眾人參加晨禱。"
     ],
     "audienceTags": [
       "general"
@@ -35247,11 +35247,11 @@
   },
   {
     "word": "matrices",
-    "meaning": "矩陣的或的",
+    "meaning": "矩陣（matrix 的複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "matrices appears in the old book. 那本舊書提到了這個概念。",
-      "matrices made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "We multiplied two matrices in math class. 我們在數學課上把兩個矩陣相乘。",
+      "These matrices contain the data for the calculation. 這些矩陣包含了計算所需的資料。"
     ],
     "audienceTags": [
       "general"
@@ -35898,11 +35898,11 @@
   },
   {
     "word": "matte",
-    "meaning": "表面不反光的；霧面的",
+    "meaning": "霧面的；不反光的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "matte appears in the old book. 那本舊書提到了這個概念。",
-      "matte made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "I prefer a matte finish for the photographs. 我比較喜歡照片採霧面處理。",
+      "The walls were painted in matte black. 牆壁漆成霧面黑色。"
     ],
     "audienceTags": [
       "general"
@@ -36860,8 +36860,8 @@
     "meaning": "喋喋不休、漫無目的說話的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "maunderer is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "maunderer was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "The maunderer talked for an hour without making a clear point. 那個喋喋不休的人講了一小時，仍沒說清楚重點。",
+      "She avoided the maunderer who always repeated the same stories. 她避開了那個總是重複同樣故事、說話漫無目的的人。"
     ],
     "audienceTags": [
       "general"
@@ -36917,11 +36917,11 @@
   },
   {
     "word": "Maureen",
-    "meaning": "專名或分類名稱",
+    "meaning": "莫琳（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Maureen is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "Maureen was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "Maureen organized the school fair. 莫琳籌辦了學校園遊會。",
+      "The flowers were a gift from Maureen. 那些花是莫琳送的禮物。"
     ],
     "audienceTags": [
       "general"
@@ -38100,11 +38100,11 @@
   },
   {
     "word": "mayhem",
-    "meaning": "嚴重混亂或暴力破壞的狀態",
+    "meaning": "混亂；騷亂；嚴重破壞",
     "partOfSpeech": "noun",
     "sentences": [
-      "mayhem appears in the old book. 那本舊書提到了這個概念。",
-      "mayhem made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "The sudden power failure caused mayhem at the airport. 突然停電讓機場陷入混亂。",
+      "The kitchen was a scene of mayhem after the children tried baking. 孩子們嘗試烘焙後，廚房一片混亂。"
     ],
     "audienceTags": [
       "general"
@@ -38216,11 +38216,11 @@
   },
   {
     "word": "mayoralty",
-    "meaning": "市長的職位或任期",
+    "meaning": "市長的職位；市長任期",
     "partOfSpeech": "noun",
     "sentences": [
-      "mayoralty is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "mayoralty was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "She announced her candidacy for the mayoralty. 她宣布競選市長。",
+      "Road repairs were a priority during his mayoralty. 他擔任市長期間，道路修繕是優先事項。"
     ],
     "audienceTags": [
       "general"
@@ -38240,11 +38240,11 @@
   },
   {
     "word": "mayorship",
-    "meaning": "市長的職位或身分",
+    "meaning": "市長的職位；市長身分",
     "partOfSpeech": "noun",
     "sentences": [
-      "mayorship is mentioned by name in the story. 故事直接提到了這個人物或身分。",
-      "mayorship was explained in the old text. 舊文獻解釋了這個人物或身分的意思。"
+      "He sought the mayorship after serving on the council. 他擔任議員後爭取市長職位。",
+      "Her mayorship began during a difficult financial period. 她在財務困難的時期開始擔任市長。"
     ],
     "audienceTags": [
       "general"
@@ -39578,8 +39578,8 @@
     "meaning": "含糊其辭而不坦率地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "mealymouthedly appears in the old book. 那本舊書提到了這個概念。",
-      "mealymouthedly made her ask what the word meant. 她因此詢問這個詞代表什麼。"
+      "He mealymouthedly avoided saying who was responsible. 他含糊其辭，避而不談該由誰負責。",
+      "She answered mealymouthedly when asked whether she supported the plan. 被問到是否支持計畫時，她不坦率地含糊回答。"
     ],
     "audienceTags": [
       "general"
@@ -39775,11 +39775,11 @@
   },
   {
     "word": "meaningless",
-    "meaning": "沒有清楚意義或重要性的",
+    "meaning": "沒有意義的；無價值的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "meaningless describes the house in the writer's sentence. 作者在句子中用這個詞描述那棟房子。",
-      "meaningless appears when people discuss the same feature. 人們談論相同特徵時會用到這個詞。"
+      "The numbers are meaningless without an explanation. 沒有解釋，這些數字就沒有意義。",
+      "He was tired of making meaningless promises. 他厭倦了作出毫無意義的承諾。"
     ],
     "audienceTags": [
       "general"
@@ -50562,11 +50562,11 @@
   },
   {
     "word": "melodramatically",
-    "meaning": "情節劇的、關於情節劇的或具有情節劇特徵的。",
+    "meaning": "誇張地；像情節劇般地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "At dawn, runners melodramatically along the quiet path. 清晨，跑者以情節劇的、關於情節劇的或具有情節劇特徵的的方式沿著安靜小路前進。",
-      "By dusk, singers melodramatically to the small crowd. 傍晚，歌手以情節劇的、關於情節劇的或具有情節劇特徵的的方式對小群人歌唱。"
+      "He sighed melodramatically when he saw the bill. 他看到帳單時誇張地嘆了口氣。",
+      "She melodramatically declared that her life was ruined. 她誇張地宣稱自己的人生毀了。"
     ],
     "audienceTags": [
       "general"
@@ -52056,8 +52056,8 @@
     "meaning": "令人難忘地；值得記住地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "At dawn, runners memorably along the quiet path. 清晨，跑者以令人難忘地的方式沿著安靜小路前進。",
-      "By dusk, singers memorably to the small crowd. 傍晚，歌手以令人難忘地的方式對小群人歌唱。"
+      "The actor performed memorably in the final scene. 那位演員在最後一幕的演出令人難忘。",
+      "She memorably described the city as a maze of lights. 她把那座城市形容成燈光迷宮，令人印象深刻。"
     ],
     "audienceTags": [
       "general"
@@ -57694,11 +57694,11 @@
   },
   {
     "word": "merman",
-    "meaning": "一種傳說中的海洋生物，具有人的頭部和上半身和魚的尾巴",
+    "meaning": "男性人魚（上半身為人、下半身為魚的傳說生物）",
     "partOfSpeech": "noun",
     "sentences": [
-      "merman labels a named organism or taxon. 這個詞指的是一種傳說中的海洋生物，具有人的頭部和上半身和魚的尾巴。",
-      "merman belongs in a taxonomy list when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The story tells of a merman living beneath the waves. 這個故事講述了一個住在海中的男性人魚。",
+      "The artist painted a merman with a silver tail. 那位藝術家畫了一個長著銀色尾巴的男性人魚。"
     ],
     "audienceTags": [
       "general"
@@ -70774,11 +70774,11 @@
   },
   {
     "word": "meticulousness",
-    "meaning": "一絲不苟的品質",
+    "meaning": "一絲不苟；細心周到",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of meticulousness appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示一絲不苟的品質的這個詞。",
-      "We saw meticulousness again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Her meticulousness helped us catch several errors in the report. 她的一絲不苟幫我們找出了報告中的幾個錯誤。",
+      "The watchmaker repaired the tiny gears with meticulousness. 鐘錶師一絲不苟地修理那些微小齒輪。"
     ],
     "audienceTags": [
       "general"
@@ -70954,11 +70954,11 @@
   },
   {
     "word": "metonymously",
-    "meaning": "以某種方式進行地",
+    "meaning": "以轉喻方式地；以借代方式地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "metonymously makes the instruction sound more precise. 這個副詞會改變對話中動作的語氣，表示以某種方式進行地。",
-      "Sam answered metonymously when the question came up. 說話者解釋想法時，以這種方式說話。"
+      "The word “crown” is used metonymously for the monarch. crown 這個字以借代方式指君主。",
+      "She referred to the government metonymously as “the palace.” 她以「宮殿」借代政府。"
     ],
     "audienceTags": [
       "general"
@@ -70966,11 +70966,11 @@
   },
   {
     "word": "metonymy",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "轉喻；借代（以相關事物的名稱代指另一事物）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of metonymy appeared when Tara compared the jars and the paper bag. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We saw metonymy again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Using “the crown” to mean the monarch is an example of metonymy. 用「王冠」代指君主，是轉喻的一個例子。",
+      "The teacher explained the difference between metaphor and metonymy. 老師解釋了隱喻和轉喻的差別。"
     ],
     "audienceTags": [
       "general"
@@ -71482,11 +71482,11 @@
   },
   {
     "word": "metrics",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "衡量指標；量測數據",
     "partOfSpeech": "noun",
     "sentences": [
-      "This term, metrics, came up while Ben fixed fresh fruit. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase metrics stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The team uses several metrics to evaluate progress. 團隊使用幾項指標來評估進度。",
+      "These metrics show how many visitors return to the website. 這些數據顯示有多少訪客再次造訪網站。"
     ],
     "audienceTags": [
       "general"
@@ -71883,11 +71883,11 @@
   },
   {
     "word": "metronome",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "節拍器",
     "partOfSpeech": "noun",
     "sentences": [
-      "Her discussion of metronome settled a question at the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We used metronome to sort the items on the table. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "She practiced the piano with a metronome. 她配合節拍器練習鋼琴。",
+      "Set the metronome to sixty beats per minute. 把節拍器設成每分鐘六十拍。"
     ],
     "audienceTags": [
       "general"
@@ -72490,11 +72490,11 @@
   },
   {
     "word": "mettle",
-    "meaning": "精神或氣質的活力和力量",
+    "meaning": "勇氣；毅力；應付困難的能力",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of mettle appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示精神或氣質的活力和力量的這個詞。",
-      "We saw mettle again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The difficult climb tested our mettle. 那次艱難的攀登考驗了我們的毅力。",
+      "She showed her mettle by staying calm during the crisis. 她在危機中保持冷靜，展現了應付困難的能力。"
     ],
     "audienceTags": [
       "general"
@@ -72622,11 +72622,11 @@
   },
   {
     "word": "mew",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "貓的叫聲；喵聲",
     "partOfSpeech": "noun",
     "sentences": [
-      "Our talk about mew continued after we left the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The item called mew sat beside clean water. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "A faint mew came from under the sofa. 沙發底下傳來一聲微弱的貓叫。",
+      "The kitten gave a soft mew when I picked it up. 我抱起小貓時，牠輕輕喵了一聲。"
     ],
     "audienceTags": [
       "general"
@@ -73129,11 +73129,11 @@
   },
   {
     "word": "miasma",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "難聞的霧氣或氣味；令人不快的氛圍",
     "partOfSpeech": "noun",
     "sentences": [
-      "Our talk about miasma continued after we left the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The item called miasma sat beside fresh fruit. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "A miasma rose from the stagnant pond. 一股難聞的氣味從死水池塘中飄出。",
+      "The scandal created a miasma of suspicion around the company. 那樁醜聞讓公司籠罩在猜疑的氛圍中。"
     ],
     "audienceTags": [
       "general"
@@ -73321,11 +73321,11 @@
   },
   {
     "word": "mica",
-    "meaning": "任何各種有色或透明的礦物矽酸鹽，以單斜晶形式結晶，很容易分離成非常薄的葉子",
+    "meaning": "雲母（可剝成薄片的礦物）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mica covers a substance with a defined composition. 這個詞指的是任何各種有色或透明的礦物矽酸鹽，以單斜晶形式結晶，很容易分離成非常薄的葉子。",
-      "mica recurs in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "Small flakes of mica glittered in the rock. 岩石中的小雲母片閃閃發亮。",
+      "The student examined a thin sheet of mica under a lamp. 學生在燈下觀察一片薄薄的雲母。"
     ],
     "audienceTags": [
       "general"
@@ -73633,11 +73633,11 @@
   },
   {
     "word": "Michelle",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "蜜雪兒（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term Michelle surfaced while Mia sorted the jars that afternoon. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We kept Michelle nearby while working at home. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Michelle brought homemade cookies to the meeting. 蜜雪兒帶了自製餅乾來開會。",
+      "I asked Michelle to help me choose a book. 我請蜜雪兒幫我挑一本書。"
     ],
     "audienceTags": [
       "general"
@@ -75331,11 +75331,11 @@
   },
   {
     "word": "microcosm",
-    "meaning": "與微小尺度或微觀測量有關的",
+    "meaning": "縮影；小宇宙",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of microcosm appeared when Nora compared the paper bag and the jars. 我們在實驗室裡整理物品時，提到了表示與微小尺度或微觀測量有關的這個詞。",
-      "We saw microcosm again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The school is a microcosm of the wider community. 這所學校是整個社區的縮影。",
+      "The novel presents a small village as a microcosm of society. 這部小說把一個小村莊描寫成社會的縮影。"
     ],
     "audienceTags": [
       "general"
@@ -75835,11 +75835,11 @@
   },
   {
     "word": "microelectrode",
-    "meaning": "微小電極；特別是：插入活生物細胞或組織以研究其電特性的細胞或組織",
+    "meaning": "微電極（可用於測量細胞或組織的電活動）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of microelectrode appeared when Nora compared the paper bag and the jars. 我們在花園裡整理物品時，提到了表示微小電極；特別是：插入活生物細胞或組織以研究其電特性的細胞或組織的這個詞。",
-      "We saw microelectrode again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The researcher placed a microelectrode near the nerve cell. 研究員把一個微電極放在神經細胞附近。",
+      "The microelectrode recorded changes in electrical activity. 那個微電極記錄了電活動的變化。"
     ],
     "audienceTags": [
       "general"
@@ -76339,11 +76339,11 @@
   },
   {
     "word": "microgram",
-    "meaning": "百萬分之一克",
+    "meaning": "微克（等於一百萬分之一克）",
     "partOfSpeech": "noun",
     "sentences": [
-      "microgram denotes a substance with a defined composition. 這個詞指的是百萬分之一克。",
-      "microgram belongs in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The sample contained one microgram of the substance. 那份樣本含有一微克的該物質。",
+      "The technician recorded the mass in micrograms. 技術人員以微克為單位記錄質量。"
     ],
     "audienceTags": [
       "general"
@@ -76351,11 +76351,11 @@
   },
   {
     "word": "microgramme",
-    "meaning": "與微小尺度或微觀測量有關的",
+    "meaning": "微克（重量單位，等於一百萬分之一克；microgram 的另一種拼法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of microgramme appeared when Tara compared the jars and the paper bag. 我們在實驗室裡整理物品時，提到了表示與微小尺度或微觀測量有關的這個詞。",
-      "We saw microgramme again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The sample weighed one microgramme. 那份樣本重一微克。",
+      "The laboratory measured the amount in microgrammes. 實驗室以微克為單位測量該物質的量。"
     ],
     "audienceTags": [
       "general"
@@ -77215,11 +77215,11 @@
   },
   {
     "word": "micrometer",
-    "meaning": "與望遠鏡或顯微鏡一起使用的用於測量微小距離的儀器",
+    "meaning": "測量微小距離或尺寸的精密儀器；測微器",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of micrometer appeared when Nora compared the paper bag and the jars. 我們在實驗室裡整理物品時，提到了表示與望遠鏡或顯微鏡一起使用的用於測量微小距離的儀器的這個詞。",
-      "We saw micrometer again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The technician used a micrometer to measure the thickness of the wire. 技術人員用測微器測量電線的厚度。",
+      "Check the micrometer before recording the measurement. 記錄測量結果前，請先檢查測微器。"
     ],
     "audienceTags": [
       "general"
@@ -79749,11 +79749,11 @@
   },
   {
     "word": "microtome",
-    "meaning": "用於切割切片以進行顯微鏡檢查的儀器",
+    "meaning": "切片機（用於製作供顯微鏡檢查的薄切片）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of microtome appeared when Tara compared the jars and the paper bag. 我們在實驗室裡整理物品時，提到了表示用於切割切片以進行顯微鏡檢查的儀器的這個詞。",
-      "We saw microtome again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The technician cut a thin tissue section with a microtome. 技術人員用切片機切出一片薄組織切片。",
+      "The microtome blade needs to be replaced. 切片機的刀片需要更換。"
     ],
     "audienceTags": [
       "general"
@@ -80210,11 +80210,11 @@
   },
   {
     "word": "micturition",
-    "meaning": "排尿的行為或過程：排尿",
+    "meaning": "排尿",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of micturition appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示排尿的行為或過程：排尿的這個詞。",
-      "We saw micturition again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The doctor asked whether micturition caused any pain. 醫師詢問排尿時是否會疼痛。",
+      "The nurse recorded the time of the patient’s last micturition. 護理師記錄了病人上次排尿的時間。"
     ],
     "audienceTags": [
       "general"
@@ -80246,11 +80246,11 @@
   },
   {
     "word": "midautumn",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "仲秋；秋季中期",
     "partOfSpeech": "noun",
     "sentences": [
-      "This term, midautumn, came up while Kai fixed clean water. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase midautumn stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The leaves had turned yellow by midautumn. 到了仲秋，樹葉已經變黃。",
+      "We planned to finish the harvest in midautumn. 我們計畫在秋季中期完成收成。"
     ],
     "audienceTags": [
       "general"
@@ -81078,11 +81078,11 @@
   },
   {
     "word": "midriff",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "腰腹部（胸部與腰部之間的區域）",
     "partOfSpeech": "noun",
     "sentences": [
-      "A term called midriff helped Leo organize fresh fruit near the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "A card marked midriff helped us choose the right item. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Her short top left her midriff exposed. 她的短版上衣露出了腰腹部。",
+      "He wrapped a scarf around his midriff to keep warm. 他把圍巾纏在腰腹部保暖。"
     ],
     "audienceTags": [
       "general"
@@ -81102,11 +81102,11 @@
   },
   {
     "word": "midseason",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "季節中期；賽季中段",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of midseason appeared when Nora compared the paper bag and the jars. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We saw midseason again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "By midseason, the team had won ten games. 到了賽季中段，球隊已贏了十場比賽。",
+      "Ticket prices usually fall around midseason. 票價通常在季節中期左右下降。"
     ],
     "audienceTags": [
       "general"
@@ -81545,11 +81545,11 @@
   },
   {
     "word": "midyear",
-    "meaning": "學年中期的考試",
+    "meaning": "年中；學年中期",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of midyear appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示學年中期的考試的這個詞。",
-      "We saw midyear again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The company reviews its budget at midyear. 公司在年中檢討預算。",
+      "By midyear, the students had completed half the course. 到了學年中期，學生已完成一半的課程。"
     ],
     "audienceTags": [
       "general"
@@ -82015,11 +82015,11 @@
   },
   {
     "word": "Miguel",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "米格爾（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of Miguel appeared when Nora compared the paper bag and the jars. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We saw Miguel again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Miguel fixed the broken chair. 米格爾修好了壞掉的椅子。",
+      "I met Miguel at the train station. 我在火車站遇見了米格爾。"
     ],
     "audienceTags": [
       "general"
@@ -82111,11 +82111,11 @@
   },
   {
     "word": "Mikael",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "米凱爾（男子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of Mikael appeared when Tara compared the jars and the paper bag. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We saw Mikael again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Mikael forgot to bring his umbrella. 米凱爾忘了帶傘。",
+      "We invited Mikael to join our hiking trip. 我們邀請米凱爾一起健行。"
     ],
     "audienceTags": [
       "general"
@@ -82171,11 +82171,11 @@
   },
   {
     "word": "Mikey",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "麥基（男子名或暱稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term Mikey surfaced while Mia sorted the jars that afternoon. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We kept Mikey nearby while working at home. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Mikey drew a picture of his dog. 麥基畫了一張他的狗的圖。",
+      "The teacher asked Mikey to read the next paragraph. 老師請麥基讀下一段。"
     ],
     "audienceTags": [
       "general"
@@ -82488,11 +82488,11 @@
   },
   {
     "word": "mildness",
-    "meaning": "溫和的品質或狀態",
+    "meaning": "溫和；和緩",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of mildness appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示溫和的品質或狀態的這個詞。",
-      "We saw mildness again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The mildness of the winter surprised the farmers. 這個冬天的溫暖和緩讓農民感到驚訝。",
+      "The mildness of her voice helped calm the child. 她溫和的聲音幫孩子平靜下來。"
     ],
     "audienceTags": [
       "general"
@@ -82911,11 +82911,11 @@
   },
   {
     "word": "militarism",
-    "meaning": "军事阶级或其理想的主导地位",
+    "meaning": "軍國主義；崇尚軍事力量的思想",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of militarism appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示军事阶级或其理想的主导地位的這個詞。",
-      "We saw militarism again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The historian studied the rise of militarism before the war. 那位歷史學家研究了戰前軍國主義的興起。",
+      "The essay criticizes militarism and calls for peaceful diplomacy. 這篇文章批評軍國主義，並呼籲以和平外交處理問題。"
     ],
     "audienceTags": [
       "general"
@@ -83152,11 +83152,11 @@
   },
   {
     "word": "milker",
-    "meaning": "給動物擠奶的",
+    "meaning": "擠奶的人；擠奶機；產奶動物",
     "partOfSpeech": "noun",
     "sentences": [
-      "milker concerns a named organism or taxon. 這個詞指的是給動物擠奶的。",
-      "milker returns in a taxonomy list when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The milker arrived at the barn before sunrise. 那位擠奶工在日出前抵達牛舍。",
+      "The farmer cleaned the mechanical milker after use. 農民使用完機械擠奶機後將它清洗乾淨。"
     ],
     "audienceTags": [
       "general"
@@ -83344,11 +83344,11 @@
   },
   {
     "word": "milksop",
-    "meaning": "軟弱或膽怯的人",
+    "meaning": "軟弱或膽怯的人（貶義）",
     "partOfSpeech": "noun",
     "sentences": [
-      "milksop covers a specific object or term. 這個詞指的是軟弱或膽怯的人。",
-      "milksop recurs in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The bully called him a milksop for refusing to fight. 霸凌者因為他拒絕打架而罵他是膽小鬼。",
+      "The novel’s hero proves that he is no milksop. 小說的主角證明自己並不是軟弱的人。"
     ],
     "audienceTags": [
       "general"
@@ -84081,11 +84081,11 @@
   },
   {
     "word": "milliammeter",
-    "meaning": "測量毫安培電流的儀器",
+    "meaning": "毫安培計（測量微小電流的儀器）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of milliammeter appeared when Nora compared the paper bag and the jars. 我們在實驗室裡整理物品時，提到了表示測量毫安培電流的儀器的這個詞。",
-      "We saw milliammeter again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The milliammeter showed a current of five milliamperes. 毫安培計顯示電流為五毫安培。",
+      "Connect the milliammeter to the circuit before taking a reading. 讀取數值前，先把毫安培計接到電路上。"
     ],
     "audienceTags": [
       "general"
@@ -84333,11 +84333,11 @@
   },
   {
     "word": "milligram",
-    "meaning": "等於 1/1000 克的質量單位",
+    "meaning": "毫克（等於一千分之一克）",
     "partOfSpeech": "noun",
     "sentences": [
-      "milligram marks a substance with a defined composition. 這個詞指的是等於 1/1000 克的質量單位。",
-      "milligram is recorded in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The powder weighed one milligram. 那份粉末重一毫克。",
+      "Record the mass of each sample in milligrams. 以毫克為單位記錄每份樣本的質量。"
     ],
     "audienceTags": [
       "general"
@@ -85165,11 +85165,11 @@
   },
   {
     "word": "Milly",
-    "meaning": "以某種方式進行地",
-    "partOfSpeech": "adverb",
+    "meaning": "米莉（女子名）",
+    "partOfSpeech": "noun",
     "sentences": [
-      "Milly shows the manner of the action in the sentence. 這個副詞會改變對話中動作的語氣，表示以某種方式進行地。",
-      "Tara moved Milly so everyone could follow along. 說話者解釋想法時，以這種方式說話。"
+      "Milly planted flowers beside the gate. 米莉在大門旁種了花。",
+      "I called Milly to ask about the concert. 我打電話給米莉詢問音樂會的事。"
     ],
     "audienceTags": [
       "general"
@@ -85681,11 +85681,11 @@
   },
   {
     "word": "mimesis",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "模仿；再現（尤指藝術對現實的模仿）",
     "partOfSpeech": "noun",
     "sentences": [
-      "This term, mimesis, came up while Kai fixed clean water. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase mimesis stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The lecture discusses mimesis in painting and literature. 那場演講討論了繪畫與文學中的模仿和再現。",
+      "The critic sees the novel as an example of mimesis. 評論家把這部小說視為藝術再現現實的例子。"
     ],
     "audienceTags": [
       "general"
@@ -85789,11 +85789,11 @@
   },
   {
     "word": "Mimi",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "咪咪（女子名或暱稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of Mimi appeared when Tara compared the jars and the paper bag. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We saw Mimi again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Mimi sang at the school concert. 咪咪在學校音樂會上唱歌。",
+      "We waited for Mimi outside the library. 我們在圖書館外等咪咪。"
     ],
     "audienceTags": [
       "general"
@@ -86540,11 +86540,11 @@
   },
   {
     "word": "minatory",
-    "meaning": "與特定事物或概念有關的名詞",
-    "partOfSpeech": "noun",
+    "meaning": "威脅的；恫嚇的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "This term, minatory, came up while Kai fixed clean water. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase minatory stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "He spoke in a minatory tone. 他用威脅的語氣說話。",
+      "The letter contained a minatory warning. 那封信包含了一項恫嚇性的警告。"
     ],
     "audienceTags": [
       "general"
@@ -86893,8 +86893,8 @@
     "meaning": "礦工",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of miner appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示礦工的這個詞。",
-      "We saw miner again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The miner checked his lamp before entering the tunnel. 那位礦工進入坑道前先檢查頭燈。",
+      "A retired miner told us about his years underground. 一位退休礦工告訴我們他在地下工作的歲月。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -87058,11 +87058,11 @@
   },
   {
     "word": "mineralogy",
-    "meaning": "一門研究礦物及其晶體學、性質、分類以及區分方法的科學",
+    "meaning": "礦物學",
     "partOfSpeech": "noun",
     "sentences": [
-      "mineralogy concerns a substance with a defined composition. 這個詞指的是一門研究礦物及其晶體學、性質、分類以及區分方法的科學。",
-      "mineralogy returns in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "She studied mineralogy at university. 她在大學研讀礦物學。",
+      "The museum offers a short course in mineralogy. 那座博物館開設了一門礦物學短期課程。"
     ],
     "audienceTags": [
       "general"
@@ -87552,11 +87552,11 @@
   },
   {
     "word": "minim",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "二分音符（英式英語）；極少量",
     "partOfSpeech": "noun",
     "sentences": [
-      "This term, minim, came up while Ben fixed fresh fruit. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase minim stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "A minim lasts twice as long as a crotchet. 一個二分音符的時值是四分音符的兩倍。",
+      "The pupil drew a minim on the music staff. 學生在五線譜上畫了一個二分音符。"
     ],
     "audienceTags": [
       "general"
@@ -87755,11 +87755,11 @@
   },
   {
     "word": "minimize",
-    "meaning": "最小化",
+    "meaning": "使降到最低；盡量減少",
     "partOfSpeech": "verb",
     "sentences": [
-      "minimize means reducing a quantity, risk, or effect as far as possible. 這個動詞表示最小化。",
-      "minimize guides a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "We use reusable bags to minimize waste. 我們使用可重複使用的袋子來盡量減少垃圾。",
+      "Careful planning can minimize the risk of delays. 仔細規劃可以把延誤的風險降到最低。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -87942,8 +87942,8 @@
     "meaning": "部長",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of minister appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示部長的這個詞。",
-      "We saw minister again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The education minister announced a new school policy. 教育部長宣布了一項新的學校政策。",
+      "The minister answered questions about the budget. 部長回答了有關預算的問題。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -88148,11 +88148,11 @@
   },
   {
     "word": "ministry",
-    "meaning": "部",
+    "meaning": "政府的部；部會",
     "partOfSpeech": "noun",
     "sentences": [
-      "ministry marks a specific object or term. 這個詞指的是部。",
-      "ministry is recorded in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The ministry announced new rules for public schools. 該部會宣布了公立學校的新規定。",
+      "She works for the Ministry of Education. 她在教育部工作。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -88393,11 +88393,11 @@
   },
   {
     "word": "minnow",
-    "meaning": "小鯉魚、鱂魚或頂鰷魚",
+    "meaning": "小型淡水魚；小魚",
     "partOfSpeech": "noun",
     "sentences": [
-      "minnow describes a named organism or taxon. 這個詞指的是小鯉魚、鱂魚或頂鰷魚。",
-      "minnow features in a taxonomy list when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A minnow darted beneath the bridge. 一條小魚飛快地游到橋下。",
+      "The children watched minnows swimming in the shallow stream. 孩子們看著小魚在淺溪裡游泳。"
     ],
     "audienceTags": [
       "general"
@@ -88957,11 +88957,11 @@
   },
   {
     "word": "minuscule",
-    "meaning": "與特定事物或概念有關的名詞",
-    "partOfSpeech": "noun",
+    "meaning": "極小的；微不足道的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "This term, minuscule, came up while Ben fixed fresh fruit. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase minuscule stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The label was printed in minuscule letters. 標籤上的字印得非常小。",
+      "There is only a minuscule chance of success. 成功的機會極小。"
     ],
     "audienceTags": [
       "general"
@@ -88993,7 +88993,7 @@
   },
   {
     "word": "minute",
-    "meaning": "分分鐘",
+    "meaning": "分鐘",
     "partOfSpeech": "noun",
     "sentences": [
       "Please wait for a minute; I'll be right back. 請等一分鐘，我馬上回來。",
@@ -89036,11 +89036,11 @@
   },
   {
     "word": "minuteness",
-    "meaning": "微小的品質或狀態",
+    "meaning": "微小；細微",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of minuteness appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示微小的品質或狀態的這個詞。",
-      "We saw minuteness again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The minuteness of the insect made it hard to see. 那隻昆蟲太小，很難看清楚。",
+      "The artist used a magnifying glass because of the minuteness of the details. 因為細節十分微小，那位藝術家使用了放大鏡。"
     ],
     "audienceTags": [
       "general"
@@ -89072,11 +89072,11 @@
   },
   {
     "word": "minutia",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "細微的細節；瑣碎事項（單數，複數為 minutiae）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Our talk about minutia continued after we left the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The item called minutia sat beside fresh fruit. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "She noticed every minutia of the design. 她注意到了設計中的每個細微細節。",
+      "Even a small minutia can matter in a legal document. 在法律文件中，即使一個小細節也可能很重要。"
     ],
     "audienceTags": [
       "general"
@@ -89084,11 +89084,11 @@
   },
   {
     "word": "minutiae",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "細節；瑣碎事項（複數）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term minutiae surfaced while Rina sorted the paper bag before dinner. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We kept minutiae nearby while working at home. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "We spent an hour discussing the minutiae of the contract. 我們花了一個小時討論合約的細節。",
+      "Do not get lost in the minutiae and forget the main goal. 別陷在瑣碎細節裡而忘了主要目標。"
     ],
     "audienceTags": [
       "general"
@@ -89876,11 +89876,11 @@
   },
   {
     "word": "Miriam",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "米莉安（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "The term Miriam surfaced while Mia sorted the jars before breakfast. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We kept Miriam nearby while working at home. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Miriam wrote a letter to her grandmother. 米莉安寫了一封信給祖母。",
+      "The recipe belongs to Miriam. 那份食譜是米莉安的。"
     ],
     "audienceTags": [
       "general"
@@ -91550,11 +91550,11 @@
   },
   {
     "word": "misbehavior",
-    "meaning": "不良、不當或粗魯的行為：不良行為",
+    "meaning": "不良行為；不當舉止",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of misbehavior appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示不良、不當或粗魯的行為：不良行為的這個詞。",
-      "We saw misbehavior again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The teacher spoke to the students about their misbehavior. 老師與學生談了他們的不當行為。",
+      "Repeated misbehavior led to his removal from the club. 他屢次行為不當，因此被社團除名。"
     ],
     "audienceTags": [
       "general"
@@ -92409,11 +92409,11 @@
   },
   {
     "word": "misclassify",
-    "meaning": "將（某人或某物）分配到不正確的群組或類別：錯誤地分類",
+    "meaning": "錯誤分類",
     "partOfSpeech": "verb",
     "sentences": [
-      "misclassify means handling a name, meaning, or record incorrectly. 這個動詞表示將（某人或某物）分配到不正確的群組或類別：錯誤地分類。",
-      "misclassify names a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "The software may misclassify a personal email as spam. 軟體可能把私人郵件誤分類為垃圾郵件。",
+      "If we misclassify these expenses, the totals will be wrong. 如果我們把這些費用分錯類，總額就會出錯。"
     ],
     "audienceTags": [
       "general"
@@ -92625,11 +92625,11 @@
   },
   {
     "word": "miscompute",
-    "meaning": "計算時犯錯：計算錯誤",
+    "meaning": "計算錯誤；算錯",
     "partOfSpeech": "verb",
     "sentences": [
-      "miscompute means handling a name, meaning, or record incorrectly. 這個動詞表示計算時犯錯：計算錯誤。",
-      "miscompute narrows a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "It is easy to miscompute the total if you omit a row. 如果漏掉一列，很容易把總額算錯。",
+      "A missing decimal point can cause you to miscompute the result. 少了一個小數點就可能讓你算錯結果。"
     ],
     "audienceTags": [
       "general"
@@ -94438,11 +94438,11 @@
   },
   {
     "word": "misexplanation",
-    "meaning": "錯誤地進行某事；不當的",
+    "meaning": "錯誤的解釋；解釋不當",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of misexplanation appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示錯誤地進行某事；不當的這個詞。",
-      "We saw misexplanation again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The misexplanation confused the students about the rule. 那個錯誤的解釋讓學生對規則感到困惑。",
+      "A misexplanation of the instructions caused the team to repeat the work. 對指示的解釋不當導致團隊重做工作。"
     ],
     "audienceTags": [
       "general"
@@ -95283,11 +95283,11 @@
   },
   {
     "word": "misidentify",
-    "meaning": "錯誤地識別（某人或某物）",
+    "meaning": "錯認；辨認錯誤",
     "partOfSpeech": "verb",
     "sentences": [
-      "misidentify means handling a name, meaning, or record incorrectly. 這個動詞表示錯誤地識別（某人或某物）。",
-      "misidentify locates a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "The witness could easily misidentify someone in the dark. 證人在黑暗中很容易認錯人。",
+      "Do not misidentify this harmless insect as a pest. 別把這種無害的昆蟲誤認成害蟲。"
     ],
     "audienceTags": [
       "general"
@@ -95655,11 +95655,11 @@
   },
   {
     "word": "misinterpret",
-    "meaning": "去解釋錯誤",
+    "meaning": "誤解；錯誤解讀",
     "partOfSpeech": "verb",
     "sentences": [
-      "misinterpret means handling a name, meaning, or record incorrectly. 這個動詞表示去解釋錯誤。",
-      "misinterpret connects a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "Please do not misinterpret my silence as agreement. 請不要把我的沉默誤解為同意。",
+      "People sometimes misinterpret jokes in text messages. 人們有時會誤解簡訊裡的玩笑。"
     ],
     "audienceTags": [
       "general"
@@ -95895,11 +95895,11 @@
   },
   {
     "word": "mislabel",
-    "meaning": "錯誤或錯誤地標記（某物）",
+    "meaning": "標示錯誤；貼錯標籤",
     "partOfSpeech": "verb",
     "sentences": [
-      "mislabel means handling a name, meaning, or record incorrectly. 這個動詞表示錯誤或錯誤地標記（某物）。",
-      "mislabel defines a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "Do not mislabel the boxes when you pack them. 裝箱時不要貼錯標籤。",
+      "A clerk might mislabel a product if the packaging looks similar. 如果包裝相似，店員可能會把商品標示錯誤。"
     ],
     "audienceTags": [
       "general"
@@ -96024,11 +96024,11 @@
   },
   {
     "word": "misleadingness",
-    "meaning": "錯誤地進行某事；不當的",
+    "meaning": "誤導性；容易使人誤解的特性",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of misleadingness appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示錯誤地進行某事；不當的這個詞。",
-      "We saw misleadingness again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The misleadingness of the headline became clear after we read the article. 讀完文章後，我們看出了標題的誤導性。",
+      "The reviewer criticized the misleadingness of the chart. 審查者批評了圖表的誤導性。"
     ],
     "audienceTags": [
       "general"
@@ -96519,11 +96519,11 @@
   },
   {
     "word": "misnomer",
-    "meaning": "錯誤地進行某事；不當的",
+    "meaning": "錯誤或不恰當的名稱",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of misnomer appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示錯誤地進行某事；不當的這個詞。",
-      "We saw misnomer again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Calling this tiny room a hall is a misnomer. 把這間小房間稱作大廳，名稱並不恰當。",
+      "The name is a misnomer because the animal is not actually a fish. 這個名稱用錯了，因為這種動物其實不是魚。"
     ],
     "audienceTags": [
       "general"
@@ -98742,8 +98742,8 @@
     "meaning": "傳教士",
     "partOfSpeech": "noun",
     "sentences": [
-      "missionary describes a specific object or term. 這個詞指的是傳教士。",
-      "missionary features in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The missionary learned the local language. 那位傳教士學會了當地語言。",
+      "She read the diary of a missionary who traveled overseas. 她讀了一位到海外旅行的傳教士的日記。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -99082,11 +99082,11 @@
   },
   {
     "word": "misstep",
-    "meaning": "判斷或行動的錯誤：錯誤",
+    "meaning": "失足；失策；錯誤的行動",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of misstep appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示判斷或行動的錯誤：錯誤的這個詞。",
-      "We saw misstep again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "One misstep on the slippery stairs could cause a fall. 在濕滑的樓梯上一步踩錯就可能跌倒。",
+      "The company apologized for its latest marketing misstep. 公司為最近的行銷失策道歉。"
     ],
     "audienceTags": [
       "general"
@@ -99857,11 +99857,11 @@
   },
   {
     "word": "mistranscribe",
-    "meaning": "在轉錄中犯錯：錯誤地轉錄（某事）",
+    "meaning": "抄錄錯誤；轉錄錯誤",
     "partOfSpeech": "verb",
     "sentences": [
-      "mistranscribe means handling a name, meaning, or record incorrectly. 這個動詞表示在轉錄中犯錯：錯誤地轉錄（某事）。",
-      "mistranscribe directs a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "It is easy to mistranscribe a number from a faded receipt. 從褪色的收據抄錄數字時很容易抄錯。",
+      "If you mistranscribe the interview, correct the text against the recording. 如果訪談轉錄有誤，請對照錄音修正文字。"
     ],
     "audienceTags": [
       "general"
@@ -99932,8 +99932,8 @@
     "meaning": "虐待；不公平或不當的對待",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of mistreatment appeared when Nora compared the paper bag and the jars. 我們在家裡整理物品時，提到了表示虐待；不公平或不當的對待的這個詞。",
-      "We saw mistreatment again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The workers reported mistreatment by their supervisor. 工人通報了主管對他們的不當對待。",
+      "The shelter protects animals from mistreatment. 那間收容所保護動物免受虐待。"
     ],
     "audienceTags": [
       "general"
@@ -100517,11 +100517,11 @@
   },
   {
     "word": "miswrite",
-    "meaning": "寫得不正確：寫錯了",
+    "meaning": "寫錯；誤寫",
     "partOfSpeech": "verb",
     "sentences": [
-      "miswrite means handling a name, meaning, or record incorrectly. 這個動詞表示寫得不正確：寫錯了。",
-      "miswrite marks a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "Be careful not to miswrite the address on the envelope. 小心別在信封上寫錯地址。",
+      "You may miswrite a familiar word when you are tired. 疲倦時，你可能會把熟悉的字寫錯。"
     ],
     "audienceTags": [
       "general"
@@ -102128,11 +102128,11 @@
   },
   {
     "word": "mnemonically",
-    "meaning": "以某種方式進行地",
+    "meaning": "以記憶法地；用助記方式地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "mnemonically adds a clear tone to the speaker's words. 這個副詞會改變對話中動作的語氣，表示以某種方式進行地。",
-      "I mnemonically read the instruction before starting the task. 說話者解釋想法時，以這種方式說話。"
+      "The vocabulary was organized mnemonically to help students remember it. 詞彙以助記方式編排，幫助學生記住。",
+      "She encoded the sequence mnemonically as a short rhyme. 她用一段短韻文作為記憶法來記住那個序列。"
     ],
     "audienceTags": [
       "general"
@@ -103878,11 +103878,11 @@
   },
   {
     "word": "modernize",
-    "meaning": "使現代化",
+    "meaning": "使現代化；更新",
     "partOfSpeech": "verb",
     "sentences": [
-      "modernize means bringing an old system or practice up to current standards. 這個動詞表示使現代化。",
-      "modernize recasts a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "The city plans to modernize its bus system. 市政府計畫更新公車系統。",
+      "We need to modernize the old factory equipment. 我們需要讓老舊的工廠設備現代化。"
     ],
     "difficultyLevel": 6,
     "schoolLevels": [
@@ -103901,11 +103901,11 @@
   },
   {
     "word": "modernizer",
-    "meaning": "使現代",
+    "meaning": "推動現代化的人；革新者",
     "partOfSpeech": "noun",
     "sentences": [
-      "One use of modernizer appeared when Tara compared the jars and the paper bag. 我們在家裡整理物品時，提到了表示使現代的這個詞。",
-      "We saw modernizer again during the next activity. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "The new director was a modernizer who replaced outdated equipment. 新主管是位革新者，汰換了過時的設備。",
+      "As a modernizer, she introduced digital records to the hospital. 身為推動現代化的人，她為醫院引進了數位紀錄。"
     ],
     "audienceTags": [
       "general"
@@ -104019,11 +104019,11 @@
   },
   {
     "word": "modicum",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "少量；一點點",
     "partOfSpeech": "noun",
     "sentences": [
-      "A term called modicum helped Leo organize fresh fruit near the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "A card marked modicum helped us choose the right item. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Please show a modicum of patience. 請表現出一點耐心。",
+      "Even a modicum of support would help her feel less alone. 即使只有一點點支持，也能讓她覺得不那麼孤單。"
     ],
     "audienceTags": [
       "general"
@@ -104960,11 +104960,11 @@
   },
   {
     "word": "mohair",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "馬海毛（安哥拉山羊的毛）；馬海毛織物",
     "partOfSpeech": "noun",
     "sentences": [
-      "This term, mohair, came up while Ben fixed fresh fruit. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "The phrase mohair stayed useful when we talked after dinner. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "She knitted a scarf from soft mohair. 她用柔軟的馬海毛織了一條圍巾。",
+      "The jacket contains wool and mohair. 那件外套含有羊毛和馬海毛。"
     ],
     "audienceTags": [
       "general"
@@ -105320,11 +105320,11 @@
   },
   {
     "word": "moiety",
-    "meaning": "與特定事物或概念有關的名詞",
+    "meaning": "一半；兩部分中的一部分",
     "partOfSpeech": "noun",
     "sentences": [
-      "Her discussion of moiety settled a question at the dinner table. 我們在對話中整理物品時，提到了表示與特定事物或概念有關的名詞的這個詞。",
-      "We used moiety to sort the items on the table. 我們把相關物件放在附近，方便在日常活動中辨認。"
+      "Each partner received a moiety of the profits. 每位合夥人各獲得一半的利潤。",
+      "The land was divided into two equal moieties. 那塊土地分成了相等的兩半。"
     ],
     "audienceTags": [
       "general"
@@ -106329,8 +106329,8 @@
     "meaning": "分子",
     "partOfSpeech": "noun",
     "sentences": [
-      "molecule refers a substance with a defined composition. 這個詞指的是分子。",
-      "molecule persists in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A water molecule contains two hydrogen atoms and one oxygen atom. 一個水分子含有兩個氫原子和一個氧原子。",
+      "The diagram shows the shape of the molecule. 圖表顯示了那個分子的形狀。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -107221,11 +107221,11 @@
   },
   {
     "word": "mollusk",
-    "meaning": "任何一種大型無脊椎動物門（軟體動物門）（如蝸牛、蛤或魷魚），其身體柔軟且不分節，通常包裹在鈣質殼中；廣義上：貝類",
+    "meaning": "軟體動物（如蝸牛、蛤蜊、魷魚）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mollusk represents a defined body structure. 這個詞指的是任何一種大型無脊椎動物門（軟體動物門）（如蝸牛、蛤或魷魚），其身體柔軟且不分節，通常包裹在鈣質殼中；廣義上：貝類。",
-      "mollusk sits in an anatomy glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A snail is a mollusk. 蝸牛是一種軟體動物。",
+      "The class examined the shell of a marine mollusk. 班上觀察了一種海洋軟體動物的殼。"
     ],
     "audienceTags": [
       "general"
@@ -109322,11 +109322,11 @@
   },
   {
     "word": "monatomic",
-    "meaning": "由一個原子組成；特別是：分子中只有一個原子",
-    "partOfSpeech": "noun",
+    "meaning": "單原子的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "monatomic names a substance with a defined composition. 這個詞指的是由一個原子組成；特別是：分子中只有一個原子。",
-      "monatomic is listed in a chemistry reference when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "Helium is a monatomic gas. 氦是一種單原子氣體。",
+      "The diagram represents each monatomic particle as a single sphere. 圖表把每個單原子粒子畫成一個球體。"
     ],
     "audienceTags": [
       "general"
@@ -109574,11 +109574,11 @@
   },
   {
     "word": "Monel",
-    "meaning": "較少見的專門詞語，指與此字相關的概念或用法。",
+    "meaning": "蒙乃爾合金（主要由鎳與銅組成的合金，商標名稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Monel appeared on the old label. 舊標籤上出現了「這個術語」。",
-      "Monel came up during our short conversation. 我們簡短交談時提到了「這個術語」。"
+      "The valve is made of Monel. 那個閥門由蒙乃爾合金製成。",
+      "The engineer specified Monel for the metal fittings. 工程師指定金屬配件使用蒙乃爾合金。"
     ],
     "audienceTags": [
       "general"
@@ -109586,11 +109586,11 @@
   },
   {
     "word": "monel",
-    "meaning": "包含在韋氏字典的 1 場比賽中。使用蒙乃爾合金學習定義、用法和短語。",
+    "meaning": "蒙乃爾合金（主要由鎳與銅組成的合金）",
     "partOfSpeech": "noun",
     "sentences": [
-      "monel appeared on the old label. 舊標籤上出現了「包含在韋氏字典的1場比賽中。使用蒙乃爾合金學習定」。",
-      "monel came up during our short conversation. 我們簡短交談時提到了「包含在韋氏字典的1場比賽中。使用蒙乃爾合金學習定」。"
+      "The monel parts were packed separately from the steel ones. 蒙乃爾合金零件與鋼製零件分開包裝。",
+      "The workshop ordered a sheet of monel for the project. 工坊為那項工程訂購了一片蒙乃爾合金板。"
     ],
     "audienceTags": [
       "general"
@@ -109909,11 +109909,11 @@
   },
   {
     "word": "monetization",
-    "meaning": "與相關概念或行為有關。",
+    "meaning": "變現；將資產或活動轉為收入的過程",
     "partOfSpeech": "noun",
     "sentences": [
-      "monetization appeared on the old label. 舊標籤上出現了「與相關概念或行為有關」。",
-      "monetization came up during our short conversation. 我們簡短交談時提到了「與相關概念或行為有關」。"
+      "The app relies on advertising for monetization. 這個應用程式靠廣告來變現。",
+      "The creators discussed the monetization of their videos. 創作者討論了如何把影片轉成收入。"
     ],
     "audienceTags": [
       "general"
@@ -109964,11 +109964,11 @@
   },
   {
     "word": "moneybag",
-    "meaning": "與金錢、貨幣或財富有關的詞語。",
+    "meaning": "錢袋",
     "partOfSpeech": "noun",
     "sentences": [
-      "moneybag appeared on the old label. 舊標籤上出現了「與金錢、貨幣或財富有關的詞語」。",
-      "moneybag came up during our short conversation. 我們簡短交談時提到了「與金錢、貨幣或財富有關的詞語」。"
+      "The merchant hid his moneybag under the counter. 商人把錢袋藏在櫃檯下。",
+      "She tied the moneybag tightly before leaving. 她離開前把錢袋綁緊。"
     ],
     "audienceTags": [
       "general"
@@ -109976,11 +109976,11 @@
   },
   {
     "word": "moneybags",
-    "meaning": "財富。",
+    "meaning": "富翁；有錢人（口語，常帶嘲諷意味）",
     "partOfSpeech": "noun",
     "sentences": [
-      "moneybags appeared on the old label. 舊標籤上出現了「財富」。",
-      "moneybags came up during our short conversation. 我們簡短交談時提到了「財富」。"
+      "The villagers called the wealthy landlord “moneybags.” 村民把那位富有的地主戲稱為「大富翁」。",
+      "He acted like moneybags after winning the lottery. 他中了彩券後擺出一副大富翁的架子。"
     ],
     "audienceTags": [
       "general"
@@ -110036,11 +110036,11 @@
   },
   {
     "word": "moneygrubber",
-    "meaning": "一心想累積金錢的人。",
+    "meaning": "貪財的人；一心追求金錢的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "moneygrubber appeared on the old label. 舊標籤上出現了「一心想累積金錢的人」。",
-      "moneygrubber came up during our short conversation. 我們簡短交談時提到了「一心想累積金錢的人」。"
+      "He was criticized as a moneygrubber who cared only about profit. 他被批評為只在乎利潤的貪財之人。",
+      "The story contrasts a generous teacher with a selfish moneygrubber. 這個故事將慷慨的老師與自私的貪財者作了對比。"
     ],
     "audienceTags": [
       "general"
@@ -110060,11 +110060,11 @@
   },
   {
     "word": "moneylender",
-    "meaning": "以放貸為業的人；具體來說：當舖。",
+    "meaning": "放貸人；以借錢給人並收取利息為業的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "moneylender appeared on the old label. 舊標籤上出現了「以放貸為業的人；具體來說：當舖」。",
-      "moneylender came up during our short conversation. 我們簡短交談時提到了「以放貸為業的人；具體來說：當舖」。"
+      "He borrowed money from a local moneylender. 他向當地一位放貸人借了錢。",
+      "The moneylender charged interest on the loan. 那位放貸人對貸款收取利息。"
     ],
     "audienceTags": [
       "general"
@@ -110792,11 +110792,11 @@
   },
   {
     "word": "monism",
-    "meaning": "認為只有一種終極實體的觀點",
+    "meaning": "一元論（主張現實有單一根本本質的哲學觀點）",
     "partOfSpeech": "noun",
     "sentences": [
-      "monism signifies a defined concept or process. 這個詞指的是認為只有一種終極實體的觀點。",
-      "monism enters in a specialist glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The lecture compared monism with dualism. 那場演講比較了一元論與二元論。",
+      "Her essay explains why she favors monism. 她的文章解釋了她為什麼支持一元論。"
     ],
     "audienceTags": [
       "general"
@@ -110983,11 +110983,11 @@
   },
   {
     "word": "monk",
-    "meaning": "僧侶。",
+    "meaning": "僧侶；修道士",
     "partOfSpeech": "noun",
     "sentences": [
-      "monk appeared on the old label. 舊標籤上出現了「僧侶」。",
-      "monk came up during our short conversation. 我們簡短交談時提到了「僧侶」。"
+      "The monk swept the temple courtyard. 那位僧侶清掃寺廟的庭院。",
+      "A monk showed us around the monastery. 一位修道士帶我們參觀修道院。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -112855,11 +112855,11 @@
   },
   {
     "word": "monocular",
-    "meaning": "屬於、涉及或影響單眼。",
-    "partOfSpeech": "noun",
+    "meaning": "單眼的；使用一隻眼睛的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "monocular appeared on the old label. 舊標籤上出現了「屬於、涉及或影響單眼」。",
-      "monocular came up during our short conversation. 我們簡短交談時提到了「屬於、涉及或影響單眼」。"
+      "The test measures monocular vision. 那項測試測量單眼視力。",
+      "He used a monocular viewing device to inspect the distant sign. 他使用單眼觀察裝置查看遠方的招牌。"
     ],
     "audienceTags": [
       "general"
@@ -112951,11 +112951,11 @@
   },
   {
     "word": "monoculture",
-    "meaning": "單一作物或生物體的種植或生長，特別是在農業或林地。",
+    "meaning": "單一作物種植；單一栽培",
     "partOfSpeech": "noun",
     "sentences": [
-      "monoculture appeared on the old label. 舊標籤上出現了「單一作物或生物體的種植或生長，特別是在農業或林地」。",
-      "monoculture came up during our short conversation. 我們簡短交談時提到了「單一作物或生物體的種植或生長，特別是在農業或林地」。"
+      "The farmer replaced monoculture with crop rotation. 農民以輪作取代了單一作物種植。",
+      "The report discusses the risks of monoculture. 那份報告討論了單一栽培的風險。"
     ],
     "audienceTags": [
       "general"
@@ -113071,11 +113071,11 @@
   },
   {
     "word": "monocyte",
-    "meaning": "一種白血球，可分化為巨噬細胞",
+    "meaning": "單核球（白血球的一種）",
     "partOfSpeech": "noun",
     "sentences": [
-      "monocyte denotes a defined body structure. 這個詞指的是一種白血球，可分化為巨噬細胞。",
-      "monocyte appears in an anatomy glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The image shows a monocyte among other blood cells. 影像顯示了一個位於其他血球之間的單核球。",
+      "The researcher identified the monocyte under a microscope. 研究員在顯微鏡下辨認出了那個單核球。"
     ],
     "audienceTags": [
       "general"
@@ -113947,11 +113947,11 @@
   },
   {
     "word": "monoglot",
-    "meaning": "只能說一種語言的人。",
+    "meaning": "只會一種語言的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "monoglot appeared on the old label. 舊標籤上出現了「只能說一種語言的人」。",
-      "monoglot came up during our short conversation. 我們簡短交談時提到了「只能說一種語言的人」。"
+      "As a monoglot, he relied on an interpreter during the trip. 他只會一種語言，因此旅行時仰賴口譯員。",
+      "The class welcomed both monoglots and bilingual students. 那個班級歡迎只會一種語言和會雙語的學生。"
     ],
     "audienceTags": [
       "general"
@@ -114499,11 +114499,11 @@
   },
   {
     "word": "monolith",
-    "meaning": "一塊巨大的石頭，通常呈方尖碑或圓柱的形式。",
+    "meaning": "獨塊巨石；龐大而統一的組織或體系",
     "partOfSpeech": "noun",
     "sentences": [
-      "monolith appeared on the old label. 舊標籤上出現了「一塊巨大的石頭，通常呈方尖碑或圓柱的形式」。",
-      "monolith came up during our short conversation. 我們簡短交談時提到了「一塊巨大的石頭，通常呈方尖碑或圓柱的形式」。"
+      "A stone monolith stood at the center of the site. 遺址中央立著一塊巨石。",
+      "The company should not be treated as a single monolith. 不應把那家公司視為一個完全一致的龐大整體。"
     ],
     "audienceTags": [
       "general"
@@ -114679,11 +114679,11 @@
   },
   {
     "word": "monomania",
-    "meaning": "精神疾病，尤其是當僅限於表達一種想法或思想領域時。",
+    "meaning": "對單一事物的極度執著；偏執狂（舊式用語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "monomania appeared on the old label. 舊標籤上出現了「精神疾病，尤其是當僅限於表達一種想法或思想領域時」。",
-      "monomania came up during our short conversation. 我們簡短交談時提到了「精神疾病，尤其是當僅限於表達一種想法或思想領域時」。"
+      "His interest in the game grew into monomania. 他對那個遊戲的興趣變成了極度執著。",
+      "The novel explores a captain’s monomania about hunting one whale. 那部小說探討了船長對追捕一頭鯨魚的偏執。"
     ],
     "audienceTags": [
       "general"
@@ -114691,11 +114691,11 @@
   },
   {
     "word": "monomaniac",
-    "meaning": "精神疾病，尤其是當僅限於表達一種想法或思想領域時。",
+    "meaning": "對某一件事極度執著的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "monomaniac appeared on the old label. 舊標籤上出現了「精神疾病，尤其是當僅限於表達一種想法或思想領域時」。",
-      "monomaniac came up during our short conversation. 我們簡短交談時提到了「精神疾病，尤其是當僅限於表達一種想法或思想領域時」。"
+      "He became a monomaniac about collecting rare stamps. 他變得極度執著於收集稀有郵票。",
+      "The novel portrays an inventor as a monomaniac consumed by one idea. 小說把一位發明家描寫成被一個念頭占據、極度執著的人。"
     ],
     "audienceTags": [
       "general"
@@ -116514,11 +116514,11 @@
   },
   {
     "word": "monorail",
-    "meaning": "用作輪式車輛軌道的單軌；還有：在這樣的軌道上行駛的車輛。",
+    "meaning": "單軌鐵路；單軌列車",
     "partOfSpeech": "noun",
     "sentences": [
-      "monorail appeared on the old label. 舊標籤上出現了「用作輪式車輛軌道的單軌；還有：在這樣的軌道上行駛」。",
-      "monorail came up during our short conversation. 我們簡短交談時提到了「用作輪式車輛軌道的單軌；還有：在這樣的軌道上行駛」。"
+      "We took the monorail from the airport to the city. 我們搭單軌列車從機場到市區。",
+      "The new monorail runs above the busy streets. 新的單軌鐵路從繁忙街道上方通過。"
     ],
     "audienceTags": [
       "general"
@@ -117558,11 +117558,11 @@
   },
   {
     "word": "monotheism",
-    "meaning": "對獨一真神的信仰，被莫爾定義為個人的、非物質的和三位一體的。",
+    "meaning": "一神論；只信仰一位神的信仰",
     "partOfSpeech": "noun",
     "sentences": [
-      "monotheism appeared on the old label. 舊標籤上出現了「對獨一真神的信仰，被莫爾定義為個人的、非物質的和」。",
-      "monotheism came up during our short conversation. 我們簡短交談時提到了「對獨一真神的信仰，被莫爾定義為個人的、非物質的和」。"
+      "The course compares monotheism with polytheism. 這門課比較了一神論與多神論。",
+      "Monotheism is the belief in one God. 一神論是信仰只有一位神。"
     ],
     "audienceTags": [
       "general"
@@ -117906,11 +117906,11 @@
   },
   {
     "word": "monotonousness",
-    "meaning": "單調的品質或狀態。",
+    "meaning": "單調；一成不變",
     "partOfSpeech": "noun",
     "sentences": [
-      "monotonousness appeared on the old label. 舊標籤上出現了「單調的品質或狀態」。",
-      "monotonousness came up during our short conversation. 我們簡短交談時提到了「單調的品質或狀態」。"
+      "The monotonousness of the routine made her restless. 例行生活的單調讓她坐立不安。",
+      "Music helped relieve the monotonousness of the long drive. 音樂幫忙減輕長途開車的單調感。"
     ],
     "audienceTags": [
       "general"
@@ -119908,11 +119908,11 @@
   },
   {
     "word": "moodiness",
-    "meaning": "喜怒無常的屬性",
+    "meaning": "情緒多變；喜怒無常",
     "partOfSpeech": "noun",
     "sentences": [
-      "moodiness identifies a named organism or taxon. 這個詞指的是喜怒無常的屬性。",
-      "moodiness occurs in a taxonomy list when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "His moodiness made conversations difficult. 他的喜怒無常讓交談變得困難。",
+      "She apologized for her moodiness during the stressful week. 她為自己在那個壓力很大的星期情緒多變而道歉。"
     ],
     "audienceTags": [
       "general"
@@ -120090,11 +120090,11 @@
   },
   {
     "word": "moonbeam",
-    "meaning": "來自月亮的一束光。",
+    "meaning": "月光；一束月光",
     "partOfSpeech": "noun",
     "sentences": [
-      "moonbeam appeared on the old label. 舊標籤上出現了「來自月亮的一束光」。",
-      "moonbeam came up during our short conversation. 我們簡短交談時提到了「來自月亮的一束光」。"
+      "A moonbeam shone through the open window. 一束月光從敞開的窗戶照了進來。",
+      "She watched a moonbeam fall across the floor. 她看著一束月光灑在地板上。"
     ],
     "audienceTags": [
       "general"
@@ -120510,11 +120510,11 @@
   },
   {
     "word": "moonlit",
-    "meaning": "被月亮照亮。",
-    "partOfSpeech": "noun",
+    "meaning": "月光照耀的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "moonlit appeared on the old label. 舊標籤上出現了「被月亮照亮」。",
-      "moonlit came up during our short conversation. 我們簡短交談時提到了「被月亮照亮」。"
+      "We walked along a moonlit path. 我們沿著月光照耀的小路散步。",
+      "The lake looked silver on the moonlit night. 在月光照耀的夜晚，湖面看起來一片銀色。"
     ],
     "audienceTags": [
       "general"
@@ -120750,11 +120750,11 @@
   },
   {
     "word": "moonstone",
-    "meaning": "半透明寶石，一種正長石，具有珍珠光澤。",
+    "meaning": "月光石（一種帶有柔和光澤的寶石）",
     "partOfSpeech": "noun",
     "sentences": [
-      "moonstone appeared on the old label. 舊標籤上出現了「半透明寶石，一種正長石，具有珍珠光澤」。",
-      "moonstone came up during our short conversation. 我們簡短交談時提到了「半透明寶石，一種正長石，具有珍珠光澤」。"
+      "The ring was set with a pale moonstone. 那枚戒指鑲著一顆淺色月光石。",
+      "He admired the glow of the moonstone under the lamp. 他欣賞月光石在燈下的光澤。"
     ],
     "audienceTags": [
       "general"
@@ -120810,11 +120810,11 @@
   },
   {
     "word": "moonwards",
-    "meaning": "較少見的專門詞語，指與此字相關的概念或用法。",
+    "meaning": "朝向月球地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "The adverb moonwards describes her reply. 副詞「這種方式」描述了她回答的方式。",
-      "In this example, moonwards describes her reply. 在這個例子裡，「這種方式」描述了她回答的方式。"
+      "The spacecraft sped moonwards. 太空船朝月球快速飛去。",
+      "The telescope was pointed moonwards to observe the surface. 望遠鏡朝向月球，以觀察其表面。"
     ],
     "audienceTags": [
       "general"
@@ -120894,11 +120894,11 @@
   },
   {
     "word": "moorage",
-    "meaning": "繫泊的行為。",
+    "meaning": "繫泊；停泊處；繫泊費",
     "partOfSpeech": "noun",
     "sentences": [
-      "moorage appeared on the old label. 舊標籤上出現了「繫泊的行為」。",
-      "moorage came up during our short conversation. 我們簡短交談時提到了「繫泊的行為」。"
+      "The harbor offers overnight moorage for small boats. 港口提供小船夜間停泊的服務。",
+      "We paid the moorage before leaving the marina. 我們離開遊艇碼頭前付了繫泊費。"
     ],
     "audienceTags": [
       "general"
@@ -121884,11 +121884,11 @@
   },
   {
     "word": "moraine",
-    "meaning": "由冰川攜帶並最終沉積的泥土和石頭的堆積",
+    "meaning": "冰磧；冰河堆積的砂土與石塊",
     "partOfSpeech": "noun",
     "sentences": [
-      "moraine specifies a specific object or term. 這個詞指的是由冰川攜帶並最終沉積的泥土和石頭的堆積。",
-      "moraine figures in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The hikers crossed a rocky moraine below the glacier. 健行者穿越了冰河下方多石的冰磧。",
+      "The geologist studied the moraine to trace the glacier’s former extent. 地質學家研究冰磧，以推知冰河過去的範圍。"
     ],
     "audienceTags": [
       "general"
@@ -122123,11 +122123,11 @@
   },
   {
     "word": "morass",
-    "meaning": "沼澤。",
+    "meaning": "沼澤；困境；混亂局面",
     "partOfSpeech": "noun",
     "sentences": [
-      "morass appeared on the old label. 舊標籤上出現了「沼澤」。",
-      "morass came up during our short conversation. 我們簡短交談時提到了「沼澤」。"
+      "The hikers struggled to cross the morass. 健行者費力地穿越沼澤。",
+      "The project became trapped in a morass of paperwork. 那項專案陷入繁瑣文書作業的困境。"
     ],
     "audienceTags": [
       "general"
@@ -122621,11 +122621,11 @@
   },
   {
     "word": "mordant",
-    "meaning": "在思想、方式或風格上尖刻刻薄的：尖銳的。你可知道？媒染劑的",
+    "meaning": "媒染劑（幫助染料附著的物質）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mordant appeared on the old label. 舊標籤上出現了「在思想、方式或風格上尖刻刻薄的：尖銳的。你可知道」。",
-      "mordant came up during our short conversation. 我們簡短交談時提到了「在思想、方式或風格上尖刻刻薄的：尖銳的。你可知道」。"
+      "The dyer added a mordant to help the color stay in the cloth. 染工加入媒染劑，幫助顏色留在布料上。",
+      "Different mordants can affect the final color of the fabric. 不同的媒染劑可能影響布料最後的顏色。"
     ],
     "audienceTags": [
       "general"
@@ -122868,11 +122868,11 @@
   },
   {
     "word": "morel",
-    "meaning": "幾種食用真菌（羊肚菌屬，尤其是羊肚菌屬）中的一種，具有圓錐形菌蓋，表面有許多凹坑，也稱為羊肚菌。",
+    "meaning": "羊肚菌",
     "partOfSpeech": "noun",
     "sentences": [
-      "morel appeared on the old label. 舊標籤上出現了「幾種食用真菌羊肚菌屬，尤其是羊肚菌屬中的一種，具」。",
-      "morel came up during our short conversation. 我們簡短交談時提到了「幾種食用真菌羊肚菌屬，尤其是羊肚菌屬中的一種，具」。"
+      "The chef added sliced morels to the sauce. 主廚在醬汁裡加入了切片羊肚菌。",
+      "The photograph shows a morel with a deeply pitted cap. 照片顯示了一朵菌蓋有深凹洞的羊肚菌。"
     ],
     "audienceTags": [
       "general"
@@ -122993,11 +122993,11 @@
   },
   {
     "word": "mores",
-    "meaning": "特定群體具有道德約束力的固定習俗。",
+    "meaning": "社會習俗；道德規範",
     "partOfSpeech": "noun",
     "sentences": [
-      "mores appeared on the old label. 舊標籤上出現了「特定群體具有道德約束力的固定習俗」。",
-      "mores came up during our short conversation. 我們簡短交談時提到了「特定群體具有道德約束力的固定習俗」。"
+      "The book examines the mores of nineteenth-century society. 這本書探討了十九世紀社會的習俗與道德規範。",
+      "Social mores can change from one generation to the next. 社會規範可能隨著世代更替而改變。"
     ],
     "audienceTags": [
       "general"
@@ -123233,11 +123233,11 @@
   },
   {
     "word": "moribund",
-    "meaning": "垂死的。",
-    "partOfSpeech": "noun",
+    "meaning": "垂死的；衰敗的；瀕臨消亡的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "moribund appeared on the old label. 舊標籤上出現了「垂死的」。",
-      "moribund came up during our short conversation. 我們簡短交談時提到了「垂死的」。"
+      "The town hopes to revive its moribund economy. 這個城鎮希望重振衰敗的經濟。",
+      "The old organization was nearly moribund when she took charge. 她接手時，那個老組織幾乎已瀕臨消亡。"
     ],
     "audienceTags": [
       "general"
@@ -123881,11 +123881,11 @@
   },
   {
     "word": "morn",
-    "meaning": "黎明。",
+    "meaning": "早晨；黎明（文學用語）",
     "partOfSpeech": "noun",
     "sentences": [
-      "morn appeared on the old label. 舊標籤上出現了「黎明」。",
-      "morn came up during our short conversation. 我們簡短交談時提到了「黎明」。"
+      "They set out at early morn. 他們一大清早就出發了。",
+      "The poem describes a quiet summer morn. 那首詩描寫了一個寧靜的夏日清晨。"
     ],
     "audienceTags": [
       "general"
@@ -123960,11 +123960,11 @@
   },
   {
     "word": "mornings",
-    "meaning": "早上反覆：在任何早晨。",
+    "meaning": "早晨（morning 的複數）；在早上（副詞用法）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mornings appeared on the old label. 舊標籤上出現了「早上反覆：在任何早晨」。",
-      "mornings came up during our short conversation. 我們簡短交談時提到了「早上反覆：在任何早晨」。"
+      "Winter mornings can be very cold here. 這裡冬天的早晨可能很冷。",
+      "Our mornings are usually busy with school and work. 我們早上通常忙著上學和工作。"
     ],
     "audienceTags": [
       "general"
@@ -124332,11 +124332,11 @@
   },
   {
     "word": "morose",
-    "meaning": "性格陰鬱陰鬱。 Morose的",
-    "partOfSpeech": "noun",
+    "meaning": "陰鬱的；悶悶不樂的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "morose appeared on the old label. 舊標籤上出現了「性格陰鬱陰鬱。的同義詞討論」。",
-      "morose came up during our short conversation. 我們簡短交談時提到了「性格陰鬱陰鬱。的同義詞討論」。"
+      "He became morose after hearing the bad news. 他聽到壞消息後變得悶悶不樂。",
+      "Her morose expression worried her friends. 她陰鬱的表情讓朋友們擔心。"
     ],
     "audienceTags": [
       "general"
@@ -124356,11 +124356,11 @@
   },
   {
     "word": "moroseness",
-    "meaning": "憂鬱的品質或狀態。",
+    "meaning": "陰鬱；悶悶不樂",
     "partOfSpeech": "noun",
     "sentences": [
-      "moroseness appeared on the old label. 舊標籤上出現了「憂鬱的品質或狀態」。",
-      "moroseness came up during our short conversation. 我們簡短交談時提到了「憂鬱的品質或狀態」。"
+      "His moroseness faded after a walk in the park. 他到公園散步後，陰鬱的心情消退了。",
+      "The character’s moroseness is clear in his short replies. 那個角色簡短的回答清楚顯示出他的悶悶不樂。"
     ],
     "audienceTags": [
       "general"
@@ -124452,11 +124452,11 @@
   },
   {
     "word": "morpheme",
-    "meaning": "語素的。",
+    "meaning": "語素（語言中最小的有意義單位）",
     "partOfSpeech": "noun",
     "sentences": [
-      "morpheme appeared on the old label. 舊標籤上出現了「語素的」。",
-      "morpheme came up during our short conversation. 我們簡短交談時提到了「語素的」。"
+      "The word “cats” contains two morphemes. cats 這個字含有兩個語素。",
+      "The teacher asked us to identify each morpheme in the word. 老師要我們辨認這個字中的每個語素。"
     ],
     "audienceTags": [
       "general"
@@ -124872,11 +124872,11 @@
   },
   {
     "word": "morphologist",
-    "meaning": "形態學家。",
+    "meaning": "形態學家（研究生物形態與構造的人）",
     "partOfSpeech": "noun",
     "sentences": [
-      "morphologist appeared on the old label. 舊標籤上出現了「形態學家」。",
-      "morphologist came up during our short conversation. 我們簡短交談時提到了「形態學家」。"
+      "The morphologist compared the shapes of several animal skulls. 形態學家比較了幾種動物頭骨的形狀。",
+      "A morphologist helped identify the specimen from its structure. 一位形態學家根據構造協助辨認那份標本。"
     ],
     "audienceTags": [
       "general"
@@ -125307,11 +125307,11 @@
   },
   {
     "word": "morsel",
-    "meaning": "一小塊食物：咬。",
+    "meaning": "一小塊食物；一口食物",
     "partOfSpeech": "noun",
     "sentences": [
-      "morsel appeared on the old label. 舊標籤上出現了「一小塊食物：咬」。",
-      "morsel came up during our short conversation. 我們簡短交談時提到了「一小塊食物：咬」。"
+      "He offered the dog a morsel of chicken. 他給狗一小塊雞肉。",
+      "She ate every morsel on her plate. 她把盤子裡的每一口食物都吃光了。"
     ],
     "audienceTags": [
       "general"
@@ -125513,11 +125513,11 @@
   },
   {
     "word": "mortarboard",
-    "meaning": "學術帽，由緊密貼合的頭飾和寬而平坦的突出方形頂部組成。",
+    "meaning": "方形學位帽",
     "partOfSpeech": "noun",
     "sentences": [
-      "mortarboard appeared on the old label. 舊標籤上出現了「學術帽，由緊密貼合的頭飾和寬而平坦的突出方形頂部」。",
-      "mortarboard came up during our short conversation. 我們簡短交談時提到了「學術帽，由緊密貼合的頭飾和寬而平坦的突出方形頂部」。"
+      "She tossed her mortarboard into the air after graduation. 畢業後，她把方形學位帽拋向空中。",
+      "His mortarboard slipped while he posed for a photograph. 他拍照擺姿勢時，學位帽滑了下來。"
     ],
     "audienceTags": [
       "general"
@@ -125700,11 +125700,11 @@
   },
   {
     "word": "mortician",
-    "meaning": "承辦人。",
+    "meaning": "殯葬業者；殯葬人員",
     "partOfSpeech": "noun",
     "sentences": [
-      "mortician appeared on the old label. 舊標籤上出現了「承辦人」。",
-      "mortician came up during our short conversation. 我們簡短交談時提到了「承辦人」。"
+      "The mortician helped the family arrange the funeral. 殯葬人員協助家屬安排葬禮。",
+      "She spoke to the mortician about the ceremony. 她與殯葬人員討論了儀式。"
     ],
     "audienceTags": [
       "general"
@@ -125772,11 +125772,11 @@
   },
   {
     "word": "mortification",
-    "meaning": "由於傷害某人的驕傲或自尊而引起的羞辱感和羞恥感。",
+    "meaning": "極度尷尬；羞愧",
     "partOfSpeech": "noun",
     "sentences": [
-      "mortification appeared on the old label. 舊標籤上出現了「由於傷害某人的驕傲或自尊而引起的羞辱感和羞恥感」。",
-      "mortification came up during our short conversation. 我們簡短交談時提到了「由於傷害某人的驕傲或自尊而引起的羞辱感和羞恥感」。"
+      "To her mortification, she called her teacher by the wrong name. 讓她非常尷尬的是，她叫錯了老師的名字。",
+      "He blushed with mortification after spilling the tea. 他打翻茶後羞得滿臉通紅。"
     ],
     "audienceTags": [
       "general"
@@ -125832,11 +125832,11 @@
   },
   {
     "word": "mortify",
-    "meaning": "較少見的專門詞語，指與此字相關的概念或用法。",
+    "meaning": "使極度尷尬；使羞愧",
     "partOfSpeech": "verb",
     "sentences": [
-      "The verb mortify fits this short sentence. 動詞「這項動作」很適合這個短句。",
-      "They used mortify while talking about the change. 他們談到變化時用了「這項動作」。"
+      "Such a public mistake would mortify him. 在眾人面前犯這種錯會讓他非常尷尬。",
+      "I did not mean to mortify you with that question. 我不是故意要用那個問題讓你難堪。"
     ],
     "audienceTags": [
       "general"
@@ -126723,8 +126723,8 @@
     "meaning": "蚊子",
     "partOfSpeech": "noun",
     "sentences": [
-      "mosquito defines a specific object or term. 這個詞指的是蚊子。",
-      "mosquito serves in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A mosquito bit my arm while I was gardening. 我在園藝時，一隻蚊子叮了我的手臂。",
+      "Close the window to keep mosquitoes out. 把窗戶關上，避免蚊子飛進來。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -126941,11 +126941,11 @@
   },
   {
     "word": "mossiness",
-    "meaning": "苔蘚。",
+    "meaning": "長滿苔蘚的狀態；苔蘚覆蓋的程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "mossiness appeared on the old label. 舊標籤上出現了「苔蘚」。",
-      "mossiness came up during our short conversation. 我們簡短交談時提到了「苔蘚」。"
+      "The mossiness of the steps made them slippery. 階梯上長滿苔蘚，所以很滑。",
+      "She liked the mossiness of the old garden wall. 她喜歡老花園牆上布滿苔蘚的樣子。"
     ],
     "audienceTags": [
       "general"
@@ -127387,8 +127387,8 @@
     "meaning": "蛾",
     "partOfSpeech": "noun",
     "sentences": [
-      "moth covers a specific object or term. 這個詞指的是蛾。",
-      "moth recurs in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A moth flew toward the porch light. 一隻蛾飛向門廊的燈。",
+      "We found a small moth resting on the curtain. 我們發現一隻小蛾停在窗簾上。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -127559,11 +127559,11 @@
   },
   {
     "word": "motherlessness",
-    "meaning": "一位女性家長。",
+    "meaning": "沒有母親的狀態；喪母的處境",
     "partOfSpeech": "noun",
     "sentences": [
-      "motherlessness appeared on the old label. 舊標籤上出現了「一位女性家長」。",
-      "motherlessness came up during our short conversation. 我們簡短交談時提到了「一位女性家長」。"
+      "The novel explores the child’s motherlessness. 這部小說探討了那個孩子沒有母親的處境。",
+      "Her motherlessness shaped much of her early life. 喪母的處境深深影響了她的童年。"
     ],
     "audienceTags": [
       "general"
@@ -127715,11 +127715,11 @@
   },
   {
     "word": "mothproof",
-    "meaning": "不易被飛蛾侵入。",
-    "partOfSpeech": "noun",
+    "meaning": "防蛀的；防蛾蛀蝕的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "mothproof appeared on the old label. 舊標籤上出現了「不易被飛蛾侵入」。",
-      "mothproof came up during our short conversation. 我們簡短交談時提到了「不易被飛蛾侵入」。"
+      "Store the wool blankets in a mothproof container. 把羊毛毯放在防蛀容器裡。",
+      "She bought a mothproof bag for her winter coat. 她為冬季外套買了一個防蛀袋。"
     ],
     "audienceTags": [
       "general"
@@ -127775,11 +127775,11 @@
   },
   {
     "word": "motile",
-    "meaning": "展示或能夠移動。",
-    "partOfSpeech": "noun",
+    "meaning": "能自行移動的；有運動能力的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "motile appeared on the old label. 舊標籤上出現了「展示或能夠移動」。",
-      "motile came up during our short conversation. 我們簡短交談時提到了「展示或能夠移動」。"
+      "The scientist observed motile cells under the microscope. 科學家在顯微鏡下觀察能自行移動的細胞。",
+      "These bacteria are motile and move through the liquid. 這些細菌有運動能力，能在液體中移動。"
     ],
     "audienceTags": [
       "general"
@@ -127787,11 +127787,11 @@
   },
   {
     "word": "motility",
-    "meaning": "活動的品質或狀態：運動能力。",
+    "meaning": "運動能力；活動性",
     "partOfSpeech": "noun",
     "sentences": [
-      "motility appeared on the old label. 舊標籤上出現了「活動的品質或狀態：運動能力」。",
-      "motility came up during our short conversation. 我們簡短交談時提到了「活動的品質或狀態：運動能力」。"
+      "The experiment measured the motility of the cells. 實驗測量了細胞的運動能力。",
+      "The report includes observations of sperm motility. 報告包含了精子活動性的觀察結果。"
     ],
     "audienceTags": [
       "general"
@@ -128106,11 +128106,11 @@
   },
   {
     "word": "motoneuron",
-    "meaning": "運動神經元。",
+    "meaning": "運動神經元",
     "partOfSpeech": "noun",
     "sentences": [
-      "motoneuron appeared on the old label. 舊標籤上出現了「運動神經元」。",
-      "motoneuron came up during our short conversation. 我們簡短交談時提到了「運動神經元」。"
+      "The diagram shows a motoneuron connected to muscle fibers. 圖表顯示了一個與肌肉纖維相連的運動神經元。",
+      "The researcher recorded electrical activity in a motoneuron. 研究員記錄了一個運動神經元的電活動。"
     ],
     "audienceTags": [
       "general"
@@ -128207,11 +128207,11 @@
   },
   {
     "word": "motorcade",
-    "meaning": "一隊機動車輛。",
+    "meaning": "車隊（通常護送重要人物）",
     "partOfSpeech": "noun",
     "sentences": [
-      "motorcade appeared on the old label. 舊標籤上出現了「一隊機動車輛」。",
-      "motorcade came up during our short conversation. 我們簡短交談時提到了「一隊機動車輛」。"
+      "The president’s motorcade passed through the city. 總統的車隊穿過市區。",
+      "Police cleared the road for the motorcade. 警察為車隊清出道路。"
     ],
     "audienceTags": [
       "general"
@@ -128219,11 +128219,11 @@
   },
   {
     "word": "motorcar",
-    "meaning": "汽車。",
+    "meaning": "汽車",
     "partOfSpeech": "noun",
     "sentences": [
-      "motorcar appeared on the old label. 舊標籤上出現了「汽車」。",
-      "motorcar came up during our short conversation. 我們簡短交談時提到了「汽車」。"
+      "An old motorcar stood outside the museum. 一輛老式汽車停在博物館外。",
+      "The photograph shows a family traveling in a motorcar. 那張照片顯示一家人乘汽車出遊。"
     ],
     "audienceTags": [
       "general"
@@ -129306,11 +129306,11 @@
   },
   {
     "word": "mountainside",
-    "meaning": "山的一側。",
+    "meaning": "山坡；山腰",
     "partOfSpeech": "noun",
     "sentences": [
-      "mountainside appeared on the old label. 舊標籤上出現了「山的一側」。",
-      "mountainside came up during our short conversation. 我們簡短交談時提到了「山的一側」。"
+      "Wildflowers covered the mountainside. 野花開滿了山坡。",
+      "A narrow road winds along the mountainside. 一條狹窄的道路沿著山腰蜿蜒。"
     ],
     "audienceTags": [
       "general"
@@ -129318,11 +129318,11 @@
   },
   {
     "word": "mountaintop",
-    "meaning": "一座山的山頂。",
+    "meaning": "山頂",
     "partOfSpeech": "noun",
     "sentences": [
-      "mountaintop appeared on the old label. 舊標籤上出現了「一座山的山頂」。",
-      "mountaintop came up during our short conversation. 我們簡短交談時提到了「一座山的山頂」。"
+      "Snow still covered the mountaintop in spring. 春天時，山頂仍然覆蓋著白雪。",
+      "We reached the mountaintop just before sunrise. 我們在日出前剛好抵達山頂。"
     ],
     "audienceTags": [
       "general"
@@ -129330,11 +129330,11 @@
   },
   {
     "word": "mountainward",
-    "meaning": "向山",
+    "meaning": "朝向山的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "mountainward indicates a specific property or form. 這個形容詞表示向山。",
-      "mountainward appears in a technical description. 這個形容詞用來限定相關描述中的特徵。"
+      "The mountainward trail climbs steadily through the forest. 那條朝向山的小徑穿過森林，一路向上爬升。",
+      "We followed the mountainward road instead of the coastal one. 我們沿著通往山區的道路走，沒有走沿海道路。"
     ],
     "audienceTags": [
       "general"
@@ -129553,11 +129553,11 @@
   },
   {
     "word": "mourner",
-    "meaning": "哀悼的人；特別是：出於對死者的尊重或感情而參加葬禮的人。",
+    "meaning": "哀悼者；參加葬禮的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "mourner appeared on the old label. 舊標籤上出現了「哀悼的人；特別是：出於對死者的尊重或感情而參加葬」。",
-      "mourner came up during our short conversation. 我們簡短交談時提到了「哀悼的人；特別是：出於對死者的尊重或感情而參加葬」。"
+      "A mourner placed flowers beside the coffin. 一位哀悼者把花放在棺木旁。",
+      "The mourners stood silently during the service. 參加葬禮的人在儀式中靜靜站著。"
     ],
     "audienceTags": [
       "general"
@@ -129831,11 +129831,11 @@
   },
   {
     "word": "mouseproof",
-    "meaning": "防鼠。",
-    "partOfSpeech": "noun",
+    "meaning": "防鼠的；老鼠無法進入的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "mouseproof appeared on the old label. 舊標籤上出現了「防鼠」。",
-      "mouseproof came up during our short conversation. 我們簡短交談時提到了「防鼠」。"
+      "Keep the grain in a mouseproof container. 把穀物存放在防鼠容器裡。",
+      "The farmer built a mouseproof storage shed. 農民建了一間防鼠的儲藏棚。"
     ],
     "audienceTags": [
       "general"
@@ -130126,11 +130126,11 @@
   },
   {
     "word": "mouth-watering",
-    "meaning": "使食物令人垂涎的；令人食慾大開的",
-    "partOfSpeech": "verb",
+    "meaning": "令人垂涎的；令人食慾大開的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "mouth-watering names the specific action described by this verb. 這個動詞表示使食物令人垂涎的；令人食慾大開的。",
-      "mouth-watering handles a precise action rather than a general condition. 這個動詞指向明確的動作，而不是籠統的狀態。"
+      "The bakery displayed mouth-watering cakes in the window. 麵包店在櫥窗裡展示令人垂涎的蛋糕。",
+      "A mouth-watering smell drifted from the kitchen. 廚房飄出令人食慾大開的香味。"
     ],
     "audienceTags": [
       "general"
@@ -131866,11 +131866,11 @@
   },
   {
     "word": "muckraker",
-    "meaning": "被揭露或被揭露的人。",
+    "meaning": "揭露醜聞或弊端的記者或作家",
     "partOfSpeech": "noun",
     "sentences": [
-      "muckraker appeared on the old label. 舊標籤上出現了「被揭露或被揭露的人」。",
-      "muckraker came up during our short conversation. 我們簡短交談時提到了「被揭露或被揭露的人」。"
+      "The muckraker exposed corruption in the city government. 那位揭弊記者揭露了市政府的貪腐。",
+      "Her work as a muckraker brought hidden abuses to public attention. 她的揭弊報導讓大眾注意到隱藏的弊端。"
     ],
     "audienceTags": [
       "general"
@@ -132514,11 +132514,11 @@
   },
   {
     "word": "mud",
-    "meaning": "土",
+    "meaning": "泥；泥巴",
     "partOfSpeech": "noun",
     "sentences": [
-      "mud refers a specific object or term. 這個詞指的是土。",
-      "mud persists in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "My shoes were covered in mud after the hike. 健行後，我的鞋子沾滿泥巴。",
+      "The children made shapes out of wet mud. 孩子們用濕泥巴捏出各種形狀。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
@@ -132641,11 +132641,11 @@
   },
   {
     "word": "muddiness",
-    "meaning": "泥濘的品質或狀態。",
+    "meaning": "泥濘；混濁",
     "partOfSpeech": "noun",
     "sentences": [
-      "muddiness appeared on the old label. 舊標籤上出現了「泥濘的品質或狀態」。",
-      "muddiness came up during our short conversation. 我們簡短交談時提到了「泥濘的品質或狀態」。"
+      "The muddiness of the trail slowed our progress. 步道的泥濘拖慢了我們的前進速度。",
+      "The muddiness of the water made the fish hard to see. 水的混濁讓魚很難看清楚。"
     ],
     "audienceTags": [
       "general"
@@ -132773,11 +132773,11 @@
   },
   {
     "word": "muddler",
-    "meaning": "混亂的人；具體來說：通常形狀像杵的器具，用於壓碎和混合（作為混合飲料的調味劑）。",
+    "meaning": "調酒搗棒；做事糊塗的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "muddler appeared on the old label. 舊標籤上出現了「混亂的人；具體來說：通常形狀像杵的器具，用於壓碎」。",
-      "muddler came up during our short conversation. 我們簡短交談時提到了「混亂的人；具體來說：通常形狀像杵的器具，用於壓碎」。"
+      "Use a muddler to crush the mint leaves. 用調酒搗棒把薄荷葉搗碎。",
+      "The bartender rinsed the muddler before making another drink. 調酒師製作下一杯飲料前先沖洗搗棒。"
     ],
     "audienceTags": [
       "general"
@@ -132812,8 +132812,8 @@
     "meaning": "泥濘的；混濁的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "muddy describes a specific property or form. 這個形容詞表示泥濘的；混濁的。",
-      "muddy appears in a technical description. 這個形容詞用來限定相關描述中的特徵。"
+      "The path was muddy after the rain. 下雨後，小路變得泥濘。",
+      "The river water looked muddy this morning. 今天早上河水看起來很混濁。"
     ],
     "difficultyLevel": 4,
     "schoolLevels": [
@@ -133222,11 +133222,11 @@
   },
   {
     "word": "muff",
-    "meaning": "手部溫暖的管狀覆蓋物。",
+    "meaning": "暖手筒（兩端開口、可把雙手放入保暖的衣物）",
     "partOfSpeech": "noun",
     "sentences": [
-      "muff appeared on the old label. 舊標籤上出現了「手部溫暖的管狀覆蓋物」。",
-      "muff came up during our short conversation. 我們簡短交談時提到了「手部溫暖的管狀覆蓋物」。"
+      "She kept her hands warm inside a fur muff. 她把雙手放進毛皮暖手筒裡保暖。",
+      "The portrait shows a woman carrying a white muff. 肖像中一位女子拿著白色暖手筒。"
     ],
     "audienceTags": [
       "general"
@@ -133396,11 +133396,11 @@
   },
   {
     "word": "mufti",
-    "meaning": "較少見的專門詞語，指與此字相關的概念或用法。",
+    "meaning": "便服（相對於制服）；穆夫提（伊斯蘭法律學者）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mufti appeared on the old label. 舊標籤上出現了「這個術語」。",
-      "mufti came up during our short conversation. 我們簡短交談時提到了「這個術語」。"
+      "The soldiers were allowed to wear mufti on their day off. 士兵在休假時可以穿便服。",
+      "The mufti answered a question about religious law. 那位伊斯蘭法律學者回答了一個宗教法律問題。"
     ],
     "audienceTags": [
       "general"
@@ -134559,11 +134559,11 @@
   },
   {
     "word": "mullah",
-    "meaning": "穆斯林，尤其是研究伊斯蘭法律和教義的宗教學者或神職人員——通常用作尊稱。",
+    "meaning": "毛拉（伊斯蘭宗教學者或神職人員的尊稱）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mullah appeared on the old label. 舊標籤上出現了「穆斯林，尤其是研究伊斯蘭法律和教義的宗教學者或神」。",
-      "mullah came up during our short conversation. 我們簡短交談時提到了「穆斯林，尤其是研究伊斯蘭法律和教義的宗教學者或神」。"
+      "The mullah spoke to the community after prayers. 那位毛拉在祈禱後對社群講話。",
+      "She interviewed a mullah about the local school. 她就當地學校的事訪問了一位毛拉。"
     ],
     "audienceTags": [
       "general"
@@ -134631,11 +134631,11 @@
   },
   {
     "word": "mullet",
-    "meaning": "身體細長而粗壯的主要海洋硬骨魚科（Mugilidae）的任何一種",
+    "meaning": "鯔魚；烏魚類；前短後長的髮型",
     "partOfSpeech": "noun",
     "sentences": [
-      "mullet labels a defined body structure. 這個詞指的是身體細長而粗壯的主要海洋硬骨魚科（Mugilidae）的任何一種。",
-      "mullet belongs in an anatomy glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "A mullet swam close to the surface of the harbor. 一條鯔魚在港口水面附近游動。",
+      "He wore his hair in a mullet in the old photograph. 在那張舊照片中，他留著前短後長的髮型。"
     ],
     "audienceTags": [
       "general"
@@ -134715,11 +134715,11 @@
   },
   {
     "word": "mulligatawny",
-    "meaning": "通常用雞湯加咖哩調味的濃湯",
+    "meaning": "咖哩濃湯（源自印度料理）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mulligatawny means a specific object or term. 這個詞指的是通常用雞湯加咖哩調味的濃湯。",
-      "mulligatawny surfaces in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The restaurant served a bowl of hot mulligatawny. 餐廳端上了一碗熱咖哩濃湯。",
+      "She added rice to her mulligatawny. 她在咖哩濃湯裡加了米飯。"
     ],
     "audienceTags": [
       "general"
@@ -135183,11 +135183,11 @@
   },
   {
     "word": "multicellular",
-    "meaning": "多細胞的。",
-    "partOfSpeech": "noun",
+    "meaning": "多細胞的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multicellular appeared on the old label. 舊標籤上出現了「多細胞的」。",
-      "multicellular came up during our short conversation. 我們簡短交談時提到了「多細胞的」。"
+      "Humans are multicellular organisms. 人類是多細胞生物。",
+      "The class compared unicellular and multicellular life forms. 班上比較了單細胞與多細胞的生命形式。"
     ],
     "audienceTags": [
       "general"
@@ -135399,11 +135399,11 @@
   },
   {
     "word": "multicore",
-    "meaning": "具有多個核心、由多個核心組成或涉及多個核心；特別是：具有多個電腦核心。",
-    "partOfSpeech": "noun",
+    "meaning": "多核心的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multicore appeared on the old label. 舊標籤上出現了「具有多個核心、由多個核心組成或涉及多個核心；特別」。",
-      "multicore came up during our short conversation. 我們簡短交談時提到了「具有多個核心、由多個核心組成或涉及多個核心；特別」。"
+      "The laptop has a multicore processor. 那台筆記型電腦配有多核心處理器。",
+      "This software can use a multicore system efficiently. 這個軟體能有效運用多核心系統。"
     ],
     "audienceTags": [
       "general"
@@ -135579,11 +135579,11 @@
   },
   {
     "word": "multidirectional",
-    "meaning": "能夠在多個方向上移動、發揮作用或進行操作",
+    "meaning": "多方向的；可朝多個方向運作的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "multidirectional denotes a specific property or form. 這個形容詞表示能夠在多個方向上移動、發揮作用或進行操作。",
-      "multidirectional appears in a technical description. 這個形容詞用來限定相關描述中的特徵。"
+      "The chair’s multidirectional wheels make it easy to move. 椅子的多方向輪子讓它容易移動。",
+      "The camera sits on a multidirectional mount. 那台攝影機裝在可朝多個方向轉動的支架上。"
     ],
     "audienceTags": [
       "general"
@@ -135603,11 +135603,11 @@
   },
   {
     "word": "multiengine",
-    "meaning": "擁有不只一台發動機。",
-    "partOfSpeech": "noun",
+    "meaning": "多引擎的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multiengine appeared on the old label. 舊標籤上出現了「擁有不只一台發動機」。",
-      "multiengine came up during our short conversation. 我們簡短交談時提到了「擁有不只一台發動機」。"
+      "The pilot trained in a multiengine aircraft. 那位飛行員駕駛多引擎飛機接受訓練。",
+      "A multiengine plane can have two or more engines. 多引擎飛機可以有兩具或更多引擎。"
     ],
     "audienceTags": [
       "general"
@@ -135975,11 +135975,11 @@
   },
   {
     "word": "multiform",
-    "meaning": "有多種形式或外觀。",
-    "partOfSpeech": "noun",
+    "meaning": "多種形式的；形態多樣的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multiform appeared on the old label. 舊標籤上出現了「有多種形式或外觀」。",
-      "multiform came up during our short conversation. 我們簡短交談時提到了「有多種形式或外觀」。"
+      "The exhibition celebrated the multiform nature of modern art. 那場展覽呈現了現代藝術的多樣形式。",
+      "The disease has multiform symptoms that vary between patients. 這種疾病的症狀形態多樣，因病人而異。"
     ],
     "audienceTags": [
       "general"
@@ -136695,11 +136695,11 @@
   },
   {
     "word": "multimillionaire",
-    "meaning": "財富達數百萬（美元或英鎊）的人。",
+    "meaning": "擁有數百萬財富的富豪",
     "partOfSpeech": "noun",
     "sentences": [
-      "multimillionaire appeared on the old label. 舊標籤上出現了「財富達數百萬美元或英鎊的人」。",
-      "multimillionaire came up during our short conversation. 我們簡短交談時提到了「財富達數百萬美元或英鎊的人」。"
+      "The multimillionaire donated money to the local library. 那位富豪捐錢給當地圖書館。",
+      "She became a multimillionaire after selling her company. 她賣掉公司後成了身家數百萬的富豪。"
     ],
     "audienceTags": [
       "general"
@@ -137121,11 +137121,11 @@
   },
   {
     "word": "multiphase",
-    "meaning": "由一個以上的相組成或涉及多個相。",
-    "partOfSpeech": "noun",
+    "meaning": "多階段的；多相的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multiphase appeared on the old label. 舊標籤上出現了「由一個以上的相組成或涉及多個相」。",
-      "multiphase came up during our short conversation. 我們簡短交談時提到了「由一個以上的相組成或涉及多個相」。"
+      "The team planned a multiphase construction project. 團隊規劃了一項多階段的建設工程。",
+      "The laboratory studied a multiphase mixture of gas and liquid. 實驗室研究了一種由氣體與液體組成的多相混合物。"
     ],
     "audienceTags": [
       "general"
@@ -137407,11 +137407,11 @@
   },
   {
     "word": "multiplicity",
-    "meaning": "多重或多樣的品質或狀態",
+    "meaning": "多樣性；眾多；多重性",
     "partOfSpeech": "noun",
     "sentences": [
-      "multiplicity concerns a defined concept or process. 這個詞指的是多重或多樣的品質或狀態。",
-      "multiplicity exists in a specialist glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The survey revealed a multiplicity of opinions. 調查顯示了各式各樣的意見。",
+      "A multiplicity of rules made the process hard to follow. 繁多的規定讓這個流程很難遵循。"
     ],
     "audienceTags": [
       "general"
@@ -138012,11 +138012,11 @@
   },
   {
     "word": "multistage",
-    "meaning": "具有連續的操作階段；特別是：具有輪流運轉的推進裝置。",
-    "partOfSpeech": "noun",
+    "meaning": "多階段的；多級的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "multistage appeared on the old label. 舊標籤上出現了「具有連續的操作階段；特別是：具有輪流運轉的推進裝」。",
-      "multistage came up during our short conversation. 我們簡短交談時提到了「具有連續的操作階段；特別是：具有輪流運轉的推進裝」。"
+      "The company uses a multistage hiring process. 公司採用多階段的招聘流程。",
+      "A multistage rocket discards sections as it rises. 多級火箭在上升時會拋棄部分節段。"
     ],
     "audienceTags": [
       "general"
@@ -138931,11 +138931,11 @@
   },
   {
     "word": "mummification",
-    "meaning": "像木乃伊一樣進行防腐和乾燥。",
+    "meaning": "木乃伊化；製作木乃伊的過程",
     "partOfSpeech": "noun",
     "sentences": [
-      "mummification appeared on the old label. 舊標籤上出現了「像木乃伊一樣進行防腐和乾燥」。",
-      "mummification came up during our short conversation. 我們簡短交談時提到了「像木乃伊一樣進行防腐和乾燥」。"
+      "The museum explains the process of mummification. 博物館介紹了製作木乃伊的過程。",
+      "Mummification preserved the body for centuries. 木乃伊化讓遺體保存了數百年。"
     ],
     "audienceTags": [
       "general"
@@ -139111,11 +139111,11 @@
   },
   {
     "word": "mumps",
-    "meaning": "由副黏病毒（腮腺正紅病毒）引起的急性傳染性病毒性疾病，以發燒和腫脹（尤其是腮腺腫脹）為特徵。",
+    "meaning": "腮腺炎",
     "partOfSpeech": "noun",
     "sentences": [
-      "mumps appeared on the old label. 舊標籤上出現了「由副黏病毒腮腺正紅病毒引起的急性傳染性病毒性疾病」。",
-      "mumps came up during our short conversation. 我們簡短交談時提到了「由副黏病毒腮腺正紅病毒引起的急性傳染性病毒性疾病」。"
+      "The school sent parents a notice about a case of mumps. 學校寄給家長一份關於腮腺炎病例的通知。",
+      "She stayed home while recovering from mumps. 她在腮腺炎康復期間待在家中。"
     ],
     "audienceTags": [
       "general"
@@ -139730,11 +139730,11 @@
   },
   {
     "word": "munificence",
-    "meaning": "慷慨的品質或狀態：以非凡的慷慨給予或給予：慷慨的慷慨。",
+    "meaning": "慷慨；大方的捐贈或給予",
     "partOfSpeech": "noun",
     "sentences": [
-      "munificence appeared on the old label. 舊標籤上出現了「慷慨的品質或狀態：以非凡的慷慨給予或給予：慷慨的」。",
-      "munificence came up during our short conversation. 我們簡短交談時提到了「慷慨的品質或狀態：以非凡的慷慨給予或給予：慷慨的」。"
+      "The donor’s munificence allowed the library to buy new books. 捐款人的慷慨讓圖書館能購買新書。",
+      "The hospital thanked her for her munificence. 醫院感謝她的慷慨捐助。"
     ],
     "audienceTags": [
       "general"
@@ -139754,11 +139754,11 @@
   },
   {
     "word": "munificent",
-    "meaning": "給予或給予非常慷慨：慷慨。你可知道？慷慨的",
-    "partOfSpeech": "noun",
+    "meaning": "極慷慨的；大方的",
+    "partOfSpeech": "adjective",
     "sentences": [
-      "munificent appeared on the old label. 舊標籤上出現了「給予或給予非常慷慨：慷慨。你可知道？慷慨的同義詞」。",
-      "munificent came up during our short conversation. 我們簡短交談時提到了「給予或給予非常慷慨：慷慨。你可知道？慷慨的同義詞」。"
+      "A munificent donor paid for the new library wing. 一位極慷慨的捐款人出資興建圖書館的新側翼。",
+      "They thanked her for the munificent gift. 他們感謝她慷慨的贈禮。"
     ],
     "audienceTags": [
       "general"
@@ -140198,11 +140198,11 @@
   },
   {
     "word": "muralist",
-    "meaning": "壁畫家。",
+    "meaning": "壁畫家",
     "partOfSpeech": "noun",
     "sentences": [
-      "muralist appeared on the old label. 舊標籤上出現了「壁畫家」。",
-      "muralist came up during our short conversation. 我們簡短交談時提到了「壁畫家」。"
+      "The muralist painted a forest on the school wall. 壁畫家在學校牆上畫了一片森林。",
+      "A local muralist worked with the students on the design. 一位當地壁畫家與學生一起設計圖樣。"
     ],
     "audienceTags": [
       "general"
@@ -140688,11 +140688,11 @@
   },
   {
     "word": "Muriel",
-    "meaning": "較少見的專門詞語，指與此字相關的概念或用法。",
+    "meaning": "穆里爾（女子名）",
     "partOfSpeech": "noun",
     "sentences": [
-      "Muriel appeared on the old label. 舊標籤上出現了「這個術語」。",
-      "Muriel came up during our short conversation. 我們簡短交談時提到了「這個術語」。"
+      "Muriel painted a picture of the harbor. 穆里爾畫了一幅港口的圖。",
+      "I invited Muriel to the exhibition. 我邀請穆里爾參觀展覽。"
     ],
     "audienceTags": [
       "general"
@@ -140820,11 +140820,11 @@
   },
   {
     "word": "murkiness",
-    "meaning": "模糊的性質或狀態。",
+    "meaning": "昏暗；混濁；含糊不明",
     "partOfSpeech": "noun",
     "sentences": [
-      "murkiness appeared on the old label. 舊標籤上出現了「模糊的性質或狀態」。",
-      "murkiness came up during our short conversation. 我們簡短交談時提到了「模糊的性質或狀態」。"
+      "The murkiness of the water hid the riverbed. 混濁的河水遮住了河床。",
+      "The murkiness of the agreement led to further questions. 協議含糊不明，因此引發了更多問題。"
     ],
     "audienceTags": [
       "general"
@@ -140945,11 +140945,11 @@
   },
   {
     "word": "murmuration",
-    "meaning": "低語的行為：發出低沉的連續聲音或抱怨的噪音。",
+    "meaning": "低鳴；喃喃聲；椋鳥群的集體飛行",
     "partOfSpeech": "noun",
     "sentences": [
-      "murmuration appeared on the old label. 舊標籤上出現了「低語的行為：發出低沉的連續聲音或抱怨的噪音」。",
-      "murmuration came up during our short conversation. 我們簡短交談時提到了「低語的行為：發出低沉的連續聲音或抱怨的噪音」。"
+      "A murmuration of starlings swirled above the field. 一群椋鳥在田野上空盤旋飛舞。",
+      "The low murmuration of the crowd filled the hall. 人群低低的喃喃聲充滿大廳。"
     ],
     "audienceTags": [
       "general"
@@ -142109,11 +142109,11 @@
   },
   {
     "word": "muscularity",
-    "meaning": "肌肉的、關於肌肉的或構成肌肉的。",
+    "meaning": "肌肉發達；肌肉的強健程度",
     "partOfSpeech": "noun",
     "sentences": [
-      "muscularity appeared on the old label. 舊標籤上出現了「肌肉的、關於肌肉的或構成肌肉的」。",
-      "muscularity came up during our short conversation. 我們簡短交談時提到了「肌肉的、關於肌肉的或構成肌肉的」。"
+      "The sculpture emphasizes the athlete’s muscularity. 那座雕塑強調了運動員發達的肌肉。",
+      "Regular training increased his muscularity. 規律訓練讓他的肌肉更發達。"
     ],
     "audienceTags": [
       "general"
@@ -142157,11 +142157,11 @@
   },
   {
     "word": "musculature",
-    "meaning": "肌肉系統",
+    "meaning": "肌肉組織；肌肉系統",
     "partOfSpeech": "noun",
     "sentences": [
-      "musculature indicates a defined body structure. 這個詞指的是肌肉系統。",
-      "musculature remains in an anatomy glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The diagram shows the musculature of the human arm. 圖表顯示了人類手臂的肌肉組織。",
+      "The artist studied musculature to draw realistic figures. 那位藝術家研究肌肉構造，以畫出逼真的人物。"
     ],
     "examTags": [
       "toeic"
@@ -142654,11 +142654,11 @@
   },
   {
     "word": "musher",
-    "meaning": "在雪上駕駛狗拉雪橇的人。",
+    "meaning": "狗拉雪橇的駕駛者",
     "partOfSpeech": "noun",
     "sentences": [
-      "musher appeared on the old label. 舊標籤上出現了「在雪上駕駛狗拉雪橇的人」。",
-      "musher came up during our short conversation. 我們簡短交談時提到了「在雪上駕駛狗拉雪橇的人」。"
+      "The musher guided the dogs along the snowy trail. 狗拉雪橇的駕駛者引導犬隊沿雪道前進。",
+      "An experienced musher checked every dog before the race. 一位經驗豐富的雪橇駕駛者在比賽前檢查了每隻狗。"
     ],
     "audienceTags": [
       "general"
@@ -142762,11 +142762,11 @@
   },
   {
     "word": "mushroom",
-    "meaning": "菇",
+    "meaning": "蘑菇；菇類",
     "partOfSpeech": "noun",
     "sentences": [
-      "mushroom defines a specific object or term. 這個詞指的是菇。",
-      "mushroom serves in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "She sliced a mushroom for the soup. 她切了一朵蘑菇準備煮湯。",
+      "Mushrooms grew beside the fallen tree. 倒下的樹旁長出了菇類。"
     ],
     "difficultyLevel": 3,
     "schoolLevels": [
@@ -143040,11 +143040,11 @@
   },
   {
     "word": "musicianship",
-    "meaning": "在音樂的詮釋或演繹中表現出的藝術性和洞察力。",
+    "meaning": "音樂才能；音樂演奏與詮釋的技巧",
     "partOfSpeech": "noun",
     "sentences": [
-      "musicianship appeared on the old label. 舊標籤上出現了「在音樂的詮釋或演繹中表現出的藝術性和洞察力」。",
-      "musicianship came up during our short conversation. 我們簡短交談時提到了「在音樂的詮釋或演繹中表現出的藝術性和洞察力」。"
+      "Her musicianship impressed the judges. 她的音樂才華讓評審印象深刻。",
+      "The orchestra’s musicianship brought the piece to life. 樂團的演奏技巧讓這首曲子充滿生命力。"
     ],
     "audienceTags": [
       "general"
@@ -143436,11 +143436,11 @@
   },
   {
     "word": "musket",
-    "meaning": "步槍。",
+    "meaning": "滑膛槍；舊式長火槍",
     "partOfSpeech": "noun",
     "sentences": [
-      "musket appeared on the old label. 舊標籤上出現了「步槍」。",
-      "musket came up during our short conversation. 我們簡短交談時提到了「步槍」。"
+      "The museum displayed a musket from the eighteenth century. 博物館展出了一把十八世紀的舊式長火槍。",
+      "The soldier loaded his musket before the battle. 士兵在戰鬥前為火槍裝填彈藥。"
     ],
     "audienceTags": [
       "general"
@@ -143676,11 +143676,11 @@
   },
   {
     "word": "muslin",
-    "meaning": "平織的透明至粗棉織物。",
+    "meaning": "平紋棉布；細薄棉布",
     "partOfSpeech": "noun",
     "sentences": [
-      "muslin appeared on the old label. 舊標籤上出現了「平織的透明至粗棉織物」。",
-      "muslin came up during our short conversation. 我們簡短交談時提到了「平織的透明至粗棉織物」。"
+      "She covered the bowl with a piece of muslin. 她用一塊細薄棉布蓋住碗。",
+      "The tailor made a trial dress from muslin. 裁縫用平紋棉布做了一件試樣洋裝。"
     ],
     "audienceTags": [
       "general"
@@ -144230,11 +144230,11 @@
   },
   {
     "word": "mustard",
-    "meaning": "芥末",
+    "meaning": "芥末；芥末醬；芥菜",
     "partOfSpeech": "noun",
     "sentences": [
-      "mustard denotes a specific object or term. 這個詞指的是芥末。",
-      "mustard belongs in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "Would you like mustard on your sandwich? 你的三明治要加芥末醬嗎？",
+      "The jar of mustard is in the fridge. 那罐芥末醬在冰箱裡。"
     ],
     "difficultyLevel": 5,
     "schoolLevels": [
@@ -144609,11 +144609,11 @@
   },
   {
     "word": "mutant",
-    "meaning": "看起來奇怪、不正常或奇怪的人或事",
+    "meaning": "突變體；發生基因突變的生物",
     "partOfSpeech": "noun",
     "sentences": [
-      "mutant marks a specific object or term. 這個詞指的是看起來奇怪、不正常或奇怪的人或事。",
-      "mutant is recorded in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The researcher compared a mutant with the original strain. 研究員比較了突變體與原始品系。",
+      "The comic features a mutant with unusual powers. 那本漫畫裡有一個擁有特殊能力的突變人。"
     ],
     "audienceTags": [
       "general"
@@ -144952,11 +144952,11 @@
   },
   {
     "word": "mutilate",
-    "meaning": "四 使殘廢",
-    "partOfSpeech": "noun",
+    "meaning": "使肢體殘缺；嚴重損壞",
+    "partOfSpeech": "verb",
     "sentences": [
-      "mutilate labels a specific object or term. 這個詞指的是四 使殘廢。",
-      "mutilate belongs in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "Powerful machines can mutilate limbs if used carelessly. 不小心使用大型機器可能造成肢體嚴重殘傷。",
+      "Someone tried to mutilate the painting by cutting the canvas. 有人企圖割破畫布，嚴重毀損那幅畫。"
     ],
     "audienceTags": [
       "general"
@@ -146026,11 +146026,11 @@
   },
   {
     "word": "mycelium",
-    "meaning": "大量交織的絲狀菌絲，特別是形成真菌菌體的營養部分，並且通常浸沒在另一個物體中（例如土壤或有機物或宿主的組織）；還有：由某些細菌（例如鏈黴菌）形成的類似的細絲團。",
+    "meaning": "菌絲體（由菌絲交織形成的網狀構造）",
     "partOfSpeech": "noun",
     "sentences": [
-      "mycelium appeared on the old label. 舊標籤上出現了「大量交織的絲狀菌絲，特別是形成真菌菌體的營養部分」。",
-      "mycelium came up during our short conversation. 我們簡短交談時提到了「大量交織的絲狀菌絲，特別是形成真菌菌體的營養部分」。"
+      "White mycelium spread through the damp soil. 白色菌絲體在潮濕土壤中蔓延。",
+      "The students examined fungal mycelium under a microscope. 學生們在顯微鏡下觀察真菌的菌絲體。"
     ],
     "audienceTags": [
       "general"
@@ -148618,11 +148618,11 @@
   },
   {
     "word": "myocardium",
-    "meaning": "心壁的中肌層。",
+    "meaning": "心肌；心臟壁的肌肉層",
     "partOfSpeech": "noun",
     "sentences": [
-      "myocardium appeared on the old label. 舊標籤上出現了「心壁的中肌層」。",
-      "myocardium came up during our short conversation. 我們簡短交談時提到了「心壁的中肌層」。"
+      "The diagram labels the myocardium in the heart wall. 圖表標出了心臟壁中的心肌。",
+      "The lecture explains how the myocardium contracts. 課堂講解了心肌如何收縮。"
     ],
     "audienceTags": [
       "general"
@@ -149338,11 +149338,11 @@
   },
   {
     "word": "myometrium",
-    "meaning": "子宮壁的肌肉層。",
+    "meaning": "子宮肌層；子宮壁的肌肉層",
     "partOfSpeech": "noun",
     "sentences": [
-      "myometrium appeared on the old label. 舊標籤上出現了「子宮壁的肌肉層」。",
-      "myometrium came up during our short conversation. 我們簡短交談時提到了「子宮壁的肌肉層」。"
+      "The anatomy diagram shows the myometrium around the uterine cavity. 解剖圖顯示了子宮腔周圍的子宮肌層。",
+      "The student identified the myometrium in the tissue section. 學生在組織切片中辨認出了子宮肌層。"
     ],
     "audienceTags": [
       "general"
@@ -152418,11 +152418,11 @@
   },
   {
     "word": "mysteriousness",
-    "meaning": "屬於、與神秘有關或構成神秘的。",
+    "meaning": "神秘；神秘感",
     "partOfSpeech": "noun",
     "sentences": [
-      "mysteriousness appeared on the old label. 舊標籤上出現了「屬於、與神秘有關或構成神秘的」。",
-      "mysteriousness came up during our short conversation. 我們簡短交談時提到了「屬於、與神秘有關或構成神秘的」。"
+      "The fog added to the mysteriousness of the old castle. 霧氣增添了古堡的神秘感。",
+      "The mysteriousness of her reply made us curious. 她的回答帶著神秘感，讓我們很好奇。"
     ],
     "audienceTags": [
       "general"
@@ -152651,11 +152651,11 @@
   },
   {
     "word": "mystification",
-    "meaning": "神秘化的行為或實例。",
+    "meaning": "困惑；迷惑；使人困惑的行為",
     "partOfSpeech": "noun",
     "sentences": [
-      "mystification appeared on the old label. 舊標籤上出現了「神秘化的行為或實例」。",
-      "mystification came up during our short conversation. 我們簡短交談時提到了「神秘化的行為或實例」。"
+      "She stared at the strange message in mystification. 她困惑地盯著那則奇怪的訊息。",
+      "His unclear explanation only added to our mystification. 他不清楚的解釋只讓我們更加困惑。"
     ],
     "audienceTags": [
       "general"
@@ -153030,11 +153030,11 @@
   },
   {
     "word": "mythographer",
-    "meaning": "神話的編撰者或作家",
+    "meaning": "神話的編纂者；記錄神話的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "mythographer indicates a specific object or term. 這個詞指的是神話的編撰者或作家。",
-      "mythographer remains in a technical glossary when that precise meaning is intended. 這個詞可在相關專業資料中與其他術語區分。"
+      "The mythographer collected stories from several villages. 那位神話編纂者從幾個村莊蒐集故事。",
+      "A mythographer recorded different versions of the legend. 一位神話記錄者記下了那個傳說的不同版本。"
     ],
     "audienceTags": [
       "general"
@@ -153210,11 +153210,11 @@
   },
   {
     "word": "mythomania",
-    "meaning": "神話狂。",
+    "meaning": "說謊癖；編造故事的強烈傾向",
     "partOfSpeech": "noun",
     "sentences": [
-      "mythomania appeared on the old label. 舊標籤上出現了「神話狂」。",
-      "mythomania came up during our short conversation. 我們簡短交談時提到了「神話狂」。"
+      "The novel portrays a character whose mythomania damages his friendships. 小說描寫了一個因說謊癖而破壞友誼的角色。",
+      "The article distinguishes mythomania from ordinary exaggeration. 那篇文章區分了說謊癖與一般的誇大。"
     ],
     "audienceTags": [
       "general"
@@ -153222,11 +153222,11 @@
   },
   {
     "word": "mythomaniac",
-    "meaning": "神話狂。",
+    "meaning": "有說謊癖的人；慣於編造故事的人",
     "partOfSpeech": "noun",
     "sentences": [
-      "mythomaniac appeared on the old label. 舊標籤上出現了「神話狂」。",
-      "mythomaniac came up during our short conversation. 我們簡短交談時提到了「神話狂」。"
+      "The story’s narrator is a mythomaniac whose claims cannot be trusted. 故事的敘述者有說謊癖，他的說法不能相信。",
+      "The play follows a mythomaniac who invents a new identity. 那齣戲講述了一個慣於編造故事的人如何虛構新身分。"
     ],
     "audienceTags": [
       "general"
