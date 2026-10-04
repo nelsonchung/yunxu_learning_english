@@ -30,6 +30,31 @@ void main() {
     expect(service.isDueOnOrBefore(resumed, now), isTrue);
   });
 
+  test('restartReviewCycle resets progress but preserves learning history', () {
+    final now = DateTime(2026, 6, 20, 10);
+    final firstReview = DateTime(2026, 4, 2, 10);
+    final lastReview = DateTime(2026, 5, 10, 10);
+    final card = _card(
+      nextReviewDate: lastReview,
+      nextReviewIndex: 3,
+      history: [firstReview, lastReview],
+      reviewRatings: const [ReviewRating.hard, ReviewRating.good],
+    );
+
+    final restarted = service.restartReviewCycle(card, now);
+
+    expect(restarted.nextReviewIndex, 0);
+    expect(restarted.nextReviewDate, now);
+    expect(restarted.reviewState, WordReviewState.active);
+    expect(restarted.masteredAt, isNull);
+    expect(restarted.history, [firstReview, lastReview]);
+    expect(restarted.reviewRatings, [ReviewRating.hard, ReviewRating.good]);
+    expect(restarted.word, card.word);
+    expect(restarted.meaning, card.meaning);
+    expect(restarted.sentences, card.sentences);
+    expect(service.isDueOnOrBefore(restarted, now), isTrue);
+  });
+
   test('forgot resets progress and schedules tomorrow', () {
     final now = DateTime(2026, 4, 12, 10);
     final reviewed = service.recordReview(
@@ -106,6 +131,8 @@ WordCard _card({
   WordReviewState reviewState = WordReviewState.active,
   DateTime? masteredAt,
   int nextReviewIndex = 0,
+  List<DateTime> history = const [],
+  List<ReviewRating> reviewRatings = const [],
 }) {
   final createdAt = DateTime(2026, 4, 1);
   return WordCard(
@@ -120,7 +147,8 @@ WordCard _card({
     reviewSchedule: const [1, 2, 3],
     nextReviewIndex: nextReviewIndex,
     nextReviewDate: nextReviewDate,
-    history: const [],
+    history: history,
+    reviewRatings: reviewRatings,
     isDeleted: false,
     reviewState: reviewState,
     masteredAt: masteredAt,

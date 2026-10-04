@@ -857,6 +857,27 @@ class WordsNotifier extends ChangeNotifier {
     });
   }
 
+  Future<void> restartReviewCycle(WordCard card) async {
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final now = DateTime.now();
+      final updated = _scheduleService
+          .restartReviewCycle(card, now)
+          .copyWith(updatedAt: now);
+      await _repository.update(updated);
+
+      final index = _words.indexWhere((item) => item.id == card.id);
+      if (index != -1) {
+        _words[index] = updated;
+      }
+
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
+  }
+
   Future<void> deleteWord(WordCard card) async {
     return _serializeWordMutation(() async {
       card = _requireCurrentWord(card.id);

@@ -241,73 +241,105 @@ class WordDetailPage extends StatelessWidget {
                                 ),
                             ],
                           ),
-                          if (card.isMastered ||
-                              !card.hasCompletedReviewSchedule) ...[
-                            const SizedBox(height: 16),
-                            Align(
-                              alignment: Alignment.centerLeft,
-                              child: OutlinedButton.icon(
-                                onPressed: () async {
-                                  try {
-                                    if (card.isMastered) {
-                                      await notifier.resumeReview(card);
-                                    } else {
-                                      final confirmed = await showDialog<bool>(
-                                        context: context,
-                                        builder: (dialogContext) => AlertDialog(
-                                          title: const Text('標記為已掌握'),
-                                          content: Text(
-                                            '「${card.word}」將提前結束複習，之後不再出現在今日複習。',
-                                          ),
-                                          actions: [
-                                            TextButton(
-                                              onPressed: () => Navigator.pop(
-                                                dialogContext,
-                                                false,
-                                              ),
-                                              child: const Text('取消'),
-                                            ),
-                                            FilledButton(
-                                              onPressed: () => Navigator.pop(
-                                                dialogContext,
-                                                true,
-                                              ),
-                                              child: const Text('確認'),
-                                            ),
-                                          ],
-                                        ),
-                                      );
-                                      if (confirmed != true) {
-                                        return;
-                                      }
-                                      await notifier.markMastered(card);
-                                    }
-                                  } catch (error) {
-                                    if (!context.mounted) {
-                                      return;
-                                    }
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
+                          const SizedBox(height: 16),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: OutlinedButton.icon(
+                              onPressed: () async {
+                                try {
+                                  if (card.isMastered) {
+                                    await notifier.resumeReview(card);
+                                  } else if (card.hasCompletedReviewSchedule) {
+                                    final confirmed = await showDialog<bool>(
+                                      context: context,
+                                      builder: (dialogContext) => AlertDialog(
+                                        title: const Text('再複習一輪'),
                                         content: Text(
-                                          card.isMastered
-                                              ? '重新加入複習失敗，請稍後再試'
-                                              : '標記已掌握失敗，請稍後再試',
+                                          '「${card.word}」將從第一階段重新開始，今天就會加入複習。'
+                                          '單字內容與過往複習紀錄都會保留。',
                                         ),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () => Navigator.pop(
+                                              dialogContext,
+                                              false,
+                                            ),
+                                            child: const Text('取消'),
+                                          ),
+                                          FilledButton(
+                                            onPressed: () => Navigator.pop(
+                                              dialogContext,
+                                              true,
+                                            ),
+                                            child: const Text('開始複習'),
+                                          ),
+                                        ],
                                       ),
                                     );
+                                    if (confirmed != true) {
+                                      return;
+                                    }
+                                    await notifier.restartReviewCycle(card);
+                                  } else {
+                                    final confirmed = await showDialog<bool>(
+                                      context: context,
+                                      builder: (dialogContext) => AlertDialog(
+                                        title: const Text('標記為已掌握'),
+                                        content: Text(
+                                          '「${card.word}」將提前結束複習，之後不再出現在今日複習。',
+                                        ),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () => Navigator.pop(
+                                              dialogContext,
+                                              false,
+                                            ),
+                                            child: const Text('取消'),
+                                          ),
+                                          FilledButton(
+                                            onPressed: () => Navigator.pop(
+                                              dialogContext,
+                                              true,
+                                            ),
+                                            child: const Text('確認'),
+                                          ),
+                                        ],
+                                      ),
+                                    );
+                                    if (confirmed != true) {
+                                      return;
+                                    }
+                                    await notifier.markMastered(card);
                                   }
-                                },
-                                icon: Icon(
-                                  card.isMastered
-                                      ? Icons.restart_alt
-                                      : Icons.school_outlined,
-                                ),
-                                label: Text(
-                                  card.isMastered ? '重新加入複習' : '標記已掌握',
-                                ),
+                                } catch (error) {
+                                  if (!context.mounted) {
+                                    return;
+                                  }
+                                  final message = card.isMastered
+                                      ? '重新加入複習失敗，請稍後再試'
+                                      : card.hasCompletedReviewSchedule
+                                      ? '重新開始複習失敗，請稍後再試'
+                                      : '標記已掌握失敗，請稍後再試';
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(content: Text(message)),
+                                  );
+                                }
+                              },
+                              icon: Icon(
+                                card.isMastered ||
+                                        card.hasCompletedReviewSchedule
+                                    ? Icons.restart_alt
+                                    : Icons.school_outlined,
+                              ),
+                              label: Text(
+                                card.isMastered
+                                    ? '重新加入複習'
+                                    : card.hasCompletedReviewSchedule
+                                    ? '再複習一輪'
+                                    : '標記已掌握',
                               ),
                             ),
-                          ],
+                          ),
                         ],
                       ),
                     ),

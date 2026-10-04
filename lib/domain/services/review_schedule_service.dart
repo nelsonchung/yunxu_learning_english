@@ -93,6 +93,18 @@ class ReviewScheduleService {
     return card.copyWith(reviewState: WordReviewState.active, masteredAt: null);
   }
 
+  WordCard restartReviewCycle(WordCard card, DateTime now) {
+    return card.copyWith(
+      reviewSchedule: card.reviewSchedule.isEmpty
+          ? defaultSchedule
+          : card.reviewSchedule,
+      nextReviewIndex: 0,
+      nextReviewDate: now,
+      reviewState: WordReviewState.active,
+      masteredAt: null,
+    );
+  }
+
   bool isDueOnOrBefore(WordCard card, DateTime day) {
     if (card.isDeleted) {
       return false;

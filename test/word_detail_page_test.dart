@@ -76,6 +76,51 @@ void main() {
     expect(wordsNotifier.findById(card.id), isNull);
     expect(find.text('首頁'), findsOneWidget);
   });
+
+  testWidgets('已完成週期的單字可再複習一輪並保留自訂資料', (tester) async {
+    final firstReview = DateTime(2026, 1, 2, 10);
+    final lastReview = DateTime(2026, 2, 10, 10);
+    final card = _wordCard(id: 'word-restart', word: 'resilient').copyWith(
+      memoryHint: '像彈簧一樣復原',
+      customTags: const ['重要'],
+      nextReviewIndex: 3,
+      nextReviewDate: lastReview,
+      history: [firstReview, lastReview],
+      reviewRatings: const [ReviewRating.hard, ReviewRating.good],
+    );
+    final wordsNotifier = _buildWordsNotifier(initialCards: [card]);
+    await wordsNotifier.load();
+
+    await _pumpDetailPage(
+      tester,
+      wordsNotifier: wordsNotifier,
+      wordId: card.id,
+    );
+
+    final restartButton = find.widgetWithText(OutlinedButton, '再複習一輪');
+    await tester.ensureVisible(restartButton);
+    await tester.tap(restartButton);
+    await tester.pumpAndSettle();
+
+    expect(find.text('再複習一輪'), findsNWidgets(2));
+    expect(find.textContaining('單字內容與過往複習紀錄都會保留'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(FilledButton, '開始複習'));
+    await tester.pumpAndSettle();
+
+    final restarted = wordsNotifier.findById(card.id)!;
+    expect(restarted.nextReviewIndex, 0);
+    expect(
+      restarted.nextReviewDate.difference(DateTime.now()).abs(),
+      lessThan(const Duration(seconds: 5)),
+    );
+    expect(restarted.history, [firstReview, lastReview]);
+    expect(restarted.reviewRatings, [ReviewRating.hard, ReviewRating.good]);
+    expect(restarted.meaning, card.meaning);
+    expect(restarted.sentences, card.sentences);
+    expect(restarted.memoryHint, card.memoryHint);
+    expect(restarted.customTags, card.customTags);
+  });
 }
 
 Future<void> _pumpDetailPage(
