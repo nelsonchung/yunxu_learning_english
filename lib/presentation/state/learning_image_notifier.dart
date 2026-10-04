@@ -31,6 +31,9 @@ class LearningImageNotifier extends ChangeNotifier {
   final Set<String> _currentIds = {};
   int _sequence = 0;
   String? _generatedModel;
+  String? _generationId, _runningAttemptId;
+  bool historyReady = false;
+  String? historyError;
   bool isApplying = false;
   bool get isBusy => _active || _draining || isApplying;
   bool beginApply() {
@@ -67,15 +70,34 @@ class LearningImageNotifier extends ChangeNotifier {
   Future<void>? _initialization;
   Future<void> initialize() => _initialization ??= _initialize();
   Future<void> _initialize() async {
+    await refreshHistory();
     try {
-      hasKey = (await _credentials.load())?.trim().isNotEmpty ?? false;
       mode = await _store.loadMode();
-      _attempts.clear();
-      _attempts.addAll(await _store.attempts());
+      hasKey = (await _credentials.load())?.trim().isNotEmpty ?? false;
     } catch (_) {
-      error = '無法讀取 AI 設定或費用紀錄，請檢查裝置安全儲存。';
+      error = '無法讀取 AI 設定，請檢查裝置安全儲存。';
     }
     _notify();
+  }
+
+  Future<void> refreshHistory() async {
+    try {
+      final loaded = await _store.attempts();
+      final merged = {for (final attempt in loaded) attempt.id: attempt};
+      for (final attempt in _attempts) {
+        // In-memory records may be ahead of an in-flight persistence write.
+        merged[attempt.id] = attempt;
+      }
+      _attempts
+        ..clear()
+        ..addAll(merged.values);
+      historyError = null;
+    } catch (_) {
+      historyError = '無法讀取 AI 費用紀錄，請稍後再試。';
+    } finally {
+      historyReady = true;
+      _notify();
+    }
   }
 
   Future<void> saveApiKey(String key) async {
@@ -117,21 +139,25 @@ class LearningImageNotifier extends ChangeNotifier {
       await action(key);
     } on TimeoutException {
       if (!_cancelled) {
+        await _finishAttempt('timedOut');
         error = '請求逾時，費用可能仍已產生。請手動重試。';
         stage = LearningImageStage.failed;
         _cancelled = true;
       }
     } on LearningImageException catch (e) {
       if (!_cancelled) {
+        await _finishAttempt('failed');
         error = e.message;
         stage = LearningImageStage.failed;
       }
     } catch (_) {
       if (!_cancelled) {
+        await _finishAttempt('failed');
         error = '無法完成生成，請檢查網路與本機儲存後手動重試。費用可能已產生。';
         stage = LearningImageStage.failed;
       }
     } finally {
+      _runningAttemptId = null;
       _active = false;
       _notify();
     }
@@ -152,46 +178,84 @@ class LearningImageNotifier extends ChangeNotifier {
       id: '${DateTime.now().microsecondsSinceEpoch}-${_sequence++}',
       model: model,
       createdAt: DateTime.now(),
+      wordId: sourceWord?.id,
+      word: sourceWord?.word,
+      generationId: _generationId,
+      outcome: 'inProgress',
     );
     await _store.putAttempt(
       attempt,
     ); // Durably account for unknown charges before paid dispatch.
-    _attempts.add(attempt);
+    final existing = _attempts.indexWhere((a) => a.id == attempt.id);
+    if (existing < 0) {
+      _attempts.add(attempt);
+    } else {
+      _attempts[existing] = attempt;
+    }
+    _runningAttemptId = attempt.id;
     _currentIds.add(attempt.id);
     _notify();
     return (requestId, usage, searches) async {
+      final latest = _attempts.firstWhere((a) => a.id == attempt.id);
       final completed = LearningImageAttempt(
         id: attempt.id,
         model: model,
         createdAt: attempt.createdAt,
+        wordId: attempt.wordId,
+        word: attempt.word,
+        generationId: attempt.generationId,
+        outcome: latest.outcome,
         requestId: requestId,
         usage: usage,
         searches: searches,
         status: usage == null ? 'unknown' : 'completed',
       );
-      await _store.putAttempt(completed);
       final index = _attempts.indexWhere((a) => a.id == attempt.id);
       if (index >= 0) _attempts[index] = completed;
+      await _store.putAttempt(completed);
+      // Cancellation during persistence must win over the earlier snapshot.
+      final current = _attempts.firstWhere((a) => a.id == attempt.id);
+      if (!identical(current, completed)) await _store.putAttempt(current);
       _notify();
     };
   }
 
+  Future<void> _finishAttempt(String outcome) async {
+    final index = _attempts.indexWhere((a) => a.id == _runningAttemptId);
+    if (index < 0 || _attempts[index].outcome != 'inProgress') return;
+    final updated = _attempts[index].withOutcome(outcome);
+    _attempts[index] = updated;
+    try {
+      await _store.putAttempt(updated);
+    } catch (_) {
+      historyError = '無法保存 AI 費用紀錄的結果。';
+    }
+    _notify();
+  }
+
   Future<void> _markNotSent() async {
-    final pending = _attempts.last;
+    final pending = _attempts.firstWhere((a) => a.id == _runningAttemptId);
     final skipped = LearningImageAttempt(
       id: pending.id,
       model: pending.model,
       createdAt: pending.createdAt,
+      wordId: pending.wordId,
+      word: pending.word,
+      generationId: pending.generationId,
+      outcome: 'notSent',
       status: 'not_sent',
+      rateDate: pending.rateDate,
       savedCost: const LearningImageCost(usd: 0, unknown: false),
     );
+    final index = _attempts.indexWhere((a) => a.id == pending.id);
+    _attempts[index] = skipped;
     await _store.putAttempt(skipped);
-    _attempts[_attempts.length - 1] = skipped;
     _notify();
   }
 
   Future<void> start(WordCard word) async {
     if (isBusy) return;
+    _generationId = '${DateTime.now().microsecondsSinceEpoch}-${_sequence++}';
     sourceWord = word;
     content = null;
     imageBytes = null;
@@ -205,6 +269,8 @@ class LearningImageNotifier extends ChangeNotifier {
         return;
       }
       final researched = await _phase(_service.research(word, key, record));
+      if (_cancelled) return;
+      await _finishAttempt('succeeded');
       if (_cancelled) return;
       content = researched;
       if (researched.conflict.isNotEmpty) {
@@ -253,6 +319,8 @@ class LearningImageNotifier extends ChangeNotifier {
       _service.generate(content!, selectedMode, key, record),
     );
     if (_cancelled) return;
+    await _finishAttempt('succeeded');
+    if (_cancelled) return;
     _generatedModel = selectedMode.model;
     imageBytes = bytes;
     stage = LearningImageStage.ready;
@@ -262,6 +330,7 @@ class LearningImageNotifier extends ChangeNotifier {
   void cancel() {
     if (isApplying) return;
     _cancelled = true;
+    unawaited(_finishAttempt('cancelled'));
     imageBytes = null;
     stage = LearningImageStage.cancelled;
     error = '已取消；已送出的請求仍可能計費。等待請求結束後才能再次生成。';

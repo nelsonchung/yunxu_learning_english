@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../domain/models/learning_image.dart';
 import '../state/learning_image_notifier.dart';
+import '../pages/learning_image_history_page.dart';
 import 'section_card.dart';
 
 class AiLearningImageSettings extends StatefulWidget {
@@ -119,6 +120,17 @@ class _AiLearningImageSettingsState extends State<AiLearningImageSettings> {
           ),
           const SizedBox(height: 12),
           const Text('每次生成或重新生成都可能計費。取消或逾時的請求仍可能產生費用。金鑰不會隨 iCloud 同步。'),
+          const SizedBox(height: 12),
+          OutlinedButton.icon(
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) => const LearningImageHistoryPage(),
+              ),
+            ),
+            icon: const Icon(Icons.receipt_long_outlined),
+            label: const Text('AI 費用紀錄'),
+          ),
         ],
       ),
     );

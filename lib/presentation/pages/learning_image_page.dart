@@ -9,6 +9,7 @@ import '../state/learning_image_notifier.dart';
 import '../state/words_notifier.dart';
 import '../widgets/ai_learning_image_settings.dart';
 import '../widgets/image_preview.dart';
+import 'learning_image_history_page.dart';
 
 class LearningImagePage extends StatefulWidget {
   const LearningImagePage({super.key, required this.initialWord});
@@ -152,6 +153,18 @@ class _LearningImagePageState extends State<LearningImagePage> {
               '本次已知費用：US\$${ai.currentCostUsd.toStringAsFixed(4)}${ai.currentHasUnknownCost ? '（含未知費用）' : ''}',
             ),
             if (ai.hasUnknownCost) const Text('部分請求費用未知；已送出的取消或逾時請求仍可能計費。'),
+            TextButton.icon(
+              onPressed: _applying
+                  ? null
+                  : () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (_) => const LearningImageHistoryPage(),
+                      ),
+                    ),
+              icon: const Icon(Icons.receipt_long_outlined),
+              label: const Text('查看 AI 費用紀錄'),
+            ),
             const SizedBox(height: 16),
             if (!ai.hasKey) ...[
               const Text('請先在此裝置設定 OpenAI API Key'),

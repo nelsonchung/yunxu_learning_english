@@ -139,6 +139,10 @@ class LearningImageAttempt {
     required this.model,
     required this.createdAt,
     this.requestId,
+    this.wordId,
+    this.word,
+    this.generationId,
+    this.outcome,
     this.usage,
     this.searches,
     this.status = 'pending',
@@ -148,6 +152,7 @@ class LearningImageAttempt {
   final String id, model;
   final DateTime createdAt;
   final String? requestId;
+  final String? wordId, word, generationId, outcome;
   final Map? usage;
   final int? searches;
   final String status;
@@ -156,11 +161,32 @@ class LearningImageAttempt {
   LearningImageCost get cost =>
       _savedCost ??
       LearningImageCost.calculate(model, usage, searches: searches);
+
+  /// Updating lifecycle state must retain the original fee snapshot.
+  LearningImageAttempt withOutcome(String value) => LearningImageAttempt(
+    id: id,
+    model: model,
+    createdAt: createdAt,
+    requestId: requestId,
+    wordId: wordId,
+    word: word,
+    generationId: generationId,
+    outcome: value,
+    usage: usage,
+    searches: searches,
+    status: status,
+    rateDate: rateDate,
+    savedCost: cost,
+  );
   Map<String, Object?> toMap() => {
     'id': id,
     'model': model,
     'createdAt': createdAt.millisecondsSinceEpoch,
     'requestId': requestId,
+    'wordId': wordId,
+    'word': word,
+    'generationId': generationId,
+    'outcome': outcome,
     'usage': usage,
     'searches': searches,
     'status': status,
@@ -173,6 +199,10 @@ class LearningImageAttempt {
     model: data['model'] as String,
     createdAt: DateTime.fromMillisecondsSinceEpoch(data['createdAt'] as int),
     requestId: data['requestId'] as String?,
+    wordId: data['wordId'] as String?,
+    word: data['word'] as String?,
+    generationId: data['generationId'] as String?,
+    outcome: data['outcome'] as String?,
     usage: data['usage'] as Map?,
     searches: data['searches'] as int?,
     status: data['status'] as String,
