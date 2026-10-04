@@ -44,6 +44,11 @@ final class CloudSyncHandler {
       ckRecord["meaning"] = record["meaning"] as? NSString ?? ""
       ckRecord["memoryHint"] = record["memoryHint"] as? NSString ?? ""
       ckRecord["partOfSpeech"] = record["partOfSpeech"] as? NSString ?? ""
+      if let parts = record["partsOfSpeech"] as? [String], !parts.isEmpty {
+        ckRecord["partsOfSpeech"] = parts as NSArray
+      } else if let single = record["partOfSpeech"] as? String, !single.isEmpty {
+        ckRecord["partsOfSpeech"] = [single] as NSArray
+      }
       ckRecord["origin"] = record["origin"] as? NSString ?? "unknown"
       ckRecord["reviewState"] = record["reviewState"] as? NSString ?? "active"
 
@@ -264,12 +269,15 @@ final class CloudSyncHandler {
   }
 
   private static func mapRecord(_ record: CKRecord) -> [String: Any] {
+    let parts = record["partsOfSpeech"] as? [String]
+    let single = record["partOfSpeech"] as? String ?? ""
     var map: [String: Any] = [
       "id": record.recordID.recordName,
       "word": record["word"] as? String ?? "",
       "meaning": record["meaning"] as? String ?? "",
       "memoryHint": record["memoryHint"] as? String ?? "",
-      "partOfSpeech": record["partOfSpeech"] as? String ?? "",
+      "partOfSpeech": single,
+      "partsOfSpeech": parts ?? (single.isEmpty ? [] : [single]),
       "origin": record["origin"] as? String ?? "unknown",
       "reviewState": record["reviewState"] as? String ?? "active",
       "sentences": record["sentences"] as? [String] ?? [],

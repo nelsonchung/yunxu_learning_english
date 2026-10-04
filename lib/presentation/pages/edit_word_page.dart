@@ -33,10 +33,23 @@ class _EditWordPageState extends State<EditWordPage> {
   List<int>? _existingImageBytes;
   bool _removeImage = false;
   bool _isSaving = false;
-  PartOfSpeech _partOfSpeech = PartOfSpeech.noun;
+  List<PartOfSpeech> _partsOfSpeech = [PartOfSpeech.noun];
   List<String> _customTags = const [];
   WordCard? _card;
   bool _initialized = false;
+
+  void _togglePartOfSpeech(PartOfSpeech pos) {
+    setState(() {
+      final current = List<PartOfSpeech>.from(_partsOfSpeech);
+      if (current.contains(pos)) {
+        if (current.length <= 1) return;
+        current.remove(pos);
+      } else {
+        current.add(pos);
+      }
+      _partsOfSpeech = WordCard.normalizePartsOfSpeech(current);
+    });
+  }
 
   @override
   void dispose() {
@@ -68,7 +81,7 @@ class _EditWordPageState extends State<EditWordPage> {
       _wordController.text = card.word;
       _meaningController.text = card.meaning;
       _memoryHintController.text = card.memoryHint;
-      _partOfSpeech = card.partOfSpeech;
+      _partsOfSpeech = WordCard.normalizePartsOfSpeech(card.partsOfSpeech);
       _customTags = card.customTags;
       _existingImagePath = card.imagePath;
       _existingImageBytes = card.imageBytes;
@@ -231,7 +244,7 @@ class _EditWordPageState extends State<EditWordPage> {
       word: word,
       meaning: meaning,
       memoryHint: memoryHint,
-      partOfSpeech: _partOfSpeech,
+      partsOfSpeech: _partsOfSpeech,
       sentences: sentences,
       customTags: _customTags,
       imageFile: _imageFile,
@@ -301,26 +314,33 @@ class _EditWordPageState extends State<EditWordPage> {
               const SizedBox(height: 16),
               SectionCard(
                 title: '詞性',
-                subtitle: '選擇此單字的詞性',
-                child: DropdownButtonFormField<PartOfSpeech>(
-                  initialValue: _partOfSpeech,
-                  items: PartOfSpeech.values
-                      .map(
-                        (item) => DropdownMenuItem(
-                          value: item,
-                          child: Text(item.label),
-                        ),
-                      )
-                      .toList(),
-                  onChanged: (value) {
-                    if (value == null) {
-                      return;
-                    }
-                    setState(() {
-                      _partOfSpeech = value;
-                    });
-                  },
-                  decoration: const InputDecoration(),
+                subtitle: '可複選，至少選擇一個',
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: PartOfSpeech.values.map((item) {
+                        final selected = _partsOfSpeech.contains(item);
+                        return FilterChip(
+                          label: Text(item.label),
+                          selected: selected,
+                          onSelected: (_) => _togglePartOfSpeech(item),
+                        );
+                      }).toList(growable: false),
+                    ),
+                    if (_partsOfSpeech.isNotEmpty) ...[
+                      const SizedBox(height: 8),
+                      Text(
+                        '已選：${_partsOfSpeech.map((e) => e.label).join('・')}',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall
+                            ?.copyWith(color: Colors.black54),
+                      ),
+                    ],
+                  ],
                 ),
               ),
               const SizedBox(height: 16),

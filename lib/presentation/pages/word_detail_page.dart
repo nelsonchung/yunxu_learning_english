@@ -1,14 +1,14 @@
-import 'learning_image_page.dart';
-import '../state/learning_image_notifier.dart';
-import '../../domain/models/learning_image.dart';
-import 'package:path/path.dart' as path;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:path/path.dart' as path;
 
 import '../../domain/services/pronunciation_service.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/models/learning_image.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
+import '../state/learning_image_notifier.dart';
+import 'learning_image_page.dart';
 import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/image_preview.dart';
@@ -213,7 +213,7 @@ class WordDetailPage extends StatelessWidget {
                               _InfoChip(
                                 icon: Icons.translate,
                                 label:
-                                    '${card.partOfSpeech.label} · $meaningText',
+                                    '${card.partsOfSpeechLabel} · $meaningText',
                               ),
                               if (card.isMastered)
                                 _InfoChip(

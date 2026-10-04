@@ -551,7 +551,8 @@ class CloudSyncService {
       'word': card.word,
       'meaning': card.meaning,
       'memoryHint': card.memoryHint,
-      'partOfSpeech': card.partOfSpeech.name,
+      'partOfSpeech': card.partsOfSpeech.first.name,
+      'partsOfSpeech': card.partsOfSpeech.map((e) => e.name).toList(),
       'sentences': card.sentences,
       'origin': card.origin.name,
       'customTags': card.customTags,
@@ -584,13 +585,29 @@ class CloudSyncService {
   }
 
   WordCard _fromCloudMap(Map<String, Object?> data) {
-    final partRaw = data['partOfSpeech'];
-    var part = PartOfSpeech.noun;
-    if (partRaw is String) {
-      part = PartOfSpeech.values.firstWhere(
-        (item) => item.name == partRaw,
-        orElse: () => PartOfSpeech.noun,
-      );
+    List<PartOfSpeech> parts = const [];
+    final partsRaw = data['partsOfSpeech'];
+    if (partsRaw is List && partsRaw.isNotEmpty) {
+      final list = <PartOfSpeech>[];
+      for (final raw in partsRaw) {
+        if (raw is! String) continue;
+        list.add(PartOfSpeech.values.firstWhere(
+          (item) => item.name == raw,
+          orElse: () => PartOfSpeech.other,
+        ));
+      }
+      if (list.isNotEmpty) parts = WordCard.normalizePartsOfSpeech(list);
+    }
+    if (parts.isEmpty) {
+      final partRaw = data['partOfSpeech'];
+      var part = PartOfSpeech.noun;
+      if (partRaw is String) {
+        part = PartOfSpeech.values.firstWhere(
+          (item) => item.name == partRaw,
+          orElse: () => PartOfSpeech.noun,
+        );
+      }
+      parts = [part];
     }
 
     final originRaw = data['origin'];
@@ -685,7 +702,7 @@ class CloudSyncService {
       word: (data['word'] as String?) ?? '',
       meaning: (data['meaning'] as String?) ?? '',
       memoryHint: (data['memoryHint'] as String?) ?? '',
-      partOfSpeech: part,
+      partsOfSpeech: parts,
       sentences: (data['sentences'] as List?)?.cast<String>() ?? <String>[],
       origin: origin,
       imageCleared: false,

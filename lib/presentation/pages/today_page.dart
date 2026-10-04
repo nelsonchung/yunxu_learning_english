@@ -1074,7 +1074,7 @@ class _DailyNewWordsSectionState extends State<_DailyNewWordsSection> {
         word: entry.word,
         meaning: entry.meaning,
         memoryHint: entry.memoryHint,
-        partOfSpeech: entry.partOfSpeech,
+        partsOfSpeech: entry.partsOfSpeech,
         sentences: _sentencesForAdd(entry),
         origin: WordOrigin.builtinWordBank,
       );

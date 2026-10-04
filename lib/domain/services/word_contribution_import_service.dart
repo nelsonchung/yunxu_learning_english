@@ -90,7 +90,7 @@ class WordContributionImportService {
         word: word,
         meaning: _readTrimmedString(map['meaning']),
         memoryHint: _readTrimmedString(map['memoryHint']),
-        partOfSpeech: _parsePartOfSpeech(map['partOfSpeech']),
+        partsOfSpeech: _parsePartsOfSpeech(map['partsOfSpeech'], map['partOfSpeech']),
         sentences: _readSentences(map['sentences']),
         origin: WordOrigin.manual,
         imageCleared: false,
@@ -144,6 +144,26 @@ class WordContributionImportService {
       return const <String>[];
     }
     return WordCard.normalizeCustomTags(value.whereType<String>());
+  }
+
+  List<PartOfSpeech> _parsePartsOfSpeech(Object? listValue, Object? singleValue) {
+    if (listValue is List) {
+      final parsed = <PartOfSpeech>[];
+      for (final item in listValue) {
+        if (item is! String) continue;
+        final v = PartOfSpeech.values.firstWhere(
+          (e) => e.name == item.trim(),
+          orElse: () => PartOfSpeech.other,
+        );
+        parsed.add(v);
+      }
+      final normalized = WordCard.normalizePartsOfSpeech(parsed);
+      if (normalized.isNotEmpty) return normalized;
+    }
+    if (singleValue is String) {
+      return [_parsePartOfSpeech(singleValue)];
+    }
+    return const [PartOfSpeech.other];
   }
 
   PartOfSpeech _parsePartOfSpeech(Object? value) {

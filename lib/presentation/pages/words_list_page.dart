@@ -39,10 +39,11 @@ class _WordsListPageState extends State<WordsListPage> {
 
   String _meaningAndPartText(WordCard card) {
     final meaning = card.meaning.trim();
+    final posLabel = card.partsOfSpeechLabel;
     if (meaning.isEmpty) {
-      return '未填中文意義 · ${card.partOfSpeech.label}';
+      return '未填中文意義 · $posLabel';
     }
-    return '$meaning · ${card.partOfSpeech.label}';
+    return '$meaning · $posLabel';
   }
 
   bool _matchesSelectedTag(WordCard card) {

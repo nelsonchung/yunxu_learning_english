@@ -274,7 +274,7 @@ class _WordBankPageState extends State<WordBankPage> {
         word: entry.word,
         meaning: entry.meaning,
         memoryHint: entry.memoryHint,
-        partOfSpeech: entry.partOfSpeech,
+        partsOfSpeech: entry.partsOfSpeech,
         sentences: _sentencesForAdd(entry),
         origin: WordOrigin.builtinWordBank,
       );
@@ -464,7 +464,7 @@ class _WordBankCard extends StatelessWidget {
     final settings = context.watch<SettingsNotifier>();
     final canSpeak =
         settings.pronunciationSupported && settings.pronunciationEnabled;
-    final partLabel = entry.partOfSpeech.label;
+    final partLabel = entry.partsOfSpeechLabel;
     final badges = entry.audienceLabels;
     final previewSentences = entry.sentences
         .map((item) => item.trim())

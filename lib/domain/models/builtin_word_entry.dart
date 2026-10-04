@@ -57,10 +57,10 @@ extension BuiltinSourceTagLabel on BuiltinSourceTag {
 }
 
 class BuiltinWordEntry {
-  const BuiltinWordEntry({
+  BuiltinWordEntry({
     required this.word,
     required this.meaning,
-    required this.partOfSpeech,
+    List<PartOfSpeech> partsOfSpeech = const [],
     required this.sentences,
     required this.sourcePage,
     required this.schoolLevels,
@@ -69,12 +69,32 @@ class BuiltinWordEntry {
     required this.sourceTags,
     this.difficultyLevel,
     this.memoryHint = '',
-  });
+    @Deprecated('Use partsOfSpeech instead') PartOfSpeech? partOfSpeech,
+  }) : partsOfSpeech = _normalizeParts(
+          partsOfSpeech.isNotEmpty
+              ? partsOfSpeech
+              : (partOfSpeech != null ? [partOfSpeech] : const [PartOfSpeech.other]),
+        );
+
+  static List<PartOfSpeech> _normalizeParts(Iterable<PartOfSpeech> raw) {
+    final seen = <String>{};
+    final normalized = <PartOfSpeech>[];
+    for (final item in raw) {
+      if (!seen.add(item.name)) continue;
+      normalized.add(item);
+    }
+    if (normalized.isEmpty) return const [PartOfSpeech.other];
+    return List<PartOfSpeech>.unmodifiable(normalized);
+  }
 
   final String word;
   final String meaning;
   final String memoryHint;
-  final PartOfSpeech partOfSpeech;
+  final List<PartOfSpeech> partsOfSpeech;
+  @Deprecated('Use partsOfSpeech')
+  PartOfSpeech get partOfSpeech =>
+      partsOfSpeech.isNotEmpty ? partsOfSpeech.first : PartOfSpeech.other;
+  String get partsOfSpeechLabel => partsOfSpeech.map((e) => e.label).join('・');
   final List<String> sentences;
   final int sourcePage;
   final List<BuiltinSchoolLevel> schoolLevels;
@@ -119,6 +139,7 @@ class BuiltinWordEntry {
         ? rawDifficultyLevel
         : null;
 
+    final parsedParts = _parsePartsOfSpeech(map['partsOfSpeech'], map['partOfSpeech']);
     return BuiltinWordEntry(
       word: _readTrimmedString(map['word']),
       meaning: _readTrimmedString(
@@ -127,7 +148,7 @@ class BuiltinWordEntry {
         separator: '；',
       ),
       memoryHint: _readTrimmedString(map['memoryHint']),
-      partOfSpeech: _parsePartOfSpeech(_readTrimmedString(map['partOfSpeech'])),
+      partsOfSpeech: parsedParts,
       sentences: parsedSentences,
       sourcePage: parsedSourcePage,
       schoolLevels: parsedSchoolLevels,
@@ -136,6 +157,28 @@ class BuiltinWordEntry {
       sourceTags: parsedSourceTags,
       difficultyLevel: parsedDifficultyLevel,
     );
+  }
+
+  static List<PartOfSpeech> _parsePartsOfSpeech(Object? rawList, Object? rawSingle) {
+    if (rawList is List) {
+      final list = <PartOfSpeech>[];
+      for (final item in rawList) {
+        if (item is! String) continue;
+        final trimmed = item.trim();
+        for (final v in PartOfSpeech.values) {
+          if (v.name == trimmed) {
+            list.add(v);
+            break;
+          }
+        }
+      }
+      final normalized = WordCard.normalizePartsOfSpeech(list);
+      if (normalized.isNotEmpty) return normalized;
+    }
+    if (rawSingle is String) {
+      return [_parsePartOfSpeech(rawSingle)];
+    }
+    return const [PartOfSpeech.other];
   }
 
   static PartOfSpeech _parsePartOfSpeech(String raw) {

@@ -103,6 +103,7 @@ class WordContributionShareService {
         .map((sentence) => sentence.trim())
         .where((sentence) => sentence.isNotEmpty)
         .toList(growable: false);
+    final normalizedParts = WordCard.normalizePartsOfSpeech(card.partsOfSpeech);
 
     return {
       'id': card.id,
@@ -110,7 +111,8 @@ class WordContributionShareService {
       'word': card.word.trim(),
       'meaning': card.meaning.trim(),
       'memoryHint': card.memoryHint.trim(),
-      'partOfSpeech': card.partOfSpeech.name,
+      'partOfSpeech': normalizedParts.first.name,
+      'partsOfSpeech': normalizedParts.map((e) => e.name).toList(growable: false),
       'sentences': cleanedSentences,
       'customTags': WordCard.normalizeCustomTags(card.customTags),
       'createdAt': card.createdAt.toUtc().toIso8601String(),
