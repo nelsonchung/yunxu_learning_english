@@ -1,3 +1,7 @@
+import 'learning_image_page.dart';
+import '../state/learning_image_notifier.dart';
+import '../../domain/models/learning_image.dart';
+import 'package:path/path.dart' as path;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -65,6 +69,7 @@ class WordDetailPage extends StatelessWidget {
               }
               final settings = context.watch<SettingsNotifier>();
               final showImages = settings.showImages;
+              final learningImages = context.watch<LearningImageNotifier?>();
               final meaning = card.meaning.trim();
               final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
               final memoryHint = card.memoryHint.trim();
@@ -111,6 +116,49 @@ class WordDetailPage extends StatelessWidget {
                                     card.imageBytes!.isNotEmpty) ||
                                 card.imagePath != null)
                               const SizedBox(height: 16),
+                          ],
+                          if (learningImages != null) ...[
+                            OutlinedButton.icon(
+                              onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute<void>(
+                                  builder: (_) =>
+                                      LearningImagePage(initialWord: card),
+                                ),
+                              ),
+                              icon: const Icon(Icons.auto_awesome),
+                              label: const Text('AI 生成學習圖卡'),
+                            ),
+                            FutureBuilder<LearningImageMetadata?>(
+                              future: learningImages.metadataFor(card.id),
+                              builder: (context, snapshot) {
+                                final metadata = snapshot.data;
+                                if (metadata == null ||
+                                    card.imagePath == null ||
+                                    path.basename(metadata.imageIdentity) !=
+                                        path.basename(card.imagePath!)) {
+                                  return const SizedBox.shrink();
+                                }
+                                return ExpansionTile(
+                                  title: const Text('AI 圖片參考來源'),
+                                  children: metadata.content.sources
+                                      .map(
+                                        (source) => ListTile(
+                                          title: Text(source.title),
+                                          trailing: const Icon(
+                                            Icons.open_in_new,
+                                          ),
+                                          onTap: () => openLearningImageSource(
+                                            context,
+                                            source.url,
+                                          ),
+                                        ),
+                                      )
+                                      .toList(),
+                                );
+                              },
+                            ),
+                            const SizedBox(height: 12),
                           ],
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,

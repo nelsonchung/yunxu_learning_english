@@ -8,6 +8,7 @@ import '../../domain/services/word_contribution_share_service.dart';
 import '../state/settings_notifier.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
+import '../widgets/ai_learning_image_settings.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -326,6 +327,8 @@ class _SettingsPageState extends State<SettingsPage> {
         return ListView(
           padding: EdgeInsets.fromLTRB(16, 20, 16, bottomPadding),
           children: [
+            const AiLearningImageSettings(),
+            const SizedBox(height: 16),
             SectionCard(
               title: '提醒功能',
               subtitle: '開啟後會在設定時間提醒複習',

@@ -8,6 +8,9 @@ import 'data/repositories/builtin_word_bank_repository.dart';
 import 'data/repositories/local_word_repository.dart';
 import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
+import 'data/storage/learning_image_store.dart';
+import 'domain/services/learning_image_service.dart';
+import 'presentation/state/learning_image_notifier.dart';
 import 'data/repositories/local_settings_repository.dart';
 import 'data/sources/settings_local_db.dart';
 import 'data/repositories/local_sync_state_repository.dart';
@@ -80,6 +83,13 @@ Future<void> main() async {
   runApp(
     MultiProvider(
       providers: [
+        ChangeNotifierProvider<LearningImageNotifier>(
+          create: (_) => LearningImageNotifier(
+            service: LearningImageService(),
+            store: HiveLearningImageStore(),
+            credentials: SecureLearningImageCredentials(),
+          )..initialize(),
+        ),
         Provider<PronunciationService>.value(value: pronunciationService),
         Provider<BuiltinWordBankRepository>.value(
           value: builtinWordBankRepository,

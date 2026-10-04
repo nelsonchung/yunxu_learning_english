@@ -83,6 +83,10 @@ extension PartOfSpeechLabel on PartOfSpeech {
   }
 }
 
+extension PartsOfSpeechLabel on List<PartOfSpeech> {
+  String get label => map((e) => e.label).join('・');
+}
+
 extension WordOriginLabel on WordOrigin {
   String get label {
     switch (this) {
@@ -114,7 +118,7 @@ class WordCard {
     required this.id,
     required this.word,
     required this.meaning,
-    required this.partOfSpeech,
+    List<PartOfSpeech> partsOfSpeech = const [],
     required this.sentences,
     required this.origin,
     required this.createdAt,
@@ -132,13 +136,22 @@ class WordCard {
     this.memoryHint = '',
     this.imagePath,
     this.imageBytes,
-  });
+    @Deprecated('Use partsOfSpeech instead') PartOfSpeech? partOfSpeech,
+  }) : partsOfSpeech = normalizePartsOfSpeech(
+         partsOfSpeech.isNotEmpty
+             ? partsOfSpeech
+             : (partOfSpeech != null ? [partOfSpeech] : const <PartOfSpeech>[]),
+       );
 
   final String id;
   final String word;
   final String meaning;
   final String memoryHint;
-  final PartOfSpeech partOfSpeech;
+  final List<PartOfSpeech> partsOfSpeech;
+  @Deprecated('Use partsOfSpeech')
+  PartOfSpeech get partOfSpeech =>
+      partsOfSpeech.isNotEmpty ? partsOfSpeech.first : PartOfSpeech.noun;
+  String get partsOfSpeechLabel => partsOfSpeech.map((e) => e.label).join('・');
   final List<String> sentences;
   final WordOrigin origin;
   final String? imagePath;
@@ -155,6 +168,23 @@ class WordCard {
   final bool imageCleared;
   final WordReviewState reviewState;
   final DateTime? masteredAt;
+
+  static List<PartOfSpeech> normalizePartsOfSpeech(
+    Iterable<PartOfSpeech> raw,
+  ) {
+    final seen = <String>{};
+    final normalized = <PartOfSpeech>[];
+    for (final item in raw) {
+      if (!seen.add(item.name)) {
+        continue;
+      }
+      normalized.add(item);
+    }
+    if (normalized.isEmpty) {
+      return const [PartOfSpeech.noun];
+    }
+    return List<PartOfSpeech>.unmodifiable(normalized);
+  }
 
   static List<String> normalizeCustomTags(Iterable<String> rawTags) {
     final normalized = <String>[];
@@ -238,7 +268,8 @@ class WordCard {
     String? word,
     String? meaning,
     String? memoryHint,
-    PartOfSpeech? partOfSpeech,
+    List<PartOfSpeech>? partsOfSpeech,
+    @Deprecated('Use partsOfSpeech') PartOfSpeech? partOfSpeech,
     List<String>? sentences,
     WordOrigin? origin,
     Object? imagePath = _unset,
@@ -256,12 +287,13 @@ class WordCard {
     WordReviewState? reviewState,
     Object? masteredAt = _unset,
   }) {
+    final nextParts = partsOfSpeech ?? (partOfSpeech != null ? [partOfSpeech] : null);
     return WordCard(
       id: id ?? this.id,
       word: word ?? this.word,
       meaning: meaning ?? this.meaning,
       memoryHint: memoryHint ?? this.memoryHint,
-      partOfSpeech: partOfSpeech ?? this.partOfSpeech,
+      partsOfSpeech: nextParts ?? this.partsOfSpeech,
       sentences: sentences ?? this.sentences,
       origin: origin ?? this.origin,
       imagePath: identical(imagePath, _unset)
@@ -297,12 +329,14 @@ class WordCard {
         : imageBytes is Uint8List
         ? imageBytes
         : Uint8List.fromList(imageBytes!);
+    final normalizedParts = normalizePartsOfSpeech(partsOfSpeech);
     return {
       'id': id,
       'word': word,
       'meaning': meaning,
       'memoryHint': memoryHint.trim(),
-      'partOfSpeech': partOfSpeech.name,
+      'partOfSpeech': normalizedParts.first.name,
+      'partsOfSpeech': normalizedParts.map((e) => e.name).toList(growable: false),
       'sentences': normalizedSentences,
       'origin': origin.name,
       'imagePath': imagePath,
@@ -325,13 +359,32 @@ class WordCard {
   }
 
   static WordCard fromMap(Map data) {
-    final partRaw = data['partOfSpeech'];
-    var parsedPart = PartOfSpeech.noun;
-    if (partRaw is String) {
-      parsedPart = PartOfSpeech.values.firstWhere(
-        (item) => item.name == partRaw,
-        orElse: () => PartOfSpeech.noun,
-      );
+    List<PartOfSpeech> parsedParts = const [];
+    final partsRaw = data['partsOfSpeech'];
+    if (partsRaw is List && partsRaw.isNotEmpty) {
+      final list = <PartOfSpeech>[];
+      for (final raw in partsRaw) {
+        if (raw is! String) continue;
+        final value = PartOfSpeech.values.firstWhere(
+          (item) => item.name == raw,
+          orElse: () => PartOfSpeech.other,
+        );
+        list.add(value);
+      }
+      if (list.isNotEmpty) {
+        parsedParts = normalizePartsOfSpeech(list);
+      }
+    }
+    if (parsedParts.isEmpty) {
+      final partRaw = data['partOfSpeech'];
+      var parsedPart = PartOfSpeech.noun;
+      if (partRaw is String) {
+        parsedPart = PartOfSpeech.values.firstWhere(
+          (item) => item.name == partRaw,
+          orElse: () => PartOfSpeech.noun,
+        );
+      }
+      parsedParts = [parsedPart];
     }
 
     final originRaw = data['origin'];
@@ -438,7 +491,7 @@ class WordCard {
       word: (data['word'] as String?) ?? '',
       meaning: (data['meaning'] as String?) ?? '',
       memoryHint: (data['memoryHint'] as String?)?.trim() ?? '',
-      partOfSpeech: parsedPart,
+      partsOfSpeech: parsedParts,
       sentences: sentences,
       origin: parsedOrigin,
       imagePath: data['imagePath'] as String?,

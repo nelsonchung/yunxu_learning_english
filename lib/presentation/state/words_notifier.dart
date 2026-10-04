@@ -47,10 +47,12 @@ class WordsNotifier extends ChangeNotifier {
   final _uuid = const Uuid();
 
   final List<WordCard> _words = [];
+  Future<void> _wordMutationQueue = Future<void>.value();
   static const int _autoSyncImageByteLimit = 20 * 1024 * 1024;
   SortMode _sortMode = SortMode.alphabetAsc;
   bool _isLoading = false;
   bool _isSyncing = false;
+  bool _isUpdatingWordImage = false;
   bool _syncQueued = false;
   bool _isBackingUp = false;
   bool _isRestoring = false;
@@ -270,7 +272,7 @@ class WordsNotifier extends ChangeNotifier {
     if (syncService == null || !_syncEnabled) {
       return false;
     }
-    if (_isSyncing) {
+    if (_isSyncing || _isUpdatingWordImage) {
       _syncQueued = true;
       return false;
     }
@@ -317,7 +319,11 @@ class WordsNotifier extends ChangeNotifier {
 
   Future<bool> restoreNow() async {
     final syncService = _syncService;
-    if (syncService == null || _isRestoring || _isBackingUp || _isSyncing) {
+    if (syncService == null ||
+        _isRestoring ||
+        _isBackingUp ||
+        _isSyncing ||
+        _isUpdatingWordImage) {
       return false;
     }
     _isRestoring = true;
@@ -471,13 +477,19 @@ class WordsNotifier extends ChangeNotifier {
   Future<void> addWord({
     required String word,
     required String meaning,
-    required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    List<PartOfSpeech> partsOfSpeech = const [],
+    @Deprecated('Use partsOfSpeech') PartOfSpeech? partOfSpeech,
     String memoryHint = '',
     List<String> customTags = const [],
     WordOrigin origin = WordOrigin.manual,
     File? imageFile,
   }) async {
+    final normalizedParts = WordCard.normalizePartsOfSpeech(
+      partsOfSpeech.isNotEmpty
+          ? partsOfSpeech
+          : (partOfSpeech != null ? [partOfSpeech] : const <PartOfSpeech>[]),
+    );
     final trimmedWord = word.trim();
     if (trimmedWord.isEmpty) {
       throw ArgumentError('word cannot be empty');
@@ -503,7 +515,7 @@ class WordsNotifier extends ChangeNotifier {
       word: trimmedWord,
       meaning: trimmedMeaning,
       memoryHint: trimmedMemoryHint,
-      partOfSpeech: partOfSpeech,
+      partsOfSpeech: normalizedParts,
       sentences: cleanedSentences,
       origin: origin,
       imageCleared: false,
@@ -561,179 +573,300 @@ class WordsNotifier extends ChangeNotifier {
     required WordCard card,
     required String word,
     required String meaning,
-    required PartOfSpeech partOfSpeech,
     required List<String> sentences,
+    List<PartOfSpeech> partsOfSpeech = const [],
+    @Deprecated('Use partsOfSpeech') PartOfSpeech? partOfSpeech,
     String memoryHint = '',
     List<String> customTags = const [],
     File? imageFile,
     bool removeImage = false,
   }) async {
-    final trimmedWord = word.trim();
-    if (trimmedWord.isEmpty) {
-      throw ArgumentError('word cannot be empty');
-    }
-
-    final cleanedSentences = sentences
-        .map((sentence) => sentence.trim())
-        .where((sentence) => sentence.isNotEmpty)
-        .toList();
-
-    final trimmedMeaning = meaning.trim();
-    final trimmedMemoryHint = memoryHint.trim();
-    final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
-
-    var legacyPath = card.imagePath;
-    var imageCleared = card.imageCleared;
-
-    if (removeImage) {
-      if (legacyPath != null) {
-        await _imageStorage.deleteImage(legacyPath);
-      }
-      legacyPath = null;
-      imageCleared = true;
-    }
-
-    if (imageFile != null) {
-      final newPath = await _imageStorage.saveImage(imageFile);
-      if (legacyPath != null) {
-        await _imageStorage.deleteImage(legacyPath);
-      }
-      legacyPath = newPath;
-      imageCleared = false;
-    } else if (!removeImage &&
-        legacyPath == null &&
-        card.imageBytes != null &&
-        card.imageBytes!.isNotEmpty) {
-      legacyPath = await _imageStorage.saveBytes(card.imageBytes!);
-      imageCleared = false;
-    }
-
-    final updated = card.copyWith(
-      word: trimmedWord,
-      meaning: trimmedMeaning,
-      memoryHint: trimmedMemoryHint,
-      partOfSpeech: partOfSpeech,
-      sentences: cleanedSentences,
-      customTags: cleanedCustomTags,
-      imageCleared: imageCleared,
-      imagePath: legacyPath,
-      imageBytes: null,
-      updatedAt: DateTime.now(),
-    );
-
-    await _repository.update(updated);
-
-    final index = _words.indexWhere((item) => item.id == card.id);
-    if (index != -1) {
-      _words[index] = updated;
-    }
-
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
-  }
-
-  Future<int> removeCustomTag(String tag) async {
-    final targetTag = tag.trim();
-    if (targetTag.isEmpty) {
-      return 0;
-    }
-
-    final now = DateTime.now();
-    final affectedCards = _words
-        .where((card) => card.customTags.contains(targetTag))
-        .toList(growable: false);
-
-    if (affectedCards.isEmpty) {
-      return 0;
-    }
-
-    for (final card in affectedCards) {
-      final updated = card.copyWith(
-        customTags: card.customTags
-            .where((item) => item != targetTag)
-            .toList(growable: false),
-        updatedAt: now,
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final normalizedParts = WordCard.normalizePartsOfSpeech(
+        partsOfSpeech.isNotEmpty
+            ? partsOfSpeech
+            : (partOfSpeech != null ? [partOfSpeech] : const <PartOfSpeech>[]),
       );
+      final trimmedWord = word.trim();
+      if (trimmedWord.isEmpty) {
+        throw ArgumentError('word cannot be empty');
+      }
+
+      final cleanedSentences = sentences
+          .map((sentence) => sentence.trim())
+          .where((sentence) => sentence.isNotEmpty)
+          .toList();
+
+      final trimmedMeaning = meaning.trim();
+      final trimmedMemoryHint = memoryHint.trim();
+      final cleanedCustomTags = WordCard.normalizeCustomTags(customTags);
+
+      var legacyPath = card.imagePath;
+      var imageCleared = card.imageCleared;
+
+      if (removeImage) {
+        if (legacyPath != null) {
+          await _imageStorage.deleteImage(legacyPath);
+        }
+        legacyPath = null;
+        imageCleared = true;
+      }
+
+      if (imageFile != null) {
+        final newPath = await _imageStorage.saveImage(imageFile);
+        if (legacyPath != null) {
+          await _imageStorage.deleteImage(legacyPath);
+        }
+        legacyPath = newPath;
+        imageCleared = false;
+      } else if (!removeImage &&
+          legacyPath == null &&
+          card.imageBytes != null &&
+          card.imageBytes!.isNotEmpty) {
+        legacyPath = await _imageStorage.saveBytes(card.imageBytes!);
+        imageCleared = false;
+      }
+
+      final updated = card.copyWith(
+        word: trimmedWord,
+        meaning: trimmedMeaning,
+        memoryHint: trimmedMemoryHint,
+        partsOfSpeech: normalizedParts,
+        sentences: cleanedSentences,
+        customTags: cleanedCustomTags,
+        imageCleared: imageCleared,
+        imagePath: legacyPath,
+        imageBytes: null,
+        updatedAt: DateTime.now(),
+      );
+
       await _repository.update(updated);
 
       final index = _words.indexWhere((item) => item.id == card.id);
       if (index != -1) {
         _words[index] = updated;
       }
-    }
 
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
+  }
 
-    return affectedCards.length;
+  Future<T> _serializeWordMutation<T>(Future<T> Function() action) async {
+    final previous = _wordMutationQueue;
+    final completion = Completer<void>();
+    _wordMutationQueue = completion.future;
+    await previous;
+    try {
+      return await action();
+    } finally {
+      completion.complete();
+    }
+  }
+
+  WordCard _requireCurrentWord(String id) {
+    final card = findById(id);
+    if (card == null || card.isDeleted) {
+      throw StateError('單字已刪除，無法套用或儲存');
+    }
+    return card;
+  }
+
+  /// Commit only the image, retaining the latest text and review state.
+  Future<void> updateWordImage(
+    String id,
+    List<int> bytes, {
+    WordCard? expectedCard,
+    bool allowImageReplacement = false,
+  }) {
+    return _serializeWordMutation(() async {
+      if (_isSyncing || _isRestoring) {
+        throw StateError('正在同步或還原單字，請完成後再套用圖片');
+      }
+      _isUpdatingWordImage = true;
+      try {
+        if (bytes.isEmpty) {
+          throw ArgumentError('圖片內容為空');
+        }
+        void checkSnapshot(WordCard current) {
+          final expected = expectedCard;
+          if (expected == null) return;
+          if (current.word != expected.word ||
+              current.meaning != expected.meaning ||
+              current.memoryHint != expected.memoryHint ||
+              !listEquals(current.partsOfSpeech, expected.partsOfSpeech) ||
+              !listEquals(current.sentences, expected.sentences)) {
+            throw StateError('單字內容已變更，請重新生成圖片');
+          }
+          if (!allowImageReplacement &&
+              (current.imagePath != expected.imagePath ||
+                  current.imageCleared != expected.imageCleared ||
+                  !listEquals(current.imageBytes, expected.imageBytes))) {
+            throw StateError('單字圖片已變更，請確認後再替換');
+          }
+        }
+
+        checkSnapshot(_requireCurrentWord(id));
+        final newPath = await _imageStorage.saveBytes(bytes, extension: '.png');
+        WordCard current;
+        WordCard updated;
+        try {
+          current = _requireCurrentWord(id);
+          checkSnapshot(current);
+          updated = current.copyWith(
+            imagePath: newPath,
+            imageBytes: null,
+            imageCleared: false,
+            updatedAt: DateTime.now(),
+          );
+          await _repository.update(updated);
+        } catch (_) {
+          try {
+            await _imageStorage.deleteImage(newPath);
+          } catch (_) {
+            // The original image and repository remain authoritative.
+          }
+          rethrow;
+        }
+        final index = _words.indexWhere((item) => item.id == id);
+        if (index != -1) _words[index] = updated;
+        notifyListeners();
+        if (canSync) unawaited(syncNow());
+        final previousPath = current.imagePath;
+        if (previousPath != null && previousPath != newPath) {
+          try {
+            await _imageStorage.deleteImage(previousPath);
+          } catch (_) {
+            // A cleanup failure must not report a committed image as unsaved.
+          }
+        }
+      } finally {
+        _isUpdatingWordImage = false;
+        if (_syncQueued && canSync && !_isSyncing) {
+          _syncQueued = false;
+          unawaited(syncNow());
+        }
+      }
+    });
+  }
+
+  Future<int> removeCustomTag(String tag) async {
+    return _serializeWordMutation(() async {
+      final targetTag = tag.trim();
+      if (targetTag.isEmpty) {
+        return 0;
+      }
+
+      final now = DateTime.now();
+      final affectedCards = _words
+          .where((card) => card.customTags.contains(targetTag))
+          .toList(growable: false);
+
+      if (affectedCards.isEmpty) {
+        return 0;
+      }
+
+      for (final card in affectedCards) {
+        final updated = card.copyWith(
+          customTags: card.customTags
+              .where((item) => item != targetTag)
+              .toList(growable: false),
+          updatedAt: now,
+        );
+        await _repository.update(updated);
+
+        final index = _words.indexWhere((item) => item.id == card.id);
+        if (index != -1) {
+          _words[index] = updated;
+        }
+      }
+
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+
+      return affectedCards.length;
+    });
   }
 
   Future<void> markReviewed(
     WordCard card, {
     ReviewRating rating = ReviewRating.good,
   }) async {
-    final now = DateTime.now();
-    final updated = _scheduleService
-        .recordReview(card, rating, now)
-        .copyWith(updatedAt: now);
-    await _repository.update(updated);
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final now = DateTime.now();
+      final updated = _scheduleService
+          .recordReview(card, rating, now)
+          .copyWith(updatedAt: now);
+      await _repository.update(updated);
 
-    final index = _words.indexWhere((item) => item.id == card.id);
-    if (index != -1) {
-      _words[index] = updated;
-    }
+      final index = _words.indexWhere((item) => item.id == card.id);
+      if (index != -1) {
+        _words[index] = updated;
+      }
 
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
   }
 
   Future<void> markMastered(WordCard card) async {
-    final updated = _scheduleService
-        .markMastered(card, DateTime.now())
-        .copyWith(updatedAt: DateTime.now());
-    await _repository.update(updated);
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final updated = _scheduleService
+          .markMastered(card, DateTime.now())
+          .copyWith(updatedAt: DateTime.now());
+      await _repository.update(updated);
 
-    final index = _words.indexWhere((item) => item.id == card.id);
-    if (index != -1) {
-      _words[index] = updated;
-    }
+      final index = _words.indexWhere((item) => item.id == card.id);
+      if (index != -1) {
+        _words[index] = updated;
+      }
 
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
   }
 
   Future<void> resumeReview(WordCard card) async {
-    final updated = _scheduleService
-        .resumeReview(card)
-        .copyWith(updatedAt: DateTime.now());
-    await _repository.update(updated);
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final updated = _scheduleService
+          .resumeReview(card)
+          .copyWith(updatedAt: DateTime.now());
+      await _repository.update(updated);
 
-    final index = _words.indexWhere((item) => item.id == card.id);
-    if (index != -1) {
-      _words[index] = updated;
-    }
+      final index = _words.indexWhere((item) => item.id == card.id);
+      if (index != -1) {
+        _words[index] = updated;
+      }
 
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
   }
 
   Future<void> deleteWord(WordCard card) async {
-    final updated = card.copyWith(isDeleted: true, updatedAt: DateTime.now());
-    await _repository.update(updated);
-    _words.removeWhere((item) => item.id == card.id);
-    notifyListeners();
-    if (canSync) {
-      unawaited(syncNow());
-    }
+    return _serializeWordMutation(() async {
+      card = _requireCurrentWord(card.id);
+      final updated = card.copyWith(isDeleted: true, updatedAt: DateTime.now());
+      await _repository.update(updated);
+      _words.removeWhere((item) => item.id == card.id);
+      notifyListeners();
+      if (canSync) {
+        unawaited(syncNow());
+      }
+    });
   }
 }
