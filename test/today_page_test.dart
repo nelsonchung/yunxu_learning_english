@@ -685,6 +685,57 @@ void main() {
     expect(find.text('正在加強困難單字'), findsNothing);
     expect(find.text('今日複習'), findsOneWidget);
   });
+
+  testWidgets('完成今日學習後會顯示已連續學習天數回饋', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(800, 1800));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final now = DateTime.now();
+    final yesterday = DateTime(now.year, now.month, now.day - 1, 10);
+    final twoDaysAgo = DateTime(now.year, now.month, now.day - 2, 10);
+    final wordsNotifier = _buildWordsNotifier(
+      initialCards: [
+        _reviewWordCard(
+          id: 'streak-due',
+          word: 'consistent',
+          nextReviewDate: yesterday,
+          history: [twoDaysAgo, yesterday],
+          reviewRatings: const [ReviewRating.good, ReviewRating.good],
+        ),
+      ],
+    );
+    await wordsNotifier.load();
+    final settingsNotifier = _buildSettingsNotifier();
+    await settingsNotifier.setDailyNewWordsEnabled(false);
+
+    await tester.pumpWidget(
+      MultiProvider(
+        providers: [
+          Provider<BuiltinWordBankRepository>.value(
+            value: _FakeBuiltinWordBankRepository(),
+          ),
+          Provider<DailyWordRecommendationService>.value(
+            value: DailyWordRecommendationService(),
+          ),
+          ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
+          ChangeNotifierProvider<SettingsNotifier>.value(
+            value: settingsNotifier,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: TodayPage())),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('連續 3 天・今日學習即可延續'), findsOneWidget);
+    expect(find.byKey(const ValueKey('streakAchievementBanner')), findsNothing);
+
+    await tester.tap(find.widgetWithText(FilledButton, '記得'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('🔥 已連續學習 4 天'), findsOneWidget);
+    expect(find.byKey(const ValueKey('streakAchievementBanner')), findsOneWidget);
+    expect(find.text('已連續學習 4 天'), findsOneWidget);
+  });
 }
 
 WordsNotifier _buildWordsNotifier({

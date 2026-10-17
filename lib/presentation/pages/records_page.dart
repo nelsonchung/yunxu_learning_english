@@ -7,6 +7,8 @@ import '../../domain/services/learning_progress_service.dart';
 import '../state/words_notifier.dart';
 import '../widgets/section_card.dart';
 
+enum _ActivityViewMode { week, month }
+
 class RecordsPage extends StatefulWidget {
   const RecordsPage({super.key});
 
@@ -15,23 +17,37 @@ class RecordsPage extends StatefulWidget {
 }
 
 class _RecordsPageState extends State<RecordsPage> {
+  _ActivityViewMode _viewMode = _ActivityViewMode.week;
   int _weekOffset = 0;
+  int _monthOffset = 0;
+  DateTime? _selectedCalendarDay;
 
   @override
   Widget build(BuildContext context) {
     return Consumer<WordsNotifier>(
       builder: (context, notifier, _) {
         final now = DateTime.now();
+        final today = DateTime(now.year, now.month, now.day);
         const progressService = LearningProgressService();
         final progress = progressService.summarize(notifier.words, now: now);
         final selectedEndDay = DateTime(
-          now.year,
-          now.month,
-          now.day,
-        ).subtract(Duration(days: _weekOffset * 7));
+          today.year,
+          today.month,
+          today.day - (_weekOffset * 7),
+        );
         final selectedDays = progressService.activityForSevenDays(
           notifier.words,
           endDay: selectedEndDay,
+          latestAllowedAt: now,
+        );
+        final selectedMonth = DateTime(
+          today.year,
+          today.month - _monthOffset,
+          1,
+        );
+        final monthActivities = progressService.activityForMonth(
+          notifier.words,
+          month: selectedMonth,
           latestAllowedAt: now,
         );
         final syncSupported = notifier.syncSupported;
@@ -55,24 +71,67 @@ class _RecordsPageState extends State<RecordsPage> {
                 children: [
                   _ProgressGrid(progress: progress),
                   const SizedBox(height: 18),
-                  _ActivityWeekHeader(
-                    days: selectedDays,
-                    isCurrentWeek: _weekOffset == 0,
-                    onPrevious: () {
+                  _ActivityViewModeTabs(
+                    mode: _viewMode,
+                    onChanged: (nextMode) {
                       setState(() {
-                        _weekOffset++;
+                        _viewMode = nextMode;
                       });
                     },
-                    onNext: _weekOffset == 0
-                        ? null
-                        : () {
-                            setState(() {
-                              _weekOffset--;
-                            });
-                          },
                   ),
-                  const SizedBox(height: 10),
-                  _ActivityWeek(days: selectedDays),
+                  const SizedBox(height: 14),
+                  if (_viewMode == _ActivityViewMode.week) ...[
+                    _ActivityWeekHeader(
+                      days: selectedDays,
+                      isCurrentWeek: _weekOffset == 0,
+                      onPrevious: () {
+                        setState(() {
+                          _weekOffset++;
+                        });
+                      },
+                      onNext: _weekOffset == 0
+                          ? null
+                          : () {
+                              setState(() {
+                                _weekOffset--;
+                              });
+                            },
+                    ),
+                    const SizedBox(height: 10),
+                    _ActivityWeek(days: selectedDays),
+                  ] else ...[
+                    _ActivityMonthHeader(
+                      month: selectedMonth,
+                      activities: monthActivities,
+                      isCurrentMonth: _monthOffset == 0,
+                      onPrevious: () {
+                        setState(() {
+                          _monthOffset++;
+                          _selectedCalendarDay = null;
+                        });
+                      },
+                      onNext: _monthOffset == 0
+                          ? null
+                          : () {
+                              setState(() {
+                                _monthOffset--;
+                                _selectedCalendarDay = null;
+                              });
+                            },
+                    ),
+                    const SizedBox(height: 10),
+                    _ActivityMonthCalendar(
+                      month: selectedMonth,
+                      activities: monthActivities,
+                      today: today,
+                      selectedDay: _selectedCalendarDay,
+                      onSelectDay: (day) {
+                        setState(() {
+                          _selectedCalendarDay = day;
+                        });
+                      },
+                    ),
+                  ],
                   const SizedBox(height: 12),
                   Text(
                     progress.latestActivityAt == null
@@ -416,6 +475,18 @@ class _ProgressGrid extends StatelessWidget {
           children: [
             _ProgressTile(
               width: width,
+              label: '目前連續',
+              value: '${progress.currentStreak}',
+              unit: '天',
+            ),
+            _ProgressTile(
+              width: width,
+              label: '最長連續',
+              value: '${progress.longestStreak}',
+              unit: '天',
+            ),
+            _ProgressTile(
+              width: width,
               label: '已掌握',
               value: '${progress.masteredWords}',
               unit: '個單字',
@@ -501,6 +572,92 @@ class _ProgressTile extends StatelessWidget {
   }
 }
 
+class _ActivityViewModeTabs extends StatelessWidget {
+  const _ActivityViewModeTabs({required this.mode, required this.onChanged});
+
+  final _ActivityViewMode mode;
+  final ValueChanged<_ActivityViewMode> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: const Color(0xFFE6EEF1),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: _TabButton(
+              buttonKey: const ValueKey('activityViewWeekTab'),
+              label: '7 天檢視',
+              selected: mode == _ActivityViewMode.week,
+              onTap: () => onChanged(_ActivityViewMode.week),
+            ),
+          ),
+          Expanded(
+            child: _TabButton(
+              buttonKey: const ValueKey('activityViewMonthTab'),
+              label: '月曆熱力圖',
+              selected: mode == _ActivityViewMode.month,
+              onTap: () => onChanged(_ActivityViewMode.month),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _TabButton extends StatelessWidget {
+  const _TabButton({
+    required this.buttonKey,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final Key buttonKey;
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      key: buttonKey,
+      behavior: HitTestBehavior.opaque,
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 180),
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: selected ? Colors.white : Colors.transparent,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: selected
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.06),
+                    blurRadius: 6,
+                    offset: const Offset(0, 2),
+                  ),
+                ]
+              : null,
+        ),
+        child: Text(
+          label,
+          style: Theme.of(context).textTheme.labelLarge?.copyWith(
+            color: selected ? const Color(0xFF0B6E99) : Colors.black54,
+            fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _ActivityWeek extends StatelessWidget {
   const _ActivityWeek({required this.days});
 
@@ -551,6 +708,257 @@ class _ActivityWeek extends StatelessWidget {
             );
           })
           .toList(growable: false),
+    );
+  }
+}
+
+class _ActivityMonthHeader extends StatelessWidget {
+  const _ActivityMonthHeader({
+    required this.month,
+    required this.activities,
+    required this.isCurrentMonth,
+    required this.onPrevious,
+    required this.onNext,
+  });
+
+  final DateTime month;
+  final List<DailyLearningActivity> activities;
+  final bool isCurrentMonth;
+  final VoidCallback onPrevious;
+  final VoidCallback? onNext;
+
+  @override
+  Widget build(BuildContext context) {
+    final activeDaysCount = activities.where((item) => item.count > 0).length;
+    final totalCount = activities.fold<int>(0, (sum, item) => sum + item.count);
+    final monthStr = month.month.toString().padLeft(2, '0');
+    return Row(
+      children: [
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${month.year} 年 $monthStr 月',
+                style: Theme.of(context).textTheme.titleSmall,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '本月活躍 $activeDaysCount 天・共 $totalCount 次學習',
+                style: Theme.of(
+                  context,
+                ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+              ),
+            ],
+          ),
+        ),
+        IconButton(
+          key: const ValueKey('previousActivityMonth'),
+          onPressed: onPrevious,
+          tooltip: '查看上個月',
+          icon: const Icon(Icons.chevron_left),
+        ),
+        IconButton(
+          key: const ValueKey('nextActivityMonth'),
+          onPressed: onNext,
+          tooltip: '查看下個月',
+          icon: const Icon(Icons.chevron_right),
+        ),
+      ],
+    );
+  }
+}
+
+class _ActivityMonthCalendar extends StatelessWidget {
+  const _ActivityMonthCalendar({
+    required this.month,
+    required this.activities,
+    required this.today,
+    required this.selectedDay,
+    required this.onSelectDay,
+  });
+
+  final DateTime month;
+  final List<DailyLearningActivity> activities;
+  final DateTime today;
+  final DateTime? selectedDay;
+  final ValueChanged<DateTime> onSelectDay;
+
+  static const _weekdayLabels = ['一', '二', '三', '四', '五', '六', '日'];
+
+  static Color _colorForCount(int count, int maxCount) {
+    if (count <= 0 || maxCount <= 0) {
+      return const Color(0xFFE6EEF1);
+    }
+    final ratio = count / maxCount;
+    if (ratio <= 0.34) {
+      return const Color(0xFF9CC8DC);
+    }
+    if (ratio <= 0.67) {
+      return const Color(0xFF4295B8);
+    }
+    return const Color(0xFF0B6E99);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final firstWeekday = DateTime(month.year, month.month, 1).weekday;
+    final leadingEmptyCount = firstWeekday - 1;
+    final maxCount = activities.fold<int>(
+      0,
+      (current, item) => item.count > current ? item.count : current,
+    );
+
+    DailyLearningActivity? selectedActivity;
+    if (selectedDay != null) {
+      for (final item in activities) {
+        if (item.day == selectedDay) {
+          selectedActivity = item;
+          break;
+        }
+      }
+    }
+
+    final totalSlots = leadingEmptyCount + activities.length;
+    final rowCount = (totalSlots / 7).ceil();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: _weekdayLabels
+              .map(
+                (label) => Expanded(
+                  child: Center(
+                    child: Text(
+                      label,
+                      style: Theme.of(
+                        context,
+                      ).textTheme.labelSmall?.copyWith(color: Colors.black54),
+                    ),
+                  ),
+                ),
+              )
+              .toList(growable: false),
+        ),
+        const SizedBox(height: 6),
+        ...List.generate(rowCount, (rowIndex) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: Row(
+              children: List.generate(7, (colIndex) {
+                final cellIndex = rowIndex * 7 + colIndex;
+                final dayIndex = cellIndex - leadingEmptyCount;
+                if (dayIndex < 0 || dayIndex >= activities.length) {
+                  return const Expanded(child: SizedBox(height: 36));
+                }
+                final activity = activities[dayIndex];
+                final isToday = activity.day == today;
+                final isSelected = activity.day == selectedDay;
+                final isFuture = activity.day.isAfter(today);
+                final bgColor = isFuture
+                    ? const Color(0xFFF3F6F8)
+                    : _colorForCount(activity.count, maxCount);
+                final isDarkBg =
+                    !isFuture &&
+                    activity.count > 0 &&
+                    maxCount > 0 &&
+                    (activity.count / maxCount) > 0.34;
+
+                return Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 2),
+                    child: GestureDetector(
+                      key: ValueKey(
+                        'calendarDay-${activity.day.year}-${activity.day.month}-${activity.day.day}',
+                      ),
+                      onTap: isFuture ? null : () => onSelectDay(activity.day),
+                      child: Container(
+                        height: 36,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: bgColor,
+                          borderRadius: BorderRadius.circular(9),
+                          border: isSelected
+                              ? Border.all(
+                                  color: const Color(0xFFD97706),
+                                  width: 2,
+                                )
+                              : isToday
+                              ? Border.all(
+                                  color: const Color(0xFF0B6E99),
+                                  width: 1.5,
+                                )
+                              : null,
+                        ),
+                        child: Text(
+                          '${activity.day.day}',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: isFuture
+                                ? Colors.black26
+                                : isDarkBg
+                                ? Colors.white
+                                : Colors.black87,
+                            fontWeight: (isToday || activity.count > 0)
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              }),
+            ),
+          );
+        }),
+        const SizedBox(height: 4),
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                selectedActivity == null
+                    ? '點選日期可查看當日學習次數'
+                    : '${selectedActivity.day.year}/${selectedActivity.day.month.toString().padLeft(2, '0')}/${selectedActivity.day.day.toString().padLeft(2, '0')}：完成 ${selectedActivity.count} 次學習',
+                style: Theme.of(
+                  context,
+                ).textTheme.bodySmall?.copyWith(color: Colors.black54),
+              ),
+            ),
+            Text(
+              '少',
+              style: Theme.of(
+                context,
+              ).textTheme.labelSmall?.copyWith(color: Colors.black45),
+            ),
+            const SizedBox(width: 4),
+            for (final color in const [
+              Color(0xFFE6EEF1),
+              Color(0xFF9CC8DC),
+              Color(0xFF4295B8),
+              Color(0xFF0B6E99),
+            ])
+              Container(
+                width: 10,
+                height: 10,
+                margin: const EdgeInsets.symmetric(horizontal: 2),
+                decoration: BoxDecoration(
+                  color: color,
+                  borderRadius: BorderRadius.circular(3),
+                ),
+              ),
+            const SizedBox(width: 4),
+            Text(
+              '多',
+              style: Theme.of(
+                context,
+              ).textTheme.labelSmall?.copyWith(color: Colors.black45),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

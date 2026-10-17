@@ -130,16 +130,117 @@ void main() {
 
     expect(activities.last.count, 1);
   });
+
+  test('calculates currentStreak and longestStreak when active today', () {
+    final now = DateTime(2026, 8, 5, 19);
+    final summary = service.summarize([
+      _card(
+        id: 'streak-card',
+        history: [
+          DateTime(2026, 7, 10, 9),
+          DateTime(2026, 7, 11, 9),
+          DateTime(2026, 7, 12, 9),
+          DateTime(2026, 7, 13, 9),
+          DateTime(2026, 8, 3, 9),
+          DateTime(2026, 8, 4, 9),
+          DateTime(2026, 8, 5, 10),
+        ],
+      ),
+    ], now: now);
+
+    expect(summary.isActiveToday, isTrue);
+    expect(summary.todayActivityCount, 1);
+    expect(summary.currentStreak, 3);
+    expect(summary.longestStreak, 4);
+  });
+
+  test('retains yesterday streak when not yet active today, and resets after gap', () {
+    final activeYesterdaySummary = service.summarize([
+      _card(
+        id: 'yesterday-card',
+        history: [
+          DateTime(2026, 8, 3, 9),
+          DateTime(2026, 8, 4, 9),
+        ],
+      ),
+    ], now: DateTime(2026, 8, 5, 9));
+
+    expect(activeYesterdaySummary.isActiveToday, isFalse);
+    expect(activeYesterdaySummary.currentStreak, 2);
+    expect(activeYesterdaySummary.longestStreak, 2);
+
+    final brokenStreakSummary = service.summarize([
+      _card(
+        id: 'gap-card',
+        history: [
+          DateTime(2026, 8, 2, 9),
+          DateTime(2026, 8, 3, 9),
+        ],
+      ),
+    ], now: DateTime(2026, 8, 5, 9));
+
+    expect(brokenStreakSummary.isActiveToday, isFalse);
+    expect(brokenStreakSummary.currentStreak, 0);
+    expect(brokenStreakSummary.longestStreak, 2);
+  });
+
+  test('counts newly added words (createdAt) as daily learning activity', () {
+    final now = DateTime(2026, 8, 5, 15);
+    final summary = service.summarize([
+      _card(
+        id: 'added-yesterday',
+        createdAt: DateTime(2026, 8, 4, 18),
+      ),
+      _card(
+        id: 'added-today',
+        createdAt: DateTime(2026, 8, 5, 12),
+      ),
+    ], now: now);
+
+    expect(summary.isActiveToday, isTrue);
+    expect(summary.todayActivityCount, 1);
+    expect(summary.currentStreak, 2);
+    expect(summary.longestStreak, 2);
+  });
+
+  test('returns daily activities for a full calendar month', () {
+    final activities = service.activityForMonth(
+      [
+        _card(
+          id: 'month-card',
+          createdAt: DateTime(2026, 2, 1, 9),
+          history: [
+            DateTime(2026, 2, 1, 14),
+            DateTime(2026, 2, 15, 10),
+            DateTime(2026, 2, 28, 20),
+            DateTime(2026, 3, 1, 8),
+          ],
+        ),
+      ],
+      month: DateTime(2026, 2, 10),
+      latestAllowedAt: DateTime(2026, 2, 28, 21),
+    );
+
+    expect(activities, hasLength(28));
+    expect(activities.first.day, DateTime(2026, 2, 1));
+    expect(activities.first.count, 2);
+    expect(activities[14].day, DateTime(2026, 2, 15));
+    expect(activities[14].count, 1);
+    expect(activities.last.day, DateTime(2026, 2, 28));
+    expect(activities.last.count, 1);
+  });
 }
 
 WordCard _card({
   required String id,
+  DateTime? createdAt,
   List<DateTime> history = const [],
   List<ReviewRating> reviewRatings = const [],
   WordReviewState reviewState = WordReviewState.active,
   DateTime? masteredAt,
 }) {
-  final createdAt = DateTime(2026, 1, 1);
+  final effectiveCreatedAt =
+      createdAt ?? DateTime.fromMillisecondsSinceEpoch(0);
   return WordCard(
     id: id,
     word: id,
@@ -147,11 +248,11 @@ WordCard _card({
     partOfSpeech: PartOfSpeech.noun,
     sentences: const ['Example sentence.'],
     origin: WordOrigin.manual,
-    createdAt: createdAt,
-    updatedAt: createdAt,
+    createdAt: effectiveCreatedAt,
+    updatedAt: effectiveCreatedAt,
     reviewSchedule: const [1, 2, 3],
     nextReviewIndex: 0,
-    nextReviewDate: createdAt,
+    nextReviewDate: effectiveCreatedAt,
     history: history,
     reviewRatings: reviewRatings,
     isDeleted: false,

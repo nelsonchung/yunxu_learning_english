@@ -10,6 +10,7 @@ import '../../data/repositories/builtin_word_bank_repository.dart';
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
 import '../../domain/services/daily_word_recommendation_service.dart';
+import '../../domain/services/learning_progress_service.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
@@ -68,6 +69,8 @@ class _TodayPageState extends State<TodayPage> {
 
         final now = DateTime.now();
         _resetSessionForNewDay(now);
+        const progressService = LearningProgressService();
+        final progress = progressService.summarize(notifier.words, now: now);
         final dueList = notifier.dueOnOrBefore(now);
         final reviewQueue = notifier.reviewQueueFor(now);
         final difficultPracticeQueue = notifier.difficultPracticeQueueFor(now);
@@ -111,6 +114,8 @@ class _TodayPageState extends State<TodayPage> {
               total: isDifficultPractice
                   ? difficultPracticeReviews.length
                   : reviewQueue.length,
+              streakDays: progress.currentStreak,
+              isActiveToday: progress.isActiveToday,
             ),
             const SizedBox(height: 16),
             if (isDifficultPractice) ...[
@@ -148,12 +153,23 @@ class _TodayPageState extends State<TodayPage> {
               const SizedBox(height: 16),
             ],
             if (isDifficultPractice && visibleReviews.isEmpty)
-              _DifficultPracticeCompleteCard(onDone: _finishDifficultPractice)
+              _DifficultPracticeCompleteCard(
+                onDone: _finishDifficultPractice,
+                streakDays: progress.currentStreak,
+                isActiveToday: progress.isActiveToday,
+              )
             else if (!isDifficultPractice && availableToday == 0)
-              const _EmptyState()
+              _EmptyState(
+                streakDays: progress.currentStreak,
+                isActiveToday: progress.isActiveToday,
+              )
             else ...[
               if (!isDifficultPractice && !quickGoalComplete) ...[
-                _QuickStartNotice(count: math.max(0, quickGoal - handledToday)),
+                _QuickStartNotice(
+                  count: math.max(0, quickGoal - handledToday),
+                  streakDays: progress.currentStreak,
+                  isActiveToday: progress.isActiveToday,
+                ),
                 const SizedBox(height: 16),
               ],
               if (!isDifficultPractice && quickGoalComplete) ...[
@@ -165,6 +181,8 @@ class _TodayPageState extends State<TodayPage> {
                   dailyGoalComplete: dailyGoalComplete,
                   isComebackMode: isComebackMode,
                   continueCount: math.min(_reviewBatchSize, reviewQueue.length),
+                  streakDays: progress.currentStreak,
+                  isActiveToday: progress.isActiveToday,
                   onContinue: canContinue
                       ? () {
                           setState(() {
@@ -274,7 +292,11 @@ class _TodayPageState extends State<TodayPage> {
                   ),
                 ),
               ),
-              if (!isDifficultPractice && dueList.isEmpty) const _EmptyState(),
+              if (!isDifficultPractice && dueList.isEmpty)
+                _EmptyState(
+                  streakDays: progress.currentStreak,
+                  isActiveToday: progress.isActiveToday && !quickGoalComplete,
+                ),
             ],
           ],
         );
@@ -367,9 +389,15 @@ class _DifficultPracticeSessionCard extends StatelessWidget {
 }
 
 class _DifficultPracticeCompleteCard extends StatelessWidget {
-  const _DifficultPracticeCompleteCard({required this.onDone});
+  const _DifficultPracticeCompleteCard({
+    required this.onDone,
+    this.streakDays = 0,
+    this.isActiveToday = false,
+  });
 
   final VoidCallback onDone;
+  final int streakDays;
+  final bool isActiveToday;
 
   @override
   Widget build(BuildContext context) {
@@ -377,22 +405,37 @@ class _DifficultPracticeCompleteCard extends StatelessWidget {
       title: '專項練習完成',
       subtitle: '這一輪需要加強的單字都處理完了',
       trailing: const Icon(Icons.verified_outlined, color: Color(0xFF0B6E99)),
-      child: SizedBox(
-        width: double.infinity,
-        child: FilledButton.icon(
-          onPressed: onDone,
-          icon: const Icon(Icons.arrow_back_rounded),
-          label: const Text('回到今日複習'),
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (isActiveToday && streakDays > 0) ...[
+            _StreakAchievementBanner(streakDays: streakDays),
+            const SizedBox(height: 12),
+          ],
+          SizedBox(
+            width: double.infinity,
+            child: FilledButton.icon(
+              onPressed: onDone,
+              icon: const Icon(Icons.arrow_back_rounded),
+              label: const Text('回到今日複習'),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
 class _QuickStartNotice extends StatelessWidget {
-  const _QuickStartNotice({required this.count});
+  const _QuickStartNotice({
+    required this.count,
+    this.streakDays = 0,
+    this.isActiveToday = false,
+  });
 
   final int count;
+  final int streakDays;
+  final bool isActiveToday;
 
   @override
   Widget build(BuildContext context) {
@@ -400,7 +443,16 @@ class _QuickStartNotice extends StatelessWidget {
       title: '先完成兩分鐘任務',
       subtitle: '今天只要先接觸幾個單字，就算成功開始',
       trailing: const Icon(Icons.timer_outlined, color: Color(0xFF0B6E99)),
-      child: Text('再複習 $count 個，就完成今天的最低任務。'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('再複習 $count 個，就完成今天的最低任務。'),
+          if (isActiveToday && streakDays > 0) ...[
+            const SizedBox(height: 10),
+            _StreakAchievementBanner(streakDays: streakDays),
+          ],
+        ],
+      ),
     );
   }
 }
@@ -434,6 +486,8 @@ class _QuickGoalCompleteCard extends StatelessWidget {
     required this.dailyGoalComplete,
     required this.isComebackMode,
     required this.continueCount,
+    this.streakDays = 0,
+    this.isActiveToday = false,
     this.onContinue,
   });
 
@@ -444,6 +498,8 @@ class _QuickGoalCompleteCard extends StatelessWidget {
   final bool dailyGoalComplete;
   final bool isComebackMode;
   final int continueCount;
+  final int streakDays;
+  final bool isActiveToday;
   final VoidCallback? onContinue;
 
   @override
@@ -468,9 +524,17 @@ class _QuickGoalCompleteCard extends StatelessWidget {
         Icons.celebration_outlined,
         color: Color(0xFF0B6E99),
       ),
-      child: onContinue == null
-          ? const Text('休息也算完成；想多學一點時再回來。')
-          : SizedBox(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (isActiveToday && streakDays > 0) ...[
+            _StreakAchievementBanner(streakDays: streakDays),
+            const SizedBox(height: 12),
+          ],
+          if (onContinue == null)
+            const Text('休息也算完成；想多學一點時再回來。')
+          else
+            SizedBox(
               width: double.infinity,
               child: FilledButton.icon(
                 onPressed: onContinue,
@@ -482,17 +546,89 @@ class _QuickGoalCompleteCard extends StatelessWidget {
                 ),
               ),
             ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StreakAchievementBanner extends StatelessWidget {
+  const _StreakAchievementBanner({required this.streakDays});
+
+  final int streakDays;
+
+  @override
+  Widget build(BuildContext context) {
+    final encouragement = streakDays <= 1
+        ? '今天已完成學習打卡，好的開始！'
+        : streakDays < 7
+        ? '每天持續累積，記憶越來越穩固！'
+        : '太棒了！你已養成穩定的每日學習習慣！';
+
+    return Container(
+      key: const ValueKey('streakAchievementBanner'),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: const Color(0xFFD97706).withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: const Color(0xFFD97706).withValues(alpha: 0.28),
+        ),
+      ),
+      child: Row(
+        children: [
+          const Icon(
+            Icons.local_fire_department_rounded,
+            color: Color(0xFFD97706),
+            size: 22,
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '已連續學習 $streakDays 天',
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    color: const Color(0xFF92400E),
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  encouragement,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: const Color(0xFF92400E).withValues(alpha: 0.85),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
 
 class _HeroHeader extends StatelessWidget {
-  const _HeroHeader({required this.total});
+  const _HeroHeader({
+    required this.total,
+    this.streakDays = 0,
+    this.isActiveToday = false,
+  });
 
   final int total;
+  final int streakDays;
+  final bool isActiveToday;
 
   @override
   Widget build(BuildContext context) {
+    final streakLabel = isActiveToday
+        ? '🔥 已連續學習 $streakDays 天'
+        : streakDays > 0
+        ? '⏳ 連續 $streakDays 天・今日學習即可延續'
+        : null;
+
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -540,6 +676,30 @@ class _HeroHeader extends StatelessWidget {
                   '依照遺忘曲線安排的複習卡片',
                   style: TextStyle(color: Colors.white70, fontSize: 13),
                 ),
+                if (streakLabel != null) ...[
+                  const SizedBox(height: 10),
+                  Container(
+                    key: const ValueKey('heroStreakBadge'),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 5,
+                    ),
+                    decoration: BoxDecoration(
+                      color: isActiveToday
+                          ? Colors.white.withValues(alpha: 0.24)
+                          : Colors.black.withValues(alpha: 0.16),
+                      borderRadius: BorderRadius.circular(999),
+                    ),
+                    child: Text(
+                      streakLabel,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 6,
@@ -591,7 +751,10 @@ class _Pill extends StatelessWidget {
 }
 
 class _EmptyState extends StatelessWidget {
-  const _EmptyState();
+  const _EmptyState({this.streakDays = 0, this.isActiveToday = false});
+
+  final int streakDays;
+  final bool isActiveToday;
 
   @override
   Widget build(BuildContext context) {
@@ -608,19 +771,28 @@ class _EmptyState extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              color: const Color(0xFF0B6E99).withValues(alpha: 0.15),
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: const Icon(Icons.check_circle, color: Color(0xFF0B6E99)),
+          Row(
+            children: [
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF0B6E99).withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: const Icon(Icons.check_circle, color: Color(0xFF0B6E99)),
+              ),
+              const SizedBox(width: 12),
+              const Expanded(child: Text('今天沒有需要複習的單字，做得很好！')),
+            ],
           ),
-          const SizedBox(width: 12),
-          const Expanded(child: Text('今天沒有需要複習的單字，做得很好！')),
+          if (isActiveToday && streakDays > 0) ...[
+            const SizedBox(height: 12),
+            _StreakAchievementBanner(streakDays: streakDays),
+          ],
         ],
       ),
     );
