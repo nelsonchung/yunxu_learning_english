@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:path/path.dart' as path;
 
+import '../../domain/services/online_picture_service.dart';
 import '../../domain/services/pronunciation_service.dart';
 import '../../domain/models/word_card.dart';
 import '../../domain/models/learning_image.dart';
@@ -12,6 +13,7 @@ import 'learning_image_page.dart';
 import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/image_preview.dart';
+import '../widgets/online_picture_button.dart';
 import '../widgets/section_card.dart';
 
 class WordDetailPage extends StatelessWidget {
@@ -70,6 +72,7 @@ class WordDetailPage extends StatelessWidget {
               final settings = context.watch<SettingsNotifier>();
               final showImages = settings.showImages;
               final learningImages = context.watch<LearningImageNotifier?>();
+              final onlinePictures = context.watch<OnlinePictureService?>();
               final meaning = card.meaning.trim();
               final meaningText = meaning.isEmpty ? '未填中文意義' : meaning;
               final memoryHint = card.memoryHint.trim();
@@ -117,6 +120,12 @@ class WordDetailPage extends StatelessWidget {
                                 card.imagePath != null)
                               const SizedBox(height: 16),
                           ],
+                          if (onlinePictures != null)
+                            OnlinePictureButton(
+                              key: ValueKey(card.id),
+                              card: card,
+                              service: onlinePictures,
+                            ),
                           if (learningImages != null) ...[
                             OutlinedButton.icon(
                               onPressed: () => Navigator.push(

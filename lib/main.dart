@@ -24,6 +24,8 @@ import 'domain/services/install_state_service.dart';
 import 'domain/services/pronunciation_service.dart';
 import 'domain/services/word_contribution_import_service.dart';
 import 'domain/services/word_contribution_share_service.dart';
+import 'data/storage/picture_catalog_store.dart';
+import 'domain/services/online_picture_service.dart';
 import 'presentation/theme/app_theme.dart';
 import 'presentation/pages/add_word_page.dart';
 import 'presentation/pages/edit_word_page.dart';
@@ -83,6 +85,17 @@ Future<void> main() async {
   runApp(
     MultiProvider(
       providers: [
+        Provider<OnlinePictureService>(
+          create: (_) {
+            final store = PictureCatalogStore();
+            return OnlinePictureService(
+              readCache: store.read,
+              writeCache: store.write,
+              saveSource: store.saveSource,
+            );
+          },
+          dispose: (_, service) => service.dispose(),
+        ),
         ChangeNotifierProvider<LearningImageNotifier>(
           create: (_) => LearningImageNotifier(
             service: LearningImageService(),
