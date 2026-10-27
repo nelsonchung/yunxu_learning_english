@@ -19,6 +19,35 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  testWidgets('單字列表預設依建立時間由新到舊，仍可切換為字母排序', (tester) async {
+    final notifier = await _pumpWordsListPage(
+      tester,
+      initialCards: [
+        _wordCard(id: '1', word: 'apple', meaning: '蘋果').copyWith(
+          createdAt: DateTime(2026, 10, 1),
+        ),
+        _wordCard(id: '2', word: 'zebra', meaning: '斑馬').copyWith(
+          createdAt: DateTime(2026, 10, 2),
+        ),
+      ],
+    );
+
+    expect(notifier.sortMode, SortMode.createdAtDesc);
+    expect(
+      tester.getTopLeft(find.text('zebra')).dy,
+      lessThan(tester.getTopLeft(find.text('apple')).dy),
+    );
+
+    await tester.tap(find.text('A → Z'));
+    await tester.pumpAndSettle();
+
+    expect(notifier.sortMode, SortMode.alphabetAsc);
+    expect(
+      tester.getTopLeft(find.text('apple')).dy,
+      lessThan(tester.getTopLeft(find.text('zebra')).dy),
+    );
+  });
+
   testWidgets('搜尋英文單字會只顯示符合 word 的卡片', (tester) async {
     await _pumpWordsListPage(
       tester,

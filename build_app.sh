@@ -24,6 +24,34 @@ run_macos_pod_install() {
     )
 }
 
+run_ios_pod_install() {
+    (
+        cd ios || exit 1
+        LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 pod install
+    )
+}
+
+run_ios_release() {
+    # Simulator builds share build/native_assets/ios with device builds.
+    # Explicitly build for a physical device before installing the resulting app.
+    flutter build ios --release --dart-define=ENABLE_IOS_CLOUD_SYNC=false &&
+    flutter run --release --use-application-binary=build/ios/iphoneos/YunxuLearn.app
+}
+
+clean_and_run_ios_release() {
+    if [ ! -f "ios/Podfile" ]; then
+        echo -e "${RED}錯誤: 找不到 ios/Podfile，請確認此專案使用 iOS CocoaPods${NC}"
+        return 1
+    fi
+
+    echo -e "${YELLOW}適用於升級 macOS / Xcode 後重新建置 iOS App，首次編譯可能較久${NC}"
+    echo -e "${YELLOW}請連接 iPhone 並開啟開發者模式；若出現裝置選單，請選擇 iPhone${NC}"
+    flutter clean &&
+    flutter pub get &&
+    run_ios_pod_install &&
+    run_ios_release
+}
+
 current_project_version() {
     sed -nE 's/^version:[[:space:]]*([^[:space:]]+).*/\1/p' pubspec.yaml | head -n 1
 }
@@ -70,6 +98,7 @@ show_menu() {
     echo "14) macOS DMG (build + package)"
     echo "15) 產生 Android upload keystore"
     echo "16) 準備下一個 Google Play 版本"
+    echo "17) iOS 清理並 Release 執行 (clean + pub get + iOS pod install + run)"
     echo "---------------------------------------"
     echo "q) 退出 (Quit)"
     echo -ne "${BLUE}請輸入選項: ${NC}"
@@ -89,7 +118,7 @@ while true; do
         8)
             echo -e "${YELLOW}提示: 請確保 iPhone 已連線並開啟開發者模式${NC}"
             echo -e "${YELLOW}提示: Personal Team 不支援 iCloud capability，此版本會停用 iCloud 同步功能${NC}"
-            flutter run --release ;;
+            run_ios_release ;;
         9) flutter run -d macos --release ;;
         10) flutter run -d macos ;;
         11)
@@ -107,6 +136,7 @@ while true; do
         14) ./build_dmg.sh ;;
         15) ./tools/generate_android_keystore.sh ;;
         16) ./tools/prepare_google_play_release.sh ;;
+        17) clean_and_run_ios_release ;;
         q) echo "離開程式..."; exit 0 ;;
         *) echo -e "${RED}無效選項${NC}" ;;
     esac

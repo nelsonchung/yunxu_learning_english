@@ -49,7 +49,7 @@ class WordsNotifier extends ChangeNotifier {
   final List<WordCard> _words = [];
   Future<void> _wordMutationQueue = Future<void>.value();
   static const int _autoSyncImageByteLimit = 20 * 1024 * 1024;
-  SortMode _sortMode = SortMode.alphabetAsc;
+  SortMode _sortMode = SortMode.createdAtDesc;
   bool _isLoading = false;
   bool _isSyncing = false;
   bool _isUpdatingWordImage = false;
