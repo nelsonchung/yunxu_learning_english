@@ -9476,11 +9476,11 @@
   },
   {
     "word": "illegibility",
-    "meaning": "難以辨認；書寫潦草、難以閱讀的狀態",
+    "meaning": "（字跡或印刷文字的）模糊難辨；難以辨讀的狀態",
     "partOfSpeech": "noun",
     "sentences": [
-      "The illegibility of the doctor's handwriting on the prescription caused confusion at the pharmacy. 醫師在處方上潦草書寫的難以辨認導致了藥房的混亂。",
-      "Modern word processors have largely eliminated the illegibility problems associated with handwritten documents. 現代文字處理器在很大程度上消除了與手寫文件相關的難以辨認問題。"
+      "The illegibility of the handwritten note made it impossible to read the address. 手寫便條上的字跡難以辨認，讓人無法讀出地址。",
+      "The illegibility of the faded text made the old letter difficult to read. 那封舊信上的文字因褪色而模糊難辨，讀起來很吃力。"
     ],
     "audienceTags": [
       "general"
@@ -9488,11 +9488,11 @@
   },
   {
     "word": "illegible",
-    "meaning": "難以辨認的；書寫潦草到無法閱讀的",
+    "meaning": "（字跡或印刷文字）難以辨認的；模糊到無法辨讀的",
     "partOfSpeech": "adjective",
     "sentences": [
-      "Her handwriting was so illegible that she had to type all her notes for others to read. 她的筆跡如此難以辨認，以至於她必須把所有的筆記都打印出來供他人閱讀。",
-      "The ancient manuscript was illegible in places where water damage had blurred the ink. 古代手稿在水損使墨水模糊的地方無法辨認。"
+      "His handwriting was so illegible that I had to ask him to read the note aloud. 他的字跡太難辨認，我只好請他把便條念出來。",
+      "Water had blurred the ink, leaving parts of the letter illegible. 水把墨跡暈開了，導致信上有些文字無法辨讀。"
     ],
     "audienceTags": [
       "general"
@@ -9500,11 +9500,11 @@
   },
   {
     "word": "illegibleness",
-    "meaning": "難以辨認的性質；書寫潦草的狀態",
+    "meaning": "（字跡或印刷文字的）模糊難辨；難以辨讀的狀態，同 illegibility",
     "partOfSpeech": "noun",
     "sentences": [
-      "The illegibleness of the inscription made it impossible to determine what the tablet originally said. 銘文的難以辨認使得無法確定石板最初說了什麼。",
-      "He joked about the famous illegibleness of his handwriting, saying even he couldn't read his own notes. 他開玩笑地談到他的筆跡著名的難以辨認，說連他自己都無法閱讀自己的筆記。"
+      "The illegibleness of the signature made it hard to identify the sender. 簽名字跡難以辨認，讓人很難確認寄件者是誰。",
+      "The illegibleness of the text in the photocopy forced us to consult the original. 影本上的文字模糊難辨，我們只好查閱原件。"
     ],
     "audienceTags": [
       "general"
@@ -9512,11 +9512,11 @@
   },
   {
     "word": "illegibly",
-    "meaning": "難以辨認地；以無法閱讀的方式書寫地",
+    "meaning": "（書寫或印刷）模糊難辨地；讓人無法辨讀地",
     "partOfSpeech": "adverb",
     "sentences": [
-      "He wrote his address so illegibly that the courier attempted delivery at three wrong houses. 他的地址寫得如此難以辨認，以至於快遞員試圖在三個錯誤的房子送貨。",
-      "The graffiti was scrawled illegibly across the wall, its message unreadable. 塗鴉以難以辨認的方式潦草地寫在牆上，其信息無法閱讀。"
+      "He wrote his phone number so illegibly that I could not tell a three from an eight. 他的電話號碼寫得太難辨認，我分不清其中一個數字是三還是八。",
+      "The address was printed illegibly on the label, so the package could not be delivered. 標籤上的地址印得模糊難辨，因此包裹無法送達。"
     ],
     "audienceTags": [
       "general"
