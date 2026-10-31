@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../data/storage/learning_image_store.dart';
 import '../../domain/models/learning_image.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/models/sentence_level.dart';
 import '../../domain/services/learning_image_service.dart';
 
 class LearningImageNotifier extends ChangeNotifier {
@@ -123,7 +124,10 @@ class LearningImageNotifier extends ChangeNotifier {
     _notify();
   }
 
-  Future<void> _run(Future<void> Function(String key) action) async {
+  Future<void> _run(
+    Future<void> Function(String key) action, {
+    bool updateStage = true,
+  }) async {
     if (isBusy || _disposed) return;
     _active = true;
     _cancelled = false;
@@ -141,20 +145,20 @@ class LearningImageNotifier extends ChangeNotifier {
       if (!_cancelled) {
         await _finishAttempt('timedOut');
         error = '請求逾時，費用可能仍已產生。請手動重試。';
-        stage = LearningImageStage.failed;
+        if (updateStage) stage = LearningImageStage.failed;
         _cancelled = true;
       }
     } on LearningImageException catch (e) {
       if (!_cancelled) {
         await _finishAttempt('failed');
         error = e.message;
-        stage = LearningImageStage.failed;
+        if (updateStage) stage = LearningImageStage.failed;
       }
     } catch (_) {
       if (!_cancelled) {
         await _finishAttempt('failed');
         error = '無法完成生成，請檢查網路與本機儲存後手動重試。費用可能已產生。';
-        stage = LearningImageStage.failed;
+        if (updateStage) stage = LearningImageStage.failed;
       }
     } finally {
       _runningAttemptId = null;
@@ -173,14 +177,17 @@ class LearningImageNotifier extends ChangeNotifier {
         .timeout(_service.timeout);
   }
 
-  Future<LearningImageUsageCallback> _beginAttempt(String model) async {
+  Future<LearningImageUsageCallback> _beginAttempt(
+    String model, {
+    WordCard? word,
+  }) async {
     final attempt = LearningImageAttempt(
       id: '${DateTime.now().microsecondsSinceEpoch}-${_sequence++}',
       model: model,
       createdAt: DateTime.now(),
-      wordId: sourceWord?.id,
-      word: sourceWord?.word,
-      generationId: _generationId,
+      wordId: (word ?? sourceWord)?.id,
+      word: (word ?? sourceWord)?.word,
+      generationId: word == null ? _generationId : null,
       outcome: 'inProgress',
     );
     await _store.putAttempt(
@@ -193,7 +200,7 @@ class LearningImageNotifier extends ChangeNotifier {
       _attempts[existing] = attempt;
     }
     _runningAttemptId = attempt.id;
-    _currentIds.add(attempt.id);
+    if (word == null) _currentIds.add(attempt.id);
     _notify();
     return (requestId, usage, searches) async {
       final latest = _attempts.firstWhere((a) => a.id == attempt.id);
@@ -251,6 +258,28 @@ class LearningImageNotifier extends ChangeNotifier {
     _attempts[index] = skipped;
     await _store.putAttempt(skipped);
     _notify();
+  }
+
+  Future<List<String>?> generateSentences(
+    WordCard word,
+    SentenceLevel level,
+  ) async {
+    if (isBusy) return null;
+    List<String>? sentences;
+    await _run((key) async {
+      final record = await _beginAttempt('gpt-5.4-mini', word: word);
+      if (_cancelled) {
+        await _markNotSent();
+        return;
+      }
+      final result = await _phase(
+        _service.generateSentences(word, level, key, record),
+      );
+      if (_cancelled) return;
+      await _finishAttempt('succeeded');
+      if (!_cancelled) sentences = result;
+    }, updateStage: false);
+    return sentences;
   }
 
   Future<void> start(WordCard word) async {

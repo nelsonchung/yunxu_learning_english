@@ -14,6 +14,7 @@ import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/image_preview.dart';
 import '../widgets/online_picture_button.dart';
+import '../widgets/ai_sentence_button.dart';
 import '../widgets/section_card.dart';
 
 class WordDetailPage extends StatelessWidget {
@@ -120,24 +121,53 @@ class WordDetailPage extends StatelessWidget {
                                 card.imagePath != null)
                               const SizedBox(height: 16),
                           ],
-                          if (onlinePictures != null)
-                            OnlinePictureButton(
-                              key: ValueKey(card.id),
-                              card: card,
-                              service: onlinePictures,
+                          if (onlinePictures != null || learningImages != null)
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (onlinePictures != null)
+                                  Expanded(
+                                    child: OnlinePictureButton(
+                                      key: ValueKey(card.id),
+                                      card: card,
+                                      service: onlinePictures,
+                                      compact: true,
+                                    ),
+                                  ),
+                                if (onlinePictures != null &&
+                                    learningImages != null)
+                                  const SizedBox(width: 8),
+                                if (learningImages != null)
+                                  Expanded(
+                                    child: OutlinedButton.icon(
+                                      style: OutlinedButton.styleFrom(
+                                        minimumSize: const Size(0, 64),
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 8,
+                                        ),
+                                      ),
+                                      onPressed: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute<void>(
+                                          builder: (_) => LearningImagePage(
+                                            initialWord: card,
+                                          ),
+                                        ),
+                                      ),
+                                      icon: const Icon(
+                                        Icons.auto_awesome,
+                                        size: 18,
+                                      ),
+                                      label: const Text(
+                                        'AI 生成學習圖卡',
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ),
+                              ],
                             ),
                           if (learningImages != null) ...[
-                            OutlinedButton.icon(
-                              onPressed: () => Navigator.push(
-                                context,
-                                MaterialPageRoute<void>(
-                                  builder: (_) =>
-                                      LearningImagePage(initialWord: card),
-                                ),
-                              ),
-                              icon: const Icon(Icons.auto_awesome),
-                              label: const Text('AI 生成學習圖卡'),
-                            ),
                             FutureBuilder<LearningImageMetadata?>(
                               future: learningImages.metadataFor(card.id),
                               builder: (context, snapshot) {
@@ -383,6 +413,7 @@ class WordDetailPage extends StatelessWidget {
                   const SizedBox(height: 16),
                   SectionCard(
                     title: '例句',
+                    trailing: AiSentenceButton(card: card),
                     subtitle: '共 ${card.sentences.length} 句',
                     child: card.sentences.isEmpty
                         ? const Text('尚未填寫例句')

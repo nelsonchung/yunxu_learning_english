@@ -12,7 +12,9 @@ class OnlinePictureButton extends StatefulWidget {
     super.key,
     required this.card,
     required this.service,
+    this.compact = false,
   });
+  final bool compact;
   final WordCard card;
   final OnlinePictureService service;
 
@@ -111,9 +113,17 @@ class _OnlinePictureButtonState extends State<OnlinePictureButton> {
 
   @override
   Widget build(BuildContext context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
+    crossAxisAlignment: widget.compact
+        ? CrossAxisAlignment.stretch
+        : CrossAxisAlignment.start,
     children: [
       OutlinedButton.icon(
+        style: widget.compact
+            ? OutlinedButton.styleFrom(
+                minimumSize: const Size(0, 64),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              )
+            : null,
         onPressed: _busy ? null : _download,
         icon: _busy
             ? const SizedBox(
@@ -121,8 +131,11 @@ class _OnlinePictureButtonState extends State<OnlinePictureButton> {
                 height: 18,
                 child: CircularProgressIndicator(strokeWidth: 2),
               )
-            : const Icon(Icons.cloud_download_outlined),
-        label: Text(_busy ? '正在取得線上圖片…' : '下載線上圖片'),
+            : const Icon(Icons.cloud_download_outlined, size: 18),
+        label: Text(
+          _busy ? '正在取得線上圖片…' : '下載線上圖片',
+          textAlign: TextAlign.center,
+        ),
       ),
       if (_message != null)
         Padding(

@@ -655,6 +655,32 @@ class WordsNotifier extends ChangeNotifier {
     });
   }
 
+  Future<void> appendGeneratedSentences(
+    WordCard expected,
+    List<String> sentences,
+  ) {
+    return _serializeWordMutation(() async {
+      final current = _requireCurrentWord(expected.id);
+      if (current.word != expected.word ||
+          current.meaning != expected.meaning ||
+          !listEquals(current.partsOfSpeech, expected.partsOfSpeech)) {
+        throw StateError('單字詞義已變更，請重新生成例句');
+      }
+      final combined = {
+        ...current.sentences,
+        ...sentences.map((s) => s.trim()).where((s) => s.isNotEmpty),
+      }.toList();
+      final updated = current.copyWith(
+        sentences: combined,
+        updatedAt: DateTime.now(),
+      );
+      await _repository.update(updated);
+      _words[_words.indexWhere((item) => item.id == current.id)] = updated;
+      notifyListeners();
+      if (canSync) unawaited(syncNow());
+    });
+  }
+
   Future<T> _serializeWordMutation<T>(Future<T> Function() action) async {
     final previous = _wordMutationQueue;
     final completion = Completer<void>();

@@ -1,3 +1,12 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
+import 'package:yunxu_learning_english/domain/services/learning_image_service.dart';
+import 'package:yunxu_learning_english/domain/services/online_picture_service.dart';
+import 'package:yunxu_learning_english/presentation/state/learning_image_notifier.dart';
+import 'learning_image_test.dart' show MemoryCredentials, MemoryStore;
+import 'sentence_generation_test.dart' show response;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +27,148 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
+  for (final width in [375.0, 800.0]) {
+    testWidgets('圖片按鈕並排，依程度生成預覽後才新增例句 width=$width', (tester) async {
+      tester.view.physicalSize = Size(width, 900);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final card = _wordCard(id: 'sentence-word', word: 'chirp');
+      final words = _buildWordsNotifier(initialCards: [card]);
+      await words.load();
+      var requests = 0;
+      final regenerated = Completer<http.Response>();
+      final ai = LearningImageNotifier(
+        service: LearningImageService(
+          client: MockClient((request) async {
+            requests++;
+            if (requests == 2) {
+              final input =
+                  jsonDecode(jsonDecode(request.body)['input']) as Map;
+              expect(input['level'], '國小');
+              expect(
+                input['existingSentences'],
+                contains('Birds chirp 0.\n鳥兒啾啾叫 0。'),
+              );
+              return regenerated.future;
+            }
+            if (requests == 3) return http.Response('{}', 500);
+            expect(
+              jsonDecode(jsonDecode(request.body)['input'])['level'],
+              '國小',
+            );
+            return http.Response(
+              jsonEncode(response()),
+              200,
+              headers: {'content-type': 'application/json; charset=utf-8'},
+            );
+          }),
+        ),
+        store: MemoryStore(),
+        credentials: MemoryCredentials(),
+      );
+      addTearDown(ai.dispose);
+      await _pumpDetailPage(
+        tester,
+        wordsNotifier: words,
+        wordId: card.id,
+        ai: ai,
+      );
+      final online = tester.getRect(
+        find.widgetWithText(OutlinedButton, '下載線上圖片'),
+      );
+      final image = tester.getRect(
+        find.widgetWithText(OutlinedButton, 'AI 生成學習圖卡'),
+      );
+      expect(online.top, image.top);
+      expect(online.right, lessThan(image.left));
+      final button = find.text('AI 生成例句');
+      await tester.ensureVisible(button);
+      await tester.tap(button);
+      await tester.pumpAndSettle();
+      for (final label in ['幼兒園', '國小', '國中', '高中', '大學', '專業人士']) {
+        expect(find.text(label), findsOneWidget);
+      }
+      expect(
+        tester
+            .widget<FilledButton>(find.widgetWithText(FilledButton, '生成例句'))
+            .onPressed,
+        isNull,
+      );
+      await tester.tap(find.text('國小'));
+      await tester.pump();
+      await tester.tap(find.widgetWithText(FilledButton, '生成例句'));
+      await tester.pumpAndSettle();
+      expect(find.text('Birds chirp 0.\n鳥兒啾啾叫 0。'), findsOneWidget);
+      expect(words.findById(card.id)!.sentences, card.sentences);
+      await tester.tap(find.text('重新生成'));
+      await tester.pump();
+      expect(
+        tester
+            .widget<ChoiceChip>(find.widgetWithText(ChoiceChip, '國小'))
+            .selected,
+        isTrue,
+      );
+      expect(
+        tester
+            .widget<OutlinedButton>(find.widgetWithText(OutlinedButton, '重新生成'))
+            .onPressed,
+        isNull,
+      );
+      expect(
+        tester
+            .widget<FilledButton>(find.widgetWithText(FilledButton, '新增至例句'))
+            .onPressed,
+        isNull,
+      );
+      expect(words.findById(card.id)!.sentences, card.sentences);
+      regenerated.complete(
+        http.Response(
+          jsonEncode(response()).replaceAll('Birds chirp', 'New birds chirp'),
+          200,
+          headers: {'content-type': 'application/json; charset=utf-8'},
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(requests, 2);
+      expect(find.text('Birds chirp 0.\n鳥兒啾啾叫 0。'), findsNothing);
+      expect(find.text('New birds chirp 0.\n鳥兒啾啾叫 0。'), findsOneWidget);
+      await tester.tap(find.text('重新生成'));
+      await tester.pumpAndSettle();
+      expect(requests, 3);
+      expect(find.text('New birds chirp 0.\n鳥兒啾啾叫 0。'), findsOneWidget);
+      expect(find.textContaining('API 請求失敗'), findsOneWidget);
+      await tester.tap(find.text('新增至例句'));
+      await tester.pumpAndSettle();
+      expect(words.findById(card.id)!.sentences, hasLength(4));
+      expect(words.findById(card.id)!.sentences.first, card.sentences.first);
+      expect(
+        words.findById(card.id)!.sentences[1],
+        'New birds chirp 0.\n鳥兒啾啾叫 0。',
+      );
+      expect(tester.takeException(), isNull);
+    });
+  }
+
+  test('新增生成例句會保留最新資料並拒絕過期詞義', () async {
+    final card = _wordCard(id: 'append-word', word: 'apple');
+    final words = _buildWordsNotifier(initialCards: [card]);
+    await words.load();
+    await words.appendGeneratedSentences(card, ['New sentence. 新例句。']);
+    await words.appendGeneratedSentences(card, [
+      'New sentence. 新例句。',
+      'Another. 另一句。',
+    ]);
+    expect(words.findById(card.id)!.sentences, hasLength(3));
+    await expectLater(
+      words.appendGeneratedSentences(card.copyWith(meaning: '不同詞義'), [
+        'Wrong.',
+      ]),
+      throwsStateError,
+    );
+    expect(words.findById(card.id)!.sentences, hasLength(3));
+  });
 
   testWidgets('刪除操作藏在更多選單中，取消確認不會刪除單字', (tester) async {
     final card = _wordCard(id: 'word-anchor', word: 'anchor');
@@ -127,6 +278,7 @@ Future<void> _pumpDetailPage(
   WidgetTester tester, {
   required WordsNotifier wordsNotifier,
   required String wordId,
+  LearningImageNotifier? ai,
 }) async {
   final pronunciationService = PronunciationService();
   final navigatorKey = GlobalKey<NavigatorState>();
@@ -134,6 +286,10 @@ Future<void> _pumpDetailPage(
   await tester.pumpWidget(
     MultiProvider(
       providers: [
+        if (ai != null) ...[
+          ChangeNotifierProvider<LearningImageNotifier>.value(value: ai),
+          Provider<OnlinePictureService>(create: (_) => OnlinePictureService()),
+        ],
         Provider<PronunciationService>.value(value: pronunciationService),
         ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
         ChangeNotifierProvider<SettingsNotifier>.value(
