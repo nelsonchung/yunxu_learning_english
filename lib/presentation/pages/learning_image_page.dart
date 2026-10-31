@@ -166,8 +166,12 @@ class _LearningImagePageState extends State<LearningImagePage> {
               label: const Text('查看 AI 費用紀錄'),
             ),
             const SizedBox(height: 16),
-            if (!ai.hasKey) ...[
-              const Text('請先在此裝置設定 OpenAI API Key'),
+            if (!ai.canGenerateImage) ...[
+              Text(
+                !ai.hasKey
+                    ? '請先在此裝置設定 ${ai.provider.label} API Key'
+                    : '圖片生成需要另外設定 OpenAI API Key',
+              ),
               FilledButton(
                 onPressed: () => Navigator.push(
                   context,

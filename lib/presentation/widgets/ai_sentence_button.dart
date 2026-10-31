@@ -112,6 +112,7 @@ class _SentenceDialogState extends State<_SentenceDialog> {
                   '生成 3 句英文例句及繁中翻譯，預覽後可新增至此單字。使用已設定的 API Key，費用依 API 用量計算。',
                 ),
                 if (ai == null) const Text('AI 服務目前無法使用。'),
+                if (ai != null) Text('使用 ${ai.provider.label} 生成例句'),
                 if (ai != null)
                   TextButton(
                     onPressed: _busy || _saving

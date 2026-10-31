@@ -1,6 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../../domain/models/learning_image.dart';
+import '../../domain/models/ai_provider.dart';
 
 abstract class LearningImageCredentials {
   Future<String?> load();
@@ -9,28 +10,33 @@ abstract class LearningImageCredentials {
 }
 
 class SecureLearningImageCredentials implements LearningImageCredentials {
-  SecureLearningImageCredentials({FlutterSecureStorage? storage})
-    : _storage =
-          storage ??
-          const FlutterSecureStorage(
-            iOptions: IOSOptions(
-              accessibility: KeychainAccessibility.first_unlock_this_device,
-              synchronizable: false,
-            ),
-            mOptions: MacOsOptions(
-              usesDataProtectionKeychain: false,
-              synchronizable: false,
-            ),
-          );
+  SecureLearningImageCredentials({
+    FlutterSecureStorage? storage,
+    this.provider = AiProvider.openai,
+  }) : _storage =
+           storage ??
+           const FlutterSecureStorage(
+             iOptions: IOSOptions(
+               accessibility: KeychainAccessibility.first_unlock_this_device,
+               synchronizable: false,
+             ),
+             mOptions: MacOsOptions(
+               usesDataProtectionKeychain: false,
+               synchronizable: false,
+             ),
+           );
   final FlutterSecureStorage _storage;
+  final AiProvider provider;
   static const keyName = 'learning_image_openai_key';
+  String get _keyName =>
+      provider == AiProvider.openai ? keyName : 'learning_image_claude_key';
   @override
-  Future<String?> load() => _storage.read(key: keyName);
+  Future<String?> load() => _storage.read(key: _keyName);
   @override
   Future<void> save(String key) =>
-      _storage.write(key: keyName, value: key.trim());
+      _storage.write(key: _keyName, value: key.trim());
   @override
-  Future<void> delete() => _storage.delete(key: keyName);
+  Future<void> delete() => _storage.delete(key: _keyName);
 }
 
 abstract class LearningImageStore {
@@ -38,6 +44,8 @@ abstract class LearningImageStore {
   Future<void> putAttempt(LearningImageAttempt attempt);
   Future<LearningImageMode> loadMode();
   Future<void> saveMode(LearningImageMode mode);
+  Future<AiProvider> loadProvider();
+  Future<void> saveProvider(AiProvider provider);
   Future<void> putMetadata(LearningImageMetadata metadata);
   Future<LearningImageMetadata?> metadataFor(String wordId);
 }
@@ -61,8 +69,20 @@ class HiveLearningImageStore implements LearningImageStore {
       ? LearningImageMode.fast
       : LearningImageMode.precise;
   @override
-  Future<void> saveMode(LearningImageMode mode) async =>
-      (await _box()).put('settings', {'mode': mode.name});
+  Future<void> saveMode(LearningImageMode mode) async => (await _box()).put(
+    'settings',
+    {...?(await _box()).get('settings'), 'mode': mode.name},
+  );
+  @override
+  Future<AiProvider> loadProvider() async =>
+      (await _box()).get('settings')?['provider'] == 'claude'
+      ? AiProvider.claude
+      : AiProvider.openai;
+  @override
+  Future<void> saveProvider(AiProvider provider) async => (await _box()).put(
+    'settings',
+    {...?(await _box()).get('settings'), 'provider': provider.name},
+  );
   @override
   Future<void> putMetadata(LearningImageMetadata metadata) async =>
       (await _box()).put('metadata:${metadata.wordId}', metadata.toMap());

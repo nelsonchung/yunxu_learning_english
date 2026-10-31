@@ -4,10 +4,12 @@ import 'dart:io';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'dart:typed_data';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:yunxu_learning_english/data/storage/learning_image_store.dart';
 import 'package:yunxu_learning_english/domain/models/learning_image.dart';
+import 'package:yunxu_learning_english/domain/models/ai_provider.dart';
 import 'package:yunxu_learning_english/domain/models/word_card.dart';
 import 'package:yunxu_learning_english/domain/services/learning_image_service.dart';
 import 'package:yunxu_learning_english/presentation/state/learning_image_notifier.dart';
@@ -28,6 +30,14 @@ class MemoryCredentials implements LearningImageCredentials {
 }
 
 class MemoryStore implements LearningImageStore {
+  AiProvider provider = AiProvider.openai;
+  @override
+  Future<AiProvider> loadProvider() async => provider;
+  @override
+  Future<void> saveProvider(AiProvider value) async {
+    provider = value;
+  }
+
   final ledger = <String, LearningImageAttempt>{};
   final metadata = <String, LearningImageMetadata>{};
   LearningImageMode mode = LearningImageMode.precise;
@@ -127,6 +137,140 @@ http.Response response(Object body) => http.Response(
   },
 );
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  test(
+    'secure credentials preserve legacy OpenAI key and isolate Claude',
+    () async {
+      FlutterSecureStorage.setMockInitialValues({
+        SecureLearningImageCredentials.keyName: 'legacy-openai',
+      });
+      final openai = SecureLearningImageCredentials();
+      final claude = SecureLearningImageCredentials(
+        provider: AiProvider.claude,
+      );
+      expect(await openai.load(), 'legacy-openai');
+      expect(await claude.load(), isNull);
+      await claude.save(' claude-key ');
+      expect(await claude.load(), 'claude-key');
+      expect(await openai.load(), 'legacy-openai');
+      await claude.delete();
+      expect(await claude.load(), isNull);
+      expect(await openai.load(), 'legacy-openai');
+    },
+  );
+
+  test(
+    'provider switching preserves independent keys and persists selection',
+    () async {
+      final openai = MemoryCredentials()..key = 'openai';
+      final claude = MemoryCredentials()..key = null;
+      final store = MemoryStore();
+      final ai = LearningImageNotifier(
+        service: LearningImageService(),
+        store: store,
+        credentials: openai,
+        claudeCredentials: claude,
+      );
+      addTearDown(ai.dispose);
+      await ai.initialize();
+      expect(ai.provider, AiProvider.openai);
+      expect(ai.hasKey, isTrue);
+      await ai.setProvider(AiProvider.claude);
+      expect(ai.hasKey, isFalse);
+      await ai.saveApiKey('claude');
+      expect(claude.key, 'claude');
+      expect(openai.key, 'openai');
+      final restored = LearningImageNotifier(
+        service: LearningImageService(),
+        store: store,
+        credentials: openai,
+        claudeCredentials: claude,
+      );
+      addTearDown(restored.dispose);
+      await restored.initialize();
+      expect(restored.provider, AiProvider.claude);
+      expect(restored.hasKey, isTrue);
+      await ai.deleteApiKey();
+      expect(claude.key, isNull);
+      expect(openai.key, 'openai');
+      await ai.setProvider(AiProvider.openai);
+      expect(ai.hasKey, isTrue);
+    },
+  );
+
+  test(
+    'Claude research and OpenAI image use separate keys and models',
+    () async {
+      final requests = <http.Request>[];
+      final store = MemoryStore()..provider = AiProvider.claude;
+      final ai = LearningImageNotifier(
+        service: LearningImageService(
+          validateImage: (_) async {},
+          client: MockClient((request) async {
+            requests.add(request);
+            if (request.url.host == 'api.anthropic.com') {
+              expect(request.headers['x-api-key'], 'claude-key');
+              return response({
+                'stop_reason': 'end_turn',
+                'usage': {'input_tokens': 100, 'output_tokens': 100},
+                'content': [
+                  {
+                    'type': 'web_search_tool_result',
+                    'content': [
+                      {
+                        'type': 'web_search_result',
+                        'url': 'https://example.com/chirp',
+                        'title': 'Dictionary',
+                      },
+                    ],
+                  },
+                  {'type': 'text', 'text': jsonEncode(content.toMap())},
+                ],
+              });
+            }
+            expect(request.url.path, '/v1/images/generations');
+            expect(request.headers['authorization'], 'Bearer openai-key');
+            expect(request.headers['x-api-key'], isNull);
+            return response(imageResponse());
+          }),
+        ),
+        store: store,
+        credentials: MemoryCredentials()..key = 'openai-key',
+        claudeCredentials: MemoryCredentials()..key = 'claude-key',
+      );
+      addTearDown(ai.dispose);
+      await ai.start(word());
+      expect(ai.error, isNull);
+      expect(ai.stage, LearningImageStage.ready);
+      expect(requests, hasLength(2));
+      expect(ai.attempts.first.model, AiProvider.claude.textModel);
+      expect(ai.attempts.first.cost.unknown, isTrue);
+      expect(ai.attempts.last.model, ai.mode.model);
+    },
+  );
+
+  test('Claude without an image key stops before any paid research', () async {
+    var calls = 0;
+    final store = MemoryStore()..provider = AiProvider.claude;
+    final ai = LearningImageNotifier(
+      service: LearningImageService(
+        client: MockClient((_) async {
+          calls++;
+          return http.Response('{}', 200);
+        }),
+      ),
+      store: store,
+      credentials: MemoryCredentials()..key = null,
+      claudeCredentials: MemoryCredentials()..key = 'claude',
+    );
+    addTearDown(ai.dispose);
+    await ai.start(word());
+    expect(calls, 0);
+    expect(ai.attempts, isEmpty);
+    expect(ai.error, contains('OpenAI API Key'));
+    expect(ai.stage, LearningImageStage.failed);
+  });
+
   test(
     'cost uses noncached input once and preserves historical fee snapshot',
     () {
@@ -404,7 +548,11 @@ void main() {
           ),
         );
         expect((await store.metadataFor('w'))!.content.word, 'chirp');
+        expect(await store.loadProvider(), AiProvider.openai);
+        await store.saveProvider(AiProvider.claude);
         await store.saveMode(LearningImageMode.fast);
+        expect(await store.loadProvider(), AiProvider.claude);
+        await store.saveProvider(AiProvider.openai);
         expect(await store.loadMode(), LearningImageMode.fast);
       } finally {
         await Hive.close();

@@ -10,6 +10,7 @@ import 'data/sources/word_local_db.dart';
 import 'data/storage/image_storage.dart';
 import 'data/storage/learning_image_store.dart';
 import 'domain/services/learning_image_service.dart';
+import 'domain/models/ai_provider.dart';
 import 'presentation/state/learning_image_notifier.dart';
 import 'data/repositories/local_settings_repository.dart';
 import 'data/sources/settings_local_db.dart';
@@ -101,6 +102,9 @@ Future<void> main() async {
             service: LearningImageService(),
             store: HiveLearningImageStore(),
             credentials: SecureLearningImageCredentials(),
+            claudeCredentials: SecureLearningImageCredentials(
+              provider: AiProvider.claude,
+            ),
           )..initialize(),
         ),
         Provider<PronunciationService>.value(value: pronunciationService),

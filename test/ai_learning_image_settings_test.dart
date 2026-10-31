@@ -17,6 +17,7 @@ import 'package:yunxu_learning_english/domain/services/sort_service.dart';
 import 'package:yunxu_learning_english/domain/services/word_contribution_import_service.dart';
 import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 import 'package:yunxu_learning_english/domain/models/learning_image.dart';
+import 'package:yunxu_learning_english/domain/models/ai_provider.dart';
 import 'package:yunxu_learning_english/domain/models/word_card.dart';
 import 'package:yunxu_learning_english/presentation/pages/learning_image_page.dart';
 import 'package:yunxu_learning_english/domain/services/learning_image_service.dart';
@@ -44,6 +45,14 @@ class _Credentials implements LearningImageCredentials {
 }
 
 class _Store implements LearningImageStore {
+  AiProvider provider = AiProvider.openai;
+  @override
+  Future<AiProvider> loadProvider() async => provider;
+  @override
+  Future<void> saveProvider(AiProvider value) async {
+    provider = value;
+  }
+
   LearningImageMode mode = LearningImageMode.precise;
   @override
   Future<List<LearningImageAttempt>> attempts() async => [];
@@ -175,6 +184,7 @@ Future<void> _pumpReady(
   _Words words,
 ) async {
   ai.hasKey = true;
+  ai.hasOpenAiKey = true;
   ai.stage = LearningImageStage.ready;
   ai.sourceWord = _word();
   ai.content = _content;
@@ -198,6 +208,59 @@ Future<void> _pumpReady(
 }
 
 void main() {
+  testWidgets('switching provider clears drafts and edits only its own key', (
+    tester,
+  ) async {
+    final openai = _Credentials()..key = 'original-openai';
+    final claude = _Credentials();
+    final ai = LearningImageNotifier(
+      service: LearningImageService(),
+      store: _Store(),
+      credentials: openai,
+      claudeCredentials: claude,
+    );
+    addTearDown(ai.dispose);
+    await ai.initialize();
+    await tester.pumpWidget(
+      ChangeNotifierProvider<LearningImageNotifier>.value(
+        value: ai,
+        child: const MaterialApp(
+          home: Scaffold(
+            body: SingleChildScrollView(child: AiLearningImageSettings()),
+          ),
+        ),
+      ),
+    );
+    await tester.enterText(find.byType(TextField), 'unsaved-openai');
+    await tester.tap(find.byTooltip('顯示金鑰'));
+    await tester.pump();
+    await tester.tap(find.byType(DropdownButtonFormField<AiProvider>));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Claude').last);
+    await tester.pumpAndSettle();
+    expect(ai.provider, AiProvider.claude);
+    expect(find.text('Claude API Key'), findsOneWidget);
+    expect(find.text('尚未設定 API Key'), findsOneWidget);
+    expect(
+      tester.widget<TextField>(find.byType(TextField)).controller!.text,
+      isEmpty,
+    );
+    expect(
+      tester.widget<TextField>(find.byType(TextField)).obscureText,
+      isTrue,
+    );
+    await tester.enterText(find.byType(TextField), 'claude-key');
+    await tester.pump();
+    await tester.tap(find.text('儲存金鑰'));
+    await tester.pumpAndSettle();
+    expect(claude.key, 'claude-key');
+    expect(openai.key, 'original-openai');
+    await tester.tap(find.text('刪除金鑰'));
+    await tester.pumpAndSettle();
+    expect(claude.key, isNull);
+    expect(openai.key, 'original-openai');
+  });
+
   testWidgets(
     'applying locks navigation and the generation session until save settles',
     (tester) async {
@@ -279,7 +342,9 @@ void main() {
       ChangeNotifierProvider<LearningImageNotifier>.value(
         value: ai,
         child: const MaterialApp(
-          home: Scaffold(body: AiLearningImageSettings()),
+          home: Scaffold(
+            body: SingleChildScrollView(child: AiLearningImageSettings()),
+          ),
         ),
       ),
     );
@@ -306,7 +371,9 @@ void main() {
       ChangeNotifierProvider<LearningImageNotifier>.value(
         value: ai,
         child: const MaterialApp(
-          home: Scaffold(body: AiLearningImageSettings()),
+          home: Scaffold(
+            body: SingleChildScrollView(child: AiLearningImageSettings()),
+          ),
         ),
       ),
     );
@@ -334,7 +401,9 @@ void main() {
       ChangeNotifierProvider<LearningImageNotifier>.value(
         value: ai,
         child: const MaterialApp(
-          home: Scaffold(body: AiLearningImageSettings()),
+          home: Scaffold(
+            body: SingleChildScrollView(child: AiLearningImageSettings()),
+          ),
         ),
       ),
     );
@@ -389,6 +458,7 @@ void main() {
     tester,
   ) async {
     final notifier = _UiNotifier()
+      ..hasOpenAiKey = true
       ..hasKey = true
       ..stage = LearningImageStage.conflict
       ..sourceWord = _word()
@@ -408,6 +478,7 @@ void main() {
     tester,
   ) async {
     final notifier = _UiNotifier()
+      ..hasOpenAiKey = true
       ..hasKey = true
       ..stage = LearningImageStage.failed
       ..sourceWord = _word()

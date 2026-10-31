@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import '../../data/storage/learning_image_store.dart';
 import '../../domain/models/learning_image.dart';
+import '../../domain/models/ai_provider.dart';
 import '../../domain/models/word_card.dart';
 import '../../domain/models/sentence_level.dart';
 import '../../domain/services/learning_image_service.dart';
@@ -11,12 +12,22 @@ class LearningImageNotifier extends ChangeNotifier {
     required LearningImageService service,
     required LearningImageStore store,
     required LearningImageCredentials credentials,
+    LearningImageCredentials? claudeCredentials,
   }) : _service = service,
        _store = store,
-       _credentials = credentials;
+       _credentials = credentials,
+       _claudeCredentials =
+           claudeCredentials ??
+           SecureLearningImageCredentials(provider: AiProvider.claude);
   final LearningImageService _service;
   final LearningImageStore _store;
   final LearningImageCredentials _credentials;
+  final LearningImageCredentials _claudeCredentials;
+  AiProvider provider = AiProvider.openai;
+  LearningImageCredentials get _selectedCredentials =>
+      provider == AiProvider.openai ? _credentials : _claudeCredentials;
+  bool hasOpenAiKey = false;
+  bool get canGenerateImage => hasKey && hasOpenAiKey;
   LearningImageMode mode = LearningImageMode.precise;
   LearningImageStage stage = LearningImageStage.idle;
   String? error;
@@ -36,7 +47,8 @@ class LearningImageNotifier extends ChangeNotifier {
   bool historyReady = false;
   String? historyError;
   bool isApplying = false;
-  bool get isBusy => _active || _draining || isApplying;
+  bool _settingsBusy = false;
+  bool get isBusy => _active || _draining || isApplying || _settingsBusy;
   bool beginApply() {
     if (isBusy ||
         stage != LearningImageStage.ready ||
@@ -74,7 +86,11 @@ class LearningImageNotifier extends ChangeNotifier {
     await refreshHistory();
     try {
       mode = await _store.loadMode();
-      hasKey = (await _credentials.load())?.trim().isNotEmpty ?? false;
+      provider = await _store.loadProvider();
+      hasOpenAiKey = (await _credentials.load())?.trim().isNotEmpty ?? false;
+      hasKey = provider == AiProvider.openai
+          ? hasOpenAiKey
+          : (await _claudeCredentials.load())?.trim().isNotEmpty ?? false;
     } catch (_) {
       error = '無法讀取 AI 設定，請檢查裝置安全儲存。';
     }
@@ -101,28 +117,48 @@ class LearningImageNotifier extends ChangeNotifier {
     }
   }
 
-  Future<void> saveApiKey(String key) async {
+  Future<void> _changeSettings(Future<void> Function() action) async {
     await initialize();
+    if (isBusy || _disposed) return;
+    _settingsBusy = true;
+    _notify();
+    try {
+      await action();
+    } finally {
+      _settingsBusy = false;
+      _notify();
+    }
+  }
+
+  Future<void> saveApiKey(String key) => _changeSettings(() async {
     if (key.trim().isEmpty) throw const LearningImageException('請輸入 API Key。');
-    await _credentials.save(key);
+    await _selectedCredentials.save(key);
     hasKey = true;
-    _notify();
-  }
+    if (provider == AiProvider.openai) hasOpenAiKey = true;
+  });
 
-  Future<void> deleteApiKey() async {
-    await initialize();
-    await _credentials.delete();
+  Future<void> deleteApiKey() => _changeSettings(() async {
+    await _selectedCredentials.delete();
     hasKey = false;
-    _notify();
-  }
+    if (provider == AiProvider.openai) hasOpenAiKey = false;
+  });
 
-  Future<void> setMode(LearningImageMode value) async {
-    await initialize();
-    if (isBusy) return;
+  Future<void> setProvider(AiProvider value) => _changeSettings(() async {
+    if (provider == value) return;
+    final credentials = value == AiProvider.openai
+        ? _credentials
+        : _claudeCredentials;
+    final configured = (await credentials.load())?.trim().isNotEmpty ?? false;
+    await _store.saveProvider(value);
+    provider = value;
+    hasKey = configured;
+    if (value == AiProvider.openai) hasOpenAiKey = configured;
+  });
+
+  Future<void> setMode(LearningImageMode value) => _changeSettings(() async {
     await _store.saveMode(value);
     mode = value;
-    _notify();
-  }
+  });
 
   Future<void> _run(
     Future<void> Function(String key) action, {
@@ -135,9 +171,9 @@ class LearningImageNotifier extends ChangeNotifier {
     _notify();
     try {
       await initialize();
-      final key = await _credentials.load();
+      final key = await _selectedCredentials.load();
       if (key == null || key.trim().isEmpty) {
-        throw const LearningImageException('請先設定 OpenAI API Key。');
+        throw LearningImageException('請先設定 ${provider.label} API Key。');
       }
       if (_cancelled) return;
       await action(key);
@@ -267,13 +303,19 @@ class LearningImageNotifier extends ChangeNotifier {
     if (isBusy) return null;
     List<String>? sentences;
     await _run((key) async {
-      final record = await _beginAttempt('gpt-5.4-mini', word: word);
+      final record = await _beginAttempt(provider.textModel, word: word);
       if (_cancelled) {
         await _markNotSent();
         return;
       }
       final result = await _phase(
-        _service.generateSentences(word, level, key, record),
+        _service.generateSentences(
+          word,
+          level,
+          key,
+          record,
+          provider: provider,
+        ),
       );
       if (_cancelled) return;
       await _finishAttempt('succeeded');
@@ -290,14 +332,17 @@ class LearningImageNotifier extends ChangeNotifier {
     imageBytes = null;
     _currentIds.clear();
     await _run((key) async {
+      await _imageKey();
       stage = LearningImageStage.researching;
       _notify();
-      final record = await _beginAttempt('gpt-5.4-mini');
+      final record = await _beginAttempt(provider.textModel);
       if (_cancelled) {
         await _markNotSent();
         return;
       }
-      final researched = await _phase(_service.research(word, key, record));
+      final researched = await _phase(
+        _service.research(word, key, record, provider: provider),
+      );
       if (_cancelled) return;
       await _finishAttempt('succeeded');
       if (_cancelled) return;
@@ -336,6 +381,8 @@ class LearningImageNotifier extends ChangeNotifier {
 
   Future<void> _generate(String key) async {
     if (_cancelled || content == null) return;
+    final imageKey = await _imageKey();
+    if (_cancelled) return;
     stage = LearningImageStage.generating;
     _notify();
     final selectedMode = mode;
@@ -345,7 +392,7 @@ class LearningImageNotifier extends ChangeNotifier {
       return;
     }
     final bytes = await _phase(
-      _service.generate(content!, selectedMode, key, record),
+      _service.generate(content!, selectedMode, imageKey, record),
     );
     if (_cancelled) return;
     await _finishAttempt('succeeded');
@@ -354,6 +401,14 @@ class LearningImageNotifier extends ChangeNotifier {
     imageBytes = bytes;
     stage = LearningImageStage.ready;
     _notify();
+  }
+
+  Future<String> _imageKey() async {
+    final key = await _credentials.load();
+    if (key == null || key.trim().isEmpty) {
+      throw const LearningImageException('圖片生成需要 OpenAI API Key，請先至設定填入。');
+    }
+    return key;
   }
 
   void cancel() {

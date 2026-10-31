@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:yunxu_learning_english/data/storage/learning_image_store.dart';
 import 'package:yunxu_learning_english/domain/models/learning_image.dart';
+import 'package:yunxu_learning_english/domain/models/ai_provider.dart';
 import 'package:yunxu_learning_english/domain/models/learning_image_history.dart';
 import 'package:yunxu_learning_english/domain/services/learning_image_service.dart';
 import 'package:yunxu_learning_english/presentation/pages/learning_image_history_page.dart';
@@ -25,6 +26,14 @@ class _WaitingCredentials extends _Credentials {
 }
 
 class _Store implements LearningImageStore {
+  AiProvider provider = AiProvider.openai;
+  @override
+  Future<AiProvider> loadProvider() async => provider;
+  @override
+  Future<void> saveProvider(AiProvider value) async {
+    provider = value;
+  }
+
   _Store(this.records);
   List<LearningImageAttempt> records;
   bool fail = false;
