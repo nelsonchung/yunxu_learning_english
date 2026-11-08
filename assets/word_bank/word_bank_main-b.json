@@ -3881,11 +3881,11 @@
   },
   {
     "word": "backstroke",
-    "meaning": "仰泳，反手一擊",
+    "meaning": "仰式（仰泳）；反手一擊",
     "partOfSpeech": "noun",
     "sentences": [
-      "She won the gold medal in the 100m backstroke. 她贏得了100公尺仰泳金牌。",
-      "He practiced his backstroke every morning. 他每天早上練習仰泳。"
+      "She won a gold medal in the 100-meter backstroke. 她在一百公尺仰式比賽中贏得金牌。",
+      "When you swim backstroke, your face stays above the water. 游仰式時，你的臉部會保持在水面上。"
     ],
     "audienceTags": [
       "general"
@@ -107975,6 +107975,18 @@
     ]
   },
   {
+    "word": "breaststroke",
+    "meaning": "蛙式（蛙泳）",
+    "partOfSpeech": "noun",
+    "sentences": [
+      "I am learning to swim breaststroke. 我正在學游蛙式。",
+      "In breaststroke, both arms move together in front of the chest. 游蛙式時，雙臂會在胸前一起划動。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
     "word": "breastsummer",
     "meaning": "胸牆樑",
     "partOfSpeech": "noun",
@@ -132050,11 +132062,11 @@
   },
   {
     "word": "butterfly",
-    "meaning": "蝴蝶",
+    "meaning": "蝴蝶；蝶式（蝶泳）",
     "partOfSpeech": "noun",
     "sentences": [
       "A colorful butterfly landed on a flower in the garden. 一隻彩色的蝴蝶停在花園裡的一朵花上。",
-      "The caterpillar will eventually turn into a beautiful butterfly. 毛毛蟲最終會變成一隻美麗的蝴蝶。"
+      "She is practicing the butterfly stroke for her next race. 她正在為下一場比賽練習蝶式。"
     ],
     "difficultyLevel": 1,
     "schoolLevels": [
