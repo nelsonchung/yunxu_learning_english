@@ -49,3 +49,14 @@ app.*.map.json
 
 # Log related
 /logs
+
+# Local agent runtime, build outputs, and downloaded picture library
+/.omx/
+/android/build/
+/dist/
+/assets/pictures
+/assets/yunxu_learning_english_pictures/
+
+# Local signing notes and tool backup archive
+/note.txt
+/tools.tar.gz
