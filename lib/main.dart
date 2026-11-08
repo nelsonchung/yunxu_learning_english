@@ -17,6 +17,7 @@ import 'data/sources/settings_local_db.dart';
 import 'data/repositories/local_sync_state_repository.dart';
 import 'data/sources/sync_state_local_db.dart';
 import 'domain/services/review_schedule_service.dart';
+import 'domain/services/word_extension_service.dart';
 import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
@@ -110,6 +111,11 @@ Future<void> main() async {
         Provider<PronunciationService>.value(value: pronunciationService),
         Provider<BuiltinWordBankRepository>.value(
           value: builtinWordBankRepository,
+        ),
+        Provider<WordExtensionService>(
+          create: (_) => WordExtensionService(
+            loadEntries: builtinWordBankRepository.fetchAll,
+          ),
         ),
         Provider<DailyWordRecommendationService>.value(
           value: dailyWordRecommendationService,

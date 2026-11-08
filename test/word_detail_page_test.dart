@@ -1,3 +1,5 @@
+import 'package:yunxu_learning_english/domain/models/builtin_word_entry.dart';
+import 'package:yunxu_learning_english/domain/services/word_extension_service.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -27,6 +29,260 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
+  testWidgets('非原15字也能從字庫推薦並加入複習，只顯示有資料的類別', (tester) async {
+    final source = _wordCard(
+      id: 'beautiful-source',
+      word: 'beautiful',
+    ).copyWith(meaning: '美麗的', partsOfSpeech: [PartOfSpeech.adjective]);
+    final words = _buildWordsNotifier(initialCards: [source]);
+    addTearDown(words.dispose);
+    await words.load();
+    final service = WordExtensionService(
+      loadEntries: () async => [
+        _extensionEntry('beautiful', '美麗的', PartOfSpeech.adjective),
+        _extensionEntry('pretty', '美麗的', PartOfSpeech.adjective),
+      ],
+    );
+    await _pumpDetailPage(
+      tester,
+      wordsNotifier: words,
+      wordId: source.id,
+      extensionService: service,
+    );
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    expect(find.text('相關字・pretty'), findsOneWidget);
+    expect(find.textContaining('容易混淆・'), findsNothing);
+    final add = find.byKey(const ValueKey('add-extension-pretty'));
+    await _scrollTo(tester, add);
+    await tester.tap(add);
+    await tester.pumpAndSettle();
+    final added = words.words.singleWhere((card) => card.word == 'pretty');
+    expect(added.meaning, '美麗的');
+    expect(added.origin, WordOrigin.builtinWordBank);
+    expect(added.partsOfSpeech, [PartOfSpeech.adjective]);
+    expect(added.nextReviewDate, added.createdAt.add(const Duration(days: 1)));
+    expect(words.findById(source.id), same(source));
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('展開才載入，失敗後可重試，收合重開不重載', (tester) async {
+    final source = _wordCard(id: 'load-source', word: 'decide');
+    final words = _buildWordsNotifier(initialCards: [source]);
+    addTearDown(words.dispose);
+    await words.load();
+    var calls = 0;
+    final pending = Completer<List<BuiltinWordEntry>>();
+    final service = WordExtensionService(
+      loadEntries: () {
+        calls++;
+        if (calls == 1) return pending.future;
+        return Future.value([
+          _extensionEntry('decide', '決定', PartOfSpeech.verb),
+        ]);
+      },
+    );
+    await _pumpDetailPage(
+      tester,
+      wordsNotifier: words,
+      wordId: source.id,
+      extensionService: service,
+    );
+    expect(calls, 0);
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pump();
+    expect(calls, 1);
+    expect(find.byType(LinearProgressIndicator), findsOneWidget);
+    pending.completeError(StateError('load failed'));
+    await tester.pumpAndSettle();
+    final retry = find.text('重新載入');
+    await _scrollTo(tester, retry);
+    await tester.tap(retry);
+    await tester.pumpAndSettle();
+    expect(calls, 2);
+    expect(find.text('載入延伸內容失敗，請重試。'), findsNothing);
+    expect(find.text('目前沒有足夠資料推薦相關字或易混淆字。'), findsOneWidget);
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    expect(calls, 2);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('載入期間改變詞義後不顯示過期結果，重新展開依新義項查詢', (tester) async {
+    final source = _wordCard(id: 'sense-source', word: 'bank').copyWith(
+      meaning: '銀行',
+      partsOfSpeech: [PartOfSpeech.noun],
+      sentences: const [],
+    );
+    final words = _buildWordsNotifier(initialCards: [source]);
+    addTearDown(words.dispose);
+    await words.load();
+    final pending = Completer<List<BuiltinWordEntry>>();
+    final service = WordExtensionService(loadEntries: () => pending.future);
+    await _pumpDetailPage(
+      tester,
+      wordsNotifier: words,
+      wordId: source.id,
+      extensionService: service,
+    );
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pump();
+    await words.updateWord(
+      card: source,
+      word: 'bank',
+      meaning: '河岸',
+      sentences: const [],
+      partsOfSpeech: [PartOfSpeech.noun],
+    );
+    await tester.pump();
+    pending.complete([
+      _extensionEntry('bank', '銀行', PartOfSpeech.noun),
+      _extensionEntry('bank account', '銀行帳戶', PartOfSpeech.phrase),
+      _extensionEntry('shore', '河岸', PartOfSpeech.noun),
+    ]);
+    await tester.pumpAndSettle();
+    expect(find.text('相關字・bank account'), findsNothing);
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    expect(find.text('相關字・shore'), findsOneWidget);
+    expect(find.text('相關字・bank account'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
+  for (final width in [375.0, 800.0]) {
+    testWidgets('延伸相關字加入既有複習並保留原字 width=$width', (tester) async {
+      tester.view.physicalSize = Size(width, 900);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final source = _wordCard(id: 'decide-source', word: 'decide');
+      final words = _buildWordsNotifier(initialCards: [source]);
+      addTearDown(words.dispose);
+      await words.load();
+      await _pumpDetailPage(tester, wordsNotifier: words, wordId: source.id);
+      final explore = find.text('探索用法與相關字');
+      await _scrollTo(tester, explore);
+      await tester.tap(explore);
+      await tester.pumpAndSettle();
+      expect(find.text('用法例句'), findsWidgets);
+      expect(find.text('相關字・decision'), findsOneWidget);
+      expect(find.text('容易混淆・choose'), findsOneWidget);
+      final add = find.text('加入相關字到複習');
+      await _scrollTo(tester, add);
+      await tester.tap(add);
+      await tester.pumpAndSettle();
+      expect(words.words, hasLength(2));
+      final related = words.words.singleWhere(
+        (card) => card.word == 'decision',
+      );
+      expect(related.partsOfSpeech, [PartOfSpeech.noun]);
+      expect(related.meaning, isNotEmpty);
+      expect(related.sentences.single, contains('decision'));
+      expect(related.needsCompletion, isFalse);
+      expect(related.reviewSchedule, ReviewScheduleService.defaultSchedule);
+      expect(related.nextReviewIndex, 0);
+      expect(
+        related.nextReviewDate,
+        related.createdAt.add(const Duration(days: 1)),
+      );
+      expect(related.history, isEmpty);
+      expect(words.dueOnOrBefore(related.nextReviewDate), contains(related));
+      expect(words.findById(source.id), same(source));
+      await words.load();
+      await tester.pumpAndSettle();
+      expect(words.words, hasLength(2));
+      final view = find.textContaining('已加入・查看單字');
+      await _scrollTo(tester, view);
+      await tester.tap(view);
+      await tester.pumpAndSettle();
+      expect(find.text('decision'), findsOneWidget);
+      expect(words.words, hasLength(2));
+      expect(tester.takeException(), isNull);
+    });
+  }
+
+  testWidgets('延伸學習辨識既有單字，不重複新增或重設已掌握狀態', (tester) async {
+    final source = _wordCard(id: 'source', word: 'decide');
+    final existing = _wordCard(id: 'existing', word: ' Decision ').copyWith(
+      reviewState: WordReviewState.mastered,
+      masteredAt: DateTime(2026),
+    );
+    final words = _buildWordsNotifier(initialCards: [source, existing]);
+    addTearDown(words.dispose);
+    await words.load();
+    await _pumpDetailPage(tester, wordsNotifier: words, wordId: source.id);
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    expect(find.text('加入相關字到複習'), findsNothing);
+    expect(find.text('已加入・查看單字（已掌握）'), findsOneWidget);
+    expect(words.findById(existing.id), same(existing));
+  });
+
+  testWidgets('加入失敗可重試，儲存中連點只新增一次', (tester) async {
+    final source = _wordCard(id: 'source', word: 'decide');
+    final repository = _FakeWordRepository(initialCards: [source]);
+    final words = _buildWordsNotifier(repository: repository);
+    addTearDown(words.dispose);
+    await words.load();
+    await _pumpDetailPage(tester, wordsNotifier: words, wordId: source.id);
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    final add = find.text('加入相關字到複習');
+    await _scrollTo(tester, add);
+    repository.failAdd = true;
+    await tester.tap(add);
+    await tester.pumpAndSettle();
+    expect(find.text('加入失敗，請稍後再試'), findsOneWidget);
+    expect(words.words, hasLength(1));
+    repository.failAdd = false;
+    final pending = Completer<void>();
+    repository.pendingAdd = pending;
+    await tester.tap(add);
+    await tester.tap(add);
+    await tester.pump();
+    expect(find.text('加入中…'), findsOneWidget);
+    expect(words.words, hasLength(1));
+    pending.complete();
+    await tester.pumpAndSettle();
+    expect(words.words, hasLength(2));
+    expect(
+      repository.addCalls,
+      2,
+    ); // One failed request and one successful retry.
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('資料不足時搜尋後顯示空結果，不硬湊', (tester) async {
+    final source = _wordCard(id: 'unsupported', word: 'xyzzy');
+    final words = _buildWordsNotifier(initialCards: [source]);
+    addTearDown(words.dispose);
+    await words.load();
+    await _pumpDetailPage(tester, wordsNotifier: words, wordId: source.id);
+    final explore = find.text('探索用法與相關字');
+    await _scrollTo(tester, explore);
+    await tester.tap(explore);
+    await tester.pumpAndSettle();
+    final empty = find.text('目前沒有足夠的字庫或關係資料可推薦延伸內容。');
+    await _scrollTo(tester, empty);
+    expect(empty, findsOneWidget);
+    expect(find.text('加入相關字到複習'), findsNothing);
+    expect(words.words, hasLength(1));
+  });
 
   for (final width in [375.0, 800.0]) {
     testWidgets('圖片按鈕並排，依程度生成預覽後才新增例句 width=$width', (tester) async {
@@ -279,6 +535,7 @@ Future<void> _pumpDetailPage(
   required WordsNotifier wordsNotifier,
   required String wordId,
   LearningImageNotifier? ai,
+  WordExtensionService? extensionService,
 }) async {
   final pronunciationService = PronunciationService();
   final navigatorKey = GlobalKey<NavigatorState>();
@@ -290,6 +547,17 @@ Future<void> _pumpDetailPage(
           ChangeNotifierProvider<LearningImageNotifier>.value(value: ai),
           Provider<OnlinePictureService>(create: (_) => OnlinePictureService()),
         ],
+        Provider<WordExtensionService>.value(
+          value:
+              extensionService ??
+              WordExtensionService(
+                loadEntries: () async => [
+                  _extensionEntry('decide', '決定', PartOfSpeech.verb),
+                  _extensionEntry('decision', '決定', PartOfSpeech.noun),
+                  _extensionEntry('choose', '選擇', PartOfSpeech.verb),
+                ],
+              ),
+        ),
         Provider<PronunciationService>.value(value: pronunciationService),
         ChangeNotifierProvider<WordsNotifier>.value(value: wordsNotifier),
         ChangeNotifierProvider<SettingsNotifier>.value(
@@ -317,10 +585,13 @@ Future<void> _pumpDetailPage(
   await tester.pumpAndSettle();
 }
 
-WordsNotifier _buildWordsNotifier({List<WordCard> initialCards = const []}) {
+WordsNotifier _buildWordsNotifier({
+  List<WordCard> initialCards = const [],
+  _FakeWordRepository? repository,
+}) {
   final scheduleService = ReviewScheduleService();
   return WordsNotifier(
-    repository: _FakeWordRepository(initialCards: initialCards),
+    repository: repository ?? _FakeWordRepository(initialCards: initialCards),
     scheduleService: scheduleService,
     sortService: SortService(),
     imageStorage: ImageStorage(),
@@ -336,7 +607,7 @@ WordCard _wordCard({required String id, required String word}) {
   return WordCard(
     id: id,
     word: word,
-    meaning: '$word 的意思',
+    meaning: word == 'decide' ? '決定' : '$word 的意思',
     partOfSpeech: PartOfSpeech.noun,
     sentences: ['We practiced $word in class.'],
     origin: WordOrigin.manual,
@@ -355,9 +626,15 @@ class _FakeWordRepository implements WordRepository {
     : _cards = List<WordCard>.from(initialCards);
 
   final List<WordCard> _cards;
+  bool failAdd = false;
+  Completer<void>? pendingAdd;
+  int addCalls = 0;
 
   @override
   Future<void> add(WordCard card) async {
+    addCalls++;
+    if (failAdd) throw StateError('storage unavailable');
+    await pendingAdd?.future;
     _cards.add(card);
   }
 
@@ -412,3 +689,31 @@ class _FakeSettingsRepository implements SettingsRepository {
     _settings = settings;
   }
 }
+
+Future<void> _scrollTo(WidgetTester tester, Finder finder) async {
+  await tester.scrollUntilVisible(
+    finder,
+    250,
+    scrollable: find.byType(Scrollable).first,
+  );
+  await tester.pumpAndSettle();
+  await tester.ensureVisible(finder);
+  await tester.pumpAndSettle();
+}
+
+BuiltinWordEntry _extensionEntry(
+  String word,
+  String meaning,
+  PartOfSpeech part,
+) => BuiltinWordEntry(
+  word: word,
+  meaning: meaning,
+  partsOfSpeech: [part],
+  sentences: ['$word is used in this sentence. 這句話使用了這個字。'],
+  sourcePage: 0,
+  schoolLevels: const [],
+  examTags: const [],
+  audienceTags: const [],
+  sourceTags: const [BuiltinSourceTag.twCeec],
+  difficultyLevel: 2,
+);

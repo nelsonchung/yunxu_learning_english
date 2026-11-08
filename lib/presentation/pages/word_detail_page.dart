@@ -16,6 +16,7 @@ import '../widgets/image_preview.dart';
 import '../widgets/online_picture_button.dart';
 import '../widgets/ai_sentence_button.dart';
 import '../widgets/section_card.dart';
+import '../widgets/word_extension_section.dart';
 
 class WordDetailPage extends StatelessWidget {
   const WordDetailPage({super.key});
@@ -432,6 +433,8 @@ class WordDetailPage extends StatelessWidget {
                                 .toList(),
                           ),
                   ),
+                  const SizedBox(height: 16),
+                  WordExtensionSection(key: ValueKey(card.id), card: card),
                   const SizedBox(height: 16),
                   SectionCard(
                     title: '複習紀錄',
