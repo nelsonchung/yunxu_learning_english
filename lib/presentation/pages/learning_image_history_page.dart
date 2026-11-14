@@ -185,6 +185,7 @@ class _HistoryEntryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isVoicePractice = entry.attempts.any((a) => a.model == 'gpt-live-1');
     final modes = entry.attempts
         .where(LearningImageHistoryEntry.isImage)
         .map(
@@ -195,26 +196,30 @@ class _HistoryEntryCard extends StatelessWidget {
               : a.model,
         )
         .toSet();
+    final activity = isVoicePractice
+        ? 'AI 口說練習'
+        : '${modes.isEmpty ? '核對與搜尋' : modes.join('／')}・產圖嘗試 ${entry.imageCount} 次';
     return Card(
       child: ExpansionTile(
         key: ValueKey(entry.id),
         title: Text(entry.word ?? '未記錄單字'),
         subtitle: Text(
           '${_date(entry.latestAt)}\n'
-          '${modes.isEmpty ? '核對與搜尋' : modes.join('／')}・產圖嘗試 ${entry.imageCount} 次\n'
+          '$activity\n'
           '已知費用 ${_usd(entry.knownCostUsd)}${entry.unknownCount > 0 ? '（部分未知）' : ''}',
         ),
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                '核對與搜尋：${_usd(entry.researchCostUsd)}\n圖片生成：${_usd(entry.imageCostUsd)}'
-                '${entry.otherCostUsd > 0 ? '\n其他請求：${_usd(entry.otherCostUsd)}' : ''}',
+          if (!isVoicePractice)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  '核對與搜尋：${_usd(entry.researchCostUsd)}\n圖片生成：${_usd(entry.imageCostUsd)}'
+                  '${entry.otherCostUsd > 0 ? '\n其他請求：${_usd(entry.otherCostUsd)}' : ''}',
+                ),
               ),
             ),
-          ),
           for (final attempt in entry.attempts)
             _AttemptDetail(attempt: attempt),
         ],
@@ -230,6 +235,7 @@ class _AttemptDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final usage = attempt.usage;
+    final isLive = attempt.model == 'gpt-live-1';
     final details = usage?['input_tokens_details'] is Map
         ? usage!['input_tokens_details'] as Map
         : null;
@@ -239,6 +245,10 @@ class _AttemptDetail extends StatelessWidget {
         ? '核對與搜尋'
         : LearningImageHistoryEntry.isImage(attempt)
         ? '圖片生成'
+        : isLive
+        ? '即時語音'
+        : attempt.model == 'gpt-6-luna'
+        ? '口說用詞回饋'
         : '其他請求';
     final result = switch (attempt.outcome) {
       'inProgress' => '結果未確認',
@@ -268,8 +278,12 @@ class _AttemptDetail extends StatelessWidget {
                 : '用量未確認'}',
           ),
           Text('模型：${attempt.model}'),
-          Text('輸入 tokens：${count(usage?['input_tokens'])}'),
-          Text('輸出 tokens：${count(usage?['output_tokens'])}'),
+          if (isLive)
+            Text('計費秒數：${usage?['seconds'] ?? '未提供'}')
+          else ...[
+            Text('輸入 tokens：${count(usage?['input_tokens'])}'),
+            Text('輸出 tokens：${count(usage?['output_tokens'])}'),
+          ],
           if (LearningImageHistoryEntry.isResearch(attempt)) ...[
             Text('快取輸入 tokens：${count(details?['cached_tokens'])}'),
             Text('搜尋次數：${count(attempt.searches)}'),

@@ -49,6 +49,8 @@
 	<string>此 App 需要存取相簿以選取單字圖片。</string>
 	<key>NSCameraUsageDescription</key>
 	<string>此 App 需要使用相機拍攝單字圖片。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>AI 口說練習需要將麥克風音訊即時傳送給 OpenAI 進行語音對話。</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 </dict>

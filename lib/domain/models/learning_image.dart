@@ -90,12 +90,33 @@ class LearningImageCost {
         ? searches * .01
         : 0.0;
     if (usage == null) return LearningImageCost(usd: searchCost, unknown: true);
+    if (model == 'gpt-live-1') {
+      final seconds = usage['seconds'];
+      if (seconds is! num || !seconds.isFinite || seconds < 0) {
+        return const LearningImageCost(usd: 0, unknown: true);
+      }
+      return LearningImageCost(
+        usd: seconds / 60 * .05,
+        unknown: usage['final'] != true,
+      );
+    }
     int? count(dynamic v) => v is int && v >= 0 ? v : null;
     final input = count(usage['input_tokens']);
     final output = count(usage['output_tokens']);
     final details = usage['input_tokens_details'] is Map
         ? usage['input_tokens_details'] as Map
         : null;
+    if (model == 'gpt-6-luna') {
+      final cached = count(details?['cached_tokens']);
+      final validInput = input != null && cached != null && cached <= input;
+      return LearningImageCost(
+        usd:
+            ((validInput ? (input - cached) * .10 + cached * .01 : 0) +
+                (output ?? 0) * .50) /
+            1000000,
+        unknown: !validInput || output == null,
+      );
+    }
     if (model == 'gpt-5.4-mini') {
       final cached = count(details?['cached_tokens']);
       final validInput = input != null && cached != null && cached <= input;

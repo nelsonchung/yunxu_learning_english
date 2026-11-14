@@ -24,6 +24,7 @@ import 'domain/services/cloud_sync_service.dart';
 import 'domain/services/daily_word_recommendation_service.dart';
 import 'domain/services/install_state_service.dart';
 import 'domain/services/pronunciation_service.dart';
+import 'domain/services/voice_practice_service.dart';
 import 'domain/services/word_contribution_import_service.dart';
 import 'domain/services/word_contribution_share_service.dart';
 import 'data/storage/picture_catalog_store.dart';
@@ -62,6 +63,8 @@ Future<void> main() async {
   await notificationService.initialize();
   final pronunciationService = PronunciationService();
   await pronunciationService.initialize(initialSettings);
+  final openAiCredentials = SecureLearningImageCredentials();
+  final aiHistoryStore = HiveLearningImageStore();
   final wordContributionImportService = WordContributionImportService(
     scheduleService: scheduleService,
   );
@@ -101,14 +104,22 @@ Future<void> main() async {
         ChangeNotifierProvider<LearningImageNotifier>(
           create: (_) => LearningImageNotifier(
             service: LearningImageService(),
-            store: HiveLearningImageStore(),
-            credentials: SecureLearningImageCredentials(),
+            store: aiHistoryStore,
+            credentials: openAiCredentials,
             claudeCredentials: SecureLearningImageCredentials(
               provider: AiProvider.claude,
             ),
           )..initialize(),
         ),
         Provider<PronunciationService>.value(value: pronunciationService),
+        if (Platform.isIOS)
+          Provider<VoicePracticeService>(
+            create: (_) => VoicePracticeService(
+              loadOpenAiKey: openAiCredentials.load,
+              saveAttempt: aiHistoryStore.putAttempt,
+            ),
+            dispose: (_, service) => service.dispose(),
+          ),
         Provider<BuiltinWordBankRepository>.value(
           value: builtinWordBankRepository,
         ),

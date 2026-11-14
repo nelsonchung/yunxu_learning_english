@@ -2,6 +2,8 @@ import 'package:yunxu_learning_english/domain/models/builtin_word_entry.dart';
 import 'package:yunxu_learning_english/domain/services/word_extension_service.dart';
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:yunxu_learning_english/domain/services/learning_image_service.dart';
@@ -22,6 +24,7 @@ import 'package:yunxu_learning_english/domain/services/notification_service.dart
 import 'package:yunxu_learning_english/domain/services/pronunciation_service.dart';
 import 'package:yunxu_learning_english/domain/services/review_schedule_service.dart';
 import 'package:yunxu_learning_english/domain/services/sort_service.dart';
+import 'package:yunxu_learning_english/domain/services/voice_practice_service.dart';
 import 'package:yunxu_learning_english/domain/services/word_contribution_import_service.dart';
 import 'package:yunxu_learning_english/presentation/pages/word_detail_page.dart';
 import 'package:yunxu_learning_english/presentation/state/settings_notifier.dart';
@@ -29,6 +32,236 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
+  for (final guided in [true, false]) {
+    testWidgets(
+      'iOS ${guided ? '引導練習兩句' : '情境對話三輪'}完成後顯示回饋',
+      variant: const TargetPlatformVariant({TargetPlatform.iOS}),
+      (tester) async {
+        const channel = MethodChannel('voice_practice');
+        const microphone = MethodChannel('voice_practice/microphone');
+        final messenger = tester.binding.defaultBinaryMessenger;
+        final audioCalls = <String>[];
+        messenger.setMockMethodCallHandler(channel, (call) async {
+          audioCalls.add(call.method);
+          return null;
+        });
+        messenger.setMockMethodCallHandler(microphone, (_) async => null);
+        addTearDown(() {
+          messenger.setMockMethodCallHandler(channel, null);
+          messenger.setMockMethodCallHandler(microphone, null);
+        });
+
+        final socket = _FakeLiveSocket();
+        final requests = <Map<String, dynamic>>[];
+        final credentials = MemoryCredentials()..key = null;
+        final history = MemoryStore();
+        final service = VoicePracticeService(
+          loadOpenAiKey: credentials.load,
+          saveAttempt: history.putAttempt,
+          connectSocket: (uri, headers) async {
+            expect(uri.toString(), 'wss://api.openai.com/v1/live/sessions');
+            expect(headers['Authorization'], 'Bearer test-openai-key');
+            return socket;
+          },
+          client: MockClient.streaming((request, _) async {
+            expect(
+              request.url.toString(),
+              'https://api.openai.com/v1/responses',
+            );
+            expect(request.headers['authorization'], 'Bearer test-openai-key');
+            final body =
+                jsonDecode((request as http.Request).body)
+                    as Map<String, dynamic>;
+            expect(body['store'], isFalse);
+            requests.add(
+              jsonDecode(body['input'] as String) as Map<String, dynamic>,
+            );
+            return http.StreamedResponse(
+              Stream.value(
+                utf8.encode(
+                  jsonEncode({
+                    'status': 'completed',
+                    'model': 'gpt-6-luna',
+                    'usage': {
+                      'input_tokens': 1000,
+                      'output_tokens': 100,
+                      'input_tokens_details': {'cached_tokens': 100},
+                    },
+                    'output': [
+                      {
+                        'type': 'message',
+                        'content': [
+                          {
+                            'type': 'output_text',
+                            'text': jsonEncode({
+                              'feedback': '搭配 make a reservation 很自然。',
+                              'example':
+                                  'I’d like to make a reservation for two.',
+                            }),
+                          },
+                        ],
+                      },
+                    ],
+                  }),
+                ),
+              ),
+              200,
+              headers: {'content-type': 'application/json; charset=utf-8'},
+            );
+          }),
+        );
+        addTearDown(service.dispose);
+        final card = _wordCard(
+          id: 'voice-test',
+          word: 'reservation',
+        ).copyWith(meaning: '預訂；保留');
+        final words = _buildWordsNotifier(initialCards: [card]);
+        addTearDown(words.dispose);
+        await words.load();
+        await _pumpDetailPage(
+          tester,
+          wordsNotifier: words,
+          wordId: card.id,
+          voicePractice: service,
+        );
+
+        Future<void> tap(String label) async {
+          final button = find.text(label);
+          await tester.ensureVisible(button);
+          await tester.pumpAndSettle();
+          await tester.tap(button);
+          await tester.pumpAndSettle();
+        }
+
+        await tap('AI 口說練習');
+        expect(find.byType(TextField), findsNothing);
+        expect(
+          tester
+              .widget<ChoiceChip>(find.widgetWithText(ChoiceChip, '引導練習'))
+              .selected,
+          isTrue,
+        );
+        if (!guided) await tap('情境對話');
+        await tap('開始即時練習');
+        expect(find.text('請先設定 OpenAI API Key。'), findsOneWidget);
+        await credentials.save('test-openai-key');
+        await tap('開始即時練習');
+        expect(socket.sent.single['type'], 'session.start');
+        expect(socket.sent.single['session']['model'], 'gpt-live-1');
+        expect(
+          socket.sent.single['session']['instructions'],
+          contains(
+            guided
+                ? 'give a different everyday situation'
+                : 'After three learner answers',
+          ),
+        );
+        if (guided) {
+          expect(
+            socket.sent.single['session']['input'].toString(),
+            contains('say one English example'),
+          );
+        }
+
+        socket.emit({'type': 'session.started'});
+        await tester.pumpAndSettle();
+        expect(audioCalls, contains('start'));
+        expect(socket.sent.last['type'], 'session.commentary.append');
+        await messenger.handlePlatformMessage(
+          'voice_practice/microphone',
+          const StandardMethodCodec().encodeSuccessEnvelope(
+            Uint8List.fromList([1, 2]),
+          ),
+          (_) {},
+        );
+        await tester.pump();
+        expect(socket.sent.last['audio'], 'AQI=');
+
+        await tap('靜音');
+        expect(socket.sent.last['type'], 'session.input_audio.mute');
+        await tap('取消靜音');
+
+        void caption(bool learner, int start, String text) {
+          socket.emit({
+            'type': learner
+                ? 'session.input_transcript.delta'
+                : 'session.output_transcript.delta',
+            'start_ms': start,
+            'end_ms': start + 100,
+            'delta': text,
+          });
+        }
+
+        caption(false, 100, 'How can I help?');
+        socket.emit({'type': 'session.output_audio.delta', 'delta': 'AQI='});
+        caption(true, 300, 'I want to make a reservation，');
+        caption(true, 420, '兩位。');
+        await tester.pumpAndSettle();
+        final partner = find.text('口說夥伴');
+        final learner = find.text('你');
+        expect(partner, findsOneWidget);
+        expect(learner, findsOneWidget);
+        expect(
+          tester.getCenter(partner).dx,
+          lessThan(tester.getCenter(learner).dx),
+        );
+        caption(false, 650, 'What time?');
+        caption(true, 850, '晚上 seven.');
+        if (!guided) {
+          caption(false, 1100, 'Inside or outside?');
+          caption(true, 1350, 'Inside，謝謝。');
+        }
+        await tester.pumpAndSettle();
+        expect(audioCalls, containsAllInOrder(['play', 'interrupt']));
+        expect(find.text(guided ? '已練習 2／2 句' : '已回答 3／3 輪'), findsOneWidget);
+        socket.emit({
+          'type': 'session.usage.updated',
+          'usage': {'seconds': 12},
+        });
+        await tester.pump(const Duration(seconds: 2));
+        await tester.pumpAndSettle();
+        expect(socket.sent.last['type'], 'session.close');
+        expect(audioCalls, contains('stop'));
+        await tester.pump(const Duration(seconds: 2));
+        await tester.pumpAndSettle();
+        expect(requests, hasLength(1));
+        final attempts = await history.attempts();
+        expect(attempts.map((attempt) => attempt.model), [
+          'gpt-live-1',
+          'gpt-6-luna',
+        ]);
+        expect(
+          attempts.map((attempt) => attempt.generationId).toSet(),
+          hasLength(1),
+        );
+        expect(attempts.first.usage?['seconds'], 15);
+        expect(attempts.first.cost.usd, closeTo(.0125, 1e-10));
+        expect(attempts.last.cost.usd, closeTo(.000141, 1e-10));
+        expect(attempts.any((attempt) => attempt.cost.unknown), isFalse);
+        expect(find.text('用詞回饋'), findsOneWidget);
+        expect(
+          find.text('I’d like to make a reservation for two.'),
+          findsOneWidget,
+        );
+        expect(find.text('口說夥伴'), findsNothing);
+        expect(
+          tester.getTopLeft(find.text('英文示範')).dy,
+          lessThan(tester.getTopLeft(find.text('查看對話')).dy),
+        );
+        await tap('查看對話');
+        expect(find.text('口說夥伴'), findsWidgets);
+        expect(find.text('I want to make a reservation，兩位。'), findsOneWidget);
+        final lesson = requests.single;
+        expect(lesson['meaning'], '預訂');
+        expect((lesson['turns'] as List).map((turn) => turn['user']), [
+          'I want to make a reservation，兩位。',
+          '晚上 seven.',
+          if (!guided) 'Inside，謝謝。',
+        ]);
+      },
+    );
+  }
 
   testWidgets('非原15字也能從字庫推薦並加入複習，只顯示有資料的類別', (tester) async {
     final source = _wordCard(
@@ -536,6 +769,7 @@ Future<void> _pumpDetailPage(
   required String wordId,
   LearningImageNotifier? ai,
   WordExtensionService? extensionService,
+  VoicePracticeService? voicePractice,
 }) async {
   final pronunciationService = PronunciationService();
   final navigatorKey = GlobalKey<NavigatorState>();
@@ -543,6 +777,8 @@ Future<void> _pumpDetailPage(
   await tester.pumpWidget(
     MultiProvider(
       providers: [
+        if (voicePractice != null)
+          Provider<VoicePracticeService>.value(value: voicePractice),
         if (ai != null) ...[
           ChangeNotifierProvider<LearningImageNotifier>.value(value: ai),
           Provider<OnlinePictureService>(create: (_) => OnlinePictureService()),
@@ -619,6 +855,49 @@ WordCard _wordCard({required String id, required String word}) {
     history: const [],
     isDeleted: false,
   );
+}
+
+class _FakeLiveSocket extends Stream<dynamic> implements WebSocket {
+  final _stream = StreamController<dynamic>();
+  final sent = <Map<String, dynamic>>[];
+
+  void emit(Map<String, Object> event) => _stream.add(jsonEncode(event));
+
+  @override
+  int get readyState => WebSocket.open;
+
+  @override
+  void add(dynamic data) {
+    final event = jsonDecode(data as String) as Map<String, dynamic>;
+    sent.add(event);
+    if (event['type'] == 'session.close') {
+      emit({
+        'type': 'session.closed',
+        'usage': {'seconds': 15},
+      });
+    }
+  }
+
+  @override
+  Future<void> close([int? code, String? reason]) async {
+    await _stream.close();
+  }
+
+  @override
+  StreamSubscription<dynamic> listen(
+    void Function(dynamic)? onData, {
+    Function? onError,
+    void Function()? onDone,
+    bool? cancelOnError,
+  }) => _stream.stream.listen(
+    onData,
+    onError: onError,
+    onDone: onDone,
+    cancelOnError: cancelOnError,
+  );
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }
 
 class _FakeWordRepository implements WordRepository {

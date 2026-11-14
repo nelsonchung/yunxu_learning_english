@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:path/path.dart' as path;
@@ -10,6 +11,7 @@ import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../state/learning_image_notifier.dart';
 import 'learning_image_page.dart';
+import 'voice_practice_page.dart';
 import '../widgets/app_background.dart';
 import '../widgets/date_utils.dart';
 import '../widgets/image_preview.dart';
@@ -434,6 +436,19 @@ class WordDetailPage extends StatelessWidget {
                           ),
                   ),
                   const SizedBox(height: 16),
+                  if (!kIsWeb &&
+                      defaultTargetPlatform == TargetPlatform.iOS) ...[
+                    OutlinedButton.icon(
+                      icon: const Icon(Icons.record_voice_over_outlined),
+                      label: const Text('AI 口說練習'),
+                      onPressed: () => Navigator.of(context).push<void>(
+                        MaterialPageRoute(
+                          builder: (_) => VoicePracticePage(card: card),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
                   WordExtensionSection(key: ValueKey(card.id), card: card),
                   const SizedBox(height: 16),
                   SectionCard(
