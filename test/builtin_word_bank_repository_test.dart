@@ -128,6 +128,28 @@ void main() {
       ]);
     },
   );
+
+  test('school-level words survive the per-shard candidate limit', () async {
+    final bundle = _TrackingWordBankAssetBundle({
+      'assets/word_bank/word_bank_main-g.json': [
+        _entryMap(word: 'guitar', meaning: '吉他', schoolLevels: ['juniorHigh']),
+        _entryMap(word: 'glance', meaning: '瞥一眼'),
+        _entryMap(word: 'gauntlet', meaning: '長手套', schoolLevels: ['college']),
+      ],
+    });
+    final repository = BuiltinWordBankRepository(assetBundle: bundle);
+
+    final candidates = await repository.fetchRecommendationCandidates(
+      existingWords: const [],
+      now: DateTime(2026, 7, 29),
+      desiredCount: 2,
+      minimumShardCount: 1,
+      candidateLimit: 2,
+    );
+
+    expect(candidates.map((entry) => entry.word), ['guitar', 'glance']);
+    expect(bundle.loadedKeys, ['assets/word_bank/word_bank_main-g.json']);
+  });
 }
 
 String _alphaSuffix(int index) {

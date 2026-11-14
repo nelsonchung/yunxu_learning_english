@@ -3,6 +3,16 @@ import '../models/builtin_word_entry.dart';
 import '../models/word_card.dart';
 
 class DailyWordRecommendationService {
+  static int schoolLevelPriority(BuiltinWordEntry entry) {
+    if (entry.schoolLevels.contains(BuiltinSchoolLevel.juniorHigh)) {
+      return 0;
+    }
+    if (entry.schoolLevels.contains(BuiltinSchoolLevel.seniorHigh)) {
+      return 1;
+    }
+    return 2;
+  }
+
   List<BuiltinWordEntry> recommend({
     required List<BuiltinWordEntry> entries,
     required List<WordCard> existingWords,
@@ -40,119 +50,73 @@ class DailyWordRecommendationService {
     );
     final dayKey = '${now.year}-${now.month}-${now.day}';
 
-    final scored =
-        entries
-            .where(
-              (entry) =>
-                  _isEligible(entry, existingKeys, existingRoots, excludedKeys),
-            )
-            .map(
-              (entry) => _ScoredEntry(
-                entry: entry,
-                score: _buildScore(
-                  entry: entry,
-                  targetDifficulty: targetDifficulty,
-                ),
-                rotationKey: _stableHash(
-                  '$dayKey:$batchIndex:${entry.word.toLowerCase()}',
-                ),
-              ),
-            )
-            .toList(growable: false)
-          ..sort((a, b) {
-            final byScore = b.score.compareTo(a.score);
-            if (byScore != 0) {
-              return byScore;
-            }
-            final byRotation = a.rotationKey.compareTo(b.rotationKey);
-            if (byRotation != 0) {
-              return byRotation;
-            }
-            return a.entry.word.compareTo(b.entry.word);
-          });
+    final candidatesByPriority = <int, List<_ScoredEntry>>{};
+    for (final entry in entries) {
+      if (!_isEligible(entry, existingKeys, existingRoots, excludedKeys)) {
+        continue;
+      }
+      (candidatesByPriority[schoolLevelPriority(entry)] ??= []).add(
+        _ScoredEntry(
+          entry: entry,
+          score: _buildScore(entry: entry, targetDifficulty: targetDifficulty),
+          rotationKey: _stableHash(
+            '$dayKey:$batchIndex:${entry.word.toLowerCase()}',
+          ),
+        ),
+      );
+    }
 
     final selected = <BuiltinWordEntry>[];
     final selectedRoots = <String>{};
     final selectedInitials = <String>{};
-    final selectedParts = <PartOfSpeech, int>{};
+    final selectedParts = <PartOfSpeech>{};
+    final selectedWords = <String>{};
 
-    for (final item in scored) {
-      if (selected.length >= settings.dailyNewWordsCount) {
-        break;
-      }
+    final priorities = candidatesByPriority.keys.toList()..sort();
+    for (final priority in priorities) {
+      final scored = candidatesByPriority[priority]!
+        ..sort((a, b) {
+          final byScore = b.score.compareTo(a.score);
+          if (byScore != 0) {
+            return byScore;
+          }
+          final byRotation = a.rotationKey.compareTo(b.rotationKey);
+          if (byRotation != 0) {
+            return byRotation;
+          }
+          return a.entry.word.compareTo(b.entry.word);
+        });
 
-      final root = _stemWord(item.entry.word);
-      if (root.length >= 4 && selectedRoots.contains(root)) {
-        continue;
-      }
+      // Relax variety requirements within each school level before moving on.
+      for (final (requireDifferentPart, requireDifferentInitial) in const [
+        (true, true),
+        (false, true),
+        (false, false),
+      ]) {
+        for (final item in scored) {
+          final entry = item.entry;
+          final key = _normalizeKey(entry.word);
+          final root = _stemWord(entry.word);
+          final initial = _leadingLetter(entry.word);
+          final part = entry.partsOfSpeech.first;
+          if (selectedWords.contains(key) ||
+              selectedRoots.contains(root) ||
+              (requireDifferentInitial && selectedInitials.contains(initial)) ||
+              (requireDifferentPart && selectedParts.contains(part))) {
+            continue;
+          }
 
-      final initial = _leadingLetter(item.entry.word);
-      if (selectedInitials.contains(initial)) {
-        continue;
-      }
-
-      final partCount = selectedParts[item.entry.partOfSpeech] ?? 0;
-      if (partCount >= 1) {
-        continue;
-      }
-
-      selected.add(item.entry);
-      if (root.length >= 4) {
-        selectedRoots.add(root);
-      }
-      selectedInitials.add(initial);
-      selectedParts[item.entry.partOfSpeech] = partCount + 1;
-    }
-
-    if (selected.length >= settings.dailyNewWordsCount) {
-      return selected;
-    }
-
-    for (final item in scored) {
-      if (selected.length >= settings.dailyNewWordsCount) {
-        break;
-      }
-      if (selected.any((entry) => entry.word == item.entry.word)) {
-        continue;
-      }
-
-      final root = _stemWord(item.entry.word);
-      if (root.length >= 4 && selectedRoots.contains(root)) {
-        continue;
-      }
-
-      final initial = _leadingLetter(item.entry.word);
-      if (selectedInitials.contains(initial)) {
-        continue;
-      }
-
-      selected.add(item.entry);
-      if (root.length >= 4) {
-        selectedRoots.add(root);
-      }
-      selectedInitials.add(initial);
-    }
-
-    if (selected.length >= settings.dailyNewWordsCount) {
-      return selected;
-    }
-
-    for (final item in scored) {
-      if (selected.length >= settings.dailyNewWordsCount) {
-        break;
-      }
-      if (selected.any((entry) => entry.word == item.entry.word)) {
-        continue;
-      }
-
-      final root = _stemWord(item.entry.word);
-      if (root.length >= 4 && selectedRoots.contains(root)) {
-        continue;
-      }
-
-      selected.add(item.entry);
-      if (root.length >= 4) {
-        selectedRoots.add(root);
+          selected.add(entry);
+          if (selected.length == settings.dailyNewWordsCount) {
+            return selected;
+          }
+          selectedWords.add(key);
+          if (root.length >= 4) {
+            selectedRoots.add(root);
+          }
+          selectedInitials.add(initial);
+          selectedParts.add(part);
+        }
       }
     }
 

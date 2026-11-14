@@ -126,6 +126,50 @@ void main() {
       );
     });
 
+    test('fills the batch by school level before prioritizing variety', () {
+      final recommendations = service.recommend(
+        entries: [
+          _entry(
+            word: 'bright',
+            difficultyLevel: 2,
+            partOfSpeech: PartOfSpeech.adjective,
+          ),
+          _entry(
+            word: 'garden',
+            difficultyLevel: 2,
+            partOfSpeech: PartOfSpeech.noun,
+            schoolLevels: const [BuiltinSchoolLevel.juniorHigh],
+          ),
+          _entry(
+            word: 'guitar',
+            difficultyLevel: 1,
+            partOfSpeech: PartOfSpeech.noun,
+            schoolLevels: const [
+              BuiltinSchoolLevel.seniorHigh,
+              BuiltinSchoolLevel.juniorHigh,
+            ],
+          ),
+          _entry(
+            word: 'avoid',
+            difficultyLevel: 2,
+            partOfSpeech: PartOfSpeech.verb,
+            schoolLevels: const [],
+          ),
+        ],
+        existingWords: const [],
+        settings: settings.copyWith(dailyNewWordsCount: 4),
+        dueTodayCount: 0,
+        now: now,
+      );
+
+      expect(recommendations.map((entry) => entry.word), [
+        'garden',
+        'guitar',
+        'bright',
+        'avoid',
+      ]);
+    });
+
     test('uses different leading letters when enough candidates exist', () {
       final entries = [
         _entry(
@@ -291,6 +335,7 @@ BuiltinWordEntry _entry({
   required String word,
   required int difficultyLevel,
   required PartOfSpeech partOfSpeech,
+  List<BuiltinSchoolLevel> schoolLevels = const [BuiltinSchoolLevel.seniorHigh],
 }) {
   return BuiltinWordEntry(
     word: word,
@@ -301,7 +346,7 @@ BuiltinWordEntry _entry({
       'I want to remember $word this week.',
     ],
     sourcePage: 1,
-    schoolLevels: const [BuiltinSchoolLevel.seniorHigh],
+    schoolLevels: schoolLevels,
     examTags: const [],
     audienceTags: const [BuiltinAudienceTag.general],
     sourceTags: const [BuiltinSourceTag.twCeec],

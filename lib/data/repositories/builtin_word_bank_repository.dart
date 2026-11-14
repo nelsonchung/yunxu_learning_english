@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../../domain/models/builtin_word_entry.dart';
 import '../../domain/models/word_card.dart';
+import '../../domain/services/daily_word_recommendation_service.dart';
 import '../../domain/services/word_bank_search_service.dart';
 
 enum BuiltinWordBankAudienceFilter {
@@ -191,6 +192,15 @@ class BuiltinWordBankRepository {
               )
               .toList(growable: false)
             ..sort((a, b) {
+              final bySchoolLevel =
+                  DailyWordRecommendationService.schoolLevelPriority(
+                    a,
+                  ).compareTo(
+                    DailyWordRecommendationService.schoolLevelPriority(b),
+                  );
+              if (bySchoolLevel != 0) {
+                return bySchoolLevel;
+              }
               final byRotation =
                   _stableHash(
                     '$recommendationDayKey:${a.word.toLowerCase()}',
