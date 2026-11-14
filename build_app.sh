@@ -31,11 +31,69 @@ run_ios_pod_install() {
     )
 }
 
+select_ios_release_device() {
+    local devices physical_devices device_id device_name selection
+    local device_ids=() device_names=()
+    command -v python3 >/dev/null 2>&1 || {
+        echo -e "${RED}錯誤: 需要 python3 解析 Flutter 裝置清單${NC}"
+        return 1
+    }
+    devices=$(flutter devices --machine) || return 1
+    physical_devices=$(printf '%s' "$devices" | python3 -c '
+import json, sys
+for device in json.load(sys.stdin):
+    if (device.get("targetPlatform") == "ios"
+            and device.get("emulator") is False
+            and device.get("isSupported") is True):
+        print(device["id"] + "\t" + device["name"])
+') || return 1
+    while IFS=$'\t' read -r device_id device_name; do
+        [ -n "$device_id" ] || continue
+        device_ids+=("$device_id")
+        device_names+=("$device_name")
+    done <<< "$physical_devices"
+    if [ "${#device_ids[@]}" -eq 0 ]; then
+        echo -e "${RED}找不到可用的 iOS 實機。請連接 iPhone、解鎖並信任此電腦，且開啟開發者模式後重試。${NC}"
+        echo -e "${YELLOW}iOS 模擬器不支援 Release 執行；可用 flutter devices 檢查裝置。${NC}"
+        return 1
+    fi
+    selection=1
+    if [ "${#device_ids[@]}" -gt 1 ]; then
+        echo "請選擇 iOS 實機："
+        for ((selection=0; selection<${#device_ids[@]}; selection++)); do
+            printf '%s) %s (%s)\n' "$((selection + 1))" "${device_names[$selection]}" "${device_ids[$selection]}"
+        done
+        read -r -p "請輸入裝置編號: " selection || return 1
+        case "$selection" in
+            ''|*[!0-9]*) echo "無效的裝置編號"; return 1 ;;
+        esac
+        # Compare against valid indices without evaluating user input as arithmetic.
+        local index matched=false
+        for ((index=1; index<=${#device_ids[@]}; index++)); do
+            if [ "$selection" = "$index" ]; then matched=true; break; fi
+        done
+        if [ "$matched" != true ]; then
+            echo "無效的裝置編號"
+            return 1
+        fi
+    fi
+    ios_release_device_id="${device_ids[$((selection - 1))]}"
+    echo "使用 iOS 實機：${device_names[$((selection - 1))]} ($ios_release_device_id)"
+}
+
 run_ios_release() {
-    # Simulator builds share build/native_assets/ios with device builds.
-    # Explicitly build for a physical device before installing the resulting app.
+    local ios_release_device_id
+    select_ios_release_device || return 1
+    build_and_run_ios_release
+}
+
+build_and_run_ios_release() {
+    # Flutter can reuse simulator frameworks from this shared output directory.
+    # Invalidate Flutter's install stamps as well so it recreates the output.
+    rm -rf build/native_assets/ios &&
+    rm -f .dart_tool/flutter_build/*/install_code_assets.stamp &&
     flutter build ios --release --dart-define=ENABLE_IOS_CLOUD_SYNC=false &&
-    flutter run --release --use-application-binary=build/ios/iphoneos/YunxuLearn.app
+    flutter run -d "$ios_release_device_id" --release --use-application-binary=build/ios/iphoneos/YunxuLearn.app
 }
 
 clean_and_run_ios_release() {
@@ -44,12 +102,13 @@ clean_and_run_ios_release() {
         return 1
     fi
 
+    local ios_release_device_id
+    select_ios_release_device || return 1
     echo -e "${YELLOW}適用於升級 macOS / Xcode 後重新建置 iOS App，首次編譯可能較久${NC}"
-    echo -e "${YELLOW}請連接 iPhone 並開啟開發者模式；若出現裝置選單，請選擇 iPhone${NC}"
     flutter clean &&
     flutter pub get &&
     run_ios_pod_install &&
-    run_ios_release
+    build_and_run_ios_release
 }
 
 current_project_version() {
