@@ -100,6 +100,13 @@ class LearningImageCost {
         unknown: usage['final'] != true,
       );
     }
+    if (model == 'gpt-transcribe') {
+      final seconds = usage['seconds'];
+      return seconds is num && seconds.isFinite && seconds >= 0
+          ? LearningImageCost(usd: seconds / 60 * .0045, unknown: false)
+          : const LearningImageCost(usd: 0, unknown: true);
+    }
+    if (model == 'gpt-realtime-2.1-mini') return _realtime(usage);
     int? count(dynamic v) => v is int && v >= 0 ? v : null;
     final input = count(usage['input_tokens']);
     final output = count(usage['output_tokens']);
@@ -151,6 +158,62 @@ class LearningImageCost {
       );
     }
     return const LearningImageCost(usd: 0, unknown: true);
+  }
+
+  static LearningImageCost _realtime(Map usage) {
+    const inputRates = {
+      'text_tokens': .60,
+      'audio_tokens': 10.0,
+      'image_tokens': .80,
+    };
+    const cacheRates = {
+      'text_tokens': .06,
+      'audio_tokens': .30,
+      'image_tokens': .08,
+    };
+    const outputRates = {'text_tokens': 2.40, 'audio_tokens': 20.0};
+    int? count(Object? value) => value is int && value >= 0 ? value : null;
+    final input = usage['input_token_details'];
+    final output = usage['output_token_details'];
+    var unknown = false;
+    var cost = 0.0;
+    if (input is Map) {
+      final cached = count(input['cached_tokens']);
+      final cache = input['cached_tokens_details'];
+      var inputTotal = 0;
+      var cacheTotal = 0;
+      for (final entry in inputRates.entries) {
+        final tokens = count(input[entry.key]) ?? 0;
+        final hits = cached == 0
+            ? 0
+            : (cache is Map ? count(cache[entry.key]) ?? 0 : 0);
+        inputTotal += tokens;
+        cacheTotal += hits;
+        cost += hits <= tokens
+            ? (tokens - hits) * entry.value + hits * cacheRates[entry.key]!
+            : 0;
+        if (hits > tokens) unknown = true;
+      }
+      if (cacheTotal != cached || inputTotal != count(usage['input_tokens'])) {
+        // Without a cache breakdown, only the output charge can be confirmed.
+        cost = 0;
+        unknown = true;
+      }
+    } else if (count(usage['input_tokens']) != 0) {
+      unknown = true;
+    }
+    if (output is Map) {
+      var outputTotal = 0;
+      for (final entry in outputRates.entries) {
+        final tokens = count(output[entry.key]) ?? 0;
+        outputTotal += tokens;
+        cost += tokens * entry.value;
+      }
+      if (outputTotal != count(usage['output_tokens'])) unknown = true;
+    } else if (count(usage['output_tokens']) != 0) {
+      unknown = true;
+    }
+    return LearningImageCost(usd: cost / 1000000, unknown: unknown);
   }
 }
 

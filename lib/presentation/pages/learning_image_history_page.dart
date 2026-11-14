@@ -185,7 +185,12 @@ class _HistoryEntryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isVoicePractice = entry.attempts.any((a) => a.model == 'gpt-live-1');
+    final isVoicePractice = entry.attempts.any(
+      (a) =>
+          a.model == 'gpt-live-1' ||
+          a.model == 'gpt-realtime-2.1-mini' ||
+          a.model == 'gpt-transcribe',
+    );
     final modes = entry.attempts
         .where(LearningImageHistoryEntry.isImage)
         .map(
@@ -236,6 +241,8 @@ class _AttemptDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     final usage = attempt.usage;
     final isLive = attempt.model == 'gpt-live-1';
+    final isRealtime = attempt.model == 'gpt-realtime-2.1-mini';
+    final isTranscription = attempt.model == 'gpt-transcribe';
     final details = usage?['input_tokens_details'] is Map
         ? usage!['input_tokens_details'] as Map
         : null;
@@ -245,8 +252,10 @@ class _AttemptDetail extends StatelessWidget {
         ? '核對與搜尋'
         : LearningImageHistoryEntry.isImage(attempt)
         ? '圖片生成'
-        : isLive
+        : isLive || isRealtime
         ? '即時語音'
+        : isTranscription
+        ? '語音字幕轉錄'
         : attempt.model == 'gpt-6-luna'
         ? '口說用詞回饋'
         : '其他請求';
@@ -278,11 +287,22 @@ class _AttemptDetail extends StatelessWidget {
                 : '用量未確認'}',
           ),
           Text('模型：${attempt.model}'),
-          if (isLive)
+          if (isLive || isTranscription)
             Text('計費秒數：${usage?['seconds'] ?? '未提供'}')
           else ...[
             Text('輸入 tokens：${count(usage?['input_tokens'])}'),
             Text('輸出 tokens：${count(usage?['output_tokens'])}'),
+          ],
+          if (isRealtime) ...[
+            Text(
+              '音訊輸入 tokens：${count((usage?['input_token_details'] as Map?)?['audio_tokens'])}',
+            ),
+            Text(
+              '音訊輸出 tokens：${count((usage?['output_token_details'] as Map?)?['audio_tokens'])}',
+            ),
+            Text(
+              '快取輸入 tokens：${count((usage?['input_token_details'] as Map?)?['cached_tokens'])}',
+            ),
           ],
           if (LearningImageHistoryEntry.isResearch(attempt)) ...[
             Text('快取輸入 tokens：${count(details?['cached_tokens'])}'),

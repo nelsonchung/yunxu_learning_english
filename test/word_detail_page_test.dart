@@ -33,18 +33,34 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  for (final guided in [true, false]) {
+  for (final (guided, realtime, timeLimit) in [
+    (true, false, false),
+    (false, false, false),
+    (true, true, false),
+    (false, true, false),
+    (true, false, true),
+    (true, true, true),
+  ]) {
     testWidgets(
-      'iOS ${guided ? '引導練習兩句' : '情境對話三輪'}完成後顯示回饋',
+      'iOS ${realtime ? 'Realtime mini' : 'GPT-Live'} ${timeLimit
+          ? '引導練習兩分鐘後結束'
+          : guided
+          ? '引導練習可提問和重試後查看回饋'
+          : '情境對話三輪後顯示回饋'}',
       variant: const TargetPlatformVariant({TargetPlatform.iOS}),
       (tester) async {
         const channel = MethodChannel('voice_practice');
         const microphone = MethodChannel('voice_practice/microphone');
         final messenger = tester.binding.defaultBinaryMessenger;
         final audioCalls = <String>[];
+        var playbackRemaining = 0;
         messenger.setMockMethodCallHandler(channel, (call) async {
           audioCalls.add(call.method);
-          return null;
+          return switch (call.method) {
+            'interrupt' => 2,
+            'playbackRemaining' => playbackRemaining,
+            _ => null,
+          };
         });
         messenger.setMockMethodCallHandler(microphone, (_) async => null);
         addTearDown(() {
@@ -60,7 +76,12 @@ void main() {
           loadOpenAiKey: credentials.load,
           saveAttempt: history.putAttempt,
           connectSocket: (uri, headers) async {
-            expect(uri.toString(), 'wss://api.openai.com/v1/live/sessions');
+            expect(
+              uri.toString(),
+              realtime
+                  ? 'wss://api.openai.com/v1/realtime?model=gpt-realtime-2.1-mini'
+                  : 'wss://api.openai.com/v1/live/sessions',
+            );
             expect(headers['Authorization'], 'Bearer test-openai-key');
             return socket;
           },
@@ -143,12 +164,21 @@ void main() {
           isTrue,
         );
         if (!guided) await tap('情境對話');
+        if (realtime) {
+          await tap('GPT-Live');
+          await tap('Realtime mini');
+        }
         await tap('開始即時練習');
         expect(find.text('請先設定 OpenAI API Key。'), findsOneWidget);
         await credentials.save('test-openai-key');
         await tap('開始即時練習');
-        expect(socket.sent.single['type'], 'session.start');
-        expect(socket.sent.single['session']['model'], 'gpt-live-1');
+        expect(
+          socket.sent.single['type'],
+          realtime ? 'session.update' : 'session.start',
+        );
+        if (!realtime) {
+          expect(socket.sent.single['session']['model'], 'gpt-live-1');
+        }
         expect(
           socket.sent.single['session']['instructions'],
           contains(
@@ -157,17 +187,20 @@ void main() {
                 : 'After three learner answers',
           ),
         );
-        if (guided) {
+        if (guided && !realtime) {
           expect(
             socket.sent.single['session']['input'].toString(),
             contains('say one English example'),
           );
         }
 
-        socket.emit({'type': 'session.started'});
+        socket.emit({'type': realtime ? 'session.updated' : 'session.started'});
         await tester.pumpAndSettle();
         expect(audioCalls, contains('start'));
-        expect(socket.sent.last['type'], 'session.commentary.append');
+        expect(
+          socket.sent.last['type'],
+          realtime ? 'response.create' : 'session.commentary.append',
+        );
         await messenger.handlePlatformMessage(
           'voice_practice/microphone',
           const StandardMethodCodec().encodeSuccessEnvelope(
@@ -176,67 +209,257 @@ void main() {
           (_) {},
         );
         await tester.pump();
-        expect(socket.sent.last['audio'], 'AQI=');
+        if (realtime) {
+          expect(socket.sent.last['type'], 'response.create');
+        } else {
+          expect(socket.sent.last['audio'], 'AQI=');
+        }
 
         await tap('靜音');
-        expect(socket.sent.last['type'], 'session.input_audio.mute');
-        await tap('取消靜音');
-
-        void caption(bool learner, int start, String text) {
-          socket.emit({
-            'type': learner
-                ? 'session.input_transcript.delta'
-                : 'session.output_transcript.delta',
-            'start_ms': start,
-            'end_ms': start + 100,
-            'delta': text,
-          });
+        if (!realtime) {
+          expect(socket.sent.last['type'], 'session.input_audio.mute');
+        } else {
+          final sent = socket.sent.length;
+          await messenger.handlePlatformMessage(
+            'voice_practice/microphone',
+            const StandardMethodCodec().encodeSuccessEnvelope(
+              Uint8List.fromList([1, 2]),
+            ),
+            (_) {},
+          );
+          await tester.pump();
+          expect(socket.sent.length, sent);
         }
+        await tap('取消靜音');
+        final secondAnswer = guided ? '可以再提示我一次嗎？' : '晚上 seven.';
 
-        caption(false, 100, 'How can I help?');
-        socket.emit({'type': 'session.output_audio.delta', 'delta': 'AQI='});
-        caption(true, 300, 'I want to make a reservation，');
-        caption(true, 420, '兩位。');
-        await tester.pumpAndSettle();
-        final partner = find.text('口說夥伴');
-        final learner = find.text('你');
-        expect(partner, findsOneWidget);
-        expect(learner, findsOneWidget);
-        expect(
-          tester.getCenter(partner).dx,
-          lessThan(tester.getCenter(learner).dx),
-        );
-        caption(false, 650, 'What time?');
-        caption(true, 850, '晚上 seven.');
-        if (!guided) {
+        if (realtime) {
+          void responseCreated(String id) => socket.emit({
+            'type': 'response.created',
+            'response': {'id': id},
+          });
+          void responseDone(String id, String status) => socket.emit({
+            'type': 'response.done',
+            'response': {
+              'id': id,
+              'status': status,
+              'usage': {
+                'input_tokens': 100,
+                'output_tokens': 10,
+                'input_token_details': {
+                  'text_tokens': 80,
+                  'audio_tokens': 20,
+                  'cached_tokens': 30,
+                  'cached_tokens_details': {
+                    'text_tokens': 25,
+                    'audio_tokens': 5,
+                  },
+                },
+                'output_token_details': {'text_tokens': 4, 'audio_tokens': 6},
+              },
+            },
+          });
+          void commit(int index) => socket.emit({
+            'type': 'input_audio_buffer.committed',
+            'item_id': 'user-$index',
+          });
+          void transcription(int index, String transcript) => socket.emit({
+            'type': 'conversation.item.input_audio_transcription.completed',
+            'item_id': 'user-$index',
+            'transcript': transcript,
+            'usage': {'type': 'duration', 'seconds': 4},
+          });
+
+          responseCreated('opening');
+          socket.emit({
+            'type': 'response.output_audio.delta',
+            'response_id': 'opening',
+            'item_id': 'partner-opening',
+            'content_index': 0,
+            'delta': base64Encode(Uint8List(480)),
+          });
+          socket.emit({
+            'type': 'response.output_audio_transcript.done',
+            'response_id': 'opening',
+            'item_id': 'partner-opening',
+            'transcript': 'How can I help?',
+          });
+          await tester.pumpAndSettle();
+          final sentBeforeEcho = socket.sent.length;
+          final playsBeforeEcho = audioCalls
+              .where((call) => call == 'play')
+              .length;
+          socket.emit({'type': 'input_audio_buffer.speech_started'});
+          socket.emit({
+            'type': 'response.output_audio.delta',
+            'response_id': 'opening',
+            'item_id': 'partner-opening',
+            'content_index': 0,
+            'delta': base64Encode(Uint8List(480)),
+          });
+          await messenger.handlePlatformMessage(
+            'voice_practice/microphone',
+            const StandardMethodCodec().encodeSuccessEnvelope(
+              Uint8List.fromList([1, 2]),
+            ),
+            (_) {},
+          );
+          await tester.pumpAndSettle();
+          expect(socket.sent, hasLength(sentBeforeEcho));
+          expect(
+            audioCalls.where((call) => call == 'play'),
+            hasLength(playsBeforeEcho + 1),
+          );
+          playbackRemaining = 300;
+          await tap('打斷回覆');
+          expect(socket.sent.last, containsPair('audio_end_ms', 2));
+          expect(
+            socket.sent.any((event) => event['type'] == 'response.cancel'),
+            isTrue,
+          );
+          responseDone('opening', 'cancelled');
+          responseDone('opening', 'cancelled');
+          await tester.pumpAndSettle();
+          await tester.pump(const Duration(milliseconds: 300));
+          expect(find.text('口說夥伴回覆中'), findsOneWidget);
+          playbackRemaining = 0;
+          await tester.pump(const Duration(milliseconds: 500));
+          await messenger.handlePlatformMessage(
+            'voice_practice/microphone',
+            const StandardMethodCodec().encodeSuccessEnvelope(
+              Uint8List.fromList([1, 2]),
+            ),
+            (_) {},
+          );
+          await tester.pump();
+          expect(socket.sent.last['type'], 'input_audio_buffer.append');
+          commit(1);
+          commit(1);
+          await tester.pumpAndSettle();
+          expect(socket.sent.last['type'], 'response.create');
+          responseCreated('second');
+          responseDone('second', 'completed');
+          commit(2);
+          await tester.pumpAndSettle();
+          transcription(2, secondAnswer);
+          responseCreated('third');
+          responseDone('third', 'completed');
+          await tester.pumpAndSettle();
+          if (guided) {
+            await tester.pump(const Duration(seconds: 2));
+            expect(audioCalls, isNot(contains('stop')));
+            expect(find.text('查看回饋'), findsOneWidget);
+            expect(requests, isEmpty);
+          }
+          commit(3);
+          await tester.pumpAndSettle();
+          expect(socket.sent.last['type'], 'response.create');
+          responseCreated('fourth');
+          responseDone('fourth', 'completed');
+          transcription(3, 'Inside，謝謝。');
+          await tester.pumpAndSettle();
+          expect(find.text(guided ? '查看回饋' : '已回答 3／3 輪'), findsOneWidget);
+          await tester.pump(const Duration(milliseconds: 500));
+          expect(audioCalls, isNot(contains('stop')));
+          transcription(1, 'I want to make a reservation，兩位。');
+          transcription(1, 'duplicate');
+          await tester.pumpAndSettle();
+          await tester.pump(const Duration(seconds: 1));
+          await tester.pumpAndSettle();
+          if (guided) {
+            expect(audioCalls, isNot(contains('stop')));
+            if (timeLimit) {
+              await tester.pump(const Duration(minutes: 2));
+              await tester.pumpAndSettle();
+            } else {
+              await tap('查看回饋');
+            }
+          }
+          expect(audioCalls, contains('stop'));
+        } else {
+          void caption(bool learner, int start, String text) {
+            socket.emit({
+              'type': learner
+                  ? 'session.input_transcript.delta'
+                  : 'session.output_transcript.delta',
+              'start_ms': start,
+              'end_ms': start + 100,
+              'delta': text,
+            });
+          }
+
+          caption(false, 100, 'How can I help?');
+          socket.emit({'type': 'session.output_audio.delta', 'delta': 'AQI='});
+          caption(true, 300, 'I want to make a reservation，');
+          caption(true, 420, '兩位。');
+          await tester.pumpAndSettle();
+          final partner = find.text('口說夥伴');
+          final learner = find.text('你');
+          expect(partner, findsOneWidget);
+          expect(learner, findsOneWidget);
+          expect(
+            tester.getCenter(partner).dx,
+            lessThan(tester.getCenter(learner).dx),
+          );
+          caption(false, 650, 'What time?');
+          caption(true, 850, secondAnswer);
+          if (guided) {
+            await tester.pumpAndSettle();
+            await tester.pump(const Duration(seconds: 2));
+            expect(audioCalls, isNot(contains('stop')));
+            expect(requests, isEmpty);
+          }
           caption(false, 1100, 'Inside or outside?');
           caption(true, 1350, 'Inside，謝謝。');
+          await tester.pumpAndSettle();
+          expect(audioCalls, containsAllInOrder(['play', 'interrupt']));
+          expect(find.text(guided ? '查看回饋' : '已回答 3／3 輪'), findsOneWidget);
+          socket.emit({
+            'type': 'session.usage.updated',
+            'usage': {'seconds': 12},
+          });
+          await tester.pump(const Duration(seconds: 2));
+          await tester.pumpAndSettle();
+          if (guided) {
+            expect(audioCalls, isNot(contains('stop')));
+            if (timeLimit) {
+              await tester.pump(const Duration(minutes: 2));
+              await tester.pumpAndSettle();
+            } else {
+              await tap('查看回饋');
+            }
+          }
+          expect(socket.sent.last['type'], 'session.close');
+          expect(audioCalls, contains('stop'));
+          await tester.pump(const Duration(seconds: 2));
+          await tester.pumpAndSettle();
         }
-        await tester.pumpAndSettle();
-        expect(audioCalls, containsAllInOrder(['play', 'interrupt']));
-        expect(find.text(guided ? '已練習 2／2 句' : '已回答 3／3 輪'), findsOneWidget);
-        socket.emit({
-          'type': 'session.usage.updated',
-          'usage': {'seconds': 12},
-        });
-        await tester.pump(const Duration(seconds: 2));
-        await tester.pumpAndSettle();
-        expect(socket.sent.last['type'], 'session.close');
-        expect(audioCalls, contains('stop'));
-        await tester.pump(const Duration(seconds: 2));
-        await tester.pumpAndSettle();
         expect(requests, hasLength(1));
         final attempts = await history.attempts();
-        expect(attempts.map((attempt) => attempt.model), [
-          'gpt-live-1',
-          'gpt-6-luna',
-        ]);
+        if (realtime) {
+          final responses = attempts.where(
+            (attempt) => attempt.model == 'gpt-realtime-2.1-mini',
+          );
+          expect(responses, hasLength(4));
+          expect(responses.first.outcome, 'cancelled');
+          expect(responses.first.cost.usd, closeTo(.0003156, 1e-10));
+          final captions = attempts.where(
+            (attempt) => attempt.model == 'gpt-transcribe',
+          );
+          expect(captions, hasLength(3));
+          expect(captions.first.cost.usd, closeTo(.0003, 1e-10));
+        } else {
+          expect(attempts.map((attempt) => attempt.model), [
+            'gpt-live-1',
+            'gpt-6-luna',
+          ]);
+          expect(attempts.first.usage?['seconds'], 15);
+          expect(attempts.first.cost.usd, closeTo(.0125, 1e-10));
+        }
         expect(
           attempts.map((attempt) => attempt.generationId).toSet(),
           hasLength(1),
         );
-        expect(attempts.first.usage?['seconds'], 15);
-        expect(attempts.first.cost.usd, closeTo(.0125, 1e-10));
         expect(attempts.last.cost.usd, closeTo(.000141, 1e-10));
         expect(attempts.any((attempt) => attempt.cost.unknown), isFalse);
         expect(find.text('用詞回饋'), findsOneWidget);
@@ -256,8 +479,8 @@ void main() {
         expect(lesson['meaning'], '預訂');
         expect((lesson['turns'] as List).map((turn) => turn['user']), [
           'I want to make a reservation，兩位。',
-          '晚上 seven.',
-          if (!guided) 'Inside，謝謝。',
+          secondAnswer,
+          'Inside，謝謝。',
         ]);
       },
     );
