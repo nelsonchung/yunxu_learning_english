@@ -100470,8 +100470,8 @@
   },
   {
     "word": "northeastwards",
-    "meaning": "東北",
-    "partOfSpeech": "adjective",
+    "meaning": "向東北；往東北",
+    "partOfSpeech": "adverb",
     "sentences": [
       "The ship sailed northeastwards into the open sea. 船隻向東北航行進入廣闊的海洋。",
       "We drove northeastwards for three hours before stopping for lunch. 我們向東北方開了三個小時的車才停下來吃午餐。"
@@ -100869,7 +100869,7 @@
   },
   {
     "word": "northwards",
-    "meaning": "向北；向北",
+    "meaning": "向北；往北",
     "partOfSpeech": "adverb",
     "sentences": [
       "The train traveled northwards through the scenic countryside. 火車向北行駛，穿過風景優美的鄉村。",
@@ -100978,8 +100978,8 @@
   },
   {
     "word": "northwestwards",
-    "meaning": "西北",
-    "partOfSpeech": "adjective",
+    "meaning": "向西北；往西北",
+    "partOfSpeech": "adverb",
     "sentences": [
       "The plane flew northwestwards for three hours. 飛機向西北方向飛行了三小時。",
       "The trail continues northwestwards up the mountain. 小徑向西北方向延伸上山。"

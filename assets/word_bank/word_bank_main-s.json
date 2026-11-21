@@ -15525,6 +15525,18 @@
     ]
   },
   {
+    "word": "southeastwards",
+    "meaning": "向東南；往東南",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "The boat sailed southeastwards across the lake. 小船向東南航行，穿越湖面。",
+      "Follow the path southeastwards to reach the village. 沿著小徑往東南走，就能到達村莊。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
     "word": "southerly",
     "meaning": "南方來的；向南的",
     "partOfSpeech": "adjective",
@@ -15567,6 +15579,18 @@
     ]
   },
   {
+    "word": "southwards",
+    "meaning": "向南；往南",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "We drove southwards along the coast. 我們沿著海岸往南開。",
+      "The birds fly southwards as winter approaches. 隨著冬天接近，鳥兒向南飛去。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
     "word": "southwest",
     "meaning": "位於西南方向或西南方向；向西南;西南風。",
     "partOfSpeech": "adjective",
@@ -15585,6 +15609,18 @@
     "sentences": [
       "Locals think southwestern sunsets are the most beautiful. 當地人認為西南日落是最美的。",
       "Something described as southwestern is of or pertaining to the southwest. 被描述為西南的事物屬於或屬於西南。"
+    ],
+    "audienceTags": [
+      "general"
+    ]
+  },
+  {
+    "word": "southwestwards",
+    "meaning": "向西南；往西南",
+    "partOfSpeech": "adverb",
+    "sentences": [
+      "We drove southwestwards along the coast. 我們沿著海岸往西南開。",
+      "The trail leads southwestwards through the valley. 這條步道向西南延伸，穿過山谷。"
     ],
     "audienceTags": [
       "general"

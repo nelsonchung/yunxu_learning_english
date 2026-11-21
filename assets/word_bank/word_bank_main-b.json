@@ -4115,11 +4115,11 @@
   },
   {
     "word": "backward/backwards",
-    "meaning": "向後/向後",
+    "meaning": "向後；往後；倒著；按相反順序",
     "partOfSpeech": "adverb",
     "sentences": [
-      "Can you say the alphabet backwards? It's quite difficult! 你能倒著背字母表嗎？那挺難的！",
-      "He accidentally walked backwards and bumped into a chair. 他不小心向後走，撞到了一張椅子。"
+      "He stepped backward to let her pass. 他往後退了一步，讓她通過。",
+      "Can you say the alphabet backwards? 你能倒著背字母表嗎？"
     ],
     "audienceTags": [
       "general"
@@ -4163,7 +4163,7 @@
   },
   {
     "word": "backwards",
-    "meaning": "向後，倒退",
+    "meaning": "向後；往後；倒著；按相反順序",
     "partOfSpeech": "adverb",
     "sentences": [
       "He took a step backwards. 他後退了一步。",
