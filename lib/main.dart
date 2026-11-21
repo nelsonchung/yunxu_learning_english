@@ -18,6 +18,7 @@ import 'data/repositories/local_sync_state_repository.dart';
 import 'data/sources/sync_state_local_db.dart';
 import 'domain/services/review_schedule_service.dart';
 import 'domain/services/word_extension_service.dart';
+import 'domain/services/word_bank_refresh_service.dart';
 import 'domain/services/sort_service.dart';
 import 'domain/services/notification_service.dart';
 import 'domain/services/cloud_sync_service.dart';
@@ -122,6 +123,11 @@ Future<void> main() async {
           ),
         Provider<BuiltinWordBankRepository>.value(
           value: builtinWordBankRepository,
+        ),
+        Provider<WordBankRefreshService>(
+          create: (_) => WordBankRefreshService(
+            lookup: builtinWordBankRepository.findExact,
+          ),
         ),
         Provider<WordExtensionService>(
           create: (_) => WordExtensionService(

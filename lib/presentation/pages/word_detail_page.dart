@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:path/path.dart' as path;
 
 import '../../domain/services/online_picture_service.dart';
+import '../../domain/services/word_bank_refresh_service.dart';
+import 'word_bank_refresh_page.dart';
 import '../../domain/services/pronunciation_service.dart';
 import '../../domain/models/word_card.dart';
 import '../../domain/models/learning_image.dart';
@@ -32,6 +34,20 @@ class WordDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('單字詳情'),
         actions: [
+          if (id != null &&
+              context.watch<WordBankRefreshService?>() != null &&
+              context.watch<WordsNotifier>().findById(id)?.origin ==
+                  WordOrigin.builtinWordBank)
+            IconButton(
+              tooltip: '比對字庫內容',
+              icon: const Icon(Icons.compare_arrows),
+              onPressed: () => Navigator.push<bool>(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => WordBankRefreshPage(wordId: id),
+                ),
+              ),
+            ),
           if (id != null)
             IconButton(
               onPressed: () {

@@ -7,6 +7,43 @@ import 'package:yunxu_learning_english/data/repositories/builtin_word_bank_repos
 
 void main() {
   test(
+    'exact lookup uses one cached shard and never matches related words',
+    () async {
+      final bundle = _TrackingWordBankAssetBundle({
+        'assets/word_bank/word_bank_main-h.json': [
+          _entryMap(word: 'habit', meaning: '習慣'),
+          _entryMap(word: 'habits', meaning: '習慣複數'),
+          _entryMap(word: 'habitual', meaning: '習慣性的'),
+        ],
+      });
+      final repository = BuiltinWordBankRepository(assetBundle: bundle);
+
+      expect((await repository.findExact(' Habit ')).single.word, 'habit');
+      expect(await repository.findExact('hab'), isEmpty);
+      expect((await repository.findExact('habit')).single.meaning, '習慣');
+      expect(bundle.loadedKeys, ['assets/word_bank/word_bank_main-h.json']);
+    },
+  );
+
+  test(
+    'exact lookup preserves ambiguity and ignores unsupported keys',
+    () async {
+      final bundle = _TrackingWordBankAssetBundle({
+        'assets/word_bank/word_bank_main-h.json': [
+          _entryMap(word: 'habit', meaning: '習慣'),
+          _entryMap(word: 'Habit', meaning: '服裝'),
+        ],
+      });
+      final repository = BuiltinWordBankRepository(assetBundle: bundle);
+
+      expect(await repository.findExact('habit'), hasLength(2));
+      expect(await repository.findExact(''), isEmpty);
+      expect(await repository.findExact('123'), isEmpty);
+      expect(bundle.loadCount, 1);
+    },
+  );
+
+  test(
     'empty query only loads enough shards to satisfy the first page',
     () async {
       final bundle = _TrackingWordBankAssetBundle({

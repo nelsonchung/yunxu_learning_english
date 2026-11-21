@@ -5,6 +5,8 @@ import 'package:material_ui/material_ui.dart';
 import 'package:provider/provider.dart';
 
 import '../../domain/models/word_card.dart';
+import '../../domain/services/word_bank_refresh_service.dart';
+import 'word_bank_refresh_page.dart';
 import '../state/words_notifier.dart';
 import '../state/settings_notifier.dart';
 import '../widgets/date_utils.dart';
@@ -180,6 +182,18 @@ class _WordsListPageState extends State<WordsListPage> {
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  if (context.watch<WordBankRefreshService?>() != null)
+                    IconButton(
+                      tooltip: '檢查字庫更新',
+                      visualDensity: VisualDensity.compact,
+                      icon: const Icon(Icons.compare_arrows),
+                      onPressed: () => Navigator.push<void>(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const WordBankRefreshListPage(),
+                        ),
+                      ),
+                    ),
                   if (canSync)
                     IconButton(
                       tooltip: isSyncing ? '同步中...' : '手動同步',

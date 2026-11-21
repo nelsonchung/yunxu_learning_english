@@ -54,6 +54,18 @@ class BuiltinWordBankRepository {
   Map<BuiltinWordBankAudienceFilter, int>? _cachedFilterCounts;
   Future<Map<BuiltinWordBankAudienceFilter, int>>? _loadingFilterCountsFuture;
 
+  /// Returns all exact matches so callers can reject ambiguous entries.
+  Future<List<BuiltinWordEntry>> findExact(String word) async {
+    final key = word.trim().toLowerCase();
+    if (key.isEmpty) return const [];
+    final assetPath = _assetPathForWord(key);
+    if (assetPath == null) return const [];
+    final entries = await _loadShard(assetPath, primeForSearch: false);
+    return entries
+        .where((entry) => entry.word.trim().toLowerCase() == key)
+        .toList(growable: false);
+  }
+
   Future<List<BuiltinWordEntry>> fetchAll() async {
     final cachedEntries = _cachedEntries;
     if (cachedEntries != null) {

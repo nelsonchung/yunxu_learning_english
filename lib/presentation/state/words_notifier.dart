@@ -13,6 +13,7 @@ import '../../domain/services/cloud_sync_service.dart';
 import '../../domain/services/review_schedule_service.dart';
 import '../../domain/services/sort_service.dart';
 import '../../domain/services/word_contribution_import_service.dart';
+import '../../domain/services/word_bank_refresh_service.dart';
 
 class WordsNotifier extends ChangeNotifier {
   WordsNotifier({
@@ -48,11 +49,13 @@ class WordsNotifier extends ChangeNotifier {
 
   final List<WordCard> _words = [];
   Future<void> _wordMutationQueue = Future<void>.value();
+  int _pendingWordMutations = 0;
   static const int _autoSyncImageByteLimit = 20 * 1024 * 1024;
   SortMode _sortMode = SortMode.createdAtDesc;
   bool _isLoading = false;
   bool _isSyncing = false;
   bool _isUpdatingWordImage = false;
+  bool _isRefreshingWordBank = false;
   bool _syncQueued = false;
   bool _isBackingUp = false;
   bool _isRestoring = false;
@@ -72,6 +75,7 @@ class WordsNotifier extends ChangeNotifier {
   bool get isSyncing => _isSyncing;
   bool get isBackingUp => _isBackingUp;
   bool get isRestoring => _isRestoring;
+  bool get isRefreshingWordBank => _isRefreshingWordBank;
   bool get syncSupported => _syncService != null;
   bool get syncEnabled => _syncEnabled;
   bool get canSync => syncSupported && syncEnabled;
@@ -228,7 +232,7 @@ class WordsNotifier extends ChangeNotifier {
   }
 
   Future<void> load() async {
-    if (_isLoading) {
+    if (_isLoading || _isRefreshingWordBank) {
       return;
     }
 
@@ -272,7 +276,11 @@ class WordsNotifier extends ChangeNotifier {
     if (syncService == null || !_syncEnabled) {
       return false;
     }
-    if (_isSyncing || _isUpdatingWordImage) {
+    if (_isSyncing ||
+        _pendingWordMutations > 0 ||
+        _isUpdatingWordImage ||
+        _isRefreshingWordBank ||
+        _isRestoring) {
       _syncQueued = true;
       return false;
     }
@@ -301,7 +309,11 @@ class WordsNotifier extends ChangeNotifier {
 
   Future<bool> backupNow() async {
     final syncService = _syncService;
-    if (syncService == null || _isBackingUp || _isRestoring || _isSyncing) {
+    if (syncService == null ||
+        _isBackingUp ||
+        _isRestoring ||
+        _isSyncing ||
+        _isRefreshingWordBank) {
       return false;
     }
     _isBackingUp = true;
@@ -323,6 +335,7 @@ class WordsNotifier extends ChangeNotifier {
         _isRestoring ||
         _isBackingUp ||
         _isSyncing ||
+        _isRefreshingWordBank ||
         _isUpdatingWordImage) {
       return false;
     }
@@ -339,6 +352,10 @@ class WordsNotifier extends ChangeNotifier {
     } finally {
       _isRestoring = false;
       notifyListeners();
+      if (_syncQueued && canSync) {
+        _syncQueued = false;
+        unawaited(syncNow());
+      }
     }
     return success;
   }
@@ -655,6 +672,70 @@ class WordsNotifier extends ChangeNotifier {
     });
   }
 
+  /// Applies only selected text fields to the latest card, retaining its progress.
+  Future<bool> applyWordBankRefresh({
+    required WordBankComparison comparison,
+    String? meaning,
+    List<String>? sentences,
+    List<PartOfSpeech>? partsOfSpeech,
+  }) {
+    final selectedSentences = sentences == null
+        ? null
+        : WordBankRefreshService.cleanSentences(sentences);
+    final selectedParts = partsOfSpeech == null
+        ? null
+        : WordCard.normalizePartsOfSpeech(partsOfSpeech);
+    return _serializeWordMutation(() async {
+      if (_isSyncing || _isRestoring || _isBackingUp || _isLoading) {
+        throw StateError('正在載入、同步或還原單字，請完成後再套用');
+      }
+      final current = _requireCurrentWord(comparison.card.id);
+      final entry = comparison.entry;
+      if (comparison.status != WordBankMatchStatus.matched ||
+          entry == null ||
+          current.origin != WordOrigin.builtinWordBank ||
+          WordBankRefreshService.wordKey(entry.word) !=
+              WordBankRefreshService.wordKey(current.word)) {
+        throw StateError('找不到唯一對應的內建字庫內容');
+      }
+      if (!comparison.matchesContent(current)) {
+        throw StateError('這張卡片的內容已變更，請重新比對');
+      }
+      final nextMeaning = meaning?.trim() ?? current.meaning;
+      final nextSentences = selectedSentences ?? current.sentences;
+      final nextParts = selectedParts ?? current.partsOfSpeech;
+      if (meaning != null && nextMeaning.isEmpty) {
+        throw ArgumentError('中文意思不能為空');
+      }
+      if (sentences != null && nextSentences.isEmpty) {
+        throw ArgumentError('請至少保留一句例句');
+      }
+      if (nextMeaning == current.meaning &&
+          listEquals(nextSentences, current.sentences) &&
+          listEquals(nextParts, current.partsOfSpeech)) {
+        return false;
+      }
+      _isRefreshingWordBank = true;
+      notifyListeners();
+      try {
+        final updated = current.copyWith(
+          meaning: nextMeaning,
+          sentences: nextSentences,
+          partsOfSpeech: nextParts,
+          updatedAt: DateTime.now(),
+        );
+        await _repository.update(updated);
+        _words[_words.indexWhere((card) => card.id == current.id)] = updated;
+        notifyListeners();
+        if (canSync) _syncQueued = true;
+        return true;
+      } finally {
+        _isRefreshingWordBank = false;
+        notifyListeners();
+      }
+    });
+  }
+
   Future<void> appendGeneratedSentences(
     WordCard expected,
     List<String> sentences,
@@ -682,6 +763,7 @@ class WordsNotifier extends ChangeNotifier {
   }
 
   Future<T> _serializeWordMutation<T>(Future<T> Function() action) async {
+    _pendingWordMutations++;
     final previous = _wordMutationQueue;
     final completion = Completer<void>();
     _wordMutationQueue = completion.future;
@@ -689,7 +771,12 @@ class WordsNotifier extends ChangeNotifier {
     try {
       return await action();
     } finally {
+      _pendingWordMutations--;
       completion.complete();
+      if (_pendingWordMutations == 0 && _syncQueued && canSync && !_isSyncing) {
+        _syncQueued = false;
+        unawaited(syncNow());
+      }
     }
   }
 
