@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
@@ -20,8 +20,6 @@ class AppTheme {
       onError: Colors.white,
       surface: surface,
       onSurface: onSurface,
-      background: background,
-      onBackground: onBackground,
     );
 
     final base = ThemeData(
@@ -77,7 +75,7 @@ class AppTheme {
         filled: true,
         fillColor: surface,
         hintStyle: textTheme.bodyMedium?.copyWith(
-          color: onSurface.withOpacity(0.45),
+          color: onSurface.withValues(alpha: 0.45),
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
@@ -86,7 +84,7 @@ class AppTheme {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(
-            color: primary.withOpacity(0.6),
+            color: primary.withValues(alpha: 0.6),
             width: 1.4,
           ),
         ),
@@ -111,7 +109,7 @@ class AppTheme {
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: primary,
-          side: BorderSide(color: primary.withOpacity(0.35)),
+          side: BorderSide(color: primary.withValues(alpha: 0.35)),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
@@ -120,17 +118,17 @@ class AppTheme {
       ),
       chipTheme: ChipThemeData(
         backgroundColor: surface,
-        selectedColor: primary.withOpacity(0.15),
+        selectedColor: primary.withValues(alpha: 0.15),
         labelStyle: textTheme.bodyMedium,
         shape: StadiumBorder(
-          side: BorderSide(color: primary.withOpacity(0.2)),
+          side: BorderSide(color: primary.withValues(alpha: 0.2)),
         ),
       ),
       segmentedButtonTheme: SegmentedButtonThemeData(
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.resolveWith((states) {
             if (states.contains(WidgetState.selected)) {
-              return primary.withOpacity(0.15);
+              return primary.withValues(alpha: 0.15);
             }
             return surface;
           }),
@@ -141,7 +139,7 @@ class AppTheme {
             return onSurface;
           }),
           side: WidgetStatePropertyAll(
-            BorderSide(color: primary.withOpacity(0.2)),
+            BorderSide(color: primary.withValues(alpha: 0.2)),
           ),
           shape: WidgetStatePropertyAll(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -149,7 +147,7 @@ class AppTheme {
         ),
       ),
       dividerTheme: DividerThemeData(
-        color: onSurface.withOpacity(0.1),
+        color: onSurface.withValues(alpha: 0.1),
       ),
       snackBarTheme: SnackBarThemeData(
         backgroundColor: onSurface,
@@ -159,13 +157,13 @@ class AppTheme {
         contentPadding: EdgeInsets.zero,
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: Colors.white.withOpacity(0.9),
-        indicatorColor: primary.withOpacity(0.18),
+        backgroundColor: Colors.white.withValues(alpha: 0.9),
+        indicatorColor: primary.withValues(alpha: 0.18),
         labelTextStyle: WidgetStatePropertyAll(
           textTheme.labelLarge?.copyWith(color: onSurface),
         ),
         iconTheme: WidgetStatePropertyAll(
-          IconThemeData(color: onSurface.withOpacity(0.8)),
+          IconThemeData(color: onSurface.withValues(alpha: 0.8)),
         ),
       ),
     );

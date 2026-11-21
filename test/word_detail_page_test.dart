@@ -11,7 +11,7 @@ import 'package:yunxu_learning_english/domain/services/online_picture_service.da
 import 'package:yunxu_learning_english/presentation/state/learning_image_notifier.dart';
 import 'learning_image_test.dart' show MemoryCredentials, MemoryStore;
 import 'sentence_generation_test.dart' show response;
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class AppBackground extends StatelessWidget {
   const AppBackground({super.key, required this.child});
@@ -25,7 +25,7 @@ class AppBackground extends StatelessWidget {
             right: -60,
             child: _Blob(
               size: 180,
-              color: const Color(0xFF0B6E99).withOpacity(0.15),
+              color: const Color(0xFF0B6E99).withValues(alpha: 0.15),
             ),
           ),
           Positioned(
@@ -33,7 +33,7 @@ class AppBackground extends StatelessWidget {
             left: -40,
             child: _Blob(
               size: 160,
-              color: const Color(0xFFF2A65A).withOpacity(0.2),
+              color: const Color(0xFFF2A65A).withValues(alpha: 0.2),
             ),
           ),
           Positioned(
@@ -41,7 +41,7 @@ class AppBackground extends StatelessWidget {
             left: -30,
             child: _Blob(
               size: 110,
-              color: const Color(0xFF0B6E99).withOpacity(0.1),
+              color: const Color(0xFF0B6E99).withValues(alpha: 0.1),
             ),
           ),
           child,

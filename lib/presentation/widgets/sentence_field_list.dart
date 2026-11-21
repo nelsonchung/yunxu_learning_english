@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class SentenceFieldList extends StatelessWidget {
   const SentenceFieldList({
@@ -24,7 +24,7 @@ class SentenceFieldList extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           buildDefaultDragHandles: false,
           itemCount: controllers.length,
-          onReorder: onReorder,
+          onReorderItem: onReorder,
           itemBuilder: (context, i) {
             return Padding(
               key: ValueKey(controllers[i]),

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -77,12 +77,8 @@ class _AddWordPageState extends State<AddWordPage> {
 
   void _reorderSentence(int oldIndex, int newIndex) {
     setState(() {
-      var targetIndex = newIndex;
-      if (targetIndex > oldIndex) {
-        targetIndex -= 1;
-      }
       final controller = _sentenceControllers.removeAt(oldIndex);
-      _sentenceControllers.insert(targetIndex, controller);
+      _sentenceControllers.insert(newIndex, controller);
     });
   }
 

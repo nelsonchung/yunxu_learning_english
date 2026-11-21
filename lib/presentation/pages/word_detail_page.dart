@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:provider/provider.dart';
 import 'package:path/path.dart' as path;
 
@@ -103,9 +103,11 @@ class WordDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
+                    child: Material(
+                      color: Colors.transparent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           if (showImages) ...[
@@ -386,6 +388,7 @@ class WordDetailPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
                   const SizedBox(height: 16),
                   if (memoryHint.isNotEmpty) ...[
                     SectionCard(

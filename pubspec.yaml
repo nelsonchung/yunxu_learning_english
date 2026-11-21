@@ -40,7 +40,7 @@ dependencies:
   path_provider: ^2.1.4
   provider: ^6.1.2
   uuid: ^4.5.1
-  google_fonts: ^6.2.1
+  google_fonts: ^9.0.0
   flutter_local_notifications: ^17.2.2
   timezone: ^0.9.4
   url_launcher: ^6.3.0
@@ -52,6 +52,7 @@ dependencies:
   http: ^1.6.0
   flutter_secure_storage: ^10.3.4
 
+  material_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
