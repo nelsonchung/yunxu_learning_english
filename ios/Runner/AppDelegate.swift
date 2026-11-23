@@ -6,113 +6,107 @@ import AVFoundation
 import os
 
 @main
-@objc class AppDelegate: FlutterAppDelegate {
+@objc class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
   private var cloudSyncHandler: CloudSyncHandler?
   private let voicePracticeAudio = VoicePracticeAudio()
   private static let installMarkerService = "com.yunxu.yunxulearn.install"
   private static let installMarkerAccount = "has_launched_before"
 
-  override func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    GeneratedPluginRegistrant.register(with: self)
+  func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
+    GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+    let messenger = engineBridge.applicationRegistrar.messenger()
 
-    if let controller = window?.rootViewController as? FlutterViewController {
-      let voiceChannel = FlutterMethodChannel(
-        name: "voice_practice", binaryMessenger: controller.binaryMessenger
-      )
-      voiceChannel.setMethodCallHandler { [weak self] call, result in
-        self?.voicePracticeAudio.handle(call, result: result)
-      }
-      let microphoneChannel = FlutterEventChannel(
-        name: "voice_practice/microphone", binaryMessenger: controller.binaryMessenger
-      )
-      microphoneChannel.setStreamHandler(voicePracticeAudio)
+    let voiceChannel = FlutterMethodChannel(
+      name: "voice_practice", binaryMessenger: messenger
+    )
+    voiceChannel.setMethodCallHandler { [weak self] call, result in
+      self?.voicePracticeAudio.handle(call, result: result)
+    }
+    let microphoneChannel = FlutterEventChannel(
+      name: "voice_practice/microphone", binaryMessenger: messenger
+    )
+    microphoneChannel.setStreamHandler(voicePracticeAudio)
 
-      let installChannel = FlutterMethodChannel(name: "install_state", binaryMessenger: controller.binaryMessenger)
-      installChannel.setMethodCallHandler { call, result in
-        switch call.method {
-        case "shouldAutoRestoreOnEmptyData":
-          result(Self.shouldAutoRestoreOnEmptyData())
-        default:
-          result(FlutterMethodNotImplemented)
-        }
-      }
-
-      let channel = FlutterMethodChannel(name: "cloud_sync", binaryMessenger: controller.binaryMessenger)
-      channel.setMethodCallHandler { [weak self] call, result in
-        guard let args = call.arguments as? [String: Any],
-              let containerId = args["containerId"] as? String else {
-          result(FlutterError(code: "bad_args", message: "Missing containerId", details: nil))
-          return
-        }
-
-        if self?.cloudSyncHandler == nil || self?.cloudSyncHandler?.containerId != containerId {
-          self?.cloudSyncHandler = CloudSyncHandler(containerId: containerId)
-        }
-
-        guard let handler = self?.cloudSyncHandler else {
-          result(FlutterError(code: "init_failed", message: "CloudSyncHandler unavailable", details: nil))
-          return
-        }
-
-        switch call.method {
-        case "pushChanges":
-          let records = args["records"] as? [[String: Any]] ?? []
-          handler.pushChanges(records: records) { outcome in
-            DispatchQueue.main.async {
-              switch outcome {
-              case .success:
-                result(true)
-              case .failure(let error):
-                result(Self.cloudFlutterError(error, fallbackCode: "push_failed"))
-              }
-            }
-          }
-        case "fetchChanges":
-          let sinceMillis = args["since"] as? Int ?? 0
-          let sinceDate = Date(timeIntervalSince1970: Double(sinceMillis) / 1000.0)
-          handler.fetchChanges(since: sinceDate) { outcome in
-            DispatchQueue.main.async {
-              switch outcome {
-              case .success(let records):
-                result(records)
-              case .failure(let error):
-                result(Self.cloudFlutterError(error, fallbackCode: "fetch_failed"))
-              }
-            }
-          }
-        case "pushSettings":
-          let settings = args["settings"] as? [String: Any] ?? [:]
-          handler.pushSettings(settings: settings) { outcome in
-            DispatchQueue.main.async {
-              switch outcome {
-              case .success:
-                result(true)
-              case .failure(let error):
-                result(Self.cloudFlutterError(error, fallbackCode: "push_settings_failed"))
-              }
-            }
-          }
-        case "fetchSettings":
-          handler.fetchSettings { outcome in
-            DispatchQueue.main.async {
-              switch outcome {
-              case .success(let settings):
-                result(settings)
-              case .failure(let error):
-                result(Self.cloudFlutterError(error, fallbackCode: "fetch_settings_failed"))
-              }
-            }
-          }
-        default:
-          result(FlutterMethodNotImplemented)
-        }
+    let installChannel = FlutterMethodChannel(name: "install_state", binaryMessenger: messenger)
+    installChannel.setMethodCallHandler { call, result in
+      switch call.method {
+      case "shouldAutoRestoreOnEmptyData":
+        result(Self.shouldAutoRestoreOnEmptyData())
+      default:
+        result(FlutterMethodNotImplemented)
       }
     }
 
-    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    let channel = FlutterMethodChannel(name: "cloud_sync", binaryMessenger: messenger)
+    channel.setMethodCallHandler { [weak self] call, result in
+      guard let args = call.arguments as? [String: Any],
+            let containerId = args["containerId"] as? String else {
+        result(FlutterError(code: "bad_args", message: "Missing containerId", details: nil))
+        return
+      }
+
+      if self?.cloudSyncHandler == nil || self?.cloudSyncHandler?.containerId != containerId {
+        self?.cloudSyncHandler = CloudSyncHandler(containerId: containerId)
+      }
+
+      guard let handler = self?.cloudSyncHandler else {
+        result(FlutterError(code: "init_failed", message: "CloudSyncHandler unavailable", details: nil))
+        return
+      }
+
+      switch call.method {
+      case "pushChanges":
+        let records = args["records"] as? [[String: Any]] ?? []
+        handler.pushChanges(records: records) { outcome in
+          DispatchQueue.main.async {
+            switch outcome {
+            case .success:
+              result(true)
+            case .failure(let error):
+              result(Self.cloudFlutterError(error, fallbackCode: "push_failed"))
+            }
+          }
+        }
+      case "fetchChanges":
+        let sinceMillis = args["since"] as? Int ?? 0
+        let sinceDate = Date(timeIntervalSince1970: Double(sinceMillis) / 1000.0)
+        handler.fetchChanges(since: sinceDate) { outcome in
+          DispatchQueue.main.async {
+            switch outcome {
+            case .success(let records):
+              result(records)
+            case .failure(let error):
+              result(Self.cloudFlutterError(error, fallbackCode: "fetch_failed"))
+            }
+          }
+        }
+      case "pushSettings":
+        let settings = args["settings"] as? [String: Any] ?? [:]
+        handler.pushSettings(settings: settings) { outcome in
+          DispatchQueue.main.async {
+            switch outcome {
+            case .success:
+              result(true)
+            case .failure(let error):
+              result(Self.cloudFlutterError(error, fallbackCode: "push_settings_failed"))
+            }
+          }
+        }
+      case "fetchSettings":
+        handler.fetchSettings { outcome in
+          DispatchQueue.main.async {
+            switch outcome {
+            case .success(let settings):
+              result(settings)
+            case .failure(let error):
+              result(Self.cloudFlutterError(error, fallbackCode: "fetch_settings_failed"))
+            }
+          }
+        }
+      default:
+        result(FlutterMethodNotImplemented)
+      }
+    }
   }
 
   private static func cloudFlutterError(_ error: Error, fallbackCode: String) -> FlutterError {
