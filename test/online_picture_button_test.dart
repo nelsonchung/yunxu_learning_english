@@ -21,14 +21,19 @@ final _card = WordCard.fromMap({
 });
 
 class _Pictures extends OnlinePictureService {
-  _Pictures(this.result, {super.saveSource});
+  _Pictures(this.result, {super.saveSource, this.available = false});
 
   Future<OnlinePicture?> Function() result;
+  final bool available;
   final requestedWords = <String>[];
 
   @override
-  Future<OnlinePicture?> download(String word) {
+  Future<OnlinePicture?> download(
+    String word, {
+    void Function()? onDownloadStarted,
+  }) {
     requestedWords.add(word);
+    if (available) onDownloadStarted?.call();
     return result();
   }
 }
@@ -62,8 +67,9 @@ class _Words extends ChangeNotifier implements WordsNotifier {
 Future<void> _mount(
   WidgetTester tester,
   _Pictures pictures,
-  _Words words,
-) async {
+  _Words words, {
+  bool downloadIfMissing = false,
+}) async {
   addTearDown(pictures.dispose);
   addTearDown(words.dispose);
   await tester.pumpWidget(
@@ -71,7 +77,11 @@ Future<void> _mount(
       value: words,
       child: MaterialApp(
         home: Scaffold(
-          body: OnlinePictureButton(card: _card, service: pictures),
+          body: OnlinePictureButton(
+            card: words.card,
+            service: pictures,
+            downloadIfMissing: downloadIfMissing,
+          ),
         ),
       ),
     ),
@@ -82,6 +92,59 @@ OutlinedButton _button(WidgetTester tester) =>
     tester.widget<OutlinedButton>(find.byType(OutlinedButton));
 
 void main() {
+  testWidgets('automatic download shows progress and saves without a dialog', (
+    tester,
+  ) async {
+    final pending = Completer<OnlinePicture?>();
+    final sources = <String>[];
+    final pictures = _Pictures(
+      () => pending.future,
+      available: true,
+      saveSource: (_, url) async => sources.add(url),
+    );
+    final words = _Words()..card = _card.copyWith(imagePath: null);
+    await _mount(tester, pictures, words, downloadIfMissing: true);
+    expect(pictures.requestedWords, ['apple']);
+    expect(find.text('下載線上圖片中…'), findsOneWidget);
+    expect(_button(tester).onPressed, isNull);
+
+    pending.complete(OnlinePicture(_png, _url));
+    await tester.pumpAndSettle();
+    expect(words.appliedIds, [_card.id]);
+    expect(words.appliedBytes, _png);
+    expect(sources, [_url.toString()]);
+    expect(find.byType(AlertDialog), findsNothing);
+    expect(find.text('下載線上圖片中…'), findsNothing);
+  });
+
+  testWidgets('automatic lookup skips a card with a local picture', (
+    tester,
+  ) async {
+    final pictures = _Pictures(() async => null);
+    final words = _Words()..card = _card.copyWith(imageBytes: _png);
+    await _mount(tester, pictures, words, downloadIfMissing: true);
+    await tester.pumpAndSettle();
+    expect(pictures.requestedWords, isEmpty);
+    expect(words.appliedIds, isEmpty);
+  });
+
+  testWidgets('automatic lookup leaves the UI unchanged when unavailable', (
+    tester,
+  ) async {
+    final pending = Completer<OnlinePicture?>();
+    final pictures = _Pictures(() => pending.future);
+    final words = _Words()..card = _card.copyWith(imagePath: null);
+    await _mount(tester, pictures, words, downloadIfMissing: true);
+    expect(pictures.requestedWords, ['apple']);
+    expect(find.text('下載線上圖片中…'), findsNothing);
+    pending.complete(null);
+    await tester.pumpAndSettle();
+    expect(find.textContaining('尚未提供線上圖片'), findsNothing);
+    expect(find.text('下載線上圖片'), findsOneWidget);
+    expect(_button(tester).onPressed, isNotNull);
+    expect(words.appliedIds, isEmpty);
+  });
+
   testWidgets('mounting does not request a picture', (tester) async {
     final pictures = _Pictures(() async => null);
     await _mount(tester, pictures, _Words());

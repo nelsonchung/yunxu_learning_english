@@ -33,6 +33,24 @@ import 'package:yunxu_learning_english/presentation/state/words_notifier.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  testWidgets('開啟單字詳情時自動查詢缺少的圖片', (tester) async {
+    final card = _wordCard(id: 'picture-word', word: 'apple');
+    final words = _buildWordsNotifier(initialCards: [card]);
+    await words.load();
+    final pictures = _UnavailablePictures();
+    addTearDown(pictures.dispose);
+    await _pumpDetailPage(
+      tester,
+      wordsNotifier: words,
+      wordId: card.id,
+      pictures: pictures,
+    );
+    expect(pictures.requestedWords, ['apple']);
+    expect(words.findById(card.id)!.imagePath, isNull);
+    expect(find.text('下載線上圖片'), findsOneWidget);
+    expect(find.textContaining('尚未提供線上圖片'), findsNothing);
+  });
+
   for (final (guided, realtime, timeLimit) in [
     (true, false, false),
     (false, false, false),
@@ -991,6 +1009,7 @@ Future<void> _pumpDetailPage(
   required WordsNotifier wordsNotifier,
   required String wordId,
   LearningImageNotifier? ai,
+  OnlinePictureService? pictures,
   WordExtensionService? extensionService,
   VoicePracticeService? voicePractice,
 }) async {
@@ -1002,10 +1021,15 @@ Future<void> _pumpDetailPage(
       providers: [
         if (voicePractice != null)
           Provider<VoicePracticeService>.value(value: voicePractice),
-        if (ai != null) ...[
+        if (ai != null)
           ChangeNotifierProvider<LearningImageNotifier>.value(value: ai),
-          Provider<OnlinePictureService>(create: (_) => OnlinePictureService()),
-        ],
+        if (pictures != null)
+          Provider<OnlinePictureService>.value(value: pictures)
+        else if (ai != null)
+          Provider<OnlinePictureService>(
+            create: (_) => _UnavailablePictures(),
+            dispose: (_, service) => service.dispose(),
+          ),
         Provider<WordExtensionService>.value(
           value:
               extensionService ??
@@ -1042,6 +1066,19 @@ Future<void> _pumpDetailPage(
 
   navigatorKey.currentState!.pushNamed('/detail', arguments: wordId);
   await tester.pumpAndSettle();
+}
+
+class _UnavailablePictures extends OnlinePictureService {
+  final requestedWords = <String>[];
+
+  @override
+  Future<OnlinePicture?> download(
+    String word, {
+    void Function()? onDownloadStarted,
+  }) async {
+    requestedWords.add(word);
+    return null;
+  }
 }
 
 WordsNotifier _buildWordsNotifier({

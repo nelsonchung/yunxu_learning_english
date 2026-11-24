@@ -72,7 +72,11 @@ class OnlinePictureService {
     }
   }
 
-  Future<Uint8List?> _get(Uri url, int limit) async {
+  Future<Uint8List?> _get(
+    Uri url,
+    int limit, {
+    void Function()? onDownloadStarted,
+  }) async {
     final elapsed = Stopwatch()..start();
     final abort = Completer<void>();
     StreamIterator<List<int>>? chunks;
@@ -88,6 +92,7 @@ class OnlinePictureService {
       if ((response.contentLength ?? 0) > limit) {
         throw const OnlinePictureException('下載檔案過大，無法使用');
       }
+      onDownloadStarted?.call();
       final bytes = BytesBuilder(copy: false);
       while (true) {
         final remaining = timeout - elapsed.elapsed;
@@ -136,7 +141,10 @@ class OnlinePictureService {
     return true;
   }
 
-  Future<OnlinePicture?> download(String word) async {
+  Future<OnlinePicture?> download(
+    String word, {
+    void Function()? onDownloadStarted,
+  }) async {
     final exact = word.trim();
     if (exact.isEmpty) return null;
     try {
@@ -190,7 +198,11 @@ class OnlinePictureService {
             ...segments,
           ],
         );
-        final bytes = await _get(url, maxImageBytes);
+        final bytes = await _get(
+          url,
+          maxImageBytes,
+          onDownloadStarted: onDownloadStarted,
+        );
         if (bytes == null) continue;
         const signature = [137, 80, 78, 71, 13, 10, 26, 10];
         if (bytes.length < 8 ||

@@ -153,6 +153,7 @@ class WordDetailPage extends StatelessWidget {
                                       card: card,
                                       service: onlinePictures,
                                       compact: true,
+                                      downloadIfMissing: true,
                                     ),
                                   ),
                                 if (onlinePictures != null &&

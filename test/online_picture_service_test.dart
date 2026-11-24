@@ -101,6 +101,7 @@ void main() {
     () async {
       final paths = <String>[];
       var available = false;
+      var downloadsStarted = 0;
       final service = OnlinePictureService(
         client: MockClient((request) async {
           paths.add(request.url.pathSegments.last);
@@ -111,10 +112,16 @@ void main() {
         validateImage: (_) async {},
       );
       addTearDown(service.dispose);
-      expect(await service.download('Apple'), isNull);
+      Future<OnlinePicture?> download() => service.download(
+        'Apple',
+        onDownloadStarted: () => downloadsStarted++,
+      );
+      expect(await download(), isNull);
+      expect(downloadsStarted, 0);
       expect(paths, ['manifest.json', 'Apple.png', 'apple.png']);
       available = true;
-      expect(await service.download('Apple'), isNotNull);
+      expect(await download(), isNotNull);
+      expect(downloadsStarted, 1);
     },
   );
 
