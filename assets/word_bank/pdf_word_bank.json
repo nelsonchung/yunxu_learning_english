@@ -12295,11 +12295,15 @@
   },
   {
     "word": "focus",
-    "meaning": "重點",
+    "meaning": "（名詞）重點、焦點、專注力；（動詞）專注於、把注意力集中在……上、對焦",
     "partOfSpeech": "noun",
+    "partsOfSpeech": [
+      "noun",
+      "verb"
+    ],
     "sentences": [
-      "The main focus of the meeting was to discuss the new project. 會議的主要重點是討論新專案。",
-      "I need to focus on my studies and avoid distractions from social media. 我需要專注於學業，避開社交媒體的干擾。"
+      "The focus of the meeting was the new project. 會議的重點是新專案。",
+      "I need to focus on my studies. 我得專心讀書。"
     ]
   },
   {
